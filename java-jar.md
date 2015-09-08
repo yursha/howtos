@@ -1,0 +1,1 @@
+- `jar xf <jar.file>` - extract jar file into the current working directory
