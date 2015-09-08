@@ -10,3 +10,4 @@
 - `shuf` - generate random permutations
 - `shred` - overwrite a file to hide its contents, and optionally delete it
 - `sort` - sort lines of text files
+- `pwd`
