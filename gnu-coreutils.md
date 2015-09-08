@@ -1,7 +1,7 @@
 - `df` - Report file system disk space usage
 - `du` - Estimate file space usage
 - `ls` - List directory contents
-- `id`
-- `chown`
-- `chgrp`
-- `chroot`
+- `id` - print real and effective user and group IDs
+- `chown` - change file owner and group
+- `chgrp` - change group ownership
+- `chroot` - run command or interactive shell with special root directory
