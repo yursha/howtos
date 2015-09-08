@@ -1,3 +1,3 @@
-- `df`
-- `du`
-- `ls`
+- `df` - Report file system disk space usage
+- `du` - Estimate file space usage
+- `ls` - List directory contents
