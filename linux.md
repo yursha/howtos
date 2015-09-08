@@ -1,0 +1,1 @@
+- How `/dev/zero` and `/dev/null` work?
