@@ -3,3 +3,8 @@
 
 # What one can expect from a logging library?
 - pattern substitution, e.g. `log.debug("Found {} records matching filter: '{}'", records, filter);`
+
+
+# How to log
+- escape dynamic textual (non numeric) data with single quotes
+- respect log levels
