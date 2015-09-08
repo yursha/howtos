@@ -1,1 +1,1 @@
-- How `/dev/urandom` works?
+- How `/dev/urandom`, `/dev/random` and `/dev/arandom` work?
