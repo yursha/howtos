@@ -1,5 +1,10 @@
-Command Line Interface Integrated Development Environment
+Integrated Development Environment
 =========================================================
+
+# Static code analyzis
+
+- detect unused variables, imports, functions etc. (checkstyle, idea)
+- automatic source code formatting (idea)
 
 - make `TODO` comments and then `grep -r TODO <project-folder>`
 
