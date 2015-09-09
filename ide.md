@@ -1,7 +1,7 @@
 Integrated Development Environment
 =========================================================
 
-# Static code analyzis
+# Static code analysis
 
 - detect unused variables, imports, functions etc. (checkstyle, idea)
 - automatic source code formatting (idea)
