@@ -1,6 +1,6 @@
 # Tips
 - For simplicity don't handle any error until you find it stops a *successful* program execution.
-- When an error happens always log its stack trace to be able to track error to a particular source code line and method call chain.
+- When an error happens always log its stack trace to be able to track error to a particular source code line and method call chain/path.
 - In a multithreaded application make number of threads configurable from the command line. So during debug time you will be able to set `-Dthreads=1` and enjoyed logical sequential logging from a single thread of execution instead of intermingling of multiple threads.
 
 # What one can expect from a logging library?
