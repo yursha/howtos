@@ -3,8 +3,9 @@
 
 # What one can expect from a logging library?
 - pattern substitution, e.g. `log.debug("Found {} records matching filter: '{}'", records, filter);`
-
+- ability to specify log level from the command-line. As of September 2015 java logging libraries (e.g. log4j, log4j2, etc.) have no such ability. The best approach then is to configure logging library programmatically and dynamically (instead of config xml files) based on some environment variable.
 
 # How to log
 - escape dynamic textual (non numeric) data with single quotes
 - respect log levels
+
