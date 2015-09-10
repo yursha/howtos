@@ -7,6 +7,8 @@
 
 ## Search
 - `:set hlsearch` - highligh all strings matching a search pattern
+- `:set list` - display new line characters
+- `:%s/\n//gc` - replace newlines
 
 ## Compare
 - See differences between the original file and the current buffer.
