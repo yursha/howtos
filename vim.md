@@ -1,5 +1,3 @@
-# Vim command line
-
 ## Text editing
 - http://vim.wikia.com/wiki/Switching_case_of_characters
 
