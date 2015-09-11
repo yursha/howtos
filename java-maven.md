@@ -12,3 +12,7 @@
 
 # info
 - `mvn help:effective-pom`
+
+# code style
+- maven-checkstyle-plugin
+ 
