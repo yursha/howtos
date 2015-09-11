@@ -4,9 +4,10 @@
 - In a multithreaded application **make number of threads configurable from the command line**. So during debug time you will be able to set `-Dthreads=1` and enjoyed logical sequential logging from a single thread of execution instead of intermingling of multiple threads.
 - **Escape dynamic textual (non numeric) data** with single quotes so that variables containing spaces can be easily distinguishable from the (static) rest of the message. Not necessary for strong numeric typed variables.
 - **Respect log levels** sot that you can easily adjust log verbosity during debug time and run-time and grep out errors ans warnings from the production logs.
+- Log files are **append-only**. Be sure to log only what is really helpful during debugging as log files can grow and take a lot of disk space. There should be an archiving policy for log files. In production environment its  helpful to print 'INFO', 'WARN' and 'ERROR' level messages only.
 
 ## Java
-- All loggers should be `private static final`
+- All loggers should be declared `private static final`
 
 # What one can expect from a logging library?
 - pattern substitution, e.g. `log.debug("Found {} records matching filter: '{}'", records, filter);` - more readable and efficient as string concatenations (interpolations) are not done if log messages are filtered out based on the log level.
