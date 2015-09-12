@@ -1,6 +1,6 @@
 Data received from user input should be validated.
 
-# Apache Commons Validator 1.4.1 (https://commons.apache.org/proper/commons-validator/)
+## [Apache Commons Validator 1.4.1](https://commons.apache.org/proper/commons-validator/)
 Microframework and a set of independent validation functions:
 - date, time, calendar, intervals
 - numeric values, percentages
