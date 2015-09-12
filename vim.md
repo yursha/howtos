@@ -4,6 +4,7 @@
 
 ## Text editing
 - http://vim.wikia.com/wiki/Switching_case_of_characters
+- `gg=G` - reformat/reindent text
 
 ## Search
 - `:set hlsearch` - highligh all strings matching a search pattern
