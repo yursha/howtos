@@ -7,6 +7,7 @@
 - Log files are **append-only**. Be sure to log only what is really helpful during debugging as log files can grow and take a lot of disk space. There should be an **archiving policy** for log files. In production environment its  helpful to print 'INFO', 'WARN' and 'ERROR' level messages only to save **disk space**. Their should be a separate **build profile** for development and production environments.
 
 ## Java
+- https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
 - All loggers should be declared `private static final`
 
 ### Log4j2
