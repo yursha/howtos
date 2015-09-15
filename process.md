@@ -1,6 +1,6 @@
 # How to do a feature
 1. Pick a Jira issue from the backlog
-1. Fork `> git branch feature-name`
+1. Fork `> git branch <feature>; git checkout <feature>`
 1. Create an automated test case
 1. Run a test case against existing code
 1. Understand existing code behaviour
