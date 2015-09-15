@@ -1,0 +1,1 @@
+- `> git rm --cached -r` - remove all from staging
