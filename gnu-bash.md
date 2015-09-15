@@ -1,5 +1,5 @@
 
-[Bookmark](http://www.gnu.org/software/bash/manual/bash.html)
+- http://www.gnu.org/software/bash/manual/bash.html
 
 # Bash built-ins 
 - `help`
