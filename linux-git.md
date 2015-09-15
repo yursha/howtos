@@ -5,5 +5,5 @@
 
 # Configuration
 
-- `> git config --global --unset <config.name>` - unset a configuration key globally
-- `> git config --global <config.key> <config.value>` - set a configuration key globally
+- `> git config --global --unset <config.key>` - unset a configuration key globally
+- `> git config --global <config.key> <value>` - set a configuration key globally
