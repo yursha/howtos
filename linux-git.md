@@ -1,1 +1,2 @@
 - `> git rm --cached -r` - remove all from staging
+- `> git add -A` - add all to staging
