@@ -17,3 +17,7 @@
 ```
 :w !diff % -
 ```
+
+## Bulk edit
+- `:args ~/src/**/*.java | argdo execute "normal gg=G" | update` - reindent
+- `:args ~/src/**/*.java | argdo :%s/\s\+//g | update` - remove all trailing whitespace
