@@ -2,8 +2,8 @@
 
 - `> git rm --cached -r` - ??? 
 - `> git add -A` - stage all
+- `> git reset HEAD *` - unstage all
 - `> git reset HEAD *.swp` - unstage all `.swp` files
-- How to remove all from staging?
 
 # Configuration
 
