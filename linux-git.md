@@ -7,3 +7,6 @@
 
 - `> git config --global --unset <config.key>` - unset a configuration key globally
 - `> git config --global <config.key> <value>` - set a configuration key globally
+
+# History
+- `% git log --format="%s" v0.1.0..v0.1.1` - see commits between 2 tags
