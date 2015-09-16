@@ -3,14 +3,29 @@
 - http://www.vim.org/docs.php
 - https://github.com/vim/vim
 
+## Variables
+### Boolean
+- `ruler` - show current line, column and percentage of total document size
+- `number` - show line numbers
+- `autoindent` - automatically indent on <kbd>enter</kbd> button press
+- `hlsearch` - highlight all strings matching a search pattern
+- `expandtab`- insert spaces on <kbd>tab</kbd> button press
+- `backup` - create backup `.swp` files while editing
+- `list` - display new line characters
+
+### Integer
+- `tabstop=4`
+- `shiftwidth=4`
+
+### List
+- `backspace=eol,start,indent`
+
 ## Text editing
 - http://vim.wikia.com/wiki/Switching_case_of_characters
 - `gg=G` - reformat/reindent text
 - Put `filetype plugin indent on` into `~/.vimrc` - enable java indentation
 
 ## Search
-- `:set hlsearch` - highligh all strings matching a search pattern
-- `:set list` - display new line characters
 - `:%s/\n//gc` - replace newlines
 
 ## Compare
