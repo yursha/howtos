@@ -41,3 +41,9 @@
 - `:args src/main/java/**/*.java | argdo execute "normal gg=G" | update` - reindent
 - `:args src/main/java/**/*.java | argdo :%s/\s\+$//g | update` - remove all trailing whitespace
 - `:args src/main/java/**/*.java | argdo set ff=unix | update` - convert all line terminators to unix (LF)
+
+## File navigation
+- `:o path/to/file` - open another file (requires save of changes before this)
+- `:bd` - close the current file and return to previous
+- `:q` - quit vim
+- `:w` - save changes
