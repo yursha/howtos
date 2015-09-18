@@ -3,6 +3,9 @@
 - http://www.vim.org/docs.php
 - https://github.com/vim/vim
 
+## Plugin Manager for Vim
+- [Vundle](https://github.com/VundleVim/Vundle.vim)
+
 ## Variables
 ### Boolean
 - `ruler` - show current line, column and percentage of total document size
