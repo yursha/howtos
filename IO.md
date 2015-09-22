@@ -17,3 +17,11 @@ InputStream input = MyClass.class.getClassLoader().getResourceAsStream(filePath)
 ```java
 String content = new String(Files.readAllBytes(Paths.get("path/to/file"), StandardCharsets.UTF_8));
 ```
+
+##### Convert byte stream into a string
+``` java
+import org.apache.commons.io.IOUtils;
+
+InputStream stream = ...
+IOUtils.toString(stream, StandardCharsets.UTF_8)
+```
