@@ -5,7 +5,7 @@
 
 #### Snippets
 
-##### Get an input stream for a class path resource
+##### Open a byte stream for a class path resource
 
 ```java
 String filePath = "path/to/my/resource.txt"; // relative to Java class path
@@ -18,7 +18,7 @@ InputStream input = MyClass.class.getClassLoader().getResourceAsStream(filePath)
 String content = new String(Files.readAllBytes(Paths.get("path/to/file"), StandardCharsets.UTF_8));
 ```
 
-##### Convert byte stream into a string
+##### Read a byte stream into a string
 ``` java
 import org.apache.commons.io.IOUtils;
 
