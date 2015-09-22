@@ -1,7 +1,7 @@
 # Big JSON files
 - https://github.com/zeMirco/sf-city-lots-json
 
-# Libs
-- **http://mvnrepository.com/open-source/json-libraries**
+# Libraries
+- **http://mvnrepository.com/open-source/json-libraries** - lookup the relevant libraries here.
 - https://github.com/google/gson
 - https://github.com/FasterXML/jackson-databind/
