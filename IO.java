@@ -23,7 +23,7 @@ public class IO {
 
     int count;
     ByteArrayOutputStream resizingByteArray = new ByteArrayOutputStream();
-    while ((count = fileHandle.read(buf, 0, buf.length)) != -1) {
+    while ((count = stream.read(buf, 0, buf.length)) != -1) {
       resizingByteArray.write(buf, 0, count);
     }
     return resizingByteArray.toByteArray();
