@@ -8,11 +8,15 @@
 
 # XML
 - SAX (iteration, push)
-- STAX (iteration, pull) (JSR-173)
+- Streaming API for XML (StAX) (iteration, pull) (JSR-173)
+  + https://github.com/FasterXML/woodstox
+  + The Sun Java Streaming XML Parser (SJSXP) (part of GlassFish) https://sjsxp.java.net/
 - JAXB (data binding)
 - DOM, XOM, JDOM, DOM4j (tree traversal)
 - XSL Transformations
   + http://www.w3.org/TR/xslt
+- XMLBeans
+- SOAP
 
 # JSON
 
