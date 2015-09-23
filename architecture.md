@@ -1,3 +1,10 @@
+# Data Structures
+- array
+- resizing array
+- linked list
+- binary heap (priority queue)
+- hash table
+
 # Text Processing
 - **Parser** - parses text into tokens.
 - **Generator** - generates text from tokens?
