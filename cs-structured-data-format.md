@@ -1,8 +1,8 @@
 # General
 ## Three ways to parse structured data formats.
-- **Iteration** - Iterating over Event (or, token) stream.
-  + cursos-based pull-style parsing
-  + event-based push-style parsing
+- **Stream Iteration** - Iterating over event (or, token) stream.
+  + cursor-based pull-style parsing
+  + serial-access event-driven push-style parsing
 - **Data Binding** - Binding Json data into Objects (of your favorite language).
 - **Tree Traversal** - Building a tree structure (from Json) and traversing it using suitable methods.
 
@@ -16,7 +16,7 @@
 - Streaming API for XML (StAX) (pull-style stream iteration) (JSR-173)
   + https://github.com/FasterXML/woodstox
   + The Sun Java Streaming XML Parser (SJSXP) (part of GlassFish) https://sjsxp.java.net/
-- Simple API for XML (SAX) (push-style stream iteration)
+- Simple API for XML (SAX) (serial-access event-driven push-style stream iteration)
 - JAXB (data binding)
 - DOM, XOM, JDOM, DOM4j (tree traversal)
 - XSL Transformations
