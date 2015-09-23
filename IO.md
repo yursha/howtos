@@ -20,9 +20,11 @@ String content = new String(Files.readAllBytes(Paths.get("path/to/file"), Standa
 ```
 
 ##### Read a byte stream into a string
-``` java
+```java
 import org.apache.commons.io.IOUtils;
 
 InputStream stream = ...
 IOUtils.toString(stream, StandardCharsets.UTF_8)
 ```
+
+
