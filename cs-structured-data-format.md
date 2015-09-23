@@ -1,7 +1,7 @@
 # General
 ## Three ways to parse structured data formats.
 - **Stream Iteration** - Memory-efficient iterating over event (or, token) stream.
-  + cursor-based event-driven pull-style parsing
+  + serial-access cursor-based event-driven pull-style parsing
   + serial-access event-driven push-style parsing
 - **Data Binding** - Binding Json data into Objects (of your favorite language).
 - **Tree Traversal** - Building an in-memory tree structure (from Json) and traversing it using suitable methods.
