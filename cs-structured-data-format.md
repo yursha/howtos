@@ -17,6 +17,7 @@
   + https://github.com/FasterXML/woodstox
   + The Sun Java Streaming XML Parser (SJSXP) (part of GlassFish) https://sjsxp.java.net/
 - Simple API for XML (SAX) (serial-access event-driven push-style stream iteration)
+- TrAX
 - JAXB (data binding)
 - DOM
   + `org.w3c.dom`
