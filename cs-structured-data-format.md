@@ -1,10 +1,13 @@
 # General
 ## Three ways to parse structured data formats.
-- **Stream Iteration** - Memory-efficient iterating over event (or, token) stream.
-  + serial-access cursor-based event-driven pull-style parsing
-  + serial-access event-driven push-style parsing
+- **Stream Iteration**
+  + memory efficient serial-access event-driven iteration over event (or, token) stream.
+  + cursor-based?
+  + state-independent vs state dependent
+  + pull-style vs push-style parsing
 - **Data Binding** - Binding Json data into Objects (of your favorite language).
-- **Tree Traversal** - Building an in-memory tree structure (from Json) and traversing it using suitable methods.
+- **Tree Traversal**
+  + builds an in-memory tree structure
 
 # XML
 
@@ -23,8 +26,8 @@
 - DOM
   + `org.w3c.dom`
 - XOM 
-- DOM4j (tree traversal)
-- JDOM (http://www.jdom.org/)
+- DOM4j (http://www.dom4j.org)
+- JDOM (http://www.jdom.org)
 - Extensible Stylesheet Language Transformations (XSLT) (http://www.w3.org/TR/xslt)
   + `javax.xml.transform`
 - XMLBeans
