@@ -6,7 +6,7 @@
 
 # XML
 - SAX (iteration, push)
-- STAX (iteration, pull)
+- STAX (iteration, pull) (JSR-173)
 - JAXB (data binding)
 - DOM, XOM, JDOM, DOM4j (tree traversal)
 
