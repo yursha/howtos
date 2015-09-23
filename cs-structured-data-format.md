@@ -7,10 +7,10 @@
 - **Tree Traversal** - Building a tree structure (from Json) and traversing it using suitable methods.
 
 # XML
-- SAX (iteration, push)
 - Streaming API for XML (StAX) (iteration, pull) (JSR-173)
   + https://github.com/FasterXML/woodstox
   + The Sun Java Streaming XML Parser (SJSXP) (part of GlassFish) https://sjsxp.java.net/
+- SAX (iteration, push)
 - JAXB (data binding)
 - DOM, XOM, JDOM, DOM4j (tree traversal)
 - XSL Transformations
