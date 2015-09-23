@@ -1,5 +1,5 @@
 # Text Processing
-- **Parser** - parses text into tokens.
+- **Bidirectional Parser** - parses text into tokens.
 - **Generator** - generates text from tokens?
 
 # UI
