@@ -25,7 +25,7 @@
 - XOM 
 - DOM4j (tree traversal)
 - JDOM (http://www.jdom.org/)
-- XSL Transformations (http://www.w3.org/TR/xslt)
+- Extensible Stylesheet Language Transformations (XSLT) (http://www.w3.org/TR/xslt)
   + `javax.xml.transform`
 - XMLBeans
 - SOAP
