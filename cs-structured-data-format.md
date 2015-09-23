@@ -7,6 +7,12 @@
 - **Tree Traversal** - Building a tree structure (from Json) and traversing it using suitable methods.
 
 # XML
+
+## Java API for XML Processing (JAXP)
+### Resources
+- https://docs.oracle.com/javase/tutorial/jaxp/index.html
+
+### Libraries
 - Streaming API for XML (StAX) (pull-style stream iteration) (JSR-173)
   + https://github.com/FasterXML/woodstox
   + The Sun Java Streaming XML Parser (SJSXP) (part of GlassFish) https://sjsxp.java.net/
