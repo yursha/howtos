@@ -11,6 +11,8 @@
 - STAX (iteration, pull) (JSR-173)
 - JAXB (data binding)
 - DOM, XOM, JDOM, DOM4j (tree traversal)
+- XSL Transformations
+  + http://www.w3.org/TR/xslt
 
 # JSON
 
