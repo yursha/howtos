@@ -11,6 +11,7 @@
 ## Java API for XML Processing (JAXP)
 ### Resources
 - https://docs.oracle.com/javase/tutorial/jaxp/index.html
+- Project JAXP (part of Project GlassFish) - https://jaxp.java.net
 
 ### Libraries
 - Streaming API for XML (StAX) (`javax.xml.stream`) (cursor-based event-driven pull-style stream iteration) (JSR-173)
