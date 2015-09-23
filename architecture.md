@@ -1,9 +1,12 @@
-# Model
-- model
+# Text Processing
+- **Parser** - parses text into tokens.
+- **Generator** - generates text from tokens?
 
-# Controller
+# UI
+
+## Controller
 - controller
 
-# View
+## View
 - **presenter** - transforms a *business data model* into a *view data model*.
 - **templating engine** - merges a *view data model* into a static structure called *view template*.
