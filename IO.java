@@ -20,9 +20,9 @@ public class IO {
   
   public static byte[] readAllBytes(InputStream stream) throws IOException {
     byte[] buf = new byte[8192]; // 8KiB
-
-    int count;
     ByteArrayOutputStream resizingByteArray = new ByteArrayOutputStream();
+    
+    int count;
     while ((count = stream.read(buf, 0, buf.length)) != -1) {
       resizingByteArray.write(buf, 0, count);
     }
