@@ -1,6 +1,8 @@
 # General
 ## Three ways to process structured data formats.
 - **Iteration** - Iterating over Event (or, token) stream.
+  + pull parsing
+  + push parsing
 - **Data Binding** - Binding Json data into Objects (of your favorite language).
 - **Tree Traversal** - Building a tree structure (from Json) and traversing it using suitable methods.
 
