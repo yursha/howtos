@@ -22,6 +22,13 @@ Data Formats (structured/unstructured)
 # XML
 - Sample XML files - https://jaxp.java.net/downloads.html
 
+## Validation
+
+### XSD
+- http://www.w3.org/TR/xmlschema-0/
+- http://www.w3.org/TR/xmlschema11-1/
+- http://www.w3.org/TR/xmlschema11-2/
+
 ## Java API for XML Processing (JAXP)
 ### Resources
 - https://docs.oracle.com/javase/tutorial/jaxp/sax/validation.html
