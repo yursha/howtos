@@ -1,4 +1,4 @@
-Erlang is designed for concurrency.
+Erlang, Haskell, Go, Rust are designed for concurrency.
 
 # Multithreading
 
