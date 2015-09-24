@@ -13,3 +13,7 @@
 1. Close Jira issue
 1. Tag `> git tag -a v1.0 -m "version 1.0"` and push
 1. Release, i.e. deploy to production 
+
+
+# Deployment
+- **hot deployment** - deployment of code when an application continues to run.
