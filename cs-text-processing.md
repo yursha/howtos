@@ -70,7 +70,8 @@ Data Formats (structured/unstructured)
 ## Libraries
 - **http://mvnrepository.com/open-source/json-libraries** - lookup the relevant libraries here.
 
-### Jackson (iteration | data binding | tree traversal)
+### Jackson 
+(iteration | data binding | tree traversal)
 - https://github.com/FasterXML/jackson
 - https://github.com/FasterXML/jackson-databind
 
