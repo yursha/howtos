@@ -1,0 +1,1 @@
+- Michael Kay's XSLT 2.0 and XPath 2.0: Programmer's Reference (Wrox, 2008)
