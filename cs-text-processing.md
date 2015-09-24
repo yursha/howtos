@@ -53,8 +53,6 @@ Grammar for writing serialized tree-structured mixed-content document text inclu
 #### Simple API for XML (SAX1/SAX2) (http://www.saxproject.org/)
   + state-independent push-style stream iteration
 
-#### TrAX
-
 ### Data Binding
 #### JAXB (data binding)
 - **Data Binding** - Binding Json data into Objects (of your favorite language).
