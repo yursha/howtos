@@ -58,7 +58,7 @@ Data Formats (structured/unstructured)
 #### JAXB (data binding)
 
 #### DOM
-DOM is an in-memory representation of a document tree. DOM follows *mixed content model*, i.e. allows intermixing of text and elements.
+DOM is an in-memory representation of a document tree (XML, HTML). DOM follows *mixed content model*, i.e. allows intermixing of text and elements.
   + `org.w3c.dom`
 
 #### XOM 
