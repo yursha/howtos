@@ -4,7 +4,7 @@
 # Bit (extends boolean)
 - shiftRight
 - shiftLeft
-- zeroShiftRigth
+- zeroShiftRight
 
 # Math
 - sum
