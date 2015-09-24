@@ -3,6 +3,8 @@ Data Formats (structured/unstructured)
 
 # Unstructured Serialized Text Formats
 
+Character comparisons - case sensitivity.
+
 ## Regular Expressions
 - `java.util.regex`
 
