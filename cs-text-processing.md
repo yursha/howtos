@@ -36,7 +36,7 @@ Data Formats (structured/unstructured)
 - Project JAXP (part of Project GlassFish) - https://jaxp.java.net
 
 ### Libraries
-- Streaming API for XML (StAX) (`javax.xml.stream`) (cursor-based event-driven state-dependent pull-style stream iteration) (JSR-173)
+- Streaming API for XML (StAX) (`javax.xml.stream`) (cursor-based event-driven state-dependent pull-style stream iteration) ([JSR-173](https://jcp.org/en/jsr/detail?id=173))
   + https://github.com/FasterXML/woodstox
   + The Sun Java Streaming XML Parser (SJSXP) (part of GlassFish) https://sjsxp.java.net/
 - Simple API for XML (SAX1/SAX2) (http://www.saxproject.org/)
