@@ -10,4 +10,7 @@ Extensible Stylesheet Language Transformations
 - `javax.xml.transform`
 - XSL-FO (Formatting Objects)
 
+### TrAX 
+Transformation API for XML: `java.xml.transform`, `javax.xml.transform.stream`, `javax.xml.transform.dom`, `javax.xml.transform.sax`
+
 # Load
