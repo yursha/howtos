@@ -44,24 +44,35 @@ Data Formats (structured/unstructured)
 - Project JAXP (part of Project GlassFish) - https://jaxp.java.net
 
 ### Libraries
-- Streaming API for XML (StAX) (`javax.xml.stream`) (cursor-based event-driven state-dependent pull-style stream iteration) ([JSR-173](https://jcp.org/en/jsr/detail?id=173))
+
+#### Streaming API for XML (StAX) (`javax.xml.stream`) (cursor-based event-driven state-dependent pull-style stream iteration) ([JSR-173](https://jcp.org/en/jsr/detail?id=173))
   + https://github.com/FasterXML/woodstox
   + The Sun Java Streaming XML Parser (SJSXP) (part of GlassFish) https://sjsxp.java.net/
   + An Introduction to StAX - http://www.xml.com/pub/a/2003/09/17/stax.html
-- Simple API for XML (SAX1/SAX2) (http://www.saxproject.org/)
+
+#### Simple API for XML (SAX1/SAX2) (http://www.saxproject.org/)
   + state-independent push-style stream iteration
-- TrAX
-- JAXB (data binding)
-- DOM
+
+#### TrAX
+
+#### JAXB (data binding)
+
+#### DOM
+DOM is an in-memory representation of a document tree. DOM follows *mixed content model*, i.e. allows intermixing of text and elements.
   + `org.w3c.dom`
-  + DOM follows *mixed content model*, i.e. allows intermixing of text and elements.
-- XOM 
-- DOM4j (http://www.dom4j.org)
-- JDOM (http://www.jdom.org)
-- Extensible Stylesheet Language Transformations (XSLT) (http://www.w3.org/TR/xslt)
+
+#### XOM 
+
+#### DOM4j (http://www.dom4j.org)
+
+#### JDOM (http://www.jdom.org)
+
+#### Extensible Stylesheet Language Transformations (XSLT) (http://www.w3.org/TR/xslt)
   + `javax.xml.transform`
-- XMLBeans
-- SOAP
+
+#### XMLBeans
+
+#### SOAP
 
 # JSON (Tree)
 
