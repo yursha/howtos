@@ -34,7 +34,7 @@ Grammar for writing serialized tree-structured mixed-content document text inclu
 ### DTD
 
 ## Java API for XML Processing (JAXP)
-- https://docs.oracle.com/javase/tutorial/jaxp/sax/events.html
+- https://docs.oracle.com/javase/tutorial/jaxp/dom/validating.html
 - Project JAXP (part of Project GlassFish) - https://jaxp.java.net
 
 ### Stream Iteration
