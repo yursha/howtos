@@ -3,6 +3,10 @@ Data Formats (structured/unstructured)
 
 # Unstructured Text Formats
 
+## Regular Expressions
+- `java.util.regex`
+
+
 # Structured Text Formats (Tree | Table)
 - **Parser** - parses text into tokens. Only *well-formed* text is parseable.
   + bidirectional vs unidirectional
