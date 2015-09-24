@@ -11,13 +11,13 @@
 
 # Tree
 
-A tree is a special kind of a graph.
+A tree is a directed acyclic graph representing a hierarchy (nestedness).
 
 - file systems
 - XML/HTML
 - AST
 
-## Tree Node Addressing Schemes
+A tree may have an associated **node addressing scheme**:
 - file path
 - XPath
 - dot-notation
