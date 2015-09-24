@@ -23,12 +23,7 @@ A tree may have an associated **node selection scheme**:
 - file path, shell wildcard expansion, POSIX `find`
 - XPath - http://www.w3.org/TR/xpath/
 - dot-notation
-- URL/URI/URN
-  + http
-  + udp
-  + git
-  + ssh
-  + ftp
+- URL/URI/URN (http, udp, git, ssh, ftp, etc.)
 
 Most of the node selection schemes deal with the following **concepts**:
 - Absolute path
