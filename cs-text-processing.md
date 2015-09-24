@@ -63,7 +63,7 @@ Grammar for writing serialized tree-structured mixed-content document text inclu
 #### JAXB (data binding)
 
 #### DOM
-DOM is an in-memory representation of a document tree (XML, HTML) or a data tree (XML).
+DOM is an in-memory tree representation of a document (XML, HTML) or data (XML).
 - Document (mixed) content model (allows intermixing of text and elements).
 - `org.w3c.dom`
 - http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/
