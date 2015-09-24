@@ -1,13 +1,13 @@
 Data Formats (structured/unstructured)
 ===================
 
-# Unstructured Text Formats
+# Unstructured Serialized Text Formats
 
 ## Regular Expressions
 - `java.util.regex`
 
 
-# Structured Text Formats (Tree | Table)
+# Structured Serialized Text Formats (Tree | Table)
 - **Parser** - parses structured text into tokens and creates an in-memory representation. Only *well-formed* text is parseable.
   + bidirectional vs unidirectional
   + validating vs non-validating (against DTD, Schema, etc.). Validation mechanisms allow to add additional constraints beyond bare syntax.
@@ -23,12 +23,12 @@ Data Formats (structured/unstructured)
 - **Tree Traversal**
   + builds an in-memory tree structure
 
-# XML (Tree)
+# XML (Grammar for writing serialized tree-structured mixed-content text including DTDs, elements, attributes, comments, entity references and processing instructions)
 - Sample XML files - https://jaxp.java.net/downloads.html
 
 ## Validation
 
-### XSD
+### XSD (instance of XML document)
 - http://www.w3.org/TR/xmlschema-0/
 - http://www.w3.org/TR/xmlschema11-1/
 - http://www.w3.org/TR/xmlschema11-2/
