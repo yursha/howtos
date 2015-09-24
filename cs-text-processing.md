@@ -64,8 +64,10 @@ DOM is an in-memory representation of a document tree (XML, HTML). DOM follows *
 #### XOM 
 
 #### DOM4j (http://www.dom4j.org)
+Non-mixed content model
 
 #### JDOM (http://www.jdom.org)
+Non-mixed content model
 
 #### Extensible Stylesheet Language Transformations (XSLT) (http://www.w3.org/TR/xslt)
   + `javax.xml.transform`
