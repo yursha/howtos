@@ -23,7 +23,8 @@ Data Formats (structured/unstructured)
 - **Tree Traversal**
   + builds an in-memory tree structure
 
-# XML (Grammar for writing serialized tree-structured mixed-content text including DTDs, elements, attributes, comments, entity references and processing instructions)
+# XML
+Grammar for writing serialized tree-structured mixed-content text including DTDs, elements, attributes, comments, entity references and processing instructions.
 - Sample XML files - https://jaxp.java.net/downloads.html
 
 ## Validation
