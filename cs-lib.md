@@ -1,6 +1,11 @@
 # Boolean 
 (not, and, or, xor, nand, nor)
 
+# Bit (extends boolean)
+- shiftRight
+- shiftLeft
+- zeroShiftRigth
+
 # Math
 - sum
 - abs
