@@ -20,7 +20,7 @@
 - Streaming API for XML (StAX) (`javax.xml.stream`) (cursor-based event-driven state-dependent pull-style stream iteration) (JSR-173)
   + https://github.com/FasterXML/woodstox
   + The Sun Java Streaming XML Parser (SJSXP) (part of GlassFish) https://sjsxp.java.net/
-- Simple API for XML (SAX) (http://www.saxproject.org/)
+- Simple API for XML (SAX1/SAX2) (http://www.saxproject.org/)
   + state-independent push-style stream iteration
 - TrAX
 - JAXB (data binding)
