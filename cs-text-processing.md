@@ -97,3 +97,5 @@ DOM is an in-memory tree representation of a document (XML, HTML) or data (XML).
 - https://github.com/google/gson
 
 # CSV (Table)
+
+# LDIF (LDAP Data Interchange Format)
