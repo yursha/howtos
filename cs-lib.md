@@ -28,6 +28,7 @@
 - previous
 
 # Tree
+(context = node in a collection)
 - parent
 - children
 - nextSibling
