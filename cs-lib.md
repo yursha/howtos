@@ -23,11 +23,15 @@
 - size / length
 
 # Positional
-- first
-- lasrt
-- nth
+- nth (first, last)
 - next
 - previous
+
+# Tree
+- parent
+- children
+- nextSibling
+- previousSibling
 
 # String
 - concat
