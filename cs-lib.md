@@ -1,3 +1,6 @@
+# Boolean 
+(not, and, or, xor, nand, nor)
+
 # Math
 - sum
 - abs
@@ -13,9 +16,6 @@
 - reduce
 - sum
 - size / length
-
-# Boolean
-- not
 
 # Positional
 - first
