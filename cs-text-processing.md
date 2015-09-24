@@ -64,6 +64,7 @@ DOM is an in-memory tree representation of a document (XML, HTML) or data (XML).
 - Document (mixed) content model (allows intermixing of text and elements).
 - `org.w3c.dom`
 - http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/
+- http://www.w3.org/DOM/
 
 #### XOM 
 
