@@ -24,7 +24,7 @@ Data Formats (structured/unstructured)
 
 ## Java API for XML Processing (JAXP)
 ### Resources
-- https://docs.oracle.com/javase/tutorial/jaxp/index.html
+- https://docs.oracle.com/javase/tutorial/jaxp/sax/validation.html
 - Project JAXP (part of Project GlassFish) - https://jaxp.java.net
 
 ### Libraries
