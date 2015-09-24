@@ -18,11 +18,12 @@ A tree is a DAG representing a hierarchy (nestedness).
 - file systems
 - XML/HTML
 - AST
+- INI file
 
 A tree may have an associated **node selection scheme**:
 - file path, shell wildcard expansion, POSIX `find`
 - XPath - http://www.w3.org/TR/xpath/
-- dot-notation
+- dot-notation (INI files, property path)
 - URL/URI/URN (http, udp, git, ssh, ftp, etc.)
 
 Most of the node selection schemes deal with the following **concepts**:
