@@ -23,12 +23,20 @@ Data Formats (structured/unstructured)
 - Sample XML files - https://jaxp.java.net/downloads.html
 
 ## Validation
-(XSD, RELAX NG, Schematron, DTD)
 
 ### XSD
 - http://www.w3.org/TR/xmlschema-0/
 - http://www.w3.org/TR/xmlschema11-1/
 - http://www.w3.org/TR/xmlschema11-2/
+- http://www.w3.org/XML/Schema
+
+### Relax NG
+- https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=relax-ng
+
+### Schematron
+- http://xml.ascc.net/resource/schematron/schematron.html
+
+### DTD
 
 ## Java API for XML Processing (JAXP)
 ### Resources
@@ -39,6 +47,7 @@ Data Formats (structured/unstructured)
 - Streaming API for XML (StAX) (`javax.xml.stream`) (cursor-based event-driven state-dependent pull-style stream iteration) ([JSR-173](https://jcp.org/en/jsr/detail?id=173))
   + https://github.com/FasterXML/woodstox
   + The Sun Java Streaming XML Parser (SJSXP) (part of GlassFish) https://sjsxp.java.net/
+  + An Introduction to StAX - http://www.xml.com/pub/a/2003/09/17/stax.html
 - Simple API for XML (SAX1/SAX2) (http://www.saxproject.org/)
   + state-independent push-style stream iteration
 - TrAX
