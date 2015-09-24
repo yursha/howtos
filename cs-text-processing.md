@@ -66,6 +66,8 @@ DOM is an in-memory representation of a document tree (XML, HTML). DOM follows *
 #### DOM4j (http://www.dom4j.org)
 Non-mixed content model
 
+A program that works on fixed, internally generated data can afford to make simplifying assumptions: that processing instructions, comments, CDATA nodes, and entity references will not exist in the data structure. This allows for simpler and faster processing. **DOM4j** and **JDOM** are tailored to work with those simplifications in mind.
+
 #### JDOM (http://www.jdom.org)
 Non-mixed content model
 
