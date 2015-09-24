@@ -6,7 +6,7 @@ Data Formats (structured/unstructured)
 # Structured Text Formats
 - **Parser** - parses text into tokens. Only *well-formed* text is parseable.
   + bidirectional vs unidirectional
-  + validating vs non-validating (against DTD, Schema, etc.)
+  + validating vs non-validating (against DTD, Schema, etc.). Validation mechanisms allow to add additional constraints beyond bare syntax.
 - **Generator** - generates text from tokens?
 
 ## Three ways to parse structured data formats.
@@ -23,6 +23,7 @@ Data Formats (structured/unstructured)
 - Sample XML files - https://jaxp.java.net/downloads.html
 
 ## Validation
+(XSD, RELAX NG, Schematron, DTD)
 
 ### XSD
 - http://www.w3.org/TR/xmlschema-0/
@@ -31,7 +32,7 @@ Data Formats (structured/unstructured)
 
 ## Java API for XML Processing (JAXP)
 ### Resources
-- https://docs.oracle.com/javase/tutorial/jaxp/sax/validation.html
+- https://docs.oracle.com/javase/tutorial/jaxp/sax/events.html
 - Project JAXP (part of Project GlassFish) - https://jaxp.java.net
 
 ### Libraries
