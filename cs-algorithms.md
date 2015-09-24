@@ -21,5 +21,5 @@ A tree is a DAG representing a hierarchy (nestedness).
 
 A tree may have an associated **node addressing scheme**:
 - file path
-- XPath
+- XPath - http://www.w3.org/TR/xpath/
 - dot-notation
