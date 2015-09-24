@@ -4,7 +4,7 @@ Data Formats (structured/unstructured)
 # Unstructured Text Formats
 
 # Structured Text Formats
-- **Parser** - parses text into tokens.
+- **Parser** - parses text into tokens. Only *well-formed* text is parseable.
   + bidirectional vs unidirectional
   + validating vs non-validating (against DTD, Schema, etc.)
 - **Generator** - generates text from tokens?
