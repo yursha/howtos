@@ -54,6 +54,7 @@ Data Formats (structured/unstructured)
 - JAXB (data binding)
 - DOM
   + `org.w3c.dom`
+  + DOM follows *mixed content model*, i.e. allows intermixing of text and elements.
 - XOM 
 - DOM4j (http://www.dom4j.org)
 - JDOM (http://www.jdom.org)
