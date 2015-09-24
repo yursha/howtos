@@ -24,7 +24,7 @@ Data Formats (structured/unstructured)
   + builds an in-memory tree structure
 
 # XML
-Grammar for writing serialized tree-structured mixed-content text including DTDs, elements, attributes, comments, entity references and processing instructions.
+Grammar for writing serialized tree-structured mixed-content document text including DTDs, elements, attributes, comments, entity references and processing instructions. Can be reduced to simple-content data text. A program that works on fixed, internally generated data can afford to make simplifying assumptions: that processing instructions, comments, CDATA nodes, and entity references will not exist in the data structure. This allows for simpler and faster processing. **DOM4j** and **JDOM** are tailored to work with those simplifications in mind.
 - Sample XML files - https://jaxp.java.net/downloads.html
 
 ## Validation
@@ -71,8 +71,6 @@ DOM is an in-memory representation of a document tree (XML, HTML).
 
 #### DOM4j (http://www.dom4j.org)
 - Data (non-mixed) content model
-
-A program that works on fixed, internally generated data can afford to make simplifying assumptions: that processing instructions, comments, CDATA nodes, and entity references will not exist in the data structure. This allows for simpler and faster processing. **DOM4j** and **JDOM** are tailored to work with those simplifications in mind.
 
 #### JDOM (http://www.jdom.org)
 - Data (non-mixed) content model
