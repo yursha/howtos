@@ -8,7 +8,7 @@ Data Formats (structured/unstructured)
 
 
 # Structured Text Formats (Tree | Table)
-- **Parser** - parses text into tokens. Only *well-formed* text is parseable.
+- **Parser** - parses structured text into tokens and creates an in-memory representation. Only *well-formed* text is parseable.
   + bidirectional vs unidirectional
   + validating vs non-validating (against DTD, Schema, etc.). Validation mechanisms allow to add additional constraints beyond bare syntax.
 - **Generator** - generates text from tokens?
