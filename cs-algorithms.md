@@ -7,11 +7,13 @@
 - binary heap (priority queue)
 - hash table
 - graph
+  + directed / not
+  + acyclic / not
 - BST
 
 # Tree
 
-A tree is a directed acyclic graph representing a hierarchy (nestedness).
+A tree is a DAG representing a hierarchy (nestedness).
 
 - file systems
 - XML/HTML
