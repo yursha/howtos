@@ -20,6 +20,7 @@ Data Formats (structured/unstructured)
   + builds an in-memory tree structure
 
 # XML
+- Sample XML files - https://jaxp.java.net/downloads.html
 
 ## Java API for XML Processing (JAXP)
 ### Resources
