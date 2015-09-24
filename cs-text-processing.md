@@ -48,7 +48,7 @@ Grammar for writing serialized tree-structured mixed-content document text inclu
 - https://docs.oracle.com/javase/tutorial/jaxp/sax/events.html
 - Project JAXP (part of Project GlassFish) - https://jaxp.java.net
 
-### Libraries
+### Stream Iteration
 
 #### Streaming API for XML (StAX) (`javax.xml.stream`) (cursor-based event-driven state-dependent pull-style stream iteration) ([JSR-173](https://jcp.org/en/jsr/detail?id=173))
   + https://github.com/FasterXML/woodstox
@@ -61,6 +61,8 @@ Grammar for writing serialized tree-structured mixed-content document text inclu
 #### TrAX
 
 #### JAXB (data binding)
+
+### Building in-memory tree and graph respresentations
 
 #### DOM
 DOM is an in-memory tree representation of a document (XML, HTML) or data (XML).
