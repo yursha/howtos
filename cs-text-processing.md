@@ -19,7 +19,7 @@ Data Formats (structured/unstructured)
 - **Tree Traversal**
   + builds an in-memory tree structure
 
-# XML
+# XML (Tree)
 - Sample XML files - https://jaxp.java.net/downloads.html
 
 ## Validation
@@ -62,7 +62,7 @@ Data Formats (structured/unstructured)
 - XMLBeans
 - SOAP
 
-# JSON
+# JSON (Tree)
 
 ## Big JSON files
 - https://github.com/zeMirco/sf-city-lots-json
@@ -77,3 +77,5 @@ Data Formats (structured/unstructured)
 
 ### GSON
 - https://github.com/google/gson
+
+# CSV (Table)
