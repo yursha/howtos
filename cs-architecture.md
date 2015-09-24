@@ -1,9 +1,3 @@
-# Text Processing
-- **Parser** - parses text into tokens.
-  + bidirectional vs unidirectional
-  + validating vs non-validating (against DTD, Schema, etc.)
-- **Generator** - generates text from tokens?
-
 # UI
 
 ## Controller
