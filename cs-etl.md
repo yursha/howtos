@@ -4,7 +4,7 @@
 Tranformation from one serialized format to another.
 
 ## XSLT
-Extensible Stylesheet Language Transformations 
+Extensible Stylesheet Language for Transformations 
 - http://www.w3.org/TR/xslt
 - http://www.w3.org/TR/xslt20/
 - `javax.xml.transform`
