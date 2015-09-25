@@ -10,6 +10,7 @@ Character comparisons - case sensitivity.
 - capturing parentheses
 - quantifiers
 - character classes
+- anchors
 - lookahead directives
 
 ## implementations
