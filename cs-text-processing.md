@@ -9,7 +9,7 @@ Character comparisons - case sensitivity.
 - literals
 - capturing parentheses
 - quantifiers
-- character classes
+- character classes (inclusive/exclusive)
 - anchors
 - lookahead directives
 
