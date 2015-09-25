@@ -53,3 +53,8 @@
 
 # Collection
 - size / length
+- irerator
+
+# Iterator (cursor)
+- hasNext
+- next
