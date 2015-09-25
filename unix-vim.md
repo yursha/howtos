@@ -51,3 +51,6 @@
 - `:bd` - close the current file and return to previous
 - `:q` - quit vim
 - `:w` - save changes
+
+# Commands
+- `:range s[ubstitute]/pattern/string/cgiI`
