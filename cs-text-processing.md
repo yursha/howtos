@@ -7,11 +7,12 @@ Character comparisons - case sensitivity.
 
 ## Regular Expressions
 - literals
-- capturing parentheses
+- capturing parentheses (backreferences)
 - quantifiers (greedy / non-greedy)
 - character classes (inclusive / exclusive)
 - anchors
 - lookahead directives
+- alternations
 
 ## implementations
 - `java.util.regex`
