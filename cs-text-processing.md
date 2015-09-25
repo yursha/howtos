@@ -8,8 +8,8 @@ Character comparisons - case sensitivity.
 ## Regular Expressions
 - literals
 - capturing parentheses
-- quantifiers
-- character classes (inclusive/exclusive)
+- quantifiers (greedy / non-greedy)
+- character classes (inclusive / exclusive)
 - anchors
 - lookahead directives
 
