@@ -6,6 +6,13 @@ Data Formats (structured/unstructured)
 Character comparisons - case sensitivity.
 
 ## Regular Expressions
+- literals
+- capturing parentheses
+- quantifiers
+- character classes
+- lookahead directives
+
+## implementations
 - `java.util.regex`
 
 
