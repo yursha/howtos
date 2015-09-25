@@ -1,4 +1,5 @@
 - http://vim.wikia.com/wiki/Vim_Tips_Wiki
+- http://vimregex.com/
 - http://learnvimscriptthehardway.stevelosh.com/
 - http://www.vim.org/docs.php
 - https://github.com/vim/vim
