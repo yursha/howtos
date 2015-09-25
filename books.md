@@ -1,2 +1,5 @@
 - Michael Kay's XSLT 2.0 and XPath 2.0: Programmer's Reference (Wrox, 2008)
+- Jeffrey Friedl's "Mastering Regular Expressions" published by O'Reilly & Associates
+- "Learning the vi Editor" by Linda Lamb and Arnold Robbins
+- "vi Improved - VIM" by Steve Oualline
 - http://youmightnotneedjquery.com/
