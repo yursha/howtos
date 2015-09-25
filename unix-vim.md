@@ -3,10 +3,13 @@
 - http://www.vim.org/docs.php
 - https://github.com/vim/vim
 
+# Gotchas
+- **Line terminator vs line separator confusion**. Vim automatically adds a newline at the end of each file it edits. To prevent this behaviour for file open in binary mode (`vim -b path/to/file`) we should disable `eol` boolean configuration variable.
+
 ## Plugin Manager for Vim
 - [Vundle](https://github.com/VundleVim/Vundle.vim)
 
-## Variables
+## Configuration Variables
 ### Boolean
 - `ruler` - show current line, column and percentage of total document size
 - `number` - show line numbers
@@ -15,6 +18,7 @@
 - `expandtab`- insert spaces on <kbd>tab</kbd> button press
 - `backup` - create backup `.swp` files while editing
 - `list` - display new line characters
+- `eol` - append line feed (10) character when saving files.
 
 ### Integer
 - `tabstop=4`
