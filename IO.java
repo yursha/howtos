@@ -6,8 +6,8 @@ import java.nio.charset.StandardCharsets;
 
 public class IO {
 
-  public static String readResourceIntoString(String resource) throws IOException {
-    try (InputStreamReader reader = new InputStreamReader(ClassLoader.getSystemResourceAsStream(resource), StandardCharsets.UTF_8)) {
+  public static String readStringFromResource WithEncoding(String resource, Charset encoding) throws IOException {
+    try (InputStreamReader reader = new InputStreamReader(ClassLoader.getSystemResourceAsStream(resource), encoding)) {
       char[] cbuf = new char[4096]; // 8KiB
       StringBuilder chars = new StringBuilder();
 
@@ -19,7 +19,7 @@ public class IO {
     }
   }
   
-  public static byte[] readAllBytes(InputStream stream) throws IOException {
+  public static byte[] readAllBytesFromStream(InputStream stream) throws IOException {
     byte[] buf = new byte[8192]; // 8KiB
     ByteArrayOutputStream resizingByteArray = new ByteArrayOutputStream();
     
@@ -28,6 +28,18 @@ public class IO {
       resizingByteArray.write(buf, 0, count);
     }
     return resizingByteArray.toByteArray();
+  }
+  
+  public static void writeStringToFileWithEncoding(String str, String filepath, String encoding) throws IOException {
+    try (PrintWriter writer = new PrintWriter(filepath, encoding)) {
+      writer.print(str);
+    }
+  }
+  
+  public static void writeBytesToFile(byte[] bytes, String filepath) throws IOException {
+    try (FileOutputStream out = new FileOutputStream(filepath)) {
+      out.write(bytes);
+    }
   }
   
 }
