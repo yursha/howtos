@@ -56,3 +56,4 @@
 
 # Commands
 - `:range s[ubstitute]/pattern/string/cgiI`
+- `:g/^\s*$/d`
