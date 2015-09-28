@@ -57,3 +57,10 @@
 # Commands
 - `:range s[ubstitute]/pattern/string/cgiI`
 - `:g/^\s*$/d`
+
+
+## Delete lines from 65 to 126 if cursor is on line 65
+- `d126G`
+- `65,126d`
+- `:.,126d`
+- `:,126d`
