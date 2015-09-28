@@ -1,6 +1,6 @@
 # Search
 - search.maven.org
-- http://mvnrepository.com - provides useful statistics (e.g. number of usages), classifies packages by role (e.g. JSON libraries)
+- http://mvnrepository.com - provides useful popularity statistics (e.g. number of dependant packages), classifies packages by category (e.g. JSON libraries)
 
 
 # Configuration
