@@ -64,3 +64,6 @@
 - `65,126d`
 - `:.,126d`
 - `:,126d`
+
+## Info
+- `:f` - see info about file
