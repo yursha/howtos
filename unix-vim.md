@@ -29,6 +29,7 @@
 - `eol` - append line feed (10) character when saving files.
 - `ignorecase` - whether searches are case-sensitive by default.
 - `incsearch` - move cursor while typing a search pattern. Use `Ctrl-L` to insert next char in the match or `Ctrl-r,Ctrl-w` to complete a word match.
+- `cursorline` - highlight cursor line
 
 ### Integer
 - `tabstop=4`
