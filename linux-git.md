@@ -12,3 +12,6 @@
 
 # History
 - `% git log --format="%s" v0.1.0..v0.1.1` - see commits between 2 tags
+
+# Diff
+- http://stackoverflow.com/questions/3368590/show-diff-between-commits/29374476#29374476
