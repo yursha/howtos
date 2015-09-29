@@ -51,6 +51,9 @@
 ### Regex
 - Enclose a string into `\<` and `\>` to impose a word context.
 
+### Gotchas
+- Empty search will perform the last search. It works across `/`, `:s` and `:g`. So you can search with `/` and then substitute with `:s` by not specifying the search pattern.
+
 ## Compare
 - See differences between the original file and the current buffer.
 ```
