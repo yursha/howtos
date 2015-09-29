@@ -38,7 +38,10 @@
 - `gg=G` - reformat/reindent text
 - Put `filetype plugin indent on` into `~/.vimrc` - enable java indentation
 
-## Search
+## Search and replace
+- `/`, `?` - start search from current line
+- `n`, `N` - next / previous match
+- `ggn`, `GN` - first / last match
 - `:%s/\n//gc` - replace newlines
 
 ## Compare
