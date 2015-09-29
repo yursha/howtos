@@ -67,3 +67,6 @@
 
 ## Info
 - `:f` - see info about file
+
+## Buffer switching
+- `:ls` - list buffers
