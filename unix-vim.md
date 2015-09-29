@@ -39,7 +39,9 @@
 - Put `filetype plugin indent on` into `~/.vimrc` - enable java indentation
 
 ## Search and replace
-- `/`, `?` - start search from current line
+- `/`, `?` - start search forward / backward from current line
+- `*`, `#` - search **word** under the cursor forward / backward
+- `g*`, `g#` - search **word** under the cursor or **compound words** forward / backward
 - `n`, `N` - next / previous match
 - `ggn`, `GN` - first / last match
 - `:%s/\n//gc` - replace newlines
