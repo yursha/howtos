@@ -26,6 +26,7 @@
 - `list` - display new line characters
 - `eol` - append line feed (10) character when saving files.
 - `ignorecase` - whether searches are case-sensitive by default.
+- `incsearch` - move cursor while typing a search pattern.
 
 ### Integer
 - `tabstop=4`
