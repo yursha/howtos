@@ -39,9 +39,9 @@
 - Put `filetype plugin indent on` into `~/.vimrc` - enable java indentation
 
 ## Search and replace
-- `/`, `?` - start search forward / backward from current line
-- `*`, `#` - search **word** under the cursor forward / backward
-- `g*`, `g#` - search **word** under the cursor or **compound words** forward / backward
+- `/`, `?` - start search forward / backward from current line. Use <kdb>Arrow Up</kdb> and <kdb>Arrow Down</kbd> keys to scroll thru search history.
+- `*`, `#` - search **word** under the cursor in word context forward / backward
+- `g*`, `g#` - search **word** under the cursor in all contexts forward / backward
 - `n`, `N` - next / previous match
 - `ggn`, `GN` - first / last match
 - `:%s/\n//gc` - replace newlines
