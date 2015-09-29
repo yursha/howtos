@@ -58,6 +58,12 @@
 
 ### Regex
 - Enclose a string into `\<` and `\>` to impose a word context.
+- `*` - greedy match, `\{-}` - non-greedy match
+
+### Examples
+- `:%s/^\(\s*\)incrementSuspects(\(.\{-}\),.*"\(.*\)");$/\0\r\1table.error("\3", \2);/g`
+Find all calls to `incrementSuspects`, remember the indentation, first and last parameters.
+Add a new line preserving the indentation with a call to `table.error` and remembered parameters.
 
 ### Gotchas
 - Empty search will perform the last search. It works across `/`, `:s` and `:g`. So you can search with `/` and then substitute with `:s` by not specifying the search pattern.
