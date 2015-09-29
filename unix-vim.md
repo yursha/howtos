@@ -25,6 +25,7 @@
 - `backup` - create backup `.swp` files while editing
 - `list` - display new line characters
 - `eol` - append line feed (10) character when saving files.
+- `ignorecase` - whether searches are case-sensitive by default.
 
 ### Integer
 - `tabstop=4`
@@ -48,6 +49,9 @@
 - <kbd>Ctrl</kbd>+<kbd>r</kbd>;<kbd>Ctrl</kbd>+<kbd>w</kbd> (or <kbd>r</kbd>) - copy a word into command line
 - `:%s/\n//gc` - replace newlines
 - `:g/pattern` - show all lines matching the pattern
+- `/pattern/e` - search-offset - position the cursor at the end of the match
+- `/\%d65`, `/\%x41`, `/\%u2013`, `/\%d8211` - Searching for chars by their code value.
+- `/the\C`, `/the\c` - force pattern case-(in)sensitivity
 
 ### Regex
 - Enclose a string into `\<` and `\>` to impose a word context.
