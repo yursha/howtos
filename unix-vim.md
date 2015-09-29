@@ -69,4 +69,5 @@
 - `:f` - see info about file
 
 ## Buffer switching
-- `:ls` - list buffers
+- `:ls` or `:ls!` - list buffers (also `:buffers`, `:files`)
+- `:b2` - swith to second buffer (also `:bu` or `:buf` or `:buffer`)
