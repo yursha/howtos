@@ -47,6 +47,7 @@
 - <kbd>Ctrl</kbd>+<kbd>o</kbd>, <kbd>Ctrl</kbd>+<kbd>i</kbd> - jump to previous/next cursor position
 - <kbd>Ctrl</kbd>+<kbd>r</kbd>;<kbd>Ctrl</kbd>+<kbd>w</kbd> (or <kbd>r</kbd>) - copy a word into command line
 - `:%s/\n//gc` - replace newlines
+- `:g/pattern` - show all lines matching the pattern
 
 ### Regex
 - Enclose a string into `\<` and `\>` to impose a word context.
