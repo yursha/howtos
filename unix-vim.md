@@ -71,3 +71,4 @@
 ## Buffer switching
 - `:ls` or `:ls!` - list buffers (also `:buffers`, `:files`)
 - `:b2` - swith to second buffer (also `:bu` or `:buf` or `:buffer`)
+- `:b My` - switch to `MyClass` file (can be abbreviated)
