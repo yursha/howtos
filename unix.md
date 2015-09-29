@@ -2,3 +2,6 @@
 
 System calls errno explanations
 - `man 2 intro`
+
+# Tools
+- `awk` and `sed` are stream oriented - they only read the file forward from beginning to end while `vim` is buffer oriented - you can move forward and backward in the file as you like.
