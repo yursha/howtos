@@ -44,7 +44,7 @@
 - `g*`, `g#` - search **word** under the cursor in all contexts forward / backward
 - `n`, `N` - next / previous match
 - `ggn`, `GN` - first / last match
-- <kbd>Ctrl</kbd>+<kbd>o</kbd> - jump back to position before search
+- <kbd>Ctrl</kbd>+<kbd>o</kbd> - jump back to previous cursor position
 - <kbd>Ctrl</kbd>+<kbd>r</kbd>,<kbd>Ctrl</kbd>+<kbd>w</kbd> (or <kbd>r</kbd>) - copy a word into command line
 - `:%s/\n//gc` - replace newlines
 
