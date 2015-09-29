@@ -8,6 +8,7 @@
 - http://learnvimscriptthehardway.stevelosh.com/
 - http://www.vim.org/docs.php
 - https://github.com/vim/vim
+- http://ex-vi.sourceforge.net/
 
 # Gotchas
 - **Line terminator vs line separator confusion**. Vim automatically adds a newline at the end of each file it edits. To prevent this behaviour for file open in binary mode (`vim -b path/to/file`) we should disable `eol` boolean configuration variable.
