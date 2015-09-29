@@ -1,4 +1,6 @@
 - http://vim.wikia.com/wiki/Vim_Tips_Wiki
+- http://vimhelp.appspot.com/
+- https://en.wikibooks.org/wiki/Learning_the_vi_Editor
 - http://vimregex.com/
 - http://www.radford.edu/~mhtay/CPSC120/VIM_Editor_Commands.htm
 - http://learnvimscriptthehardway.stevelosh.com/
