@@ -46,6 +46,9 @@
 - `ggn`, `GN` - first / last match
 - `:%s/\n//gc` - replace newlines
 
+### Regex
+- Encose a string into `\<` and `\>` to impose a word context.
+
 ## Compare
 - See differences between the original file and the current buffer.
 ```
