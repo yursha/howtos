@@ -103,3 +103,5 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 - `:ls` or `:ls!` - list buffers (also `:buffers`, `:files`)
 - `:b2` - swith to second buffer (also `:bu` or `:buf` or `:buffer`)
 - `:b MyCl` - switch to `MyClass` file (any part of file name can match with stronger preference for the matches from the beginning). <kbd>Tab</kbd> can be used to autocomplete and to cycle thru matching names. Use <kbd>Ctrl</kbd> + <kbd>D</kbd> to list all matching names at once.
+
+- `:bufdo %s/pattern/replace/ge | update` - search and replace in all open buffers. 
