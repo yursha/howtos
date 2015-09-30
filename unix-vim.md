@@ -101,4 +101,5 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 - `:e path/to/file` - create a buffer with associated file path (if file exists then read from it)
 - `:q` - quit vim
 - `:w` - save changes (`ZZ` is equal to `:wq`)
+- `:saveas 'filepath'` - clone buffer and save it to a different filepath
 - `:bufdo %s/pattern/replace/ge | update` - search and replace in all open buffers. 
