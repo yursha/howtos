@@ -20,6 +20,7 @@ $ man git-<verb>
 - **checkout** - decompressed snapshot in the working directory
 - **tracked files** - files that are in the last snapshot
 - **remote** (`https://`, `git://`, `user@server:path/to/repo.git` (ssh))
+- three-way merging
 
 # Areas
 - **Working Directory** - modified files
