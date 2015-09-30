@@ -3,11 +3,16 @@
 - **distributed** (Git, Mercurial, Bazaar, Darcs)  and **centralized** (CVS, Subversion, Perforce) VCS differ in where all the deltas and associated metadata are stored.
 - **difference-based** (CVS, Subversion, Perforce, Bazaar) vs **snapshot-based** (Git)
 - **branch**
-- **commit**
+- **commit/snapshot**
 - **stashing**
 - **commit ammending**
 - **patch** - file format representing difference between files
 - **workflow**
+
+# Areas
+- **Working Directory** - modified files
+- **Staging Area** - staged files
+- **Repository (.git) - committed files
 
 # Staging
 
