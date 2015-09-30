@@ -80,12 +80,6 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 - `:args src/main/java/**/*.java | argdo :%s/\s\+$//g | update` - remove all trailing whitespace
 - `:args src/main/java/**/*.java | argdo set ff=unix | update` - convert all line terminators to unix (LF)
 
-## File navigation
-- `:o path/to/file` - open another file (requires save of changes before this)
-- `:bd` - close the current file and return to previous
-- `:q` - quit vim
-- `:w` - save changes
-
 # Commands
 - `:range s[ubstitute]/pattern/string/cgiI`
 - `:g/^\s*$/d`
@@ -97,12 +91,14 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 - `:.,126d`
 - `:,126d`
 
-## Info
-- `:f` - see info about file
 
-## Buffer switching
-- `:ls` or `:ls!` - list buffers (also `:buffers`, `:files`)
+## Buffers
+- `:ls` or `:ls!` - list in memory buffers
+- `:f` - see info about current buffer
+- `:bd` - delete buffer from memory
 - `:b2` - swith to second buffer (also `:bu` or `:buf` or `:buffer`)
 - `:b MyCl` - switch to `MyClass` file (any part of file name can match with stronger preference for the matches from the beginning). <kbd>Tab</kbd> can be used to autocomplete and to cycle thru matching names. Use <kbd>Ctrl</kbd> + <kbd>D</kbd> to list all matching names at once.
-
+- `:e path/to/file` - create a buffer with associated file path (if file exists then read from it)
+- `:q` - quit vim
+- `:w` - save changes (`ZZ` is equal to `:wq`)
 - `:bufdo %s/pattern/replace/ge | update` - search and replace in all open buffers. 
