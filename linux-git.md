@@ -17,6 +17,7 @@ $ man git-<verb>
 - **patch** - file format representing difference between files
 - **workflow**
 - **checkout** - decompressed snapshot in the working directory
+- **tracking files**
 
 # Areas
 - **Working Directory** - modified files
@@ -38,16 +39,17 @@ $ man git-<verb>
   + `.git/index`
 
 # Commands
-- `% git clone` - copy `.git` folder.
+- `% git clone` - download/copy `.git` folder.
+- `% git init` - create new `.git` folder with skeleton contents
+- `% git push` - upload `.git` folder.
+- `% git pull` - download `.git` folder
+- `% git rm --cached -r` - ??? 
+- `% git add -A` - stage all
+- `% git reset HEAD *` - unstage all
+- `% git reset HEAD *.swp` - unstage all `.swp` files
+- `% git commit -m 'my message'`
 
-# Staging
-
-- `> git rm --cached -r` - ??? 
-- `> git add -A` - stage all
-- `> git reset HEAD *` - unstage all
-- `> git reset HEAD *.swp` - unstage all `.swp` files
-
-# Configuration
+## Configuration
 - `% git config --global user.name 'Alex Yursha'`
 - `% git config --global user.email 'alexyursha@example.com'`
 - `% git config --global core.editor vim`
