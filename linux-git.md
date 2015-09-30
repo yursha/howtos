@@ -26,11 +26,9 @@
 - `> git reset HEAD *.swp` - unstage all `.swp` files
 
 # Configuration
-
-- `% git config --global --unset <config.key>` - unset a configuration key globally
-- `% git config --global <config.key> <value>` - set a configuration key globally
 - `% git config --global user.name 'Alex Yursha'`
 - `% git config --global user.email 'alexyursha@example.com'`
+- `% git config --global core.editor vim`
 
 # History
 - `% git log --format="%s" v0.1.0..v0.1.1` - see commits between 2 tags
