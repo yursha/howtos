@@ -1,5 +1,4 @@
 # Terminology
-- **integrity** - Everything in Git is check-summed before it is stored and is then referred to by that checksum. You can’t lose information in transit or get file corruption without Git being able to detect it. The mechanism that Git uses for this checksumming is called a SHA-1 hash. This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git. Git stores everything in its database not by file name but by the hash value of its contents. Git generally only adds data.
 - **distributed** (Git, Mercurial, Bazaar, Darcs)  and **centralized** (CVS, Subversion, Perforce) VCS differ in where all the deltas and associated metadata are stored.
 - **difference-based** (CVS, Subversion, Perforce, Bazaar) vs **snapshot-based** (Git)
 - **branch**
@@ -12,7 +11,7 @@
 # Areas
 - **Working Directory** - modified files
 - **Staging Area** - staged files
-- **Repository (.git) - committed files
+- **Repository (.git)** - committed files (metadata and object database). Git generally only adds data here. Everything in Git is check-summed before it is stored and is then referred to by that checksum for the purposed of **integrity**. You can’t lose information in transit or get file corruption without Git being able to detect it. The mechanism that Git uses for this checksumming is called a SHA-1 hash. This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git. Git stores everything in its database not by file name but by the hash value of its contents. 
 
 # Staging
 
