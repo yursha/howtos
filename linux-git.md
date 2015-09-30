@@ -5,6 +5,7 @@
 - **stashing**
 - **commit ammending**
 - **patch** - file format representing difference between files
+- **workflow**
 
 # Staging
 
