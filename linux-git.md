@@ -17,7 +17,7 @@ $ man git-<verb>
 - **patch** - file format representing difference between files
 - **workflow**
 - **checkout** - decompressed snapshot in the working directory
-- **tracking files**
+- **tracked files** - files that are in the last snapshot
 - **remote** (`https://`, `git://`, `user@server:path/to/repo.git` (ssh))
 
 # Areas
@@ -49,6 +49,7 @@ $ man git-<verb>
 - `% git reset HEAD *` - unstage all
 - `% git reset HEAD *.swp` - unstage all `.swp` files
 - `% git commit -m 'my message'`
+- `% git status` - check status of each file in the working folder.
 
 ## Configuration
 - `% git config --global user.name 'Alex Yursha'`
