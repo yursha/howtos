@@ -54,3 +54,6 @@
 
 # Deployment
 - **hot deployment** - deployment of code when an application continues to run.
+
+# Installing from source
+If you do want to install Git from source, you need to have the following libraries that Git depends on: `curl`, `zlib`, `openssl`, `expat`, and `libiconv`.
