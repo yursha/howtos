@@ -18,6 +18,7 @@ $ man git-<verb>
 - **workflow**
 - **checkout** - decompressed snapshot in the working directory
 - **tracking files**
+- **remote** (`https://`, `git://`, `user@server:path/to/repo.git` (ssh))
 
 # Areas
 - **Working Directory** - modified files
