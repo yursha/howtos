@@ -57,3 +57,20 @@
 
 # Installing from source
 If you do want to install Git from source, you need to have the following libraries that Git depends on: `curl`, `zlib`, `openssl`, `expat`, and `libiconv`.
+- https://www.kernel.org/pub/software/scm/git/
+- https://github.com/git/git/releases
+
+```
+$ tar -zxf git-2.0.0.tar.gz
+$ cd git-2.0.0
+$ make configure
+$ ./configure --prefix=/usr
+$ make all doc info
+$ sudo make install install-doc install-html install-info
+```
+
+After this is done, you can also get Git via Git itself for updates:
+
+```
+$ git clone git://git.kernel.org/pub/scm/git/git.git
+```
