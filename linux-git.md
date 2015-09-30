@@ -30,7 +30,7 @@ $ man git-<verb>
   + `.git/config` - repository local configuration
   + `.git/COMMIT_EDITMSG`
   + `.git/TAG_EDITMSG`
-  + `.git/FETCH_HEAD`
+  + `.git/FETCH_HEAD` - hashes of all branches heads for fetching (txt file)
   + `.git/HEAD`
   + `.git/ORIG_HEAD`
   + `.git/description`
