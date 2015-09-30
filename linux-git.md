@@ -50,6 +50,7 @@ $ man git-<verb>
 - `% git reset HEAD *.swp` - unstage all `.swp` files
 - `% git commit -m 'my message'`
 - `% git status` - check status of each file in the working folder.
+- `% git checkout -- <file>` - replace file with one from the latest snapshot (discard changes)
 
 ## Configuration
 - `% git config --global user.name 'Alex Yursha'`
