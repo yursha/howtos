@@ -7,6 +7,7 @@
 - **commit ammending**
 - **patch** - file format representing difference between files
 - **workflow**
+- **checkout** - single revived snapshot in the working directory
 
 # Areas
 - **Working Directory** - modified files
