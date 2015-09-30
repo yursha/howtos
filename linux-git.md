@@ -13,6 +13,7 @@
 - **Working Directory** - modified files
 - **Staging Area (index) - a special file in `.git`** - staged files (place where a new snapshot is being formed).
 - **`.git` repository** - committed files (compressed metadata and object database). Git generally only adds data here. Everything in Git is check-summed before it is stored and is then referred to by that checksum for the purposed of **integrity**. You can’t lose information in transit or get file corruption without Git being able to detect it. The mechanism that Git uses for this checksumming is called a SHA-1 hash. This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git. Git stores everything in its database not by file name but by the hash value of its contents. 
+  + `.git/config` - repository local configuration
 
 # Commands
 - `% git clone` - copy `.git` folder.
@@ -26,8 +27,10 @@
 
 # Configuration
 
-- `> git config --global --unset <config.key>` - unset a configuration key globally
-- `> git config --global <config.key> <value>` - set a configuration key globally
+- `% git config --global --unset <config.key>` - unset a configuration key globally
+- `% git config --global <config.key> <value>` - set a configuration key globally
+- `% git config --global user.name 'Alex Yursha'`
+- `% git config --global user.email 'alexyursha@example.com'`
 
 # History
 - `% git log --format="%s" v0.1.0..v0.1.1` - see commits between 2 tags
