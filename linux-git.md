@@ -45,7 +45,7 @@ $ man git-<verb>
 - `% git push` - upload `.git` folder.
 - `% git pull` - download `.git` folder
 - `% git rm --cached -r` - ??? 
-- `% git add` - add a file, a directory, matches or everything to `.git/index`
+- `% git add` - copy any new/changed file, directory, matches or everything into `.git/index` as they are now
 - `% git reset HEAD *` - unstage all
 - `% git reset HEAD *.swp` - unstage all `.swp` files
 - `% git commit -m 'my message'`
