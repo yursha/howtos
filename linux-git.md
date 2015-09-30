@@ -39,7 +39,7 @@ $ man git-<verb>
   + `.git/index`
 
 # Commands
-- `% git clone` - download/copy `.git` folder.
+- `% git clone` - create new project folder, download/copy `.git` folder, checkout latest snapshot into working copy.
 - `% git init` - create new `.git` folder with skeleton contents
 - `% git push` - upload `.git` folder.
 - `% git pull` - download `.git` folder
