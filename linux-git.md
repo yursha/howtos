@@ -1,4 +1,5 @@
 # Terminology
+- **distributed** and **centralized** VCS differ in where all the deltas and associated metadata are stored.
 - **branch**
 - **commit**
 - **stashing**
