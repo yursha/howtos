@@ -1,5 +1,12 @@
 - https://git-scm.com
 
+# Help
+```
+$ git help <verb>
+$ git <verb> --help
+$ man git-<verb>
+```
+
 # Terminology
 - **distributed** (Git, Mercurial, Bazaar, Darcs)  and **centralized** (CVS, Subversion, Perforce) VCS differ in where all the deltas and associated metadata are stored.
 - **difference-based** (CVS, Subversion, Perforce, Bazaar) vs **snapshot-based** (Git)
