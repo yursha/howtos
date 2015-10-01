@@ -27,6 +27,6 @@ Discovery (complex lookup procedure)
 
 **Declarative code** is made of **directives**.
 
-**Procedural code** is easy to **unit-test**. **Declarative-code** is hard to **unit-test**.
+Code the interfaces to 3rd-party technology (**glue-code**) is hard to **unit-test**.
 
 
