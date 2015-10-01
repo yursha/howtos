@@ -26,9 +26,10 @@
 
 ## Terms
 - **injector**
-- **container**
+- **container** - a place where all the things that should work together are registered.
 - **wiring**
-
+- **constructor**
+- **factory**
 
 **Declarative code** is better when it comes to building UIs and wiring software components together, while imperative code is better for expressing business logic.
 
