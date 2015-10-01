@@ -27,5 +27,8 @@ DOM is accessed **declaratively** through **directives**.
 
 # Test Harnesses
 
+# Filters
+Specify what formatting to apply to an evaluated expression in the template.
+
 # Design
 The flow of marshaling data from the server to an internal object to an HTML form, allowing users to modify the form, validating the form, displaying validation errors, returning to an internal model, and then back to the server, creates a lot of boilerplate code.
