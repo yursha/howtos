@@ -9,3 +9,4 @@
 
 # Clients
 - node `http`
+- Apache HTTP Client http://hc.apache.org/httpcomponents-client-ga/index.html
