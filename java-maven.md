@@ -1,3 +1,14 @@
+# Other
+- http://ant.apache.org/
+- http://ant.apache.org/ivy/
+- http://buildr.apache.org/
+- http://www.gradle.org/
+- https://github.com/harrah/xsbt/wiki
+- https://github.com/technomancy/leiningen
+
+# Resources
+- http://www.sonatype.com/books/mvnref-book/reference/
+
 # Search
 - search.maven.org
 - http://mvnrepository.com - provides useful popularity statistics (e.g. number of dependant packages), classifies packages by category (e.g. JSON libraries)
