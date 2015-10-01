@@ -1,13 +1,8 @@
-- **Boolean** - not, and, or, xor, nand, nor
-- **Bits (extends Boolean)** - shiftRight, shiftLeft, zeroShiftRight
+- **Boolean or collection thereof** - not, and, or, xor, nand, nor
+- **Bits (collection of Boolean)** - shiftRight, shiftLeft, zeroShiftRight
+- **Numeric** - add, subtract, multiply, divide, remainder, abs, sqrt, floor, ceiling, round
+- **Collection of Numeric** - sum, mean, average
 
-# Numeric
-- sum
-- abs
-- sqrt
-- floor
-- ceiling
-- round
 
 # Enumeration
 - count
