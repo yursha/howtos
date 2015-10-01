@@ -9,6 +9,8 @@
 ## Java
 - https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
 - All loggers should be declared `private static final`
+- http://logback.qos.ch/
+- http://www.slf4j.org/
 
 ### Log4j2
 - How to configure log4j2 differently in development and production?
