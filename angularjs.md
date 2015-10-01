@@ -1,6 +1,7 @@
 - https://docs.angularjs.org/api
 
 # Data Binding
+Automatic synchronization of data between the **view** (DOM) and the view model.
 
 # Templating
 
