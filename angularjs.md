@@ -1,7 +1,7 @@
 - https://docs.angularjs.org/api
 
-# Data Binding
-Automatic synchronization of data between the **view** (DOM) and the **view model**.
+# Data Binding (2-way)
+Automatic synchronization of data between the **view** (DOM) and the **view model** in both directions.
 
 # Templating
 The HTML **template** is processed by the **compiler** during app load. Different **view models** are used to populate different part of the HTML **template**.
