@@ -6,6 +6,9 @@
 # Business logic
 - **service** - reusable business logic
 
+# Model
+- **model** - data model which has **stored** properties and **computable** properties.
+
 # UI
 
 ## Controller
