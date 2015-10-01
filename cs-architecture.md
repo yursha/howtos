@@ -27,6 +27,6 @@ Discovery (complex lookup procedure)
 
 **Declarative code** is made of **directives**.
 
-Code the interfaces to 3rd-party technology (**glue-code**) is hard to **unit-test**.
+Code that interfaces with a 3rd-party technology (**glue-code**) is hard to **unit-test**.
 
 
