@@ -1,12 +1,7 @@
-# Boolean 
-(not, and, or, xor, nand, nor)
+- **Boolean** - not, and, or, xor, nand, nor
+- **Bits (extends Boolean)** - shiftRight, shiftLeft, zeroShiftRight
 
-# Bit (extends boolean)
-- shiftRight
-- shiftLeft
-- zeroShiftRight
-
-# Math
+# Numeric
 - sum
 - abs
 - sqrt
