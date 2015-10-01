@@ -1,5 +1,8 @@
 - https://docs.angularjs.org/api
 
+# Misc
+View model lives in the controller object.
+
 # Data Binding (2-way)
 Automatic synchronization of data between the **view** (DOM) and the **view model** in both directions.
 
