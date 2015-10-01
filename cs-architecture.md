@@ -22,3 +22,9 @@ Discovery (complex lookup procedure)
 - **injector**
 - **container**
 
+
+**Declarative code** is better when it comes to building UIs and wiring software components together, while imperative code is better for expressing business logic.
+
+**Declarative code** is made of **directives**.
+
+
