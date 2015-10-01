@@ -27,6 +27,8 @@ Discovery (complex lookup procedure)
 
 **Declarative code** is made of **directives**.
 
-Code that interfaces with a 3rd-party technology (**glue-code**) is hard to **unit-test**.
+**Glue Code** - Code that interfaces with a 3rd-party technology.
+
+Code that crosses platform boundaries (like c/java interfacing or javascript/DOM interfacing) is hard to test.
 
 
