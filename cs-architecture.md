@@ -7,7 +7,7 @@
 - **service** - reusable business logic
 
 # Model
-- **model** - data model which has **stored** properties and **computable** properties.
+- **model** - *data type* which models some business domain entity. Model may have **stored** and **computable** properties and **public behaviour**.
 
 # UI
 
