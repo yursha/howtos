@@ -8,7 +8,7 @@
 The HTML **template** is processed by the **compiler** during app load. Different **view models** are used to populate different part of the HTML **template**.
 DOM is accessed **declaratively** through **directives**. 
 
-# Data Binding (2-way)
+# Live Data Binding (2-way)
 Automatic synchronization of data between the **view** (DOM) and the **view model** in both directions. The purpose of **controllers** is to expose variables and functionality to **expressions** and **directives**.
 
 # Form validation
