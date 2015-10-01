@@ -2,14 +2,17 @@
 - https://github.com/johnpapa/angular-styleguide
 
 # Annoying
-- In AngularJS both **view model** (state) and **controller** (behaviour) live in the same controller object without a clear boundary. This can be circumvented by keeping all model-level functionality in the single `controller.model` object and all controller-level functionality directly in the `controller` object.
+In AngularJS both **view model** and **controller behaviour** live in the **scope** objects without a clear boundary. To separate them we can store all model-level data in `$scope.model` and all controller-level behaviour in `$scope.controller`.
 
 # Templating
 The HTML **template** is processed by the **compiler** during app load. Different **view models** are used to populate different part of the HTML **template**.
 DOM is accessed **declaratively** through **directives**. 
 
 # Live Data Binding (2-way)
-Automatic synchronization of data between the **view** (DOM) and the **view model** in both directions. The purpose of **controllers** is to expose variables and functionality to **expressions** and **directives**.
+Automatic synchronization of data between the **view** (DOM) and the **view model** (**scope** objects) in both directions.
+
+# Controllers
+The purpose of **controllers** is to expose variables and functionality to **expressions** and **directives**.
 
 # Form validation
 
