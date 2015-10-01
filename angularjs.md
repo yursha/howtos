@@ -1,7 +1,7 @@
 - https://docs.angularjs.org/api
 
 # Misc
-Both **view model** (state) and *controller* (behaviour) live in the same controller object.
+Both **view model** (state) and **controller** (behaviour) live in the same controller object.
 
 # Data Binding (2-way)
 Automatic synchronization of data between the **view** (DOM) and the **view model** in both directions.
