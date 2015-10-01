@@ -4,8 +4,8 @@
 Automatic synchronization of data between the **view** (DOM) and the **view model**.
 
 # Templating
-HTML markup is used as **templates**. The templates are processed by the **compiler** during app load.
-DOM is accessed only **declaratively** through **directives**. Different **view models** are used to populate different part of the HTML **template**.
+The HTML **template** is processed by the **compiler** during app load. Different **view models** are used to populate different part of the HTML **template**.
+DOM is accessed **declaratively** through **directives**. 
 
 # Form validation
 
