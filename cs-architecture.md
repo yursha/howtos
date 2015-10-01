@@ -1,6 +1,6 @@
 - Discovery (complex lookup procedure)
 - **Global visibility**
-- **Local visibility**
+- **Local (scope) visibility**
 
 # Business logic
 - **service** - reusable business logic
