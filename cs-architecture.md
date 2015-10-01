@@ -1,5 +1,8 @@
 Discovery (complex lookup procedure)
 
+# Business logic
+- **service** - reusable business logic
+
 # UI
 
 ## Controller
