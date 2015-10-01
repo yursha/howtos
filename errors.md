@@ -1,9 +1,9 @@
 # Tips
-- For simplicity **don't handle an error** until it stops a **successful** program execution.
-- When an error happens always **log its stack trace** if its not going to progagate upwards. So you will be able to track error to a particular source code line and method call chain/path.
-- In a multithreaded application **make number of threads configurable from the command line**. So during debug time you will be able to set `-Dthreads=1` and enjoyed logical sequential logging from a single thread of execution instead of intermingling of multiple threads.
-- **Escape dynamic textual (non numeric) data** with single quotes so that variables containing spaces can be easily distinguishable from the (static) rest of the message. Not necessary for strong numeric typed variables.
-- **Respect log levels** sot that you can easily adjust log verbosity in development and production environments and grep out only important messages (errors and warnings) easily.
+- Loudly **crash on error** if recovery is not meaningful.
+- **Log all errors** with as much information (including stack trace) as possible. 
+- In a multithreaded application **make number of threads configurable from the command line**. So during debug time you will be able to set `-Dthreads=1` and enjoy serial single-thread logging.
+- **Escape variable non numeric data with single quotes** so that variables containing spaces can be easily distinguishable from the (static) rest of the message.
+- **Respect log levels** sot that you can easily adjust log verbosity in development and production environments and grep out only important messages easily.
 - Log files are **append-only**. Be sure to log only what is really helpful during debugging as log files can grow and take a lot of disk space. There should be an **archiving policy** for log files. In production environment its  helpful to print 'INFO', 'WARN' and 'ERROR' level messages only to save **disk space**. Their should be a separate **build profile** for development and production environments.
 
 ## Java
