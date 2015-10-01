@@ -4,7 +4,7 @@
 Automatic synchronization of data between the **view** (DOM) and the **view model**.
 
 # Templating
-HTML markup is used as **templates**.
+HTML markup is used as **templates**. The templates are processed by the **compiler** during app load.
 
 # Form validation
 
