@@ -14,5 +14,11 @@ Discovery (complex lookup procedure)
 
 
 # Dependency Injection
+## Resources
 - https://github.com/google/guice
 - AngularJS has its own dependency implementation
+
+## Terms
+- **injector**
+- **container**
+
