@@ -16,8 +16,6 @@
 
 # Deep linking
 
-# Dependency Injection
-
 # Unit Testing
 
 # End-to-end Testing
