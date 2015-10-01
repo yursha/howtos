@@ -1,4 +1,5 @@
 - https://docs.angularjs.org/api
+- https://github.com/johnpapa/angular-styleguide
 
 # Annoying
 - In AngularJS both **view model** (state) and **controller** (behaviour) live in the same controller object without a clear boundary. This can be circumvented by keeping all model-level functionality in the single `controller.model` object and all controller-level functionality directly in the `controller` object.
