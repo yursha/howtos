@@ -1,6 +1,7 @@
 - Discovery (complex lookup procedure)
 - **Global visibility**
 - **Local (scoped) visibility**
+- **Aliasing** - referring to one item by multiple names.
 
 # Business logic
 - **service** - reusable business logic
