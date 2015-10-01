@@ -9,7 +9,7 @@ The HTML **template** is processed by the **compiler** during app load. Differen
 DOM is accessed **declaratively** through **directives**. 
 
 # Data Binding (2-way)
-Automatic synchronization of data between the **view** (DOM) and the **view model** in both directions.
+Automatic synchronization of data between the **view** (DOM) and the **view model** in both directions. The purpose of **controllers** is to expose variables and functionality to **expressions** and **directives**.
 
 # Form validation
 
