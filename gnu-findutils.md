@@ -2,7 +2,11 @@
 
 # Gotchas
 
-- `find` uses Emacs regex syntax by default
-- `find . -iregex '.*[2-9].*' -print0 | xargs -0 rm` - lets xargs handle filenames with spaces correctly
+## Find
+`find` uses Emacs regex syntax by default.
+
+### Examples
+- `% find . -iregex '.*[2-9].*' -print0 | xargs -0 rm` - lets xargs handle filenames with spaces correctly
+- `% find . -iname *.yml` - find all `.yml` files in the cwd
 
   
