@@ -19,6 +19,10 @@ Services are lazily instantiated singletons.
 # Built-in directives
 - `ng-controller` - compiler creates new scope, binds it to DOM element and creates a new controller object (or calls just a function without `new`?). Every controller is a singleton if a corresponding object exists at all.
 
+
+# Built-in services
+- `$http` - wrapper around `XMLHttpRequest` and JSONP transports.
+
 # Templating
 The HTML **template** is processed by the **compiler** during app load. Different **view models** are used to populate different part of the HTML **template**.
 DOM is accessed **declaratively** through **directives** which are also processed by the **compiler**. 
@@ -30,9 +34,6 @@ Automatic synchronization of data between the **view** (DOM) and the **view mode
 The purpose of **controllers** is to expose variables and functionality to **expressions** and **directives**.
 
 # Form validation
-
-# Ajax
-- `$http` service - wrapper around `XMLHttpRequest` and JSONP transports.
 
 # Event handling
 
