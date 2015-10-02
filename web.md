@@ -6,4 +6,4 @@
   + http://www.w3.org/TR/XMLHttpRequest/
 
 # Security
-- same origin policy - js can only issue http requests to the website that included that js.
+- **same origin policy** - js can only issue http requests to the website that included that js. That is the wish of the web app user and those web app authors who don't want their web app to be accessed by other web apps the user uses.
