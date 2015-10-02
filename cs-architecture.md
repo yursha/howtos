@@ -5,6 +5,11 @@
 - isolation
 - ACID (atomicity, consistency, isolation, durability)
 
+# Object model
+- inheritance (prototypical vs class-based)
+- lambda
+- scopes
+
 # Business logic
 - **service** - reusable business logic
 
