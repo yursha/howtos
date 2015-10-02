@@ -12,6 +12,7 @@
 - BST
 
 # Tree
+- bottom-up search
 
 A tree is a DAG representing a hierarchy (nestedness).
 
