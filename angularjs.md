@@ -6,7 +6,7 @@ In AngularJS both **view model** and **controller behaviour** live in the **scop
 
 # Templating
 The HTML **template** is processed by the **compiler** during app load. Different **view models** are used to populate different part of the HTML **template**.
-DOM is accessed **declaratively** through **directives**. 
+DOM is accessed **declaratively** through **directives** which are also processed by the **compiler**. 
 
 # Live Data Binding (2-way)
 Automatic synchronization of data between the **view** (DOM) and the **view model** (part of **scope** objects) in both directions.
