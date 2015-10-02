@@ -60,4 +60,9 @@ Code that crosses platform boundaries (like c/java interfacing or javascript/DOM
 - emit
 - handle
 
+# Async
+- callback
+- promises
+- deferreds
+
 
