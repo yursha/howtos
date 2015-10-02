@@ -20,6 +20,8 @@
 
 
 # Dependency Injection
+As a side effect DI containers also manage the **life-cycle** of objects.
+
 ## Resources
 - https://github.com/google/guice
 - AngularJS has its own dependency implementation
