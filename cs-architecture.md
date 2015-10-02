@@ -28,7 +28,7 @@
 ## Terms
 - **injector**, **wiring**
 - **container** - a place where all the things that should work together are registered.
-- **factory**, **constructor**
+- With **constructor** (a lower level approach) an object is created by platform, with **factory** (a higher level approach) we create it ourselves. 
 - **life-cycle**
 - **singleton** vs **prototype**
 - **lazy** vs **eager** instantiation
