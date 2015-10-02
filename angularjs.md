@@ -21,7 +21,7 @@ Services are lazily instantiated singletons.
 
 Directives watch the scope and update DOM and vice versa.
 
-Scope is what separates controllers and directives that can communicate only via scope. Scope is created only thru directives. Angular uses scope-tree with `$rootScope` as a root.
+Scope is what separates controllers and directives that can communicate only via scope. Scope is created only thru directives.
 
 # Scope-producing directives
 - `ng-controller`
@@ -35,7 +35,7 @@ Scope is what separates controllers and directives that can communicate only via
 - `$http` - wrapper around `XMLHttpRequest` and JSONP transports.
 
 # Templating
-The HTML **template** is processed by the **compiler** during app load. Template expressions are evaluated against their corresponding scope. (how correspondence is defined?)
+The HTML **template** is processed by the **compiler** during app load. Template expressions are evaluated against a *scope tree* with `$rootScope` as a root.
 DOM is accessed **declaratively** through **directives** which are also processed by the **compiler**. 
 
 # Live Data Binding (2-way)
