@@ -10,6 +10,8 @@ In AngularJS both **view model** and **controller behaviour** live in the **scop
 # Concepts
 Scope behaviour can be called (with parameters) from expressions or event-handler directives. Expressions are re-evaluated when model changes. Event-handler directives are evaluated on events.
 
+There is a root scope and controller scopes.
+
 # Built-in directives
 - `ng-controller` - compiler creates new scope, binds it to DOM element and creates a new controller object (or calls just a function without `new`?). Every controller is a singleton if a corresponding object exists at all.
 
