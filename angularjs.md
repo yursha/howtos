@@ -28,6 +28,8 @@ Directives watch the scope and update DOM and vice versa.
 
 Scope is what separates controllers and directives that can communicate only via scope. Scope is created only thru directives.
 
+Scopes can progagate events in the tree in a top-down or bottom-up manner.
+
 # Scope-producing directives
 - `ng-controller`
 - `ng-repeat` (for each item in a collection)
