@@ -2,4 +2,4 @@
 - **url**
 
 # Security
-- same origin policy
+- same origin policy - js can only issue http requests to the website that included that js.
