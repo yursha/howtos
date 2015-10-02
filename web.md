@@ -26,6 +26,7 @@
 - **same origin policy** - web author can only issue ajax requests to their own website. 
  + https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
 - **jsonp** - JSON with padding/prefix - protocol between web authors that wish to work around the same-origin policy via *script element injection*.
+- cross-domain requests using a proxy server
 
 
 # ?
