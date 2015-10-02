@@ -4,6 +4,12 @@
 # Annoying
 In AngularJS both **view model** and **controller behaviour** live in the **scope** objects without a clear boundary. To separate them we can store all model-level data in `$scope.model` and all controller-level behaviour in `$scope.controller`.
 
+- What has a scope?
+ + controller
+
+- Built-in directives
+  + `ng-controller` - compiler creates new controller object, a corresponding scope and binds a scope to a DOM element.
+
 # Templating
 The HTML **template** is processed by the **compiler** during app load. Different **view models** are used to populate different part of the HTML **template**.
 DOM is accessed **declaratively** through **directives** which are also processed by the **compiler**. 
