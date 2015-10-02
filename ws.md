@@ -8,3 +8,6 @@
 - http://www.dropwizard.io/ (Uses Jetty, Jersey, Jackson)
 - https://github.com/dropwizard/metrics
 
+# JSON
+- http://jsonapi.org/
+
