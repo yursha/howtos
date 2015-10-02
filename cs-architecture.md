@@ -2,6 +2,8 @@
 - **Global visibility**
 - **Local (scoped) visibility**
 - **Aliasing** - referring to one item by multiple names.
+- isolation
+- ACID (atomicity, consistency, isolation, durability)
 
 # Business logic
 - **service** - reusable business logic
