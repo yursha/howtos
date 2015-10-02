@@ -7,8 +7,11 @@ In AngularJS both **view model** and **controller behaviour** live in the **scop
 - What has a scope?
  + controller
 
-- Built-in directives
-  + `ng-controller` - compiler creates new controller object, a corresponding scope and binds a scope to a DOM element.
+# Concepts
+Scope behaviour can be called from expressions or event-handler directives. Expressions are re-evaluated when model changes. Event-handler directives are evaluated on events.
+
+# Built-in directives
+- `ng-controller` - compiler creates new controller object, a corresponding scope and binds a scope to a DOM element.
 
 # Templating
 The HTML **template** is processed by the **compiler** during app load. Different **view models** are used to populate different part of the HTML **template**.
