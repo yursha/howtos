@@ -17,6 +17,7 @@ The purpose of **controllers** is to expose variables and functionality to **exp
 # Form validation
 
 # Ajax
+- `$http` service - wrapper around `XMLHttpRequest` and JSONP transports.
 
 # Event handling
 
