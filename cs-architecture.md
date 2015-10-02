@@ -9,6 +9,10 @@
 - inheritance (prototypical vs class-based)
 - lambda
 - scopes
+- immutability
+- encapsulation (information hiding)
+- interface
+- polymorphism
 
 # Business logic
 - **service** - reusable business logic
