@@ -1,3 +1,4 @@
+- https://github.com/angular/angular.js
 - https://docs.angularjs.org/api
 - https://docs.angularjs.org/guide/scope
 - https://github.com/johnpapa/angular-styleguide
