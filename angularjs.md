@@ -14,6 +14,8 @@ There is a root scope and controller scopes.
 
 When an scope expression is evaluated, scope fields are looked up in the scope chain upto the root scope.
 
+Services are lazily instantiated
+
 # Built-in directives
 - `ng-controller` - compiler creates new scope, binds it to DOM element and creates a new controller object (or calls just a function without `new`?). Every controller is a singleton if a corresponding object exists at all.
 
