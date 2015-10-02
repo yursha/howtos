@@ -18,7 +18,7 @@ Services are lazily instantiated singletons.
 
 Directives watch the scope and update DOM and vice versa.
 
-Scope is what separates controllers and directives that can communicate only via scope. Scope is created only thru directives. Angular uses scope-tree with `$rootScope` as root.
+Scope is what separates controllers and directives that can communicate only via scope. Scope is created only thru directives. Angular uses scope-tree.
 
 # Scope-producing directives
 - `ng-controller`
