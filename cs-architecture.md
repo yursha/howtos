@@ -16,7 +16,9 @@
 
 ## View
 - **presenter** - transforms a *business data model* into a *view data model*.
-- **templating engine** - merges a *view data model* into a static structure called *view template* by evaluating **templating expressions** enclosed in **special markup**.
+- **templating engine** - .
+- **templating engine** - transforms a **template** by evaluating **marked up expressions** against a specific **context**.
+  + populating HTML markup (**view**) with variables (**view model**).
 
 
 # Dependency Injection
