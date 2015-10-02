@@ -16,6 +16,8 @@ When an scope expression is evaluated, scope fields are looked up in the scope c
 
 Services are lazily instantiated singletons.
 
+Directives watch the scope and update DOM and vice versa
+
 # Built-in directives
 - `ng-controller` - compiler creates new scope, binds it to DOM element and creates a new controller object (or calls just a function without `new`?). Every controller is a singleton if a corresponding object exists at all.
 
