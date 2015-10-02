@@ -7,13 +7,14 @@
 
 # Ways to trigger HTTP request from a web app
 ## With leaving the page
-- `<script src="URL"></script>`
-- `<img src="URL">`
-- `<a href="URL"></a>`
-- `XMLHttpRequest`
+- static `a` element
 
 ## Without leaving the page
-- *script element injection*
+- static `link` element
+- static `script` element
+- static `img` element
+- dynamic *`script` element injection* (`GET` only)
+- `XMLHttpRequest`
 
 # Security
 - **same origin policy** - web author can only issue ajax requests to their own website. 
