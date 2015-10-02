@@ -35,11 +35,22 @@ Scopes can progagate events in the tree in a top-down or bottom-up manner.
 - `ng-controller`
 - `ng-repeat` (for each item in a collection)
 
-# Built-in directives
+# Modules
+- `ng`
+- `ngRoute` - enables URL routing. Supports URL management via both hashbang and HTML5 pushState.
+- `ngAnimate`
+- `ngAria`
+- `ngResource`
+- `ngCookies`
+- `ngTouch`
+- `ngSanitize`
+- `ngMock`
+
+# Directives
 - `ng-controller` - compiler creates new scope, binds it to DOM element and creates a new controller object (or calls just a function without `new`?). Every controller is a singleton if a corresponding object exists at all.
 
 
-# Built-in services
+# Services
 - `$http` - wrapper around `XMLHttpRequest` and JSONP transports.
 
 # Templating
