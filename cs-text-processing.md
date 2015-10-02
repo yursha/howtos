@@ -1,5 +1,6 @@
 Data Formats (structured/unstructured)
 ===================
+- HTML, XML, JSON, YAML, HAML, Jade
 
 # Unstructured Serialized Text Formats
 
