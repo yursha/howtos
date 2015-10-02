@@ -20,6 +20,8 @@ Directives watch the scope and update DOM and vice versa.
 
 Scope is what separates controllers and directives that can communicate only via scope.
 
+Scopes are created by specific directives.
+
 # Built-in directives
 - `ng-controller` - compiler creates new scope, binds it to DOM element and creates a new controller object (or calls just a function without `new`?). Every controller is a singleton if a corresponding object exists at all.
 
