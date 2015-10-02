@@ -20,18 +20,18 @@
 
 
 # Dependency Injection
-As a side effect DI containers also manage the **life-cycle** of objects.
 
 ## Resources
 - https://github.com/google/guice
 - AngularJS has its own dependency implementation
 
 ## Terms
-- **injector**
+- **injector**, **wiring**
 - **container** - a place where all the things that should work together are registered.
-- **wiring**
-- **constructor**
-- **factory**
+- **factory**, **constructor**
+- **life-cycle**
+- **singleton** vs **prototype**
+- **lazy** vs **eager** instantiation
 
 **Declarative code** is better when it comes to building UIs and wiring software components together, while imperative code is better for expressing business logic.
 
