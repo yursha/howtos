@@ -7,13 +7,19 @@
 
 # Ways to trigger HTTP request from a web app
 ## With leaving the page
-- static `a` element
+### static
+- `a` element
+
+### dynamic
 
 ## Without leaving the page
-- static `link` element
-- static `script` element
-- static `img` element
-- dynamic *`script` element injection* (`GET` only)
+### static
+- `link` element
+- `script` element
+- `img` element
+
+### dynamic
+-  *`script` element injection* (`GET` only)
 - `XMLHttpRequest`
 
 # Security
