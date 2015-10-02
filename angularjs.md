@@ -52,6 +52,8 @@ Scopes can progagate events in the tree in a top-down or bottom-up manner.
 
 # Services
 - `$http` - wrapper around `XMLHttpRequest` and JSONP transports.
+- `$provide`
+- `$injector`
 
 # Templating
 The HTML **template** is processed by the **compiler** during app load. Template expressions are evaluated against a *scope tree* with `$rootScope` as a root.
