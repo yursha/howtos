@@ -4,6 +4,11 @@
 # Debugging
 - Angular automatically places `ng-scope` class on elements where scopes are attached. (Can be colored)
 
+> To examine the scope in the debugger:
+> Right click on the element of interest in your browser and select 'inspect element'. You should see the browser debugger with the element you clicked on highlighted.
+> The debugger allows you to access the currently selected element in the console as $0 variable.
+> To retrieve the associated scope in console execute: angular.element($0).scope() or just type $scope
+
 # Annoying
 In AngularJS both **view model** and **controller behaviour** live in the **scope** objects without a clear boundary. To separate them we can store all model-level data in `$scope.model` and all controller-level behaviour in `$scope.controller`.
 
