@@ -16,7 +16,6 @@
 
 ## View
 - **presenter** - transforms a *business data model* into a *view data model*.
-- **templating engine** - .
 - **templating engine** - transforms a **template** by evaluating **marked up expressions** against a specific **context**.
   + populating HTML markup (**view**) with variables (**view model**).
 
