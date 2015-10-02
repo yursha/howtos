@@ -35,5 +35,7 @@
 
 # Browser
 The normal flow of a browser receiving an event is that it executes a corresponding JavaScript callback. Once the callback completes the browser re-renders the DOM and returns to waiting for more events.
+- navigation
+- deeplinking
 
 ## DOM Events
