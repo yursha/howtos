@@ -28,7 +28,7 @@ Scope is what separates controllers and directives that can communicate only via
 - `$http` - wrapper around `XMLHttpRequest` and JSONP transports.
 
 # Templating
-The HTML **template** is processed by the **compiler** during app load. Different **view models** are used to populate different part of the HTML **template**.
+The HTML **template** is processed by the **compiler** during app load. Template expressions are evaluated against their corresponding scope. (how correspondence is defined?)
 DOM is accessed **declaratively** through **directives** which are also processed by the **compiler**. 
 
 # Live Data Binding (2-way)
