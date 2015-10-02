@@ -54,6 +54,10 @@
 Code that crosses platform boundaries (like c/java interfacing or javascript/DOM interfacing) is hard to test.
 
 ## Events
-pub/sub
+- pub/sub
+- propagate
+- broadcast
+- emit
+- handle
 
 
