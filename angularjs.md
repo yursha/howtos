@@ -1,6 +1,9 @@
 - https://docs.angularjs.org/api
 - https://github.com/johnpapa/angular-styleguide
 
+# Debugging
+- Angular automatically places `ng-scope` class on elements where scopes are attached. (Can be colored)
+
 # Annoying
 In AngularJS both **view model** and **controller behaviour** live in the **scope** objects without a clear boundary. To separate them we can store all model-level data in `$scope.model` and all controller-level behaviour in `$scope.controller`.
 
