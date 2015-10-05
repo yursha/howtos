@@ -63,6 +63,7 @@ $ man git-<verb>
 - `% git commit --amend` - fix the last commit (both contents and message)
 - `% git status -s` - list filenames with their statuses in the working directory (recursively) [`--short` - succinctly].
 - `% git checkout -- <file>` - replace file with one from the latest snapshot (discard changes)
+- `% git reset HEAD <file>` - unstage
 
 ## Git log formatters
 - `% git log -p` - commits with diffs (patches) (helpful for code review)
