@@ -1,5 +1,5 @@
 # Java
-- Never use `FileWriter` and `FileReader` classes as they assume default char encoding and don't allow to specify one.
+- Never use `FileWriter` and `FileReader` classes as they assume default char encoding and don't allow to specify one. Instead use `FileOutputStream` wrapped into `InputStreamReader` and `FileOutputStream` wrapped into `OutputStreamWriter`.
 
 #### Libraries
 - https://commons.apache.org/proper/commons-io
