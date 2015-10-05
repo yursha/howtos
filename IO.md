@@ -21,7 +21,7 @@ ClassLoader.getSystemResourceAsStream(resourcePath);
 
 - Get char stream from byte stream
 ```java
-InputStream stream = ...some binary stream
+InputStream stream = null; // ...some binary stream
 InputStreamReader reader = new InputStreamReader(stream, StandardCharsets.UTF_8);
 ```
 
