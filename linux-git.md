@@ -9,6 +9,10 @@ $ git <verb> --help
 $ man git-<verb>
 ```
 
+# `.gitignore`
+- https://github.com/github/gitignore
+- https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files
+
 # Terminology
 - **distributed** (Git, Mercurial, Bazaar, Darcs)  and **centralized** (CVS, Subversion, Perforce) VCS differ in where all the deltas and associated metadata are stored.
 - **difference-based** (CVS, Subversion, Perforce, Bazaar) vs **snapshot-based** (Git)
@@ -48,12 +52,51 @@ $ man git-<verb>
 - `% git push` - upload `.git` folder.
 - `% git pull` - download `.git` folder
 - `% git rm --cached -r` - ??? 
-- `% git add` - copy any new/changed file, directory, matches or everything into `.git/index` as they are now
+- `% git rm --cached <pattern>` - remove files from git but keep it on disk
+- `% git rm <pattern>` - remove files from git and disk
+- `% git add <pattern>` - copy any new/changed file, directory, matches or everything into `.git/index` as they are now
 - `% git reset HEAD *` - unstage all
 - `% git reset HEAD *.swp` - unstage all `.swp` files
 - `% git commit -m 'my message'`
-- `% git status` - check status of each file in the working folder. `% git status -s` - short way.
+- `% git commit -v` - open an editor with status and diff attached as comments.
+- `% git commit -a -m 'added new benchmarks'` - skip `git add` and add and commit automatically what's tracked and changed. 
+- `% git status -s` - list filenames with their statuses in the working directory (recursively) [`--short` - succinctly].
 - `% git checkout -- <file>` - replace file with one from the latest snapshot (discard changes)
+
+## Git log formatters
+- `% git log -p` - commits with diffs (patches) (helpful for code review)
+- `% git log --stat` - commits with stats
+- `% git log --shortstat`, `--name-only`, `--name-status`, `--abbrev-commit`, `--relative-date`
+- `% git log --pretty=oneline` - format
+- `% git log --pretty=format:"h - %an, %ar : %s" - format
+- `% git log --graph` - ASCII graph showing your branch and merge history
+
+## Git log filters
+### By date/chronology
+- `% git log -2` - last 2 commits
+- `% git log --since=2.weeks`
+- `% git log --since="2008-01-15"`
+- `% git log --since="2 years 1 day 3 minutes ago"`
+
+### By people 
+- `% git log --author`
+- `% git log --committer`
+
+### By message
+- `% git log --grep` - grep through commit messages
+
+### By changes
+- `% git log -Sfunction_name` - grep through modifications
+
+### By file path
+- `% git log -- <filepath>` - files and directories of interest
+
+### OR and AND
+- `% git log --author --grep` - show either (OR) match
+- `% git log --author --grep --all-match` - show both (AND) match
+
+## not necessary
+- `% git mv`
 
 ## Configuration
 - `% git config --global user.name 'Alex Yursha'`
@@ -65,6 +108,7 @@ $ man git-<verb>
 
 # Diff
 - http://stackoverflow.com/questions/3368590/show-diff-between-commits/29374476#29374476
+If you run `git difftool` instead of `git diff`, you can view any of these diffs in software like `emerge`, `vimdiff` and many more. Run `git difftool --tool-help` to see what is available on your system.
 
 # How to do a feature
 1. Pick a Jira issue from the backlog

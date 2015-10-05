@@ -1,21 +1,10 @@
-- **Boolean or collection thereof** - not, and, or, xor, nand, nor
-- **Bits (collection of Boolean)** - shiftRight, shiftLeft, zeroShiftRight
-- **Numeric** - add, subtract, multiply, divide, remainder, abs, sqrt, floor, ceiling, round
-- **Collection of Numeric** - sum, mean, average
-
-
-# Enumeration
-- count
-- foreach
-- map
-- reduce
-- sum
-- size / length
-
-# Positional
-- nth (first, last)
-- next
-- previous
+- **boolean, list of booleans** - not, and, or, xor, nand, nor
+- **bits (list of booleans)** - shiftRight, shiftLeft, zeroShiftRight
+- **number** - add, subtract, multiply, divide, remainder, abs, sqrt, floor, ceiling, round
+- **list of numbers** - reduce(sum, mean, average)
+- **list** - count, foreach, map, reduce, nth (first, last), iterator
+- **cursor** - next, hasNext, previous, hasPrevious
+- **datetime** - 
 
 # Tree
 (context = node in a collection)
@@ -40,11 +29,3 @@
 - findFirst
 - findLast
 - findAll
-
-# Collection
-- size / length
-- irerator
-
-# Iterator (cursor)
-- hasNext
-- next

@@ -53,6 +53,8 @@
 - <kbd>Ctrl</kbd>+<kbd>r</kbd>;<kbd>Ctrl</kbd>+<kbd>w</kbd> (or <kbd>r</kbd>) - copy a word into command line
 - `:%s/\n//gc` - replace newlines
 - `:g/pattern` - show all lines matching the pattern
+- `:g/pattern/d` - delete all lines matching a pattern (e.g. `:g/^$/d` - deletes all empty lines)
+- `:g/pattern/command` - execute a command on lines which match a regex
 - `/pattern/e` - search-offset - position the cursor at the end of the match
 - `/\%d65`, `/\%x41`, `/\%u2013`, `/\%d8211` - Searching for chars by their code value.
 - `/the\C`, `/the\c` - force pattern case-(in)sensitivity
