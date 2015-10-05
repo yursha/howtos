@@ -11,13 +11,13 @@
 
 #### Snippets
 
-- Get byte stream from file path string
+- Get input byte stream from file path string
 ```java
 String filePath = "path/to/my/file.txt"; // relative to cwd
 FileInputStream fileInputStream = new FileInputStream(filePath);
 ```
 
-- Get buffered output char stream for a file path
+- Get buffered output character stream for a file path
 ```java
 Files.newBufferedWriter(Path path, Charset cs, OpenOption... options)
 ```
