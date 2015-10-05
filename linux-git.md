@@ -92,6 +92,9 @@ $ man git-<verb>
 ### By file path
 - `% git log -- <filepath>` - files and directories of interest
 
+### By commit kind
+- `% git log --no-merges`
+
 ### OR and AND
 - `% git log --author --grep` - show either (OR) match
 - `% git log --author --grep --all-match` - show both (AND) match
