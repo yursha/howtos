@@ -1,4 +1,5 @@
 # Java
+- Never use `FileWriter` as it doesn't allow to specify character encoding.
 
 #### Libraries
 - https://commons.apache.org/proper/commons-io
