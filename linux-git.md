@@ -74,7 +74,8 @@ $ man git-<verb>
 ## Git log filters
 ### By date/chronology
 - `% git log -2` - last 2 commits
-- `% git log --since=2.weeks`
+- `% git log --after=2.weeks`
+- `% git log --before=2.weeks`
 - `% git log --since="2008-01-15"`
 - `% git log --since="2 years 1 day 3 minutes ago"`
 
