@@ -17,6 +17,11 @@ String filePath = "path/to/my/file.txt"; // relative to cwd
 FileInputStream fileInputStream = new FileInputStream(filePath);
 ```
 
+- Get buffered output char stream for a file path
+```java
+Files.newBufferedWriter(Path path, Charset cs, OpenOption... options)
+```
+
 - Get byte stream from resource path string
 ```java
 String resourcePath = "path/to/my/resource.txt"; // relative to classpath
