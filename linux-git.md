@@ -119,8 +119,10 @@ If you run `git difftool` instead of `git diff`, you can view any of these diffs
 # Stashing
 
 # Remotes
-- `% git remove -v` - list remotes with urls
+- `% git remote` - list remote names
+- `% git remote -v` - list remote names and urls
 - `% git remote add [name] [url]`
+- `% git remote show [remote-name]`
 - `% git fetch [remote-name]`
 - `% git pull` - fetch and merge a tracked remote branch into a local branch
 - `% git push [remote-name] [branch-name]` - send new snapshots upstream
