@@ -60,6 +60,7 @@ $ man git-<verb>
 - `% git commit -m 'my message'`
 - `% git commit -v` - open an editor with status and diff attached as comments.
 - `% git commit -a -m 'added new benchmarks'` - skip `git add` and add and commit automatically what's tracked and changed. 
+- `% git commit --amend` - fix the last commit (both contents and message)
 - `% git status -s` - list filenames with their statuses in the working directory (recursively) [`--short` - succinctly].
 - `% git checkout -- <file>` - replace file with one from the latest snapshot (discard changes)
 
