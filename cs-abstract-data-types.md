@@ -4,7 +4,7 @@
 - **list of numbers** - reduce(sum, mean, average)
 - **list** - count, foreach, map, reduce, nth (first, last), iterator
 - **cursor** - next, hasNext, previous, hasPrevious
-- **datetime** - 
+- **datetime** - isAfter, isBefore, (derivatives: isBetween)
 
 # Tree
 (context = node in a collection)
