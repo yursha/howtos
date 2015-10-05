@@ -92,7 +92,7 @@ $ man git-<verb>
 ### By file path
 - `% git log -- <filepath>` - files and directories of interest
 
-### By commit kind
+### Commit which were not merged ?
 - `% git log --no-merges`
 
 ### OR and AND
