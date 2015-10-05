@@ -7,18 +7,19 @@
 
 #### Snippets
 
-##### Open a byte stream for a class path resource
-
+- Get byte stream from file path string
 ```java
 String filePath = "path/to/my/file.txt"; // relative to cwd
 FileInputStream fileInputStream = new FileInputStream(filePath);
 ```
 
+- Get byte stream from resource path string
 ```java
 String resourcePath = "path/to/my/resource.txt"; // relative to classpath
 ClassLoader.getSystemResourceAsStream(resourcePath);
 ```
 
+- Get char stream from byte stream
 ```java
 InputStream stream = ...some binary stream
 InputStreamReader reader = new InputStreamReader(stream, StandardCharsets.UTF_8);
