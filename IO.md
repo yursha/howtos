@@ -1,5 +1,5 @@
 # Java
-- Never use `FileWriter` as it doesn't allow to specify character encoding.
+- Never use `FileWriter` and `FileReader` classes as they assume default char encoding and don't allow to specify one.
 
 #### Libraries
 - https://commons.apache.org/proper/commons-io
