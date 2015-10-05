@@ -114,6 +114,10 @@ $ man git-<verb>
 - http://stackoverflow.com/questions/3368590/show-diff-between-commits/29374476#29374476
 If you run `git difftool` instead of `git diff`, you can view any of these diffs in software like `emerge`, `vimdiff` and many more. Run `git difftool --tool-help` to see what is available on your system.
 
+# Branching
+
+# Stashing
+
 # How to do a feature
 1. Pick a Jira issue from the backlog
 1. Discuss it with actual users, how are they going to use it 
