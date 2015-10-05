@@ -99,9 +99,6 @@ $ man git-<verb>
 - `% git log --author --grep` - show either (OR) match
 - `% git log --author --grep --all-match` - show both (AND) match
 
-## not necessary
-- `% git mv`
-
 ## Configuration
 - `% git config --global user.name 'Alex Yursha'`
 - `% git config --global user.email 'alexyursha@example.com'`
