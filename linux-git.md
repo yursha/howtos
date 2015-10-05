@@ -57,7 +57,7 @@ $ man git-<verb>
 - `% git add <pattern>` - copy any new/changed file, directory, matches or everything into `.git/index` as they are now
 - `% git reset HEAD *` - unstage all
 - `% git reset HEAD *.swp` - unstage all `.swp` files
-- `% git commit -m 'my message'`
+- `% git commit -m 'my message'` - create a new snapshot from staged changes.
 - `% git commit -v` - open an editor with status and diff attached as comments.
 - `% git commit -a -m 'added new benchmarks'` - skip `git add` and add and commit automatically what's tracked and changed. 
 - `% git commit --amend` - fix the last commit (both contents and message)
@@ -117,6 +117,11 @@ If you run `git difftool` instead of `git diff`, you can view any of these diffs
 # Branching
 
 # Stashing
+
+# Remotes
+- `% git remove -v` - list remotes with urls
+- `% git remote add [name] [url]`
+- `% git fetch [remote-name]`
 
 # How to do a feature
 1. Pick a Jira issue from the backlog
