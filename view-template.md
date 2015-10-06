@@ -1,4 +1,5 @@
 Always comment template markup like this as browser will mess up the template when trying to build correct DOM.
+- http://stackoverflow.com/questions/15386276/why-should-we-wrap-our-templates-inside-script-blocks
 
 ```html
 <div id="template-table">
