@@ -14,29 +14,16 @@ abstract class String {
   // Conversions
   
   String join(String[] strings, String joiner);
+  String[] split(String str, String pattern);
 
   String concat(String[] strings) {
     return join(strings, "");
   }
   
-  split(str: String, pattern: Regex) -> List<String>
-  substring(startIndex: Int, endIndex: Int) -> String
-
-  toLowerCase
-  toUpperCase
-  toSnakeCase
-  toSentenceCase
-  toDashCase
-
-  // match
-  startsWith(prefix: String) -> bool
-  endsWith(suffix: String) -> bool
-  contains(sub: String) -> bool
+  // Regex
   
-  // search
-  String replaceFirst(String str, String pattern, String replacement);
-  String replaceLast(String str, String pattern, String replacement);
-  String replaceAll(String str, String pattern, String replacement);
+  String replace(String str, String pattern, String replacement);
+  boolean matches(String pattern);
   
   String trim(String str, String pattern) {
     return str.replace(str, "\A\s+(.*)\s+\z", "\1");
@@ -49,17 +36,45 @@ abstract class String {
   String trimRight(String str, String pattern) {
     return str.replace(str, "\s+\z", "");
   }
-
-  indexOf(String)
-  lastIndexOf(String)
   
-  // list
-  length
-  isBlank
-  isEmpty
-  getBytes
-  getChars
-  charAt(int)
+  toLowerCase
+  toUpperCase
+  toSnakeCase
+  toSentenceCase
+  toDashCase
+  
+  boolean startsWith(String prefix) {
+    return str.matches("\A" + prefix);
+  }
+  
+  boolean endsWith(String suffix) {
+    return str.matches(suffix + "\z");
+  }
+  
+  boolean contains(String sub) {
+    return str.matches(sub);
+  }
+
+  // Search
+  
+  int firstIndexOf(String str);
+  int lastIndexOf(String str);
+  
+  // List
+  
+  int length();
+  char[] getChars();
+  byte[] getBytes();
+  String substring(int start, int end);
+  char charAt(int index);
+  
+  boolean isBlank() {
+    return isEmpty() || !matches("\S");
+  }
+  
+  boolean isEmpty() {
+    return length() == 0;
+  }
 }
 ```
 
@@ -70,8 +85,6 @@ formatString
 
 equals
 hashCode
-
-regex matches
 
 
 # Tree
