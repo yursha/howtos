@@ -115,6 +115,7 @@ $ man git-<verb>
 If you run `git difftool` instead of `git diff`, you can view any of these diffs in software like `emerge`, `vimdiff` and many more. Run `git difftool --tool-help` to see what is available on your system.
 
 # Branching
+- `% git checkout -b serverfix origin/serverfix` - checkout a remote branch into a local branch and track remote branch from local one.
 
 # Stashing
 
