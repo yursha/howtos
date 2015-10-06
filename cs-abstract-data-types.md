@@ -8,6 +8,12 @@
 - **list** - concat, contains(item), get(index), isEmpty()
 
 # String (list of chars)
+- https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
+- https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html
+- https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html
+- https://docs.oracle.com/javase/8/docs/api/java/util/regex/MatchResult.html
+- https://commons.apache.org/proper/commons-lang/javadocs/api-release/org/apache/commons/lang3/StringUtils.html
+- https://commons.apache.org/proper/commons-lang/javadocs/api-release/org/apache/commons/lang3/StringEscapeUtils.html
 ```java
 abstract class String {
 
