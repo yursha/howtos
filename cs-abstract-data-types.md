@@ -8,41 +8,44 @@
 - **list** - concat, contains(item), get(index), isEmpty()
 
 # String (list of chars)
-```
+```java
+
 // conversions
-concat(str1: String, str2: String) -> String
-join(list: List<String>, with: char) -> String
-split(str: String, pattern: Regex) -> List<String>
-substring(startIndex: Int, endIndex: Int) -> String
-trim(str: String, pattern: Regex) -> String
-trimLeft(str: String, pattern: Regex) -> String
-trimRight(str: String, pattern: Regex) -> String
-toLowerCase
-toUpperCase
-toSnakeCase
-toSentenceCase
-toDashCase
+interface String {
+  concat(str1: String, str2: String) -> String
+  join(list: List<String>, with: char) -> String
+  split(str: String, pattern: Regex) -> List<String>
+  substring(startIndex: Int, endIndex: Int) -> String
+  trim(str: String, pattern: Regex) -> String
+  trimLeft(str: String, pattern: Regex) -> String
+  trimRight(str: String, pattern: Regex) -> String
+  toLowerCase
+  toUpperCase
+  toSnakeCase
+  toSentenceCase
+  toDashCase
 
-// match
-startsWith(prefix: String) -> bool
-endsWith(suffix: String) -> bool
-contains(sub: String) -> bool
-
-// search
-replace
-replaceFirst
-replaceLast
-replaceAll
-indexOf(String)
-lastIndexOf(String)
-
-// list
-length
-isBlank
-isEmpty
-getBytes
-getChars
-charAt(int)
+  // match
+  startsWith(prefix: String) -> bool
+  endsWith(suffix: String) -> bool
+  contains(sub: String) -> bool
+  
+  // search
+  replace
+  replaceFirst
+  replaceLast
+  replaceAll
+  indexOf(String)
+  lastIndexOf(String)
+  
+  // list
+  length
+  isBlank
+  isEmpty
+  getBytes
+  getChars
+  charAt(int)
+}
 ```
 
 compareCaseSensitive
