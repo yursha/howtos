@@ -9,20 +9,19 @@
 
 # String (list of chars)
 ```java
-
-// conversions
 abstract class String {
+
+  // Conversions
+  
   String join(String[] strings, String joiner);
 
   String concat(String[] strings) {
-    join(strings, "");
+    return join(strings, "");
   }
   
   split(str: String, pattern: Regex) -> List<String>
   substring(startIndex: Int, endIndex: Int) -> String
-  trim(str: String, pattern: Regex) -> String
-  trimLeft(str: String, pattern: Regex) -> String
-  trimRight(str: String, pattern: Regex) -> String
+
   toLowerCase
   toUpperCase
   toSnakeCase
@@ -35,10 +34,22 @@ abstract class String {
   contains(sub: String) -> bool
   
   // search
-  replace
-  replaceFirst
-  replaceLast
-  replaceAll
+  String replaceFirst(String str, String pattern, String replacement);
+  String replaceLast(String str, String pattern, String replacement);
+  String replaceAll(String str, String pattern, String replacement);
+  
+  String trim(String str, String pattern) {
+    return str.replace(str, "", "");
+  }
+  
+  String trimLeft(String str, String pattern) {
+    return str.replace(str, "", "");
+  }
+  
+  String trimRight(String str, String pattern) {
+    return str.replace(str, "", "");
+  }
+
   indexOf(String)
   lastIndexOf(String)
   
