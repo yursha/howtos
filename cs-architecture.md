@@ -38,12 +38,15 @@
 - AngularJS has its own dependency implementation
 
 ## Terms
-- **injector**, **wiring**
-- **container** - a place where all the things that should work together are registered.
+**Injector** wires components together during runtime. It holds references to all instantiated objects. Some configuration mechanism must be used in order to register all the things that should work together inside the injector.
 - With **constructor** (a lower level approach) an object is created by platform, with **factory** (a higher level approach) we create it ourselves. 
 - **life-cycle**
-- **singleton** vs **prototype**
+ + singleton
+ + prototype
+ + session
+ + request
 - **lazy** vs **eager** instantiation
+- automatic dependency resolution
 
 **Declarative code** is better when it comes to building UIs and wiring software components together, while imperative code is better for expressing business logic.
 
