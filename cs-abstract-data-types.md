@@ -12,11 +12,12 @@
 
 // conversions
 abstract class String {
+  String join(String[] strings, String joiner);
+
   String concat(String[] strings) {
     join(strings, "");
   }
   
-  String join(String[] strings, String joiner);
   split(str: String, pattern: Regex) -> List<String>
   substring(startIndex: Int, endIndex: Int) -> String
   trim(str: String, pattern: Regex) -> String
