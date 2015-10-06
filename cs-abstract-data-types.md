@@ -11,8 +11,11 @@
 ```java
 
 // conversions
-interface String {
-  String concat(String[] strings);
+abstract class String {
+  String concat(String[] strings) {
+    join(strings, "");
+  }
+  
   String join(String[] strings, String joiner);
   split(str: String, pattern: Regex) -> List<String>
   substring(startIndex: Int, endIndex: Int) -> String
