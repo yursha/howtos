@@ -39,15 +39,15 @@ abstract class String {
   String replaceAll(String str, String pattern, String replacement);
   
   String trim(String str, String pattern) {
-    return str.replace(str, "^\s+(.*)\s+$", "$1");
+    return str.replace(str, "\A\s+(.*)\s+\z", "\1");
   }
   
   String trimLeft(String str, String pattern) {
-    return str.replace(str, "^\s+", "");
+    return str.replace(str, "\A\s+", "");
   }
   
   String trimRight(String str, String pattern) {
-    return str.replace(str, "\s+$", "");
+    return str.replace(str, "\s+\z", "");
   }
 
   indexOf(String)
