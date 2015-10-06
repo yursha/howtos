@@ -1,13 +1,13 @@
-# Java
+# Libraries
+- https://commons.apache.org/proper/commons-io
+- https://github.com/apache/commons-io
+
+# Tips
 - Never use `FileWriter` and `FileReader` classes as they assume default char encoding and don't allow to specify one. Instead use `FileOutputStream` wrapped into `InputStreamReader` and `FileOutputStream` wrapped into `OutputStreamWriter`.
 - Buffer `InputStreamReader` with `BufferedReader`
 - Buffer `InputStreamWriter` with `BufferedWriter`
 - Buffer `FileInputStream` with `BufferedInputStream`
 - Buffer `FileOutputStream` with `BufferedOutputStream`
-
-#### Libraries
-- https://commons.apache.org/proper/commons-io
-- https://github.com/apache/commons-io
 
 #### Snippets
 
