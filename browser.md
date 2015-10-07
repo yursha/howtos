@@ -38,3 +38,6 @@ The normal flow of a browser receiving an event is that it executes a correspond
 
 # ?
 - cross-origin resource sharing (CORS)
+
+# JQuery
+- http://api.jquery.com/category/events/event-object/
