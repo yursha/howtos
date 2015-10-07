@@ -2,7 +2,7 @@
 - https://docs.angularjs.org/api
 - https://docs.angularjs.org/guide/scope
  + Function: bootstrap, module
- + Manual: modules, DI, bootstrap
+ + Manual: modules, DI, bootstrap, Expressions
  + Type: angular.Module
  + Service: $rootScope
  + Directive: ngClick
