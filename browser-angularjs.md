@@ -91,20 +91,6 @@ The purpose of **controllers** is to expose variables and functionality to **exp
 
 # Event handling
 
-# Reusable components
-
-# Routing
-
-# Deep linking
-
-# Unit Testing
-
-# End-to-end Testing
-
-# Mocks
-
-# Test Harnesses
-
 # Filters
 Specify what formatting to apply to an evaluated expression in the template.
 
