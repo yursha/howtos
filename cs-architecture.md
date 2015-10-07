@@ -37,6 +37,7 @@
 - AngularJS has its own dependency implementation
 - http://martinfowler.com/articles/injection.html
 - https://en.wikipedia.org/wiki/Law_of_Demeter
+- http://misko.hevery.com/2008/08/01/circular-dependency-in-constructors-and-dependency-injection/
 
 There are only three ways a component can get a hold of its dependencies:
 
