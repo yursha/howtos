@@ -45,7 +45,7 @@ There are only three ways a component can get a hold of its dependencies:
 
 The first two options of creating or looking up dependencies are not optimal because they hard code the dependency to the component. This makes it difficult, if not impossible, to modify the dependencies. This is especially problematic in tests, where it is often desirable to provide mock dependencies for test isolation.
 
-**Injector** wires components together during runtime. It holds configuration information about all injectable components. Components can be configured to have different **life-cycle** (singleton, prototype, session or request). Components are usually instantiated **lazily** on first use, not **eagerly**. Injector usual performs *automatic dependency resolution*.
+The **injector** is a *service locator* that is responsible for construction and lookup of dependencies during runtime. It holds configuration information about all injectable components. Components can be configured to have different **life-cycle** (singleton, prototype, session or request). Components are usually instantiated **lazily** on first use, not **eagerly**. Injector usual performs *automatic dependency resolution*.
 
 With **constructor** (a lower level approach) an object is created by platform, with **factory** (a higher level approach) we create it ourselves. 
 
