@@ -37,11 +37,11 @@
 - AngularJS has its own dependency implementation
 - http://martinfowler.com/articles/injection.html
 
-There are only three ways a component (object or function) can get a hold of its dependencies:
+There are only three ways a component can get a hold of its dependencies:
 
-- The component can create the dependency, typically using the new operator.
-- The component can look up the dependency, by referring to a global variable.
-- The component can have the dependency passed to it where it is needed.
+- The component can create the dependency, typically using the new operator (constructor pattern).
+- The component can look up the dependency, by referring to a global variable (factory pattern).
+- The component can have the dependency passed to it where it is needed (DI pattern).
 
 The first two options of creating or looking up dependencies are not optimal because they hard code the dependency to the component. This makes it difficult, if not impossible, to modify the dependencies. This is especially problematic in tests, where it is often desirable to provide mock dependencies for test isolation.
 
