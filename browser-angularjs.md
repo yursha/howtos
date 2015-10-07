@@ -9,6 +9,16 @@
 - https://github.com/johnpapa/angular-styleguide
 - http://www.bennadel.com/blog/2760-one-time-data-bindings-for-object-literal-expressions-in-angularjs-1-3.htm
 
+# How Angular works
+- script load
+- script looks up `ng-app` directive
+- script creates `$rootScope`
+- script compiles HTML
+ + script downloads directive templates
+- script instantiates scopes
+- script instantiates controllers
+- register watch expressions
+
 # Debugging
 - Angular automatically places `ng-scope` class on elements where scopes are attached. (Can be colored)
 
@@ -23,11 +33,9 @@ In AngularJS both **view model** and **controller behaviour** live in the **scop
 # Concepts
 Scope behaviour can be called (with parameters) from expressions or event-handler directives. Expressions are re-evaluated when model changes. Event-handler directives are evaluated on events.
 
-There is a root scope and controller scopes.
-
 When an scope expression is evaluated, scope fields are looked up in the scope chain upto the root scope.
 
-Services are lazily instantiated singletons.
+Services are singletons.
 
 Directives watch the scope and update DOM and vice versa.
 
@@ -35,9 +43,8 @@ Scope is what separates controllers and directives that can communicate only via
 
 Scopes can progagate events in the tree in a top-down or bottom-up manner.
 
-The directive's template is requested before the scope is initialized.
-
 # Scope-producing directives
+- `ng-app`
 - `ng-controller`
 - `ng-repeat` (for each item in a collection)
 
