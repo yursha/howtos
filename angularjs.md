@@ -4,6 +4,8 @@
  + Function: bootstrap, module
  + Manual: modules, DI, bootstrap
  + Type: angular.Module
+ + Service: $rootScope
+ + Directive: ngClick
 - https://github.com/johnpapa/angular-styleguide
 
 # Debugging
