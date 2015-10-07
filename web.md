@@ -39,3 +39,4 @@ The normal flow of a browser receiving an event is that it executes a correspond
 - deeplinking
 
 ## DOM Events
+- `DOMContentLoaded`
