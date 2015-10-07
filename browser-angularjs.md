@@ -7,6 +7,7 @@
  + Service: $rootScope
  + Directive: ngClick
 - https://github.com/johnpapa/angular-styleguide
+- http://www.bennadel.com/blog/2760-one-time-data-bindings-for-object-literal-expressions-in-angularjs-1-3.htm
 
 # Debugging
 - Angular automatically places `ng-scope` class on elements where scopes are attached. (Can be colored)
