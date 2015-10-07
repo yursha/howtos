@@ -36,6 +36,7 @@
 - https://github.com/google/guice
 - AngularJS has its own dependency implementation
 - http://martinfowler.com/articles/injection.html
+- https://en.wikipedia.org/wiki/Law_of_Demeter
 
 There are only three ways a component can get a hold of its dependencies:
 
