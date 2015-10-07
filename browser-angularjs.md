@@ -5,7 +5,7 @@
  + Manual: DI - Filters, Directives, Modules, Bootstrap
  + Type: angular.Module
  + Service: $rootScope
- + Directive: ngClick
+ + Directive: ngClick, ngHref
 - https://github.com/johnpapa/angular-styleguide
 - http://www.bennadel.com/blog/2760-one-time-data-bindings-for-object-literal-expressions-in-angularjs-1-3.htm
 
@@ -48,6 +48,8 @@ Directives watch the scope and update DOM and vice versa.
 Scope is what separates controllers and directives that can communicate only via scope. Scope is created only thru directives.
 
 Scopes can progagate events in the tree in a top-down or bottom-up manner.
+
+Directives have priority levels.
 
 # Scope-producing directives
 Directives can also produce **isolate scope**.
