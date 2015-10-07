@@ -41,3 +41,6 @@ The normal flow of a browser receiving an event is that it executes a correspond
 
 # JQuery
 - http://api.jquery.com/category/events/event-object/
+
+# Mozilla
+- https://developer.mozilla.org/en-US/docs/Web/API/Element/matches
