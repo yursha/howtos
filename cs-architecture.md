@@ -59,16 +59,16 @@ With **constructor** (a lower level approach) an object is created by platform, 
 
 Code that crosses platform boundaries (like c/java interfacing or javascript/DOM interfacing) is hard to test.
 
+# Asyncronous Programming
+- callback
+- promises
+- deferreds
+
 ## Events
 - pub/sub
 - propagate
 - broadcast
 - emit
 - handle
-
-# Async
-- callback
-- promises
-- deferreds
 
 
