@@ -1,7 +1,7 @@
 - https://github.com/angular/angular.js
 - https://docs.angularjs.org/api
 - https://docs.angularjs.org/guide/scope
- + modules, DI
+ + modules, DI, bootstrap
 - https://github.com/johnpapa/angular-styleguide
 
 # Debugging
