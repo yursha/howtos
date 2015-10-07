@@ -65,10 +65,10 @@ Code that crosses platform boundaries (like c/java interfacing or javascript/DOM
 - deferreds
 
 ## Events
+- subscribe / register
 - propagate (publish) - recursive
   + broadcast
   + emit
 - handle
-- subscribe / register
 
 
