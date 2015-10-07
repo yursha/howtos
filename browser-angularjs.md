@@ -20,9 +20,6 @@
 # Annoying
 In AngularJS both **view model** and **controller behaviour** live in the **scope** objects without a clear boundary. To separate them we can store all model-level data in `$scope.model` and all controller-level behaviour in `$scope.controller`.
 
-- What has a scope?
- + controller
-
 # Concepts
 Scope behaviour can be called (with parameters) from expressions or event-handler directives. Expressions are re-evaluated when model changes. Event-handler directives are evaluated on events.
 
@@ -37,6 +34,8 @@ Directives watch the scope and update DOM and vice versa.
 Scope is what separates controllers and directives that can communicate only via scope. Scope is created only thru directives.
 
 Scopes can progagate events in the tree in a top-down or bottom-up manner.
+
+The directive's template is requested before the scope is initialized.
 
 # Scope-producing directives
 - `ng-controller`
