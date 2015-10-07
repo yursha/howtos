@@ -12,6 +12,12 @@
 # How Angular works
 - script load
 - script looks up `ng-app` directive
+- script creates constants and all `config` blocks 
+ + filters via `$filterProvider`. All filters are available everywhere.
+ + directives
+ + controllers
+ + services
+- script runs `run` blocks
 - script creates `$rootScope`
 - script compiles HTML
  + script downloads directive templates
