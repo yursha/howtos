@@ -26,6 +26,13 @@
 - script instantiates controllers
 - register watch expressions
 
+## ngRoute
+- fetch view template
+- broadcast `$routeChangeStart`
+- instantiate controller
+- render view
+- broadcast `$routeChangeSuccess`
+
 # Debugging
 - Angular automatically places `ng-scope` class on elements where scopes are attached. (Can be colored)
 
