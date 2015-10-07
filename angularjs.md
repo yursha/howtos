@@ -1,8 +1,9 @@
 - https://github.com/angular/angular.js
 - https://docs.angularjs.org/api
 - https://docs.angularjs.org/guide/scope
- + Function: bootstrap
+ + Function: bootstrap, module
  + Manual: modules, DI, bootstrap
+ + Type: angular.Module
 - https://github.com/johnpapa/angular-styleguide
 
 # Debugging
