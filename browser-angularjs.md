@@ -57,6 +57,7 @@ Directives can also produce **isolate scope**.
 - `ng-app`
 - `ng-controller`
 - `ng-repeat` (for each item in a collection)
+- `ng-view`
 
 # Modules
 - `ng` (angular.js)
