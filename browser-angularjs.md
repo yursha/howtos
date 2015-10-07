@@ -44,6 +44,7 @@ Scope is what separates controllers and directives that can communicate only via
 Scopes can progagate events in the tree in a top-down or bottom-up manner.
 
 # Scope-producing directives
+Directives can also produce **isolate scope**.
 - `ng-app`
 - `ng-controller`
 - `ng-repeat` (for each item in a collection)
