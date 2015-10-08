@@ -1,5 +1,5 @@
 - https://git-scm.com
-- https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Short-Status
+- https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 - https://www.atlassian.com/git/tutorials/
 
 # Help
