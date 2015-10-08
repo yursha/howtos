@@ -8,6 +8,7 @@
  + Directive: ngClick, ngHref
 - http://angularjs.blogspot.com/2014/02/an-angularjs-style-guide-and-best.html
 - https://github.com/johnpapa/angular-styleguide
+- https://github.com/angular/angular.js/wiki/Understanding-Scopes
 - http://www.bennadel.com/blog/2760-one-time-data-bindings-for-object-literal-expressions-in-angularjs-1-3.htm
 
 # How Angular works
