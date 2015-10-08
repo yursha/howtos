@@ -11,6 +11,7 @@
 - https://github.com/angular/angular.js/wiki/Understanding-Scopes
 - http://www.bennadel.com/blog/2760-one-time-data-bindings-for-object-literal-expressions-in-angularjs-1-3.htm
 - https://github.com/angular-ui/bootstrap
+- https://github.com/danialfarid/ng-file-upload
 
 # How Angular works
 - script load
