@@ -9,6 +9,7 @@
 
 ## DropWizard.io
 - http://www.dropwizard.io/ (Uses Jetty, Jersey, Jackson)
+- http://www.dropwizard.io/manual/core.html
 - https://github.com/dropwizard/metrics
 
 # JSON
