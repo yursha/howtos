@@ -1,3 +1,5 @@
+- interpolation
+
 # Mustache
 
 Always comment template markup like this as browser will mess up the template when trying to build correct DOM.
