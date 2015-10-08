@@ -1,3 +1,7 @@
+- https://docs.oracle.com/javase/tutorial/index.html
+
+# Tools
+
 - `java [-options] -jar jarfile [args...]`
 
 # Userland
