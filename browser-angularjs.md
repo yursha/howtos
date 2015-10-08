@@ -5,7 +5,7 @@
  + Manual: DI - Filters, Directives, Modules, Bootstrap
  + Type: angular.Module
  + Service: $rootScope
- + Directive: ngClick, ngHref
+ + Directive: ngClick, ngHref, ngIf
 - http://angularjs.blogspot.com/2014/02/an-angularjs-style-guide-and-best.html
 - https://github.com/johnpapa/angular-styleguide
 - https://github.com/angular/angular.js/wiki/Understanding-Scopes
@@ -66,6 +66,7 @@ Directives can also produce **isolate scope**.
 - `ng-controller`
 - `ng-repeat` (for each item in a collection)
 - `ng-view`
+- `ng-if`
 
 # Modules
 - `ng` (angular.js)
