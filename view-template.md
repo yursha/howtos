@@ -26,3 +26,4 @@ Always comment template markup like this as browser will mess up the template wh
 
 # Jade
 - http://jade-lang.com/
+(attributes, interpolation, tags)
