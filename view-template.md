@@ -1,5 +1,4 @@
-- interpolation
-- **templating engine** - transforms a **template** by evaluating **marked up expressions** against a specific **context**.
+- Templating Engine - interpolates a template by evaluating marked up expressions against a specific context.
 
 # Mustache
 
