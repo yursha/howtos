@@ -24,7 +24,7 @@ A tree is a DAG representing a hierarchy (nestedness).
 A tree may have an associated **node selection scheme**:
 - file path, shell wildcard expansion, POSIX `find`
 - XPath - http://www.w3.org/TR/xpath/
-- dot-notation (INI files, property path)
+- dot-notation (INI files, java bean property path, view states hierarchy in angular ui-router, java package name)
 - URL/URI/URN (http, udp, git, ssh, ftp, etc.)
 
 Most of the node selection schemes deal with the following **concepts**:

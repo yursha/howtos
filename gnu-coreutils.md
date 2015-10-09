@@ -1,4 +1,4 @@
-[Bookmark](https://www.gnu.org/software/coreutils/manual/coreutils.html#Target-directory) 
+[Bookmark](https://www.gnu.org/software/coreutils/manual/coreutils.html#Target-directory)
 
 - `df` - report file system disk space usage
 - `du` - estimate file space usage

@@ -32,4 +32,4 @@
 
 ## code style
 - maven-checkstyle-plugin
- 
+

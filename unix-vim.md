@@ -11,6 +11,28 @@
 - https://github.com/vim/vim
 - http://ex-vi.sourceforge.net/
 
+# Moving around
+- h,j,k,l - moving around
+- J,dd,<n>x - deleting
+- r - editing
+- u,U,CTRL-r - undoing
+- i,<n>a,I,A,o,O - triggering insert mode
+- ZZ,w,q<!>,e<!> - working with buffers
+
+# `:help <arg>` or `:helpgrep <arg`
+quickref, usr_03.txt, reference_toc
+- `x`, `CTRL-R` - normal mode command
+- `v_u` - visual mode command
+- `i_<Esc>` - insert mode command
+- `:quit` - command-line command
+- `c_<Del>` - command-line editing
+- `-r` - command-line argument for vim
+- `'textwidth'` - option
+- `/[` - regex
+- `E37` - errors
+- `subject()` - functions
+- `+subject` - compile-time feature
+
 # Gotchas
 - **Line terminator vs line separator confusion**. Vim automatically adds a newline at the end of each file it edits. To prevent this behaviour for file open in binary mode (`vim -b path/to/file`) we should disable `eol` boolean configuration variable.
 
@@ -95,14 +117,18 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 
 
 ## Buffers
-- `:ls` or `:ls!` - list in memory buffers
+- `:ls` or `:ls!` - list in memory buffers (`:buffers`)
 - `:f` - see info about current buffer
-- `:bd` - delete buffer from memory
+- `:bd` - delete buffer from memory (`:bdel`, `:bwipe`)
 - `:b2` - swith to second buffer (also `:bu` or `:buf` or `:buffer`)
 - `:b MyCl` - switch to `MyClass` file (any part of file name can match with stronger preference for the matches from the beginning). <kbd>Tab</kbd> can be used to autocomplete and to cycle thru matching names. Use <kbd>Ctrl</kbd> + <kbd>D</kbd> to list all matching names at once.
 - `:e path/to/file` - create a buffer with associated file path (if file exists then read from it)
 - `:q` - quit vim
 - `:w` - save changes (`ZZ` is equal to `:wq`)
 - `:saveas 'filepath'` - clone buffer and save it to a different filepath
-- `:bufdo %s/pattern/replace/ge | update` - search and replace in all open buffers. 
+- `:bufdo %s/pattern/replace/ge | update` - search and replace in all open buffers.
 - `% find . -type f | vim` - find all files recursively in a directory
+
+## Argument list
+- `:args **` - open all files in cwd recursively (including directory files)
+- `:arglocal`, `argc()`, `argv()`

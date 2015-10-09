@@ -10,4 +10,4 @@
 - `% find . -iname *.yml` - find all `.yml` files in the cwd
 - `% find . -type f` - find all files which are not directories.
 
-  
+

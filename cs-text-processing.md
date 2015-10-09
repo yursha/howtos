@@ -76,7 +76,7 @@ DOM is an in-memory tree representation of a document (XML, HTML) or data (XML).
 - http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/
 - http://www.w3.org/DOM/
 
-#### XOM 
+#### XOM
 
 #### DOM4j (http://www.dom4j.org)
 - Data (non-mixed) content model
@@ -97,7 +97,7 @@ DOM is an in-memory tree representation of a document (XML, HTML) or data (XML).
 ## Libraries
 - **http://mvnrepository.com/open-source/json-libraries** - lookup the relevant libraries here.
 
-### Jackson 
+### Jackson
 (iteration | data binding | tree traversal)
 - https://github.com/FasterXML/jackson
 - https://github.com/FasterXML/jackson-databind

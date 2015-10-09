@@ -30,7 +30,7 @@ $ man git-<verb>
 # Areas
 - **Working Directory** - modified files
 - **Staging Area (index) - a special file in `.git`** - staged files (place where a new snapshot is being formed).
-- **`.git` repository** - committed files (compressed metadata and object database). Git generally only adds data here. Everything in Git is check-summed before it is stored and is then referred to by that checksum for the purposed of **integrity**. You can’t lose information in transit or get file corruption without Git being able to detect it. The mechanism that Git uses for this checksumming is called a SHA-1 hash. This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git. Git stores everything in its database not by file name but by the hash value of its contents. 
+- **`.git` repository** - committed files (compressed metadata and object database). Git generally only adds data here. Everything in Git is check-summed before it is stored and is then referred to by that checksum for the purposed of **integrity**. You can’t lose information in transit or get file corruption without Git being able to detect it. The mechanism that Git uses for this checksumming is called a SHA-1 hash. This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git. Git stores everything in its database not by file name but by the hash value of its contents.
   + `.git/hooks/`
   + `.git/info/`
   + `.git/logs/`
@@ -51,7 +51,7 @@ $ man git-<verb>
 - `% git init` - create new `.git` folder with skeleton contents
 - `% git push` - upload `.git` folder.
 - `% git pull` - download `.git` folder
-- `% git rm --cached -r` - ??? 
+- `% git rm --cached -r` - ???
 - `% git rm --cached <pattern>` - remove files from git but keep it on disk
 - `% git rm <pattern>` - remove files from git and disk
 - `% git add <pattern>` - copy any new/changed file, directory, matches or everything into `.git/index` as they are now
@@ -59,7 +59,7 @@ $ man git-<verb>
 - `% git reset HEAD *.swp` - unstage all `.swp` files
 - `% git commit -m 'my message'` - create a new snapshot from staged changes.
 - `% git commit -v` - open an editor with status and diff attached as comments.
-- `% git commit -a -m 'added new benchmarks'` - skip `git add` and add and commit automatically what's tracked and changed. 
+- `% git commit -a -m 'added new benchmarks'` - skip `git add` and add and commit automatically what's tracked and changed.
 - `% git commit --amend` - fix the last commit (both contents and message)
 - `% git status -s` - list filenames with their statuses in the working directory (recursively) [`--short` - succinctly].
 - `% git checkout -- <file>` - replace file with one from the latest snapshot (discard changes)
@@ -82,7 +82,7 @@ $ man git-<verb>
 - `% git log --since="2008-01-15"`
 - `% git log --since="2 years 1 day 3 minutes ago"`
 
-### By people 
+### By people
 - `% git log --author`
 - `% git log --committer`
 
@@ -130,7 +130,7 @@ If you run `git difftool` instead of `git diff`, you can view any of these diffs
 
 # How to do a feature
 1. Pick a Jira issue from the backlog
-1. Discuss it with actual users, how are they going to use it 
+1. Discuss it with actual users, how are they going to use it
 1. Fork `% git checkout -b <feature>`
 1. Create an automated test case
 1. Run a test case against existing code
@@ -142,7 +142,7 @@ If you run `git difftool` instead of `git diff`, you can view any of these diffs
 1. Push
 1. Close Jira issue
 1. Tag `% git tag -a v1.0 -m "version 1.0"` and push
-1. Release, i.e. deploy to production 
+1. Release, i.e. deploy to production
 
 
 # Deployment

@@ -18,28 +18,28 @@ public class IO {
       return chars.toString();
     }
   }
-  
+
   public static byte[] readAllBytesFromStream(InputStream stream) throws IOException {
     byte[] buf = new byte[8192]; // 8KiB
     ByteArrayOutputStream resizingByteArray = new ByteArrayOutputStream();
-    
+
     int count;
     while ((count = stream.read(buf, 0, buf.length)) != -1) {
       resizingByteArray.write(buf, 0, count);
     }
     return resizingByteArray.toByteArray();
   }
-  
+
   public static void writeStringToFileWithEncoding(String str, String filepath, String encoding) throws IOException {
     try (PrintWriter writer = new PrintWriter(filepath, encoding)) {
       writer.print(str);
     }
   }
-  
+
   public static void writeBytesToFile(byte[] bytes, String filepath) throws IOException {
     try (FileOutputStream out = new FileOutputStream(filepath)) {
       out.write(bytes);
     }
   }
-  
+
 }

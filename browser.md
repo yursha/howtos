@@ -29,7 +29,7 @@ The normal flow of a browser receiving an event is that it executes a correspond
 - `XMLHttpRequest`
 
 # Security
-- **same origin policy** - web author can only issue ajax requests to their own website. 
+- **same origin policy** - web author can only issue ajax requests to their own website.
  + https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
 - **jsonp** - JSON with padding/prefix - protocol between web authors that wish to work around the same-origin policy via *script element injection*.
  + https://en.wikipedia.org/wiki/JSONP

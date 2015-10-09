@@ -10,13 +10,24 @@
 - https://github.com/johnpapa/angular-styleguide
 - https://github.com/angular/angular.js/wiki/Understanding-Scopes
 - http://www.bennadel.com/blog/2760-one-time-data-bindings-for-object-literal-expressions-in-angularjs-1-3.htm
-- https://github.com/angular-ui/bootstrap
+
+# Twitter Bootstrap
+- https://github.com/angular-ui/bootstrap (Integration of Twitter Bootstrap and AngularJS)
+
+# Angular UI <small>Companion suite for Angular framework</small>
+- https://angular-ui.github.io/ (modal, dropdown)
+
+# UI Router
+- https://github.com/angular-ui/ui-router (Nested views with AngularJS), http://angular-ui.github.io/ui-router/site/#/api/ui.router
+- https://github.com/angular-ui/ui-router/wiki/URL-Routing#stateparams-service
+
+# File Upload
 - https://github.com/danialfarid/ng-file-upload
 
 # How Angular works
 - script load
 - script looks up `ng-app` directive
-- script creates constants and all `config` blocks 
+- script creates constants and all `config` blocks
  + filters via `$filterProvider`. All filters are available everywhere.
  + directives
  + controllers
@@ -92,7 +103,7 @@ Directives can also produce **isolate scope**.
 
 # Templating
 The HTML **template** is processed by the **compiler** during app load. Template expressions are evaluated against a *scope tree* with `$rootScope` as a root.
-DOM is accessed **declaratively** through **directives** which are also processed by the **compiler**. 
+DOM is accessed **declaratively** through **directives** which are also processed by the **compiler**.
 
 # Live Data Binding (2-way)
 Automatic synchronization of data between the **view** (DOM) and the **view model** (part of **scope** objects) in both directions.

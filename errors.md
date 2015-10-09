@@ -1,6 +1,6 @@
 # Tips
 - Loudly **crash on error** if recovery is not meaningful.
-- **Log all errors** with as much information (including stack trace) as possible. 
+- **Log all errors** with as much information (including stack trace) as possible.
 - In a multithreaded application **make number of threads configurable from the command line**. So during debug time you will be able to set `-Dthreads=1` and enjoy serial single-thread logging.
 - **Escape variable non numeric data with single quotes** so that variables containing spaces can be easily distinguishable from the (static) rest of the message.
 - **Respect log levels** sot that you can easily adjust log verbosity in development and production environments and grep out only important messages easily.

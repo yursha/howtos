@@ -46,7 +46,7 @@ The first two options of creating or looking up dependencies are not optimal bec
 
 The **injector** is a *service locator* that is responsible for construction and lookup of dependencies during runtime. It holds configuration information about all injectable components. Components can be configured to have different **life-cycle** (singleton, prototype, session or request). Components are usually instantiated **lazily** on first use, not **eagerly**. Injector usual performs *automatic dependency resolution*.
 
-With **constructor** (a lower level approach) an object is created by platform, with **factory** (a higher level approach) we create it ourselves. 
+With **constructor** (a lower level approach) an object is created by platform, with **factory** (a higher level approach) we create it ourselves.
 
 **Declarative code** is better when it comes to building UIs and wiring software components together, while imperative code is better for expressing business logic.
 
