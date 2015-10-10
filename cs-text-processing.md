@@ -1,3 +1,6 @@
+# Characters
+- http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html
+
 Data Formats (structured/unstructured)
 ===================
 - HTML, XML, JSON, YAML, HAML
@@ -6,7 +9,7 @@ Data Formats (structured/unstructured)
 
 Character comparisons - case sensitivity.
 
-## Regular Expressions
+# Regular Expressions
 - literals
 - capturing parentheses (backreferences)
 - quantifiers (greedy / non-greedy)
@@ -18,6 +21,8 @@ Character comparisons - case sensitivity.
 ## implementations
 - `java.util.regex`
 
+## Examples
+- `/^\-?\d+$/` - integer
 
 # Structured Serialized Text Formats (Tree | Table)
 - **Parser** - parses structured text into tokens and creates an in-memory representation. Only *well-formed* text is parseable. Includes **lexer**.

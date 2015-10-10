@@ -1,0 +1,2 @@
+- https://en.wikipedia.org/wiki/Partial_application
+- https://en.wikipedia.org/wiki/Currying

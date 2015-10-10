@@ -1,11 +1,13 @@
 - https://github.com/angular/angular.js
+- https://blog.angularjs.org/
 - https://docs.angularjs.org/api
 - https://docs.angularjs.org/guide/scope
- + Function: bootstrap, module
- + Manual: DI - Filters, Directives, Modules, Bootstrap
+ + Manual (to read): Animations, Providers, Unit Testing, E2E testing, "using $location"."Replace method" 
+ + Directive: ngClick, ngHref, ngIf, ngModel, ngOptions, ngRepeat, ngSrc, select
  + Type: angular.Module
+ + Provider:
  + Service: $rootScope
- + Directive: ngClick, ngHref, ngIf
+ + auto, ngAnimate, ngAria, ngCookies, ngMessageFormat, ngMessages, ngMock, ngMockE2E, ngResource, ngSanitize, ngTouch
 - http://angularjs.blogspot.com/2014/02/an-angularjs-style-guide-and-best.html
 - https://github.com/johnpapa/angular-styleguide
 - https://github.com/angular/angular.js/wiki/Understanding-Scopes
@@ -113,3 +115,11 @@ The purpose of **controllers** is to expose variables and functionality to **exp
 
 # Design
 The flow of marshaling data from the server to an internal object to an HTML form, allowing users to modify the form, validating the form, displaying validation errors, returning to an internal model, and then back to the server, creates a lot of boilerplate code.
+
+# Client-side validation
+- required (non-blank)
+- pattern
+- minlength
+- maxlength
+- min
+- max
