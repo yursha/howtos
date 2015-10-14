@@ -2,7 +2,6 @@
 
 - `df` - report file system disk space usage
 - `du` - estimate file space usage
-- `ls` - list directory contents
 - `id` - print real and effective user and group IDs
 - `chown` - change file owner and group
 - `chgrp` - change group ownership
@@ -11,3 +10,6 @@
 - `shred` - overwrite a file to hide its contents, and optionally delete it
 - `sort` - sort lines of text files
 - `pwd`
+
+# `ls` - list directory contents
+- `% ls -p` - list cwd with '/' indicators for directories

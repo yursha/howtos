@@ -2,7 +2,6 @@
 - https://blog.angularjs.org/
 - https://docs.angularjs.org/api
 - https://docs.angularjs.org/guide/scope
- + Manual (to read): Animations, Providers, Unit Testing, E2E testing, "using $location"."Replace method" 
  + Directive: ngClick, ngHref, ngIf, ngModel, ngOptions, ngRepeat, ngSrc, select
  + Type: angular.Module
  + Provider:

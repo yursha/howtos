@@ -62,9 +62,8 @@ $ man git-<verb>
 - `% git commit -a -m 'added new benchmarks'` - skip `git add` and add and commit automatically what's tracked and changed.
 - `% git commit --amend` - fix the last commit (both contents and message)
 - `% git status -s` - list filenames with their statuses in the working directory (recursively) [`--short` - succinctly].
-- `% git checkout -- <file>` - replace file with one from the latest snapshot (discard changes)
+- `% git checkout -- <file>` - replace file in the working directory with one from the latest snapshot (discard changes)
 - `% git reset HEAD <file>` - unstage from index
-- `% git checkout -- <file>` - revert changes to a file in the working directory
 
 ## Git log formatters
 - `% git log -p` - commits with diffs (patches) (helpful for code review)
@@ -115,7 +114,7 @@ $ man git-<verb>
 If you run `git difftool` instead of `git diff`, you can view any of these diffs in software like `emerge`, `vimdiff` and many more. Run `git difftool --tool-help` to see what is available on your system.
 
 # Branching
-- `% git checkout -b serverfix origin/serverfix` - checkout a remote branch into a local branch and track remote branch from local one.
+- `% git checkout -b [local-branch-name] [remote-name]/[remote-branch-name]` - checkout a remote branch into a local branch and track remote branch from local one.
 
 # Stashing
 
@@ -127,6 +126,8 @@ If you run `git difftool` instead of `git diff`, you can view any of these diffs
 - `% git fetch [remote-name]`
 - `% git pull` - fetch and merge a tracked remote branch into a local branch
 - `% git push [remote-name] [branch-name]` - send new snapshots upstream
+- `% git remote rename [old-name] [new-name]` - renames a remote
+- `% git remote rm [name]` - deletes a remote
 
 # How to do a feature
 1. Pick a Jira issue from the backlog
