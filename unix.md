@@ -6,3 +6,4 @@ System calls errno explanations
 # Tools
 - `awk` and `sed` are stream oriented - they only read the file forward from beginning to end while `vim` is buffer oriented - you can move forward and backward in the file as you like.
 - `tree` - http://mama.indstate.edu/users/ice/tree/
+- `cut`

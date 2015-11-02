@@ -1,3 +1,10 @@
+# Browser API
+- https://developer.mozilla.org/en-US/docs/Web/API/Window/location
+- https://developer.mozilla.org/en-US/docs/Web/API/Location
+
+## Compatibility
+- http://caniuse.com/
+
 # User interaction
 
 User interacts with app thru `<input>`, `<select>`, `<textarea>` elements or click/touch events.
@@ -8,9 +15,15 @@ User interacts with app thru `<input>`, `<select>`, `<textarea>` elements or cli
 - keyframes
 - JS animations
 
-The normal flow of a browser receiving an event is that it executes a corresponding JavaScript callback. Once the callback completes the browser re-renders the DOM and returns to waiting for more events.
-- navigation
-- deeplinking
+## HTML
+- https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+- http://www.html5rocks.com/en/
+- http://html5doctor.com/
+- https://html5boilerplate.com/
+- https://html5.org/
+- https://html.spec.whatwg.org/
+- http://html5up.net/
+- http://html5demos.com/
 
 ## DOM Events
 - `DOMContentLoaded`
@@ -57,3 +70,6 @@ The normal flow of a browser receiving an event is that it executes a correspond
 
 # HTML
 - http://www.w3.org/TR/html51/
+
+# CSS
+- https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform

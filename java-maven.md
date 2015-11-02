@@ -1,4 +1,5 @@
 # Other
+- https://github.com/ruby/rake
 - http://ant.apache.org/
 - http://ant.apache.org/ivy/
 - http://buildr.apache.org/

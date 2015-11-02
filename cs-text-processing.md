@@ -101,6 +101,7 @@ DOM is an in-memory tree representation of a document (XML, HTML) or data (XML).
 
 ## Libraries
 - **http://mvnrepository.com/open-source/json-libraries** - lookup the relevant libraries here.
+- https://github.com/fangyidong/json-simple
 
 ### Jackson
 (iteration | data binding | tree traversal)

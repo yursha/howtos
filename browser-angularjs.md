@@ -11,9 +11,11 @@
 - https://github.com/johnpapa/angular-styleguide
 - https://github.com/angular/angular.js/wiki/Understanding-Scopes
 - http://www.bennadel.com/blog/2760-one-time-data-bindings-for-object-literal-expressions-in-angularjs-1-3.htm
+- http://onehungrymind.com/angularjs-sticky-notes-pt-2-isolated-scope/
 
 # Twitter Bootstrap
 - https://github.com/angular-ui/bootstrap (Integration of Twitter Bootstrap and AngularJS)
+- http://mgcrea.github.io/angular-strap/
 
 # Angular UI <small>Companion suite for Angular framework</small>
 - https://angular-ui.github.io/ (modal, dropdown)
@@ -122,3 +124,21 @@ The flow of marshaling data from the server to an internal object to an HTML for
 - maxlength
 - min
 - max
+
+# Test services in browser console
+
+Get hold of $http service
+```
+> var h = angular.element(document).injector().get('$http')
+> function j(response) { console.log(JSON.stringify(response.data, null, 2)) }
+> h.get('url').then(j)
+```
+
+Get scope reference for selected element
+```
+> var s = angular.element($0).scope() 
+> // do some staff
+> s.$digest()
+```
+
+- https://developers.google.com/speed/libraries/

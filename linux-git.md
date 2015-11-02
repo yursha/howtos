@@ -72,6 +72,8 @@ $ man git-<verb>
 - `% git log --pretty=oneline` - format
 - `% git log --pretty=format:"h - %an, %ar : %s" - format
 - `% git log --graph` - ASCII graph showing your branch and merge history
+- `% git shortlog` groups commits by author
+- `% git log --stat src/main/resources/assets/client` - see only commits to the files inside the folder (recursively) with stats
 
 ## Git log filters
 ### By date/chronology
@@ -108,6 +110,8 @@ $ man git-<verb>
 
 # History
 - `% git log --format="%s" v0.1.0..v0.1.1` - see commits between 2 tags
+- `git rev-list --max-parents=0 HEAD` - hash of first commit
+- http://stackoverflow.com/questions/14247713/retrieve-the-list-of-child-commits-of-an-specific-commit-in-git`:`
 
 # Diff
 - http://stackoverflow.com/questions/3368590/show-diff-between-commits/29374476#29374476

@@ -57,9 +57,25 @@ With **constructor** (a lower level approach) an object is created by platform, 
 Code that crosses platform boundaries (like c/java interfacing or javascript/DOM interfacing) is hard to test.
 
 # Asyncronous Programming
+## Implementations
+- Angular `$q`
+- https://github.com/kriskowal/q
+- https://github.com/kriskowal/uncommonjs/blob/master/promises/specification.md
+- https://github.com/kriskowal/q/wiki/API-Reference
+- jQuery's Deferred
+- ES6 promises (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+- Common JS (http://wiki.commonjs.org/wiki/Promises)
+
+## Concepts
+- https://en.wikipedia.org/wiki/Continuation-passing_style
+- http://www.html5rocks.com/en/tutorials/es6/promises
 - callback
 - promises
 - deferreds
+- asynchronous operation - code to be executed outside of the current thread of execution.
+- event queue
+
+
 
 ## Events
 - subscribe / register
