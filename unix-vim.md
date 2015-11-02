@@ -1,35 +1,24 @@
-- http://vim.wikia.com/wiki/Vim_documentation
-- http://vim.wikia.com/wiki
-- http://vimhelp.appspot.com/
-- https://en.wikibooks.org/wiki/Learning_the_vi_Editor
-  + /Vim/Modes
-- http://vimregex.com/
-- http://www.radford.edu/~mhtay/CPSC120/VIM_Editor_Commands.htm
 - http://learnvimscriptthehardway.stevelosh.com/
 - http://stevelosh.com/blog/2010/09/coming-home-to-vim/
-- http://www.vim.org/docs.php
 - https://github.com/vim/vim
-- http://ex-vi.sourceforge.net/
 
 # Motion
-- <N>j/<N>k - N lines down/up
-- <N>h/<N>l - N chars left/right
-- <N>b/<N>w - N word starts left/right
-- <N>ge/<N>e - N word ends left/right
-- <N>B/<N>W - N whitespace-separated word starts left/right
-- <N>gE/<N>E - N whitespace-separated word ends left/right
-- <N>$ - to end of line N times
+- 4j/4k - N lines down/up
+- 4h/4l - N chars left/right
+- 4b/4w - N word starts left/right
+- 4ge/4e - N word ends left/right
+- 4B/4W - N whitespace-separated word starts left/right
+- 4gE/4E - N whitespace-separated word ends left/right
+- 4$ - to end of line N times
 - 0 - to start of line
 - ^ - to first char in a line
-- <N>f<C> - move at Nth next C char in a line (,;)
-- <N>F<C> - move at Nth previous C char in a line (,;)
-- <N>t<C> - move to Nth next C char in a line (,;)
-- <N>T<C> - move to Nth previous C char in a line (,;)
+- 4f-char - move at Nth next C char in a line (,;)
+- 4F-char - move at Nth previous C char in a line (,;)
+- 4t-char - move to Nth next C char in a line (,;)
+- 4T-char - move to Nth previous C char in a line (,;)
 - % - move to matching (),[],{} or *matchpairs* option (or find first in a line)
-- <N>G - go to Nth line
-- G - go to last line
-- gg - go to first line
-- <N>% - go to % of a file
+- 4G, G - go to Nth,last line
+- 4% - go to % of a file
 - H/M/L - home, middle, low currently seen line
 - CTRL+b - scroll up a page
 - CTRL+f - scroll down a page
@@ -53,12 +42,12 @@
 - *incsearch* option. Use `Ctrl-L` to insert next char in the match or `Ctrl-r,Ctrl-w` to complete a word match.
 - *wrapscan*
 - `/` - start search forward from current line. Navigate thru search history with arrow keys (filtering works). 
-- `<N>*` - search **word** under the cursor as a Nth word 
+- `4*` - search **word** under the cursor as a Nth word 
 - `g*`, `g#` - search **word** under the cursor as a match 
-- `<N>n`, `<N>N` - N-th match after/before
+- `4n`, `4N` - N-th match after/before
 - `ggn`, `GN` - first / last match
-- <Ctrl+o>, <Ctrl+i> - jump to previous/next cursor position
-- <Ctrl+r>;<Ctrl+w> (or <r>) - copy a word into command line
+- Ctrl+o, Ctrl+i - jump to previous/next cursor position
+- Ctrl+r;Ctrl+w (or <r>) - copy a word into command line
 - `:%s/\n//gc` - replace newlines
 - `:g/pattern` - show all lines matching the pattern
 - `:g/pattern/d` - delete all lines matching a pattern (e.g. `:g/^$/d` - deletes all empty lines)
@@ -77,12 +66,12 @@
 
 # Actions
 - J
-- d<motion>, dd
-- c<motion>, cc
-- r<motion> 
+- d-motion, dd
+- c-motion, cc
+- r-motion 
 - . - repeat change
-- <N>p
-- y<motion>, yy
+- 4p
+- y-motion, yy
 - "*y, "*yy - yank to clipboard (only works in versions of vim that include clipboard support)
 - "*p - paste from clipboard
 - u,U,CTRL-r - undoing
