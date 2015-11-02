@@ -65,6 +65,9 @@ $ man git-<verb>
 - `% git checkout -- <file>` - replace file in the working directory with one from the latest snapshot (discard changes)
 - `% git reset HEAD <file>` - unstage from index
 
+## Undo a commit 
+- http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
+
 ## Git log formatters
 - `% git log -p` - commits with diffs (patches) (helpful for code review)
 - `% git log --stat` - commits with stats
