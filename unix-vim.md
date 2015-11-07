@@ -171,7 +171,7 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 
 - open multiple files in the project `src` folder 
 ```
-% vim `find src -name '*.js' -or -name '*.java' -or -name '*.jade' -or -name '*.scss' -or -name '*.xml'`
+% vim `find src -type f -name '*.js' -or -name '*.java' -or -name '*.jade' -or -name '*.scss' -or -name '*.xml'`
 ```
 
 ## Argument list

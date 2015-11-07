@@ -73,3 +73,11 @@ User interacts with app thru `<input>`, `<select>`, `<textarea>` elements or cli
 
 # CSS
 - https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
+
+# Visualization
+- https://github.com/mbostock/d3
+- https://developers.google.com/chart/ (Google Visualization API)
+- https://github.com/google
+- https://developers.google.com/products/
+- https://github.com/mozilla/metrics-graphics (Mozilla)
+- https://plot.ly/javascript/histograms/

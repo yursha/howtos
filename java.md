@@ -12,3 +12,6 @@
 ## Core utils
 - https://github.com/google/guava
 - https://commons.apache.org/proper/commons-lang/
+
+# OpenJDK
+- http://openjdk.java.net/

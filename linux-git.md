@@ -175,3 +175,4 @@ After this is done, you can also get Git via Git itself for updates:
 ```
 $ git clone git://git.kernel.org/pub/scm/git/git.git
 ```
+
