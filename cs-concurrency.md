@@ -17,3 +17,6 @@ Erlang, Haskell, Go, Rust are designed for concurrency.
 
 ### Single Producer / Multiple Consumer
 - Blocking queues and poison pills
+
+# Java Concurrency
+- https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html

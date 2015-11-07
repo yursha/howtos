@@ -1,9 +1,10 @@
 - buffer disk I/O
 - cache
-- symlink
+- softlink
 - hardlink
 - syntactic file path operations (don't access file system)
 - glob pattern
+- file change notification (watching)
 
 
 # Security
