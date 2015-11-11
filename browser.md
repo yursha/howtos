@@ -16,6 +16,7 @@ User interacts with app thru `<input>`, `<select>`, `<textarea>` elements or cli
 - JS animations
 
 ## HTML
+- http://www.w3.org/TR/html51/
 - https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
 - http://www.html5rocks.com/en/
 - http://html5doctor.com/
@@ -25,6 +26,8 @@ User interacts with app thru `<input>`, `<select>`, `<textarea>` elements or cli
 - http://html5up.net/
 - http://html5demos.com/
 
+# DOM
+- http://www.w3.org/TR/selectors-api/
 ## DOM Events
 - `DOMContentLoaded`
 - https://developer.mozilla.org/en-US/docs/Web/API/Element/matches
@@ -68,16 +71,6 @@ User interacts with app thru `<input>`, `<select>`, `<textarea>` elements or cli
 - http://jquery.com/
 - http://api.jquery.com/category/events/event-object/
 
-# HTML
-- http://www.w3.org/TR/html51/
-
-# CSS
+# CSS and drawing
 - https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
-
-# Visualization
-- https://github.com/mbostock/d3
-- https://developers.google.com/chart/ (Google Visualization API)
-- https://github.com/google
-- https://developers.google.com/products/
-- https://github.com/mozilla/metrics-graphics (Mozilla)
-- https://plot.ly/javascript/histograms/
+- https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing

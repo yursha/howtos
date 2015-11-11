@@ -12,6 +12,13 @@ On UNIX systems, moving a directory within the same partition generally consists
 - access permissions (bit mask) (POSIX)
 - is hidden
 
+# file types
+- softlink
+- hardlink
+- directory
+- socket
+- regular file
+
 # file systems
 File system is a kernel driver
 - ntfs
@@ -20,6 +27,11 @@ File system is a kernel driver
 - ext4 (inode)
 - zfs
 - dos
+
+# file system operations
+- syntactic file path operations (don't access file system)
+- glob pattern
+- file change notification (watching)
 
 # unix system calls
 - lstat
@@ -30,13 +42,17 @@ File system is a kernel driver
 - mount
 
 # performance
-- buffered IO
+- use buffered IO
+- use caches
 - async IO
 - minimize accesses (bulk reads/writes)
 
 # POSIX
 - `/etc/fstab`
 
-# Linux filesystem hierarchy standard
+# file system layout (Linux filesystem hierarchy standard)
 
 # Storage Devices
+
+# Security
+- CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition https://cwe.mitre.org/data/definitions/367.html

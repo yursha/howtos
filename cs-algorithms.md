@@ -33,3 +33,6 @@ Most of the node selection schemes deal with the following **concepts**:
 - Relative path (context-sensitive)
 - Wildcard expansion
 - Pattern matching
+
+# Math
+- median - R7 Algorithm (https://en.wikipedia.org/wiki/Quantile#Quantiles_of_a_population)

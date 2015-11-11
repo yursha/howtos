@@ -1,7 +1,7 @@
 - **boolean, list of booleans** - not, and, or, xor, nand, nor
 - **bits (list of booleans)** - shiftRight, shiftLeft, zeroShiftRight
 - **number** - add, subtract, multiply, divide, remainder, abs, sqrt, floor, ceiling, round
-- **list of numbers** - reduce: sum, mean, average
+- **list of numbers** - reduce: sum, mean, median, max, min
 - **list** - count, foreach, map, reduce, nth (first, last), iterator
 - **cursor** - next, hasNext, previous, hasPrevious
 - **datetime** - isAfter, isBefore, (derivatives: isBetween)
