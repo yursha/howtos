@@ -74,3 +74,8 @@ User interacts with app thru `<input>`, `<select>`, `<textarea>` elements or cli
 # CSS and drawing
 - https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
 - https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+
+# Optimizations
+- js, css, html - minification
+- js - obfuscation
+- avoid reflow and redrawing

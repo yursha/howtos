@@ -112,6 +112,8 @@ DOM is an in-memory tree representation of a document (XML, HTML) or data (XML).
 ### GSON
 - https://github.com/google/gson
 
-# CSV (Table)
+# Delimiter-Separted Values (Tabular format)
+Tabular formats are often more space efficient than JSON, which can improve loading times for large datasets (when downloading over internet).
+- CSV, TSV, SSV 
 
 # LDIF (LDAP Data Interchange Format)

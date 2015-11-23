@@ -1,3 +1,16 @@
+- http://vanilla-js.com/
+- mootools
+- jquery
+- prototype
+- angular1
+- coffeescript
+- backbone.js
+- bootstrap
+- ember.js
+- meteor
+- react
+- angular2
+
 - https://github.com/angular/angular.js
 - https://blog.angularjs.org/
 - https://docs.angularjs.org/api

@@ -1,5 +1,4 @@
-Integrated Development Environment
-=========================================================
+- avoid literal unnamed constants (https://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constants)
 
 # Static code analysis
 
@@ -15,8 +14,3 @@ Integrated Development Environment
 
 > ggrep -rl 'CSVReader.DEFAULT_SEPARATOR' src | xargs gsed -i 's/CSVReader\.DEFAULT_SEPARATOR/CSVParser.DEFAULT_SEPARATOR/g'
 ```
-
-# Intellij IDEA
-- https://www.jetbrains.com/idea/help/intellij-idea.html
-
-- `CMD^O` - open class

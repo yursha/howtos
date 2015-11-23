@@ -1,3 +1,5 @@
+- http://bl.ocks.org/mbostock (Examples of using SVG)
+
 # Command line progress logger
 - use `\r` to print progress bar on the same line.
 
@@ -12,8 +14,14 @@ non-interactive sessions. A convenient option is to use command-line flag for th
 ## d3js
 - http://d3js.org/
 - https://github.com/mbostock/d3
+- https://leanpub.com/D3-Tips-and-Tricks (Book)
+- http://christopheviau.com/d3list/gallery.html
+- http://www.d3noob.org/
 
 ## SVG
+Supports Bezier curves, gradients, clipping and masks.
+- http://www.w3.org/TR/SVG/
+- http://www.w3.org/TR/SVG/styling.html - full list of styling properties (vs attributes)
 - http://www.w3.org/Graphics/SVG/
 
 ## Google Visualization API (Charts)
@@ -24,3 +32,11 @@ non-interactive sessions. A convenient option is to use command-line flag for th
 - https://developers.google.com/products/
 - https://github.com/mozilla/metrics-graphics (Mozilla)
 - https://plot.ly/javascript/histograms/
+
+Browser draws DOM using flow layout.
+
+# Drawing
+- Bezier curves
+- gradients
+- clipping
+- masks

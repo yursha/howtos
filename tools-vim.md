@@ -3,23 +3,25 @@
 - https://github.com/vim/vim
 
 # Motion
-- 4j/4k - N lines down/up
+
+### Navigating a line
 - 4h/4l - N chars left/right
+- 0 - jump to start of line
+- ^ - jump to first char in a line
+- 4$ - jump to end of line N times
+- 4f-char - jump at Nth next C char in a line (,;)
+- 4F-char - jump at Nth previous C char in a line (,;)
+- 4t-char - jump to Nth next C char in a line (,;)
+- 4T-char - jump to Nth previous C char in a line (,;)
+
+### Navigating a file
+- 4j/4k - N lines down/up
 - 4b/4w - N word starts left/right
 - 4ge/4e - N word ends left/right
 - 4B/4W - N whitespace-separated word starts left/right
 - 4gE/4E - N whitespace-separated word ends left/right
-- 4$ - to end of line N times
-- 0 - to start of line
-- ^ - to first char in a line
-- 4f-char - move at Nth next C char in a line (,;)
-- 4F-char - move at Nth previous C char in a line (,;)
-- 4t-char - move to Nth next C char in a line (,;)
-- 4T-char - move to Nth previous C char in a line (,;)
 - % - move to matching (),[],{} or *matchpairs* option (or find first in a line)
-- 4G, G - go to Nth,last line
 - 4% - go to % of a file
-- H/M/L - home, middle, low currently seen line
 - CTRL+b - scroll up a page
 - CTRL+f - scroll down a page
 - CTRL+u - scroll up half page
@@ -29,11 +31,13 @@
 - zz - scroll current line into center (*scrolloff* option - number of lines to pad the current line when scrolling)
 - zt - scroll current line to the top
 - zb - scroll current line to the bottom
-- `` - jump back and force between 2 positions 
+- gg, 4G, G - jump to first,Nth,last line
+- H/M/L - jump to first (home), middle, last currently seen line
 - CTRL+0 - jump forward
 - CTRL+I - jump backward
 - `:jumps`
-- set 26 marks with `ma`-`mz` and jump to them with `a-`z (marked col) or 'a-'z (first col)
+- `` - jump back and force between 2 positions 
+- set 26 marks with `ma`-`mz` and jump to them with `a-`z (marked col) or 'a-'z (first col) *Doesn't jump across buffers*
 - `:marks` (' - position before jump, " - position when last editing a file, [ - start of last change, ] - end of last change
 
 ## Search and replace

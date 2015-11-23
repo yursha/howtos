@@ -1,5 +1,6 @@
 - https://git-scm.com
 - https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+- https://git-scm.com/docs
 - https://www.atlassian.com/git/tutorials/
 
 # Help
@@ -18,7 +19,6 @@ $ man git-<verb>
 - **difference-based** (CVS, Subversion, Perforce, Bazaar) vs **snapshot-based** (Git)
 - **branch**
 - **commit/snapshot**
-- **stashing**
 - **commit ammending**
 - **patch** - file format representing difference between files
 - **workflow**
@@ -61,14 +61,18 @@ $ man git-<verb>
 - `% git commit -v` - open an editor with status and diff attached as comments.
 - `% git commit -a -m 'added new benchmarks'` - skip `git add` and add and commit automatically what's tracked and changed.
 - `% git commit --amend` - fix the last commit (both contents and message)
-- `% git status -s` - list filenames with their statuses in the working directory (recursively) [`--short` - succinctly].
+- `% git status -s` - compare files in working directory and index against the latest snapshot
 - `% git checkout -- <file>` - replace file in the working directory with one from the latest snapshot (discard changes)
 - `% git reset HEAD <file>` - unstage from index
 
 ## Undo a commit 
 - http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
 
-## Git log formatters
+## History
+- `git log [<options>] [<revision range>] [[\--] <path>…​]`
+The command takes options applicable to the `git rev-list` to control what is shown and how, and options applicable to the `git diff-*` to control how the changes each commit introduces are shown.
+
+## log formatters
 - `% git log -p` - commits with diffs (patches) (helpful for code review)
 - `% git log --stat` - commits with stats
 - `% git log --shortstat`, `--name-only`, `--name-status`, `--abbrev-commit`, `--relative-date`
@@ -78,7 +82,10 @@ $ man git-<verb>
 - `% git shortlog` groups commits by author
 - `% git log --stat src/main/resources/assets/client` - see only commits to the files inside the folder (recursively) with stats
 
-## Git log filters
+## log filters
+- `% git log --format="%s" v0.1.0..v0.1.1` - see commits between 2 tags
+- `git rev-list --max-parents=0 HEAD` - hash of first commit
+- http://stackoverflow.com/questions/14247713/retrieve-the-list-of-child-commits-of-an-specific-commit-in-git`:`
 ### By date/chronology
 - `% git log -2` - last 2 commits
 - `% git log --after=2.weeks`
@@ -111,11 +118,6 @@ $ man git-<verb>
 - `% git config --global user.email 'alexyursha@example.com'`
 - `% git config --global core.editor vim`
 
-# History
-- `% git log --format="%s" v0.1.0..v0.1.1` - see commits between 2 tags
-- `git rev-list --max-parents=0 HEAD` - hash of first commit
-- http://stackoverflow.com/questions/14247713/retrieve-the-list-of-child-commits-of-an-specific-commit-in-git`:`
-
 # Diff
 - http://stackoverflow.com/questions/3368590/show-diff-between-commits/29374476#29374476
 If you run `git difftool` instead of `git diff`, you can view any of these diffs in software like `emerge`, `vimdiff` and many more. Run `git difftool --tool-help` to see what is available on your system.
@@ -124,6 +126,7 @@ If you run `git difftool` instead of `git diff`, you can view any of these diffs
 - `% git checkout -b [local-branch-name] [remote-name]/[remote-branch-name]` - checkout a remote branch into a local branch and track remote branch from local one.
 
 # Stashing
+- http://stackoverflow.com/questions/3040833/stash-only-one-file-out-of-multiple-files-that-have-changed-with-git/
 
 # Remotes
 - `% git remote` - list remote names
@@ -152,6 +155,7 @@ If you run `git difftool` instead of `git diff`, you can view any of these diffs
 1. Tag `% git tag -a v1.0 -m "version 1.0"` and push
 1. Release, i.e. deploy to production
 
+`git branch --contains <tag>` - find out which branch contains a specific tag
 
 # Deployment
 - **hot deployment** - deployment of code when an application continues to run.

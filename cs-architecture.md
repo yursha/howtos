@@ -37,8 +37,7 @@
 - http://misko.hevery.com/2008/08/01/circular-dependency-in-constructors-and-dependency-injection/
 
 There are only three ways a component can get a hold of its dependencies:
-
-- The component can create the dependency, typically using the new operator (constructor pattern).
+- The component can create the dependency, typically using the `new` operator (constructor pattern).
 - The component can look up the dependency, by referring to a global variable (factory pattern).
 - The component can have the dependency passed to it where it is needed (DI pattern).
 
