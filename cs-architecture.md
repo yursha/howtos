@@ -37,8 +37,7 @@
 - http://misko.hevery.com/2008/08/01/circular-dependency-in-constructors-and-dependency-injection/
 
 There are only three ways a component can get a hold of its dependencies:
-
-- The component can create the dependency, typically using the new operator (constructor pattern).
+- The component can create the dependency, typically using the `new` operator (constructor pattern).
 - The component can look up the dependency, by referring to a global variable (factory pattern).
 - The component can have the dependency passed to it where it is needed (DI pattern).
 
@@ -84,4 +83,15 @@ Code that crosses platform boundaries (like c/java interfacing or javascript/DOM
   + emit
 - handle
 
-
+# CDN
+- https://cdnjs.com/libraries
+ 21 - https://html.spec.whatwg.org/multipage/index.html
+ 22 - http://www.w3.org/TR/html51/
+ 23 - https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+ 24 - http://www.html5rocks.com/en/
+ 25 - http://html5doctor.com/
+ 26 - https://html5boilerplate.com/
+ 27 - https://html5.org/
+ 28 - https://html.spec.whatwg.org/
+ 29 - http://html5up.net/
+ 30 - http://html5demos.com/

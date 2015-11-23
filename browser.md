@@ -10,33 +10,52 @@
 User interacts with app thru `<input>`, `<select>`, `<textarea>` elements or click/touch events.
 
 # Graphics
+
 ## Animations
-- CSS transitions
+- CSS transitions (19-11-2013) http://www.w3.org/TR/css3-transitions/ 
+
 - keyframes
 - JS animations
 
 ## HTML
-- http://www.w3.org/TR/html51/
+- https://html.spec.whatwg.org/
+- https://html.spec.whatwg.org/multipage/index.html
+- HTML5 for developers - http://developers.whatwg.org/
+- HTML 5.1 08-10-2015 http://www.w3.org/TR/html51/
+- https://developer.mozilla.org/en/HTML
 - https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
 - http://www.html5rocks.com/en/
 - http://html5doctor.com/
 - https://html5boilerplate.com/
 - https://html5.org/
-- https://html.spec.whatwg.org/
 - http://html5up.net/
 - http://html5demos.com/
+- http://diveintohtml5.info/
 
 # DOM
-- http://www.w3.org/TR/selectors-api/
-## DOM Events
+- https://dom.spec.whatwg.org/
+- http://www.w3.org/TR/dom/
+
+## Selectors
+- https://dom.spec.whatwg.org/#selectors
+- https://drafts.csswg.org/selectors-4/
+- Selectors API Level 1 (21-02-2013) http://www.w3.org/TR/selectors-api/
+- Selectors Level 3 (29-09-2011) http://www.w3.org/TR/selectors/
+- http://sizzlejs.com/
+
+## Events
 - `DOMContentLoaded`
 - https://developer.mozilla.org/en-US/docs/Web/API/Element/matches
 
+## Node trees
+
 - **url**
 - **ajax**
+  + http://www.w3.org/TR/XMLHttpRequest/
   + https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
   + https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
-  + http://www.w3.org/TR/XMLHttpRequest/
+
+Use JSON rather than JSONP, if you can; JSONP is insecure (and as often practiced, synchronous). For loading cross-domain data, use the Access-Control-Allow-Origin: * header instead.
 
 # Ways to trigger HTTP request from a web app
 ## With leaving the page
@@ -72,5 +91,11 @@ User interacts with app thru `<input>`, `<select>`, `<textarea>` elements or cli
 - http://api.jquery.com/category/events/event-object/
 
 # CSS and drawing
+- http://www.w3.org/TR/CSS2/
 - https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
 - https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+
+# Optimizations
+- js, css, html - minification
+- js - obfuscation
+- avoid reflow and redrawing

@@ -15,6 +15,14 @@
 - netty
 - node `http`
 
+## How to fast launch a static file server
+- `python -m SimpleHTTPServer 8888 &` (python 2)
+- `python -m http.server 8888 &` (python 3+)
+- `php -S localhost:8888`
+- `ruby -run -e httpd . -p 8888`
+- `npm install http-server -g; http-server`
+- `java -jar jetty-runner-9.3.0.M0.jar --port 8080 .`
+
 # Clients
 - node `http`
 - Apache HTTP Client http://hc.apache.org/httpcomponents-client-ga/index.html

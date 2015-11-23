@@ -14,12 +14,14 @@
 - search.maven.org
 - http://mvnrepository.com - provides useful popularity statistics (e.g. number of dependant packages), classifies packages by category (e.g. JSON libraries)
 
-
 # Configuration
 
 ## maven-resources-plugin
 - copying resources
 - text files interpolation with dynamic variables
+
+## generate maven boilerplate
+- `mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.mycompany.app -DartifactId=my-app`
 
 ## info
 - `mvn help:effective-pom`

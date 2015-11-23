@@ -12,6 +12,11 @@
 - BST
 
 # Tree
+Tree order is one of its traversal orders
+
+## Traversals
+- depth-first
+
 - bottom-up search
 
 A tree is a DAG representing a hierarchy (nestedness).

@@ -1,3 +1,5 @@
+- http://bl.ocks.org/mbostock (Examples of using SVG)
+
 # Command line progress logger
 - use `\r` to print progress bar on the same line.
 
@@ -9,12 +11,33 @@ non-interactive sessions. A convenient option is to use command-line flag for th
 - Bar Chart
 
 # Browser Libraries
-## d3js
+## d3 (Data-Driven Documents)
 - http://d3js.org/
 - https://github.com/mbostock/d3
+- https://github.com/mbostock/d3/wiki
+- https://leanpub.com/D3-Tips-and-Tricks (Book)
+- http://christopheviau.com/d3list/gallery.html
+- http://www.d3noob.org/
+
+This doesn’t scratch the surface of the data cleaning problem. For that, see projects such as Google Refine and Stanford’s Data Wrangler.
+
+Deferring data transformations to the client often makes it easier for you to prototype visualizations rapidly; you can change the data on-the-fly rather than needing to re-run your data pipeline. On the other hand, when you want to share your visualization with the world, it’s a good idea to optimize your dataset for performance.
+
+# Concepts
+- univariate vs multivariate datasets
+- object constancy
+- data (csv, json)
+- scale (linear)
+- domain
+- range
+- Quantitative Scales map a continuous (numeric) domain to a continuous range.
 
 ## SVG
+Supports Bezier curves, gradients, clipping and masks.
+- http://www.w3.org/TR/SVG/
+- http://www.w3.org/TR/SVG/styling.html - full list of styling properties (vs attributes)
 - http://www.w3.org/Graphics/SVG/
+- https://developer.mozilla.org/en/SVG
 
 ## Google Visualization API (Charts)
 - https://developers.google.com/chart/
@@ -24,3 +47,11 @@ non-interactive sessions. A convenient option is to use command-line flag for th
 - https://developers.google.com/products/
 - https://github.com/mozilla/metrics-graphics (Mozilla)
 - https://plot.ly/javascript/histograms/
+
+Browser draws DOM using flow layout.
+
+# Drawing
+- Bezier curves
+- gradients
+- clipping
+- masks

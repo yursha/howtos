@@ -78,8 +78,6 @@ Grammar for writing serialized tree-structured mixed-content document text inclu
 DOM is an in-memory tree representation of a document (XML, HTML) or data (XML).
 - Document (mixed) content model (allows intermixing of text and elements).
 - `org.w3c.dom`
-- http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/
-- http://www.w3.org/DOM/
 
 #### XOM
 
@@ -112,6 +110,8 @@ DOM is an in-memory tree representation of a document (XML, HTML) or data (XML).
 ### GSON
 - https://github.com/google/gson
 
-# CSV (Table)
+# Delimiter-Separted Values (Tabular format)
+Tabular formats are often more space efficient than JSON, which can improve loading times for large datasets (when downloading over internet).
+- CSV, TSV, SSV 
 
 # LDIF (LDAP Data Interchange Format)
