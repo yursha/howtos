@@ -32,6 +32,10 @@ Deferring data transformations to the client often makes it easier for you to pr
 - range
 - Quantitative Scales map a continuous (numeric) domain to a continuous range.
 
+- https://leanpub.com/D3-Tips-and-Tricks (Book)
+- http://christopheviau.com/d3list/gallery.html
+- http://www.d3noob.org/
+
 ## SVG
 Supports Bezier curves, gradients, clipping and masks.
 - http://www.w3.org/TR/SVG/
