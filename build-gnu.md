@@ -15,11 +15,12 @@
 - conditionals
 
 # Autoconf
+Resources
 - http://www.gnu.org/software/autoconf/manual/index.html
 - `git clone http://git.sv.gnu.org/r/autoconf.git`
 
 Command-line utils
-- `autoscan` - browse c sources for common cross-platform compatibility problems
+- `autoscan` - browse c sources for common cross-platform compatibility problems and generate `configure.scan`
 - `ifnames` - browse c sources for names used in preprocessor conditionals
 - `autoconf` - generate `configure` from `configure.ac` using `m4`
 - `autom4te`
