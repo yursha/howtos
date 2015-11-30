@@ -1,5 +1,12 @@
 On UNIX systems, moving a directory within the same partition generally consists of renaming the directory.
 
+# Programming files
+- streaming vs bulk reads
+- use buffered IO
+- use caches
+- async IO
+- minimize accesses (bulk reads/writes)
+
 # file attributes
 - name
 - size
@@ -40,12 +47,6 @@ File system is a kernel driver
 - chown
 - umask
 - mount
-
-# performance
-- use buffered IO
-- use caches
-- async IO
-- minimize accesses (bulk reads/writes)
 
 # POSIX
 - `/etc/fstab`

@@ -10,3 +10,4 @@ System calls errno explanations
 - `tree` - http://mama.indstate.edu/users/ice/tree/
 - `cut`
 - `hexdump -C yourfile.bin` - see file bytes
+- `env`
