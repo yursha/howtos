@@ -6,6 +6,9 @@
 - http://www.gnu.org/software/m4/m4.html
 - `git clone http://git.savannah.gnu.org/r/m4.git`
 
+`m4` is actually a templating engine
+
+What `m4` does:
 - expands macros
 - includes files
 - runs shell commands
@@ -17,13 +20,19 @@
 # Autoconf
 Resources
 - http://www.gnu.org/software/autoconf/manual/index.html
+- **Boomark**: `4.2 Dealing with Autoconf versions`
 - `git clone http://git.sv.gnu.org/r/autoconf.git`
 
 Command-line utils
 - `autoscan` - browse c sources for common cross-platform compatibility problems and generate `configure.scan`
 - `ifnames` - browse c sources for names used in preprocessor conditionals
-- `autoconf` - generate `configure` from `configure.ac` using `m4`
+- `autoconf` - generate `configure` from `acsite.m4`, `aclocal.m4`, `configure.ac` using `m4`
+- `autoreconf` 
 - `autom4te`
+- `autoheader`
+- `aclocal`
+- `libtoolize`
+- `autopoint`
 
 # Gnulib
 - http://www.gnu.org/software/gnulib/
