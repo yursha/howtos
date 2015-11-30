@@ -15,9 +15,26 @@ non-interactive sessions. A convenient option is to use command-line flag for th
 - http://d3js.org/
 - https://github.com/mbostock/d3
 - https://github.com/mbostock/d3/wiki
+- https://github.com/mbostock/d3/wiki/Selections#data
+- http://bost.ocks.org/mike/
+    + thinking with joins
+    + nested selections
+    + how selections work
+    + three little circles
+- http://bl.ocks.org/mbostock
+- http://mbostock.github.io/d3/talk/20111018/pack.html
+- http://mbostock.github.io/d3/talk/20111018/partition.html
+- http://mbostock.github.io/d3/talk/20111116/force-collapsible.html
+- http://mbostock.github.io/d3/talk/20111116/bundle.html
+- http://mbostock.github.io/d3/talk/20111116/airports.html
+- http://mbostock.github.io/d3/talk/20111018/treemap.html
+- http://mbostock.github.io/d3/talk/20111018/tree.html
+- http://mbostock.github.io/d3/talk/20111018/calendar.html
+- http://mbostock.github.io/d3/talk/20111116/transitions.html
+- http://www.d3noob.org/
+- http://colorbrewer2.org/
 - https://leanpub.com/D3-Tips-and-Tricks (Book)
 - http://christopheviau.com/d3list/gallery.html
-- http://www.d3noob.org/
 
 This doesn’t scratch the surface of the data cleaning problem. For that, see projects such as Google Refine and Stanford’s Data Wrangler.
 
@@ -27,25 +44,23 @@ Deferring data transformations to the client often makes it easier for you to pr
 - univariate vs multivariate datasets
 - object constancy
 - data (csv, json)
-- scale (linear)
+- scale (linear, discrete)
 - domain
 - range
 - Quantitative Scales map a continuous (numeric) domain to a continuous range.
 
-- https://leanpub.com/D3-Tips-and-Tricks (Book)
-- http://christopheviau.com/d3list/gallery.html
-- http://www.d3noob.org/
-
 ## SVG
+2D vector and raster graphics in XML.
 Supports Bezier curves, gradients, clipping and masks.
-- http://www.w3.org/TR/SVG/
-- http://www.w3.org/TR/SVG/styling.html - full list of styling properties (vs attributes)
 - http://www.w3.org/Graphics/SVG/
+- http://www.w3.org/TR/SVG/
+- http://www.w3.org/TR/SVG/paths.html
+- http://www.w3.org/TR/SVG/shapes.html
+- http://www.w3.org/TR/SVG/styling.html - full list of styling properties (vs attributes)
 - https://developer.mozilla.org/en/SVG
 
 ## Google Visualization API (Charts)
 - https://developers.google.com/chart/
-
 
 - https://github.com/google
 - https://developers.google.com/products/
@@ -59,3 +74,9 @@ Browser draws DOM using flow layout.
 - gradients
 - clipping
 - masks
+
+# Image transformations
+- rotation
+- skewing
+- scaling
+- translation

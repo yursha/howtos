@@ -2,12 +2,15 @@
 - `echo $LastExitCode` - exit value of a program
 
 #### Configure Microsoft Visual C++ for command line use.
-- install Microsoft Visual Studio
-- run `vcvarsall.bat` - https://msdn.microsoft.com/en-us/library/x4d2c09s.aspx
-- Building on the Command Line - https://msdn.microsoft.com/en-us/library/f35ctcxw.aspx
+- install Microsoft Visual Studio 2015 Community (remember to include Visual C++ library as its not included by default)
+- launch Visual Studio Developer Command Prompt
 
-#### See `path`
+- `NTSTATUS` values (MSDN Library error codes) https://msdn.microsoft.com/en-us/library/cc704588(d=lightweight,l=en-us,v=PROT.10).aspx
+
+# `cmd.exe`
+
+## See system path
 - `echo %path%`
 
-# NMAKE
+# `nmake`
 - https://msdn.microsoft.com/en-us/library/dd9y37ha.aspx

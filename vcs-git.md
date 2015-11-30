@@ -65,6 +65,9 @@ $ man git-<verb>
 - `% git checkout -- <file>` - replace file in the working directory with one from the latest snapshot (discard changes)
 - `% git reset HEAD <file>` - unstage from index
 
+## Rebasing
+http://stackoverflow.com/questions/7744049/git-how-to-rebase-to-a-specific-commit
+
 ## Undo a commit 
 - http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
 

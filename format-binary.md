@@ -5,6 +5,11 @@
 - https://en.wikipedia.org/wiki/Dither
 - https://www.cs.princeton.edu/courses/archive/fall00/cs426/lectures/dither/dither.pdf
 
+## Concepts
+- color space
+- RGB, HSL (rainbow color scale)
+- polylinear scale
+
 ## Image definitions
 - bilevel
 - grayscale
@@ -16,9 +21,11 @@
 - Tiled 
 
 ## `image/jpeg`
+Compression method for full-color and gray-scale images.
 - https://en.wikipedia.org/wiki/JPEG
 - http://www.ijg.org/
 - http://gnuwin32.sourceforge.net/packages/jpeg.htm (Jpeg for Windows)
+
 ### JPEG (Joint Photographic Experts Group)
 Lossy compression for digital images. Popular in digital photography.
 - `libjpeg`

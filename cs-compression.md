@@ -9,6 +9,9 @@
  + CCITT Group 3 2D
  + CCITT Group 4
 
+- https://www.gnu.org/software/gzip/
+- tar
+
 # Libs
 - `libbz2`
 - `libz`
@@ -17,6 +20,8 @@
 - `gzip` 
 - `tar`
 - Info-Zip - http://www.info-zip.org/pub/infozip/ - (`unzip`)
+- http://www.info-zip.org/pub/infozip/UnZip.html
 
-# Libs
-- `zlib` (http://www.zlib.org/)
+# Deflate compression
+- `zlib` (http://www.zlib.net/) - deflate compression
+Also a different beast is Linux zlibc Compressing File-I/O Library)

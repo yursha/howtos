@@ -1,3 +1,6 @@
+# Tools
+- https://developer.chrome.com/devtools/docs/console
+
 # Browser API
 - https://developer.mozilla.org/en-US/docs/Web/API/Window/location
 - https://developer.mozilla.org/en-US/docs/Web/API/Location
@@ -17,9 +20,13 @@ User interacts with app thru `<input>`, `<select>`, `<textarea>` elements or cli
 - keyframes
 - JS animations
 
+# XML
+- https://developer.mozilla.org/en-US/docs/XMLSerializer
+
 ## HTML
 - https://html.spec.whatwg.org/
 - https://html.spec.whatwg.org/multipage/index.html
+- http://dev.w3.org/html5/
 - HTML5 for developers - http://developers.whatwg.org/
 - HTML 5.1 08-10-2015 http://www.w3.org/TR/html51/
 - https://developer.mozilla.org/en/HTML
@@ -35,6 +42,7 @@ User interacts with app thru `<input>`, `<select>`, `<textarea>` elements or cli
 # DOM
 - https://dom.spec.whatwg.org/
 - http://www.w3.org/TR/dom/
+- http://www.w3.org/TR/DOM-Level-3-Core/
 
 ## Selectors
 - https://dom.spec.whatwg.org/#selectors
