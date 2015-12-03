@@ -190,3 +190,6 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 
 # Vim configuration
 - `:scriptnames`
+
+# Indentation
+- `>` and `<` commands

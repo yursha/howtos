@@ -3,6 +3,7 @@
 - https://github.com/NARKOZ/hacker-scripts
 
 System calls errno explanations
+- http://unix.stackexchange.com/questions/3586/what-do-the-numbers-in-a-man-page-mean
 - `man 2 intro`
 
 # Tools

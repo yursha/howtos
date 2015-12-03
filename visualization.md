@@ -21,7 +21,12 @@ non-interactive sessions. A convenient option is to use command-line flag for th
     + nested selections
     + how selections work
     + three little circles
+- bl.ocks.org
 - http://bl.ocks.org/mbostock
+- ggplot2-Style Axis http://bl.ocks.org/mbostock/4349486
+- Margin Convention http://bl.ocks.org/mbostock/3019563
+- General update pattern I http://bl.ocks.org/mbostock/3808218
+- Pie Multiples http://bl.ocks.org/mbostock/1305111
 - http://mbostock.github.io/d3/talk/20111018/pack.html
 - http://mbostock.github.io/d3/talk/20111018/partition.html
 - http://mbostock.github.io/d3/talk/20111116/force-collapsible.html

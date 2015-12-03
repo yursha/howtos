@@ -107,3 +107,6 @@ Use JSON rather than JSONP, if you can; JSONP is insecure (and as often practice
 - js, css, html - minification
 - js - obfuscation
 - avoid reflow and redrawing
+
+# Presentation
+- https://github.com/mbostock/stack

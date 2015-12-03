@@ -28,6 +28,7 @@ Always comment template markup like this as browser will mess up the template wh
 - http://jade-lang.com/
 - http://html2jade.org/
 (attributes, interpolation, tags)
+Jade brings troubles with indentation. There are no tools that can reindent automatically, so cut and paste sucks. How jade figures out hierarchy by indentation, btw?
 
 ## Jade4j
 - https://github.com/neuland/jade4j

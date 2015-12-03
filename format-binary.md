@@ -1,24 +1,4 @@
-# TIF
 - `libfreetype`
-
-# Images
-- https://en.wikipedia.org/wiki/Dither
-- https://www.cs.princeton.edu/courses/archive/fall00/cs426/lectures/dither/dither.pdf
-
-## Concepts
-- color space
-- RGB, HSL (rainbow color scale)
-- polylinear scale
-
-## Image definitions
-- bilevel
-- grayscale
-- palette-color
-- RGB full-color
-- CMYK
-- YCbCr
-- CIE L*a*b*
-- Tiled 
 
 ## `image/jpeg`
 Compression method for full-color and gray-scale images.
@@ -46,16 +26,18 @@ Raster graphics format. Popular in scanners, desktop publishing, faxing, 3D apps
 
 - http://www.remotesensing.org/libtiff/
 - http://partners.adobe.com/public/developer/en/tiff/TIFF6.pdf (p. 64-115)
+- http://www.remotesensing.org/libtiff/TIFFTechNote2.html
 - http://www.ietf.org/rfc/rfc2301.txt (TIFF specification)
 - http://partners.adobe.com/public/developer/en/tiff/TIFFphotoshop.pdf (Adobe TIFF technical notes)
 - http://www.awaresystems.be/imaging/tiff/tifftags/search.html (search TIFF tags)
+- http://www.awaresystems.be/imaging/tiff/tifftags/jpegqtables.html
+- http://www.fileformat.info/format/tiff/egff.htm
 
 - `libtiff`
 - `libtiffxx`
 - `tiff2pdf`- convert to PDF
 - `tiffcp` - concatenate TIFF files
 - http://www.irfanview.com/
-
 
 # Java Libs
 ## ImageIO
@@ -69,14 +51,11 @@ Raster graphics format. Popular in scanners, desktop publishing, faxing, 3D apps
 - `javax.imageio.stream`
 - http://docs.oracle.com/javase/8/docs/technotes/guides/imageio/spec/imageio_guideTOC.fm.html (Java Image I/O API Guide)
 
-## Java AWT Image
-- `java.awt`
-- `java.awt.image` 
-
 ## JAI (Java Advanced Imaging API)
 - https://java.net/projects/jai
 - https://java.net/projects/jai-imageio
 - https://docs.oracle.com/cd/E17802_01/products/products/java-media/jai/forDevelopers/jai-apidocs/overview-summary.html
+- Bookmark: "5.2 Visualization of images with annotations" - JAI API: A Tutorial by Rafael Santos
 
 ## Twelve Monkeys
 - https://github.com/haraldk/TwelveMonkeys (Additional plug-ins and extensions for Java's ImageIO)
@@ -99,3 +78,66 @@ Raster graphics format. Popular in scanners, desktop publishing, faxing, 3D apps
 
 # Readers
 - http://imagej.net (open source)
+
+## Java AWT Image
+- `java.awt`
+- `java.awt.image` 
+
+# Image Processing
+- https://en.wikipedia.org/wiki/Dither
+- https://www.cs.princeton.edu/courses/archive/fall00/cs426/lectures/dither/dither.pdf
+
+# Performance
+- Process image in tiles reading into memory one tile at a time.
+
+# Image processing algorithms
+- horizontal Sobel operator
+- classification algorithms
+
+## Concepts
+
+- Raster - a rectangular pattern of parallel scanning lines followed by the electron beam on a television screen or computer monitor.
+- Raster image - dot matrix representing a rectangular grid of pixels or points of color.
+- Dot matrix - 2D patterned array
+- Image tile - subset of an image which may be processed independently.
+- smoothing kernel
+
+- `PlanarImage` - r
+- `BufferedImage`
+- `TiledImage` - rw
+- `RenderedOp` - a node in a rendered imaging chain.
+- `ColorModel`
+- `ColorSpace`
+- `ParameterBlock`
+
+## color space
+color model
+- RGB, HSL (rainbow color scale)
+- polylinear scale
+
+- palette-color
+- CMYK
+- YCbCr
+- CIE L*a*b*
+- Tiled 
+
+# Image ADT
+## Operations
+- display (render)
+- pack/unpack, compress/decompress
+- revert
+- invert
+- scale
+- interpolate
+- rotate
+- convolve
+
+## Attributes
+- width * height
+- bitsPerSample
+- sampleFormat (IEEE floating point, integer)
+- samplesPerPixel, bands, dimensions { bilevel, grayscale, RGB full-color }
+- rowsPerStrip
+- planarConfiguration { single image plain }
+- photometric interpretation { RGB, min-is-black }
+

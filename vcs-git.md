@@ -122,10 +122,16 @@ The command takes options applicable to the `git rev-list` to control what is sh
 - `% git config --global core.editor vim`
 
 # Diff
+- `git diff branch1 branch2 [--]` - difference between tips of 2 branches
+- `git diff branch1..branch2` - what's in branch2 that is not in branch1 (branch2 - branch1)
+- `git diff branch1...branch2` - what's in branch1 or branch2 but not in their common ancestor (branch1 XOR branch2)
 - http://stackoverflow.com/questions/3368590/show-diff-between-commits/29374476#29374476
 If you run `git difftool` instead of `git diff`, you can view any of these diffs in software like `emerge`, `vimdiff` and many more. Run `git difftool --tool-help` to see what is available on your system.
+- http://stackoverflow.com/questions/822811/showing-which-files-have-changed-between-two-revisions
 
 # Branching
+- A successful Git branching model http://nvie.com/posts/a-successful-git-branching-model/ 
+- https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
 - `% git checkout -b [local-branch-name] [remote-name]/[remote-branch-name]` - checkout a remote branch into a local branch and track remote branch from local one.
 
 # Stashing

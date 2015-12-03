@@ -2,10 +2,12 @@ On UNIX systems, moving a directory within the same partition generally consists
 
 # Programming files
 - streaming vs bulk reads
-- use buffered IO
+- use buffered IO (deferred execution)
 - use caches
 - async IO
 - minimize accesses (bulk reads/writes)
+- random-access files, sequential access
+- seekable file streams
 
 # file attributes
 - name

@@ -25,13 +25,15 @@
 - https://github.com/angular/angular.js/wiki/Understanding-Scopes
 - http://www.bennadel.com/blog/2760-one-time-data-bindings-for-object-literal-expressions-in-angularjs-1-3.htm
 - http://onehungrymind.com/angularjs-sticky-notes-pt-2-isolated-scope/
+- http://fdietz.github.io/recipes-with-angular-js/common-user-interface-patterns/filtering-and-sorting-a-list.html
 
 # Twitter Bootstrap
 - https://github.com/angular-ui/bootstrap (Integration of Twitter Bootstrap and AngularJS)
 - http://mgcrea.github.io/angular-strap/
 
-# Angular UI <small>Companion suite for Angular framework</small>
-- https://angular-ui.github.io/ (modal, dropdown)
+# Angular UI widgets 
+- https://github.com/angular-ui
+- https://angular-ui.github.io/ (modal, dropdown, typeahead)
 
 # UI Router
 - https://github.com/angular-ui/ui-router (Nested views with AngularJS), http://angular-ui.github.io/ui-router/site/#/api/ui.router
