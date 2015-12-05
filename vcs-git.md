@@ -1,5 +1,5 @@
 - https://git-scm.com
-- https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+- Bookmark: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 - https://git-scm.com/docs
 - https://www.atlassian.com/git/tutorials/
 
@@ -14,11 +14,30 @@ $ man git-<verb>
 - https://github.com/github/gitignore
 - https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files
 
-# Terminology
+# Concepts
 - **distributed** (Git, Mercurial, Bazaar, Darcs)  and **centralized** (CVS, Subversion, Perforce) VCS differ in where all the deltas and associated metadata are stored.
 - **difference-based** (CVS, Subversion, Perforce, Bazaar) vs **snapshot-based** (Git)
 - **branch**
-- **commit/snapshot**
+
+In git commits, trees and blobs are stored under the name equal to their hash values.
+
+Commit
+- type and size
+- hash key of tree representing root directory
+- author
+- committer
+- parent
+- comment
+- description
+
+A tree is a blob which represents directory state
+- type and size
+- list of hash keys of trees and blobs that this directory contains
+
+A blob
+- type and size
+- file contents
+
 - **commit ammending**
 - **patch** - file format representing difference between files
 - **workflow**
@@ -76,14 +95,18 @@ http://stackoverflow.com/questions/7744049/git-how-to-rebase-to-a-specific-commi
 The command takes options applicable to the `git rev-list` to control what is shown and how, and options applicable to the `git diff-*` to control how the changes each commit introduces are shown.
 
 ## log formatters
-- `% git log -p` - commits with diffs (patches) (helpful for code review)
-- `% git log --stat` - commits with stats
-- `% git log --shortstat`, `--name-only`, `--name-status`, `--abbrev-commit`, `--relative-date`
-- `% git log --pretty=oneline` - format
-- `% git log --pretty=format:"h - %an, %ar : %s" - format
-- `% git log --graph` - ASCII graph showing your branch and merge history
-- `% git shortlog` groups commits by author
-- `% git log --stat src/main/resources/assets/client` - see only commits to the files inside the folder (recursively) with stats
+- `git log -p` - commits with diffs (patches) (helpful for code review)
+- `git log --stat` - commits with stats
+- `git log --shortstat`, `--name-only`, `--name-status`, `--abbrev-commit`, `--relative-date`
+- `git log --pretty=oneline` - format
+- `git log --oneline`
+- `git log --decorate` - display which branches point to commits
+- `git log --pretty=format:"h - %an, %ar : %s" - format
+- `git log --graph` - ASCII graph showing your branch and merge history
+- `git log --all` - log all refs
+- `git log --graph --all` - nice staff
+- `git shortlog` groups commits by author
+- `git log --stat src/main/resources/assets/client` - see only commits to the files inside the folder (recursively) with stats
 
 ## log filters
 - `% git log --format="%s" v0.1.0..v0.1.1` - see commits between 2 tags
@@ -129,13 +152,31 @@ The command takes options applicable to the `git rev-list` to control what is sh
 If you run `git difftool` instead of `git diff`, you can view any of these diffs in software like `emerge`, `vimdiff` and many more. Run `git difftool --tool-help` to see what is available on your system.
 - http://stackoverflow.com/questions/822811/showing-which-files-have-changed-between-two-revisions
 
-# Branching
+`git mergetool --tool-help`
+
+# Git Branching 
+- Bookmark: https://git-scm.com/book/en/v2/Git-Branching-Branch-Management
+
+A branch is a movable pointer to one of commits.
+HEAD is a movable pointer to the latest commit in the current branch.
+
 - A successful Git branching model http://nvie.com/posts/a-successful-git-branching-model/ 
 - https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
-- `% git checkout -b [local-branch-name] [remote-name]/[remote-branch-name]` - checkout a remote branch into a local branch and track remote branch from local one.
+- `git branch feature` - create a new pointer to the commit pointed by HEAD.
+- `git branch -d feature` - delete feature branch
+- `git checkout branch_name` - 'HEAD = branch_name and revert files in working directory'
+- `git checkout -b [local-branch-name] [remote-name]/[remote-branch-name]` - checkout a remote branch into a local branch and track remote branch from local one.
 
 # Stashing
+Stashing takes modified tracked files and staged changes and saves it on a stack of unfinished changes that you can reapply at any time.
+- Bookmark: https://git-scm.com/book/en/v1/Git-Tools-Stashing#Un-applying-a-Stash 
 - http://stackoverflow.com/questions/3040833/stash-only-one-file-out-of-multiple-files-that-have-changed-with-git/
+- `git stash list` - show stash stack
+- `git stash apply` - apply the stack top stash, by default changes that were staged are not staged again, you continue to have stash in a stack
+- `git stash apply stash@{2}` - apply a particular stash
+- `git stash apply --index` - try also to stage changes that were staged during saving a stash
+- `git stash drop [stash@{2}]` - drop a (named) stash from the stack
+- `git stash pop` - apply the topmost stash and drop it.
 
 # Remotes
 - `% git remote` - list remote names
@@ -151,14 +192,22 @@ If you run `git difftool` instead of `git diff`, you can view any of these diffs
 # How to do a feature
 1. Pick a Jira issue from the backlog
 1. Discuss it with actual users, how are they going to use it
-1. Fork `% git checkout -b <feature>`
+1. Fork `% git checkout -b feature`
 1. Create an automated test case
 1. Run a test case against existing code
 1. Understand existing code behaviour
 1. Change existing code
 1. Make sure a test case succeeds against changed code
 1. Commit with message prefixed as `JIRA_001: <message>`
-1. Merge with `master`
+1. Merge with `master` and delete feature branch
+    - `git checkout master`
+    - `git merge feature` (may be fast-forward or 3-way merge with common ancestor (merge-base))
+        + if conflict:
+        + git status
+        + vim conflict-file
+        + git add conflict-file
+        + git commit
+    - `git branch -d feature`
 1. Push
 1. Close Jira issue
 1. Tag `% git tag -a v1.0 -m "version 1.0"` and push

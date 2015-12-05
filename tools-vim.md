@@ -168,6 +168,7 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 - `:b2` - swith to second buffer (also `:bu` or `:buf` or `:buffer`)
 - `:b MyCl` - switch to `MyClass` file (any part of file name can match with stronger preference for the matches from the beginning). <kbd>Tab</kbd> can be used to autocomplete and to cycle thru matching names. Use <kbd>Ctrl</kbd> + <kbd>D</kbd> to list all matching names at once.
 - `:e path/to/file` - create a buffer with associated file path (if file exists then read from it)
+- `:e` - reload the current file if it was changed on disk
 - `:q` - quit vim
 - `:w` - save changes (`ZZ` is equal to `:wq`)
 - `:saveas 'filepath'` - clone buffer and save it to a different filepath

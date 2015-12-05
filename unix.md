@@ -1,6 +1,7 @@
 - Solve one problem and solve it well.
 
 - https://github.com/NARKOZ/hacker-scripts
+- http://pubs.opengroup.org/onlinepubs/9699919799/
 
 System calls errno explanations
 - http://unix.stackexchange.com/questions/3586/what-do-the-numbers-in-a-man-page-mean
