@@ -93,6 +93,7 @@ Raster graphics format. Popular in scanners, desktop publishing, faxing, 3D apps
 # Image processing algorithms
 - horizontal Sobel operator
 - classification algorithms
+- Fuzzy C-Means (FCM) clustering algorithm - http://home.deib.polimi.it/matteucc/Clustering/tutorial_html/cmeans.html
 
 ## Concepts
 

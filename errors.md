@@ -1,10 +1,17 @@
-# Tips
-- Loudly **crash on error** if recovery is not meaningful.
-- **Log all errors** with as much information (including stack trace) as possible.
-- In a multithreaded application **make number of threads configurable from the command line**. So during debug time you will be able to set `-Dthreads=1` and enjoy serial single-thread logging.
+# Art of logging
 - **Escape variable non numeric data with single quotes** so that variables containing spaces can be easily distinguishable from the (static) rest of the message.
 - **Respect log levels** sot that you can easily adjust log verbosity in development and production environments and grep out only important messages easily.
 - Log files are **append-only**. Be sure to log only what is really helpful during debugging as log files can grow and take a lot of disk space. There should be an **archiving policy** for log files. In production environment its  helpful to print 'INFO', 'WARN' and 'ERROR' level messages only to save **disk space**. Their should be a separate **build profile** for development and production environments.
+
+# Art of writing easy to debug software
+- Loudly **crash on error** if recovery is not meaningful.
+- Assert valid input for program and API (defensive programming)
+- **Log all errors** with as much information (including stack trace) as possible.
+- In a multithreaded application **make number of threads configurable from the command line**. So during debug time you will be able to set `-Dthreads=1` and enjoy serial single-thread logging.
+
+# Art of debugging
+- Look for recent source code changes which might have introduced a bug in a version control system.
+- isolate (divide and conquer)
 
 ## Java
 - https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html

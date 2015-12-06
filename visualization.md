@@ -98,6 +98,7 @@ Supports Bezier curves, gradients, clipping and masks.
 - http://www.w3.org/TR/SVG/shapes.html
 - http://www.w3.org/TR/SVG/styling.html - full list of styling properties (vs attributes)
 - https://developer.mozilla.org/en/SVG
+- https://developer.mozilla.org/en-US/docs/Web/SVG
 
 ### Shapes
 
