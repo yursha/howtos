@@ -1,7 +1,12 @@
+- Bookmark: https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
+- `git clone git://git.kernel.org/pub/scm/git/git.git`
+- http://git-htmldocs.googlecode.com/git/user-manual.html
+- https://github.com/Homebrew/homebrew/blob/master/Library/Formula/git.rb
+- http://git.kernel.org/cgit/git/git.git/
 - https://git-scm.com
-- Bookmark: https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols
-- https://git-scm.com/docs
+- https://help.github.com/
 - https://www.atlassian.com/git/tutorials/
+- https://github.com/git/git
 - http://stackoverflow.com/questions/7321360/is-the-git-storage-model-wasteful
 - `man git`
 - `gitcli`
@@ -12,6 +17,9 @@
 - `gitcore-tutorial`
 - `gitglossary`
 - `git-help`
+
+#
+`git clone`, `git branch`
 
 # `.gitignore`
 - https://github.com/github/gitignore
@@ -115,16 +123,7 @@ bisect can help you perform a binary search for that commit.
 
 - `git repack`
 - `git pack-objects`
-
-- `git clone` - create new project folder, download/copy `.git` folder, checkout latest snapshot into working copy.
-- `git clone git://git.kernel.org/pub/scm/git/git.git`
-- `git clone --bare`
-    + `git init`
-    + `git fetch origin`
-    + `git checkout [remote-shorthand]/[head]`
-
 - `git submodule`
-
 - `git init` - create new `.git` folder with skeleton contents
 
 - `git push` - upload `.git` folder.
@@ -164,12 +163,13 @@ merges on other developers to clean up the history. If you need to undo changes 
 - `git status -s` - compare files in working directory and index against the latest snapshot
 
 - `git checkout` - updates files in the working tree and HEAD, resets index.
-- `git checkout -b <head> --track <remote>/<head>`
+- `git checkout -b <new-head> --track <remote-shorthand>/<head>`
+- `git checkout -b [new-head] [remote/head]` - checkout a remote head into a local tracking branch.
 - `git checkout -- <file>` - replace file in the working directory with one from the latest snapshot (discard changes)
 - `git checkout [commit-hash]` - 'HEAD = commit-hash and revert files in working directory'
-- `git checkout -b [new-head] [remote/head]` - checkout a remote head into a local tracking branch.
 - `git checkout --track remote/head` - checkout a remote head into a local tracking head.
-- `git checkout remote-head` - checkout a remote head into a local tracking head.
+
+- `git-check-ref-format`
 
 Now git uses reflog.
 HEAD@{1} is the previous version of HEAD, i.e. @{1} is $(git symbolic-ref HEAD)@{1}
@@ -255,14 +255,7 @@ A head is a movable pointer to one of commits.
 `HEAD~2` - is a `HEAD`'s grandparent.
 `HEAD^1` - first parent of HEAD
 `HEAD^2` - second parent of HEAD
-
 - A successful Git branching model http://nvie.com/posts/a-successful-git-branching-model/ 
-- `git branch feature` - create a new head to the commit pointed by HEAD.
-- `git branch -d feature` - delete feature branch
-- `git branch -u origin/serverfix - local branch serverfix set up to track remote origin/serverfix.
-- `git branch -vv`
-- `git branch [head-name] [commit-hash] - start a new branch `head-name` based at `commit-hash`.
-- `git branch --no-merged [head]` - list not merged branches
 
 # Stashing
 Stashing takes modified tracked files and staged changes and saves it on a stack of unfinished changes that you can reapply at any time.

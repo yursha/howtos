@@ -15,3 +15,6 @@ System calls errno explanations
 - `env`
 - `rsync`
 - `mailx`
+- `ssh`
+- `scp`
+- `ssh-keygen`
