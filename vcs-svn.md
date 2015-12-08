@@ -1,3 +1,4 @@
+- http://svnbook.red-bean.com/
 - https://subversion.apache.org/
 - http://tortoisesvn.net/
 

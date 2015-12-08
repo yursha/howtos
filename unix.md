@@ -13,3 +13,5 @@ System calls errno explanations
 - `cut`
 - `hexdump -C yourfile.bin` - see file bytes
 - `env`
+- `rsync`
+- `mailx`

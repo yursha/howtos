@@ -5,9 +5,13 @@ Erlang, Haskell, Go, Rust are designed for concurrency.
 - immutability
 - thread local state
 - synchronization
-- dead lock
-- live lock
 - lock
+    - read
+    - write
+    - live
+    - deadlock
+    - promotable (from read to write)
+    - shared vs mutex
 - trap
 - signal
 
