@@ -166,6 +166,7 @@ merges on other developers to clean up the history. If you need to undo changes 
 - `git checkout -b <new-head> --track <remote-shorthand>/<head>`
 - `git checkout -b [new-head] [remote/head]` - checkout a remote head into a local tracking branch.
 - `git checkout -- <file>` - replace file in the working directory with one from the latest snapshot (discard changes)
+- `git checkout -- .` - discard all unstaged changes.
 - `git checkout [commit-hash]` - 'HEAD = commit-hash and revert files in working directory'
 - `git checkout --track remote/head` - checkout a remote head into a local tracking head.
 

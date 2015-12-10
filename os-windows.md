@@ -1,12 +1,22 @@
 - TechNet Library https://technet.microsoft.com/en-us/library/aa991542.aspx
 
+# Command-Line
+- Command-Line Reference https://technet.microsoft.com/en-us/library/cc754340.aspx
+- Environment variable expansion occurs when the command is read https://blogs.msdn.microsoft.com/oldnewthing/20060823-00/?p=29993/
+- http://ss64.com/nt/delayedexpansion.html
+- http://www.dostips.com/DtTipsStringManipulation.php
+
 # PowerShell
 - `$LastExitCode` - exit value of a program
 - `$env:path`
 - `$env:path.Split(';')`
 - `New-Item c:\myfile.txt -type file`
+- `echo "" >> filename.bat`
 - `$PSVersionTable.PSVersion`
 - `dir`
+
+# Recursively process all files in a directory
+- http://stackoverflow.com/questions/180741/how-to-do-something-to-each-file-in-a-directory-with-a-batch-script
 
 http://ggajos.com/environment-variables-management/
 

@@ -1,3 +1,4 @@
+# Frameworks
 - http://vanilla-js.com/
 - mootools
 - jquery
@@ -11,6 +12,7 @@
 - react
 - angular2
 
+# Angular1
 - https://github.com/angular/angular.js
 - https://blog.angularjs.org/
 - https://docs.angularjs.org/api
@@ -18,7 +20,6 @@
  + Directive: ngClick, ngHref, ngIf, ngModel, ngOptions, ngRepeat, ngSrc, select
  + Type: angular.Module
  + Provider:
- + Service: $rootScope
  + auto, ngAnimate, ngAria, ngCookies, ngMessageFormat, ngMessages, ngMock, ngMockE2E, ngResource, ngSanitize, ngTouch
 - http://angularjs.blogspot.com/2014/02/an-angularjs-style-guide-and-best.html
 - https://github.com/johnpapa/angular-styleguide
@@ -26,6 +27,46 @@
 - http://www.bennadel.com/blog/2760-one-time-data-bindings-for-object-literal-expressions-in-angularjs-1-3.htm
 - http://onehungrymind.com/angularjs-sticky-notes-pt-2-isolated-scope/
 - http://fdietz.github.io/recipes-with-angular-js/common-user-interface-patterns/filtering-and-sorting-a-list.html
+
+## Concepts
+### How Angular works
+- script load
+- script looks up `ng-app` directive
+- script creates constants and all `config` blocks
+ + filters via `$filterProvider`. All filters are available everywhere.
+ + directives
+ + controllers
+ + services
+- script runs `run` blocks
+- script creates `$rootScope`
+- script compiles HTML
+ + script downloads directive templates
+- script instantiates scopes
+- script instantiates controllers
+- register watch expressions
+
+### Controller
+
+### Filters
+
+### Directives
+
+### Services
+Services are singletons which are lazily instatiated with a `factory` function. They are instatiated when a depending component is instantiated.
+
+- `$http` - wrapper around `XMLHttpRequest` and JSONP transports.
+- `$provide`
+- `$injector`
+- `$rootScope`
+
+Test services in browser console
+
+Get hold of $http service
+```
+> var h = angular.element(document).injector().get('$http')
+> function j(response) { console.log(JSON.stringify(response.data, null, 2)) }
+> h.get('url').then(j)
+```
 
 # Twitter Bootstrap
 - https://github.com/angular-ui/bootstrap (Integration of Twitter Bootstrap and AngularJS)
@@ -41,22 +82,6 @@
 
 # File Upload
 - https://github.com/danialfarid/ng-file-upload
-
-# How Angular works
-- script load
-- script looks up `ng-app` directive
-- script creates constants and all `config` blocks
- + filters via `$filterProvider`. All filters are available everywhere.
- + directives
- + controllers
- + services
-- script runs `run` blocks
-- script creates `$rootScope`
-- script compiles HTML
- + script downloads directive templates
-- script instantiates scopes
-- script instantiates controllers
-- register watch expressions
 
 ## ngRoute
 - fetch view template
@@ -81,7 +106,6 @@ Scope behaviour can be called (with parameters) from expressions or event-handle
 
 When an scope expression is evaluated, scope fields are looked up in the scope chain upto the root scope.
 
-Services are singletons.
 
 Directives watch the scope and update DOM and vice versa.
 
@@ -113,12 +137,6 @@ Directives can also produce **isolate scope**.
 # Directives
 - `ng-controller` - compiler creates new scope, binds it to DOM element and creates a new controller object (or calls just a function without `new`?). Every controller is a singleton if a corresponding object exists at all.
 
-
-# Services
-- `$http` - wrapper around `XMLHttpRequest` and JSONP transports.
-- `$provide`
-- `$injector`
-
 # Templating
 The HTML **template** is processed by the **compiler** during app load. Template expressions are evaluated against a *scope tree* with `$rootScope` as a root.
 DOM is accessed **declaratively** through **directives** which are also processed by the **compiler**.
@@ -139,15 +157,6 @@ The flow of marshaling data from the server to an internal object to an HTML for
 - maxlength
 - min
 - max
-
-# Test services in browser console
-
-Get hold of $http service
-```
-> var h = angular.element(document).injector().get('$http')
-> function j(response) { console.log(JSON.stringify(response.data, null, 2)) }
-> h.get('url').then(j)
-```
 
 Get scope reference for selected element
 ```

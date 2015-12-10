@@ -16,3 +16,6 @@
 
 > ggrep -rl 'CSVReader.DEFAULT_SEPARATOR' src | xargs gsed -i 's/CSVReader\.DEFAULT_SEPARATOR/CSVParser.DEFAULT_SEPARATOR/g'
 ```
+
+- `// WARNING: sdfjsljfldsjflds`
+- `// BOGUS: Will crash if user has no widgets
