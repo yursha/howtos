@@ -1,21 +1,23 @@
 Erlang, Haskell, Go, Rust are designed for concurrency.
 
+# Multithreading
+
+# How to measure multithreading efficiency?
+
 - thread confinement
 - shared state
 - immutability
 - thread local state
 - synchronization
 - lock
-    - read
-    - write
-    - live
+    - read lock
+    - write lock
+    - livelock
     - deadlock
-    - promotable (from read to write)
-    - shared vs mutex
+    - promotable lock (from read to write)
+    - shared lock vs mutex
 - trap
 - signal
-
-# Multithreading
 
 ## Patterns
 

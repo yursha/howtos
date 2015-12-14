@@ -3,10 +3,14 @@
 - https://docs.oracle.com/javaee/7/api/
 - http://www.javapractices.com/home/HomeAction.do
 
-# Tools
+# Code Quality
+## PMD 
+- http://pmd.sourceforge.net/
 
-- `java [-options] -jar jarfile [args...]` - run jar
-- `java [-options] -cp jarfile com.mypackage.MyClass` - run specific file in a jar
+## Checkstyle
+- https://github.com/checkstyle/checkstyle
+- http://checkstyle.sourceforge.net/
+- http://maven.apache.org/plugins/maven-checkstyle-plugin/checkstyle.html
 
 # Userland
 

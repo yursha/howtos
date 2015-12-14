@@ -4,7 +4,7 @@
 
 # Static code analysis
 
-- detect unused variables, imports, functions etc. (checkstyle, idea)
+- detect unused variables, imports, functions etc
 - automatic source code formatting (idea)
 
 - make `TODO` comments and then `grep -r TODO <project-folder>`

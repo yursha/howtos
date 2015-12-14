@@ -1,3 +1,9 @@
+# Good patterns
+- lazy init
+- loose coupling
+- immutability
+- composition over inheritance
+
 - Discovery (complex lookup procedure)
 - **Global visibility**
 - **Local (scoped) visibility**
@@ -9,7 +15,6 @@
 - inheritance (prototypical vs class-based)
 - lambda
 - scopes
-- immutability
 - encapsulation (information hiding)
 - interface
 - polymorphism

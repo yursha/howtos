@@ -1,42 +1,8 @@
 - `libfreetype`
+- Oracle Trail: 2D Graphics - https://docs.oracle.com/javase/tutorial/2d/
+- http://stackoverflow.com/questions/603283/what-is-the-best-java-image-processing-library-approach
+- Learn JAI stuff sources in `oss` folder.
 
-## `image/jpeg`
-Compression method for full-color and gray-scale images.
-- https://en.wikipedia.org/wiki/JPEG
-- http://www.ijg.org/
-- http://gnuwin32.sourceforge.net/packages/jpeg.htm (Jpeg for Windows)
-
-### JPEG (Joint Photographic Experts Group)
-Lossy compression for digital images. Popular in digital photography.
-- `libjpeg`
-
-## PNG
-- `libpng12`
-- `libpng14`
-- `libpng`
-
-### JPEG/Exif
-Popular image format in digital cameras.
-
-### JPEG/JFIF (JPEG File Interchange Format)
-Popular image format in www.
-
-## TIFF (Tag Image File Format)
-Raster graphics format. Popular in scanners, desktop publishing, faxing, 3D apps, medical imaging apps.
-
-- http://www.remotesensing.org/libtiff/
-- http://partners.adobe.com/public/developer/en/tiff/TIFF6.pdf (p. 64-115)
-- http://www.remotesensing.org/libtiff/TIFFTechNote2.html
-- http://www.ietf.org/rfc/rfc2301.txt (TIFF specification)
-- http://partners.adobe.com/public/developer/en/tiff/TIFFphotoshop.pdf (Adobe TIFF technical notes)
-- http://www.awaresystems.be/imaging/tiff/tifftags/search.html (search TIFF tags)
-- http://www.awaresystems.be/imaging/tiff/tifftags/jpegqtables.html
-- http://www.fileformat.info/format/tiff/egff.htm
-
-- `libtiff`
-- `libtiffxx`
-- `tiff2pdf`- convert to PDF
-- `tiffcp` - concatenate TIFF files
 - http://www.irfanview.com/
 
 # Java Libs
@@ -52,10 +18,14 @@ Raster graphics format. Popular in scanners, desktop publishing, faxing, 3D apps
 - http://docs.oracle.com/javase/8/docs/technotes/guides/imageio/spec/imageio_guideTOC.fm.html (Java Image I/O API Guide)
 
 ## JAI (Java Advanced Imaging API)
+- JAI API https://docs.oracle.com/cd/E17802_01/products/products/java-media/jai/forDevelopers/jai-apidocs/overview-summary.html
 - https://java.net/projects/jai
 - https://java.net/projects/jai-imageio
 - https://docs.oracle.com/cd/E17802_01/products/products/java-media/jai/forDevelopers/jai-apidocs/overview-summary.html
 - Bookmark: "5.2 Visualization of images with annotations" - JAI API: A Tutorial by Rafael Santos
+## The Java Advanced Imaging Image I/O Tools API Core
+- https://java.net/projects/jai-imageio-core/
+- https://github.com/jai-imageio
 
 ## Twelve Monkeys
 - https://github.com/haraldk/TwelveMonkeys (Additional plug-ins and extensions for Java's ImageIO)
