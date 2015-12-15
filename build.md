@@ -8,3 +8,5 @@ Build system generates targets from sources.
 Targets can serve as sources for other targets so that there are dependencies between the targets.
 Dependencies graph between the targets define the build order (topological sort order).
 To decrease build time there are rules for regeneration in response to change.
+
+- http://semver.org/

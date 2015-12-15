@@ -1,16 +1,10 @@
 - http://stackoverflow.com/questions/22250303/java-application-profiling
 
 # Measurements
-- high memory usage
-- long cpu time
-- long response time
-- load tests
-
-# Tools
-- https://visualvm.java.net/
-- http://jmeter.apache.org/
-- http://www.eclipse.org/tptp/
-- http://grinder.sourceforge.net/
+- (high/low) memory usage
+- (long/short) cpu time
+- (long/short) response time
+- load testing
 
 # Snippets
 
@@ -33,3 +27,8 @@ long stopTime = System.currentTimeMillis();
 long elapsedTime = stopTime - startTime;
 System.out.println(elapsedTime);
 ```
+
+- http://docs.freebsd.org/44doc/psd/18.gprof/paper.pdf
+- http://stackoverflow.com/questions/1777556/alternatives-to-gprof/1779343#1779343
+- http://stackoverflow.com/questions/6846049/profiling-a-running-java-application-in-command-line
+- http://stackoverflow.com/questions/7467245/cpu-execution-time-in-java

@@ -21,6 +21,9 @@
 #
 `git clone`, `git branch`
 
+# Compare the fetched commits with local branch
+- `git log master..origin/master --format="%Cred%><(12)%ar %Cblue%h%Creset %s" --color`
+
 # `.gitignore`
 - https://github.com/github/gitignore
 - https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files

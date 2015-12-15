@@ -1,5 +1,10 @@
 - http://semver.org/
 
+# Don't use class inheritance
+- You don't know in what class the method might have been implemented (overriden) without traversing up the entire inheritance chain.
+- You can't treat all subclasses as having even behavior based on their common superclass behavior which might have been substantially overriden in some of the subclasses.
+- You can't read a parent source module and clearly rely on described behaviour because some parent methods might have been overriden in the child (so you need to go back and force while reading the source module).
+
 - avoid literal unnamed constants (https://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constants)
 
 # Static code analysis
