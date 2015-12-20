@@ -5,6 +5,9 @@
 - You can't treat all subclasses as having even behavior based on their common superclass behavior which might have been substantially overriden in some of the subclasses.
 - You can't read a parent source module and clearly rely on described behaviour because some parent methods might have been overriden in the child (so you need to go back and force while reading the source module).
 
+# API separation
+Client programmers should clearly understand what API is published and what is not. In java it can be achieved with releasing separat jars (`mylib-api.jar` and `mylib-core.jar`).Standard java access modifiers fail to enforce it to a full extent.
+
 - avoid literal unnamed constants (https://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constants)
 
 # Static code analysis

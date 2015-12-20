@@ -132,7 +132,9 @@ bisect can help you perform a binary search for that commit.
 - `git push` - upload `.git` folder.
 - `git push remote refs/heads/localhead:refs/heads/remotehead
 - `git push [remote-name] [local-head]` - send new snapshots upstream
-- `git push [remote-name] --delete [remote-head]
+- `git push [remote-name] [local-head]:[remote-head]
+- `git push [remote-name] :[remote-head] - delete remote branch
+- `git push [remote-name] --delete [remote-head] - delete remote branch
 - `git push --force`
 
 - `git pull` - download `.git` folder

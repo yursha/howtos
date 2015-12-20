@@ -1,5 +1,10 @@
+# Goals
+- Provide insights into application execution
+- Help in debugging
+- Help in profiling
+
 # Art of logging
-- **Escape variable non numeric data with single quotes** so that variables containing spaces can be easily distinguishable from the (static) rest of the message.
+- **Visually highlight interpolated values** (with single quotes? do we need this at all?) to distinguish what is interpolated and what is static.
 - **Respect log levels** sot that you can easily adjust log verbosity in development and production environments and grep out only important messages easily.
 - Log files are **append-only**. Be sure to log only what is really helpful during debugging as log files can grow and take a lot of disk space. There should be an **archiving policy** for log files. In production environment its  helpful to print 'INFO', 'WARN' and 'ERROR' level messages only to save **disk space**. Their should be a separate **build profile** for development and production environments.
 
@@ -27,6 +32,7 @@
 - ability to specify log level from the command-line, e.g. `-Dlog=DEBUG`. As of September 2015 java logging libraries (e.g. log4j, log4j2, etc.) have no such ability. The best approach then is to configure logging library programmatically and dynamically (instead of config xml files) based on some environment variable. The downside of this approach is that you will need to write additional Java code once for initialization logic and for every entry point to a program to trigger that initialization. For now its better to stick to manually changing `log4j2.xml` before launch (even if it requires repackaging). Investigate how to change `log4j2.xml` file in jar without repackaging OR how to build a class path for maven `target` directory to launch app unpackaged.
 - Asynchronous execution
 - automatic reloading of configuration
+- filtering
 
 # Test Driven Development
 - http://junit.org/

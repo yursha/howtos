@@ -10,3 +10,6 @@
 
 # JQuery
 - http://youmightnotneedjquery.com/
+
+# Programming
+- Brian W. Kernighan and Rob Pike "The Practice of Programming"
