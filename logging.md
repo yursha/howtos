@@ -4,7 +4,7 @@
 - Help in profiling
 
 # Art of logging
-- **Visually highlight interpolated values** (with single quotes? do we need this at all?) to distinguish what is interpolated and what is static.
+- **Highlight interpolated values** to distinguish what is interpolated and what is static.
 - **Respect log levels** sot that you can easily adjust log verbosity in development and production environments and grep out only important messages easily.
 - Log files are **append-only**. Be sure to log only what is really helpful during debugging as log files can grow and take a lot of disk space. There should be an **archiving policy** for log files. In production environment its  helpful to print 'INFO', 'WARN' and 'ERROR' level messages only to save **disk space**. Their should be a separate **build profile** for development and production environments.
 
@@ -33,6 +33,7 @@
 - Asynchronous execution
 - automatic reloading of configuration
 - filtering
+- file, syslog and socket appenders, async appenders
 
 # Test Driven Development
 - http://junit.org/
