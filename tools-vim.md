@@ -41,10 +41,7 @@
 - `:marks` (' - position before jump, " - position when last editing a file, [ - start of last change, ] - end of last change
 
 ## Search and replace
-- *hlsearch* option
-- *ignorecase* option - whether searches are case-sensitive by default.
-- *incsearch* option. Use `Ctrl-L` to insert next char in the match or `Ctrl-r,Ctrl-w` to complete a word match.
-- *wrapscan*
+- Use `Ctrl-L` to insert next char in the match or `Ctrl-r,Ctrl-w` to complete a word match.
 - `/` - start search forward from current line. Navigate thru search history with arrow keys (filtering works). 
 - `4*` - search **word** under the cursor as a Nth word 
 - `g*`, `g#` - search **word** under the cursor as a match 
@@ -99,7 +96,7 @@
 - `:` - navigate thru command history
 
 # `:help <arg>` or `:helpgrep <arg`
-quickref, usr_05.txt, reference_toc
+Bookmark: quickref, usr_05.txt, reference_toc
 - `x`, `CTRL-R` - normal mode command
 - `v_u` - visual mode command
 - `i_<Esc>` - insert mode command
@@ -116,24 +113,7 @@ quickref, usr_05.txt, reference_toc
 ## Plugin Manager for Vim
 - [Vundle](https://github.com/VundleVim/Vundle.vim)
 
-## Options
-### Boolean
-- `ruler` - show current line, column and percentage of total document size
-- `number` - show line numbers
-- `autoindent` - automatically indent on <kbd>enter</kbd> button press
-- `expandtab`- insert spaces on <kbd>tab</kbd> button press
-- `backup` - create backup `.swp` files while editing
-- `list` - display new line characters
-- `eol` - append line feed (10) character when saving files.
-- `cursorline` - highlight cursor line
 - `iskeyword` - defines what a word is
-
-### Integer
-- `tabstop=4`
-- `shiftwidth=4`
-
-### List
-- `backspace=eol,start,indent`
 
 ## Text editing
 - http://vim.wikia.com/wiki/Switching_case_of_characters
@@ -186,11 +166,11 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 ## Copypasting from system clipboard
 - `:set paste`
 
-# Syntax support (indentation and highlighting)
-- https://github.com/digitaltoad/vim-jade
-
 # Vim configuration
 - `:scriptnames`
 
 # Indentation
 - `>` and `<` commands
+
+# Mapping
+- `:map` - list current mappings

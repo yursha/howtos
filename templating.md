@@ -25,6 +25,7 @@ Always comment template markup like this as browser will mess up the template wh
 ```
 
 # Jade
+- https://github.com/digitaltoad/vim-jade
 - http://jade-lang.com/
 - http://html2jade.org/
 (attributes, interpolation, tags)
