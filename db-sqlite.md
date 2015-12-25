@@ -1,0 +1,3 @@
+- https://www.sqlite.org
+- https://www.sqlite.org/limits.html
+- https://www.sqlite.org/whentouse.html

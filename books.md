@@ -7,9 +7,9 @@
 # Vim
 - "Learning the vi Editor" by Linda Lamb and Arnold Robbins
 - "vi Improved - VIM" by Steve Oualline
-     
+
 # JQuery
 - http://youmightnotneedjquery.com/
-     
+
 # Programming
 - Brian W. Kernighan and Rob Pike "The Practice of Programming"

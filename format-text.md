@@ -113,5 +113,7 @@ DOM is an in-memory tree representation of a document (XML, HTML) or data (XML).
 # Delimiter-Separted Values (Tabular format)
 Tabular formats are often more space efficient than JSON, which can improve loading times for large datasets (when downloading over internet).
 - CSV, TSV, SSV 
+- https://commons.apache.org/proper/commons-csv/user-guide.html
+- https://commons.apache.org/proper/commons-csv/archives/1.2/apidocs/index.html
 
 # LDIF (LDAP Data Interchange Format)

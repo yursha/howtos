@@ -1,1 +1,2 @@
 - How `/dev/zero` and `/dev/null` work?
+- http://www.tldp.org/LDP/khg/HyperNews/get/khg.html

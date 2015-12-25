@@ -4,3 +4,5 @@
 # Bash built-ins
 - `help`
 - `pwd`
+
+- `CTRL+r` - navigate history

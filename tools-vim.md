@@ -96,7 +96,7 @@
 - `:` - navigate thru command history
 
 # `:help <arg>` or `:helpgrep <arg`
-Bookmark: quickref, usr_05.txt, reference_toc
+Bookmark: quickref, usr_06.txt, reference_toc
 - `x`, `CTRL-R` - normal mode command
 - `v_u` - visual mode command
 - `i_<Esc>` - insert mode command
@@ -174,3 +174,7 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 
 # Mapping
 - `:map` - list current mappings
+
+# Management
+- `:options`
+- `:help local-additions`
