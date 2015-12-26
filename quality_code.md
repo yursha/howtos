@@ -27,3 +27,6 @@ Client programmers should clearly understand what API is published and what is n
 
 - `// WARNING: sdfjsljfldsjflds`
 - `// BOGUS: Will crash if user has no widgets
+
+# DRY (Don't repeat yourself)
+Repeating yourself makes you change code in mupltiple places in a similar fashion when loggically only one thing has to be changed.

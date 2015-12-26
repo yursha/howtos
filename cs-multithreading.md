@@ -38,3 +38,16 @@ Tasks can be runnable (doesn't return a value) or callable (return a value).
 
 # Data Structures
 - **Bounded Buffer** (`ArrayBlockingQueue`) - a thread safe bounded blocking FIFO queue backed by a fixed size array.
+
+# Locking approaches
+## Futex
+Multiple processes communicate locking state through shared memory regions and atomic operations. Kernel involvement is only necessary when there is contention on a lock, in order to perform queueing and scheduling functions.
+- **futex** - fast userspace mutex. A futex consists of a kernelspace wait queue that is attached to an aligned integer in userspace.
+- https://en.wikipedia.org/wiki/Futex
+- Fuss, Futexes and Furwocks https://www.kernel.org/doc/ols/2002/ols2002-pages-479-495.pdf
+
+## `fcntl` locking
+- gnu c library `fcntl.h`
+- http://www.gnu.org/software/libc/manual/html_mono/libc.html#File-Locks
+
+## System V semaphores
