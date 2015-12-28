@@ -30,3 +30,16 @@ Client programmers should clearly understand what API is published and what is n
 
 # DRY (Don't repeat yourself)
 Repeating yourself makes you change code in mupltiple places in a similar fashion when loggically only one thing has to be changed.
+
+# Immutability
+- http://www.drdobbs.com/cpp/practical-advantages-of-immutable-values/240163690
+- http://programmers.stackexchange.com/questions/151733/if-immutable-objects-are-good-why-do-people-keep-creating-mutable-objects
+- https://www.linkedin.com/pulse/20140528113353-16837833-6-benefits-of-programming-with-immutable-objects-in-java
+- http://docs.scala-lang.org/overviews/collections/overview.html
+
+# Static Code Analysis
+- http://maven.apache.org/components/plugins/maven-checkstyle-plugin/
+- http://checkstyle.sourceforge.net/
+
+# Stay laconic
+> The go tool will only print output when an error occurs, so if these commands produce no output they have executed successfully.

@@ -1,6 +1,6 @@
 # CVS
 - http://www.nongnu.org/cvs/
-- Bookmark: 2.4 The administrative files - https://web.archive.org/web/20140209043007/http://ximbiot.com/cvs/manual/cvs-1.12.13/cvs.html
+- Bookmark: 2.4 The administrative files - https://web.archive.org/web/20140709051732/http://ximbiot.com/cvs/manual/
 - Migration to Git - http://git-scm.com/docs/gitcvs-migration
 - Centralized, ureserved checkouts, 
 

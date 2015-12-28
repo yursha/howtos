@@ -1,6 +1,7 @@
 - http://learnvimscriptthehardway.stevelosh.com/
 - http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 - https://github.com/vim/vim
+- http://stackoverflow.com/questions/1919028/how-to-show-vertical-line-to-wrap-the-line-in-vim
 
 # Motion
 

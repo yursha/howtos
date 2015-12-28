@@ -10,8 +10,15 @@
 - gnu c lib `signal.h`
 - some signals generate `core` files (core dumps) in the process CWD
 - http://www.gnu.org/software/libc/manual/html_mono/libc.html#Signal-Handling
-- Bookmark: http://www.gnu.org/software/libc/manual/html_mono/libc.html#Signal-Actions
+- Bookmark: http://www.gnu.org/software/libc/manual/html_mono/libc.html#Flags-for-Sigaction
+- http://www.alexonlinux.com/signal-handling-in-linux
+
+Signal is a message sent by either operating system or some application to your program (or one of its threads). Each signal identified by a number, from 1 to 31. Signals don’t carry any argument and their names are mostly self explanatory. For instance SIGKILL or signal number 9 tells the program that someone tries to kill it. In addition to informative nature of signals, they also interrupt your program. I.e to handle a signal, one of the threads in your program, stops its execution and temporarily switches to signal handler. Note that as in version 2.6 of Linux kernel, most of the signals interrupt only one thread and not the entire application as it used to be once. Moreover, signal handler itself can be interrupted by some other signal.
 
 Inter-process synchronization may be achieved buy using files with agreed upon names as locks.
 Acquiring a lock means assuring that such file doens't exist and creating such a file in atomic operation (most OS expose corresponding system calls).
 Releasing a lock means deleting such a file.
+
+- Process Scheduling https://www.cs.rutgers.edu/~pxk/416/notes/07-scheduling.html
+- CS416 Operating Systems https://www.cs.rutgers.edu/~pxk/416/notes/index.html
+- Coursera Automata https://class.coursera.org/automata-003/auth

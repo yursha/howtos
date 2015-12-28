@@ -45,9 +45,24 @@ Multiple processes communicate locking state through shared memory regions and a
 - **futex** - fast userspace mutex. A futex consists of a kernelspace wait queue that is attached to an aligned integer in userspace.
 - https://en.wikipedia.org/wiki/Futex
 - Fuss, Futexes and Furwocks https://www.kernel.org/doc/ols/2002/ols2002-pages-479-495.pdf
+- Futexes Are Tricky http://www.akkadia.org/drepper/futex.pdf
+- ftp://ftp.kernel.org/pub/linux/kernel/people/rusty/
 
 ## `fcntl` locking
 - gnu c library `fcntl.h`
+- http://man7.org/linux/man-pages/man2/fcntl.2.html
 - http://www.gnu.org/software/libc/manual/html_mono/libc.html#File-Locks
 
 ## System V semaphores
+
+# Intel
+- https://www.threadingbuildingblocks.org/docs/help/index.htm
+
+# Work Scheduling Strategy
+- https://en.wikipedia.org/wiki/Work_stealing
+- http://stackoverflow.com/questions/10153646/work-task-stealing-threadpoolexecutor
+
+# Java Concurrency
+- https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html
+- http://www.ibm.com/developerworks/java/library/j-jtp05236/index.html
+- http://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/

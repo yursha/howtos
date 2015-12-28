@@ -6,7 +6,6 @@
 - angular1
 - coffeescript
 - backbone.js
-- bootstrap
 - ember.js
 - meteor
 - react

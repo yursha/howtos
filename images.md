@@ -51,7 +51,8 @@
 
 ## Java AWT Image
 - `java.awt`
-- `java.awt.image` 
+- `java.awt.image`
+- http://docs.oracle.com/javase/8/docs/api/java/awt/image/ComponentSampleModel.html
 
 # Image Processing
 - https://en.wikipedia.org/wiki/Dither

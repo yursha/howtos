@@ -1,4 +1,5 @@
 - https://www.kernel.org/
+- https://lkml.org/
 
 - How `/dev/zero` and `/dev/null` work?
 - http://www.tldp.org/LDP/khg/HyperNews/get/khg.html
@@ -13,3 +14,6 @@
 
 # Misc
 - magic ioctl
+
+- https://doc.opensuse.org/documentation/html/openSUSE_121/opensuse-tuning/index.html
+

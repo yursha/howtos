@@ -49,11 +49,16 @@ java -Dcom.sun.management.jmxremote.port=9999 \
 
 - https://kenai.com/projects/btrace/pages/UserGuide
 
+# manual
+- http://stackoverflow.com/questions/924208/how-to-convert-nanoseconds-to-seconds-using-the-timeunit-enum
+
 # `jconsole`
 Can be used as a universal JMX client.
 
 # `jvisualvm`
 - http://visualvm.java.net/
+- http://visualvm.java.net/docindex.html
+- http://cs.smith.edu/dftwiki/index.php/Tutorial:_Profiling_Java_Programs
 
 # Java Mission Control
 
@@ -63,5 +68,3 @@ Can be used as a universal JMX client.
 
 # `jcmd`
 
-# Concurrency
-- https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html

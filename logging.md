@@ -1,3 +1,6 @@
+- http://www.javacodegeeks.com/2011/01/10-tips-proper-application-logging.html
+- http://dev.splunk.com/view/logging-best-practices/SP-CAAADP6
+
 # Goals
 - Provide insights into application execution
 - Help in debugging

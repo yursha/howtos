@@ -1,5 +1,6 @@
 - https://cmake.org/
 - https://cmake.org/cmake/help/v3.4/
+- Bookmark: https://cmake.org/cmake/help/v3.4/manual/cmake-language.7.html
 
 Phases
 - configure step
