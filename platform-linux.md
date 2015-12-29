@@ -58,7 +58,9 @@ EndSection
 - http://www.x.org/wiki/ModuleDescriptions/
 - http://www.x.org/releases/X11R7.7/doc/
  
-Arch install copies some files into `/usr/share/X11`
+Arch install copies some files into `/usr/sharde/X11`
+
+Scalable fonts with full antialiasing, managed on the client side by `fontconfig`, and displayed by the `Xft` library using the `RENDER` extension. The most popular and actively developed graphical toolkits are `Qt` and `GTK+`. `freedesktop.org` has coordinated shared standards for desktop menu entries and icons. Modern display hardware is 24-bit palette-free color wiith 3D capabilities, and hardware acceleration. Shading, gradients.
 
 ## appres
 
