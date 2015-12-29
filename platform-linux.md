@@ -49,3 +49,6 @@ EndSection
 
 # Sort me out
 - `killall`
+
+# X Server
+- `man X`
