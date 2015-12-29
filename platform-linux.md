@@ -27,14 +27,6 @@
 - `pacman -S terminus-font` - install set of bigger fonts for Linux virtual terminals
 - `setfont sun12x22`  - the biggest console font in pre-installed fonts
 
-# Launch Chromium in a standalone app
-- Modify your `~/.xinitrc` file
-```
-exec chromium
-```
-- `startx -- -dpi 220`
-- then launch firefox in the same display `firefox --display :0`
-
 # Enable natural touchpad scrolling
 - `cp  /usr/share/X11/xorg.conf.d/50-synaptics.conf /etc/X11/xorg.conf.d`
 - `vim /etc/X11/xorg.conf.d/50-synaptics.conf`
