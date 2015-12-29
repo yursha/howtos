@@ -34,3 +34,15 @@ exec chromium
 ```
 - `startx -- -dpi 220`
 
+# Enable natural touchpad scrolling
+- `cp  /usr/share/X11/xorg.conf.d/50-synaptics.conf /etc/X11/xorg.conf.d`
+- `vim /etc/X11/xorg.conf.d/50-synaptics.conf`
+
+```
+Section "InputClass"
+    ...
+    Option      "VertScrollDelta"          "-111"
+    Option      "HorizScrollDelta"         "-111"
+    ...
+EndSection
+```
