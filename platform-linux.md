@@ -26,3 +26,11 @@
 - `setfont ter-v32n` - set a bigger terminal font on a HiDPI device (add to `~/.bash_profile`)
 - `pacman -S terminus-font` - install set of bigger fonts for Linux virtual terminals
 - `setfont sun12x22`  - the biggest console font in pre-installed fonts
+
+# Launch Chromium in a standalone app
+- Modify your `~/.xinitrc` file
+```
+exec chromium
+```
+- `startx -- -dpi 220`
+
