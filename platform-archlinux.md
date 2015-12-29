@@ -28,9 +28,9 @@ Scalable fonts with full antialiasing, managed on the client side by `fontconfig
 - Application clients (Firefox)
 - Desktop Environment (Gnome, KDE - panels, desktop icon managers)
 - Window and Compositing Manager (Compiz, Metacity, kwin - placement and control of windows)
-- Session Manager (gnome-session, ksmserver)
-- Display Manager (gdm, kdm, xdm - local X server startup and user authentication)
-- X Window Server - display hardware management
+- Session Manager (gnome-session, ksmserver) - tracks application state aacross login sessions, starting standard clients such as the window manager and desktop environment components, restarting applications that were active at the end of a previous session, and optionally restarting applications if they crash.
+- Display Manager (gdm, kdm, xdm - local X server startup and user authentication) (can use biometric scanning for authentication)
+- X Window Server - hardware management (keyboard, video screen, touchpad drivers)
 - Network Transports - (TCP/IP, Unix domain sockets - client/server connections)
 - Toolkits (GTK, Qt, Motif, Xaw)
 
