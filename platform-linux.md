@@ -33,6 +33,7 @@
 exec chromium
 ```
 - `startx -- -dpi 220`
+- then launch firefox in the same display `firefox --display :0`
 
 # Enable natural touchpad scrolling
 - `cp  /usr/share/X11/xorg.conf.d/50-synaptics.conf /etc/X11/xorg.conf.d`
@@ -51,7 +52,7 @@ EndSection
 - `killall`
 
 # X Server
-- `man X`
+- `man X` 
 - http://www.x.org/wiki/
 - http://www.x.org/wiki/Documentation/
 - http://www.x.org/wiki/UserDocumentation/GettingStarted/
