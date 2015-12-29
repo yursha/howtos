@@ -46,3 +46,6 @@ Section "InputClass"
     ...
 EndSection
 ```
+
+# Sort me out
+- `killall`
