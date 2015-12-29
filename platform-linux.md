@@ -62,3 +62,6 @@ Arch install copies some files into `/usr/share/X11`
 ## appres
 
 List "application resources". For example, "appres XTerm" will list the xterm resources. These X resources are a type of configuration syntax. Default X resource configuration files can be seen under /etc/X11/app-defaults/, /usr/local/lib/X11/app-defaults/, or other location.
+
+## xlsclients
+- `xlsclients -display :0` - list X clients on display :0
