@@ -57,6 +57,7 @@ EndSection
 - http://www.x.org/wiki/UserDocumentation/GettingStarted/
 - http://www.x.org/wiki/ModuleDescriptions/
  
+Arch install copies some files into `/usr/share/X11`
 
 ## appres
 
