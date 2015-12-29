@@ -84,3 +84,6 @@ Sudo can also be used to run commands as other users; additionally, sudo logs al
 - https://wiki.archlinux.org/index.php/SSH_keys
 - package `openssh`
 
+# Tools
+- `screen` - https://en.wikipedia.org/wiki/GNU_Screen
+
