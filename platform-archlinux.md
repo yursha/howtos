@@ -52,4 +52,5 @@ Sudo can also be used to run commands as other users; additionally, sudo logs al
 - `useradd`
 - https://www.sudo.ws/sudo/
 - https://wiki.archlinux.org/index.php/Su
+- https://wiki.archlinux.org/index.php/Sudo
 
