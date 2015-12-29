@@ -55,7 +55,6 @@ EndSection
 - `man X` 
 - http://www.x.org/wiki/
 - http://www.x.org/wiki/Documentation/
-- http://www.x.org/wiki/UserDocumentation/GettingStarted/
 - http://www.x.org/wiki/ModuleDescriptions/
  
 Arch install copies some files into `/usr/share/X11`
