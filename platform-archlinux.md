@@ -7,6 +7,31 @@ exec xterm
 # Enable HiDPI Support
 - https://wiki.archlinux.org/index.php/HiDPI
 
+## Switch between different terminals
+- `CTRL+ALT+FN+F1`, `CTRL+ALT+FN+F2` etc.
+
+## Terminal fonts
+- `setfont ter-v32n` - set a bigger terminal font on a HiDPI device (add to `~/.bash_profile`)
+- `pacman -S terminus-font` - install set of bigger fonts for Linux virtual terminals
+- `setfont sun12x22`  - the biggest console font in pre-installed fonts
+
+## Terminal colors
+- http://rampex.ihep.su/Linux/linux_howto/html/tutorials/mini/Colour-ls-6.html
+- `setterm -foreground white -background blue -store`
+
+## Enable natural touchpad scrolling
+- `cp  /usr/share/X11/xorg.conf.d/50-synaptics.conf /etc/X11/xorg.conf.d`
+- `vim /etc/X11/xorg.conf.d/50-synaptics.conf`
+
+```
+Section "InputClass"
+    ...
+    Option      "VertScrollDelta"          "-111"
+    Option      "HorizScrollDelta"         "-111"
+    ...
+EndSection
+```
+
 ## Chromium
 - `startx -- -dpi 220` - use HiDPI setting when launching X
 - then launch firefox in the same display `firefox --display :0` - optional nit
