@@ -1,6 +1,8 @@
 - https://www.kernel.org/
 - https://lkml.org/
 
+- `/sys/power` directory - https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-power
+
 - How `/dev/zero` and `/dev/null` work?
 - http://www.tldp.org/LDP/khg/HyperNews/get/khg.html
 
