@@ -19,3 +19,10 @@
 
 - https://doc.opensuse.org/documentation/html/openSUSE_121/opensuse-tuning/index.html
 
+# Switch between different terminals
+- `CTRL+ALT+FN+F1`, `CTRL+ALT+FN+F2` etc.
+
+# Terminal fonts
+- `setfont ter-v32n` - set a bigger terminal font on a HiDPI device (add to `~/.bash_profile`)
+- `pacman -S terminus-font` - install set of bigger fonts for Linux virtual terminals
+- `setfont sun12x22`  - the biggest console font in pre-installed fonts
