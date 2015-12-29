@@ -56,7 +56,7 @@ EndSection
 - http://www.x.org/wiki/
 - http://www.x.org/wiki/Documentation/
 - http://www.x.org/wiki/ModuleDescriptions/
-- http://www.x.org/wiki/UserDocumentation/
+- http://www.x.org/releases/X11R7.7/doc/
  
 Arch install copies some files into `/usr/share/X11`
 
