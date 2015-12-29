@@ -5,6 +5,7 @@ exec xterm
 ```
 
 # Enable HiDPI Support
+- https://wiki.archlinux.org/index.php/HiDPI
 
 ## Chromium
 - `startx -- -dpi 220` - use HiDPI setting when launching X
