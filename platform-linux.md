@@ -65,4 +65,4 @@ Standard interface that can be used by software to access compliant video boards
 # Interrupts
 - https://en.wikipedia.org/wiki/Interrupt
 
-An interrupt is a signal emitted by hardware or software to the CPU to interrupt the current code the CPU is executing. The CPU suspends its current activities, saves its state, and executes a an interrupt handler (or an interrupt service routine, ISR). After the interrupt handler finishes, the CPU resumes normal activities. 
+An interrupt is a signal emitted by hardware or software to the CPU to interrupt the current code which is executing. The CPU suspends its current activities, saves its state, and executes a an interrupt handler (or an interrupt service routine, ISR). After the interrupt handler finishes, the CPU resumes normal activities. 
