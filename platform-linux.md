@@ -65,10 +65,15 @@ Standard interface that can be used by software to access compliant video boards
 # Interrupts
 - https://en.wikipedia.org/wiki/Interrupt
 
-An interrupt is a signal emitted by hardware or software to the CPU to interrupt the current code which is executing. The CPU suspends its current activities, saves its state, and executes an interrupt handler. After the interrupt handler finishes, the CPU resumes normal activities. 
+An interrupt is a signal emitted by hardware or software to the CPU to interrupt the currently executing thread. The CPU respond is:
+- halt thread execution
+- save thread stateex
+- execute an interrupt handler
+- restore thread state
+- resume thread execution
 
-Internally, hardware interrupts are implemented using electronic alerting signals that are sent to the CPU from an external device, such as a disk controller, or an external peripheral. E.g., pressing a key on the keyboard or moving the mouse triggers hardware interrupts that cause the processor to read the keystroke or mouse position. Unlike the software type, hardware interrupts are asynchronous and can occur in the middle of instruction execution, requiring additional care in programming. The act of initiating a hardware interrupt is referred to as an interrupt request (IRQ).
+Internally, hardware interrupts are implemented using electronic signals that are sent to the CPU from an external device, such as a disk controller, or an external peripheral. E.g., pressing a key on the keyboard or moving the mouse triggers hardware interrupts that cause the processor to read the keystroke or mouse position. Unlike the software type, hardware interrupts are asynchronous and can occur in the middle of instruction execution, requiring additional care in programming. The act of initiating a hardware interrupt is referred to as an interrupt request (IRQ).
 
-A software interrupt is caused either by an exceptional condition in the CPU itself, or a special instruction in the ISA which causes an interrupt. The former is often called a trap or exception and is used for errors or events occurring during program execution that are exceptional enough that they cannot be handled within the program itself. For example, if the ALU is commanded to divide a number by zero, this impossible demand will cause a divide-by-zero exception, perhaps causing the computer to abandon the calculation or display an error message. Software interrupt instructions function similarly to subroutine calls and are used for a variety of purposes, such as to request services from low-level system software such as device drivers. For example, computers often use software interrupt instructions to communicate with the disk controller to request data be read or written to the disk.
+A software interrupt is caused either by an exceptional condition (trap) in the CPU itself, or a special instruction in the ISA which causes an interrupt. A trap is used for errors occurring during program execution that cannot be handled within the program itself. For example, if the ALU is commanded to divide a number by zero, this impossible demand will cause a divide-by-zero exception, perhaps causing the computer to abandon the calculation or display an error message. Software interrupt instructions are used for a variety of purposes, such as to request services from low-level system software such as device drivers, e.g., to communicate with the disk controller to request data be read or written to the disk.
 
 Each interrupt has its own interrupt handler. The number of hardware interrupts is limited by the number of interrupt request (IRQ) lines to the CPU, but there may be hundreds of different software interrupts. 
