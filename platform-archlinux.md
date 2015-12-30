@@ -26,7 +26,8 @@ exit
 exec xterm
 ```
 
-Controlling display brightness
+Backlight
+- https://wiki.archlinux.org/index.php/Backlight
 - `xbacklight -display :0 -set 50` - reduce display backlight in half
 
 # Enable HiDPI Support
