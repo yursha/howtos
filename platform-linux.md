@@ -66,3 +66,5 @@ Standard interface that can be used by software to access compliant video boards
 - https://en.wikipedia.org/wiki/Interrupt
 
 An interrupt is a signal emitted by hardware or software to the CPU to interrupt the current code which is executing. The CPU suspends its current activities, saves its state, and executes an interrupt handler. After the interrupt handler finishes, the CPU resumes normal activities. 
+
+Internally, hardware interrupts are implemented using electronic alerting signals that are sent to the CPU from an external device, such as a disk controller, or an external peripheral. E.g., pressing a key on the keyboard or moving the mouse triggers hardware interrupts that cause the processor to read the keystroke or mouse position. Unlike the software type, hardware interrupts are asynchronous and can occur in the middle of instruction execution, requiring additional care in programming. The act of initiating a hardware interrupt is referred to as an interrupt request (IRQ).
