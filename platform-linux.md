@@ -45,7 +45,7 @@ exit
 
 # BIOS
 - `lrmi` - Linux Real Mode Interface - http://sourceforge.net/projects/lrmi/ - library for calling real mode BIOS routines under Linux.
-- `vbetool` - http://linux.die.net/man/1/vbetool - runs real-mode video BIOS code to alter hardware state. Uses `lrmi` in order to run code from the video BIOS. Currently, it is able to alter DPMS states, save/restore video card state and attempt to initialize the video card from scratch. 
+- `vbetool` - http://manpages.ubuntu.com/manpages/hardy/man1/vbetool.1.html - runs real-mode video BIOS code to alter hardware state. Uses `lrmi` in order to run code from the video BIOS. Currently, it is able to alter DPMS states, save/restore video card state and attempt to initialize the video card from scratch. 
 - Display Power Management Signaling (DPMS) 
   + http://www.tldp.org/HOWTO/Battery-Powered/displaytypes.html
   + https://en.wikipedia.org/wiki/VESA_Display_Power_Management_Signaling
