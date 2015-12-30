@@ -63,5 +63,8 @@ Standard interface that can be used by software to access compliant video boards
 - https://en.wikipedia.org/wiki/BIOS_interrupt_call
 
 # CPU
+## Interrupts
 - FLIH (First Level Interrupt Handler) - upper half
 - SLIH (Second Level Interrupt Handler) - bottom half
+- Jonathan Corbet; Alessandro Rubini; Greg Kroah-Hartman (January 27, 2005). "Linux Device Drivers, Chapter 10. Interrupt Handling" http://static.lwn.net/images/pdf/LDD3/ch10.pdf
+-  "The Linux Kernel Module Programming Guide, Chapter 12. Interrupt Handlers" - http://www.tldp.org/LDP/lkmpg/2.6/html/x1256.html
