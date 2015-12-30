@@ -52,3 +52,6 @@ exit
   + http://www.webopedia.com/TERM/D/DPMS.html
   + http://www.x.org/releases/X11R7.7/doc/libXext/dpmslib.html
   + http://www.x.org/releases/X11R7.7/doc/xextproto/dpms.html
+  
+## VESA BIOS Extensions
+- https://en.wikipedia.org/wiki/VESA_BIOS_Extensions
