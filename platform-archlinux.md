@@ -6,16 +6,6 @@
 - keys to control display brightness don't work in X not in Linux Vt
 - sound subsystem is not tested
 
-## Keyboard
-### Backlight
-```
-su
-***
-echo -n "250" > /sys/class/leds/smc\:\:kbd_backlight/brightness
-exit
-```
-
-
 ## Display & Graphics
 - Modify your `~/.xinitrc` file
 ```
