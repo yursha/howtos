@@ -61,3 +61,7 @@ Standard interface that can be used by software to access compliant video boards
 ## BIOS Interrupt Call
 - https://en.wikipedia.org/wiki/INT_10H
 - https://en.wikipedia.org/wiki/BIOS_interrupt_call
+
+# CPU
+- FLIH (First Level Interrupt Handler) - upper half
+- SLIH (Second Level Interrupt Handler) - bottom half
