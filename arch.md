@@ -28,4 +28,10 @@ Each interrupt has its own interrupt handler. An interrupt handler is a callback
 
 An interrupt vector table (IVT), is a data structure that associates a list of interrupt handlers with a list of interrupt requests.
 
+- https://en.wikipedia.org/wiki/Interrupt
+- https://en.wikipedia.org/wiki/Programmable_Interrupt_Controller
+- https://en.wikipedia.org/wiki/End_of_interrupt
+- https://en.wikipedia.org/wiki/Interrupt_vector_table
+- https://en.wikipedia.org/wiki/Interrupt_descriptor_table
+
 
