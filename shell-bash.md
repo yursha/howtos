@@ -9,6 +9,26 @@ If a shell command is terminated by `&`, the shell executes the subprocess async
 
 - delete word ahead of cursor - http://askubuntu.com/questions/279254/bash-delete-word-ahead-of-cursor
 
+# Loops
+- `until test-commands; do consequent-commands; done`
+- `while test-commands; do consequent-commands; done`
+- `for name [ [in [words …] ] ; ] do commands; done`
+- `for (( expr1 ; expr2 ; expr3 )) ; do commands ; done`
+
+# Branches
+## if-else
+```
+if test-commands; then
+  consequent-commands;
+[elif more-test-commands; then
+  more-consequents;]
+[else alternate-consequents;]
+fi
+```
+
+## switch
+- `case word in [ [(] pattern [| pattern]…) command-list ;;]… esac`
+
 # Bash built-ins
 - `help`
 - `pwd`
