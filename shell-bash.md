@@ -7,7 +7,6 @@ If a shell command is terminated by `&`, the shell executes the subprocess async
 # Pipelines
 - `[time [-p]] [!] command1 [ | or |& command2 ] … ` - The `TIMEFORMAT` variable may be set to a format string that specifies how the timing information should be displayed. The exit status of a pipeline is the exit status of the last command in the pipeline, unless the `pipefail` option is enabled. If `pipefail` is enabled, the pipeline’s return status is the value of the last command to exit with a non-zero status, or zero if all commands exit successfully.
 
-- delete word ahead of cursor - http://askubuntu.com/questions/279254/bash-delete-word-ahead-of-cursor
 
 # Loops
 - `until test-commands; do consequent-commands; done`
@@ -36,5 +35,8 @@ fi
 - `CTRL+r` - navigate history
 
 - `echo $?` - echo exit value of the last executed child process.
+- `echo $'\n'` - echo extra newlines
 - `!!` - execute the previous command
 - `!<prefix> - last command from history that matches
+
+- delete word ahead of cursor - http://askubuntu.com/questions/279254/bash-delete-word-ahead-of-cursor

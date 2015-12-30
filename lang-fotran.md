@@ -1,2 +1,0 @@
-- Fortran
-- Fortran 77
