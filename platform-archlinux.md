@@ -13,6 +13,8 @@
 ## ACPI
 - https://www.kernel.org/doc/Documentation/power/states.txt
 
+The kernel supports `mem`, `standby`, `freeze` and `disk` sleep states that can be read or written to the `/sys/power/state` file.  `disk` represents hibernation and the meaning of the remaining ones depends on the `relative_sleep_states` command line argument.
+
 ## Keyboard
 ### Backlight
 ```
