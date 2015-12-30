@@ -23,5 +23,9 @@ An interrupt is a signal emitted by hardware or software to the CPU to interrupt
 - Trap (exception) in the CPU itself. A trap is used for errors occurring during program execution that cannot be handled within the program itself (e.g. if ALU is commanded to divide a number by zero).
 - A special instruction in the ISA which causes an interrupt. Used for a variety of purposes, such as to request services from low-level system software such as device drivers, e.g., to communicate with the disk controller to request data be read or written to the disk.
 
-Each interrupt has its own interrupt handler. The number of hardware interrupts is limited by the number of interrupt request (IRQ) lines to the CPU, but there may be hundreds of different software interrupts. 
+## Interrupt handlers
+Each interrupt has its own interrupt handler. An interrupt handler is a callback function in microcontroller firmware, an operating system or a device driver, whose execution is triggered by the reception of an interrupt. The number of hardware interrupts is limited by the number of interrupt request (IRQ) lines to the CPU, but there may be hundreds of different software interrupts. 
+
+An interrupt vector table (IVT), is a data structure that associates a list of interrupt handlers with a list of interrupt requests.
+
 
