@@ -10,6 +10,9 @@
 - `lspci | grep VGA` - find out graphics chip. Intel chips only need `xf86-video-intel` archlinux package.
 - `lspci` - list all PCI hardware
 
+## ACPI
+- https://www.kernel.org/doc/Documentation/power/states.txt
+
 ## Keyboard
 ### Backlight
 ```
