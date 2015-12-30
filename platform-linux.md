@@ -64,3 +64,5 @@ Standard interface that can be used by software to access compliant video boards
 
 # Interrupts
 - https://en.wikipedia.org/wiki/Interrupt
+
+An interrupt is a signal to the CPU emitted by hardware or software indicating which alerts the CPU about a high-priority condition requiring the interruption of the current code the CPU is executing. 
