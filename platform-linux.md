@@ -42,3 +42,6 @@ su
 echo -n "250" > /sys/class/leds/smc\:\:kbd_backlight/brightness
 exit
 ```
+
+# BIOS
+- `lrmi` - Linux Real Mode Interface - http://sourceforge.net/projects/lrmi/ - library for calling real mode BIOS routines under Linux.
