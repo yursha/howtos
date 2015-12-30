@@ -57,3 +57,6 @@ exit
 - https://en.wikipedia.org/wiki/VESA_BIOS_Extensions
 
 Standard interface that can be used by software to access compliant video boards at high resolutions and bit depths. This is opposed to the "traditional" int 10h BIOS calls, which are limited to resolutions of 640×480 pixels with 16 color (4-bit) depth or less. VBE is made available through the video card's BIOS, which installs during boot up some interrupt vectors that point to itself.
+
+## BIOS Interrupt Call
+- https://en.wikipedia.org/wiki/INT_10H
