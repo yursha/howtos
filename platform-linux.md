@@ -23,6 +23,8 @@
 - `killall`
 
 # Hardware
+- https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git/
+
 ## PCI
 - `lspci | grep VGA` - find out graphics chip. Intel chips only need `xf86-video-intel` archlinux package.
 - `lspci` - list all PCI hardware
@@ -68,3 +70,8 @@ Standard interface that can be used by software to access compliant video boards
 - SLIH (Second Level Interrupt Handler) - bottom half
 - Jonathan Corbet; Alessandro Rubini; Greg Kroah-Hartman (January 27, 2005). "Linux Device Drivers, Chapter 10. Interrupt Handling" http://static.lwn.net/images/pdf/LDD3/ch10.pdf
 -  "The Linux Kernel Module Programming Guide, Chapter 12. Interrupt Handlers" - http://www.tldp.org/LDP/lkmpg/2.6/html/x1256.html
+
+# Wireless
+## Broadcom source files
+- http://lxr.free-electrons.com/source/drivers/net/wireless/brcm80211/brcmfmac/firmware.c
+- http://lxr.free-electrons.com/source/drivers/net/wireless/brcm80211/brcmfmac/pcie.c
