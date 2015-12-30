@@ -1,3 +1,5 @@
+- https://en.wikipedia.org/wiki/Dispatch_table - late binding OOP implementation
+
 # Name Scoping
 - lexical (static, block) scoping
 
@@ -5,25 +7,25 @@
 - Application domains have conflicting needs.
 - Programmer training is the dominant cost of a programming language (not R&D for it)
 
-# R
+# Languages
+## R
 - https://www.r-project.org/
 - http://ggplot2.org/
 
-# Rust
+## Rust
 
-# Perl
+## Perl
 - https://www.perl.org/
 - http://learn.perl.org/
 - http://www.cpan.org/
 - http://perldoc.perl.org
 
-# Erlang
+## Erlang
 
-# Fortran
+## Fortran
 - Fortran
 - Fortran 77
 
-# Haskell
+## Haskell
 
-# Python
-
+## Python
