@@ -1,8 +1,33 @@
-# Display & Graphics
+# Problems
+- no automatic keys backlight during low light conditions (how OS X does it?)
+- no low-battery notification
+- cannot recover from suspend state? (at list dies when you close lid)
+- how to copy text from X server to Linux VT?
+- keys to control display brightness don't work in X not in Linux Vt
+- sound subsystem is not tested
+
+# Hardware
+- `lspci | grep VGA` - find out graphics chip. Intel chips only need `xf86-video-intel` archlinux package.
+- `lspci` - list all PCI hardware
+
+## Keyboard
+### Backlight
+```
+su
+***
+echo -n "250" > /sys/class/leds/smc\:\:kbd_backlight/brightness
+exit
+```
+
+
+## Display & Graphics
 - Modify your `~/.xinitrc` file
 ```
 exec xterm
 ```
+
+Controlling display brightness
+- `xbacklight -display :0 -set 50` - reduce display backlight in half
 
 # Enable HiDPI Support
 - https://wiki.archlinux.org/index.php/HiDPI
@@ -19,7 +44,7 @@ exec xterm
 - http://rampex.ihep.su/Linux/linux_howto/html/tutorials/mini/Colour-ls-6.html
 - `setterm -foreground white -background blue -store`
 
-## Enable natural touchpad scrolling
+## Set up natural touchpad scrolling
 - `cp  /usr/share/X11/xorg.conf.d/50-synaptics.conf /etc/X11/xorg.conf.d`
 - `vim /etc/X11/xorg.conf.d/50-synaptics.conf`
 
