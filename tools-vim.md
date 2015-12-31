@@ -6,23 +6,22 @@
 # Motion
 
 ### Navigating a line
-- 4h/4l - N chars left/right
-- 0 - jump to start of line
-- ^ - jump to first char in a line
-- 4$ - jump to end of line N times
-- 4f-char - jump at Nth next C char in a line (,;)
-- 4F-char - jump at Nth previous C char in a line (,;)
-- 4t-char - jump to Nth next C char in a line (,;)
-- 4T-char - jump to Nth previous C char in a line (,;)
+- 2h/2l - 2 chars left/right
+- 0,^ - jump to first char in a line
+- $ - jump to EOL
+- 2f-char - jump at 2th next C char in a line (,;)
+- 2F-char - jump at 2th previous C char in a line (,;)
+- 2t-char - jump to 2th next C char in a line (,;)
+- 2T-char - jump to 2th previous C char in a line (,;)
 
 ### Navigating a file
-- 4j/4k - N lines down/up
-- 4b/4w - N word starts left/right
-- 4ge/4e - N word ends left/right
-- 4B/4W - N whitespace-separated word starts left/right
-- 4gE/4E - N whitespace-separated word ends left/right
+- 2j/2k - 2 lines down/up
+- 2b/2w - 2 word starts left/right
+- 2ge/2e - 2 word ends left/right
+- 2B/2W - 2 whitespace-separated word starts left/right
+- 2gE/2E - N whitespace-separated word ends left/right
 - % - move to matching (),[],{} or *matchpairs* option (or find first in a line)
-- 4% - go to % of a file
+- 2% - go to 2% of a file
 - CTRL+b - scroll up a page
 - CTRL+f - scroll down a page
 - CTRL+u - scroll up half page
@@ -32,7 +31,7 @@
 - zz - scroll current line into center (*scrolloff* option - number of lines to pad the current line when scrolling)
 - zt - scroll current line to the top
 - zb - scroll current line to the bottom
-- gg, 4G, G - jump to first,Nth,last line
+- gg, 2G, G - jump to first, 2, last line
 - H/M/L - jump to first (home), middle, last currently seen line
 - CTRL+0 - jump forward
 - CTRL+I - jump backward
@@ -57,6 +56,9 @@
 - `/pattern/e` - search-offset - position the cursor at the end of the match
 - `/\%d65`, `/\%x41`, `/\%u2013`, `/\%d8211` - Searching for chars by their code value.
 - `/the\C`, `/the\c` - force pattern case-(in)sensitivity
+- `:grep`
+- `:vimgrep`
+- `:lgrep`
 
 ## Regex
 - `\<` - beginning of word
@@ -155,10 +157,7 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 - `:saveas 'filepath'` - clone buffer and save it to a different filepath
 - `:bufdo %s/pattern/replace/ge | update` - search and replace in all open buffers.
 
-- open multiple files in the project `src` folder 
-```
-% vim `find src -type f -name '*.js' -or -name '*.java' -or -name '*.jade' -or -name '*.scss' -or -name '*.xml'`
-```
+- `vim 'find ...'` - open multiple files 
 
 ## Argument list
 - `:args **` - open all files in cwd recursively (including directory files)
