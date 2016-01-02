@@ -2,6 +2,8 @@
 - http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 - https://github.com/vim/vim
 - http://stackoverflow.com/questions/1919028/how-to-show-vertical-line-to-wrap-the-line-in-vim
+- https://github.com/tpope/vim-unimpaired
+- https://github.com/ggreer/the_silver_searcher
 
 # Motion
 
@@ -56,9 +58,24 @@
 - `/pattern/e` - search-offset - position the cursor at the end of the match
 - `/\%d65`, `/\%x41`, `/\%u2013`, `/\%d8211` - Searching for chars by their code value.
 - `/the\C`, `/the\c` - force pattern case-(in)sensitivity
-- `:grep`
-- `:vimgrep`
-- `:lgrep`
+
+## windows
+- `CTRL-W` - switch between windows
+
+## vim grepping
+- `:grep` - populates quickfix list
+- `:vimgrep` - populates quickfix list
+- `:lgrep` - populates location list
+- `:lvimgrep` - populates location list
+
+## quickfix list
+- `:copen` - open quickfix list
+- `:cn` - go to next location in the list
+- `:cp` - go to previous location in the list
+- `:cclose` - close the quickfix window
+- `CTRL-W K` - move quickfix window to the top
+
+## location list
 
 ## Regex
 - `\<` - beginning of word
@@ -118,6 +135,9 @@ Bookmark: quickref, usr_06.txt, reference_toc
 
 - `iskeyword` - defines what a word is
 
+- `!rm %` - remove current file from disk
+- `bd` - remove current buffer from memory
+
 ## Text editing
 - http://vim.wikia.com/wiki/Switching_case_of_characters
 - `gg=G` - reformat/reindent text
@@ -147,9 +167,8 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 ## Buffers
 - `:ls` or `:ls!` - list in memory buffers (`:buffers`)
 - `:f` - see info about current buffer
-- `:bd` - delete buffer from memory (`:bdel`, `:bwipe`)
 - `:b2` - swith to second buffer (also `:bu` or `:buf` or `:buffer`)
-- `:b MyCl` - switch to `MyClass` file (any part of file name can match with stronger preference for the matches from the beginning). <kbd>Tab</kbd> can be used to autocomplete and to cycle thru matching names. Use <kbd>Ctrl</kbd> + <kbd>D</kbd> to list all matching names at once.
+- `:b MyCl` - switch to `MyClass` file (any part of file name can match with stronger preference for the matches from the beginning). Tab can be used to autocomplete and to cycle thru matching names. Use Ctrl+D to list all matching names at once.
 - `:e path/to/file` - create a buffer with associated file path (if file exists then read from it)
 - `:e` - reload the current file if it was changed on disk
 - `:q` - quit vim
