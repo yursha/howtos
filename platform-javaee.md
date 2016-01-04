@@ -60,6 +60,8 @@ Can be used as a universal JMX client.
 - http://visualvm.java.net/docindex.html
 - http://cs.smith.edu/dftwiki/index.php/Tutorial:_Profiling_Java_Programs
 
+- `jstack`
+
 # Java Mission Control
 
 - http://jmeter.apache.org/
