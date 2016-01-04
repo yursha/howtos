@@ -111,4 +111,4 @@ Sudo can also be used to run commands as other users; additionally, sudo logs al
 - `pacman -S <package>` - install/upgrades package and its deps
 - `pacman -Sy` - download fresh remote packages list
 - `pacman -Sc` - clean the db cache
-- `pacman -Rs --no-save` - remove package and all its deps and config files
+- `pacman -Rs --nosave` - remove package and all its deps and config files
