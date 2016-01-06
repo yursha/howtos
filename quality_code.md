@@ -1,5 +1,9 @@
 - http://semver.org/
 
+# Think about data in your program
+If data needs to be always in the final executable that its a global constant and should be defined as such.
+This about data life cycle (singleton, prototype, session, request)
+
 # Don't use class inheritance
 - You don't know in what class the method might have been implemented (overriden) without traversing up the entire inheritance chain.
 - You can't treat all subclasses as having even behavior based on their common superclass behavior which might have been substantially overriden in some of the subclasses.
