@@ -1,4 +1,5 @@
 - Bookmark: https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
+- how git fast-merge works? looks like it ovewrites a file
 - `git clone git://git.kernel.org/pub/scm/git/git.git`
 - http://git-htmldocs.googlecode.com/git/user-manual.html
 - https://github.com/Homebrew/homebrew/blob/master/Library/Formula/git.rb

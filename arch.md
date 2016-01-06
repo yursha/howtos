@@ -33,5 +33,3 @@ An interrupt vector table (IVT), is a data structure that associates a list of i
 - https://en.wikipedia.org/wiki/End_of_interrupt
 - https://en.wikipedia.org/wiki/Interrupt_vector_table
 - https://en.wikipedia.org/wiki/Interrupt_descriptor_table
-
-
