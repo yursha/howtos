@@ -1,5 +1,5 @@
-- Bookmark: https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
-- how git fast-merge works? looks like it ovewrites a file
+- Bookmark: 4.4. https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
+- Bookmark: 7.8. Advanced Merging
 - `git clone git://git.kernel.org/pub/scm/git/git.git`
 - http://git-htmldocs.googlecode.com/git/user-manual.html
 - https://github.com/Homebrew/homebrew/blob/master/Library/Formula/git.rb
@@ -19,8 +19,10 @@
 - `gitglossary`
 - `git-help`
 
-#
-`git clone`, `git branch`
+# Bookmark
+- `man git-clone`
+- `man git-branch`
+- `man git-merge` : Bookmark: options `--no-commit`
 
 # Compare the fetched commits with local branch
 - `git log master..origin/master --format="%Cred%><(12)%ar %Cblue%h%Creset %s" --color`
@@ -200,12 +202,41 @@ http://stackoverflow.com/questions/7744049/git-how-to-rebase-to-a-specific-commi
 If you run `git difftool` instead of `git diff`, you can view any of these diffs in software like `emerge`, `vimdiff` and many more. Run `git difftool --tool-help` to see what is available on your system.
 - http://stackoverflow.com/questions/822811/showing-which-files-have-changed-between-two-revisions
 
-- `git merge bob/master`
 
 - `git show v2.5:Makefile` - time machine for a file.
 
-# Art of conflict resolution
-During the merge there should be no changes in the working tree as its and index are used for merge procedure.
+# Art of merging and conflict resolution
+## Refs
+- Bookmark: https://en.wikipedia.org/wiki/Merge_(version_control)#Fuzzy_patch_application
+
+## Tips
+- Merge long lived branches often.
+- Always have working tree and index in a clean state before merging.
+- `git merge --no-commit <commit>; git diff --staged` - inspect what merge will introduce.
+
+## Merge algorithms
+- three-way merge
+- recursive three-way merge
+- fuzzy patch application
+- weave merge
+- patch commutation
+
+## Merge tools
+- `diff3`
+
+## Theory
+With git, every merge is a conflict, which leaves you with an index that contains three versions of each file, the versions from each branch and the base. On this index, various resolvers are run, which can decide for each individual file how to resolve the matter.
+
+The first stage is a trivial resolver, which takes care of things like unchanged files, cases where one branch has modified a file while the other didn't, or where both branches contain the same new version of the file.
+
+Afterwards, it's plugins that look at the remaining cases. There is a plugin that handles text files by identifying individual changes (like diff) in one branch and trying to apply those to the other branch, falling back on placing conflict markers if that doesn't work. You can easily hook in your own merge tool at this point, for example, you could write a tool that knows how to merge XML files without violating well-formedness, or that gives a graphical user interface that allows interactive editing and a side-by-side view (for example, kdiff3 does that).
+
+So the presentation of conflicts is really a matter of the plugin used; the default plugin for text files will use the same style as CVS did, because people and tools are used to it, and the conflict markers are a known syntax error in almost any programming language.
+
+`merge-file` is the last-resort merge driver for text files. You can specify that a different merge driver should be used instead.
+
+## Commands
+- `git merge bob/master`
 - `git diff` will show the conflicts when merge failed.
 - `git commit -a` will commit a merge once all conflicts are resolved.
 

@@ -1,5 +1,7 @@
 - http://docs.oracle.com/javase/8/docs/
 - http://www.oracle.com/technetwork/java/javase/tech/index.html
+- https://google.github.io/styleguide/javaguide.html
+- https://github.com/google/google-java-format
 
 # Concepts
 - The JavaBeans model

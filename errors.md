@@ -14,10 +14,14 @@
 - isolate (divide and conquer)
 
 ## Java
+- Effective Java Exceptions by Barry Ruzek 01/10/2007 http://www.oracle.com/technetwork/articles/entarch/effective-exceptions-092345.html
+- Best Practice Exception Handling in Java https://code.google.com/p/solidbase/wiki/ExceptionHandlingGuideline
 - https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
 - All loggers should be declared `private static final`
 - http://logback.qos.ch/
 - http://www.slf4j.org/
+
+Logical exceptions must be checked and handled. Software or execution environment faults must not.
 
 ### Log4j2
 - How to configure log4j2 differently in development and production?
