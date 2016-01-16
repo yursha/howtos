@@ -1,9 +1,13 @@
 - http://learnvimscriptthehardway.stevelosh.com/
 - http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 - https://github.com/vim/vim
-- http://stackoverflow.com/questions/1919028/how-to-show-vertical-line-to-wrap-the-line-in-vim
 - https://github.com/tpope/vim-unimpaired
 - https://github.com/ggreer/the_silver_searcher
+- http://stackoverflow.com/questions/8291060/how-to-format-a-java-file-in-vim-like-eclipse
+- http://stackoverflow.com/questions/1919028/how-to-show-vertical-line-to-wrap-the-line-in-vim
+- http://stackoverflow.com/questions/82726/convert-dos-line-endings-to-linux-line-endings-in-vim
+- https://github.com/mhinz/vim-galore
+- http://vim.wikia.com/wiki/Converting_variables_to_or_from_camel_case
 
 # Motion
 

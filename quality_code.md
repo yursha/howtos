@@ -1,4 +1,5 @@
 - http://semver.org/
+- https://github.com/braydie/HowToBeAProgrammer
 
 # Think about data in your program
 If data needs to be always in the final executable that its a global constant and should be defined as such.

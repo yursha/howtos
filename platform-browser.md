@@ -1,3 +1,6 @@
+# Find out about the technology usage
+- https://trends.builtwith.com/javascript/jQuery
+
 # Tools
 - www.netsurf-browser.org
 

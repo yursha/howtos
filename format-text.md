@@ -9,21 +9,6 @@ Data Formats (structured/unstructured)
 
 Character comparisons - case sensitivity.
 
-# Regular Expressions
-- literals
-- capturing parentheses (backreferences)
-- quantifiers (greedy / non-greedy)
-- character classes (inclusive / exclusive)
-- anchors
-- lookahead directives
-- alternations
-
-## implementations
-- `java.util.regex`
-
-## Examples
-- `/^\-?\d+$/` - integer
-
 # Structured Serialized Text Formats (Tree | Table)
 - **Parser** - parses structured text into tokens and creates an in-memory representation. Only *well-formed* text is parseable. Includes **lexer**.
   + bidirectional vs unidirectional
@@ -93,6 +78,7 @@ DOM is an in-memory tree representation of a document (XML, HTML) or data (XML).
 
 # JSON (Tree)
 - http://jsonlint.com
+- Format json command-line `python -m json.tool temp.json`
 
 ## Big JSON files
 - https://github.com/zeMirco/sf-city-lots-json

@@ -1,6 +1,7 @@
 - http://www.gnu.org/software/bash/manual/bash.html
 - Advanced Bash Scripting Guide (Linux Documentation Project) tdlp.org/LDP/abs/html/
 - www.gnu.org/software/parallel
+- https://github.com/jlevy/the-art-of-command-line
 - Bookmark: #3.8_Shell_Scripts
 
 Shell is a parent process for all child processes launched from it. The exit status of a child process is provided by the POSIX 1003.1 `waitpid` function, or `128+n` if the child process was terminated by signal `n`.

@@ -20,10 +20,10 @@ System.out.println("Used memory is megabytes: " + memory / 1024 / 1024);
 
 #### Measure time
 ```java
-long startTime = System.currentTimeMillis();
+long startTime = System.nanoTime();
 long total = 0;
 // lengthy operation
-long stopTime = System.currentTimeMillis();
+long stopTime = System.nanoTime();
 long elapsedTime = stopTime - startTime;
 System.out.println(elapsedTime);
 ```

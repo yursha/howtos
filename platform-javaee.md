@@ -61,6 +61,11 @@ Can be used as a universal JMX client.
 - http://visualvm.java.net/
 - http://visualvm.java.net/docindex.html
 - http://cs.smith.edu/dftwiki/index.php/Tutorial:_Profiling_Java_Programs
+- https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/profiler.html
+- http://blog.rejeev.com/2009/04/analyzing-memory-leak-in-java.html
+- http://stackoverflow.com/questions/12017529/how-to-view-memory-allocation-stacktrace-in-java-visualvm
+- http://stackoverflow.com/questions/21043681/how-to-determine-where-an-object-was-instantiated-in-visualvm-heap-dump
+- http://stackoverflow.com/questions/9154785/how-to-find-memory-leaks-using-visualvm
 
 - `jstack`
 
@@ -71,4 +76,8 @@ Can be used as a universal JMX client.
 - http://grinder.sourceforge.net/
 
 # `jcmd`
+
+# Java Language
+## Generics
+- http://www.angelikalanger.com/GenericsFAQ/JavaGenericsFAQ.html
 

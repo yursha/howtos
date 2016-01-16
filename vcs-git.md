@@ -1,5 +1,4 @@
 - Bookmark: 4.4. https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
-- Bookmark: 7.8. Advanced Merging
 - `git clone git://git.kernel.org/pub/scm/git/git.git`
 - http://git-htmldocs.googlecode.com/git/user-manual.html
 - https://github.com/Homebrew/homebrew/blob/master/Library/Formula/git.rb
@@ -9,6 +8,11 @@
 - https://www.atlassian.com/git/tutorials/
 - https://github.com/git/git
 - http://stackoverflow.com/questions/7321360/is-the-git-storage-model-wasteful
+- http://stackoverflow.com/questions/338436/is-there-a-quick-git-command-to-see-an-old-version-of-a-file
+- http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge
+- http://stackoverflow.com/questions/5817579/how-can-i-preview-a-merge-in-git
+- https://www.atlassian.com/git/tutorials/comparing-workflows
+- http://nvie.com/posts/a-successful-git-branching-model/
 - `man git`
 - `gitcli`
 - `gitworkflows`
@@ -208,6 +212,11 @@ If you run `git difftool` instead of `git diff`, you can view any of these diffs
 # Art of merging and conflict resolution
 ## Refs
 - Bookmark: https://en.wikipedia.org/wiki/Merge_(version_control)#Fuzzy_patch_application
+- Bookmark: https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging # Ignoring whitespace
+- http://stackoverflow.com/questions/572237/whats-the-best-three-way-merge-tool
+- http://stackoverflow.com/questions/366860/when-would-you-use-the-different-git-merge-strategies
+- http://stackoverflow.com/questions/17656448/how-does-git-decide-on-conflicts
+- http://stackoverflow.com/questions/4920885/what-constitutes-a-merge-conflict-in-git
 
 ## Tips
 - Merge long lived branches often.
