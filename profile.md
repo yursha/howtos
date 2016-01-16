@@ -36,3 +36,6 @@ System.out.println(elapsedTime);
 - http://stackoverflow.com/questions/1777556/alternatives-to-gprof/1779343#1779343
 - http://stackoverflow.com/questions/6846049/profiling-a-running-java-application-in-command-line
 - http://stackoverflow.com/questions/7467245/cpu-execution-time-in-java
+
+# Techniques
+- random-pause technique

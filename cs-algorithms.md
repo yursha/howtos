@@ -5,7 +5,6 @@
 - resizing array
 - linked list
 - binary heap (priority queue)
-- hash table
 - graph
   + directed / not
   + acyclic / not
@@ -46,3 +45,7 @@ Most of the node selection schemes deal with the following **concepts**:
 - Newton's method
 
 # Fibonacci sequence
+
+# Hash Table
+- linear probing
+- buckets
