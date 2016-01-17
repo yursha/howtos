@@ -51,3 +51,13 @@ Collect 10 or 20 stack samples with jstack. Then if Foo is a method:
 - Its overall time usage is the fraction of samples containing it.
 - Its CPU usage is the fraction of those samples that don't terminate in I/O or a system call.
 - Its "self time" is the fraction of samples in which it itself is the terminus.
+
+# HPROF
+- https://docs.oracle.com/javase/8/docs/technotes/samples/hprof.html
+- https://java.net/projects/hat/ - Web Heap Analysis Tool.
+- `java -agentlib:hprof=help` - get help about possible usages of HPROF
+- `java -agentlib:hprof=heap=dump,file=myprogram.hprof` - generate heap dump
+- `java -agentlib:hprof=heap=sites,file=myprogram.hprof` - get heap usage info based on the allocation sites
+- `java -agentlib:hprof=cpu=samples,interval=20,depth=3,file=myprogram.hprof` - sample CPU thread stack traces every 20 ms with a stack depth of 3
+- `java -agentlib:hprof=cpu=samples,thread=y,monitor=y` - show thread and monitor information
+- `java -agentlib:hprof=cpu=times,thread=y,monitor=y,lineno=y` - use BCI to trace each method call and measure exact time.
