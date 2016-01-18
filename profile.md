@@ -1,4 +1,5 @@
 - http://stackoverflow.com/questions/22250303/java-application-profiling
+- valgrind.org
 
 # Measurements
 - (high/low) memory usage
@@ -18,16 +19,6 @@ long memory = runtime.totalMemory() - runtime.freeMemory();
 System.out.println("Used memory is megabytes: " + memory / 1024 / 1024);
 ```
 
-#### Measure time
-```java
-long startTime = System.nanoTime();
-long total = 0;
-// lengthy operation
-long stopTime = System.nanoTime();
-long elapsedTime = stopTime - startTime;
-System.out.println(elapsedTime);
-```
-
 #### Measure db/fs/network accesses
 
 #### Measure power consumption
@@ -37,5 +28,13 @@ System.out.println(elapsedTime);
 - http://stackoverflow.com/questions/6846049/profiling-a-running-java-application-in-command-line
 - http://stackoverflow.com/questions/7467245/cpu-execution-time-in-java
 
-# Techniques
-- random-pause technique
+# Random-Pause Technique
+- Take 10-20 execution stack snapshots
+- Function overall time usage is the fraction of samples containing it.
+- Function CPU usage is the fraction of those samples that don't terminate in I/O or a system call.
+- Function "self time" is the fraction of samples in which it itself is the terminus.
+
+# Measure elapsed time
+- get current timestamp
+- do some computation
+- get current timestamp and compare
