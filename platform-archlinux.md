@@ -112,3 +112,8 @@ Sudo can also be used to run commands as other users; additionally, sudo logs al
 - `pacman -Sy` - download fresh remote packages list
 - `pacman -Sc` - clean the db cache
 - `pacman -Rs --nosave` - remove package and all its deps and config files
+
+# Time & Date
+- archlinux wiki: systemd-timesyncd
+- `timedatectl status`
+- `timedatectl set-ntp true`
