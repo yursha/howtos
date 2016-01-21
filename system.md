@@ -1,4 +1,0 @@
-- linking
-- compiling
-- dynamic loading
-- share library

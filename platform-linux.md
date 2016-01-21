@@ -1,6 +1,13 @@
 - https://www.kernel.org/
 - https://lkml.org/
 
+Parameters can be passed to the kernel:
+- at compile-time
+- at start time via boot loader
+- at runtime via `/proc` and `/sys`
+
+- `cat /proc/cmdline` - print to STDOUT parameters the kernel was booted up with.
+
 # Packages
 
 ## util-linux
@@ -19,8 +26,16 @@ Command line and full screen utilities for browsing procfs, a "pseudo" file syst
 
 - `free`
 
+## kmod
+- `lsmod`
+- `modprobe`
+- `modprobe -r` - unload kernel module
 
 # Power
+- https://www.kernel.org/doc/Documentation/power/interface.txt
+
+`/sys/power/image_size` controls the size of the image created by the suspend-to-disk mechanism. It can be written a string representing a non-negative integer that will be used as an upper limit of the image size, in bytes. The suspend-to-disk mechanism will do its best to ensure the image size will not exceed that number. However, if this turns out to be impossible, it will try to suspend anyway using the smallest image possible. In particular, if "0" is written to this file, the suspend image will be as small as possible. Reading from this file will display the current image size limit, which is set to 2/5 of available RAM by default.
+
 ## pm-utils
 - `pm-utils` - http://pm-utils.freedesktop.org/wiki/
 - `pm-utils` - Utilities and scripts for suspend and hibernate power management
@@ -73,6 +88,7 @@ exit
 ```
 
 # BIOS
+- https://en.wikipedia.org/wiki/BIOS
 - `lrmi` - Linux Real Mode Interface - http://sourceforge.net/projects/lrmi/ - library for calling real mode BIOS routines under Linux.
 - `vbetool` - http://manpages.ubuntu.com/manpages/hardy/man1/vbetool.1.html - runs real-mode video BIOS code to alter hardware state. Uses `lrmi` in order to run code from the video BIOS. Currently, it is able to alter DPMS states, save/restore video card state and attempt to initialize the video card from scratch. 
 - Display Power Management Signaling (DPMS) 
@@ -90,6 +106,9 @@ Standard interface that can be used by software to access compliant video boards
 ## BIOS Interrupt Call
 - https://en.wikipedia.org/wiki/INT_10H
 - https://en.wikipedia.org/wiki/BIOS_interrupt_call
+
+# UEFI
+- https://wiki.archlinux.org/index.php/Unified_Extensible_Firmware_Interface
 
 # CPU
 ## Interrupts
@@ -126,3 +145,12 @@ There is no performance advantage to either a contiguous swap file or a partitio
 
 - https://wiki.archlinux.org/index.php/swap
 - http://www.linux.com/news/software/applications/8208-all-about-linux-swap-space
+
+
+# Boot Loaders
+- https://wiki.archlinux.org/index.php/Syslinux
+- https://wiki.archlinux.org/index.php/Systemd-boot
+- https://wiki.archlinux.org/index.php/GRUB
+- https://wiki.archlinux.org/index.php/GRUB_Legacy
+- https://wiki.archlinux.org/index.php/LILO
+- https://wiki.archlinux.org/index.php/REFInd

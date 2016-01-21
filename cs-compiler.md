@@ -3,6 +3,11 @@
 - gcc
 - Microsoft Visual C++
 
+- linking
+- compiling
+- dynamic loading
+- share library
+
 # Compiler optimizations
 
 # Compiler phases
