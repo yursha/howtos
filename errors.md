@@ -1,5 +1,5 @@
 # Art of logging
-- **Escape variable non numeric data with single quotes** so that variables containing spaces can be easily distinguishable from the (static) rest of the message.
+- **Wrap interpolated textual values into single quotes**.
 - **Respect log levels** sot that you can easily adjust log verbosity in development and production environments and grep out only important messages easily.
 - Log files are **append-only**. Be sure to log only what is really helpful during debugging as log files can grow and take a lot of disk space. There should be an **archiving policy** for log files. In production environment its  helpful to print 'INFO', 'WARN' and 'ERROR' level messages only to save **disk space**. Their should be a separate **build profile** for development and production environments.
 
@@ -39,3 +39,8 @@ Logical exceptions must be checked and handled. Software or execution environmen
 - Mocks
 - Test Harnesses
 
+# Art of writing unit tests
+- Db is not an external interface and db logic should be tested just as regular application logic.
+- Don't unit tests simple data structures
+- Don't unit test external libraries and their interfaces
+- Unit test program functional logic
