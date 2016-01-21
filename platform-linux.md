@@ -21,8 +21,13 @@ Command line and full screen utilities for browsing procfs, a "pseudo" file syst
 
 
 # Power
+## pm-utils
+- `pm-utils` - http://pm-utils.freedesktop.org/wiki/
+- `pm-utils` - Utilities and scripts for suspend and hibernate power management
 - `/sys/power` directory - https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-power
+- `s2disk`
 
+## misc
 - How `/dev/zero` and `/dev/null` work?
 - http://www.tldp.org/LDP/khg/HyperNews/get/khg.html
 
