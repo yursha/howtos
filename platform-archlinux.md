@@ -44,8 +44,7 @@ Section "InputClass"
 EndSection
 ```
 
-## Chromium
-- `startx -- -dpi 220` - use HiDPI setting when launching X
+- `startx -- -dpi 220` - i3, chromium
 - then launch firefox in the same display `firefox --display :0` - optional nit
 
 ## Firefox

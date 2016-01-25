@@ -154,3 +154,10 @@ There is no performance advantage to either a contiguous swap file or a partitio
 - https://wiki.archlinux.org/index.php/GRUB_Legacy
 - https://wiki.archlinux.org/index.php/LILO
 - https://wiki.archlinux.org/index.php/REFInd
+
+# `/proc` file system
+- `/proc/asound/modules` - installed sound modules
+
+
+# Sound
+- S/PDIF (Sony/Philiphs Digital Interface Format)

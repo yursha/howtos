@@ -10,6 +10,8 @@
 
 # Compiler optimizations
 
+- tail call optimization
+
 # Compiler phases
 - preprocessor
 - compiler
