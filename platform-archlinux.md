@@ -4,7 +4,11 @@
 - cannot recover from suspend state? (at list dies when you close lid)
 - how to copy text from X server to Linux VT?
 - keys to control display brightness don't work in X not in Linux Vt
-- sound subsystem is not tested
+- sound subsystem doesn't work
+- camera doesn't work
+
+# Refs
+- https://wiki.archlinux.org/index.php/MacBook
 
 ## Display & Graphics
 - Modify your `~/.xinitrc` file
