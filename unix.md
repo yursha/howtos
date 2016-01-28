@@ -17,6 +17,5 @@ System calls errno explanations
 - `env`
 - `rsync`
 - `mailx`
-- `ssh`
-- `scp`
-- `ssh-keygen`
+- `screen` - https://en.wikipedia.org/wiki/GNU_Screen
+

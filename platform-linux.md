@@ -19,6 +19,7 @@ Parameters can be passed to the kernel:
 - `mkswap /dev/sda2`
 - `swapon`, `swapoff`
 - `fstrim`
+- `dmesg` - prints or controls the kernel ring buffer
 
 ## procps-ng
 - https://gitlab.com/procps-ng/procps
@@ -27,6 +28,13 @@ Command line and full screen utilities for browsing procfs, a "pseudo" file syst
 - `free`
 
 ## kmod
+Linux kernel is modular, meaning many of the drivers for hardware reside on disk and are available as modules. At boot `udev` takes an inventory of your hardware and loads appropriate modules (drivers) for your corresponding hardware.
+
+Some wireless chipsets also require firmware, in addition to a driver. Many firmware images are provided by the 'linux-firmware' package.
+
+- Archlinux wiki - kernel modules
+- Archlinux wiki - `udev`
+
 - `lsmod`
 - `modprobe`
 - `modprobe -r` - unload kernel module
@@ -66,8 +74,16 @@ Command line and full screen utilities for browsing procfs, a "pseudo" file syst
 - https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git/
 
 ## PCI
-- `lspci | grep VGA` - find out graphics chip. Intel chips only need `xf86-video-intel` archlinux package.
+- `/usr/include/linux/pci.h`
+
+### `pciutils` - mj.ucw.cz/sw/pciutils
 - `lspci` - list all PCI hardware
+- `lspci -k` - list all PCI hardware with kernel modules handling them.
+- `lspci | grep VGA` - find out graphics chip. Intel chips only need `xf86-video-intel` archlinux package.
+
+## USB
+### `usbutils` - linux-usb.sourceforge.net
+- `lsusb`
 
 ## ACPI
 - https://www.kernel.org/doc/Documentation/power/states.txt
@@ -173,3 +189,30 @@ There is no performance advantage to either a contiguous swap file or a partitio
 ## ALSA
 - https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture
 - https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture/Troubleshooting
+
+# User Management
+- `sudo` - substitute user do (alternative to `su`). Allows a system administrator to delegate authority to certain users (or groups of users) to run some (or all) commands as root or another user while providing an audit trail of the commands and their arguments. 
+ 
+Sudo is an alternative to su for running commands as root. Unlike su, which launches a root shell that allows all further commands root access, sudo instead grants temporary privilege escalation to a single command. By enabling root privileges only when needed, sudo usage reduces the likelihood that a typo or a bug in an invoked command will ruin the system.
+
+Sudo can also be used to run commands as other users; additionally, sudo logs all commands and failed access attempts for security auditing. 
+
+- `su`
+- `useradd`
+- https://www.sudo.ws/sudo/
+- https://wiki.archlinux.org/index.php/Su
+- https://wiki.archlinux.org/index.php/Sudo
+
+
+## Switch between different terminals
+- `CTRL+ALT+FN+F1`, `CTRL+ALT+FN+F2` etc.
+
+## Terminal fonts
+- `setfont ter-v32n` - set a bigger terminal font on a HiDPI device (add to `~/.bash_profile`)
+- `pacman -S terminus-font` - install set of bigger fonts for Linux virtual terminals
+- `setfont sun12x22`  - the biggest console font in pre-installed fonts
+
+## Terminal colors
+- http://rampex.ihep.su/Linux/linux_howto/html/tutorials/mini/Colour-ls-6.html
+- `setterm -foreground white -background blue -store`
+
