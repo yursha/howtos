@@ -1,3 +1,5 @@
+# Specifications
+
 - https://tools.ietf.org/html/rfc7230 - Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing
 - https://tools.ietf.org/html/rfc7231 - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content
 - https://tools.ietf.org/html/rfc7231#section-6 - Response Status Codes
@@ -5,6 +7,7 @@
 - https://tools.ietf.org/html/rfc7233 - Hypertext Transfer Protocol (HTTP/1.1): Range Requests
 - https://tools.ietf.org/html/rfc7234 - Hypertext Transfer Protocol (HTTP/1.1): Caching
 - https://tools.ietf.org/html/rfc7235 - Hypertext Transfer Protocol (HTTP/1.1): Authentication
+- rfc6265 - HTTP State Management Mechanism
 
 # Servers
 
