@@ -1,5 +1,6 @@
 - https://www.kernel.org/
 - https://lkml.org/
+- https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/index.html
 
 Parameters can be passed to the kernel:
 - at compile-time
@@ -20,6 +21,7 @@ Parameters can be passed to the kernel:
 - `swapon`, `swapoff`
 - `fstrim`
 - `dmesg` - prints or controls the kernel ring buffer
+- `cal` - calendar
 
 ## procps-ng
 - https://gitlab.com/procps-ng/procps
@@ -215,4 +217,3 @@ Sudo can also be used to run commands as other users; additionally, sudo logs al
 ## Terminal colors
 - http://rampex.ihep.su/Linux/linux_howto/html/tutorials/mini/Colour-ls-6.html
 - `setterm -foreground white -background blue -store`
-

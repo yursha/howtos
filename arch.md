@@ -1,3 +1,6 @@
+# Refs
+- http://teaching.idallen.com/dat2343/10f/notes/
+
 # MIPS
 - spim - MIPS simulator
 
@@ -34,3 +37,8 @@ An interrupt vector table (IVT), is a data structure that associates a list of i
 - https://en.wikipedia.org/wiki/End_of_interrupt
 - https://en.wikipedia.org/wiki/Interrupt_vector_table
 - https://en.wikipedia.org/wiki/Interrupt_descriptor_table
+
+# Flags
+- https://en.wikipedia.org/wiki/Status_register
+- https://en.wikipedia.org/wiki/Carry_flag
+- https://en.wikipedia.org/wiki/Overflow_flag

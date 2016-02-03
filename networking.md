@@ -1,7 +1,7 @@
+- Archlinux wiki : Network configuration
+- https://en.wikipedia.org/wiki/Keepalive
 - tcp
-- http
 - udp
-- ssl
 
 - `sftp` archlinux package and tool for FTP over SSH
 - `rdesktop` - archlinux package and tool for RDP
@@ -34,12 +34,14 @@
 ## `iw`
 - http://wireless.kernel.org/en/users/Documentation/iw
 
+# WPA2
 ## `wpa-supplicant`
 - http://hostap.epitest.fi/wpa_supplicant
 
-# WPA2
+# VPN
+- `vpnc`
+- https://www.unix-ag.uni-kl.de/~massar/vpnc
 
 # Refs
-- Archlinux wiki : Network configuration
 
 

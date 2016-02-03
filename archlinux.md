@@ -36,3 +36,15 @@
 - archlinux wiki: systemd-timesyncd
 - `timedatectl status`
 - `timedatectl set-ntp true`
+
+# Wiki:
+- swap,
+- https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate
+- https://wiki.archlinux.org/index.php/Kernel_parameters
+- https://en.wikipedia.org/wiki/Sysctl
+- archlinux wiki sysctl
+- https://en.wikipedia.org/wiki/Procfs
+- https://wiki.archlinux.org/index.php/Kernels
+- https://wiki.archlinux.org/index.php/Power_management
+- https://wiki.archlinux.org/index.php/Uswsusp
+- http://pm-utils.freedesktop.org/wiki/

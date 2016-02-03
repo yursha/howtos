@@ -92,6 +92,7 @@ DOM is an in-memory tree representation of a document (XML, HTML) or data (XML).
 - https://github.com/FasterXML/jackson
 - https://github.com/FasterXML/jackson-databind
 - http://wiki.fasterxml.com/JacksonFAQDateHandling
+- http://www.javadoc.io/doc/com.fasterxml.jackson.core/jackson-databind
 
 ### GSON
 - https://github.com/google/gson

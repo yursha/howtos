@@ -27,6 +27,7 @@
 - `mvn help:effective-pom`
 
 ## analysis of deps
+- https://maven.apache.org/plugins/maven-dependency-plugin/analyze-mojo.html
 - `mvn dependency:tree` - print a dependency tree
 - `mvn dependency:sources` - download all dependency sources
 - `mvn dependency:analyze` - get some hints on undeclared and unused dependencies
@@ -35,4 +36,7 @@
 
 ## code style
 - maven-checkstyle-plugin
+
+## artifacts
+- https://maven.apache.org/components/plugins/maven-shade-plugin/
 

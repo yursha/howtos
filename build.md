@@ -10,3 +10,6 @@ Dependencies graph between the targets define the build order (topological sort 
 To decrease build time there are rules for regeneration in response to change.
 
 - http://semver.org/
+
+# Build Tools
+- https://ninja-build.org/

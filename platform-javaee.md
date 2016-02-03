@@ -3,6 +3,11 @@
 - https://google.github.io/styleguide/javaguide.html
 - https://github.com/google/google-java-format
 - http://stackoverflow.com/questions/924208/how-to-convert-nanoseconds-to-seconds-using-the-timeunit-enum
+- http://www.javadoc.io/
+- https://blogs.oracle.com/java-platform-group/entry/java_8_s_new_type
+- http://www.infoq.com/articles/Java9-New-HTTP-2-and-REPL
+- http://blog.takipi.com/java-9-the-ultimate-feature-list/
+- http://openjdk.java.net/jeps/244
 
 The JVM uses internally escape analysis to check if an object is used only with a thread or method. If the JVM identify this it may decide to create the object on the stack, increasing performance of the Java program.
 

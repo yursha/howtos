@@ -42,3 +42,6 @@ List "application resources". For example, "appres XTerm" will list the xterm re
 ## xlsclients
 - `xlsclients -display :0` - list X clients on display :0
 
+# Desktop Managers
+- i3 - http://i3wm.org/docs/userguide.html
+

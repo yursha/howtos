@@ -1,4 +1,4 @@
-- Solve one problem and solve it well.
+- POSIX.1-2008 Edition 2013 - http://pubs.opengroup.org/onlinepubs/9699919799/
 
 - https://github.com/NARKOZ/hacker-scripts
 - http://pubs.opengroup.org/onlinepubs/9699919799/
@@ -18,4 +18,13 @@ System calls errno explanations
 - `rsync`
 - `mailx`
 - `screen` - https://en.wikipedia.org/wiki/GNU_Screen
+- `file`
+- `tee`
 
+```
+> sed -i 's/import com\.opencsv\.CSVReader;/import com.opencsv.CSVReader;\r\nimport com.opencsv.CSVParser;/g' src/main/java/com/apixio/loader/customer/mapping/archive/HPCNVDemographics.java
+
+> grep -rl 'CSVParser\.DEFAULT_QUOTE_CHARACTER' --exclude CodingSystems.java --exclude CodingTranslation.java --exclude HPCNVDemographics.java --exclude UAMClaims.java --exclude HealthNet001.java | xargs gsed -i 's/import com\.opencsv\.CSVReader;/import com.opencsv.CSVReader;\r\nimport com.opencsv.CSVParser;/g'
+
+> grep -rl 'CSVReader.DEFAULT_SEPARATOR' src | xargs gsed -i 's/CSVReader\.DEFAULT_SEPARATOR/CSVParser.DEFAULT_SEPARATOR/g'
+```

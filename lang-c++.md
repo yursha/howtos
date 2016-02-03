@@ -1,1 +1,3 @@
 - http://www.open-std.org/jtc1/sc22/wg21/
+- https://en.wikipedia.org/wiki/C++11
+- https://gcc.gnu.org/onlinedocs/libstdc++/manual/

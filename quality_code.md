@@ -1,19 +1,28 @@
 - http://semver.org/
 - https://github.com/braydie/HowToBeAProgrammer
 
-# Think about data in your program
-If data needs to be always in the final executable that its a global constant and should be defined as such.
-This about data life cycle (singleton, prototype, session, request)
-
-# Don't use class inheritance
-- You don't know in what class the method might have been implemented (overriden) without traversing up the entire inheritance chain.
-- You can't treat all subclasses as having even behavior based on their common superclass behavior which might have been substantially overriden in some of the subclasses.
-- You can't read a parent source module and clearly rely on described behaviour because some parent methods might have been overriden in the child (so you need to go back and force while reading the source module).
+# In OOP always try to call the object in a lower layer.
+OOP can become a mess when multiple objects call each other leading to an untraceable execution.
+In order to avoid redundant nodes in a call chain an object should always try to call another object in a lower layer, rarely in the same layer and never in a higher layer. Thus tiered architecture brings structure (responsibility hierarchy) to otherwise messy OOP.
 
 # API separation
 Client programmers should clearly understand what API is published and what is not. In java it can be achieved with releasing separat jars (`mylib-api.jar` and `mylib-core.jar`).Standard java access modifiers fail to enforce it to a full extent.
 
+# Solve one problem and solve it well.
+
+# Solve current problem. Don't try to solve future problems.
+
+# Think about data in your program
+- constant vs variable (immutable vs mutable)
+- predefined vs uninitialized
+- shared vs local
+- singleton vs prototype vs session vs request... lifecycle
 - avoid literal unnamed constants (https://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constants)
+
+# Don't use class inheritance
+- You don't know in what class the method might have been implemented (overriden) without traversing up the entire inheritance chain.
+- You can't treat all subclasses as having consistent behavior based on their common superclass behavior which might have been substantially overriden in some of the subclasses.
+- You can't read a parent source module and clearly rely on described behaviour because some parent methods might have been overriden in the child (so you need to go back and force while reading the source module).
 
 # Static code analysis
 
@@ -21,14 +30,6 @@ Client programmers should clearly understand what API is published and what is n
 - automatic source code formatting (idea)
 
 - make `TODO` comments and then `grep -r TODO <project-folder>`
-
-```
-> gsed -i 's/import com\.opencsv\.CSVReader;/import com.opencsv.CSVReader;\r\nimport com.opencsv.CSVParser;/g' src/main/java/com/apixio/loader/customer/mapping/archive/HPCNVDemographics.java
-
-> ggrep -rl 'CSVParser\.DEFAULT_QUOTE_CHARACTER' --exclude CodingSystems.java --exclude CodingTranslation.java --exclude HPCNVDemographics.java --exclude UAMClaims.java --exclude HealthNet001.java | xargs gsed -i 's/import com\.opencsv\.CSVReader;/import com.opencsv.CSVReader;\r\nimport com.opencsv.CSVParser;/g'
-
-> ggrep -rl 'CSVReader.DEFAULT_SEPARATOR' src | xargs gsed -i 's/CSVReader\.DEFAULT_SEPARATOR/CSVParser.DEFAULT_SEPARATOR/g'
-```
 
 - `// WARNING: sdfjsljfldsjflds`
 - `// BOGUS: Will crash if user has no widgets
@@ -46,5 +47,5 @@ Repeating yourself makes you change code in mupltiple places in a similar fashio
 - http://maven.apache.org/components/plugins/maven-checkstyle-plugin/
 - http://checkstyle.sourceforge.net/
 
-# Stay laconic
+# Be brief
 > The go tool will only print output when an error occurs, so if these commands produce no output they have executed successfully.

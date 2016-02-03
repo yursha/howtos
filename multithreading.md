@@ -1,6 +1,7 @@
-Erlang, Haskell, Go, Rust are designed for concurrency.
+# Refs
+- http://www.tutorialspoint.com/operating_system/os_multi_threading.htm
 
-# Multithreading
+Erlang, Haskell, Go, Rust are designed for concurrency.
 
 # How to measure multithreading efficiency?
 

@@ -1,2 +1,0 @@
-- `vpnc`
-- https://www.unix-ag.uni-kl.de/~massar/vpnc
