@@ -1,6 +1,9 @@
 - http://semver.org/
 - https://github.com/braydie/HowToBeAProgrammer
 
+# Its bad when code requires documentation. Better when its so clear that doesn't need any documentation.
+# Its bad when function has side effects which are not explicitly stated in its name.
+
 # In OOP always try to call the object in a lower layer.
 OOP can become a mess when multiple objects call each other leading to an untraceable execution.
 In order to avoid redundant nodes in a call chain an object should always try to call another object in a lower layer, rarely in the same layer and never in a higher layer. Thus tiered architecture brings structure (responsibility hierarchy) to otherwise messy OOP.
@@ -12,12 +15,13 @@ Client programmers should clearly understand what API is published and what is n
 
 # Solve current problem. Don't try to solve future problems.
 
-# Think about data in your program
+# Data
 - constant vs variable (immutable vs mutable)
 - predefined vs uninitialized
 - shared vs local
 - singleton vs prototype vs session vs request... lifecycle
 - avoid literal unnamed constants (https://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constants)
+- If a system works with data it must trace the provenance of each piece of data for traceability purposes.
 
 # Don't use class inheritance
 - You don't know in what class the method might have been implemented (overriden) without traversing up the entire inheritance chain.

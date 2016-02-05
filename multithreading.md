@@ -1,5 +1,16 @@
 # Refs
 - http://www.tutorialspoint.com/operating_system/os_multi_threading.htm
+- http://www.personal.kent.edu/~rmuhamma/OpSystems/Myos/threads.htm
+- https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/4_Threads.html
+- https://en.wikipedia.org/wiki/Multithreading_%28computer_architecture%29
+- https://en.wikipedia.org/wiki/Thread_%28computing%29
+- http://stackoverflow.com/questions/14795145/how-the-single-threaded-non-blocking-io-model-works-in-node-js
+- http://www.cs.iit.edu/~cs561/cs450/ChilkuriDineshThreads/dinesh's%20files/User%20and%20Kernel%20Level%20Threads.html
+- https://books.google.com/books?id=hM98BAAAQBAJ&pg=PA235&lpg=PA235&dq=how+thread+blocking+works+on+OS+level&source=bl&ots=wunSJxwlQ_&sig=2c_iM8-zeXGOiYtvcXK7nvSZ1KM&hl=en&sa=X&ved=0ahUKEwjb4v_PzNzKAhUD52MKHQwbCxQQ6AEISTAH#v=onepage&q=how%20thread%20blocking%20works%20on%20OS%20level&f=false
+- https://www.cs.rutgers.edu/~pxk/416/notes/05-threads.html
+- http://faculty.cs.tamu.edu/bettati/Courses/410/2014A/Slides/threads.pdf
+- http://stackoverflow.com/questions/5803715/how-to-make-a-thread-sleep-block-for-nanoseconds-or-at-least-milliseconds
+- http://stackoverflow.com/questions/1888160/distinguish-java-threads-and-os-threads
 
 Erlang, Haskell, Go, Rust are designed for concurrency.
 

@@ -37,9 +37,9 @@ HTTP/1.1 connections are persistent by default.
 
 # Apache HTTP Components
 - http://hc.apache.org - `org.apache.httpcomponents:httpclient` - https://github.com/apache/httpclient (Mirror of Apache git) (1.4M)
-- http://hc.apache.org/httpcomponents-core-ga/httpcore/apidocs/
-- https://hc.apache.org/httpcomponents-core-ga/httpcore-nio/apidocs/
-- http://hc.apache.org/httpcomponents-client-ga/httpclient/apidocs/
+- http://hc.apache.org/httpcomponents-core-ga/httpcore
+- https://hc.apache.org/httpcomponents-core-ga/httpcore-nio
+- http://hc.apache.org/httpcomponents-client-ga/httpclient
 
 # Other libraries
 

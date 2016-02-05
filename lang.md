@@ -1,4 +1,11 @@
 - https://en.wikipedia.org/wiki/Dispatch_table - late binding OOP implementation
+- http://benchmarksgame.alioth.debian.org/play.html
+- http://stackoverflow.com/questions/145110/c-performance-vs-java-c
+- http://programmers.stackexchange.com/questions/159373/what-backs-up-the-claim-that-c-can-be-faster-than-a-jvm-or-clr-with-jit
+- http://www.jelovic.com/articles/why_java_is_slow.htm
+- http://unriskinsight.blogspot.com/2014/06/fast-functional-goats-lions-and-wolves.html
+- https://en.wikipedia.org/wiki/Java_performance#Comparison_to_other_languages
+- https://www.linkedin.com/pulse/20140722010907-14297945-jvm-java-vs-c
 
 # Name Scoping
 - lexical (static, block) scoping
