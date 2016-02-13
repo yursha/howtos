@@ -1,3 +1,8 @@
+- www.x.org
+- freedesktop.org
+
+`/etc/X11/xorg.conf` - configuration file
+
 Backlight
 - https://wiki.archlinux.org/index.php/Backlight
 - `xbacklight -display :0 -set 50` - reduce display backlight in half

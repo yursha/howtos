@@ -1,5 +1,5 @@
 # Problems
-- no automatic keys backlight during low light conditions (how OS X does it?)
+t no automatic keys backlight during low light conditions (how OS X does it?)
 - no low-battery notification
 - cannot recover from suspend state? (at list dies when you close lid)
 - how to copy text from X server to Linux VT?
@@ -18,6 +18,8 @@
 
 ## Firefox
 - `export GDK_SCALE=2`
+
+# Slack has desktop notifications in chromium (and maybe in the latest version of Firefox)
 
 # Pacman
 - `pacman -Q` - list all installed packages

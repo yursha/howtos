@@ -1,12 +1,9 @@
+# Networking
 - Archlinux wiki : Network configuration
 - https://en.wikipedia.org/wiki/Keepalive
-- tcp
-- udp
 
-- `sftp` archlinux package and tool for FTP over SSH
-- `rdesktop` - archlinux package and tool for RDP
-
-- https://en.wikipedia.org/wiki/Samba_(software)
+# URL/URI
+- Commons Validator https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/routines/UrlValidator.html
 
 # IP
 - Assigned Numbers http://www.ietf.org/rfc/rfc790.txt
@@ -23,12 +20,29 @@
 - http://www.skbuff.net/iputils/
 - `ping`
 
+# TCP
+
+# UDP
+
+# PPP (Point to Point Protocol)
+- https://tools.ietf.org/html/rfc1661
+- The PPP Multilink Protocol https://tools.ietf.org/html/rfc1990
+
+# SOCKS
+- https://en.wikipedia.org/wiki/SOCKS
+
 # SSH
 - https://wiki.archlinux.org/index.php/SSH_keys
 - package `openssh`
 - `ssh`
 - `scp`
 - `ssh-keygen`
+
+# SFTP
+- `sftp` archlinux package and tool for FTP over SSH
+
+# RDP
+- `rdesktop` - archlinux package and tool for RDP
 
 # WiFi
 ## `iw`

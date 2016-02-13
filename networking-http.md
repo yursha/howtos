@@ -74,9 +74,6 @@ HTTP/1.1 connections are persistent by default.
 - `npm install http-server -g; http-server`
 - `java -jar jetty-runner-9.3.0.M0.jar --port 8080 .`
 
-# URL/URI
-- Commons Validator https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/routines/UrlValidator.html
-
 # HTTPS
 
 # SSL

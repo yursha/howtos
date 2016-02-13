@@ -96,14 +96,6 @@ see `userland-swsusp.txt`.
 
 - `cat /sys/power/state` - print supported power states.
 
-## Keyboard
-### Backlight
-```
-su
-***
-echo -n "250" > /sys/class/leds/smc\:\:kbd_backlight/brightness
-exit
-```
 
 # BIOS
 - https://en.wikipedia.org/wiki/BIOS
@@ -191,6 +183,11 @@ There is no performance advantage to either a contiguous swap file or a partitio
 ## ALSA
 - https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture
 - https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture/Troubleshooting
+
+To make sound work on linux install `pulseaudio` and `alsa` package in Archlinux.
+
+# Video
+- `xrandr`
 
 # User Management
 - `sudo` - substitute user do (alternative to `su`). Allows a system administrator to delegate authority to certain users (or groups of users) to run some (or all) commands as root or another user while providing an audit trail of the commands and their arguments. 
