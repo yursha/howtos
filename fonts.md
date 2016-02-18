@@ -37,3 +37,6 @@ exit
 # Linux TTY, VT
 - https://en.wikipedia.org/wiki/Linux_console
 - http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/drivers/tty/Kconfig
+
+# `gpm` package
+- `gpm`
