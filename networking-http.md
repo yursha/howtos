@@ -48,9 +48,6 @@ HTTP/1.1 connections are persistent by default.
 - https://git.apache.org/
 - Ning AHC Project (Netty-based) - `com.ning.async-http-client` - https://github.com/AsyncHttpClient/async-http-client (2.1M)
 - Java EE GlassFish Project - `org.glassfish.jersey.core:jersey-client` - https://github.com/jersey/jersey (Mirror of jersey.java.net git) (3.1M)
-- DropWizard Project - `io.dropwizard:dropwizard-client` - https://github.com/dropwizard/dropwizard (15M)
-  + org.glassfish.jersey.core:jersey-client
-  + org.apache.httpcomponents:http-client
 - `java.net.HttpURLConnection` stdlib
 - node `http`
 
@@ -73,9 +70,3 @@ HTTP/1.1 connections are persistent by default.
 - `ruby -run -e httpd . -p 8888`
 - `npm install http-server -g; http-server`
 - `java -jar jetty-runner-9.3.0.M0.jar --port 8080 .`
-
-# HTTPS
-
-# SSL
-
-# TLS

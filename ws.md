@@ -5,17 +5,12 @@
 
 ## Jersey (JAX-RS) http://jersey.java.net/
 
-## JAX-RS 
+## JAX-RS
 - https://jcp.org/en/jsr/detail?id=339 (JAX-RS 2.0)
 - http://jcp.org/en/jsr/detail?id=311 (JAX-RS 1.0)
 - https://jax-rs-spec.java.net/
 - https://docs.oracle.com/javaee/7/api/javax/ws/rs/package-summary.html
 - http://docs.oracle.com/javaee/6/tutorial/doc/giepu.html (Building RESTful Web Services with JAX-RS)
-
-## DropWizard.io
-- http://www.dropwizard.io/ (Uses Jetty, Jersey, Jackson)
-- http://www.dropwizard.io/manual/core.html
-- https://github.com/dropwizard/metrics
 
 # JSON
 - http://jsonapi.org/
