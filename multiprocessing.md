@@ -22,3 +22,6 @@ Releasing a lock means deleting such a file.
 - Process Scheduling https://www.cs.rutgers.edu/~pxk/416/notes/07-scheduling.html
 - CS416 Operating Systems https://www.cs.rutgers.edu/~pxk/416/notes/index.html
 - Coursera Automata https://class.coursera.org/automata-003/auth
+
+
+- From AF_UNIX to kdbus - https://dvdhrm.wordpress.com/

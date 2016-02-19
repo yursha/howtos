@@ -37,6 +37,8 @@ exit
 # Linux TTY, VT
 - https://en.wikipedia.org/wiki/Linux_console
 - http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/drivers/tty/Kconfig
+- https://en.wikipedia.org/wiki/Code_page_437
+- Deprecating CONFIG_VT - https://dvdhrm.wordpress.com/2012/08/12/killing-off-config_vt/
 
 # `gpm` package
 - `gpm`
