@@ -13,6 +13,7 @@
 
 # Angular1
 - https://github.com/angular/angular.js
+- https://github.com/johnpapa/angular-styleguide
 - https://blog.angularjs.org/
 - https://docs.angularjs.org/api
 - https://docs.angularjs.org/guide/scope
@@ -21,7 +22,6 @@
  + Provider:
  + auto, ngAnimate, ngAria, ngCookies, ngMessageFormat, ngMessages, ngMock, ngMockE2E, ngResource, ngSanitize, ngTouch
 - http://angularjs.blogspot.com/2014/02/an-angularjs-style-guide-and-best.html
-- https://github.com/johnpapa/angular-styleguide
 - https://github.com/angular/angular.js/wiki/Understanding-Scopes
 - http://www.bennadel.com/blog/2760-one-time-data-bindings-for-object-literal-expressions-in-angularjs-1-3.htm
 - http://onehungrymind.com/angularjs-sticky-notes-pt-2-isolated-scope/

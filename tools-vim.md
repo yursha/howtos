@@ -65,6 +65,7 @@
 
 ## windows
 - `CTRL-W` - switch between windows
+- https://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
 
 ## vim grepping
 - `:grep` - populates quickfix list
