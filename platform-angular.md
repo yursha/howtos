@@ -14,6 +14,8 @@
 # Angular1
 - https://github.com/angular/angular.js
 - https://github.com/johnpapa/angular-styleguide
+- https://github.com/toddmotto/angular-styleguide
+- http://angularjs.blogspot.com/2014/02/an-angularjs-style-guide-and-best.html
 - https://blog.angularjs.org/
 - https://docs.angularjs.org/api
 - https://docs.angularjs.org/guide/scope

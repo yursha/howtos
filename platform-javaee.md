@@ -85,3 +85,7 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 - `java -agentlib:hprof=cpu=times,thread=y,monitor=y,lineno=y` - use BCI to trace each method call and measure exact time.
 - `java -Xprof` - log profile info to STDOUT (useful during development only)
 - `jstack -l` - attaches to a running JVM and prints thread stack traces
+
+# JAXB
+- https://docs.oracle.com/javase/tutorial/jaxb/
+- https://jaxb.java.net/
