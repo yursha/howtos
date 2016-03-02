@@ -24,6 +24,7 @@ Parameters can be passed to the kernel:
 - `fstrim`
 - `dmesg` - prints or controls the kernel ring buffer
 - `cal` - calendar
+- `rename`
 
 ## procps-ng
 - https://gitlab.com/procps-ng/procps

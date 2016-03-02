@@ -48,6 +48,10 @@ The JVM uses internally escape analysis to check if an object is used only with 
 - http://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html
 
 # Debugging
+## Java Platform Debugger Architecture (JPDA)
+
+## Java Debug Interface (JDI)
+
 ## JDWP (Java Debug Wire Protocol)
 - `java -agentlib:jdwp=transport=dt_socket,server=y,address=8000` - debug agent listens on port 8000, suspending JVM before the main class loads.
 
@@ -76,7 +80,7 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 - `jdb`
 - `javah`
 
-## CPU
+## CPU time optimization
 - http://www.oracle.com/technetwork/java/tuning-139912.html#section4.2.5
 - http://svn.apache.org/repos/asf/jackrabbit/sandbox/jackrabbit-j3/src/test/java/org/apache/jackrabbit/j3/Profiler.java
 
@@ -86,6 +90,24 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 - `java -Xprof` - log profile info to STDOUT (useful during development only)
 - `jstack -l` - attaches to a running JVM and prints thread stack traces
 
+# Findbugs
+- http://findbugs.sourceforge.net/
+- jsr305
+- JSR 308 Explained: Java Type Annotations - http://www.oracle.com/technetwork/articles/java/ma14-architect-annotations-2177655.html
+- https://code.google.com/p/jsr-305/source/checkout
+
+# ProGuard
+- http://proguard.sourceforge.net/
+
 # JAXB
 - https://docs.oracle.com/javase/tutorial/jaxb/
 - https://jaxb.java.net/
+
+# Java EE
+- https://docs.oracle.com/javaee/7/api/
+- https://docs.oracle.com/javaee/7/tutorial/
+- http://www.oracle.com/technetwork/java/javaee/downloads/java-ee-sdk-7-downloads-1956236.html
+- http://www.oracle.com/technetwork/java/javaee/documentation/index.html
+- http://www.oracle.com/technetwork/java/javaee/downloads/index.html
+
+# Java RMI Compiler (rmic)

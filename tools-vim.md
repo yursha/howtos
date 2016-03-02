@@ -9,6 +9,19 @@
 - https://github.com/mhinz/vim-galore
 - http://vim.wikia.com/wiki/Converting_variables_to_or_from_camel_case
 
+# `:help <arg>` or `:helpgrep <arg`
+Bookmark: quickref, usr_06.txt, reference_toc
+- `x`, `CTRL-R` - normal mode command
+- `v_u` - visual mode command
+- `i_<Esc>` - insert mode command
+- `:quit` - command-line command
+- `c_<Del>` - command-line editing
+- `-r` - command-line argument for vim
+- `'textwidth'` - option
+- `/[` - regex
+- `E37` - errors - `subject()` - functions - `+subject` - compile-time feature
+
+
 # Motion
 
 ### Navigating a line
@@ -120,18 +133,6 @@
 # Commands
 - `:` - navigate thru command history
 
-# `:help <arg>` or `:helpgrep <arg`
-Bookmark: quickref, usr_06.txt, reference_toc
-- `x`, `CTRL-R` - normal mode command
-- `v_u` - visual mode command
-- `i_<Esc>` - insert mode command
-- `:quit` - command-line command
-- `c_<Del>` - command-line editing
-- `-r` - command-line argument for vim
-- `'textwidth'` - option
-- `/[` - regex
-- `E37` - errors - `subject()` - functions - `+subject` - compile-time feature
-
 # Gotchas
 - **Line terminator vs line separator confusion**. Vim automatically adds a newline at the end of each file it edits. To prevent this behaviour for file open in binary mode (`vim -b path/to/file`) we should disable `eol` boolean configuration variable.
 
@@ -202,3 +203,14 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 # Management
 - `:options`
 - `:help local-additions`
+
+# Snippets
+- http://www.vim.org/scripts/script.php?script_id=1318
+- http://www.vim.org/scripts/script.php?script_id=2540
+- http://stackoverflow.com/questions/15334/how-to-create-short-snippets-in-vim
+- https://github.com/scrooloose/snipmate-snippets
+
+Michael Sanders - http://www.vim.org/account/profile.php?user_id=16544
+- https://github.com/msanders/snipmate.vim
+
+- https://github.com/jarijokinen/snipmate.vim (Fork with toUpperCase Functionality)
