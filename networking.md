@@ -53,8 +53,11 @@
 - http://hostap.epitest.fi/wpa_supplicant
 
 # VPN
-- `vpnc`
+- `vpnc` - Cisco VPN3000 Concentrator, IOS and PIX
 - https://www.unix-ag.uni-kl.de/~massar/vpnc
+
+- `openconnect` - Cisco AnyConnect VPN Client
+- http://www.infradead.org/openconnect.html
 
 # Refs
 

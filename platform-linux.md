@@ -218,3 +218,8 @@ Sudo can also be used to run commands as other users; additionally, sudo logs al
 ## Terminal colors
 - http://rampex.ihep.su/Linux/linux_howto/html/tutorials/mini/Colour-ls-6.html
 - `setterm -foreground white -background blue -store`
+
+# Camera
+- https://github.com/patjak/bcwc_pcie/wiki/Get-Started
+- https://bugzilla.kernel.org/show_bug.cgi?id=711311
+- https://wiki.archlinux.org/index.php/MacBookPro11,x#Web_cam

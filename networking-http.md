@@ -18,6 +18,7 @@
 
 # Status Codes
 - http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
+- Status Code 308 (Permanent Redirect) http://tools.ietf.org/html/rfc7238
 
 # Request Methods
 - http://tools.ietf.org/html/rfc5789 - PATCH Method for HTTP

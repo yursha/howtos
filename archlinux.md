@@ -5,7 +5,6 @@ t no automatic keys backlight during low light conditions (how OS X does it?)
 - how to copy text from X server to Linux VT?
 - keys to control display brightness don't work in X not in Linux Vt
 - sound subsystem doesn't work
-- camera doesn't work
 
 # Refs
 - https://wiki.archlinux.org/index.php/MacBook

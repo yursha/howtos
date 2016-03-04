@@ -1,13 +1,42 @@
+# People
+- http://stackoverflow.com/users/22656/jon-skeet
+
+# Specs
+- https://docs.oracle.com/javase/specs/
 - http://docs.oracle.com/javase/8/docs/
+- http://download.java.net/jdk9/docs/api/
 - http://www.oracle.com/technetwork/java/javase/tech/index.html
-- https://google.github.io/styleguide/javaguide.html
-- https://github.com/google/google-java-format
-- http://stackoverflow.com/questions/924208/how-to-convert-nanoseconds-to-seconds-using-the-timeunit-enum
 - http://www.javadoc.io/
+
+# Tutorials
+- https://docs.oracle.com/javase/tutorial/index.html
+- http://stackoverflow.com/questions/924208/how-to-convert-nanoseconds-to-seconds-using-the-timeunit-enum
 - https://blogs.oracle.com/java-platform-group/entry/java_8_s_new_type
 - http://www.infoq.com/articles/Java9-New-HTTP-2-and-REPL
 - http://blog.takipi.com/java-9-the-ultimate-feature-list/
 - http://openjdk.java.net/jeps/244
+
+# Type Checking
+## Checker Framework
+- http://types.cs.washington.edu/checker-framework/
+- https://google.github.io/styleguide/javaguide.html
+
+# Formatting
+- https://github.com/google/google-java-format
+
+# Generics
+- http://docs.oracle.com/javase/tutorial/java/generics/index.html
+- Gilad Bracha http://www8.cs.umu.se/kurser/tdbb24/HT05/jem/download/generics-tutorial.pdf
+- https://en.wikipedia.org/wiki/Generics_in_Java
+- http://docs.oracle.com/javase/tutorial/java/generics/erasure.html
+- http://www.angelikalanger.com/GenericsFAQ/FAQSections/Index.html
+- https://docs.oracle.com/javase/8/docs/technotes/guides/language/non-reifiable-varargs.html
+
+# Metaprogramming
+- https://docs.oracle.com/javase/tutorial/java/annotations/index.html
+
+# Compatibility
+- http://docs.oracle.com/javame/test-tools/sigtest/2_2/html/a-compat.html#Z4000c521043377
 
 The JVM uses internally escape analysis to check if an object is used only with a thread or method. If the JVM identify this it may decide to create the object on the stack, increasing performance of the Java program.
 
@@ -21,6 +50,11 @@ The JVM uses internally escape analysis to check if an object is used only with 
 - `jsadebugd`
 - `c++filt`
 - `pstack`
+
+# javac
+- `javac -XD-printflat -d output_dir SomeFile.java` - look for javac does with '*.java' files
+
+# java decompiler
 
 # java
 - `-verbose:class` - log all loaded classes
@@ -111,3 +145,6 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 - http://www.oracle.com/technetwork/java/javaee/downloads/index.html
 
 # Java RMI Compiler (rmic)
+
+# OpenJDK
+- http://openjdk.java.net/guide/
