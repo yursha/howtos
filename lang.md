@@ -28,6 +28,7 @@
 - http://perldoc.perl.org
 
 ## Erlang
+- https://www.erlang.org/
 
 ## Fortran
 - Fortran

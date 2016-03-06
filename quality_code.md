@@ -3,6 +3,7 @@
 
 # Its bad when code requires documentation. Better when its so clear that doesn't need any documentation.
 # Its bad when function has side effects which are not explicitly stated in its name.
+# Premature optimization is the root of all evil (Knuth)
 
 # In OOP always try to call the object in a lower layer.
 OOP can become a mess when multiple objects call each other leading to an untraceable execution.
