@@ -20,6 +20,7 @@
 
 # JSON
 - http://jsonapi.org/
+- https://jwt.io/introduction/
 
 # RAML (RESTful API Modeling Language)
 - http://raml.org/projects.html

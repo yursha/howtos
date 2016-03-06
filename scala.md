@@ -2,6 +2,7 @@
 - Structure and Interpretation of computer programs, Abelson, Sussman, 1996, MIT
 
 # Resources
+- Bookmark: - http://www.scala-lang.org/documentation/getting-started.html
 - http://www.scala-lang.org/
 - http://www.scala-lang.org/community/
 - http://www.scala-lang.org/documentation/books.html

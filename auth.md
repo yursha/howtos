@@ -1,5 +1,11 @@
-# Authentication
-- HTTP Basic Authentication
-- OAuth2
-
-# Authorization
+- http://www.dtelepathy.com/blog/design/ux-flows-sign-ups
+- https://www.quora.com/UI-UX-Design-Patterns/What-are-good-examples-of-registration-flows-that-require-a-lot-of-info-but-manage-to-make-it-a-painless-experience
+- http://www.lukew.com/ff/entry.asp?1128
+- http://stackoverflow.com/questions/8195099/java-how-to-store-password-used-in-application
+- http://stackoverflow.com/questions/12937641/handling-passwords-used-for-auth-in-source-code
+- http://www.formisimo.com/blog/case-study-small-changes-lead-to-a-55-increase-in-conversions/
+- https://www.nngroup.com/articles/stop-password-masking/
+- http://www.sitepoint.com/better-passwords-2-show-password/
+- https://www.youtube.com/watch?v=PgnHMDNBY3o
+- http://www.drdobbs.com/web-development/secure-login-in-ajax-applications/231000884?pgno=2
+- http://www.mkyong.com/java/how-to-automate-login-a-website-java-example/

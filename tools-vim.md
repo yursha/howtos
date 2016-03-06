@@ -1,3 +1,4 @@
+- https://neovim.io/
 - http://learnvimscriptthehardway.stevelosh.com/
 - http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 - https://github.com/vim/vim
@@ -209,6 +210,11 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 - http://www.vim.org/scripts/script.php?script_id=2540
 - http://stackoverflow.com/questions/15334/how-to-create-short-snippets-in-vim
 - https://github.com/scrooloose/snipmate-snippets
+- http://stackoverflow.com/questions/5064430/changing-the-case-within-snipmate-vim-snippets
+- http://www.ibm.com/developerworks/library/l-vim-script-1/
+- http://vim.wikia.com/wiki/Switching_case_of_characters
+- http://stackoverflow.com/questions/14954095/adding-vim-snippets
+- https://github.com/honza/vim-snippets
 
 Michael Sanders - http://www.vim.org/account/profile.php?user_id=16544
 - https://github.com/msanders/snipmate.vim
