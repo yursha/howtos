@@ -10,6 +10,8 @@
 - http://www.techrepublic.com/blog/linux-and-open-source/is-tmux-the-gnu-screen-killer/
 - https://raw.githubusercontent.com/danielmiessler/tmux/master/.tmux.config
 - https://danielmiessler.com/study/tmux/
+- https://gist.github.com/MohamedAlaa/2961058
+- https://www.google.com/search?q=tmux+tutorial
 
 # GNU Screen
 - https://en.wikipedia.org/wiki/GNU_Screen
