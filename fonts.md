@@ -32,6 +32,7 @@ exit
 
 # `terminus-font` package
 - http://sourceforge.net/projects/terminus-font/
+- http://files.ax86.net/terminus-ttf/
 
 
 # Linux TTY, VT

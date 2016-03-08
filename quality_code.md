@@ -13,6 +13,7 @@ In order to avoid redundant nodes in a call chain an object should always try to
 Client programmers should clearly understand what API is published and what is not. In java it can be achieved with releasing separat jars (`mylib-api.jar` and `mylib-core.jar`).Standard java access modifiers fail to enforce it to a full extent.
 
 # Solve one problem and solve it well.
+- Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.
 
 # Solve current problem. Don't try to solve future problems.
 
@@ -40,7 +41,8 @@ Client programmers should clearly understand what API is published and what is n
 - `// BOGUS: Will crash if user has no widgets
 
 # DRY (Don't repeat yourself)
-Repeating yourself makes you change code in mupltiple places in a similar fashion when loggically only one thing has to be changed.
+Repeating code forces you to do repetitive edits when you modify your code.
+It also makes your code bigger and more difficult to comprehend, reason about and maintain.
 
 # Immutability
 - http://www.drdobbs.com/cpp/practical-advantages-of-immutable-values/240163690

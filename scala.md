@@ -20,4 +20,10 @@
 - The substitution model reduces an expression to a value (lambda-calculus)
 - lambda-calculus is equivalent to Turing Machine in terms of what algorithms can be expressed but is functional rather than imperative.
 - lambda-calculus can only be applied to expressions which don't have side effects
-
+- higher-order functions
+- currying
+- mapreduce
+- stabilizing by averaging
+- fixed point
+- newton algorithm for square root computation
+- EBNF (Extended Backus-Naur Form)
