@@ -14,7 +14,7 @@
 
 # Set up
 - Create `~/.tmux.conf` config file.
-- Change prefix key to ```. Add the following to your `~/.tmux.conf` file.
+- Change prefix key to backtick. Add the following to your `~/.tmux.conf` file.
 ```
 unbind C-b
 set -g prefix `
