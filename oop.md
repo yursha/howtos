@@ -7,4 +7,7 @@
 - association
 - delegation
 
+# Inheritance
+- https://www.bayleafdigital.com/configure-email-hosted-different-server-website-2/
+
 # Patterns

@@ -24,22 +24,28 @@ Bookmark: quickref, usr_06.txt, reference_toc
 
 
 # Motion
+   k
+ h   l
+   j
 
-### Navigating a line
-- 2h/2l - 2 chars left/right
-- 0,^ - jump to first char in a line
-- $ - jump to EOL
-- 2f-char - jump at 2th next C char in a line (,;)
-- 2F-char - jump at 2th previous C char in a line (,;)
-- 2t-char - jump to 2th next C char in a line (,;)
-- 2T-char - jump to 2th previous C char in a line (,;)
+- ^ - first non-space char in a line
+- 0 - first char in a line
+- $ - EOL
 
-### Navigating a file
-- 2j/2k - 2 lines down/up
-- 2b/2w - 2 word starts left/right
-- 2ge/2e - 2 word ends left/right
-- 2B/2W - 2 whitespace-separated word starts left/right
-- 2gE/2E - N whitespace-separated word ends left/right
+- f-char - before next char in a line (,;)
+- F-char - before previous char in a line (,;)
+- t-char - at next char in a line (,;)
+- T-char - at previous char in a line (,;)
+
+- w - word start forwards
+- b - word start backwards
+- e - word end forwards
+- ge - word end backwards
+- W - white-space separated word start forwards
+- B - white-space separated word start backwards
+- E - white-space separated word end forwards
+- gE - white-space separated word end backwards
+
 - % - move to matching (),[],{} or *matchpairs* option (or find first in a line)
 - 2% - go to 2% of a file
 - CTRL+b - scroll up a page

@@ -35,3 +35,7 @@ To open a file in a default program just type file path on the command line
 
 # `nmake`
 - https://msdn.microsoft.com/en-us/library/dd9y37ha.aspx
+
+# PowerShell
+- https://technet.microsoft.com/en-us/library/bb978526.aspx
+- https://technet.microsoft.com/en-us/library/ee221100.aspx

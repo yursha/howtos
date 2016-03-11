@@ -21,6 +21,8 @@ System calls errno explanations
 - `screen` - https://en.wikipedia.org/wiki/GNU_Screen
 - `file`
 - `tee`
+- `watch`
+- `from`
 
 ```
 > sed -i 's/import com\.opencsv\.CSVReader;/import com.opencsv.CSVReader;\r\nimport com.opencsv.CSVParser;/g' src/main/java/com/apixio/loader/customer/mapping/archive/HPCNVDemographics.java

@@ -35,5 +35,20 @@
 - Fortran 77
 
 ## Haskell
+- https://www.haskell.org/
+- https://wiki.haskell.org/Haskell
+- https://wiki.haskell.org/Peano_numbers
+- https://wiki.haskell.org/Type_arithmetic
 
 ## Python
+
+## PPL (Practical Programming Language)
+- http://www.practical-programming.org/language/docs/manuals/language_manual.html
+
+## Racket
+- http://docs.racket-lang.org/
+
+# Null Pointers
+- http://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare
+- http://www.cs.man.ac.uk/~johns/npe.html
+- https://yinwang0.wordpress.com/2013/06/03/null/

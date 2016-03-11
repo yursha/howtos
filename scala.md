@@ -3,6 +3,7 @@
 
 # Resources
 - Bookmark: - http://www.scala-lang.org/documentation/getting-started.html
+- http://scala-lang.org/api
 - http://www.scala-lang.org/
 - http://www.scala-lang.org/community/
 - http://www.scala-lang.org/documentation/books.html

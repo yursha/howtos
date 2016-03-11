@@ -78,3 +78,33 @@ Multiple processes communicate locking state through shared memory regions and a
 - https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html
 - http://www.ibm.com/developerworks/java/library/j-jtp05236/index.html
 - http://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/
+- Brian Goetz - article http://www.ibm.com/developerworks/library/j-jtp0730/
+
+`Executors` is an abstraction which possibly shouldn't be used.
+Reasearch the following:
+- ArrayBlockingQueue
+- LinkedBlockingQueue
+- SynchronousQueue
+- ForkJoinPool
+- ScheduledThreadPoolExecutor
+- ExecutorService
+- AbstractExecutorService
+- ThreadPoolExecutor
+- ThreadFactory
+- CompletionService
+- ExecutorCompletionService
+- Future
+- FutureTask
+- Google Guava Concurrency facilities
+
+An executor service combines work queues and thread pools:
+- rejected execution handler
+
+A work queue is a queue of callable tasks.
+- bounded or unbounded
+- 'queue is full' handling policy
+
+A thread pool is a pool of threads:
+- thread creation policy
+- idle threads eviction policy
+- pool size policy
