@@ -12,15 +12,12 @@
 - https://gist.github.com/MohamedAlaa/2961058
 - https://www.google.com/search?q=tmux+tutorial
 
-# Set up
-- Create `~/.tmux.conf` config file.
-- Change prefix key to ```. Add the following to your `~/.tmux.conf` file.
-```
-unbind C-b
-set -g prefix `
-bind ` send-prefix
-```
-
 # Use
 - Open command prompt `prefix-:`
-- Reload config file by executing command `source ~/.tmux.conf`
+- Reload config file `tmux source ~/.tmux.conf`
+- To scroll up/down enter Copy Mode `prefix-[` and use arrow keys or `Ctrl-b` and `Ctrl-f` to move by character. Exit then Copy Mode by `Ctrl-c`.
+- Create session `tmux new -s myproject`
+- Attach to a session `tmux attach -t myproject`
+- Create new window `prefix-c`
+- Move to window 1 `prefix-1`
+- Kill a window `prefix-x`
