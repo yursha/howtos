@@ -11,6 +11,12 @@
 - http://www.javapractices.com/home/HomeAction.do
 - http://www.javadoc.io/
 
+# Resources
+- http://stackoverflow.com/tags/java/info
+
+# Blogs
+- http://shipilev.net/
+
 # Code Quality
 ## PMD
 - http://pmd.sourceforge.net/

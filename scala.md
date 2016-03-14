@@ -8,6 +8,7 @@
 - http://www.scala-lang.org/community/
 - http://www.scala-lang.org/documentation/books.html
 - http://worrydream.com/refs/Backus-CanProgrammingBeLiberated.pdf
+- http://stackoverflow.com/tags/scala/info
 
 # Web frameworks
 - http://akka.io/

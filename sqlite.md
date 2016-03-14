@@ -15,12 +15,22 @@
 
 # SQL
 - https://www.sqlite.org/lang_createtable.html
+- https://www.sqlite.org/lang_expr.html
+
+# Virtual Machine
+- https://www.sqlite.org/opcode.html - New Virtual Machine
+- https://www.sqlite.org/vdbe.html - Old Virtual Machine
 
 # Optimizing
-- http://sqlite.org/optoverview.html
+- https://www.sqlite.org/optoverview.html
 - https://www.sqlite.org/queryplanner.html
 - https://www.sqlite.org/inmemorydb.html
 - https://www.sqlite.org/pragma.html
+- https://www.sqlite.org/lang_expr.html
+- https://www.sqlite.org/lang_analyze.html
+- https://www.sqlite.org/lang_explain.html
+- https://www.sqlite.org/expridx.html - Indices On Expresssions
+- https://www.sqlite.org/lang_createindex.html - CREATE INDEX
 - optimize `page_size` and `cache_size` thru `PRAGMA` queries.
 - consider switching off journaling with `PRAGMA journal_mode = OFF`
 - consider reducing the number of system calls by using one lock for the entire session with `PRAGMA locking_mode = EXCLUSIVE`
@@ -31,6 +41,8 @@
 - consider storing temporary tables and indices in memory with `PRAGMA temp_store = MEMORY`
 - consider adding multithreading to SQLite query execution with `PRAGMA threads = N`
 - consider using `rowid` or other `integer primary key ASC` as its twice faster than regular primary keys on indexed columns.
+- use `ANALYZE` to gain insights into your queries
+- use `EXPLAIN` to analyze your queries - https://www.sqlite.org/lang_explain.html
 
 > The data for rowid tables is stored as a B-Tree structure containing one entry for each table row, using the rowid value as the key. This means that retrieving or sorting records by rowid is fast. Searching for a record with a specific rowid, or for all records with rowids within a specified range is around twice as fast as a similar search made by specifying any other PRIMARY KEY or indexed value.
 Source: https://www.sqlite.org/lang_createtable.html

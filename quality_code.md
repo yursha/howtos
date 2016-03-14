@@ -1,9 +1,14 @@
 - http://semver.org/
 - https://github.com/braydie/HowToBeAProgrammer
 
-# Its bad when code requires documentation. Better when its so clear that doesn't need any documentation.
-# Its bad when function has side effects which are not explicitly stated in its name.
-# Premature optimization is the root of all evil (Knuth)
+# Rules
+- Profile what is slow to find out where to optimize.
+- Don't abstract things if you can avoid it.
+- Use compiled to machine code languages if performance matters.
+- Use statically typed languages if maintainability matters.
+- Its bad when code requires documentation. Better when its so clear that doesn't need any documentation.
+- Its bad when function has side effects which are not explicitly stated in its name.
+- Don't keep unused code in the codebase.
 
 # In OOP always try to call the object in a lower layer.
 OOP can become a mess when multiple objects call each other leading to an untraceable execution.
