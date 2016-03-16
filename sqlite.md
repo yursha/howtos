@@ -14,22 +14,18 @@
 - Javadoc - http://javadox.com/org.xerial/sqlite-jdbc/3.8.11.2/org/sqlite/package-summary.html
 
 # SQL
+- https://www.sqlite.org/lang_expr.html √
 - https://www.sqlite.org/lang_createtable.html
-- https://www.sqlite.org/lang_expr.html
 
 # Virtual Machine
 - https://www.sqlite.org/opcode.html - New Virtual Machine
 - https://www.sqlite.org/vdbe.html - Old Virtual Machine
 
 # Optimizing
-- https://www.sqlite.org/optoverview.html
-- https://www.sqlite.org/queryplanner.html
 - https://www.sqlite.org/inmemorydb.html
 - https://www.sqlite.org/pragma.html
 - https://www.sqlite.org/lang_expr.html
-- https://www.sqlite.org/lang_analyze.html
 - https://www.sqlite.org/lang_explain.html
-- https://www.sqlite.org/expridx.html - Indices On Expresssions
 - https://www.sqlite.org/lang_createindex.html - CREATE INDEX
 - optimize `page_size` and `cache_size` thru `PRAGMA` queries.
 - consider switching off journaling with `PRAGMA journal_mode = OFF`
@@ -52,6 +48,19 @@ Source: https://www.sqlite.org/lang_createtable.html
 - ? use indices
 - ? compact the database
 - ? replace the memory allocation lib
+
+# Data Types
+- https://www.sqlite.org/lang_createtable.html
+- https://www.sqlite.org/datatype3.html
+
+# Indices and Optimizations
+- Covering Indices, Index Selectiveness
+- https://www.sqlite.org/expridx.html - Indices On Expressions
+- https://www.sqlite.org/optoverview.html √
+- https://www.sqlite.org/partialindex.html
+- https://www.sqlite.org/queryplanner.html √
+- https://www.sqlite.org/queryplanner-ng.html
+- https://www.sqlite.org/lang_analyze.html
 
 # Security
 - consider using `PRAGMA secure_delete = 1`

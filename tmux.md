@@ -16,8 +16,24 @@
 - Open command prompt `prefix-:`
 - Reload config file `tmux source ~/.tmux.conf`
 - To scroll up/down enter Copy Mode `prefix-[` and use arrow keys or `Ctrl-b` and `Ctrl-f` to move by character. Exit then Copy Mode by `Ctrl-c`.
-- Create session `tmux new -s myproject`
-- Attach to a session `tmux attach -t myproject`
-- Create new window `prefix-c`
-- Move to window 1 `prefix-1`
-- Kill a window `prefix-x`
+
+# Sessions
+- List sessions `tmux ls`
+- Create session `tmux new -s mysession`
+- Attach to a session `tmux attach -t mysession`
+- Kill session `tmux kill-session -t mysession`
+- `prefix-$` - rename session
+
+# Windows
+- New window `prefix-c`
+- Name window `prefix-,`
+- List windows `:lsw` or `prefix-w`
+- Find window `prefix-f`
+- Switch to window 1 `prefix-1`
+- Kill window `prefix-&`
+- Move window `prefix-.` or `:movew`
+
+# Panes
+- Kill a pane `prefix-x`
+- Horizontal split `prefix-%`
+- Vertical split `prefix-"`

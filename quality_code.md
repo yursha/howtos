@@ -9,6 +9,7 @@
 - Its bad when code requires documentation. Better when its so clear that doesn't need any documentation.
 - Its bad when function has side effects which are not explicitly stated in its name.
 - Don't keep unused code in the codebase.
+- It's better to be explicit rather than implicit
 
 # In OOP always try to call the object in a lower layer.
 OOP can become a mess when multiple objects call each other leading to an untraceable execution.

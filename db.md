@@ -13,4 +13,3 @@
 - Couch DB
 - PostgreSQL
 - MapDB
-- SQL Lite

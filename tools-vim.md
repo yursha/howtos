@@ -86,6 +86,8 @@ Bookmark: quickref, usr_06.txt, reference_toc
 ## windows
 - `CTRL-W` - switch between windows
 - https://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
+- Resize split height `:res +10` or `n-Ctrl-w-+` and `n-Ctrl-w--`
+- Resize split width `:vertical resize +10`
 
 ## vim grepping
 - `:grep` - populates quickfix list

@@ -211,15 +211,6 @@ Sudo can also be used to run commands as other users; additionally, sudo logs al
 ## Switch between different terminals
 - `CTRL+ALT+FN+F1`, `CTRL+ALT+FN+F2` etc.
 
-## Terminal fonts
-- `setfont ter-v32n` - set a bigger terminal font on a HiDPI device (add to `~/.bash_profile`)
-- `pacman -S terminus-font` - install set of bigger fonts for Linux virtual terminals
-- `setfont sun12x22`  - the biggest console font in pre-installed fonts
-
-## Terminal colors
-- http://rampex.ihep.su/Linux/linux_howto/html/tutorials/mini/Colour-ls-6.html
-- `setterm -foreground white -background blue -store`
-
 # Camera
 - https://github.com/patjak/bcwc_pcie/wiki/Get-Started
 - https://bugzilla.kernel.org/show_bug.cgi?id=711311

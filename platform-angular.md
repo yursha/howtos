@@ -73,7 +73,7 @@ Get hold of $http service
 - https://github.com/angular-ui/bootstrap (Integration of Twitter Bootstrap and AngularJS)
 - http://mgcrea.github.io/angular-strap/
 
-# Angular UI widgets 
+# Angular UI widgets
 - https://github.com/angular-ui
 - https://angular-ui.github.io/ (modal, dropdown, typeahead)
 
@@ -106,7 +106,6 @@ In AngularJS both **view model** and **controller behaviour** live in the **scop
 Scope behaviour can be called (with parameters) from expressions or event-handler directives. Expressions are re-evaluated when model changes. Event-handler directives are evaluated on events.
 
 When an scope expression is evaluated, scope fields are looked up in the scope chain upto the root scope.
-
 
 Directives watch the scope and update DOM and vice versa.
 
@@ -161,7 +160,7 @@ The flow of marshaling data from the server to an internal object to an HTML for
 
 Get scope reference for selected element
 ```
-> var s = angular.element($0).scope() 
+> var s = angular.element($0).scope()
 > // do some staff
 > s.$digest()
 ```

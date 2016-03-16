@@ -178,3 +178,6 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 
 # OpenJDK
 - http://openjdk.java.net/guide/
+
+# Collections
+- https://docs.oracle.com/javase/tutorial/collections/TOC.html
