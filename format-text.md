@@ -31,7 +31,7 @@ Character comparisons - case sensitivity.
 - https://github.com/FasterXML/jackson
 - https://github.com/FasterXML/jackson-databind
 - http://wiki.fasterxml.com/JacksonFAQDateHandling
-- http://www.javadoc.io/doc/com.fasterxml.jackson.core/jackson-databind
+- http://fasterxml.github.io/jackson-databind/javadoc/2.7/index.html
 
 ### GSON
 - https://github.com/google/gson

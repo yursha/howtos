@@ -181,3 +181,8 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 
 # Collections
 - https://docs.oracle.com/javase/tutorial/collections/TOC.html
+
+# Equality
+- http://javarevisited.blogspot.com/2011/02/how-to-write-equals-method-in-java.html
+- https://www.artima.com/lejava/articles/equality.html
+- https://prezi.com/ajuirs-xt3-s/effective-java-item8-equals-and-item9-hashcode/
