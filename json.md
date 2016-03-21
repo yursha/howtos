@@ -1,0 +1,22 @@
+- https://github.com/circlecell/jsonlintdotcom
+
+# JSON (Tree)
+- Format json `python -m json.tool temp.json`
+
+## Big JSON files
+- https://github.com/zeMirco/sf-city-lots-json
+
+## Libraries
+- **http://mvnrepository.com/open-source/json-libraries** - lookup the relevant libraries here.
+- https://github.com/fangyidong/json-simple
+
+### Jackson
+(iteration | data binding | tree traversal)
+- https://github.com/FasterXML/jackson
+- https://github.com/FasterXML/jackson-databind
+- http://wiki.fasterxml.com/JacksonFAQDateHandling
+- http://fasterxml.github.io/jackson-databind/javadoc/2.7/index.html
+
+### GSON
+- https://github.com/google/gson
+

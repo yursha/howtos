@@ -1,3 +1,7 @@
+# DRY
+- Isolates changes
+- Fewer LOC
+
 - http://semver.org/
 - https://github.com/braydie/HowToBeAProgrammer
 
@@ -45,10 +49,6 @@ Client programmers should clearly understand what API is published and what is n
 
 - `// WARNING: sdfjsljfldsjflds`
 - `// BOGUS: Will crash if user has no widgets
-
-# DRY (Don't repeat yourself)
-Repeating code forces you to do repetitive edits when you modify your code.
-It also makes your code bigger and more difficult to comprehend, reason about and maintain.
 
 # Immutability
 - http://www.drdobbs.com/cpp/practical-advantages-of-immutable-values/240163690

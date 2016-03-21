@@ -15,27 +15,6 @@ Character comparisons - case sensitivity.
   + validating vs non-validating (against DTD, Schema, etc.). Validation mechanisms allow to add additional constraints beyond bare syntax.
 - **Generator** - generates text from tokens?
 
-# JSON (Tree)
-- http://jsonlint.com
-- Format json command-line `python -m json.tool temp.json`
-
-## Big JSON files
-- https://github.com/zeMirco/sf-city-lots-json
-
-## Libraries
-- **http://mvnrepository.com/open-source/json-libraries** - lookup the relevant libraries here.
-- https://github.com/fangyidong/json-simple
-
-### Jackson
-(iteration | data binding | tree traversal)
-- https://github.com/FasterXML/jackson
-- https://github.com/FasterXML/jackson-databind
-- http://wiki.fasterxml.com/JacksonFAQDateHandling
-- http://fasterxml.github.io/jackson-databind/javadoc/2.7/index.html
-
-### GSON
-- https://github.com/google/gson
-
 # Delimiter-Separted Values (Tabular format)
 Tabular formats are often more space efficient than JSON, which can improve loading times for large datasets (when downloading over internet).
 - CSV, TSV, SSV 

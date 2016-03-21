@@ -1,5 +1,4 @@
-- https://en.wikipedia.org/wiki/Dispatch_table - late binding OOP implementation
-- http://benchmarksgame.alioth.debian.org/play.html
+- Lutz Prechelt "An empirical comparison of C, C++, Java, Perl, Python, Rexx, and Tcl" - https://page.mi.fu-berlin.de/prechelt/Biblio/jccpprt_computer2000.pdf
 - http://stackoverflow.com/questions/145110/c-performance-vs-java-c
 - http://programmers.stackexchange.com/questions/159373/what-backs-up-the-claim-that-c-can-be-faster-than-a-jvm-or-clr-with-jit
 - http://www.jelovic.com/articles/why_java_is_slow.htm

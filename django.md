@@ -1,0 +1,5 @@
+- https://www.djangoproject.com/
+- https://www.djangopackages.com/
+- https://www.djangopackages.com/grids/
+- https://www.djangopackages.com/grids/g/registration/
+- https://docs.djangoproject.com/en/1.9/intro/tutorial01/

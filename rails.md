@@ -1,0 +1,2 @@
+- http://rubyonrails.org/
+- https://www.railstutorial.org/book/sign_up
