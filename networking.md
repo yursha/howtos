@@ -31,13 +31,6 @@
 # SOCKS
 - https://en.wikipedia.org/wiki/SOCKS
 
-# SSH
-- https://wiki.archlinux.org/index.php/SSH_keys
-- package `openssh`
-- `ssh`
-- `scp`
-- `ssh-keygen`
-
 # SFTP
 - `sftp` archlinux package and tool for FTP over SSH
 

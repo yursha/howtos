@@ -4,6 +4,10 @@
 
 - http://semver.org/
 - https://github.com/braydie/HowToBeAProgrammer
+- Brian W. Kernighan and Rob Pike - "The Practice of Programming"
+
+# Name stuff
+- keep logic in small named functions for readability
 
 # Rules
 - Profile what is slow to find out where to optimize.

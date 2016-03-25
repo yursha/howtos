@@ -1,5 +1,6 @@
 # Functional Programming
 - Structure and Interpretation of computer programs, Abelson, Sussman, 1996, MIT
+- Functional Programming Principles in Scala by Martin Odersky - https://class.coursera.org/progfun-005
 
 # Resources
 - Bookmark: - http://www.scala-lang.org/documentation/getting-started.html
@@ -9,6 +10,13 @@
 - http://www.scala-lang.org/documentation/books.html
 - http://worrydream.com/refs/Backus-CanProgrammingBeLiberated.pdf
 - http://stackoverflow.com/tags/scala/info
+- Scala Ref Card
+- Twitter's Scala School
+- Programming in Scala by Martin Odersky, Bill Venners
+- Scala Tour - in Scala docs
+- Scala Meetup
+- Typesafe Blog and Newsletter
+- This Week in Scala Blogs
 
 # Web frameworks
 - http://akka.io/

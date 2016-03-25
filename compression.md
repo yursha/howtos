@@ -30,3 +30,7 @@
 # Deflate compression
 - `zlib` (http://www.zlib.net/) - deflate compression
 Also a different beast is Linux zlibc Compressing File-I/O Library)
+
+# Brotli
+- https://github.com/google/brotli
+- https://blog.cloudflare.com/results-experimenting-brotli/

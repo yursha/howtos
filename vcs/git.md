@@ -374,6 +374,10 @@ Rebasing replays changes from one line of work onto another in the order they we
 1. Tag `% git tag -a v1.0 -m "version 1.0"` and push
 1. Release, i.e. deploy to production
 
+# Tags
+- http://stackoverflow.com/questions/1028649/how-do-you-rename-a-git-tag
+- https://confluence.atlassian.com/bitbucket/how-do-i-remove-or-delete-a-tag-from-a-git-repo-282175551.html
+
 
 # Deployment
 - **hot deployment** - deployment of code when an application continues to run.

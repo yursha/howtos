@@ -7,9 +7,15 @@
 - http://www.oracle.com/technetwork/java/javase/tech/index.html
 - https://docs.oracle.com/javase/tutorial/index.html
 - https://docs.oracle.com/javase/tutorial/java/javaOO/index.html
-- https://docs.oracle.com/javase/tutorial/reflect/index.html
 - http://www.javapractices.com/home/HomeAction.do
 - http://www.javadoc.io/
+
+# Reflection
+- https://docs.oracle.com/javase/tutorial/reflect/index.html
+
+## Apache Commons BeanUtils
+- http://commons.apache.org/proper/commons-beanutils/
+- http://commons.apache.org/proper/commons-beanutils/javadocs/v1.9.2/apidocs/index.html
 
 # Resources
 - http://stackoverflow.com/tags/java/info
@@ -186,3 +192,27 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 - http://javarevisited.blogspot.com/2011/02/how-to-write-equals-method-in-java.html
 - https://www.artima.com/lejava/articles/equality.html
 - https://prezi.com/ajuirs-xt3-s/effective-java-item8-equals-and-item9-hashcode/
+
+: https://docs.oracle.com/javase/tutorial/index.html
+- http://docs.oracle.com/javase/7/docs/api/
+- https://docs.oracle.com/javaee/7/api/
+- http://www.javapractices.com/home/HomeAction.do
+
+# Code Quality
+## PMD 
+- http://pmd.sourceforge.net/
+
+## Checkstyle
+- https://github.com/checkstyle/checkstyle
+- http://checkstyle.sourceforge.net/
+- http://maven.apache.org/plugins/maven-checkstyle-plugin/checkstyle.html
+
+# Userland
+
+## Core utils
+- https://github.com/google/guava
+- https://commons.apache.org/proper/commons-lang/
+
+# OpenJDK
+- http://openjdk.java.net/
+- https://adoptopenjdk.gitbooks.io/adoptopenjdk-getting-started-kit/

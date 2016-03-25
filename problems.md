@@ -9,3 +9,12 @@
 - http://stackoverflow.com/questions/3209165/need-help-with-n-queens-program-checking-diagonals
 - http://stackoverflow.com/questions/4883118/8-queens-problem
 - http://stackoverflow.com/questions/6337765/8-queens-problem-using-backtracking-recurison
+
+# The Water Pouring Problem
+- Breadth-firsth search
+
+# Infinite Stream of Prime Numbers
+
+# Greatest Common Divisor
+
+# Least Common Multiple

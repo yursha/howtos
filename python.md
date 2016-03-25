@@ -1,4 +1,5 @@
-https://docs.python.org
+- https://docs.python.org
+- https://docs.python.org/3/contents.html
 
 Isolate pip dependencies for a project
 ```
