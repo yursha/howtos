@@ -3,7 +3,6 @@
 - Functional Programming Principles in Scala by Martin Odersky - https://class.coursera.org/progfun-005
 
 # Resources
-- Bookmark: - http://www.scala-lang.org/documentation/getting-started.html
 - http://scala-lang.org/api
 - http://www.scala-lang.org/
 - http://www.scala-lang.org/community/
@@ -11,12 +10,12 @@
 - http://worrydream.com/refs/Backus-CanProgrammingBeLiberated.pdf
 - http://stackoverflow.com/tags/scala/info
 - Scala Ref Card
-- Twitter's Scala School
+- http://docs.scala-lang.org/tutorials/
+- https://twitter.github.io/scala_school/
 - Programming in Scala by Martin Odersky, Bill Venners
-- Scala Tour - in Scala docs
-- Scala Meetup
-- Typesafe Blog and Newsletter
-- This Week in Scala Blogs
+
+# Singleton objects
+- http://therightabstractions.com/2015/11/27/singleton-objects-in-scala/
 
 # Web frameworks
 - http://akka.io/
@@ -28,8 +27,6 @@
 
 # Theory
 - The substitution model reduces an expression to a value (lambda-calculus)
-- lambda-calculus is equivalent to Turing Machine in terms of what algorithms can be expressed but is functional rather than imperative.
-- lambda-calculus can only be applied to expressions which don't have side effects
 - higher-order functions
 - currying
 - mapreduce
@@ -37,3 +34,15 @@
 - fixed point
 - newton algorithm for square root computation
 - EBNF (Extended Backus-Naur Form)
+
+## Lambda Calculus
+- https://en.wikipedia.org/wiki/Lambda_calculus
+- https://en.wikipedia.org/wiki/Lambda_calculus_definition
+- lambda-calculus is equivalent to Turing Machine in terms of what algorithms can be expressed but is functional rather than imperative.
+- lambda-calculus can only be applied to expressions which don't have side effects
+- http://www.inf.fu-berlin.de/lehre/WS03/alpi/lambda.pdf
+- http://palmstroem.blogspot.com/2012/05/lambda-calculus-for-absolute-dummies.html
+- Lambda Calculus Basics Video YouTube - https://www.youtube.com/watch?v=S_WzF6BHadc
+- http://math.stackexchange.com/questions/967/learning-lambda-calculus
+- http://worrydream.com/AlligatorEggs/
+- http://osteele.com/

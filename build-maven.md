@@ -9,6 +9,21 @@
 
 # Resources
 - http://www.sonatype.com/books/mvnref-book/reference/
+- https://codehaus-plexus.github.io/ - Maven Core Components
+- http://maven.apache.org/plugin-tools/index.html
+
+# Tips
+
+## Don't use `reactor` Maven component (multi-module projects)
+Keep each module in its own git repo with a singe `pom.xml` file.
+
+### Why?
+- Specifying multiple same versions in each submodule violates DRY principle and is error-prone.
+- Module build ordering is implicit and complex in Maven reactor vs explicit when not using it.
+
+### Resources
+- https://maven.apache.org/guides/mini/guide-multiple-modules.html
+- http://books.sonatype.com/mvnex-book/reference/multimodule.html
 
 # Search
 - search.maven.org
@@ -37,6 +52,21 @@
 ## code style
 - maven-checkstyle-plugin
 
-## artifacts
-- https://maven.apache.org/components/plugins/maven-shade-plugin/
+# Shade Plugin
+- https://maven.apache.org/components/plugins/maven-shade-plugin/ (has poor documentation)
 
+Don't use `minimizeJar` if dynamic class loading is used in the code
+- http://stackoverflow.com/questions/8817257/minimize-an-uber-jar-correctly-using-shade-plugin
+- http://stackoverflow.com/questions/8698814/configure-maven-shade-minimizejar-to-include-class-files
+
+# Build A Jar with Test deps
+- http://stackoverflow.com/questions/10307652/how-to-include-test-classes-in-jar-created-by-maven-shade-plugin/36058365
+
+# Enforcer Plugin
+- https://maven.apache.org/enforcer/enforcer-rules/requireUpperBoundDeps.html
+
+# JAR Plugin
+- https://maven.apache.org/plugins/maven-jar-plugin/index.html
+- http://maven.apache.org/shared/maven-archiver/index.html
+- http://stackoverflow.com/questions/183292/classpath-including-jar-within-a-jar
+- http://one-jar.sourceforge.net/
