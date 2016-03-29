@@ -9,3 +9,8 @@
 - https://www.youtube.com/watch?v=PgnHMDNBY3o
 - http://www.drdobbs.com/web-development/secure-login-in-ajax-applications/231000884?pgno=2
 - http://www.mkyong.com/java/how-to-automate-login-a-website-java-example/
+- https://paragonie.com/blog/2015/04/secure-authentication-php-with-long-term-persistence
+
+# Remember Me
+- http://stackoverflow.com/questions/244882/what-is-the-best-way-to-implement-remember-me-for-a-website
+  http://stackoverflow.com/questions/12605681/how-to-prolong-the-remember-me-cookie-on-each-request-in-symfony2

@@ -31,9 +31,10 @@ Grammar for writing serialized tree-structured mixed-content document text inclu
 - pull-style vs push-style parsing
 
 #### Streaming API for XML (StAX) (`javax.xml.stream`) (cursor-based event-driven state-dependent pull-style stream iteration) ([JSR-173](https://jcp.org/en/jsr/detail?id=173))
-  + https://github.com/FasterXML/woodstox
-  + The Sun Java Streaming XML Parser (SJSXP) (part of GlassFish) https://sjsxp.java.net/
-  + An Introduction to StAX - http://www.xml.com/pub/a/2003/09/17/stax.html
+- https://docs.oracle.com/javase/tutorial/jaxp/stax/index.html
+- https://github.com/FasterXML/woodstox
+- The Sun Java Streaming XML Parser (SJSXP) (part of GlassFish) https://sjsxp.java.net/
+- An Introduction to StAX - http://www.xml.com/pub/a/2003/09/17/stax.html
 
 #### Simple API for XML (SAX1/SAX2) (http://www.saxproject.org/)
   + state-independent push-style stream iteration

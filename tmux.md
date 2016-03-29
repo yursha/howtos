@@ -9,8 +9,9 @@
 - http://www.techrepublic.com/blog/linux-and-open-source/is-tmux-the-gnu-screen-killer/
 - https://raw.githubusercontent.com/danielmiessler/tmux/master/.tmux.config
 - https://danielmiessler.com/study/tmux/
-- https://gist.github.com/MohamedAlaa/2961058
+- tmux shortcuts & cheatsheet - https://gist.github.com/MohamedAlaa/2961058
 - https://www.google.com/search?q=tmux+tutorial
+- http://www.dayid.org/comp/tm.html
 
 # Use
 - Open command prompt `prefix-:`
@@ -24,14 +25,17 @@
 - Kill session `tmux kill-session -t mysession`
 - `prefix-$` - rename session
 
-# Windows
-- New window `prefix-c`
-- Name window `prefix-,`
-- List windows `:lsw` or `prefix-w`
-- Find window `prefix-f`
-- Switch to window 1 `prefix-1`
-- Kill window `prefix-&`
-- Move window `prefix-.` or `:movew`
+# Windows (tabs) prefix commands
+```
+c - create window
+w - list windows
+n - next window
+p - previous window
+f - find window
+, - name window
+& - kill window
+. - move window
+```
 
 # Panes
 - Kill a pane `prefix-x`

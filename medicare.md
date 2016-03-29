@@ -1,0 +1,3 @@
+- http://www.csscoperations.com/internet/cssc3.nsf/docsCatHome/CSSC%20Operations
+- https://medicare.com/medicare-advantage/medicare-part-c/
+- Medicare Managed Care Manual - Risk Adjustment https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/mc86c07.pdf

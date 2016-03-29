@@ -1,16 +1,17 @@
 # Art of logging
-- **Wrap interpolated textual values into single quotes**.
-- **Respect log levels** sot that you can easily adjust log verbosity in development and production environments and grep out only important messages easily.
+- **Wrap with single quotes dynamic variables in error messages**.
+- **Respect log levels** to be able to adjust log verbosity in different environments and filter log messages by level.
 - Log files are **append-only**. Be sure to log only what is really helpful during debugging as log files can grow and take a lot of disk space. There should be an **archiving policy** for log files. In production environment its  helpful to print 'INFO', 'WARN' and 'ERROR' level messages only to save **disk space**. Their should be a separate **build profile** for development and production environments.
 
 # Art of writing easy to debug software
-- Loudly **crash on error** if recovery is not meaningful.
-- Assert valid input for program and API (defensive programming)
+- Crash if recovery is not meaningful.
+- Assert user (or external API input) is valid
+- Assert internal API input is valid (defensive programming)
 - **Log all errors** with as much information (including stack trace) as possible.
-- In a multithreaded application **make number of threads configurable from the command line**. So during debug time you will be able to set `-Dthreads=1` and enjoy serial single-thread logging.
+- In a multithreaded application **make number of threads configurable from the command line**. So during debug time you will be able to set `-Dthreads=1` and enjoy serial logging.
 
 # Art of debugging
-- Look for recent source code changes which might have introduced a bug in a version control system.
+- Look for recent source code changes which might have introduced a bug in a version control system. (git bisect)
 - isolate (divide and conquer)
 
 ## Java
@@ -31,3 +32,18 @@ Logical exceptions must be checked and handled. Software or execution environmen
 - ability to specify log level from the command-line, e.g. `-Dlog=DEBUG`. As of September 2015 java logging libraries (e.g. log4j, log4j2, etc.) have no such ability. The best approach then is to configure logging library programmatically and dynamically (instead of config xml files) based on some environment variable. The downside of this approach is that you will need to write additional Java code once for initialization logic and for every entry point to a program to trigger that initialization. For now its better to stick to manually changing `log4j2.xml` before launch (even if it requires repackaging). Investigate how to change `log4j2.xml` file in jar without repackaging OR how to build a class path for maven `target` directory to launch app unpackaged.
 - Asynchronous execution
 - automatic reloading of configuration
+
+# Presenting exceptions on the UI
+- No stack trace
+
+Java servlets allow for mapping exception types to redirect urls
+```
+<error-page>
+    <exception-type>bad.robot.example.SessionExpiredException</exception-type>
+    <location>/login</location>
+</error-page>
+<error-page>
+    <exception-type>bad.robot.example.Defect</exception-type>
+    <location>/internalServerError</location>
+</error-page>
+```
