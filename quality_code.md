@@ -6,6 +6,9 @@
 - https://github.com/braydie/HowToBeAProgrammer
 - Brian W. Kernighan and Rob Pike - "The Practice of Programming"
 
+# Standard Streams
+- Develop data processing tools so that they work as data processing filters accepting data from STDIN and sending it to STDOUT
+
 # Name stuff
 - keep logic in small named functions for readability
 
