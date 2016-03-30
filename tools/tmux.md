@@ -12,6 +12,17 @@
 - tmux shortcuts & cheatsheet - https://gist.github.com/MohamedAlaa/2961058
 - https://www.google.com/search?q=tmux+tutorial
 - http://www.dayid.org/comp/tm.html
+- http://minimul.com/teaches/tmux
+- https://robots.thoughtbot.com/a-tmux-crash-course
+- http://blog.hawkhost.com/2010/06/28/tmux-the-terminal-multiplexer/
+- http://man.openbsd.org/OpenBSD-current/man1/tmux.1
+
+# Persist tmux sessions across system reboots
+- https://github.com/tmux-plugins/tmux-resurrect
+- http://superuser.com/questions/440015/restore-tmux-session-after-reboot
+- http://superuser.com/questions/863295/adjusting-screen-split-pane-sizes-in-tmux
+- http://stackoverflow.com/questions/18644359/select-pane-with-c-number-in-tmux
+- http://code.tutsplus.com/tutorials/intro-to-tmux--net-33889
 
 # Use
 - Open command prompt `prefix-:`

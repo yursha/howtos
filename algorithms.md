@@ -49,3 +49,6 @@ Most of the node selection schemes deal with the following **concepts**:
 # Hash Table
 - linear probing
 - buckets
+
+# Graphs
+- http://www.geeksforgeeks.org/transitive-closure-of-a-graph/

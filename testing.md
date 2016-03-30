@@ -29,3 +29,8 @@
 
 # Mocking
 - http://www.jmock.org/
+
+# ScalaTest
+- http://www.scalatest.org/
+- http://www.scalatest.org/user_guide/using_assertions
+- http://www.scalatest.org/user_guide/using_the_scalatest_shell

@@ -1,5 +1,6 @@
 # Refs
 - http://teaching.idallen.com/dat2343/10f/notes/
+- https://www.coursera.org/course/hwswinterface
 
 # MIPS
 - spim - MIPS simulator

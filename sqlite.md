@@ -61,8 +61,13 @@ Source: https://www.sqlite.org/lang_createtable.html
 - https://www.sqlite.org/queryplanner.html √
 - https://www.sqlite.org/queryplanner-ng.html
 - https://www.sqlite.org/lang_analyze.html
+- http://stackoverflow.com/questions/1711631/improve-insert-per-second-performance-of-sqlite
+- http://codereview.stackexchange.com/questions/26822/myth-busting-sqlite3-performance-w-pysqlite
+- http://blog.quibb.org/2010/08/fast-bulk-inserts-into-sqlite/
 
 # Security
 - consider using `PRAGMA secure_delete = 1`
 
+# Usages
+- https://www.sqlite.org/appfileformat.html
 

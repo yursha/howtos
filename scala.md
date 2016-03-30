@@ -13,9 +13,14 @@
 - http://docs.scala-lang.org/tutorials/
 - https://twitter.github.io/scala_school/
 - Programming in Scala by Martin Odersky, Bill Venners
+- http://www.lightbend.com/
+- http://www.cakesolutions.net/
 
 # Singleton objects
 - http://therightabstractions.com/2015/11/27/singleton-objects-in-scala/
+
+# Style
+- http://www.scalastyle.org/
 
 # Web frameworks
 - http://akka.io/

@@ -4,3 +4,6 @@
 
 # Spring Data
 - http://projects.spring.io/spring-data
+
+# Spring REST Service
+- https://spring.io/guides/gs/rest-service/

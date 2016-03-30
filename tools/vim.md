@@ -9,6 +9,7 @@
 - http://stackoverflow.com/questions/82726/convert-dos-line-endings-to-linux-line-endings-in-vim
 - https://github.com/mhinz/vim-galore
 - http://vim.wikia.com/wiki/Converting_variables_to_or_from_camel_case
+- https://robots.thoughtbot.com/set-your-mouse-free
 
 # `:help <arg>` or `:helpgrep <arg`
 Bookmark: quickref, usr_06.txt, reference_toc
