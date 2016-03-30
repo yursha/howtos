@@ -33,6 +33,15 @@ Logical exceptions must be checked and handled. Software or execution environmen
 - Asynchronous execution
 - automatic reloading of configuration
 
+# Art of exception handling
+- Identify the boundaries (and so when to handle).
+- Define a general handling approach for each boundary (how to handle).
+- Application specific exception subclasses should be specialised.
+- Exceptions are objects too; think OO.
+- Never catch an exception and rethrow verbatim.
+- However, if required, do translate an exception into another only at the boundaries.
+- Don’t forget that boundaries can be internal, just be explicit about where they are.
+
 # Presenting exceptions on the UI
 - No stack trace
 
@@ -46,4 +55,25 @@ Java servlets allow for mapping exception types to redirect urls
     <exception-type>bad.robot.example.Defect</exception-type>
     <location>/internalServerError</location>
 </error-page>
+```
+
+# Presenting exceptions from RESTful API
+- No stack trace
+
+Jersey allows translating java exceptions into HTTP status codes
+```
+@Provider
+public class NotFoundExceptionMapper implements ExceptionMapper<NotFoundException> {
+    public Response toResponse(CustomerNotFoundException notFound) {
+        return Response.status(404).entity(notFound.getMessage()).build();
+    }
+}
+
+// Handler for unexpected exceptions
+@Provider
+public class RuntimeExceptionMapper implements ExceptionMapper<Throwable> {
+    public Response toResponse(Throwable exception) {
+        return Response.status(500).entity(exception).build();
+    }
+}
 ```

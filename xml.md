@@ -32,9 +32,11 @@ Grammar for writing serialized tree-structured mixed-content document text inclu
 
 #### Streaming API for XML (StAX) (`javax.xml.stream`) (cursor-based event-driven state-dependent pull-style stream iteration) ([JSR-173](https://jcp.org/en/jsr/detail?id=173))
 - https://docs.oracle.com/javase/tutorial/jaxp/stax/index.html
+- https://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamReader.html
 - https://github.com/FasterXML/woodstox
 - The Sun Java Streaming XML Parser (SJSXP) (part of GlassFish) https://sjsxp.java.net/
 - An Introduction to StAX - http://www.xml.com/pub/a/2003/09/17/stax.html
+- http://www.developer.com/xml/article.php/3397691/Does-StAX-Belong-in-Your-XML-Toolbox.htm
 
 #### Simple API for XML (SAX1/SAX2) (http://www.saxproject.org/)
   + state-independent push-style stream iteration

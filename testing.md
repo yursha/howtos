@@ -15,10 +15,10 @@
 ## Junit
 - http://junit.org/
 - https://github.com/junit-team/junit4/wiki
-- http://junit.org/junit4/javadoc/latest/index.html
+- http://junit.org/junit4/javadoc/latest/overview-summary.html
 - https://github.com/junit-team/junit4/
 - http://www.infoq.com/news/2009/07/junit-4.7-rules
-- http://baddotrobot.com/blog/2012/03/27/expecting-exception-with-junit-rule/index.html
+- http://baddotrobot.com/blog/2012/03/27/expecting-exception-with-junit-rule/
 
 ## Harmcrest
 - http://hamcrest.org/
