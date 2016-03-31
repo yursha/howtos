@@ -84,6 +84,11 @@ pattern='[[:space:]]*(a)?b'
 - `( expr1;expr2 )` - creates new scope
 - `{ expr1;expr2; }` - doesn't create new scope
 
+## process substitution
+- https://gnu.org/software/bash/manual/bash.html#Process-Substitution
+- http://tldp.org/LDP/abs/html/process-sub.html
+- http://wiki.bash-hackers.org/syntax/expansion/proc_subst
+
 ## functions
 
 

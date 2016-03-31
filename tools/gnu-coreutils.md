@@ -29,7 +29,7 @@
 - `sort` - sort lines of text files
 - `shuf` - generate random permutations
 - `uniq`
-- `comm`
+- `comm` - compare two sorted files line by line
 - `ptx`
 - `tsort` - topological sort
 

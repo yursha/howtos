@@ -24,10 +24,15 @@ Bookmark: quickref, usr_06.txt, reference_toc
 - `E37` - errors - `subject()` - functions - `+subject` - compile-time feature
 
 
-# Motion
-   k
- h   l
-   j
+# Capture output of an external command
+- http://vim.wikia.com/wiki/Append_output_of_an_external_command
+
+## From inside vim
+- `:r !date` - append output of system `date` command to the current buffer
+
+## From outside vim
+- `date | vim -`
+- `vim <(ls -la)`
 
 - ^ - first non-space char in a line
 - 0 - first char in a line
