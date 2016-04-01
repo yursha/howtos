@@ -207,7 +207,8 @@ If you run `git difftool` instead of `git diff`, you can view any of these diffs
 - http://stackoverflow.com/questions/822811/showing-which-files-have-changed-between-two-revisions
 
 
-- `git show v2.5:Makefile` - time machine for a file.
+# See file at a specific revision
+- `git show REVISION:Makefile` - time machine for a file.
 
 # Art of merging and conflict resolution
 ## Refs
