@@ -77,3 +77,11 @@ public class RuntimeExceptionMapper implements ExceptionMapper<Throwable> {
     }
 }
 ```
+
+# Errors
+## Syntactical Errors
+### Lexical Errors
+
+## Semantical Errors
+
+## Logical Errors
