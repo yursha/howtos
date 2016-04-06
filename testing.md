@@ -20,7 +20,7 @@
 - http://www.infoq.com/news/2009/07/junit-4.7-rules
 - http://baddotrobot.com/blog/2012/03/27/expecting-exception-with-junit-rule/
 
-## Harmcrest
+## Hamcrest
 - http://hamcrest.org/
 - http://hamcrest.org/JavaHamcrest
 - https://code.google.com/archive/p/hamcrest/wikis/HamcrestDistributables.wiki
