@@ -37,3 +37,6 @@
 - automatic reloading of configuration
 - filtering
 - file, syslog and socket appenders, async appenders
+
+# Graylog
+- http://docs.graylog.org/en/1.3/pages/queries.html#keyword-time-frame-selector

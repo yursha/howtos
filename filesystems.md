@@ -59,3 +59,9 @@ File system is a kernel driver
 
 # Security
 - CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition https://cwe.mitre.org/data/definitions/367.html
+
+# Recovery
+- http://unix.stackexchange.com/questions/48200/recovered-deleted-files-on-mac-by-command-line
+- https://www.quora.com/Unix-Commands-What-are-some-easy-ways-to-recover-files-from-rm-rf
+- http://unix.stackexchange.com/questions/48200/recovered-deleted-files-on-mac-by-command-line
+- http://unix.stackexchange.com/questions/101237/how-to-recover-files-i-deleted-now-by-running-rm

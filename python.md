@@ -1,5 +1,6 @@
 - https://docs.python.org
 - https://docs.python.org/3/contents.html
+- http://www.diveintopython.net/
 
 Isolate pip dependencies for a project
 ```
@@ -20,3 +21,26 @@ json.loads(string)
 
 Load python util functions from a file in a REPL:
 - `execfile('/path/to/file.py')`
+
+# Env
+- http://stackoverflow.com/questions/633127/viewing-all-defined-variables
+
+# Lists
+- http://stackoverflow.com/questions/3451157/python-list-sublist-selection-1-weirdness
+```
+len(list) // size of the list
+```
+
+# String processing
+- http://stackoverflow.com/questions/275018/how-can-i-remove-chomp-a-newline-in-python
+
+# IO
+- http://stackoverflow.com/questions/3277503/python-read-file-line-by-line-into-array
+
+# Loops imperative
+- http://stackoverflow.com/questions/2990121/how-do-i-loop-through-a-python-list-by-twos
+- http://stackoverflow.com/questions/7423118/python-list-for-each-access-find-replace-in-built-in-list
+
+# Loops functional
+- http://www.diveintopython.net/native_data_types/mapping_lists.html
+

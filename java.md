@@ -368,3 +368,7 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 
 # OpenJDK
 - http://openjdk.java.net/guide/
+
+# Strings
+- http://stackoverflow.com/questions/1751844/java-convert-liststring-to-a-joind-string
+- http://stackoverflow.com/questions/6952363/replace-a-character-at-a-specific-index-in-a-string

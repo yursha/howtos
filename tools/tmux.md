@@ -48,7 +48,10 @@ f - find window
 . - move window
 ```
 
-# Panes
-- Kill a pane `prefix-x`
-- Horizontal split `prefix-%`
-- Vertical split `prefix-"`
+# Panes prefix commands
+```
+z - maximize/unmaximize pane
+x - kill
+% - horizontal split
+" - vertical split
+```

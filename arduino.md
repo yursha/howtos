@@ -1,0 +1,2 @@
+- http://www.arduino.cc/en/Guide/Introduction
+- http://store-usa.arduino.cc/

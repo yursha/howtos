@@ -34,3 +34,6 @@
 - http://www.scalatest.org/
 - http://www.scalatest.org/user_guide/using_assertions
 - http://www.scalatest.org/user_guide/using_the_scalatest_shell
+
+# Maven Surefire
+- https://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html

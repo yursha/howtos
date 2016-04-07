@@ -78,7 +78,18 @@ public class RuntimeExceptionMapper implements ExceptionMapper<Throwable> {
 }
 ```
 
+# Scala
+- http://danielwestheide.com/blog/2012/12/26/the-neophytes-guide-to-scala-part-6-error-handling-with-try.html
+
 # Errors
+- http://programmers.stackexchange.com/questions/113800/whats-the-difference-between-syntax-and-semantics
+- https://www.quora.com/What-are-the-differences-between-syntax-errors-and-semantic-errors
+- http://stackoverflow.com/questions/17930267/what-is-the-difference-between-syntax-and-semantics-of-programming-languages
+- http://www.programcreek.com/2011/10/syntactic-vs-semantic-vs-runtime-error/
+- https://en.wikipedia.org/wiki/Colorless_green_ideas_sleep_furiously
+- http://www.mosaichub.com/answers/question/what-is-the-is-the-difference-between-symantic-err
+- https://wci.llnl.gov/codes/basis/manual/node53.html
+
 ## Syntactical Errors
 ### Lexical Errors
 

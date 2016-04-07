@@ -37,9 +37,10 @@
 # RDP
 - `rdesktop` - archlinux package and tool for RDP
 
-# WiFi
+# wifi
 ## `iw`
 - http://wireless.kernel.org/en/users/Documentation/iw
+- https://github.com/patjak/bcwc_pcie/wiki/Get-Started
 
 # WPA2
 ## `wpa-supplicant`

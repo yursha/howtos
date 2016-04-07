@@ -12,6 +12,11 @@ Parameters can be passed to the kernel:
 
 - `cat /proc/cmdline` - print to STDOUT parameters the kernel was booted up with.
 
+# LFS
+- http://lelandbatey.com/posts/2014/10/building-linux-from-scratch/
+- https://duskfire.wordpress.com/2012/05/01/linux-from-scratch-part-one/
+- https://www.youtube.com/watch?v=qZJzbI6ZJ34
+
 # Packages
 
 ## util-linux
