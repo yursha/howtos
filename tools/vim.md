@@ -23,7 +23,6 @@ Bookmark: quickref, usr_06.txt, reference_toc
 - `/[` - regex
 - `E37` - errors - `subject()` - functions - `+subject` - compile-time feature
 
-
 # Capture output of an external command
 - http://vim.wikia.com/wiki/Append_output_of_an_external_command
 
@@ -34,25 +33,7 @@ Bookmark: quickref, usr_06.txt, reference_toc
 - `date | vim -`
 - `vim <(ls -la)`
 
-- ^ - first non-space char in a line
-- 0 - first char in a line
-- $ - EOL
-
-- f-char - before next char in a line (,;)
-- F-char - before previous char in a line (,;)
-- t-char - at next char in a line (,;)
-- T-char - at previous char in a line (,;)
-
-- w - word start forwards
-- b - word start backwards
-- e - word end forwards
-- ge - word end backwards
-- W - white-space separated word start forwards
-- B - white-space separated word start backwards
-- E - white-space separated word end forwards
-- gE - white-space separated word end backwards
-
-- % - move to matching (),[],{} or *matchpairs* option (or find first in a line)
+# File scrolling
 - 2% - go to 2% of a file
 - CTRL+b - scroll up a page
 - CTRL+f - scroll down a page
@@ -63,7 +44,6 @@ Bookmark: quickref, usr_06.txt, reference_toc
 - zz - scroll current line into center (*scrolloff* option - number of lines to pad the current line when scrolling)
 - zt - scroll current line to the top
 - zb - scroll current line to the bottom
-- gg, 2G, G - jump to first, 2, last line
 - H/M/L - jump to first (home), middle, last currently seen line
 - CTRL+0 - jump forward
 - CTRL+I - jump backward
@@ -71,6 +51,8 @@ Bookmark: quickref, usr_06.txt, reference_toc
 - `` - jump back and force between 2 positions 
 - set 26 marks with `ma`-`mz` and jump to them with `a-`z (marked col) or 'a-'z (first col) *Doesn't jump across buffers*
 - `:marks` (' - position before jump, " - position when last editing a file, [ - start of last change, ] - end of last change
+- Ctrl+o, Ctrl+i - jump to previous/next cursor position
+- Ctrl+r;Ctrl+w (or <r>) - copy a word into command line
 
 ## Search and replace
 - Use `Ctrl-L` to insert next char in the match or `Ctrl-r,Ctrl-w` to complete a word match.
@@ -79,8 +61,6 @@ Bookmark: quickref, usr_06.txt, reference_toc
 - `g*`, `g#` - search **word** under the cursor as a match 
 - `4n`, `4N` - N-th match after/before
 - `ggn`, `GN` - first / last match
-- Ctrl+o, Ctrl+i - jump to previous/next cursor position
-- Ctrl+r;Ctrl+w (or <r>) - copy a word into command line
 - `:%s/\n//gc` - replace newlines
 - `:g/pattern` - show all lines matching the pattern
 - `:g/pattern/d` - delete all lines matching a pattern (e.g. `:g/^$/d` - deletes all empty lines)
@@ -123,7 +103,6 @@ Bookmark: quickref, usr_06.txt, reference_toc
 - d-motion, dd
 - c-motion, cc
 - r-motion 
-- . - repeat change
 - 4p
 - y-motion, yy
 - "*y, "*yy - yank to clipboard (only works in versions of vim that include clipboard support)
@@ -133,20 +112,11 @@ Bookmark: quickref, usr_06.txt, reference_toc
 - ZZ,w,q<!>,e<!> - working with buffers
 - ~ - change case (**tildeop**)
 
-# INSERT MODE
-- i,I,a,A,o,O - enter mode
-- CTRL-C - leave mode
-
 # Text Objects
 - aw - a word
 - iw - inner word
 - as - a sentence
 - is - inner sentence
-
-# visual mode
-- v - char visual mode (o - jump to other side of selection)
-- V - line visual mode
-- CTRL-v - col visual mode (O - jump to additional 2 corners)
 
 # Commands
 - `:` - navigate thru command history
@@ -164,7 +134,6 @@ Bookmark: quickref, usr_06.txt, reference_toc
 
 ## Text editing
 - http://vim.wikia.com/wiki/Switching_case_of_characters
-- `gg=G` - reformat/reindent text
 - Put `filetype plugin indent on` into `~/.vimrc` - enable java indentation
 
 
@@ -213,9 +182,6 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 # Vim configuration
 - `:scriptnames`
 
-# Indentation
-- `>` and `<` commands
-
 # Mapping
 - `:map` - list current mappings
 
@@ -239,10 +205,62 @@ Michael Sanders - http://www.vim.org/account/profile.php?user_id=16544
 
 - https://github.com/jarijokinen/snipmate.vim (Fork with toUpperCase Functionality)
 
-# Shortcuts
-- `,` - repeat the previous command/movement
-
 # Autocompletion
 ## Builtin
 Works in Insert Mode
-- `CTRL+N`
+- `<C-n>`
+
+# Visual mode
+- v - char visual mode (o - jump to other side of selection)
+- V - line visual mode
+- CTRL-v - col visual mode (O - jump to additional 2 corners)
+
+# Insert Mode
+- i,I,a,A,o,O - enter mode
+- <C-c> or <ESC> - leave mode
+
+# Basic commands
+- `d` - delete
+- `J` - join lines
+- `y` - yank
+- `yy` - yank line
+
+# Shortcuts
+- `C` = `c$`
+- `s` = `cl`
+- `S` = `^C`
+- `I` = `^i`
+- `A` = `$a`
+- `o` = `A<CR>`
+- `O` = `ko`
+- `x` = `dl`
+- `c<mov>` = `d<mov>i`
+- `dd` = `S<ESC>J`
+
+# Movement
+- 0 - first char in a line
+- w - word start forwards
+- b - word start backwards
+- e - word end forwards
+- ge - word end backwards
+- W - white-space separated word start forwards
+- B - white-space separated word start backwards
+- E - white-space separated word end forwards
+- gE - white-space separated word end backwards
+- % - move to matching (),[],{} or *matchpairs* option (or find first in a line)
+- gg, 2G, G - jump to first, 2, last line
+
+# Repetitions
+- `.` - repeat change
+- `u` - undo
+- `@:` - repeat Ex Command
+- `&` - repeat substitute command
+- `n` or `N` - repeat previous pattern search (`/`, `?`, `*`)
+- `;` or `,` - repeat previous character search (`f`, `t`, `F`, `T`)
+- `@x` - repeat macro (`qx{changes}q`)
+
+# Indentation
+- `>` and `<` commands
+- `>G` - increase indent from current line to end of file
+- `gg=G` - reformat/reindent text
+
