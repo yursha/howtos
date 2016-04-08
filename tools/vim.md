@@ -130,9 +130,12 @@ Bookmark: quickref, usr_06.txt, reference_toc
 - "*p - paste from clipboard
 - u,U,CTRL-r - undoing
 - R - replace mode
-- i,a,o - triggering insert mode
 - ZZ,w,q<!>,e<!> - working with buffers
 - ~ - change case (**tildeop**)
+
+# INSERT MODE
+- i,I,a,A,o,O - enter mode
+- CTRL-C - leave mode
 
 # Text Objects
 - aw - a word
@@ -188,8 +191,9 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 ## Buffers
 - `:ls` or `:ls!` - list in memory buffers (`:buffers`)
 - `:f` - see info about current buffer
-- `:b2` - swith to second buffer (also `:bu` or `:buf` or `:buffer`)
+- `:b2` - swith to second buffer
 - `:b MyCl` - switch to `MyClass` file (any part of file name can match with stronger preference for the matches from the beginning). Tab can be used to autocomplete and to cycle thru matching names. Use Ctrl+D to list all matching names at once.
+- `:b#` - switch to previous buffer
 - `:e path/to/file` - create a buffer with associated file path (if file exists then read from it)
 - `:e` - reload the current file if it was changed on disk
 - `:q` - quit vim
@@ -197,7 +201,7 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 - `:saveas 'filepath'` - clone buffer and save it to a different filepath
 - `:bufdo %s/pattern/replace/ge | update` - search and replace in all open buffers.
 
-- `vim 'find ...'` - open multiple files 
+- `vim $(find ...)` - open multiple files
 
 ## Argument list
 - `:args **` - open all files in cwd recursively (including directory files)
@@ -234,3 +238,11 @@ Michael Sanders - http://www.vim.org/account/profile.php?user_id=16544
 - https://github.com/msanders/snipmate.vim
 
 - https://github.com/jarijokinen/snipmate.vim (Fork with toUpperCase Functionality)
+
+# Shortcuts
+- `,` - repeat the previous command/movement
+
+# Autocompletion
+## Builtin
+Works in Insert Mode
+- `CTRL+N`

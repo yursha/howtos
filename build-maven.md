@@ -70,6 +70,7 @@ Don't use `minimizeJar` if dynamic class loading is used in the code
 - http://maven.apache.org/shared/maven-archiver/index.html
 - http://stackoverflow.com/questions/183292/classpath-including-jar-within-a-jar
 - http://one-jar.sourceforge.net/
+- https://maven.apache.org/shared/maven-archiver/index.html#class_manifest
 
 # Proguard Maven Plugin
 - https://github.com/wvengen/proguard-maven-plugin

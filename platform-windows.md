@@ -39,3 +39,7 @@ To open a file in a default program just type file path on the command line
 # PowerShell
 - https://technet.microsoft.com/en-us/library/bb978526.aspx
 - https://technet.microsoft.com/en-us/library/ee221100.aspx
+
+# Tools
+- http://arstechnica.com/information-technology/2016/03/ubuntus-bash-and-linux-command-line-coming-to-windows-10/
+- http://blog.dustinkirkland.com/2016/03/ubuntu-on-windows.html

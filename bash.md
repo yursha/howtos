@@ -102,6 +102,8 @@ If the `;;` operator is used, no subsequent matches are attempted after the firs
 
 - `echo $?` - echo exit value of the last executed child process.
 - `echo $'\n'` - echo extra newlines
+
+# Shortcuts
 - `!!` - execute the previous command
 - `!<prefix> - last command from history that matches
 

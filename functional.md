@@ -10,3 +10,7 @@
 
 # Sequences
   + zip, unzip
+
+# JS
+- https://medium.com/@chetcorcos/functional-programming-for-javascript-people-1915d8775504#.pldnjhp3p
+- https://tech.evojam.com/2016/02/22/practical-intro-to-monads-in-javascript/

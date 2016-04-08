@@ -22,6 +22,7 @@
 - https://www.sqlite.org/vdbe.html - Old Virtual Machine
 
 # Optimizing
+- http://www.codificar.com.br/blog/sqlite-optimization-faq/
 - https://www.sqlite.org/inmemorydb.html
 - https://www.sqlite.org/pragma.html
 - https://www.sqlite.org/lang_expr.html

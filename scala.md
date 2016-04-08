@@ -29,6 +29,8 @@
 
 # SBT
 - http://www.scala-sbt.org/
+- https://class.coursera.org/progfun-005/wiki/SbtTutorial
+- http://www.scala-sbt.org/0.13/docs/Directories.html
 
 # Theory
 - The substitution model reduces an expression to a value (lambda-calculus)
