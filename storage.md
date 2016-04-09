@@ -1,1 +1,21 @@
 - http://www.solidfire.com/why-solidfire
+
+- https://ata.wiki.kernel.org/index.php/ATA_Secure_Erase
+- gparted
+- fdisk
+- mkfs
+- mkfs.ext4
+- mkfs.vfat
+- cgisk
+- parted
+- hdparm
+- syslinux
+- backblocks
+- fschk
+- smartctl
+- sg_format (sg3_utils)
+- https://github.com/adamcaudill/Psychson
+
+- Stack Overflow : flipping the removable media bit - alternatives to BootIt
+- SO: how to format/repair a write-protected USB drive with I/O errors
+- Repairing-without-formatting a Read-Only/writeprotected USB drive
