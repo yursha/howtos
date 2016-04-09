@@ -20,6 +20,7 @@
 - http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/drivers/tty/Kconfig
 - https://en.wikipedia.org/wiki/Code_page_437
 - Deprecating CONFIG_VT - https://dvdhrm.wordpress.com/2012/08/12/killing-off-config_vt/
+- http://www.tldp.org/HOWTO/Keyboard-and-Console-HOWTO-7.html
 
 ## Terminal fonts
 - `setfont ter-v32n` - set a bigger terminal font on a HiDPI device (add to `~/.bash_profile`)

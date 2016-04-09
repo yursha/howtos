@@ -4,6 +4,8 @@
 - http://tldp.org/LDP/intro-linux/html/index.html
 - ftp://www-uxsup.csx.cam.ac.uk/pub/doc/suse/suse9.2/suselinux-adminguide_en/index.html
 - http://www.ibm.com/developerworks/linux/newto/
+- https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/3/html/System_Administration_Guide/s1-swap-adding.html
+- http://www.thegeekstuff.com/2010/08/how-to-add-swap-space/
 
 Parameters can be passed to the kernel:
 - at compile-time

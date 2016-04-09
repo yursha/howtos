@@ -1,0 +1,6 @@
+- https://wiki.centos.org/AdditionalResources/Repositories
+- http://fedoraproject.org/wiki/Staying_close_to_upstream_projects
+- http://unix.stackexchange.com/questions/634/what-are-the-pros-cons-of-deb-vs-rpm
+- https://en.wikipedia.org/wiki/Dpkg
+- http://www.rpm.org/max-rpm/rpm.8.html
+- https://en.wikipedia.org/wiki/RPM_Package_Manager
