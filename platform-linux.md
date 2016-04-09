@@ -220,3 +220,6 @@ Sudo can also be used to run commands as other users; additionally, sudo logs al
 - https://github.com/patjak/bcwc_pcie/wiki/Get-Started
 - https://bugzilla.kernel.org/show_bug.cgi?id=711311
 - https://wiki.archlinux.org/index.php/MacBookPro11,x#Web_cam
+
+# Uptime
+- http://unix.stackexchange.com/questions/131775/how-long-has-my-linux-system-been-running

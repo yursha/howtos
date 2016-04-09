@@ -48,10 +48,17 @@ f - find window
 . - move window
 ```
 
-# Panes prefix commands
+# Panes
+- `join-pain -s <window.pane>`
+- Join Panes - https://forums.pragprog.com/forums/242/topics/10533
+- http://maciej.lasyk.info/2014/Nov/19/tmux-join-pane/
+- http://superuser.com/questions/732240/merging-different-windows-in-tmux
+
+## prefix commands
 ```
 z - maximize/unmaximize pane
 x - kill
 % - horizontal split
 " - vertical split
+q - show pane numbers
 ```

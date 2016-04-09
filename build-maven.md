@@ -8,6 +8,7 @@
 - https://github.com/technomancy/leiningen
 
 # Resources
+- POM Reference - https://maven.apache.org/pom.html
 - http://www.sonatype.com/books/mvnref-book/reference/
 - https://codehaus-plexus.github.io/ - Maven Core Components
 - http://maven.apache.org/plugin-tools/index.html

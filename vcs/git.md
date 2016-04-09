@@ -24,8 +24,7 @@
 - `git-help`
 
 # Bookmark
-- `man git-clone`
-- `man git-branch`
+- Done: clone, brach, remote
 - `man git-merge` : Bookmark: options `--no-commit`
 
 # Compare the fetched commits with local branch
@@ -211,6 +210,8 @@ If you run `git difftool` instead of `git diff`, you can view any of these diffs
 - `git show REVISION:Makefile` - time machine for a file.
 
 # Art of merging and conflict resolution
+In git if anyone move an directory and someone else create a file in that directory in another branch merging logic won't detect this and the created file will land in the unexpected place after the merge. That's why if someone is going to rename or move directories they should notify other collaborators about that.
+
 ## Refs
 - Bookmark: https://en.wikipedia.org/wiki/Merge_(version_control)#Fuzzy_patch_application
 - Bookmark: https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging # Ignoring whitespace
@@ -249,6 +250,7 @@ So the presentation of conflicts is really a matter of the plugin used; the defa
 - `git merge bob/master`
 - `git diff` will show the conflicts when merge failed.
 - `git commit -a` will commit a merge once all conflicts are resolved.
+- http://stackoverflow.com/questions/226976/how-can-i-know-in-git-if-a-branch-has-been-already-merged-into-master
 
 ## Undo a commit 
 - http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
@@ -317,17 +319,14 @@ Stashing takes modified tracked files and staged changes and saves it on a stack
 - `git stash pop` - apply the topmost stash and drop it.
 
 # Remotes
-- `% git remote` - list remote names
-- `% git remote -v` - list remote names and urls
-- `% git remote add [remote-name] [url]`
-- `% git remote show [remote-name]`
-- `% git remote rename [remote-name] [new-remote-name]` - renames a remote
-- `% git remote rm [remote-name]` - deletes a remote
-
+- `% git ls-remote` - list references in a remote repository
 - `% git fetch [remote-name]`
 - `% git fetch --all`
 
 ## Rebasing
+- http://gitforteams.com/resources/rebasing.html
+- https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/
+- https://help.github.com/articles/resolving-merge-conflicts-after-a-git-rebase/
 Allows for a cleaner history which is important for a code review and easy pull requests integration.
 Do not rebase commits that exist outside your repository.
 If you treat rebasing as a way to clean up and work with commits before you push them, and if you only rebase commits that have never been available publicly, then you’ll be fine. If you rebase commits that have already been pushed publicly, and people may have based work on those commits, then you may be in for some frustrating trouble, and the scorn of your teammates.

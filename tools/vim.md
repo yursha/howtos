@@ -132,11 +132,6 @@ Bookmark: quickref, usr_06.txt, reference_toc
 - `!rm %` - remove current file from disk
 - `bd` - remove current buffer from memory
 
-## Text editing
-- http://vim.wikia.com/wiki/Switching_case_of_characters
-- Put `filetype plugin indent on` into `~/.vimrc` - enable java indentation
-
-
 ### Examples
 - `:%s/^\(\s*\)incrementSuspects(\(.\{-}\),.*"\(.*\)");$/\0\r\1table.error("\3", \2);/g`
 Find all calls to `incrementSuspects`, remember the indentation, first and last parameters.
@@ -151,11 +146,10 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 :w !diff % -
 ```
 
-## Bulk edit
-- `:args src/main/java/**/*.java | argdo execute "normal gg=G" | update` - reindent - `:args src/main/java/**/*.java | argdo :%s/\s\+$//g | update` - remove all trailing whitespace - `:args src/main/java/**/*.java | argdo set ff=unix | update` - convert all line terminators to unix (LF) # Commands - `:range s[ubstitute]/pattern/string/cgiI` - `:g/^\s*$/d` ## Delete lines from 65 to 126 if cursor is on line 65 - `d126G` - `65,126d`
+
+# Commands - `:range s[ubstitute]/pattern/string/cgiI` - `:g/^\s*$/d` ## Delete lines from 65 to 126 if cursor is on line 65 - `d126G` - `65,126d`
 - `:.,126d`
 - `:,126d`
-
 
 ## Buffers
 - `:ls` or `:ls!` - list in memory buffers (`:buffers`)
@@ -169,6 +163,7 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 - `:w` - save changes (`ZZ` is equal to `:wq`)
 - `:saveas 'filepath'` - clone buffer and save it to a different filepath
 - `:bufdo %s/pattern/replace/ge | update` - search and replace in all open buffers.
+- http://vim.wikia.com/wiki/Easier_buffer_switching
 
 - `vim $(find ...)` - open multiple files
 
@@ -206,6 +201,11 @@ Michael Sanders - http://www.vim.org/account/profile.php?user_id=16544
 - https://github.com/jarijokinen/snipmate.vim (Fork with toUpperCase Functionality)
 
 # Autocompletion
+- http://stackoverflow.com/questions/5169638/autocompletion-in-vim
+- http://stackoverflow.com/questions/1115876/autocompletion-in-vim
+- http://stackoverflow.com/questions/5432884/vim-auto-complete-java
+- https://www.reddit.com/r/vim/comments/3xlalp/java_auto_complete_in_vim/
+
 ## Builtin
 Works in Insert Mode
 - `<C-n>`
@@ -224,6 +224,7 @@ Works in Insert Mode
 - `J` - join lines
 - `y` - yank
 - `yy` - yank line
+- http://vim.wikia.com/wiki/Switching_case_of_characters
 
 # Shortcuts
 - `C` = `c$`
@@ -263,4 +264,13 @@ Works in Insert Mode
 - `>` and `<` commands
 - `>G` - increase indent from current line to end of file
 - `gg=G` - reformat/reindent text
+- `:args src/main/java/**/*.java | argdo execute "normal gg=G" | update` - reindent
+- Put `filetype plugin indent on` into `~/.vimrc` - enable java indentation
 
+
+# Line Terminators
+- http://stackoverflow.com/questions/5843495/what-does-m-character-mean-in-vim
+- `:args src/main/java/**/*.java | argdo set ff=unix | update` - convert all line terminators to unix (LF)
+
+# Trailing whitespace
+- `:args src/main/java/**/*.java | argdo :%s/\s\+$//g | update` - remove all trailing whitespace
