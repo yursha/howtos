@@ -27,9 +27,9 @@ b = " world!"
 a + b
 ```
 
-# String repeatition
+# String repetition
 ## python
-```
+```python
 "-" * 10
 ```
 
