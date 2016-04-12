@@ -65,3 +65,13 @@ File system is a kernel driver
 - https://www.quora.com/Unix-Commands-What-are-some-easy-ways-to-recover-files-from-rm-rf
 - http://unix.stackexchange.com/questions/48200/recovered-deleted-files-on-mac-by-command-line
 - http://unix.stackexchange.com/questions/101237/how-to-recover-files-i-deleted-now-by-running-rm
+
+# Open a file
+
+
+# Write to stdout
+## Python
+```
+print "Hello World!"
+```
+
