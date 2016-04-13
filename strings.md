@@ -50,7 +50,7 @@ b = " world!"
 c = a + b
 ```
 
-# Repaet
+# Repeat
 *python*
 ```python
 divider = "-" * 10
