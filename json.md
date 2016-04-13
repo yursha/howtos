@@ -1,8 +1,5 @@
 - https://github.com/circlecell/jsonlintdotcom
 
-# JSON (Tree)
-- Format json `python -m json.tool temp.json`
-
 ## Big JSON files
 - https://github.com/zeMirco/sf-city-lots-json
 
@@ -26,3 +23,15 @@
 ### GSON
 - https://github.com/google/gson
 
+# Pretty print
+*python REPL*
+```python
+from pprint import pprint
+import json
+pprint(json.loads(json_data))
+```
+
+*shell*
+```bash
+% python -m json.tool data.json
+```
