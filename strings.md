@@ -7,8 +7,8 @@ Strings are immutable
 `\t`, `\n`, `\\`, `\r`
 
 *python*
-ESCAPE  WHAT IT DOES.
-\\  Backslash (\)
+ESCAPE |  WHAT IT DOES.
+\\  | Backslash (\)
 \'  Single-quote (')
 \"  Double-quote (")
 \a  ASCII bell (BEL)
