@@ -73,5 +73,7 @@ File system is a kernel driver
 ## Python
 ```
 print "Hello World!"
+age = 18
+print "Full age is", age, "years."
 ```
 
