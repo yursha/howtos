@@ -4,10 +4,10 @@
 import java.util.List;
 import java.util.ArrayList;
 
-List<Object> list = new ArrayList<>();
-list.add(object1);
-list.add(object2);
-list.set(0, object3);
+List<String> list = new ArrayList<>();
+list.add("bear");
+list.add("tiger");
+list.set(0, "zebra");
 ```
 
 # Create list and access its first element
