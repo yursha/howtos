@@ -23,7 +23,7 @@ Strings are immutable
 - `\ooo` - Character with octal value ooo
 - `\xhh` - Character with hex value hh
 
-# Replacement by index
+# Replace by index
 *java*
 ```java
 String a = "The weather is good";
@@ -33,7 +33,7 @@ String b = a.substring(0, 4) + "day" + a.substring(11); // "The day is good"
 # Replace by value
 - http://stackoverflow.com/questions/16702357/how-to-replace-a-substring-of-a-string
 
-# Interpolation
+# Interpolate
 *python*
 ```python
 template = "My name is %s. I was born in %d."
@@ -42,7 +42,7 @@ year = 1986
 result = template % (my_name, year)
 ```
 
-# Concatenation
+# Concatenate
 *python*
 ```python
 a = "Hello "
@@ -50,13 +50,13 @@ b = " world!"
 c = a + b
 ```
 
-# Repetition
+# Repaet
 *python*
 ```python
 divider = "-" * 10
 ```
 
-# Preformatted
+# Preformat
 *python*
 ```python
 multiline_string = """
