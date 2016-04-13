@@ -23,6 +23,12 @@ Strings are immutable
 - `\ooo` - Character with octal value ooo
 - `\xhh` - Character with hex value hh
 
+# Length
+*python*
+```python
+len("my long string")
+```
+
 # Replace by index
 *java*
 ```java

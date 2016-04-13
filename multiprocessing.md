@@ -25,3 +25,17 @@ Releasing a lock means deleting such a file.
 
 
 - From AF_UNIX to kdbus - https://dvdhrm.wordpress.com/
+
+# Passing arguments
+*python*
+```python
+# program.py
+from sys import argv
+
+script, first, second, third = argv
+
+print "The script is called:", script
+print "Your first variable is:", first
+print "Your second variable is:", second
+print "Your third variable is:", third
+```

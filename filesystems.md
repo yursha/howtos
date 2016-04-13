@@ -66,14 +66,57 @@ File system is a kernel driver
 - http://unix.stackexchange.com/questions/48200/recovered-deleted-files-on-mac-by-command-line
 - http://unix.stackexchange.com/questions/101237/how-to-recover-files-i-deleted-now-by-running-rm
 
-# Open a file
-
-
-# Write to stdout
-## Python
+# Open and close a file for reading
+*python*
+```python
+file = open(filename)
+# read or write to the file
+file.close()
 ```
-print "Hello World!"
-age = 18
-print "Full age is", age, "years."
+
+# Open and close a file for writing
+*python*
+```python
+file = open(filename, 'w')
+# read or write to the file
+file.close()
 ```
+
+# Read a file at once
+*python*
+```python
+contents = file.read()
+```
+
+# Read a file in a sreaming fashion
+*python*
+```python
+line = file.readline()
+```
+
+# Rewind a file
+*python*
+```python
+f.seek(0)
+```
+
+# Write to a file
+*python*
+```python
+file.write('stuff')
+```
+
+# Truncate a file
+*python*
+```python
+file.truncate()
+```
+
+# Check if a file exists
+*python*
+```python
+from os.path import exists
+does_exist = exists("path/to/file.txt")
+```
+
 
