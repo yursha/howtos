@@ -1,5 +1,9 @@
-# Java
-```
+# Create list, append and replace elements
+*java*
+```java
+import java.util.List;
+import java.util.ArrayList;
+
 List<Object> list = new ArrayList<>();
 list.add(object1);
 list.add(object2);
