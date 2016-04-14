@@ -12,16 +12,6 @@
 - Log files are **append-only**. Be sure to log only what is really helpful during debugging as log files can grow and take a lot of disk space. There should be an **archiving policy** for log files. In production environment its  helpful to print 'INFO', 'WARN' and 'ERROR' level messages only to save **disk space**. Their should be a separate **build profile** for development and production environments.
 - Don't log expected conditions inside big loops. It will inflate the log file size and hinder performance with excessive IO.
 
-# Art of writing easy to debug software
-- Loudly **crash on error** if recovery is not meaningful.
-- Assert valid input for program and API (defensive programming)
-- **Log all errors** with as much information (including stack trace) as possible.
-- In a multithreaded application **make number of threads configurable from the command line**. So during debug time you will be able to set `-Dthreads=1` and enjoy serial single-thread logging.
-
-# Art of debugging
-- Look for recent source code changes which might have introduced a bug in a version control system.
-- isolate (divide and conquer)
-
 ## Java
 - https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
 - All loggers should be declared `private static final`

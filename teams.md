@@ -1,0 +1,5 @@
+- slack
+- gitter from GitHub (https://gitter.im/)
+- skype
+- xchat
+- freenode

@@ -119,14 +119,6 @@ The JVM uses internally escape analysis to check if an object is used only with 
 - http://docs.oracle.com/javase/8/docs/platform/jvmti/jvmti.html
 - http://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html
 
-# Debugging
-## Java Platform Debugger Architecture (JPDA)
-
-## Java Debug Interface (JDI)
-
-## JDWP (Java Debug Wire Protocol)
-- `java -agentlib:jdwp=transport=dt_socket,server=y,address=8000` - debug agent listens on port 8000, suspending JVM before the main class loads.
-
 ## HPROF (Heap Profiler)
 - https://docs.oracle.com/javase/8/docs/technotes/samples/hprof.html
 - https://java.net/projects/hat/ - Web Heap Analysis Tool.

@@ -1,0 +1,30 @@
+# Install a package for a system-wide use
+```
+pip install <package>
+brew install <package>
+npm install <package> -g
+pacman -S <package>
+```
+
+# Upgrade an installed package
+```
+pacman -S <package>
+```
+
+# List installed packages
+```
+pip list
+pacman -Q
+```
+
+# Pacman
+- `pacman -Sl` - list all remote packages
+- `pacman -Qi <package>` - display information about an installed package
+- `pacman -Si <package>` - display info about remote package
+- `pacman -Qo <file>` - show a package which owns a file
+- `pacman -Qu` - show all outdated locally installed packages
+- `pacman -Su` - upgrade all package that have newer versions
+- `pacman -S <package>` - install/upgrades package and its deps
+- `pacman -Sy` - download fresh remote packages list
+- `pacman -Sc` - clean the db cache
+- `pacman -Rs --nosave` - remove package and all its deps and config files

@@ -56,8 +56,8 @@ f - find window
 
 ## prefix commands
 ```
-z - maximize/unmaximize pane
 x - kill
+z - maximize/unmaximize pane
 % - horizontal split
 " - vertical split
 q - show pane numbers

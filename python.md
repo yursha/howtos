@@ -1,8 +1,6 @@
 - https://docs.python.org
-- https://docs.python.org/3/contents.html
-- http://www.diveintopython.net/
 
-Isolate pip dependencies for a project
+Isolate python environment for a project
 ```
 % mkdir ~/.virtualenvs
 % python3 -m venv ~/.virtualenvs/myproject

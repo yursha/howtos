@@ -113,10 +113,20 @@ file.truncate()
 ```
 
 # Check if a file exists
+*bash*
+```bash
+if [ -e "path/to/file.txt" ]; then
+    echo "File exists"
+fi
+```
+
 *python*
 ```python
 from os.path import exists
-does_exist = exists("path/to/file.txt")
+if (exists("path/to/file.txt")):
+    print "File exists"
 ```
+
+
 
 

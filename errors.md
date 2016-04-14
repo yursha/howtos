@@ -3,17 +3,6 @@
 - **Respect log levels** to be able to adjust log verbosity in different environments and filter log messages by level.
 - Log files are **append-only**. Be sure to log only what is really helpful during debugging as log files can grow and take a lot of disk space. There should be an **archiving policy** for log files. In production environment its  helpful to print 'INFO', 'WARN' and 'ERROR' level messages only to save **disk space**. Their should be a separate **build profile** for development and production environments.
 
-# Art of writing easy to debug software
-- Crash if recovery is not meaningful.
-- Assert user (or external API input) is valid
-- Assert internal API input is valid (defensive programming)
-- **Log all errors** with as much information (including stack trace) as possible.
-- In a multithreaded application **make number of threads configurable from the command line**. So during debug time you will be able to set `-Dthreads=1` and enjoy serial logging.
-
-# Art of debugging
-- Look for recent source code changes which might have introduced a bug in a version control system. (git bisect)
-- isolate (divide and conquer)
-
 ## Java
 - Effective Java Exceptions by Barry Ruzek 01/10/2007 http://www.oracle.com/technetwork/articles/entarch/effective-exceptions-092345.html
 - Best Practice Exception Handling in Java https://code.google.com/p/solidbase/wiki/ExceptionHandlingGuideline

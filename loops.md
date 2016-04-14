@@ -24,3 +24,9 @@ while i < 7:
     i = i + 1
 ```
 
+# Bash Loops
+- `until test-commands; do consequent-commands; done`
+- `while test-commands; do consequent-commands; done`
+- `for name [ [in [words...] ; ] do commands; done`
+- `for (( expr1 ; expr2 ; expr3 )) ; do commands ; done`
+
