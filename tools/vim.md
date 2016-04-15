@@ -10,6 +10,12 @@
 - https://github.com/mhinz/vim-galore
 - http://vim.wikia.com/wiki/Converting_variables_to_or_from_camel_case
 - https://robots.thoughtbot.com/set-your-mouse-free
+- http://vimgolf.com/
+- http://keyxl.com/aaa8263/290/VIM-keyboard-shortcuts.htm
+- https://github.com/tpope/vim-commentary - Custom vim operator example `:h map-operator`
+- https://github.com/kana/vim-textobj-entire - Custom vim motion example `:h omap-info`
+- http://vimcasts.org/
+- http://peertopeer.io/
 
 # `:help <arg>` or `:helpgrep <arg`
 Bookmark: quickref, usr_06.txt, reference_toc

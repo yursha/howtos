@@ -24,6 +24,14 @@ while i < 7:
     i = i + 1
 ```
 
+*bash*
+```bash
+while true
+do
+    print 'Hello'
+done
+```
+
 # Bash Loops
 - `until test-commands; do consequent-commands; done`
 - `while test-commands; do consequent-commands; done`

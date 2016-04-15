@@ -127,6 +127,14 @@ if (exists("path/to/file.txt")):
     print "File exists"
 ```
 
+# File Path
+*gnu coreutils*
+- `basename`
+- `dirname`
+- `pathchk`
+- `mktemp`
+- `realpath`
+
 
 
 

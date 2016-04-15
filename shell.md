@@ -18,3 +18,17 @@
 # Emails
 *bash*
 Bash will check for mail periodically, depending on the values of the MAIL, MAILPATH, and MAILCHECK shell variables. MAILCHECK specifies how often (in seconds) the shell should check for mail in the files specified in the MAILPATH or MAIL variables. The default is 60 seconds. When it is time to check for mail, the shell does so before displaying the primary prompt. If this variable is unset, or set to a value that is not a number greater than or equal to zero, the shell disables mail checking.
+
+# Testing Environment
+*gnu coreutils*
+- `pwd`
+- `stty`
+- `printenv`
+- `tty`
+
+*bash builtins*
+- `cd`
+
+# Colors
+- http://misc.flogisoft.com/bash/tip_colors_and_formatting
+- http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html

@@ -95,19 +95,6 @@
 # Redirection
 - `tee`
 
-# File name manipulation
-- `basename`
-- `dirname`
-- `pathchk`
-- `mktemp`
-- `realpath`
-
-# Working context
-- `pwd`
-- `stty`
-- `printenv`
-- `tty`
-
 # User information
 - `id` - print real and effective user and group IDs
 - `logname`
