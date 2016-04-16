@@ -1,0 +1,1 @@
+- http://stackoverflow.com/questions/604424/convert-a-string-to-an-enum-in-java

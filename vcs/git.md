@@ -11,8 +11,6 @@
 - http://stackoverflow.com/questions/338436/is-there-a-quick-git-command-to-see-an-old-version-of-a-file
 - http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge
 - http://stackoverflow.com/questions/5817579/how-can-i-preview-a-merge-in-git
-- https://www.atlassian.com/git/tutorials/comparing-workflows
-- http://nvie.com/posts/a-successful-git-branching-model/
 - `man git`
 - `gitcli`
 - `gitworkflows`
@@ -399,3 +397,8 @@ $ sudo make install install-doc install-html install-info
 After this is done, you can also get Git via Git itself for updates:
 
 Git can use four major protocols to transfer data: Local, HTTP, Secure Shell (SSH) and Git.
+
+# Git Flows
+- https://github.com/pivotal/git_scripts (For Pair Programming)
+- https://www.atlassian.com/git/tutorials/comparing-workflows
+- http://nvie.com/posts/a-successful-git-branching-model/

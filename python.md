@@ -1,4 +1,5 @@
 - https://docs.python.org
+- http://docs.python-guide.org/en/latest/
 
 Isolate python environment for a project
 ```

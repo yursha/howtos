@@ -280,3 +280,12 @@ Works in Insert Mode
 
 # Trailing whitespace
 - `:args src/main/java/**/*.java | argdo :%s/\s\+$//g | update` - remove all trailing whitespace
+
+# Syntax highlighting
+- `:syntax on`
+- https://github.com/endel/vim-github-colorscheme
+- http://superuser.com/questions/627636/better-syntax-highlighting-for-java-in-vim
+- https://github.com/dragfire/Improved-Syntax-Highlighting-Vim
+- https://github.com/github/linguist
+- https://github.com/bpdp/vim-java
+- https://github.com/sentientmachine/erics_vim_syntax_and_color_highlighting

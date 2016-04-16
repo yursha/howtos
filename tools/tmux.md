@@ -16,6 +16,9 @@
 - https://robots.thoughtbot.com/a-tmux-crash-course
 - http://blog.hawkhost.com/2010/06/28/tmux-the-terminal-multiplexer/
 - http://man.openbsd.org/OpenBSD-current/man1/tmux.1
+- http://unix.stackexchange.com/questions/146825/tmux-new-pane-has-home-directory-as-default-instead-of-previous-directory
+- http://unix.stackexchange.com/questions/12032/create-new-window-with-current-directory-in-tmux
+- https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=tmux%20reset%20current%20working%20directory%20for%20new%20windows
 
 # Persist tmux sessions across system reboots
 - https://github.com/tmux-plugins/tmux-resurrect

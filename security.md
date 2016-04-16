@@ -4,3 +4,6 @@
 
 # Captcha
 - https://developers.google.com/recaptcha/docs/start
+
+# Passwords Management
+- https://www.passwordstore.org/

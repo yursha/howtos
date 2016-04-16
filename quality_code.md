@@ -5,6 +5,7 @@
 - http://semver.org/
 - https://github.com/braydie/HowToBeAProgrammer
 - Brian W. Kernighan and Rob Pike - "The Practice of Programming"
+- https://www.youtube.com/watch?v=YkXzAbO2sHg - Kite (programming copilot)
 
 # Standard Streams
 - Develop data processing tools so that they work as data processing filters accepting data from STDIN and sending it to STDOUT
@@ -69,3 +70,6 @@ Client programmers should clearly understand what API is published and what is n
 
 # Be brief
 > The go tool will only print output when an error occurs, so if these commands produce no output they have executed successfully.
+
+# Reliability
+- http://danluu.com/google-sre-book

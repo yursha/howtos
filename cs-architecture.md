@@ -100,3 +100,7 @@ Code that crosses platform boundaries (like c/java interfacing or javascript/DOM
  28 - https://html.spec.whatwg.org/
  29 - http://html5up.net/
  30 - http://html5demos.com/
+
+# Architecture
+ - http://www.amazon.com/The-Architecture-Open-Source-Applications/dp/1257638017
+ - http://aosabook.org/en/index.html

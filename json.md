@@ -24,6 +24,8 @@
 - https://github.com/google/gson
 
 # Pretty print
+- http://stackoverflow.com/questions/352098/how-can-i-pretty-print-json
+
 *python REPL*
 ```python
 from pprint import pprint
