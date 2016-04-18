@@ -7,6 +7,9 @@
 - https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/3/html/System_Administration_Guide/s1-swap-adding.html
 - http://www.thegeekstuff.com/2010/08/how-to-add-swap-space/
 
+# Src
+- `/usr/src/kernels`
+
 Parameters can be passed to the kernel:
 - at compile-time
 - at start time via boot loader
@@ -41,17 +44,43 @@ Command line and full screen utilities for browsing procfs, a "pseudo" file syst
 
 - `free`
 
-## kmod
+# kmod - Linux kernel module management utilities
+- http://git.kernel.org/cgit/utils/kernel/kmod/kmod.git
+- http://git.kernel.org/cgit/utils/kernel/kmod/kmod.git/tree/README
+
 Linux kernel is modular, meaning many of the drivers for hardware reside on disk and are available as modules. At boot `udev` takes an inventory of your hardware and loads appropriate modules (drivers) for your corresponding hardware.
+
+Linux kernel modules live in `/lib/modules/$(uname -r)`.
+
+`libkmod` library is used to implement kernel module management utilities.
+
+- `lsmod` - list modules (nicely formatted `cat /proc/modules`)
+- `modprobe` - load or unload a module
+- `insmod` - load a module (better use `modprobe` because the latter handles dependencies)
+- `rmmod` - unload a module (better use `modprobe -r`)
+- `modinfo` - show info about a module
+- `depmod` - generate `modules.dep` (`man modules.dep`), `modules.symbols` and `modules.devname` and their binary counterparts. Configured through `depmod.d` (`man depmod.d`).
+- `kmod` - manage modules (generic binary)
+
+The behavior of `modprobe` (how modules are loaded and unloaded may be configured in `modprobe.d`) (see `man modprobe.d`)
 
 Some wireless chipsets also require firmware, in addition to a driver. Many firmware images are provided by the 'linux-firmware' package.
 
 - Archlinux wiki - kernel modules
+
+# udev - Dynamic device management (`man udev`)
 - Archlinux wiki - `udev`
 
-- `lsmod`
-- `modprobe`
-- `modprobe -r` - unload kernel module
+# Misc
+- initramfs
+- initrd
+- mkinitrd
+- systemd-tempfiles
+- System.map (kernel build artifact)
+- Module.symvers (kernel build artifact)
+- Kernel Command Line - https://www.freedesktop.org/software/systemd/man/kernel-command-line.html (module options can be specified on it)
+
+# KMS (Kernel Mode Setting)
 
 # Power
 - https://www.kernel.org/doc/Documentation/power/interface.txt

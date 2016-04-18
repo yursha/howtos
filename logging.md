@@ -31,3 +31,5 @@
 
 # Graylog
 - http://docs.graylog.org/en/1.3/pages/queries.html#keyword-time-frame-selector
+
+# syslog

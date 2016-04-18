@@ -6,6 +6,7 @@
 - https://godoc.org/
 - https://github.com/golang/go/wiki/Projects
 - https://golang.org/doc/effective_go.html
+- https://gobyexample.com/
 
 # Go Hosting
 - https://www.digitalocean.com
