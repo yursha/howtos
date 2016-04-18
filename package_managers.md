@@ -4,6 +4,7 @@ pip install <package>
 brew install <package>
 npm install <package> -g
 pacman -S <package>
+rpm -i <package>
 ```
 
 # Upgrade an installed package

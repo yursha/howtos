@@ -12,6 +12,11 @@
 - IP Version 6 Addressing Architecture http://www.ietf.org/rfc/rfc2373.txt
 - https://docs.oracle.com/javase/8/docs/api/java/net/InetAddress.html
 
+# Tools
+- `ifconfig` - obsolete
+- `iwconfig`
+- `ip`
+
 ## `iproute2`
 - `iproute2` - http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
 - `ip`
@@ -41,6 +46,9 @@
 ## `iw`
 - http://wireless.kernel.org/en/users/Documentation/iw
 - https://github.com/patjak/bcwc_pcie/wiki/Get-Started
+
+## Broadcom Linux Drivers
+- https://wireless.wiki.kernel.org/en/users/drivers/brcm80211
 
 # WPA2
 ## `wpa-supplicant`

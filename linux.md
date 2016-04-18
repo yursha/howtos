@@ -113,8 +113,10 @@ Some wireless chipsets also require firmware, in addition to a driver. Many firm
 # Sort me out
 - `killall`
 
-# Hardware
+# Firmware
 - https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git/
+
+Firmware lives in `/lib/firmware`
 
 ## PCI
 - `/usr/include/linux/pci.h`
