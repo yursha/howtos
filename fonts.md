@@ -14,3 +14,6 @@
 # `gpm` package
 - `gpm`
 
+# Preferred fonts
+- Monospace Regular 10 (Fedora)
+- Terminus (Arch Linux, Linux VT)

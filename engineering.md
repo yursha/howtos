@@ -2,10 +2,17 @@
 - Isolates changes
 - Fewer LOC
 
+# Requirements
+- Each task should correspond to a user story. ("As a <role> i want to <functionality>")
+- Every use case must have test case with a corresponding unit or e2e test.
+
+# Versionning
 - http://semver.org/
 - https://github.com/braydie/HowToBeAProgrammer
 - Brian W. Kernighan and Rob Pike - "The Practice of Programming"
 - https://www.youtube.com/watch?v=YkXzAbO2sHg - Kite (programming copilot)
+- Don't bump up snapshot versions if there were no a corresponding release.
+- Release versions from a.b.c can go only to a+1.0.0, a.b+1.0 or a.b.c+1
 
 # Standard Streams
 - Develop data processing tools so that they work as data processing filters accepting data from STDIN and sending it to STDOUT

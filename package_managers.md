@@ -1,5 +1,6 @@
 # Install a package for a system-wide use
 ```
+dnf install <package>
 pip install <package>
 brew install <package>
 npm install <package> -g
@@ -14,6 +15,7 @@ pacman -S <package>
 
 # List installed packages
 ```
+dnf list installed
 pip list
 pacman -Q
 ```
