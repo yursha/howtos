@@ -253,6 +253,10 @@ So the presentation of conflicts is really a matter of the plugin used; the defa
 ## Undo a commit 
 - http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
 
+## Edit commit message
+- http://stackoverflow.com/questions/179123/edit-an-incorrect-commit-message-in-git
+
+## git log
 - `git log [<options>] [<revision range>] [[\--] <path>…​]`
 The command takes options applicable to the `git rev-list` to control what is shown and how, and options applicable to the `git diff-*` to control how the changes each commit introduces are shown.
 - `git log -p` - commits with diffs (patches) (helpful for code review)

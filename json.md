@@ -23,6 +23,9 @@
 ### GSON
 - https://github.com/google/gson
 
+# Json Schema
+- http://json-schema.org/
+
 # Pretty print
 - http://stackoverflow.com/questions/352098/how-can-i-pretty-print-json
 

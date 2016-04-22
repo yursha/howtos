@@ -14,3 +14,12 @@
 # Remember Me
 - http://stackoverflow.com/questions/244882/what-is-the-best-way-to-implement-remember-me-for-a-website
   http://stackoverflow.com/questions/12605681/how-to-prolong-the-remember-me-cookie-on-each-request-in-symfony2
+
+# Authentication
+- Making sure a user is known
+
+# Authorization
+- Making sure a user has permissions to access certain logic in your application.
+
+# Validation
+- Making sure the data a user inputs is valid/safe/what's expected or needed.

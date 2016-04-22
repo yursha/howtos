@@ -256,3 +256,53 @@ Sudo can also be used to run commands as other users; additionally, sudo logs al
 
 # Uptime
 - http://unix.stackexchange.com/questions/131775/how-long-has-my-linux-system-been-running
+
+# Fedora
+- https://getfedora.org/
+- https://github.com/developer-portal
+- https://fedoraproject.org/wiki/Fedora_Project_Wiki
+- https://github.com/FedoraKDE
+- https://github.com/fedora-cloud
+- https://github.com/fedora-selinux
+- https://github.com/fedora-infra
+- https://github.com/fedora-python
+- https://github.com/fedora-haskell
+- https://github.com/fedora-ruby
+- https://github.com/fedoradesign
+- https://fedoraproject.org/wiki/Design
+
+# Archlinux
+- https://github.com/archlinux/archweb
+
+# Ubuntu
+- https://github.com/ubuntu
+- https://github.com/Ubuntu-Solutions-Engineering
+- https://github.com/ubuntudesign
+- https://github.com/ubuntu-touchCAF
+- https://github.com/UBTC
+- https://github.com/ubuntu-core
+
+# Debian
+- https://github.com/Debian
+- https://github.com/debian-live
+- https://github.com/debian-pkg-android-tools
+- https://github.com/jbouse-debian
+- https://github.com/debian-pi
+
+# Linux Mint
+- https://github.com/linuxmint
+
+# Gentoo
+- https://github.com/gentoo
+- https://github.com/gentoo-mirror
+- https://github.com/gentoo-perl
+- https://github.com/AutoGentoo
+- https://github.com/gentoo-haskell
+- https://github.com/gentoo-science
+
+# Slackware
+- https://github.com/slackware
+
+# FreeBSD
+- https://github.com/freebsd
+- https://github.com/chef-cookbooks/freebsd

@@ -18,7 +18,17 @@
 - http://peertopeer.io/
 
 # `:help <arg>` or `:helpgrep <arg`
-Bookmark: quickref, usr_06.txt, reference_toc
+Bookmark: quickref, usr_07.txt, 
+
+# Reference manual
+- reference_toc
+- change.txt 4.4 Changing tabs ✓
+- insert.txt CTRL-Q, ins-expandtab
+- options.txt
+    + expandtab ✓
+
+
+# help
 - `x`, `CTRL-R` - normal mode command
 - `v_u` - visual mode command
 - `i_<Esc>` - insert mode command

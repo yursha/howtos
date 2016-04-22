@@ -1,5 +1,6 @@
 - https://docs.python.org
 - http://docs.python-guide.org/en/latest/
+- http://www.alexkras.com/review-automate-the-boring-stuff-with-python-by-al-sweigart/
 
 Isolate python environment for a project
 ```
