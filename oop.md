@@ -5,11 +5,39 @@
 - association
 - delegation
 - decomposition
+- http://martinfowler.com/bliki/CQRS.html
 
 # Inheritance / Composition
 - https://www.bayleafdigital.com/configure-email-hosted-different-server-website-2/
 
 # Patterns
+## Facade
+- https://en.wikipedia.org/wiki/Facade_pattern
+- http://c2.com/cgi/wiki?FacadePattern
+
+## Utility classes
+- http://c2.com/cgi/wiki?UtilityClasses
+
+## Encapsulation
+- https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)
+
+## Information Hiding
+- https://en.wikipedia.org/wiki/Information_hiding
+
+## Coupling
+- https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+
+## Flyweight objects
+- https://en.wikipedia.org/wiki/Flyweight_pattern
+
+# Cohesion
+- https://en.wikipedia.org/wiki/Cohesion_(computer_science)
+
+# Canonical Model
+- https://en.wikipedia.org/wiki/Canonical_model
+
+# Canonical Object
+Canonical object is an object that defines the baseline set of functionality for all objects (like `java.lang.Object`).
 
 # Polymorphism
 - Polymorphism only makes sense when the polymorphic behavior is really a behavior of the target. When it's the behavior of the observer, you need runtime typing.

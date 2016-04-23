@@ -5,6 +5,7 @@
 - http://unriskinsight.blogspot.com/2014/06/fast-functional-goats-lions-and-wolves.html
 - https://en.wikipedia.org/wiki/Java_performance#Comparison_to_other_languages
 - https://www.linkedin.com/pulse/20140722010907-14297945-jvm-java-vs-c
+- http://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html
 
 # Name Scoping
 - lexical (static, block) scoping

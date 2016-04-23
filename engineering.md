@@ -6,6 +6,9 @@
 - Each task should correspond to a user story. ("As a <role> i want to <functionality>")
 - Every use case must have test case with a corresponding unit or e2e test.
 
+# What are you trying to optimize for?
+Like so many things in system design, it totally depends on what you're trying to optimize for. Am I trying to prevent corrupt data from EVER getting into the system? Then I put validation as close to the data layer as I can. Am I trying to optimize user experience? Then I put validation as close to the glass as I can. What am I trying to optimize? 
+
 # Versionning
 - http://semver.org/
 - https://github.com/braydie/HowToBeAProgrammer
