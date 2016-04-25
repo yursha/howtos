@@ -19,6 +19,13 @@ Possible contexts:
 - http://hibernate.org/validator/documentation/
 
 # Where should validation logic live
+## Resources
+- Where to put validation in the MVC pattern - http://discuss.joelonsoftware.com/default.asp?design.4.354410.6
+- https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/
+- Validation belongs in a Model Object - http://www.javapractices.com/topic/TopicAction.do?Id=209
+- http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/
+- http://www.jnsk.se/weblog/rss.xml
+
 ## In the class for model specific rules.  It is a class's own responsibility to ensure that it maintains a logically consistent and valid internal state at any time.
 So that if `boolean isValid()` method existed on an object it would always return `true`.
 Such validate() methods are called class invariants and are important part of Design by Contract.
@@ -77,3 +84,13 @@ gradually introduce assertions. Over time, more and more errors will fail fast, 
 - Input errors, which can be detected by examination of the input - so a date of 2014-02-30 is self evidently wrong.
 - Context errors, which can be detected only by examination of the domain object - so a date of birth captured as 1990-01-31, and a date of education starting of 1989-03-02 is incorrect. It is this class of errors that can only be made with reference to the domain.
 - Lies to the system. These can only be detected by information contained with subsequent events. So if I tell you that my date of birth is 1890-04-25 then (at worst) you may only be able to find that this is incorrect around the year 2010 when I tell you I am still alive and kicking. These errors can only be corrected by remedial actions that will fall outside the system concerned. These remedial actions may be very extensive, or actually impossible to implement.
+Data received from user input should be validated.
+
+## [Commons Validator 1.4.1](https://commons.apache.org/proper/commons-validator/)
+Microframework and a set of independent validation functions:
+- date, time, calendar, intervals
+- numeric values, percentages
+- currency, codes, credit cards,
+- internet domain names (RFC-1034/RFC-1123/IANA), email addresses (RFC-822), IPv4 adresses, URL
+- codes (IBAN, ISBN-10, ISBN-13, ABA, CUSIP, EAN13, ISIN, Luhn, Modulus, Sedol, Verhoeff)
+- regex

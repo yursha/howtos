@@ -266,6 +266,7 @@ Works in Insert Mode
 - gE - white-space separated word end backwards
 - % - move to matching (),[],{} or *matchpairs* option (or find first in a line)
 - gg, 2G, G - jump to first, 2, last line
+- matchpairs
 
 # Repetitions
 - `.` - repeat change
@@ -298,4 +299,10 @@ Works in Insert Mode
 - https://github.com/dragfire/Improved-Syntax-Highlighting-Vim
 - https://github.com/github/linguist
 - https://github.com/bpdp/vim-java
-- https://github.com/sentientmachine/erics_vim_syntax_and_color_highlighting
+- [Erics Vim syntax and color highlighting](https://github.com/sentientmachine/erics_vim_syntax_and_color_highlighting)
+
+# Plugins
+- https://github.com/gabrielelana/vim-markdown
+
+# Folks
+- https://github.com/tpope

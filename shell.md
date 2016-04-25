@@ -8,7 +8,7 @@
 - www.gnu.org/software/parallel
 - https://github.com/jlevy/the-art-of-command-line
 - http://www.infoworld.com/article/2893519/linux/perl-python-ruby-are-nice-bash-is-where-its-at.html
-- Bookmark: #6.7_Arrays
+- Bookmark: #6.9_Controlling the prompt
 
 *zsh*
 - https://github.com/robbyrussell/oh-my-zsh

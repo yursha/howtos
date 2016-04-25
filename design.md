@@ -2,7 +2,6 @@
 - https://en.wikipedia.org/wiki/Single_responsibility_principle
 - http://c2.com/cgi/wiki?ArgumentByAnalogy
 
-
 # Defensive programming
 - https://en.wikipedia.org/wiki/Defensive_programming
 

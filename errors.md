@@ -85,3 +85,7 @@ public class RuntimeExceptionMapper implements ExceptionMapper<Throwable> {
 ## Semantical Errors
 
 ## Logical Errors
+
+
+# Exceptions
+- http://www.javaworld.com/article/2076721/core-java/designing-with-exceptions.html

@@ -1,1 +1,4 @@
+- https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
 - http://stackoverflow.com/questions/604424/convert-a-string-to-an-enum-in-java
+- http://stackoverflow.com/questions/6768905/get-enum-instance-from-class-extends-enum-using-string-value
+- http://stackoverflow.com/questions/5262096/how-do-i-get-the-value-of-an-enum-if-i-dont-know-the-class-at-compile-time

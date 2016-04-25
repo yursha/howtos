@@ -11,8 +11,17 @@
 (iteration | data binding | tree traversal)
 - https://github.com/FasterXML/jackson
 - https://github.com/FasterXML/jackson-databind
+- https://github.com/FasterXML/jackson-annotations
 - http://wiki.fasterxml.com/JacksonFAQDateHandling
 - http://fasterxml.github.io/jackson-databind/javadoc/2.7/overview-summary.html
+- https://github.com/FasterXML/jackson-datatype-joda
+- http://stackoverflow.com/questions/14139136/how-to-include-bean-validation-constraints-in-jackson-generated-json-schema
+- http://stackoverflow.com/questions/8463356/how-can-i-support-jsr-303-validation-and-jackson-json-mapping-together-effective
+- Every day Jackson usage, part 1: Immutable objects - http://www.cowtowncoder.com/blog/archives/2010/08/entry_409.html
+- http://wiki.fasterxml.com/JacksonFeatureMaterializedBeans
+- http://wiki.fasterxml.com/JacksonDocumentation
+- http://stackoverflow.com/questions/31689107/deserializing-an-enum-with-jackson
+- http://www.baeldung.com/jackson-serialize-dates
 
 #### Streaming API
 - http://fasterxml.github.io/jackson-core/javadoc/2.7/overview-summary.html

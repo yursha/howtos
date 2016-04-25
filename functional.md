@@ -19,3 +19,7 @@
 
 # Java 8
 - http://zeroturnaround.com/rebellabs/java-8-explained-applying-lambdas-to-java-collections/
+- https://www.oreilly.com/learning/java-8-functional-interfaces
+
+# Functionals vs OOP
+- http://stackoverflow.com/questions/327955/does-functional-programming-replace-gof-design-patterns?rq=1

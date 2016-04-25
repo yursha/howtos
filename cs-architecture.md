@@ -104,3 +104,7 @@ Code that crosses platform boundaries (like c/java interfacing or javascript/DOM
 # Architecture
  - http://www.amazon.com/The-Architecture-Open-Source-Applications/dp/1257638017
  - http://aosabook.org/en/index.html
+
+# Patagonia
+ - http://www.slideshare.net/esug/design-principlesbehindpatagonia
+ - https://www.youtube.com/watch?v=8cgmdaKwRvU

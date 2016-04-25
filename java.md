@@ -1,4 +1,5 @@
 # Specs
+- http://docs.oracle.com/javase/specs/jls/se8/html/
 - https://docs.oracle.com/javase/specs/
 - http://docs.oracle.com/javase/7/docs/api/
 - https://docs.oracle.com/javaee/7/api/
@@ -364,3 +365,6 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 # Strings
 - http://stackoverflow.com/questions/1751844/java-convert-liststring-to-a-joind-string
 - http://stackoverflow.com/questions/6952363/replace-a-character-at-a-specific-index-in-a-string
+
+# Getters and setters
+- http://programmers.stackexchange.com/questions/21802/when-are-getters-and-setters-justified

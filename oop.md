@@ -35,6 +35,7 @@
 
 # Canonical Model
 - https://en.wikipedia.org/wiki/Canonical_model
+- https://www.innoq.com/en/blog/thoughts-on-a-canonical-data-model/
 
 # Canonical Object
 Canonical object is an object that defines the baseline set of functionality for all objects (like `java.lang.Object`).

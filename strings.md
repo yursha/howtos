@@ -84,3 +84,5 @@ def break_words(stuff):
 
 # Join
 - https://docs.oracle.com/javase/8/docs/api/java/util/StringJoiner.html
+- https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
+- http://www.leveluplunch.com/java/tutorials/031-join-strings-java8/
