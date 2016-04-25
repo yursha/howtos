@@ -36,6 +36,7 @@ Parameters can be passed to the kernel:
 - `dmesg` - prints or controls the kernel ring buffer
 - `cal` - calendar
 - `rename`
+- `write`
 
 ## procps-ng
 - https://gitlab.com/procps-ng/procps

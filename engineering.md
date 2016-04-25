@@ -2,6 +2,9 @@
 - Isolates changes
 - Fewer LOC
 
+# Avoid hand-hacking
+- Write programs to write programs when you can.
+
 # Requirements
 - Each task should correspond to a user story. ("As a <role> i want to <functionality>")
 - Every use case must have test case with a corresponding unit or e2e test.

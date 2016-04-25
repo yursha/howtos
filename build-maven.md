@@ -14,6 +14,7 @@
 - http://maven.apache.org/plugin-tools/index.html
 
 # Tips
+- If it seems to be a dependency problem try `-U` option.
 
 ## Don't use `reactor` Maven component (multi-module projects)
 Keep each module in its own git repo with a singe `pom.xml` file.
@@ -75,3 +76,10 @@ Don't use `minimizeJar` if dynamic class loading is used in the code
 
 # Proguard Maven Plugin
 - https://github.com/wvengen/proguard-maven-plugin
+
+# Maven Execution Plugin
+- http://www.mojohaus.org/exec-maven-plugin/
+```bash
+# Ex:
+mvn exec:java -Dexec.mainClass="com.mycompany.FileGenerator" -Dexec.args="./file.data"
+```

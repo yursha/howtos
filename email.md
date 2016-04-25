@@ -4,6 +4,24 @@
 - https://www.maketecheasier.com/send-email-from-the-command-line/
 - http://linuxpoison.blogspot.com/2008/11/console-based-e-mail-clients.html
 
+# Tools
+- [Gmail Help Center](https://support.google.com/mail)
+- [Heirloom mailx](http://heirloom.sourceforge.net/mailx.html) - provides `mail` command. Further reading: `man mail`, `man esmtprc`, `man esmtp`.
+
+Mailx and gmail don't work together out-of-the-box. We need to do troubleshooting.
+Gmail returns `530 Authentication Required.`.
+
+See:
+- [SO 530 questions](http://stackoverflow.com/questions/17227532/gmail-530-5-5-1-authentication-required-learn-more-at)
+- [SO 530 question (1)](http://unix.stackexchange.com/questions/219822/mailx-cannot-send-mail-through-gmail-any-more)
+- [Allowing less secure apps to access your account](https://support.google.com/accounts/answer/6010255?hl=en)
+- 2-factor authentication may be a problem
+- [Link to allow less secure apps](https://www.google.com/settings/security/lesssecureapps)
+- [SO Difference between mail and mailx](http://unix.stackexchange.com/questions/89530/difference-between-mail-and-mailx?rq=1)
+- [SO how to configure mailx to support gmail](http://unix.stackexchange.com/questions/35261/how-to-configure-mailx-to-support-gmail?rq=1)
+- [Gmail can't sign in to my email app](https://support.google.com/mail/answer/14257)
+- [How to configure gmail and mailx](http://www.systutorials.com/1411/sending-email-from-mailx-command-in-linux-using-gmails-smtp/)
+
 # Mailgun
 - https://mailgun.com/accounts/free/signup_success
 

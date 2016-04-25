@@ -1,9 +1,12 @@
+# Resources
+- [Terminal sessions recordings website](https://asciinema.org/)
+
 Shell is a parent process for all child processes launched from it. The exit status of a child process is provided by the POSIX 1003.1 `waitpid` function, or `128+n` if the child process was terminated by signal `n`.
 
 If a shell command is terminated by `&`, the shell executes the subprocess asynchronously, i.e. does not wait for it to finish, and the return status is `0`. `STDIN` for asynchronous child processes, in the absence of any explicit redirections, is redirected from `/dev/null`.
 
 # Frameworks
-- [Composure](https://github.com/erichs/composure) by [Erich Smith](http://erichs.github.io/)
+- [Composure](https://github.com/erichs/composure) by Erich Smith. Here is his [blog](http://erichs.github.io/) and [github](https://github.com/erichs).
 
 # Bash
 - Bookmark: #7 Job Control
@@ -21,6 +24,9 @@ If a shell command is terminated by `&`, the shell executes the subprocess async
 
 # zsh
 - https://github.com/robbyrussell/oh-my-zsh
+
+# korn shell (ksh)
+- [ksh93](http://www.kornshell.com)
 
 # csh
 

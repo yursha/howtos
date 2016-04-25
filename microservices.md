@@ -7,3 +7,6 @@
 - DropWizard Project - `io.dropwizard:dropwizard-client` - https://github.com/dropwizard/dropwizard (15M)
   + org.glassfish.jersey.core:jersey-client
   + org.apache.httpcomponents:http-client
+
+# Healthchecks
+- [Shell scripts for health checks by Erich Smith](https://asciinema.org/a/476)
