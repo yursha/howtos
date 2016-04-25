@@ -1,8 +1,16 @@
 - something which is easily discoverable thru search engine doesn't need to be persisted.
 
 # Resources
-- stackoverflow
-- wikipedia
+1. ultimate
+    1. source code
+1. main
+    1. specifications
+    1. manuals
+    1. tutorials
+1. supplementary
+    1. wikipedia
+    1. stackoverflow
+    1. blogs
 
 # Rules
 

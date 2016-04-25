@@ -1,19 +1,28 @@
+Shell is a parent process for all child processes launched from it. The exit status of a child process is provided by the POSIX 1003.1 `waitpid` function, or `128+n` if the child process was terminated by signal `n`.
+
+If a shell command is terminated by `&`, the shell executes the subprocess asynchronously, i.e. does not wait for it to finish, and the return status is `0`. `STDIN` for asynchronous child processes, in the absence of any explicit redirections, is redirected from `/dev/null`.
+
 # Frameworks
-*bash*
-- https://github.com/Bash-it/bash-it
-- http://www.gnu.org/software/bash/manual/bash.html
+- [Composure](https://github.com/erichs/composure) by [Erich Smith](http://erichs.github.io/)
+
+# Bash
+- Bookmark: #7 Job Control
+- [Bash-it](https://github.com/Bash-it/bash-it)
+- [Official Bash Manual](http://www.gnu.org/software/bash/manual/bash.html)
 - http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html
 - http://www.infoworld.com/article/2893519/linux/perl-python-ruby-are-nice-bash-is-where-its-at.html
 - Advanced Bash Scripting Guide (Linux Documentation Project) tdlp.org/LDP/abs/html/
 - www.gnu.org/software/parallel
 - https://github.com/jlevy/the-art-of-command-line
 - http://www.infoworld.com/article/2893519/linux/perl-python-ruby-are-nice-bash-is-where-its-at.html
-- Bookmark: #6.9_Controlling the prompt
+- http://tldp.org/LDP/abs/html/process-sub.html
+- http://wiki.bash-hackers.org/syntax/expansion/proc_subst
+- delete word ahead of cursor - http://askubuntu.com/questions/279254/bash-delete-word-ahead-of-cursor
 
-*zsh*
+# zsh
 - https://github.com/robbyrussell/oh-my-zsh
 
-*csh*
+# csh
 
 # Emails
 *bash*
