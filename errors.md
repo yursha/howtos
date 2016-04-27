@@ -89,3 +89,6 @@ public class RuntimeExceptionMapper implements ExceptionMapper<Throwable> {
 
 # Exceptions
 - http://www.javaworld.com/article/2076721/core-java/designing-with-exceptions.html
+
+# Types of errors
+- [Off-by-one error on wikipedia](https://en.wikipedia.org/wiki/Off-by-one_error)

@@ -7,6 +7,7 @@ If a shell command is terminated by `&`, the shell executes the subprocess async
 
 # Frameworks
 - [Composure](https://github.com/erichs/composure) by Erich Smith. Here is his [blog](http://erichs.github.io/) and [github](https://github.com/erichs).
+- Todo management: [github](https://github.com/ginatrapani/todo.txt-cli) and [website](http://todotxt.com/)
 
 # Bash
 - Bookmark: #7 Job Control
