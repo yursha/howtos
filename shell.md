@@ -1,5 +1,6 @@
 # Resources
 - [Terminal sessions recordings website](https://asciinema.org/)
+- [LinuxCommand.org by William Shotts](http://linuxcommand.org/index.php)
 
 Shell is a parent process for all child processes launched from it. The exit status of a child process is provided by the POSIX 1003.1 `waitpid` function, or `128+n` if the child process was terminated by signal `n`.
 
@@ -48,3 +49,42 @@ Bash will check for mail periodically, depending on the values of the MAIL, MAIL
 # Colors
 - http://misc.flogisoft.com/bash/tip_colors_and_formatting
 - http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
+
+# Pipes examples
+```
+curl -s http://some/script | bash
+curl -s google.com | vim -
+git diff | hg import -
+
+```
+
+# Primitives
+- Files
+- Binaries
+- Numbers
+- Strings
+- Operators
+
+# Means of combination
+- Pipes
+- Loops (Unlike loops in other languages these have stdin and stdout)
+- Subshells (triggered by parentheses and create there own scope/environment)
+- Compound commands
+
+# Means of abstractions
+- functions (unlike functions in other languages there have stdin and stdout)
+- scripts
+
+
+# Pipes examples
+```bash
+function args() { man ls | col -b | grep '^[[:space:]]*ls \[' | awk -F '[][]' '{print $2}' }
+python -c "import string; print set(string.lowercase) - set('`args`')"
+```
+
+# Tips
+- Avoid tar pit of immediacy
+- Avoid proficiency fatalism
+- Use more pipes and functions
+- Pay attention to how much ass you need
+- Strive to achieve the full range of quality

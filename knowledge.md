@@ -5,6 +5,7 @@
     1. source code
 1. well-rounded
     1. books (give the broadest outlook at the topic)
+        - [SICP](https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html#%_toc_start)
 1. main
     1. specifications
     1. manuals
@@ -13,6 +14,11 @@
     1. wikipedia
     1. stackoverflow
     1. blogs
+        - [William Shotts](http://lcorg.blogspot.com/)
+    1. videocasts
+        - http://confreaks.tv/
+        - http://confreaks.tv/presenters/gary-bernhardt
+        - https://www.destroyallsoftware.com/screencasts
 
 # Apply your knowledge
 - know your tools to save yourself time

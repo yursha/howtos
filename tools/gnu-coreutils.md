@@ -18,6 +18,10 @@
 - `split`
 - `csplit`
 
+```
+head -1 file.txt | xargs echo
+```
+
 # Summarizing files
 - `wc`
 - `sum`
@@ -45,7 +49,8 @@
 
 # Directory listing
 - `ls` - list directory contents
-- `% ls -p` - list cwd with '/' indicators for directories
+- `ls -p` - list cwd with '/' indicators for directories
+- `ls -i` - list with inode numbers
 - `dir`
 - `vdir`
 - `dircolors`

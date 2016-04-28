@@ -7,6 +7,13 @@
 - https://www.linkedin.com/pulse/20140722010907-14297945-jvm-java-vs-c
 - http://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html
 
+*SICP section 2.2.4*
+> "The language used at each level of stratified design has primitives, means of combination, and means of abstraction appropriate to that level of detail."
+
+*Power Law Distributions in Class Relationships (Wheeldon & Counsell)*
+> "A power law implies that small values are extremely common, whereas large values are extremely rare."
+- log-log plot can show it for each specific case.
+
 # Name Scoping
 - lexical (static, block) scoping
 
@@ -38,9 +45,3 @@
 - http://www.tcl-lang.org/
 
 
-# Unpacking variables
-*python*
-```python
-from sys import argv
-script, first, second, third = argv
-```

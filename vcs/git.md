@@ -358,7 +358,7 @@ Rebasing replays changes from one line of work onto another in the order they we
 1. Understand existing code behaviour
 1. Change existing code
 1. Make sure a test case succeeds against changed code
-1. Commit with message prefixed as `JIRA_001: <message>`
+1. Commit with message prefixed as `JIRA-001: My message`
 1. Merge with `master` and delete feature branch
     - `git checkout master`
     - `git merge feature` (may be fast-forward or 3-way merge with common ancestor (merge-base))
@@ -406,3 +406,7 @@ Git can use four major protocols to transfer data: Local, HTTP, Secure Shell (SS
 - https://github.com/pivotal/git_scripts (For Pair Programming)
 - https://www.atlassian.com/git/tutorials/comparing-workflows
 - http://nvie.com/posts/a-successful-git-branching-model/
+
+# Complex commands
+- `(set -e && git rev-list --reverse master~3..master | while read rev; do git checkout $rev; python runtests.py; done)`
+- `git ls-files --deleted | xargs -L1 git checkout` - restore all deleted files

@@ -66,6 +66,12 @@ File system is a kernel driver
 - http://unix.stackexchange.com/questions/48200/recovered-deleted-files-on-mac-by-command-line
 - http://unix.stackexchange.com/questions/101237/how-to-recover-files-i-deleted-now-by-running-rm
 
+# Commands
+- fsck
+
+# Library functions
+- ftok
+
 # Open and close a file for reading
 *python*
 ```python

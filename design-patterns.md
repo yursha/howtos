@@ -44,8 +44,28 @@ A contract (interface) between two parties say, A and B such that both have cert
 ## Loose Coupling
 - https://en.wikipedia.org/wiki/Coupling_(computer_programming)
 
+The more references the more coupling (problems). Coupling means that if one module changes it will necessitate changes in another module.
+
+```bash
+grep-ruby() { find app lib -iname '*.rb' | xargs grep $* }
+
+grep-ruby -h '^[[:space:]]*\(class\|module\)\b' |
+sed 's/^[[:space:]]*//' |
+cut -d ' ' -f 2 |
+while read class; do
+    echo "$(grep-ruby -l "\b$class\b" | wc -l) $class"
+done |
+sort -n
+
+# alternative form
+grep -rh '^[[:space:]]*\(class\|module\)\b' app lib --include='*.rb' | sed 's/^[[:space:]]*//' | cut -d ' ' -f 2 | while read class; do echo "$(grep -rl "\b$class\b" app lib --include="*.rb" | wc -l) $class"; done | sort -n
+
+# java form
+find src/main -name '*.java' | xargs -n1 -I '{}' basename '{}' .java | while read class; do echo "$(grep -rl "\b$class\b" src --include="*.java" | wc -l) $class"; done | sort -rn
+```
+
 ## Encapsulation
-- https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)
+- [wikipedia](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming))
 
 ## Information Hiding
 - https://en.wikipedia.org/wiki/Information_hiding

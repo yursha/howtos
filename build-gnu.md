@@ -46,4 +46,5 @@ Command-line utils
 - http://www.gnu.org/software/libtool/libtool.html
 
 # Make
-- http://gnuwin32.sourceforge.net/packages/make.htm 
+- [GNU Manual for Unix](https://www.gnu.org/software/make/manual/make.html)
+- [Windows port](http://gnuwin32.sourceforge.net/packages/make.htm)
