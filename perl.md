@@ -1,0 +1,2 @@
+- [Perl Website](https://www.perl.org/)
+- [Learning Perl](http://learn.perl.org/)

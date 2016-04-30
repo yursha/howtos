@@ -250,7 +250,7 @@ So the presentation of conflicts is really a matter of the plugin used; the defa
 - `git commit -a` will commit a merge once all conflicts are resolved.
 - http://stackoverflow.com/questions/226976/how-can-i-know-in-git-if-a-branch-has-been-already-merged-into-master
 
-## Undo a commit 
+## Undo a commit
 - http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit
 
 ## Edit commit message

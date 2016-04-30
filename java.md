@@ -44,6 +44,7 @@
 # OpenJDK
 - http://openjdk.java.net/
 - https://adoptopenjdk.gitbooks.io/adoptopenjdk-getting-started-kit/
+
 # People
 - http://stackoverflow.com/users/22656/jon-skeet
 
@@ -91,7 +92,7 @@ The JVM uses internally escape analysis to check if an object is used only with 
 - `pstack`
 
 # javac
-- `javac -XD-printflat -d output_dir SomeFile.java` - look for javac does with '*.java' files
+- `javac -XD-printflat -d output_dir SomeFile.java` - look for javac does with `*.java` files
 
 # java decompiler
 
