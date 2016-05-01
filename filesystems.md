@@ -1,5 +1,10 @@
 On UNIX systems, moving a directory within the same partition generally consists of renaming the directory.
 
+Filesystem access is not automatically synchronized. Each process/thread maintains its own access mode and cursor in the file and unaware of other processes/threads.
+
+# Resources
+- [Storage Administration Guide in Fedora Docs](https://docs.fedoraproject.org/en-US/Fedora/14/html/Storage_Administration_Guide/index.html)
+
 # Programming files
 - streaming vs bulk reads
 - use buffered IO (deferred execution)
@@ -32,10 +37,19 @@ On UNIX systems, moving a directory within the same partition generally consists
 File system is a kernel driver
 - ntfs
 - hpfs+
-- ext3
-- ext4 (inode)
 - zfs
 - dos
+
+## ext4 (inode)
+- [The Ext4 File System in Fedora Docs](https://docs.fedoraproject.org/en-US/Fedora/14/html/Storage_Administration_Guide/newfilesys-ext4.html)
+- `man ext4`
+- [e2fsprogs](http://e2fsprogs.sourceforge.net)
+    + `mke2fs`
+    + `resize2fs`
+    + `e2fsck`
+    + `debugfs`
+    + `tune2fs`
+    + `dumpe2fs`
 
 # file system operations
 - syntactic file path operations (don't access file system)

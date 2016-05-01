@@ -103,6 +103,9 @@ Some wireless chipsets also require firmware, in addition to a driver. Many firm
 - https://www.quora.com/What-does-Linus-Torvalds-think-of-Java-and-the-JVM
 
 # System calls
+- Section 2 of the man pages describes system calls (kernel interface)
+- `man 2 intro`
+- `man syscalls`
 
 # ifconfig
 
@@ -260,6 +263,7 @@ Sudo can also be used to run commands as other users; additionally, sudo logs al
 
 # Fedora
 - https://getfedora.org/
+- https://docs.fedoraproject.org/en-US/index.html
 - https://github.com/developer-portal
 - https://fedoraproject.org/wiki/Fedora_Project_Wiki
 - https://github.com/FedoraKDE

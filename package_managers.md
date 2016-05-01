@@ -20,6 +20,12 @@ pip list
 pacman -Q
 ```
 
+# List files of a package
+```
+rpm -ql <package>
+rpm -ql <package> | grep bin # list executable files
+```
+
 # Find out which package a file belongs to
 ```bash
 rpm -qf /usr/sbin/lsmod
@@ -43,4 +49,5 @@ rpm -qi kmod
 - `pacman -Rs --nosave` - remove package and all its deps and config files
 
 # RPM (Red Hat Package Manager)
-- Taking the Red Hat Package Manager to the Limit - http://www.rpm.org/max-rpm/index.html
+- [Taking the Red Hat Package Manager to the Limit](http://www.rpm.org/max-rpm/index.html)
+- [RPM Guide in Fedora Docs](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/RPM_Guide/index.html)

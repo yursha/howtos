@@ -7,6 +7,7 @@
     1. books (give the broadest outlook at the topic)
         - [SICP](https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html#%_toc_start)
 1. main
+    1. [man pages](http://www.nongnu.org/man-db/)
     1. specifications
     1. manuals
     1. tutorials
