@@ -141,6 +141,8 @@ if (exists("path/to/file.txt")):
 - `mktemp`
 - `realpath`
 
+# Print all bytes of a file with character mappings
+- `hexdump -c file.txt`
 
 
 

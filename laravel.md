@@ -1,2 +1,0 @@
-- https://laravel.com/
-- https://laravel.com/docs/5.2/homestead

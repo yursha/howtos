@@ -16,3 +16,11 @@
 ## JDWP (Java Debug Wire Protocol)
 - `java -agentlib:jdwp=transport=dt_socket,server=y,address=8000` - debug agent listens on port 8000, suspending JVM before the main class loads.
 
+# Perl Debugger
+## Commands
+- p - print scalar
+- x - print data structure
+- b subname - set breakpoint at function entry
+- l - list the next few lines of the source code
+- l from-to - list source code between given lines
+- q - quit the debugger
