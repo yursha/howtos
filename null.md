@@ -13,7 +13,23 @@ In general think about what kinds of defects are possible and how they occur. Pl
 - http://www.cs.man.ac.uk/~johns/npe.html
 - https://yinwang0.wordpress.com/2013/06/03/null/
 
-*python*
-```python
-None
+# null-values
+- `null` - java, php, sql
+- `undef` - perl
+- `None` - python
+- `Nil` - ruby
+
+# null-checks
+*java*
+```java
+if (x != null) {
+    // ...
+}
+```
+
+*perl*
+```perl
+if (defined $x) {
+    ...
+}
 ```

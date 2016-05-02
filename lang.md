@@ -20,7 +20,7 @@
 # Concepts
 - Application domains have conflicting needs.
 - Programmer training is the dominant cost of a programming language (not R&D for it)
-- Operator overloading
+- Operator overloading (by default perl doesn't have operator overloading, so '>' is used for numbers and 'gt' is used for strings).
 - Type casting / automatic type conversions
 - Significant whitespace
     + yes (python)

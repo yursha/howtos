@@ -1,3 +1,6 @@
+- Weakly typed languages (javascript, perl, php)
+- Strongly types languages (java, swift)
+
 # Casting
 *python*
 ```python

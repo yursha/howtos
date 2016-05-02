@@ -1,3 +1,10 @@
+# Reference
+- Java
+    + https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
+    + https://docs.oracle.com/javase/8/docs/api/java/util/StringJoiner.html
+    + http://google.github.io/guava/releases/19.0/api/docs/com/google/common/base/Strings.html
+    + https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html
+
 # Implementation
 *java*
 Strings are immutable
@@ -34,6 +41,39 @@ length "my long string";
 len("my long string")
 ```
 
+# Is empty
+*java*
+```java
+str.isEmpty()
+```
+
+# To uppercase
+*java*
+```java
+str.toUpperCase()
+```
+
+*perl*
+```perl
+uc $str
+```
+
+# To lowercase
+*java*
+```java
+str.toLowerCase()
+```
+
+*perl*
+```perl
+lc $str
+```
+
+*perl*
+```perl
+$str eq ''
+```
+
 # Replace by index
 *java*
 ```java
@@ -44,8 +84,8 @@ String b = a.substring(0, 4) + "day" + a.substring(11); // "The day is good"
 # Replace by value
 - http://stackoverflow.com/questions/16702357/how-to-replace-a-substring-of-a-string
 
-# Interpolate
-*perl*
+# Interpolation
+*perl* (only strings in double quotes `"` are interpolated, or those with `qq` operator).
 ```perl
 my $name = "Alex";
 my $year = 1986;
@@ -60,7 +100,7 @@ year = 1986
 result = template % (name, year)
 ```
 
-# Concatenate
+# Concatenation
 *perl*
 ```perl
 my $a = "Hello ";
@@ -101,7 +141,18 @@ my $divider = "-" x 10
 divider = "-" * 10
 ```
 
-# Preformat
+# Here documents
+*perl*
+```perl
+my $multiline_string = <<"END_MESSAGE";
+Hey
+This is
+a multiline
+string!
+END_MESSAGE
+```
+You can use `qq` operator for here documents as well.
+
 *python*
 ```python
 multiline_string = """
@@ -122,6 +173,4 @@ def break_words(stuff):
 ```
 
 # Join
-- https://docs.oracle.com/javase/8/docs/api/java/util/StringJoiner.html
-- https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
 - http://www.leveluplunch.com/java/tutorials/031-join-strings-java8/
