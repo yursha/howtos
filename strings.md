@@ -31,6 +31,11 @@ Strings are immutable
 - `\xhh` - Character with hex value hh
 
 # Length
+*java*
+```java
+"my long string".length();
+```
+
 *perl*
 ```perl
 length "my long string";
