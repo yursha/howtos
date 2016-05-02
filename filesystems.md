@@ -2,6 +2,8 @@ On UNIX systems, moving a directory within the same partition generally consists
 
 Filesystem access is not automatically synchronized. Each process/thread maintains its own access mode and cursor in the file and unaware of other processes/threads.
 
+- [inode in wikipedia](https://en.wikipedia.org/wiki/Inode)
+
 # Resources
 - [Storage Administration Guide in Fedora Docs](https://docs.fedoraproject.org/en-US/Fedora/14/html/Storage_Administration_Guide/index.html)
 
@@ -42,6 +44,10 @@ File system is a kernel driver
 
 ## ext4 (inode)
 - [The Ext4 File System in Fedora Docs](https://docs.fedoraproject.org/en-US/Fedora/14/html/Storage_Administration_Guide/newfilesys-ext4.html)
+- [Ext4 - kernel newbies](http://kernelnewbies.org/Ext4)
+- [Ext4 - Red Hat](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-ext4.html)
+- [Ext4 - wikipedia](https://en.wikipedia.org/wiki/Ext4)
+- [Ext4 - kernel archive wiki](https://ext4.wiki.kernel.org/index.php/Main_Page)
 - `man ext4`
 - [e2fsprogs](http://e2fsprogs.sourceforge.net)
     + `mke2fs`

@@ -1,3 +1,1 @@
-# Java
-## [Guava](https://github.com/google/guava)
-- PeekingIterator
+- PeekingIterator (java - guava)

@@ -1,2 +1,17 @@
+- [Larry Wall website](http://www.wall.org/~larry/)
 - [Perl Website](https://www.perl.org/)
+- [Perl Doc](http://perldoc.perl.org/)
+- [Perl Doc - Variables](http://perldoc.perl.org/perlvar.html)
+- [Perl Doc - Syntax](http://perldoc.perl.org/perlsyn.html)
 - [Learning Perl](http://learn.perl.org/)
+- [Perl Monks Forum](http://perlmonks.org/)
+- [`perldoc`](http://search.cpan.org/dist/Pod-Perldoc/)
+- `perldoc perlpod` - Plain Old Documentation
+- [Pod::Html and pod2html command](https://metacpan.org/pod/Pod::Html)
+- `perldoc Module::Name` - lookup docs for an installed CPAN module
+- [meta::cpan](https://metacpan.org/)
+- [search.cpan.org](http://search.cpan.org/)
+- Data::Dumper
+- [perldiag](https://metacpan.org/pod/perldiag)
+- [Perl Video Course for beginners](http://perlmaven.com/beginner-perl-maven-video-course)
+- [Scalar::Util](http://perldoc.perl.org/Scalar/Util.html)

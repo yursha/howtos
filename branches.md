@@ -1,12 +1,35 @@
+*java*
+```java
+if (age > 35) {
+    System.out.println("You can be U.S. President.");
+} else if (age > 18) {
+    System.out.println("You can vote.");
+} else {
+    System.out.println("You can't vote yet");
+}
+
+```
+*perl*
+```perl
+if ($age > 35) {
+    print "You can be U.S. President.\n";
+} elsif ($age > 18) {
+    print "You can vote.\n";
+} else {
+    print "You can't vote yet.\n";
+}
+```
+
 *python*
 ```python
-if cars > people:
-    print "We should take the cars."
-elif cars < people:
-    print "We should not take the cars."
+if age > 35:
+    print "You can be U.S. President."
+elif age > 18:
+    print "You can vote."
 else:
-    print "We can't decide."
+    print "You can't vote yet."
 ```
+
 
 *bash*
 ```bash

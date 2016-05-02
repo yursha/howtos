@@ -24,6 +24,11 @@ Strings are immutable
 - `\xhh` - Character with hex value hh
 
 # Length
+*perl*
+```perl
+length "my long string";
+```
+
 *python*
 ```python
 len("my long string")
@@ -40,15 +45,29 @@ String b = a.substring(0, 4) + "day" + a.substring(11); // "The day is good"
 - http://stackoverflow.com/questions/16702357/how-to-replace-a-substring-of-a-string
 
 # Interpolate
+*perl*
+```perl
+my $name = "Alex";
+my $year = 1986;
+result = "My name is $name. I was born in $year";
+```
+
 *python*
 ```python
 template = "My name is %s. I was born in %d."
-my_name = "Alex"
+name = "Alex"
 year = 1986
-result = template % (my_name, year)
+result = template % (name, year)
 ```
 
 # Concatenate
+*perl*
+```perl
+my $a = "Hello ";
+my $b = " world!";
+c = a . b;
+```
+
 *python*
 ```python
 a = "Hello "
@@ -57,6 +76,26 @@ c = a + b
 ```
 
 # Repeat
+*java*
+```java
+String divider = new String(new char[10]).replace('\0', '-');
+```
+
+*java - guava*
+```java
+String divider = Strings.repeat("-", 10);
+```
+
+*java - apache commons lang*
+```java
+String divider = StringUtils.repeat("-", 10);
+```
+
+*perl*
+```perl
+my $divider = "-" x 10
+```
+
 *python*
 ```python
 divider = "-" * 10

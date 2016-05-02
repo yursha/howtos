@@ -106,6 +106,10 @@ Some wireless chipsets also require firmware, in addition to a driver. Many firm
 - Section 2 of the man pages describes system calls (kernel interface)
 - `man 2 intro`
 - `man syscalls`
+- [Syscalls Table by Filippo Valsorda](https://filippo.io/linux-syscall-table/)
+- [Syscalls Table by Ryan Chapman](http://blog.rchapman.org/post/36801038863/linux-system-call-table-for-x86-64)
+- [Linux syscalls](http://cs.lmu.edu/~ray/notes/linuxsyscalls/)
+- [Source code for `open` syscall](https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/fs/open.c)
 
 # ifconfig
 

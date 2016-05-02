@@ -1,0 +1,2 @@
+- `perl -e "print 42"`
+- `perl -i.bak -p -e "s/\bJava\b/Perl/" resume.txt`

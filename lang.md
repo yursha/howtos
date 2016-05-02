@@ -20,6 +20,12 @@
 # Concepts
 - Application domains have conflicting needs.
 - Programmer training is the dominant cost of a programming language (not R&D for it)
+- Operator overloading
+- Type casting / automatic type conversions
+- Significant whitespace
+    + yes (python)
+    + no (java, javascript, perl, php)
+- yada, yada operator (`...`) throws `Unimplemeted` exception (perl).
 
 # Languages
 ## R

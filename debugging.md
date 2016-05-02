@@ -17,6 +17,8 @@
 - `java -agentlib:jdwp=transport=dt_socket,server=y,address=8000` - debug agent listens on port 8000, suspending JVM before the main class loads.
 
 # Perl Debugger
+- [Debugging Perl by Gabor Szabo](http://perlmaven.com/using-the-built-in-debugger-of-perl)
+
 ## Commands
 - p - print scalar
 - x - print data structure
