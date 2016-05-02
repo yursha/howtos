@@ -39,3 +39,6 @@
 - https://www.linkedin.com/pulse/20140503193653-3046051-why-google-style-guide-for-c-is-a-deal-breaker
 - http://www.stroustrup.com/bs_faq2.html
 - http://wiki.ros.org/CppStyleGuide
+
+# if-then-else
+- http://c2.com/cgi/wiki?CuddledElseBlocks
