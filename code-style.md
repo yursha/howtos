@@ -40,5 +40,8 @@
 - http://www.stroustrup.com/bs_faq2.html
 - http://wiki.ros.org/CppStyleGuide
 
+*perl*
+- `perdoc perlstyle`
+
 # if-then-else
 - http://c2.com/cgi/wiki?CuddledElseBlocks
