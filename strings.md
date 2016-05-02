@@ -47,6 +47,11 @@ len("my long string")
 str.isEmpty()
 ```
 
+*perl*
+```perl
+$str eq ''
+```
+
 # To uppercase
 *java*
 ```java
@@ -67,11 +72,6 @@ str.toLowerCase()
 *perl*
 ```perl
 lc $str
-```
-
-*perl*
-```perl
-$str eq ''
 ```
 
 # Replace by index
