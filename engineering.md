@@ -12,13 +12,9 @@
 # What are you trying to optimize for?
 Like so many things in system design, it totally depends on what you're trying to optimize for. Am I trying to prevent corrupt data from EVER getting into the system? Then I put validation as close to the data layer as I can. Am I trying to optimize user experience? Then I put validation as close to the glass as I can. What am I trying to optimize? 
 
-# Versionning
-- http://semver.org/
 - https://github.com/braydie/HowToBeAProgrammer
 - Brian W. Kernighan and Rob Pike - "The Practice of Programming"
 - https://www.youtube.com/watch?v=YkXzAbO2sHg - Kite (programming copilot)
-- Don't bump up snapshot versions if there were no a corresponding release.
-- Release versions from a.b.c can go only to a+1.0.0, a.b+1.0 or a.b.c+1
 
 # Standard Streams
 - Develop data processing tools so that they work as data processing filters accepting data from STDIN and sending it to STDOUT

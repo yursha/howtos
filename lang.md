@@ -26,6 +26,8 @@
     + yes (python)
     + no (java, javascript, perl, php)
 - yada, yada operator (`...`) throws `Unimplemeted` exception (perl).
+- Short-circuit evaluation
+    + yes (java, perl)
 
 # Languages
 ## R
