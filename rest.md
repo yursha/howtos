@@ -15,6 +15,7 @@
 - https://jersey.java.net/
 - https://jersey.java.net/documentation/latest/index.html
 - https://github.com/jersey/jersey
+- [Jersey Javadoc](https://jersey.java.net/apidocs/latest/jersey/)
 
 ## Jersey Test Framework
 

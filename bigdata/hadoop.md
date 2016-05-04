@@ -1,3 +1,4 @@
+- [Apache Hadoop Website](http://hadoop.apache.org/)
 - http://hadoop.apache.org/docs/current/api/
 
 # Notable hosting providers

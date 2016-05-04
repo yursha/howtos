@@ -1,3 +1,6 @@
+# Resources
+- [`java.security`](https://docs.oracle.com/javase/8/docs/api/java/security/package-summary.html) - looks for links also.
+
 - http://www.techrepublic.com/blog/it-security/security-tools-should-be-designed-for-security/
 
 - Don't assume unlimited resources (memory, disk space, cpu, sockets, etc) in your program, as this assumption can be adversely exploited by an attacker to shut down the system (which has limited resources).
@@ -37,6 +40,10 @@ Your best bets are the algorithms called SHA-2 (which come in various flavors wi
 - `javax.crypto.interfaces`
 - providers (Sun, SunRsaSign, SunJCE)
 
+Algorithm independence is achieved by defining types of cryptographic "engines" (services), and defining classes that provide the functionality of these cryptographic engines. These classes are called engine classes, and examples are the `MessageDigest`, `Signature`, `KeyFactory`, `KeyPairGenerator`, and `Cipher` classes.
+
+`java.security.Provider` is the base class for all security providers.
+
 # Java Cryptography Extension
 - [JCE](http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html)
 
@@ -46,6 +53,7 @@ Your best bets are the algorithms called SHA-2 (which come in various flavors wi
 - [BouncyCastle 1.5 PKI Javadoc](http://bouncycastle.org/docs/pkixdocs1.5on/index.html)
 - [BouncyCastle 1.5 PGP Javadoc](http://bouncycastle.org/docs/pgdocs1.5on/index.html)
 - [BouncyCastle 1.5 S/MIME Javadoc](http://bouncycastle.org/docs/mdocs1.5on/index.html)
+- `org.bouncycastle:bcprov-jdk15on` - maven package
 
 # Captcha
 - https://developers.google.com/recaptcha/docs/start
