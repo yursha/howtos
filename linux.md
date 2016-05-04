@@ -37,6 +37,7 @@ Parameters can be passed to the kernel:
 - `cal` - calendar
 - `rename`
 - `write`
+- `whereis`
 
 ## procps-ng
 - https://gitlab.com/procps-ng/procps

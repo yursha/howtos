@@ -37,3 +37,6 @@
 
 # Maven Surefire
 - https://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html
+
+# Alternative Frameworks
+- https://github.com/apenwarr/wvtest

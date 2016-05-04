@@ -1,4 +1,5 @@
 # Resources
+- [Java SE Security Oracle](http://www.oracle.com/technetwork/java/javase/tech/index-jsp-136007.html)
 - [`java.security`](https://docs.oracle.com/javase/8/docs/api/java/security/package-summary.html) - looks for links also.
 
 - http://www.techrepublic.com/blog/it-security/security-tools-should-be-designed-for-security/
@@ -49,11 +50,14 @@ Algorithm independence is achieved by defining types of cryptographic "engines" 
 
 # BouncyCastle
 - [BouncyCastle](http://bouncycastle.org/) - cryptographic algorithms for Java and C#, pluggable into JCE
+- [BouncyCastle - resources](http://bouncycastle.org/resources.html)
+- [BouncyCastle - specs](http://bouncycastle.org/specifications.html)
 - [BouncyCastle 1.5 Javadoc](http://bouncycastle.org/docs/docs1.5on/index.html)
 - [BouncyCastle 1.5 PKI Javadoc](http://bouncycastle.org/docs/pkixdocs1.5on/index.html)
 - [BouncyCastle 1.5 PGP Javadoc](http://bouncycastle.org/docs/pgdocs1.5on/index.html)
 - [BouncyCastle 1.5 S/MIME Javadoc](http://bouncycastle.org/docs/mdocs1.5on/index.html)
 - `org.bouncycastle:bcprov-jdk15on` - maven package
+- [The Cryptoworkshop Guide to Java Cryptography and the Bouncy Castle APIs](http://www.cryptoworkshop.com/guide/cwguide-070313.pdf)
 
 # Captcha
 - https://developers.google.com/recaptcha/docs/start

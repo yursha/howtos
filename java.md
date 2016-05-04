@@ -101,6 +101,7 @@ The JVM uses internally escape analysis to check if an object is used only with 
 # java decompiler
 
 # java
+- With `-jar` option, `-cp` has no effect
 - `-verbose:class` - log all loaded classes
 - `-verbose:jni` - log use of native methods
 - `java [-options] -jar jarfile [args...]` - run jar
@@ -202,11 +203,6 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 - http://openjdk.java.net/
 - https://adoptopenjdk.gitbooks.io/adoptopenjdk-getting-started-kit/
 
-# java
-- `-verbose:class` - log all loaded classes
-- `-verbose:jni` - log use of native methods
-- `java [-options] -jar jarfile [args...]` - run jar
-- `java [-options] -cp jarfile com.mypackage.MyClass` - run specific file in a jar
 
 # Java Mission Control
 

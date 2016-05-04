@@ -16,6 +16,8 @@
 # SQL
 - https://www.sqlite.org/lang_expr.html √
 - https://www.sqlite.org/lang_createtable.html
+- https://github.com/apenwarr/csv2sqlite
+- http://apenwarr.ca/log/
 
 # Virtual Machine
 - https://www.sqlite.org/opcode.html - New Virtual Machine

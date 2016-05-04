@@ -9,6 +9,7 @@
 
 # Resources
 - POM Reference - https://maven.apache.org/pom.html
+- [Apache Introduction to POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 - http://www.sonatype.com/books/mvnref-book/reference/
 - https://codehaus-plexus.github.io/ - Maven Core Components
 - http://maven.apache.org/plugin-tools/index.html

@@ -22,6 +22,10 @@
 - http://wiki.fasterxml.com/JacksonDocumentation
 - http://stackoverflow.com/questions/31689107/deserializing-an-enum-with-jackson
 - http://www.baeldung.com/jackson-serialize-dates
+- `com.fasterxml.jackson.module:jackson-module-scala_2.11` - jackson scala integration
+- [jackson module scala Javadoc](http://fasterxml.github.io/jackson-module-scala/latest/api/#package)
+- [Jackson module Scala GitHub](https://github.com/FasterXML/jackson-module-scala)
+- [Jackson, Scala and DW](http://techblog.newsweaver.com/config-parsing-issue-dropwizard-0-9-scala/)
 
 #### Streaming API
 - http://fasterxml.github.io/jackson-core/javadoc/2.7/overview-summary.html
