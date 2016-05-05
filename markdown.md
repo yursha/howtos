@@ -1,4 +1,5 @@
 - [Markdown syntax by John Gruber](https://daringfireball.net/projects/markdown/syntax)
+- [GitHub Markdown Guide](https://guides.github.com/features/mastering-markdown/)
 
 # Dillinger
 

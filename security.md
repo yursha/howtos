@@ -63,6 +63,7 @@ Algorithm independence is achieved by defining types of cryptographic "engines" 
 - https://developers.google.com/recaptcha/docs/start
 
 # SSL/TLS
+- Secures data in transit
 - http://www.eclipse.org/jetty/documentation/current/configuring-ssl.html
 
 ## Java Secure Socket Extention (JSSE)

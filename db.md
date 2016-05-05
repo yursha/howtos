@@ -9,7 +9,9 @@
 - Mongo DB
 - Redis
 - Cassandra
-- Hive
 - Couch DB
 - PostgreSQL
 - MapDB
+
+
+# [Hive](https://hive.apache.org/)
