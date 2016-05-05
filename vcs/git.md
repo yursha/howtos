@@ -300,6 +300,13 @@ The command takes options applicable to the `git rev-list` to control what is sh
 
 - `git cherry-pick`
 
+# See the file history
+- `git log -p <filename>`
+
+# Rename function calls
+- https://github.com/thlorenz/rename-function-calls
+- Tracing the git history of a Ruby Method  http://gofreerange.com/tracing-the-git-history-of-a-ruby-method
+
 # Git Branching 
 A head is a movable pointer to one of commits.
 `HEAD` is a movable pointer to the currently active head.

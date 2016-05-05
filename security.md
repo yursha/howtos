@@ -58,6 +58,7 @@ Algorithm independence is achieved by defining types of cryptographic "engines" 
 - [BouncyCastle 1.5 S/MIME Javadoc](http://bouncycastle.org/docs/mdocs1.5on/index.html)
 - `org.bouncycastle:bcprov-jdk15on` - maven package
 - [The Cryptoworkshop Guide to Java Cryptography and the Bouncy Castle APIs](http://www.cryptoworkshop.com/guide/cwguide-070313.pdf)
+- [BC Wiki](http://www.bouncycastle.org/wiki/display/JA1/Provider+Installation)
 
 # Captcha
 - https://developers.google.com/recaptcha/docs/start

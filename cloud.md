@@ -25,6 +25,9 @@
 
 ## White papers
 - [AWS Storage Services Overview](https://d0.awsstatic.com/whitepapers/AWS%20Storage%20Services%20Whitepaper-v9.pdf)
+- [Backup. Archive, and Restore Approaches Using AWS](https://d0.awsstatic.com/whitepapers/Backup_Archive_and_Restore_Approaches_Using_AWS.pdf)
+- [Hosting Static Websites on AWS](https://d0.awsstatic.com/whitepapers/Building%20Static%20Websites%20on%20AWS.pdf)
+- [Enterprise Backup and Recovery](https://d0.awsstatic.com/whitepapers/best-practices-for-backup-and-recovery-on-prem-to-aws.pdf)
 
 ## [Case Studies](https://aws.amazon.com/solutions/case-studies/)
 - [Case Study: Hess Corporation](https://aws.amazon.com/solutions/case-studies/hess-corporation/)
