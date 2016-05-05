@@ -26,7 +26,11 @@
 
 ## Encryption
 - encryption (symmetric/asymmetric block/stream ciphers)
+- What is a block cipher? Amazon uses AES-256 block cipher to encrypt data at rest in AWS.
 - Java Encryption API (may have bad usability)
+- Server-side encryption to encrypt all data at rest.
+- Client-side encryption
+- Transfer encryption (SSL)
 
 
 MD5 and SHA1 have vulnerabilities.
