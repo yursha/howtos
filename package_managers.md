@@ -51,3 +51,10 @@ rpm -qi kmod
 # RPM (Red Hat Package Manager)
 - [Taking the Red Hat Package Manager to the Limit](http://www.rpm.org/max-rpm/index.html)
 - [RPM Guide in Fedora Docs](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/RPM_Guide/index.html)
+- [RPM GitHub repo](https://github.com/rpm-software-management/rpm)
+
+# DNF
+- [DNF, Dandified Yum](http://dnf.baseurl.org/)
+- [DNF, the next-generation replacement for Yum](http://dnf.readthedocs.io/en/latest/)
+- [DNF, Fedora Wiki](https://fedoraproject.org/wiki/Dnf)
+- [DNF System Upgrade - Fedora Wiki](https://fedoraproject.org/wiki/DNF_system_upgrade)
