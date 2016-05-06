@@ -85,7 +85,7 @@ Archive storage. Stores archives (each up to 40TB) in vaults. Data retrieval may
 
 -------------------------------------------------------------
 # [Amazon Elastic Block Store (EBS)](https://aws.amazon.com/ebs/)
-Persistent storage volumes (1GB to 16TB) for EC2 instances.
+Persistent network-attached storage volumes (1GB to 16TB) for EC2 instances.
 
 ### Use Cases
 -  data that changes relatively frequently and requires long-term persistence

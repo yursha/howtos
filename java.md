@@ -262,3 +262,6 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 
 # Getters and setters
 - http://programmers.stackexchange.com/questions/21802/when-are-getters-and-setters-justified
+
+# Automation
+- [Python script to remove unused imports in Java](https://gist.github.com/rodrigosetti/4734557#file-remove-unused-imports-py)
