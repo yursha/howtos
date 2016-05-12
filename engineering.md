@@ -1,6 +1,9 @@
-# DRY
+# DRY (Don't repeat yourself)
 - Isolates changes
 - Fewer LOC
+
+# YAGNI (You ain't gonna need it)
+- [YAGNI on wikipedia](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
 
 # Avoid hand-hacking
 - Write programs to write programs when you can.

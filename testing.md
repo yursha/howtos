@@ -4,6 +4,11 @@
 - Don't unit test external libraries and their interfaces
 - Unit test program functional logic
 
+# Kinds of tests
+- unit tests (for a method)
+- functional tests (from a component/subsystem/module)
+- e2e tests (across the entire application)
+
 # XUnit architecture
 
 # TDD

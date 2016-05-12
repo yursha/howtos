@@ -28,6 +28,7 @@
 - yada, yada operator (`...`) throws `Unimplemeted` exception (perl).
 - Short-circuit evaluation
     + yes (java, perl)
+- Context sensitivity (perl can change the function behavior based on type of variable to which the value is assigned)
 
 # Languages
 ## R

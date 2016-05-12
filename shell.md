@@ -12,11 +12,13 @@ If a shell command is terminated by `&`, the shell executes the subprocess async
 
 # Bash
 - Bookmark: #7 Job Control
-- [Bash-it](https://github.com/Bash-it/bash-it)
 - [Official Bash Manual](http://www.gnu.org/software/bash/manual/bash.html)
+- [Bash Git Repo](http://savannah.gnu.org/git/?group=bash)
+- [Bash-it](https://github.com/Bash-it/bash-it)
+- [Bash Guide for Beginners by Machtelt Garrels](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html)
+- [Advanced Bash Scripting Guide (Linux Documentation Project)](tdlp.org/LDP/abs/html/)
 - http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html
 - http://www.infoworld.com/article/2893519/linux/perl-python-ruby-are-nice-bash-is-where-its-at.html
-- Advanced Bash Scripting Guide (Linux Documentation Project) tdlp.org/LDP/abs/html/
 - www.gnu.org/software/parallel
 - https://github.com/jlevy/the-art-of-command-line
 - http://www.infoworld.com/article/2893519/linux/perl-python-ruby-are-nice-bash-is-where-its-at.html

@@ -1,0 +1,2 @@
+- [IANA registered MIME types](http://www.iana.org/assignments/media-types/media-types.xhtml)
+- [MIME type list from SitePoint (contains non-standard mime types as well)](http://www.sitepoint.com/web-foundations/mime-types-complete-list/)

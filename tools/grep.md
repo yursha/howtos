@@ -7,7 +7,7 @@
 - `-e` - pattern
 - `-i` - ignore case
 - `-v` - invert match
-- `-w` - word pattern (a-zA-Z_)
+- `-w` - word pattern `(a-zA-Z_)`
 - `-x` - whole line pattern
 
 ## Output control

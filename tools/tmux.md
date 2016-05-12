@@ -9,7 +9,8 @@
 - http://www.techrepublic.com/blog/linux-and-open-source/is-tmux-the-gnu-screen-killer/
 - https://raw.githubusercontent.com/danielmiessler/tmux/master/.tmux.config
 - https://danielmiessler.com/study/tmux/
-- tmux shortcuts & cheatsheet - https://gist.github.com/MohamedAlaa/2961058
+- [tmux shortcuts & cheatsheet by Mohamed Alaa](https://gist.github.com/MohamedAlaa/2961058)
+- [tmux cheat sheet by Andrey Tarantsov](https://gist.github.com/andreyvit/2921703)
 - https://www.google.com/search?q=tmux+tutorial
 - http://www.dayid.org/comp/tm.html
 - http://minimul.com/teaches/tmux
@@ -33,16 +34,27 @@
 - To scroll up/down enter Copy Mode `prefix-[` and use arrow keys or `Ctrl-b` and `Ctrl-f` to move by character. Exit then Copy Mode by `Ctrl-c`.
 
 # Sessions
-- List sessions `tmux ls`
-- Create session `tmux new -s mysession`
-- Attach to a session `tmux attach -t mysession`
-- Kill session `tmux kill-session -t mysession`
-- `prefix-$` - rename session
+## shell cli commands
+`tmux` - start new
+`tmux new -s myname` - start new named
+`tmux a` - attach
+`tmux a -t myname` - attached to named
+`tmux ls` - list sessions
+`tmux kill-session -t myname` - kill named
+
+## tmux cli commands
+:new<CR> - new session
+
+## prefix commands
+$ - name session
+s - list sessions
 
 # Windows (tabs) prefix commands
+## prefix commands
 ```
 c - create window
 w - list windows
+3 - switch to 3rd window
 n - next window
 p - previous window
 f - find window
@@ -60,9 +72,12 @@ f - find window
 ## prefix commands
 ```
 x - kill
-z - maximize/unmaximize pane
+z - toggle zoom pane
 % - horizontal split
 " - vertical split
-q - show pane numbers
+q - show pane numbers (then type the number to go to that pane)
   - switch pane layout (SP char)
+} - move pane to the next position
+{ - move pane to the previous position
+o - select next pane
 ```

@@ -16,6 +16,8 @@
 - https://github.com/kana/vim-textobj-entire - Custom vim motion example `:h omap-info`
 - http://vimcasts.org/
 - http://peertopeer.io/
+- [Vim Video Tutorials by Derek Wyatt](http://derekwyatt.org/vim/tutorials/index.html)
+- [Vim Scala integration by Derek Wyatt](https://github.com/derekwyatt/vim-scala)
 
 # `:help <arg>` or `:helpgrep <arg`
 Bookmark: quickref, usr_07.txt, 
@@ -306,3 +308,5 @@ Works in Insert Mode
 
 # Folks
 - https://github.com/tpope
+
+# [Pathogen by Tim Pope](https://github.com/tpope/vim-pathogen)

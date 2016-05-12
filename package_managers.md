@@ -36,6 +36,16 @@ rpm -qf /usr/sbin/lsmod
 rpm -qi kmod
 ```
 
+# List all remote groups (development)
+```
+dnf groups list | grep -i devel
+```
+
+# Install a group
+```
+dnf groups install "Development Tools"
+```
+
 # Pacman
 - `pacman -Sl` - list all remote packages
 - `pacman -Qi <package>` - display information about an installed package

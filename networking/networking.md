@@ -40,7 +40,7 @@
 - `sftp` archlinux package and tool for FTP over SSH
 
 # RDP
-- `rdesktop` - archlinux package and tool for RDP
+- `rdesktop` - archlinux and fedora package and tool for RDP
 
 # wifi
 ## `iw`

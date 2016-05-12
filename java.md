@@ -203,6 +203,13 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 - http://openjdk.java.net/
 - https://adoptopenjdk.gitbooks.io/adoptopenjdk-getting-started-kit/
 
+- how to clone
+```bash
+% hg clone http://hg.openjdk.java.net/jdk9/dev 9dev
+% cd 9dev
+% sh ./get_source.sh
+```
+
 
 # Java Mission Control
 
