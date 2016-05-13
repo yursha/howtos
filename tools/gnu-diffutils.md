@@ -1,0 +1,2 @@
+- [GNU diffutils](http://www.gnu.org/software/diffutils/diffutils.html)
+- [An Algorithm for Differential File Comparison by Hunt (Stanford) and McIlroy (Bell)](http://www.cs.dartmouth.edu/~doug/diff.pdf)

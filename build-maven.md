@@ -16,6 +16,7 @@
 
 # Tips
 - If it seems to be a dependency problem try `-U` option.
+- `mkdir -p src/{main,test}/{java,resources}` - create maven project structure
 
 ## Don't use `reactor` Maven component (multi-module projects)
 Keep each module in its own git repo with a singe `pom.xml` file.

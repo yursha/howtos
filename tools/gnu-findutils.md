@@ -1,7 +1,9 @@
-- [GNU Findutils Manual](http://www.gnu.org/software/findutils/manual/html_mono/find.html) Bookmark 2.4 Size
+- [GNU Findutils Manual](http://www.gnu.org/software/findutils/manual/html_mono/find.html) Bookmark 3.3 Run Commands
 - [SO - how xargs works](http://stackoverflow.com/questions/199266/make-xargs-execute-the-command-once-for-each-line-of-input/28806991#28806991)
+- [Unix Find Tutorial by Dr. Nikolai Bezroukov](http://www.softpanorama.org/Tools/Find/index.shtml)
 
 # `find`
+- smart tree traversal/search using all file attributes and performing various operations
 
 ## Examples
 - `% find [files...] [options...] [expression]` - Expressions consist of *tests*, *operators*, *actions* 
