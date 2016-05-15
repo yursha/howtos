@@ -1,7 +1,8 @@
 # `cups`
+- `cups-client` package on Fedora
 - https://wiki.archlinux.org/index.php/CUPS
 - http://www.cups.org/
-- `localhost:631`
+- `localhost:631` - local web page for cups
 
 - `lp`, `lpr`
 - `lpq`, `lpstat`

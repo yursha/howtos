@@ -15,3 +15,5 @@
 - [perldiag](https://metacpan.org/pod/perldiag)
 - [Perl Video Course for beginners](http://perlmaven.com/beginner-perl-maven-video-course)
 - [Scalar::Util](http://perldoc.perl.org/Scalar/Util.html)
+- [Perl 6](https://perl6.org/)
+- [BOOKMARK in Perl Tutorial by Gabor Szabo](http://perlmaven.com/reading-from-a-file-in-scalar-and-list-context)

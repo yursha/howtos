@@ -85,3 +85,5 @@ Client programmers should clearly understand what API is published and what is n
 
 # Reliability
 - http://danluu.com/google-sre-book
+
+- [WWDC14 summaries by andreyvit](https://gist.github.com/andreyvit/dc7ee18a1e3fd736a507)

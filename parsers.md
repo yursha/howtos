@@ -1,6 +1,9 @@
 - https://en.wikipedia.org/wiki/GLR_parser
 - https://github.com/hafriedlander/php-peg
 
+# Rules
+- If you develop a parser include both line number and column number in error messages.
+
 # Flat parsers
 - http://stackoverflow.com/questions/13853357/how-to-parse-a-delimited-flat-file-to-a-pojo
 - http://stackoverflow.com/questions/14324450/parsing-a-flat-file-in-java

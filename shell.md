@@ -90,3 +90,15 @@ python -c "import string; print set(string.lowercase) - set('`args`')"
 - Use more pipes and functions
 - Pay attention to how much ass you need
 - Strive to achieve the full range of quality
+
+# Why `echo` is bad (non-portable)
+- http://stackoverflow.com/questions/8467424/echo-newline-in-bash-prints-literal-n
+
+# Multiline strings
+- http://stackoverflow.com/questions/23929235/multi-line-string-with-extra-space
+
+# Float division
+- http://stackoverflow.com/questions/12722095/how-can-i-get-float-division
+
+# EOF
+- `C-D` - send EOF signal

@@ -94,6 +94,7 @@ Bookmark: quickref, usr_07.txt,
 - Resize split width `:vertical resize +10`
 
 ## vim grepping
+- http://vim.wikia.com/wiki/Find_in_files_within_Vim
 - `:grep` - populates quickfix list
 - `:vimgrep` - populates quickfix list
 - `:lgrep` - populates location list
@@ -310,3 +311,7 @@ Works in Insert Mode
 - https://github.com/tpope
 
 # [Pathogen by Tim Pope](https://github.com/tpope/vim-pathogen)
+- [Modern Vim config with Pathogen by Tammer Saleh](http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen/)
+- [Scala in Vim by Lauris Dzilums](https://lauris.github.io/vim/2014/08/21/scala-in-vim/)
+- http://www.mattjmorrison.com/today-i-learned/2014/10/03/learned.html
+- http://www.mattjmorrison.com/today-i-learned/2014/10/15/learned.html

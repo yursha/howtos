@@ -43,7 +43,7 @@ head -1 file.txt | xargs echo
 - `join`
 
 # Operating on characters
-- `tr`
+- `tr` - translate or delete characters
 - `expand`
 - `unexpand`
 

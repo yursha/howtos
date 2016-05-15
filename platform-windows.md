@@ -18,6 +18,9 @@
 # Recursively process all files in a directory
 - http://stackoverflow.com/questions/180741/how-to-do-something-to-each-file-in-a-directory-with-a-batch-script
 
+# Looks for all unique file extensions in the folder
+- `dir -recurse | select-object extension -unique`
+
 http://ggajos.com/environment-variables-management/
 
 #### Configure Microsoft Visual C++ for command line use.
