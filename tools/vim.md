@@ -8,7 +8,6 @@
 - http://stackoverflow.com/questions/1919028/how-to-show-vertical-line-to-wrap-the-line-in-vim
 - http://stackoverflow.com/questions/82726/convert-dos-line-endings-to-linux-line-endings-in-vim
 - https://github.com/mhinz/vim-galore
-- http://vim.wikia.com/wiki/Converting_variables_to_or_from_camel_case
 - https://robots.thoughtbot.com/set-your-mouse-free
 - http://vimgolf.com/
 - http://keyxl.com/aaa8263/290/VIM-keyboard-shortcuts.htm
@@ -19,10 +18,34 @@
 - [Vim Video Tutorials by Derek Wyatt](http://derekwyatt.org/vim/tutorials/index.html)
 - [Vim Scala integration by Derek Wyatt](https://github.com/derekwyatt/vim-scala)
 
-# `:help <arg>` or `:helpgrep <arg`
-Bookmark: quickref, usr_07.txt, 
+# Refresh
+`:so ~/.vimrc`
+
+# Case
+- http://vim.wikia.com/wiki/Converting_variables_to_or_from_camel_case
+- ~ - change case (tilde operator)
+- http://vim.wikia.com/wiki/Switching_case_of_characters
+- http://stackoverflow.com/questions/5064430/changing-the-case-within-snipmate-vim-snippets
+
+# Map keys
+- `:noremap` - don't recurse when expanding map
+- `:map`  - list all maps (normal, visual, operator-pending)
+- `:imap` - list insert and replace mode maps
+- `:nmap` - list normal mode maps
+- `:vmap` - list visual and select mode maps
+- `:smap` - list select mode maps
+- `:xmap` - list visual mode maps
+- `:omap` - list operator pending mode maps
+- `:cmap` - list cli mode maps
+- `:map!` - list insert and cli modes
+- `:Imap` - list insert, cli, lang-arg modes
+
+## Special keys
+- `help keycodes`
 
 # Reference manual
+- `:help <arg>` or `:helpgrep <arg`
+- Bookmark: quickref, usr_07.txt,
 - reference_toc
 - change.txt 4.4 Changing tabs ✓
 - insert.txt CTRL-Q, ins-expandtab
@@ -129,7 +152,6 @@ Bookmark: quickref, usr_07.txt,
 - u,U,CTRL-r - undoing
 - R - replace mode
 - ZZ,w,q<!>,e<!> - working with buffers
-- ~ - change case (**tildeop**)
 
 # Text Objects
 - aw - a word
@@ -204,13 +226,11 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 - `:help local-additions`
 
 # Snippets
-- http://www.vim.org/scripts/script.php?script_id=1318
-- http://www.vim.org/scripts/script.php?script_id=2540
+- [snippetsEmu vim plugin](http://www.vim.org/scripts/script.php?script_id=1318)
+- [snipMate vim plugin](http://www.vim.org/scripts/script.php?script_id=2540)
 - http://stackoverflow.com/questions/15334/how-to-create-short-snippets-in-vim
 - https://github.com/scrooloose/snipmate-snippets
-- http://stackoverflow.com/questions/5064430/changing-the-case-within-snipmate-vim-snippets
 - http://www.ibm.com/developerworks/library/l-vim-script-1/
-- http://vim.wikia.com/wiki/Switching_case_of_characters
 - http://stackoverflow.com/questions/14954095/adding-vim-snippets
 - https://github.com/honza/vim-snippets
 
@@ -243,7 +263,6 @@ Works in Insert Mode
 - `J` - join lines
 - `y` - yank
 - `yy` - yank line
-- http://vim.wikia.com/wiki/Switching_case_of_characters
 
 # Shortcuts
 - `C` = `c$`
@@ -315,3 +334,5 @@ Works in Insert Mode
 - [Scala in Vim by Lauris Dzilums](https://lauris.github.io/vim/2014/08/21/scala-in-vim/)
 - http://www.mattjmorrison.com/today-i-learned/2014/10/03/learned.html
 - http://www.mattjmorrison.com/today-i-learned/2014/10/15/learned.html
+
+
