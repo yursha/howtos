@@ -23,3 +23,5 @@
 
 # Functionals vs OOP
 - http://stackoverflow.com/questions/327955/does-functional-programming-replace-gof-design-patterns?rq=1
+
+- **list** - count, foreach, map, reduce, nth (first, last), iterator
