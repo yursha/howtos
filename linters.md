@@ -1,0 +1,1 @@
+- [Perl::Critic](http://perlcritic.com/)

@@ -28,6 +28,7 @@
 - http://stackoverflow.com/questions/5064430/changing-the-case-within-snipmate-vim-snippets
 
 # Map keys
+- http://vim.wikia.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)
 - `:noremap` - don't recurse when expanding map
 - `:map`  - list all maps (normal, visual, operator-pending)
 - `:imap` - list insert and replace mode maps
