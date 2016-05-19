@@ -68,6 +68,9 @@ Algorithm independence is achieved by defining types of cryptographic "engines" 
 - https://developers.google.com/recaptcha/docs/start
 
 # SSL/TLS
+- Domain Name
+- Certificate Authority (CA)
+- Certificate
 - Secures data in transit
 - http://www.eclipse.org/jetty/documentation/current/configuring-ssl.html
 
@@ -114,3 +117,44 @@ Algorithm independence is achieved by defining types of cryptographic "engines" 
 
 ## How to create an ssh key
 - https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+
+# Security Rules
+- Encrypt data in transit
+- Encrypt data at rest
+- Don't use fax transmission for PHI
+- Don't let someone physically see what's protected
+- Digitally wipe or physically shred the data when no longer needed
+- Lock and password protect you computer. Use password-protected screensaver.
+- Don't leave sensitive information on answering machines
+- There are basically 2 means to protect any data: encryption and destruction
+- Keep passwords safe
+- Account lock out policies - lock account after a certain amount of failed logon attempts. (Protects against password crackers)
+- Use antivirus software with an up to date signature file
+- Delete emails if they originate from unknown people (unsolicited email)
+- Don't visit untrusted websites
+- Don't insert found USB drives into your computer
+- Have up-to-date verions of browsers and other web client software.
+- Disable Java, Flash and Acrobat web browser plugins if you don't really need them
+- Use a preview tool to look into shortened URLs.
+- Don't install software that you don't use/need/know
+- turn off you computer when you log off. So its not on the network.
+- Use antivirus, anti-spyware and firewall.
+- Limit user's access on a 'need-to-know' basis (principle of least privelege)
+- Use password-protected screensaver.
+- When you expose too much information on the web you are a good targer for social engineering attack.
+- Phishing and spear phishing (kind of social engineering)
+- Use https websites only when tranmission of sensitive information is involved.
+- Open bank website or mobile web rather than traversing via email weblink.
+- SMiShing (SMS phishing), Vishing (Automated Voice System phishing), Phaxing (fax phishing)
+- If someone has called you and is asking for private information, ask for a case number then call back through the main number.
+- Open email messages as text, never as html
+
+
+# Password policy
+- Use phrase initials (use numbers where possible as well as original case and punctuation)
+- Use one unique password at work
+- Use one unique password for online banking
+- Use one unique password for other systems
+- Change passwords often (every 60 to 90 days)
+
+# 2 factor authentication

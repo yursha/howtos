@@ -85,7 +85,7 @@ In addition to the commit SHA-1 checksum, Git also calculates a checksum that is
   + `info/`
     - `alternates/`
   + `logs/`
-  + `objects/` - the object database (files, dirs, commits)
+  + `objects/` - the object database (files, dirs, commits, annotated tags)
     - `00/`, `01/`, ..., `ff/`
     - `info/`
     - `pack/`
@@ -93,24 +93,25 @@ In addition to the commit SHA-1 checksum, Git also calculates a checksum that is
         + `pack-hash.pack`
   + `refs/`
     - `remotes/`
-        + `shorthand1`
-            - `HEAD` -> `.git` relative head path (refs/remotes/remote-name/head-name)
-            - head-name-1 -> commit hash
-            - head-name-2 -> commit hash
-        + `shorthand2`
+        + `origin`
+            - `HEAD` -> `refs/remotes/origin/master`
+            - dev -> commit hash
+            - master -> commit hash
+        + `john_doe`
             - head-name-1 -> commit hash
     - `heads/`
-        + `head-name-1` -> commit hash
-        + `head-name-2` -> commit hash
+        + `dev` -> commit hash
+        + `master` -> commit hash
+        + `feature1` -> commit hash
     - `stash`
     - `tags/`
-        + `tag-name-1` -> tag hash
-        + `tag-name-2` -> tag hash
+        + `0.0.1` -> tag object hash for annotated tags (Tag object is a binary blob)
+        + `0.0.2` -> commit object hash for simple tags (Commit object is a binary blob)
   + `config` - repository configuration file
   + `COMMIT_EDITMSG`
   + `TAG_EDITMSG`
   + `FETCH_HEAD` - hashes of all branches heads for fetching (txt file)
-  + `HEAD` -> path to current working head (refs/heads/head-name)
+  + `HEAD` -> `refs/heads/dev` (currently checkout branch)
   + `ORIG_HEAD`
   + `description`
   + `packed-refs`
@@ -257,6 +258,7 @@ So the presentation of conflicts is really a matter of the plugin used; the defa
 - http://stackoverflow.com/questions/179123/edit-an-incorrect-commit-message-in-git
 
 ## git log
+By default the commits are shown in reverse chronological order. The default revision range is HEAD.
 - `git log [<options>] [<revision range>] [[\--] <path>…​]`
 The command takes options applicable to the `git rev-list` to control what is shown and how, and options applicable to the `git diff-*` to control how the changes each commit introduces are shown.
 - `git log -p` - commits with diffs (patches) (helpful for code review)

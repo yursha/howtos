@@ -42,17 +42,6 @@
 # RDP
 - `rdesktop` - archlinux and fedora package and tool for RDP
 
-# wifi
-## `iw`
-- http://wireless.kernel.org/en/users/Documentation/iw
-- https://github.com/patjak/bcwc_pcie/wiki/Get-Started
-
-## Broadcom Linux Drivers
-- https://wireless.wiki.kernel.org/en/users/drivers/brcm80211
-
-# WPA2
-## `wpa-supplicant`
-- http://hostap.epitest.fi/wpa_supplicant
 
 # VPN
 - `vpnc` - Cisco VPN3000 Concentrator, IOS and PIX
@@ -64,3 +53,39 @@
 # Refs
 
 
+# wifi
+- [WiFi Alliance](http://www.wi-fi.org/)
+- [WiFi on wikipedia](https://en.wikipedia.org/wiki/Wi-Fi)
+- `NetworkManager` package on Fedora (provides `nmcli` command-line interface)
+- `/etc/sysconfig/network-scripts` - some network scripts on Fedora
+
+## `wpa-supplicant`
+- `wpa-supplicant` package on Fedora (the IEEE 802.11 implementation for Linux)
+- `/var/log/wpa_supplicant.log` - wpa-supplicant log
+
+## `iw`
+- http://wireless.kernel.org/en/users/Documentation/iw
+- https://github.com/patjak/bcwc_pcie/wiki/Get-Started
+
+## Broadcom Linux Drivers
+- https://wireless.wiki.kernel.org/en/users/drivers/brcm80211
+
+## Security
+- Wired Equivalent Privacy (WEP) - older security protocol (with flaws)
+- WiFi Protected Access I (WPA) - older security protocol (with flaws)
+- WPA2 - modern security protocol
+- [WPA on wikipedia](https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access)
+- [Extensible Authentication Protocol (EAP)](https://en.wikipedia.org/wiki/Extensible_Authentication_Protocol) - authentication protocol for WiFi
+- [Protected Extensible Authentication Protocol (PEAP)](https://en.wikipedia.org/wiki/Protected_Extensible_Authentication_Protocol) - TLS tunnel for EAP
+- [Challenge-Handshake Authentication Protocol (CHAP)](https://en.wikipedia.org/wiki/Challenge-Handshake_Authentication_Protocol)
+- [MS-CHAP](https://en.wikipedia.org/wiki/MS-CHAP) - Microsoft version of CHAP
+
+# WPA2
+## `wpa-supplicant`
+- http://hostap.epitest.fi/wpa_supplicant
+
+PEAP WPA Enterprise WiFi Network
+PEAP Authentication
+
+# Where to look for error messages?
+- `k

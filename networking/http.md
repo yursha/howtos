@@ -65,16 +65,13 @@ HTTP/1.1 connections are persistent by default.
 # Other libraries
 
 ## Clients
-- Jetty Project - `org.eclipse.jetty:jetty-client` - http://git.eclipse.org/c/jetty (890K)
 - https://git.apache.org/
 - Ning AHC Project (Netty-based) - `com.ning.async-http-client` - https://github.com/AsyncHttpClient/async-http-client (2.1M)
-- Java EE GlassFish Project - `org.glassfish.jersey.core:jersey-client` - https://github.com/jersey/jersey (Mirror of jersey.java.net git) (3.1M)
 - `java.net.HttpURLConnection` stdlib
 - node `http`
 - python 'requests' library
 
 ## Servers
-- Jetty
 - Tomcat
 - GlassFish
 - dropwizard
@@ -91,7 +88,6 @@ HTTP/1.1 connections are persistent by default.
 - `php -S localhost:8888`
 - `ruby -run -e httpd . -p 8888`
 - `npm install http-server -g; http-server`
-- `java -jar jetty-runner-9.3.0.M0.jar --port 8080 .`
 
 # WebDAV
 - https://tools.ietf.org/html/rfc5689 - Extended MKCOL for WebDAV
