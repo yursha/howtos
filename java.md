@@ -95,10 +95,6 @@ The JVM uses internally escape analysis to check if an object is used only with 
 - `c++filt`
 - `pstack`
 
-# javac
-- `javac -XD-printflat -d output_dir SomeFile.java` - look for javac does with `*.java` files
-
-# java decompiler
 
 # java
 - With `-jar` option, `-cp` has no effect

@@ -15,7 +15,7 @@ JDB provides introspection into remote and local JVMs.
 
 Options to start debugging session:
 - launch a JVM process via a JDB by providing main class path (all other params as for `java` command)
-    + `jdb -classpath .:lib mypackage.Main` - make sure to use `-classpath` option instead of `-cp` option
+    + `jdb -classpath .:lib -sourcepath src mypackage.Main` - make sure to use `-classpath` option instead of `-cp` option, source directory structure should follow java package naming conventions.
 - connect JDB to existing JVM process (if it was started in a debug-aware mode).
 
 ## Perl
