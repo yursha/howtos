@@ -13,6 +13,7 @@
 - https://google.github.io/styleguide/javaguide.html
 - http://geosoft.no/development/javastyle.html
 - https://www.cwu.edu/~gellenbe/javastyle/
+- [Cassandra Code Style](https://wiki.apache.org/cassandra/CodeStyle)
 
 *scala*
 - http://docs.scala-lang.org/style/
@@ -28,7 +29,7 @@
 - https://github.com/felixge/node-style-guide
 
 *python*
-- https://www.python.org/dev/peps/pep-0008/
+- [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
 - https://google.github.io/styleguide/pyguide.html
 - http://docs.python-guide.org/en/latest/writing/style/
 - https://www.chromium.org/chromium-os/python-style-guidelines

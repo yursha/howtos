@@ -74,6 +74,12 @@ Algorithm independence is achieved by defining types of cryptographic "engines" 
 - Secures data in transit
 - http://www.eclipse.org/jetty/documentation/current/configuring-ssl.html
 
+- [OpenSSL - cryptography and SSL/TLS toolkit](https://www.openssl.org/) - Utilities from the general purpose cryptography library with TLS implementation.
+The OpenSSL toolkit provides support for secure communication between machines. OpenSSL includes a certificate management tool
+and shared libraries which provide various cryptographic algorithms and protocols.
+- [LibreSSL library](http://www.libressl.org/)
+- [LibreSSL on GitHub](https://github.com/libressl-portable/)
+
 ## Java Secure Socket Extention (JSSE)
 - [JSSE Reference Guide from Oracle](http://docs.oracle.com/javase/8/docs/technotes/guides/security/jsse/JSSERefGuide.html) - SSL and TLS
 
@@ -88,8 +94,7 @@ Algorithm independence is achieved by defining types of cryptographic "engines" 
 # SSH
 - [OpenSSH](http://www.openssh.com/)
 - [OpenSSH portable](http://www.openssh.com/portable.html) (For operating systems other than OpenBSD)
-- [LibreSSL library](http://www.libressl.org/)
-- [LibreSSL on GitHub](https://github.com/libressl-portable/)
+Uses LibreSSL
 
 ## Clients
 - `ssh`

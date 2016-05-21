@@ -57,14 +57,31 @@ HTTP/1.1 connections are persistent by default.
 - `javax.net.ssl`
 
 # Apache HTTP Components
-- http://hc.apache.org - `org.apache.httpcomponents:httpclient` - https://github.com/apache/httpclient (Mirror of Apache git) (1.4M)
+- [http components at Apache](http://hc.apache.org)
 - http://hc.apache.org/httpcomponents-core-ga/httpcore
 - https://hc.apache.org/httpcomponents-core-ga/httpcore-nio
-- http://hc.apache.org/httpcomponents-client-ga/httpclient
+
+## Client
+- [httpclient GitHub mirror](https://github.com/apache/httpclient)
+- `org.apache.httpcomponents:httpclient` - Maven Central
+- [HttpClient apache folder](http://hc.apache.org/httpcomponents-client-ga/httpclient)
+- [HttpClient JavaDoc](http://hc.apache.org/httpcomponents-client-ga/httpclient/apidocs/)
+- [HttpClient 4.5](http://hc.apache.org/httpcomponents-client-4.5.x/index.html)
+
+- `org.apache.httpcomponents:httpclient-cache` - Maven Central
+- `org.apache.httpcomponents:httpmime` - Maven Central
+
+- [HttpClient Fluent apache folder](http://hc.apache.org/httpcomponents-client-4.5.x/fluent-hc/)
+- `org.apache.httpcomponents:fluent-hc` - Maven Central - Fluent HTTP Client
 
 # Other libraries
 
 ## Clients
+There are 2 kinds of clients:
+- web browsers
+- web service clients
+
+## Resources
 - https://git.apache.org/
 - Ning AHC Project (Netty-based) - `com.ning.async-http-client` - https://github.com/AsyncHttpClient/async-http-client (2.1M)
 - `java.net.HttpURLConnection` stdlib

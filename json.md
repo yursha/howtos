@@ -14,7 +14,8 @@
 - https://github.com/FasterXML/jackson-databind
 - https://github.com/FasterXML/jackson-annotations
 - http://wiki.fasterxml.com/JacksonFAQDateHandling
-- http://fasterxml.github.io/jackson-databind/javadoc/2.7/overview-summary.html
+- [Databind Javadoc](http://fasterxml.github.io/jackson-databind/javadoc/2.7/overview-summary.html)
+- `com.fasterxml.jackson.core:jackson-databind` - Maven Central
 - https://github.com/FasterXML/jackson-datatype-joda
 - http://stackoverflow.com/questions/14139136/how-to-include-bean-validation-constraints-in-jackson-generated-json-schema
 - http://stackoverflow.com/questions/8463356/how-can-i-support-jsr-303-validation-and-jackson-json-mapping-together-effective

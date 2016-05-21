@@ -1,0 +1,1 @@
+- [How to do phone screen interviews](https://www.roberthalf.com/employers/hiring-advice/employee-recruitment/evaluating-candidates/the-best-phone-screen-interview-questions)
