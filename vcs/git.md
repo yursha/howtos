@@ -11,6 +11,7 @@
 - http://stackoverflow.com/questions/338436/is-there-a-quick-git-command-to-see-an-old-version-of-a-file
 - http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge
 - http://stackoverflow.com/questions/5817579/how-can-i-preview-a-merge-in-git
+- [How git branches and tags are stored on disk SO](http://stackoverflow.com/questions/20666331/how-git-branches-and-tags-are-stored-in-disks)
 - `man git`
 - `gitcli`
 - `gitworkflows`

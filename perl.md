@@ -17,3 +17,4 @@
 - [Scalar::Util](http://perldoc.perl.org/Scalar/Util.html)
 - [Perl 6](https://perl6.org/)
 - [BOOKMARK in Perl Tutorial by Gabor Szabo](http://perlmaven.com/reading-from-a-file-in-scalar-and-list-context)
+- [Advanced Perl Tutorial by Gabor Szabo](http://perlmaven.com/passing-two-arrays-to-a-function)

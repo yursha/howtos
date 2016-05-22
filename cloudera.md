@@ -1,0 +1,2 @@
+- [Cloudera](https://www.cloudera.com/) - a Hadoop hosting company
+- [Cloudera Maven Repository](https://repository.cloudera.com/cloudera/webapp/)

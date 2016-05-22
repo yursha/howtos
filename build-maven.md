@@ -8,8 +8,8 @@
 - https://github.com/technomancy/leiningen
 
 # Resources
-- POM Reference - https://maven.apache.org/pom.html
-- [Apache Introduction to POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
+- [Maven Official Documentation](https://maven.apache.org/guides/index.html)
+- [Maven Central Repository](http://search.maven.org/)
 - http://www.sonatype.com/books/mvnref-book/reference/
 - https://codehaus-plexus.github.io/ - Maven Core Components
 - http://maven.apache.org/plugin-tools/index.html
@@ -45,6 +45,7 @@ Keep each module in its own git repo with a singe `pom.xml` file.
 ## info
 - `mvn help:effective-pom`
 
+# [Maven Dependency Plugin](http://maven.apache.org/plugins/maven-dependency-plugin/index.html)
 ## analysis of deps
 - https://maven.apache.org/plugins/maven-dependency-plugin/analyze-mojo.html
 - `mvn dependency:tree` - print a dependency tree

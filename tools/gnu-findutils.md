@@ -1,6 +1,8 @@
 - [GNU Findutils Manual](http://www.gnu.org/software/findutils/manual/html_mono/find.html) Bookmark 3.3 Run Commands
 - [SO - how xargs works](http://stackoverflow.com/questions/199266/make-xargs-execute-the-command-once-for-each-line-of-input/28806991#28806991)
 - [Unix Find Tutorial by Dr. Nikolai Bezroukov](http://www.softpanorama.org/Tools/Find/index.shtml)
+- [How to stop `find` if `-exec` fails on SO](http://apple.stackexchange.com/questions/49042/how-do-i-make-find-fail-if-exec-fails)
+- [find -exec a shell function on SO](http://stackoverflow.com/questions/4321456/find-exec-a-shell-function)
 
 # `find`
 - smart tree traversal/search using all file attributes and performing various operations

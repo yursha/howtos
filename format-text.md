@@ -3,7 +3,7 @@
 
 Data Formats (structured/unstructured)
 ===================
-- HTML, XML, JSON, YAML, HAML
+- HTML, XML, JSON, HAML
 
 # Unstructured Serialized Text Formats
 
