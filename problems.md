@@ -1,3 +1,12 @@
+# Count something
+- create a hash table and increment values as we encounter keys
+
+# Process file
+- if it doesn't fit into memory process it line by line in a streaming fashion
+
+# Scalable hash table on disk (in terms of memory) (like for a problem to show the most popular words in a an unlimited stream of words)
+- sql database with a table 'KEY,VALUE' where KEY is primary key (unique and indexed) (can be further optimized with in-memory cache of most popular items).
+
 # Combinatorial Search
 - https://en.wikipedia.org/wiki/Combinatorial_search
 - https://www.cs.princeton.edu/~rs/AlgsDS07/24CombinatorialSearch.pdf
