@@ -92,3 +92,7 @@ public class RuntimeExceptionMapper implements ExceptionMapper<Throwable> {
 
 # Types of errors
 - [Off-by-one error on wikipedia](https://en.wikipedia.org/wiki/Off-by-one_error)
+
+# Special error variables
+- C has `errno` global variable
+- Perl has `$!` global variable - hold the message of the last error

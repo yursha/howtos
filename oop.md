@@ -1,0 +1,1 @@
+- [moose](http://moose.iinteractive.com/en/) - mostmodern object system for Perl 5

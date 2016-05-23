@@ -4,6 +4,7 @@
 - [Perl Doc - Variables](http://perldoc.perl.org/perlvar.html)
 - [Perl Doc - Syntax](http://perldoc.perl.org/perlsyn.html)
 - [Learning Perl](http://learn.perl.org/)
+- [Installing Perl](http://learn.perl.org/installing)
 - [Perl Monks Forum](http://perlmonks.org/)
 - [`perldoc`](http://search.cpan.org/dist/Pod-Perldoc/)
 - `perldoc perlpod` - Plain Old Documentation
@@ -18,3 +19,5 @@
 - [Perl 6](https://perl6.org/)
 - [BOOKMARK in Perl Tutorial by Gabor Szabo](http://perlmaven.com/reading-from-a-file-in-scalar-and-list-context)
 - [Advanced Perl Tutorial by Gabor Szabo](http://perlmaven.com/passing-two-arrays-to-a-function)
+- [CPAN on how to download and compile the latest Perl source code](http://www.cpan.org/src/README.html)
+- [CPAN](http://www.cpan.org/)

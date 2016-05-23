@@ -2,7 +2,8 @@
 - zend framework (php)
 - symphony (php)
 
-# [Dancer (perl)](http://perldancer.org)
+# [Dancer](http://perldancer.org) - web application framework for Perl.
+- [Getting Started with Perl Dancer by Szabo](http://perlmaven.com/getting-started-with-perl-dancer)
 
 # [Laravel (php)](https://laravel.com)
 - https://laravel.com/docs/5.2/homestead
