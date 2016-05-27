@@ -6,3 +6,7 @@
 
 # Remove a file from a jar
 - http://stackoverflow.com/questions/4520822/is-there-a-quick-way-to-delete-a-file-from-a-jar-war-without-having-to-extract
+
+# Reading resources from a jar
+- http://stackoverflow.com/questions/676097/java-resource-as-file?lq=1
+- http://stackoverflow.com/questions/22605666/java-access-files-in-jar-causes-java-nio-file-filesystemnotfoundexception (On Windows)

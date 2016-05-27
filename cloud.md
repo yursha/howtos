@@ -1,4 +1,5 @@
 - http://www.rightscale.com/
+- https://www.digitalocean.com/
 
 # [AWS](https://aws.amazon.com/)
 - [Free Tier](http://aws.amazon.com/free/)

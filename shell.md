@@ -1,6 +1,7 @@
 # Resources
 - [Terminal sessions recordings website](https://asciinema.org/)
 - [LinuxCommand.org by William Shotts](http://linuxcommand.org/index.php)
+- https://linuxconfig.org/bash-scripting-tutorial
 
 Shell is a parent process for all child processes launched from it. The exit status of a child process is provided by the POSIX 1003.1 `waitpid` function, or `128+n` if the child process was terminated by signal `n`.
 

@@ -15,8 +15,13 @@
 - [Perl Video Course for beginners](http://perlmaven.com/beginner-perl-maven-video-course)
 - [Scalar::Util](http://perldoc.perl.org/Scalar/Util.html)
 - [Perl 6](https://perl6.org/)
-- [BOOKMARK in Perl Tutorial by Gabor Szabo](http://perlmaven.com/reading-from-a-file-in-scalar-and-list-context)
-- [Advanced Perl Tutorial by Gabor Szabo](http://perlmaven.com/passing-two-arrays-to-a-function)
 - [CPAN on how to download and compile the latest Perl source code](http://www.cpan.org/src/README.html)
 - [CPAN](http://www.cpan.org/)
 - [Perl School](http://perlschool.co.uk)
+
+# Tutorials by Gabor Szabo
+- [BOOKMARK in Perl Tutorial by Gabor Szabo](http://perlmaven.com/perl-cgi-script-with-apache2)
+- [Advanced Perl Tutorial by Gabor Szabo](http://perlmaven.com/passing-two-arrays-to-a-function)
+- http://perlmaven.com/perl-cgi-mod-perl-psgi
+- http://perlmaven.com/checking-the-whois-record-of-many-domains
+- http://perlmaven.com/finding-files-in-a-directory-using-perl
