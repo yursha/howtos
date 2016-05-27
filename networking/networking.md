@@ -89,4 +89,6 @@ PEAP WPA Enterprise WiFi Network
 PEAP Authentication
 
 # Where to look for error messages?
-- `k
+
+# c lib
+- `gethostbyname`

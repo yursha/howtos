@@ -10,8 +10,6 @@
 - `perldoc perlpod` - Plain Old Documentation
 - [Pod::Html and pod2html command](https://metacpan.org/pod/Pod::Html)
 - `perldoc Module::Name` - lookup docs for an installed CPAN module
-- [meta::cpan](https://metacpan.org/)
-- [search.cpan.org](http://search.cpan.org/)
 - Data::Dumper
 - [perldiag](https://metacpan.org/pod/perldiag)
 - [Perl Video Course for beginners](http://perlmaven.com/beginner-perl-maven-video-course)
@@ -21,3 +19,4 @@
 - [Advanced Perl Tutorial by Gabor Szabo](http://perlmaven.com/passing-two-arrays-to-a-function)
 - [CPAN on how to download and compile the latest Perl source code](http://www.cpan.org/src/README.html)
 - [CPAN](http://www.cpan.org/)
+- [Perl School](http://perlschool.co.uk)

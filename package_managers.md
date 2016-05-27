@@ -46,15 +46,37 @@ dnf groups list | grep -i devel
 dnf groups install "Development Tools"
 ```
 
+# Refresh package index and check for available updates (without installing them)
+```
+apt-get update
+dnf check-update
+pacman -Sy
+```
+
+# Show package info (summary)
+```
+dnf info <package> # doesn't force sync of package database (both installed and available)
+pacman -Qi <package> # displays info about an installed package
+pacman -Si <package> # displays info about an available package
+```
+
+# Add remote repository
+- Add repo config file to `/etc/yum.repos.d/`
+
+# Install package manager
+- [cpanm on GitHub](https://github.com/miyagawa/cpanminus)
+- [How to install CPAN modules on CPAN](http://www.cpan.org/modules/INSTALL.html)
+- [Installing Perl Modules by Dave Cross](http://perlhacks.com/2014/03/installing-modules/)
+
+# Lookup repository package name by general name
+- [perl to debian/ubuntu](http://deb.perl.it/)
+
 # Pacman
 - `pacman -Sl` - list all remote packages
-- `pacman -Qi <package>` - display information about an installed package
-- `pacman -Si <package>` - display info about remote package
 - `pacman -Qo <file>` - show a package which owns a file
 - `pacman -Qu` - show all outdated locally installed packages
 - `pacman -Su` - upgrade all package that have newer versions
 - `pacman -S <package>` - install/upgrades package and its deps
-- `pacman -Sy` - download fresh remote packages list
 - `pacman -Sc` - clean the db cache
 - `pacman -Rs --nosave` - remove package and all its deps and config files
 
@@ -62,6 +84,8 @@ dnf groups install "Development Tools"
 - [Taking the Red Hat Package Manager to the Limit](http://www.rpm.org/max-rpm/index.html)
 - [RPM Guide in Fedora Docs](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/RPM_Guide/index.html)
 - [RPM GitHub repo](https://github.com/rpm-software-management/rpm)
+- [EPEL repo](https://fedoraproject.org/wiki/EPEL)
+- [Magnum Solutions CPAN RPM Repository](http://rpm.mag-sol.com/)
 
 # DNF
 - [DNF, Dandified Yum](http://dnf.baseurl.org/)

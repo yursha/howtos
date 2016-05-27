@@ -29,10 +29,6 @@ Keep each module in its own git repo with a singe `pom.xml` file.
 - https://maven.apache.org/guides/mini/guide-multiple-modules.html
 - http://books.sonatype.com/mvnex-book/reference/multimodule.html
 
-# Search
-- search.maven.org
-- http://mvnrepository.com - provides useful popularity statistics (e.g. number of dependant packages), classifies packages by category (e.g. JSON libraries)
-
 # Configuration
 
 ## maven-resources-plugin
@@ -44,15 +40,6 @@ Keep each module in its own git repo with a singe `pom.xml` file.
 
 ## info
 - `mvn help:effective-pom`
-
-# [Maven Dependency Plugin](http://maven.apache.org/plugins/maven-dependency-plugin/index.html)
-## analysis of deps
-- https://maven.apache.org/plugins/maven-dependency-plugin/analyze-mojo.html
-- `mvn dependency:tree` - print a dependency tree
-- `mvn dependency:sources` - download all dependency sources
-- `mvn dependency:analyze` - get some hints on undeclared and unused dependencies
-- `mvn versions:display-dependency-updates` - display outdated dependencies
-- `mvn versions:display-plugin-updates` - display plugin updates
 
 ## code style
 - maven-checkstyle-plugin
