@@ -1,3 +1,5 @@
+# Concepts
+- data types define how bit sequences are interpreted
 - Weakly typed languages (javascript, perl, php)
 - Strongly types languages (java, swift)
 

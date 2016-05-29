@@ -1,3 +1,6 @@
+# Concepts
+- a conflict occurs if multiple threads try to concurrently access the same memory location where at least one of the accesses is the 'write' access.
+
 # Refs
 - http://www.tutorialspoint.com/operating_system/os_multi_threading.htm
 - http://www.personal.kent.edu/~rmuhamma/OpSystems/Myos/threads.htm

@@ -1,3 +1,6 @@
+# Concepts
+- diagnostic messages
+
 # Art of logging
 - **Wrap with single quotes dynamic variables in error messages**.
 - **Respect log levels** to be able to adjust log verbosity in different environments and filter log messages by level.

@@ -1,4 +1,4 @@
-- POSIX.1-2008 Edition 2013 - http://pubs.opengroup.org/onlinepubs/9699919799/
+- [POSIX.1-2008 Edition 2013](http://pubs.opengroup.org/onlinepubs/9699919799/)
 
 - https://github.com/NARKOZ/hacker-scripts
 - http://pubs.opengroup.org/onlinepubs/9699919799/

@@ -320,7 +320,7 @@ Works in Insert Mode
 - https://github.com/endel/vim-github-colorscheme
 - http://superuser.com/questions/627636/better-syntax-highlighting-for-java-in-vim
 - https://github.com/dragfire/Improved-Syntax-Highlighting-Vim
-- https://github.com/github/linguist
+- https://github.com/github/linguist (works only on git repositories)
 - https://github.com/bpdp/vim-java
 - [Erics Vim syntax and color highlighting](https://github.com/sentientmachine/erics_vim_syntax_and_color_highlighting)
 
