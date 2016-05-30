@@ -1,5 +1,8 @@
 # Concepts
 - a conflict occurs if multiple threads try to concurrently access the same memory location where at least one of the accesses is the 'write' access.
+- volatile objects - not cached by threads, always read from memory
+- lock-free atomic objects
+- `volatile sig_atomic_t`
 
 # Refs
 - http://www.tutorialspoint.com/operating_system/os_multi_threading.htm
