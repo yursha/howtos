@@ -1,6 +1,7 @@
 # curl
 - http://curl.haxx.se
 - https://github.com/bagder/curl
+- `curl -k` - skip SSL Certificates check (useful for development on localhost)
 
 # wget
 

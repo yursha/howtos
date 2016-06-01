@@ -25,6 +25,7 @@
 - key generation and management
 
 ## Encryption
+- Encryption is how data is encoded so that only authorized parties have access.
 - encryption (symmetric/asymmetric block/stream ciphers)
 - What is a block cipher? Amazon uses AES-256 block cipher to encrypt data at rest in AWS.
 - Java Encryption API (may have bad usability)
@@ -69,16 +70,59 @@ Algorithm independence is achieved by defining types of cryptographic "engines" 
 
 # SSL/TLS
 - Domain Name
-- Certificate Authority (CA)
-- Certificate
 - Secures data in transit
 - http://www.eclipse.org/jetty/documentation/current/configuring-ssl.html
+- [Always on SSL FAQ by Symantec](http://www.symantec.com/pop.jsp?popupid=always-on-ssl)
+- [SSL Certificates Explained by Symantec](https://www.symantec.com/content/en/us/enterprise/html/infographic/ssl-certificates-explained/)
+- [Trust and Your Business by Symantec](https://www.symantec.com/page.jsp?id=trust-business)
+
+## Certificates
+- Certificate Authority (CA) - Trust of a credential depends on confidence in the credential issuer, because the issuer vouches for the credential's authenticity. Certification Authorities use a variety of authentication methods to verify information provided by organizations.
+- SSL Certificate - credentials for the online world, uniquely issued to a specific domain and web server and authenticated by the SSL Certificate provider.
+- Signed Certificate (self-signed)
+- [Extended Validation (EV) Certificates](https://en.wikipedia.org/wiki/Extended_Validation_Certificate)
+
+### Certificate Algorithms
+- Elliptic Curve Cryptography (ECC) (FIPS-certified)
+- [ECC Performance Analysis by Semantec](https://www.symantec.com/content/en/us/enterprise/white_papers/b-wp_ecc.pdf)
+- [Symantec SSL Certification with the ECC Algorithm](https://www.symantec.com/content/en/us/enterprise/fact_sheets/b-symantec_ssl_certification_with_the_algorithm_DS.en-us.pdf)
+- [ECC and DSA Certificates by Symantec](https://www.symantec.com/content/en/us/enterprise/fact_sheets/b-ecc_dsa_faq_DS.en-us.pdf)
+- Digital Signature Algorithm (DSA) (FIPS-certified)
+- RSA
+
+### Vendors
+- [DigiCert](https://www.digicert.com/)
+- Symantec
 
 - [OpenSSL - cryptography and SSL/TLS toolkit](https://www.openssl.org/) - Utilities from the general purpose cryptography library with TLS implementation.
 The OpenSSL toolkit provides support for secure communication between machines. OpenSSL includes a certificate management tool
 and shared libraries which provide various cryptographic algorithms and protocols.
 - [LibreSSL library](http://www.libressl.org/)
 - [LibreSSL on GitHub](https://github.com/libressl-portable/)
+
+## How HTTPS communication happens
+- A client attempts to connect to a website secured with SSL.
+- The client requests that the server identify itself.
+- The server sends the client a copy of its SSL Certificate.
+- The client checks whether it trusts the SSL Certificate. If so, it sends a message to the server.
+- The server sends back a digitally signed acknowledgement to start an SSL encrypted session.
+- Encrypted data is shared between the client and the server and https appears.
+
+HTTPS, is the layering of SSL/TLS and HTTP protocols to create secure communication.
+HTTPS indicates that the website has been authenticated by a third party Certification Authority (CA), and that the organization operating the website is who they claim to be.
+HTTPS is a visual indication that information is being exchanged for the session in a more secure way.
+HTTPS appears in the URL when a website is secured by an SSL certificate.
+The details of the certificate, including the issuing authority and the corporate name of the website owner, can be viewed by clicking on the lock symbol.
+Websites that display HTTPS in the URL and include the green bar are secured by Extended Validation, the most stringently validated form of SSL.
+These websites go through the most industry mandated rigorous authentication procedures.
+Another important step towards ensuring a user is protected as they view a website is having the site completely hosted over HTTPS, including all the content, images, and links.
+If not all of the web pages are loaded over HTTPS, the user can be susceptible to session hijack.
+
+Web servers and web browsers rely on the Secure Sockets Layer (SSL) protocol to help users protect their data during transfer by creating a uniquely encrypted channel for private communications over the public Internet.
+Each SSL Certificate consists of a key pair as well as verified identification information.
+When a web browser (or client) points to a secured website, the server shares the public key with the client to establish an encryption method and a unique session key.
+The client confirms that it recognizes and trusts the issuer of the SSL Certificate.
+This process is known as the "SSL handshake" and it begins a secure session that protects message privacy, message integrity, and server security.
 
 ## Java Secure Socket Extention (JSSE)
 - [JSSE Reference Guide from Oracle](http://docs.oracle.com/javase/8/docs/technotes/guides/security/jsse/JSSERefGuide.html) - SSL and TLS

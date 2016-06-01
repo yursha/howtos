@@ -1,2 +1,3 @@
 - https://app.gotomeeting.com/organizer/home.html
 - https://hangouts.google.com/
+- slack (web hooks and email notifications help to automate notifying you when a long-running script finished processing
