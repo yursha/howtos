@@ -3,6 +3,8 @@
 - https://github.com/bagder/curl
 - `curl -k` - skip SSL Certificates check (useful for development on localhost)
 
+# telnet
+
 # wget
 
 # [`iputils`](https://github.com/iputils/iputils) - network monitoring utilities

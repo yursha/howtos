@@ -1,3 +1,6 @@
+# Concepts
+- `/etc/shells` - lists available shells on the system
+
 # Resources
 - [Terminal sessions recordings website](https://asciinema.org/)
 - [LinuxCommand.org by William Shotts](http://linuxcommand.org/index.php)

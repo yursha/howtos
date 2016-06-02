@@ -100,14 +100,6 @@ head -1 file.txt | xargs echo
 # Redirection
 - `tee`
 
-# User information
-- `id` - print real and effective user and group IDs
-- `logname`
-- `whoami`
-- `groups`
-- `users`
-- `who`
-
 # System context
 - `date`
 - `arch`

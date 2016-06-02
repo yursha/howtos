@@ -8,9 +8,15 @@ pacman -S <package>
 rpm -i <package>
 ```
 
-# Upgrade an installed package
+# Update an installed package
 ```
 pacman -S <package>
+pip install --upgrade <package>
+```
+
+# Update itself
+```
+pip install --upgrade pip
 ```
 
 # List installed packages

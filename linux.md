@@ -241,20 +241,6 @@ To make sound work on linux install `pulseaudio` and `alsa` package in Archlinux
 # Video
 - `xrandr`
 
-# User Management
-- `sudo` - substitute user do (alternative to `su`). Allows a system administrator to delegate authority to certain users (or groups of users) to run some (or all) commands as root or another user while providing an audit trail of the commands and their arguments. 
- 
-Sudo is an alternative to su for running commands as root. Unlike su, which launches a root shell that allows all further commands root access, sudo instead grants temporary privilege escalation to a single command. By enabling root privileges only when needed, sudo usage reduces the likelihood that a typo or a bug in an invoked command will ruin the system.
-
-Sudo can also be used to run commands as other users; additionally, sudo logs all commands and failed access attempts for security auditing. 
-
-- `su`
-- `useradd`
-- https://www.sudo.ws/sudo/
-- https://wiki.archlinux.org/index.php/Su
-- https://wiki.archlinux.org/index.php/Sudo
-
-
 ## Switch between different terminals
 - `CTRL+ALT+FN+F1`, `CTRL+ALT+FN+F2` etc.
 
