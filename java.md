@@ -1,6 +1,8 @@
 # Specs
-- http://docs.oracle.com/javase/specs/jls/se8/html/
-- https://docs.oracle.com/javase/specs/
+- [JLS 8](http://docs.oracle.com/javase/specs/jls/se8/html/)
+- [JVM 8 Spec](https://docs.oracle.com/javase/specs/jvms/se8/html/index.html)
+- [Java 8 SE Tools Reference from Oracle](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/toc.html)
+- [JLS & JVM specs](https://docs.oracle.com/javase/specs/)
 - http://docs.oracle.com/javase/8/docs/
 - http://docs.oracle.com/javase/7/docs/api/
 - https://docs.oracle.com/javaee/7/api/
@@ -10,7 +12,6 @@
 - https://docs.oracle.com/javase/tutorial/java/javaOO/index.html
 - http://www.javapractices.com/home/HomeAction.do
 - http://www.javadoc.io/
-- [Java 8 SE Tools Reference from Oracle](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/toc.html)
 - http://stackoverflow.com/tags/java/info
 
 # Java EE
