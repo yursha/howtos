@@ -206,4 +206,3 @@ Uses LibreSSL
 - Use one unique password for other systems
 - Change passwords often (every 60 to 90 days)
 
-# 2 factor authentication

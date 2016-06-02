@@ -23,3 +23,7 @@
 
 # Validation
 - Making sure the data a user inputs is valid/safe/what's expected or needed.
+
+# 2 factor authentication
+
+# [Json Web Tokens(JWT)](https://jwt.io/)

@@ -5,10 +5,10 @@
 
 # [GNU `coreutils`](http://www.gnu.org/software/coreutils/)
 - `users` - print the user names of users currently logged in to the current host.
-- `id` - print real and effective user and group IDs
+- `id <user>` - print real and effective user and group IDs
+- `groups <user>` - print the groups the user is in (same as `id -Gn <user>`)
 - `logname` - print user's login name
 - `whoami` - print effective userid
-- `groups` - print the groups the user is in
 - `who` - print who is logged on
 
 # [`shadow-utils`](http://pkg-shadow.alioth.debian.org/)
@@ -16,6 +16,7 @@
 - `userdel` - delete a user account and related files
 - `usermod` - modify a user account
 - `usermod -a -G <groupname> username` - add user to a group
+- `usermod -g <groupname> username` - change user primary group
 - `groupadd` - create a new group
 
 # [`passwd`](http://fedorahosted.org/passwd)

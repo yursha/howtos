@@ -2,6 +2,7 @@
 - http://curl.haxx.se
 - https://github.com/bagder/curl
 - `curl -k` - skip SSL Certificates check (useful for development on localhost)
+- [Using curl to automate HTTP jobs](https://curl.haxx.se/docs/httpscripting.html)
 
 # telnet
 

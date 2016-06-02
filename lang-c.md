@@ -5,6 +5,7 @@
 - [C 2011 Spec Draft](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf) Bookmark 5.1.2.4 - Multi-threaded executions and data races
 - [C/C++ Reference Interactive Website](http://en.cppreference.com/w/)
 - [GNU lib C Manual](https://www.gnu.org/software/libc/manual)
+- [C programming tutorial by crasseux](http://www.crasseux.com/books/ctutorial/)
 - [glibc on Fossies](https://fossies.org/dox/glibc-2.23/index.html)
 - [GNU lib C++ Manual](https://gcc.gnu.org/onlinedocs/libstdc++/manual/)
 - [C++11 on wikipedia](https://en.wikipedia.org/wiki/C++11)
