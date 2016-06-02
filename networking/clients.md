@@ -5,6 +5,7 @@
 - [Using curl to automate HTTP jobs](https://curl.haxx.se/docs/httpscripting.html)
 
 # telnet
+- `telnet host port` - test if a given host listens on a given port (better than ping which just checks the host availability)
 
 # wget
 
