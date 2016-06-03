@@ -8,6 +8,11 @@ pacman -S <package>
 rpm -i <package>
 ```
 
+# Download package source
+```
+mvn dependency:sources -DincludeArtifactIds=guava # must be in a directory with pom.xml
+```
+
 # Update an installed package
 ```
 pacman -S <package>

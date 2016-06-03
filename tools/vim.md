@@ -21,6 +21,10 @@
 # Refresh
 `:so ~/.vimrc`
 
+# Insert char by unicode value
+- check mark is U+2713 - ✓
+- `C-v-u2713`
+
 # Case
 - http://vim.wikia.com/wiki/Converting_variables_to_or_from_camel_case
 - ~ - change case (tilde operator)

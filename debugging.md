@@ -9,7 +9,7 @@ Debugging is the art of establishing the cause of a software problem.
 
 ## Java
 
-[jdb](http://docs.oracle.com/javase/8/docs/technotes/tools/windows/jdb.html) - command-line debugger for java classes
+[jdb](http://docs.oracle.com/javase/8/docs/technotes/tools/unix/jdb.html) - command-line debugger for java classes (`man jdb`)
 
 JDB provides introspection into remote and local JVMs.
 

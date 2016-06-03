@@ -26,7 +26,13 @@
 - http://www.skbuff.net/iputils/
 - `ping`
 
+# Ports
+- [`net-tools`](http://sourceforge.net/projects/net-tools/)
+- `netstat`
+- `sudo netstat -tlnp` - Check what ports are listened on
+
 # TCP
+
 
 # UDP
 
