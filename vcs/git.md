@@ -420,3 +420,8 @@ Git can use four major protocols to transfer data: Local, HTTP, Secure Shell (SS
 # Complex commands
 - `(set -e && git rev-list --reverse master~3..master | while read rev; do git checkout $rev; python runtests.py; done)`
 - `git ls-files --deleted | xargs -L1 git checkout` - restore all deleted files
+
+# Add remote repository
+```
+git remote add <name> <url>
+```

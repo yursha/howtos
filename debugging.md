@@ -7,6 +7,9 @@ Debugging is the art of establishing the cause of a software problem.
 
 # Resources
 
+## Scala
+- [Scala Debugger API](http://scala-debugger.org/)
+
 ## Java
 
 [jdb](http://docs.oracle.com/javase/8/docs/technotes/tools/unix/jdb.html) - command-line debugger for java classes (`man jdb`)
@@ -18,7 +21,9 @@ Options to start debugging session:
     + `jdb -classpath .:lib -sourcepath src mypackage.Main` - make sure to use `-classpath` option instead of `-cp` option, source directory structure should follow java package naming conventions.
 - connect JDB to existing JVM process (if it was started in a debug-aware mode).
 
-## Perl
+Only accepts dirs for `sourcepath` option (not jars)
+
+# Perl
 
     + [Debugging Perl by Gabor Szabo](http://perlmaven.com/using-the-built-in-debugger-of-perl)
     + `perl -de1` - (perl) use debugger as repl

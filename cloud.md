@@ -2,6 +2,7 @@
 - https://www.digitalocean.com/
 
 # [AWS](https://aws.amazon.com/)
+- [AWS Documentation](http://aws.amazon.com/documentation/)
 - [Free Tier](http://aws.amazon.com/free/)
 - [Monthly Webinars](https://aws.amazon.com/about-aws/events/monthlywebinarseries/)
 - [Backup and Recovery](https://aws.amazon.com/backup-recovery/)
@@ -44,6 +45,7 @@
 # [Simple Storage Service (S3)](https://aws.amazon.com/s3/)
 Low-cost, highly available, elastic app storage for objects from 1B to 5TB with metadata.
 - [Docs](http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html)
+- [User Guide](http://docs.aws.amazon.com/AmazonS3/latest/UG/Welcome.html)
 
 ## Terminology
 - buckets are like folders

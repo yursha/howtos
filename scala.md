@@ -4,6 +4,7 @@
 
 # Resources
 - http://scala-lang.org/api
+- [Scala Installation](http://www.scala-lang.org/download/install.html)
 - http://www.scala-lang.org/
 - http://www.scala-lang.org/community/
 - http://www.scala-lang.org/documentation/books.html
@@ -29,6 +30,7 @@
 
 # SBT
 - http://www.scala-sbt.org/
+- [SBT installation](http://www.scala-sbt.org/0.13/docs/Manual-Installation.html)
 - https://class.coursera.org/progfun-005/wiki/SbtTutorial
 - http://www.scala-sbt.org/0.13/docs/Directories.html
 

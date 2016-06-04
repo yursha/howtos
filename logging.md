@@ -33,3 +33,29 @@
 - http://docs.graylog.org/en/1.3/pages/queries.html#keyword-time-frame-selector
 
 # syslog
+
+# [Fluent](http://www.fluentd.org/)
+Open source data collector for unified logging layer.
+Fluentd is written in Ruby for flexibility, with performance sensitive parts written in C. It runs as a Ruby daemon.
+
+`td-agent` - stable distribution of fluentd
+
+## Resources
+- [Fluent Docs](http://docs.fluentd.org/articles/quickstart)
+- [fluentd plugins](http://www.fluentd.org/plugins)
+- [fluentd GitHub](https://github.com/fluent/fluentd)
+- [fluent - unified logging layer](http://www.fluentd.org/blog/unified-logging-layer)
+- [fluent - architecture](http://www.fluentd.org/architecture)
+- [fluent - guide](http://docs.fluentd.org/articles/quickstart)
+
+## Performance
+- a regular PC box can handle 18,000 messages/second with a single process
+
+
+## fluentd operations
+- collect data
+- parse data
+- transform data
+- analyze data
+- store (persist) data
+

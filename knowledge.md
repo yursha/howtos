@@ -11,6 +11,8 @@
     1. specifications
     1. API specifications. For open source technology and if the API doc is generated from the source code it might be better to figure out how to search for public interfaces in source code and use the actual source code rather than the API docs.
     1. white papers
+        + [Google Research](http://research.google.com/pubs/papers.html)
+        + [USENIX Papers](https://www.usenix.org/)
     1. manuals
     1. tutorials
 1. supplementary

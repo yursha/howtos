@@ -10,7 +10,6 @@
 - `perldoc perlpod` - Plain Old Documentation
 - [Pod::Html and pod2html command](https://metacpan.org/pod/Pod::Html)
 - `perldoc Module::Name` - lookup docs for an installed CPAN module
-- Data::Dumper
 - [perldiag](https://metacpan.org/pod/perldiag)
 - [Perl Video Course for beginners](http://perlmaven.com/beginner-perl-maven-video-course)
 - [Scalar::Util](http://perldoc.perl.org/Scalar/Util.html)

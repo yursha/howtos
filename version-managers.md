@@ -5,3 +5,9 @@
 - install multiple versions of a software
 - switch between different versions as defaults
 - run program against different versions of software (for testing)
+
+
+# Install a version
+```
+nvm install <version>
+```

@@ -1,9 +1,9 @@
-# Install a package for a system-wide use
+# Install a package for globally
 ```
 dnf install <package>
 pip install <package>
 brew install <package>
-npm install <package> -g
+npm install -g <package>
 pacman -S <package>
 rpm -i <package>
 ```
@@ -22,6 +22,11 @@ pip install --upgrade <package>
 # Update itself
 ```
 pip install --upgrade pip
+```
+
+# Remove package
+```
+dnf remove <package>
 ```
 
 # List installed packages
@@ -44,7 +49,8 @@ rpm -qf /usr/sbin/lsmod
 
 # See package summary (description)
 ```
-rpm -qi kmod
+rpm -qi <package>
+pip show <package>
 ```
 
 # List all remote groups (development)

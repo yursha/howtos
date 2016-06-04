@@ -1,5 +1,6 @@
 # Concepts
 - diagnostic messages
+- fault tolerance
 
 # Art of logging
 - **Wrap with single quotes dynamic variables in error messages**.

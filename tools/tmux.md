@@ -64,10 +64,24 @@ f - find window
 ```
 
 # Panes
+
+## joining panes
 - `:join-pane -s <window.pane>`
 - Join Panes - https://forums.pragprog.com/forums/242/topics/10533
 - http://maciej.lasyk.info/2014/Nov/19/tmux-join-pane/
 - http://superuser.com/questions/732240/merging-different-windows-in-tmux
+
+## resizing panes
+:resize-pane -D (Resizes the current pane down)
+:resize-pane -U (Resizes the current pane upward)
+:resize-pane -L (Resizes the current pane left)
+:resize-pane -R (Resizes the current pane right)
+:resize-pane -D 20 (Resizes the current pane down by 20 cells)
+:resize-pane -U 20 (Resizes the current pane upward by 20 cells)
+:resize-pane -L 20 (Resizes the current pane left by 20 cells)
+:resize-pane -R 20 (Resizes the current pane right by 20 cells)
+:resize-pane -t 2 20 (Resizes the pane with the id of 2 down by 20 cells)
+:resize-pane -t -L 20 (Resizes the pane with the id of 2 left by 20 cells)
 
 ## prefix commands
 ```
@@ -81,3 +95,5 @@ q - show pane numbers (then type the number to go to that pane)
 { - move pane to the previous position
 o - select next pane
 ```
+
+# How to highlith searches in tmux
