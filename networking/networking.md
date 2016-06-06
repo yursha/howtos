@@ -13,6 +13,13 @@
 - IP Version 6 Addressing Architecture http://www.ietf.org/rfc/rfc2373.txt
 - https://docs.oracle.com/javase/8/docs/api/java/net/InetAddress.html
 
+# DNS
+- [bind-utils](http://www.isc.org/downloads/BIND/) - communication with DNS servers
+- find ip by hostname - DNS lookup
+- `nslookup <ip-address>` - reverse DNS lookup (find hostname by ip)
+- `host <ip-address>` - reverse DNS lookup
+- `dig -x <ip-address>` - reverse DNS lookup
+
 # Tools
 - `ifconfig` - obsolete
 - `iwconfig`
