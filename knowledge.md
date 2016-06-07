@@ -25,6 +25,11 @@
         - http://confreaks.tv/presenters/gary-bernhardt
         - https://www.destroyallsoftware.com/screencasts
 
+# Inspiration
+- [Amazon AWS Whitepapers](https://aws.amazon.com/whitepapers/)
+- [Amazon AWS articles](http://aws.amazon.com/articles)
+- [aws project on GitHub](https://github.com/aws)
+
 # Apply your knowledge
 - know your tools to save yourself time
 - know your OS

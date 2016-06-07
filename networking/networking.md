@@ -2,6 +2,7 @@
 - networking (distributed communication)
 - Archlinux wiki : Network configuration
 - https://en.wikipedia.org/wiki/Keepalive
+- [Network Address Translation (NAT) on wikipedia](https://en.wikipedia.org/wiki/Network_address_translation)
 
 # URL/URI
 - Commons Validator https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/routines/UrlValidator.html
