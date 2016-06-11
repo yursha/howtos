@@ -1,0 +1,2 @@
+- https://github.com/rasbt/python-machine-learning-book
+- https://github.com/terryum/awesome-deep-learning-papers

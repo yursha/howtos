@@ -1,3 +1,7 @@
+# Resources
+- https://github.com/ochococo/OOD-Principles-In-Swift
+- https://github.com/aosabook/500lines
+
 # Principles
 ## Open/closed
 - [wikipedia](https://en.wikipedia.org/wiki/Open/closed_principle)

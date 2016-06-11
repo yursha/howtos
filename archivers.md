@@ -1,7 +1,13 @@
-- zip
-- gz
-- xz
-- tar
+# [tar](http://www.gnu.org/software/tar/)
+
+# [gzip](http://www.gzip.org/)
+
+# [zip](http://www.info-zip.org/Zip.html)
+
+# [bzip2](http://www.bzip.org/)
+
+# [xz](http://tukaani.org/xz)
+- LZMA algorithm
 
 # JAR
 - http://docs.oracle.com/javase/8/docs/technotes/guides/jar/index.html
@@ -16,7 +22,21 @@
 - http://stackoverflow.com/questions/676097/java-resource-as-file?lq=1
 - http://stackoverflow.com/questions/22605666/java-access-files-in-jar-causes-java-nio-file-filesystemnotfoundexception (On Windows)
 
-# Extract all files
+
+# Decompress and extract
 ```
-jar xf <archive>
+jar vxf <archive>
+tar vzxf <archive>
+zcat <archive> | tar xv
+```
+
+# Archive and compress
+```
+tar vzcf <archive> <dir>
+tar vcf <dir> | gzip > <archive>
+```
+
+# List contents
+```
+tar vztf <archive>
 ```

@@ -1,4 +1,6 @@
 - https://github.com/apache/commons-lang (`hashCode` and `equals` builders)
+- https://github.com/raywenderlich/swift-algorithm-club
+- https://github.com/parkjs814/AlgorithmVisualizer
 
 # Data Structures
 - array

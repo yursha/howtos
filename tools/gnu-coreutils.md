@@ -117,7 +117,7 @@ head -1 file.txt | xargs echo
 - `chroot` - run command or interactive shell with special root directory
 - `env`
 - `nice`
-- `nohup`
+- `nohup` - run a command immune to hangups, with output to a non-tty
 - `stdbuf`
 - `timeout`
 

@@ -16,7 +16,7 @@
 
 # DNS
 - [bind-utils](http://www.isc.org/downloads/BIND/) - communication with DNS servers
-- find ip by hostname - DNS lookup
+- `nslookup <host-name>` - DNS lookup (find ip by hostname)
 - `nslookup <ip-address>` - reverse DNS lookup (find hostname by ip)
 - `host <ip-address>` - reverse DNS lookup
 - `dig -x <ip-address>` - reverse DNS lookup

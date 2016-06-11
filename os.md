@@ -5,6 +5,12 @@
 - [OSDI'04 Publications](https://www.usenix.org/legacy/events/osdi04/tech/)
 - [OpenBSD](http://www.openbsd.org/)
 
+- https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System
+- https://github.com/cloudius-systems/osv
+- https://github.com/freebsd/freebsd
+- https://github.com/ReturnInfinity/BareMetal-OS
+- https://github.com/klange/toaruos
+
 # Clipboard copy/paste
 *OS X*
 ```

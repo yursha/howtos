@@ -1,3 +1,6 @@
+# Resources
+- https://github.com/donnemartin/gitsome
+
 - Bookmark: 4.4. https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
 - `git clone git://git.kernel.org/pub/scm/git/git.git`
 - http://git-htmldocs.googlecode.com/git/user-manual.html
@@ -21,6 +24,7 @@
 - `gitcore-tutorial`
 - `gitglossary`
 - `git-help`
+- https://github.com/git-tips/tips
 
 # Bookmark
 - Done: clone, brach, remote
@@ -424,4 +428,27 @@ Git can use four major protocols to transfer data: Local, HTTP, Secure Shell (SS
 # Add remote repository
 ```
 git remote add <name> <url>
+```
+
+# Abort merge
+```
+git merge abort
+```
+
+```
+dd2e86 - 946992 - 9143a9 - a6fd86 - 5a6057 [master]
+           \
+            76cada - 62ecb3 - b886a0 [feature]
+```
+
+# Cherry-pick a commit into a branch
+```
+git checkout master
+git cherry-pick 62ecb3
+```
+
+# Cherry-pick a range of commits into a branch
+```
+git checkout -b newbranch 62ecb3
+git rebase --onto master 76cada^
 ```

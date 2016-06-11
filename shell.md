@@ -106,3 +106,6 @@ python -c "import string; print set(string.lowercase) - set('`args`')"
 
 # EOF
 - `C-D` - send EOF signal
+
+# Commands
+- `disown` - disown a process so that its not killed when the shell process terminates.

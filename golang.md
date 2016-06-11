@@ -7,6 +7,7 @@
 - https://godoc.org/
 - https://github.com/golang/go/wiki/Projects
 - [Go organization on GitHub](https://github.com/golang)
+- [Go lang on GitHub](https://github.com/golang/go)
 - https://golang.org/doc/effective_go.html
 - https://gobyexample.com/
 

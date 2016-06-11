@@ -1,3 +1,6 @@
+# Resources
+- https://github.com/vic317yeh/One-Click-to-Be-Pro
+
 # DRY (Don't repeat yourself)
 - Isolates changes
 - Fewer LOC

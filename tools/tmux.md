@@ -1,4 +1,6 @@
 - https://tmux.github.io/
+- https://github.com/tmux
+- https://raw.githubusercontent.com/tmux/tmux/master/FAQ
 - http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1?query=tmux&sec=1
 - https://pragprog.com/book/bhtmux/tmux
 - http://www.linuxized.com/2010/05/switching-from-gnu-screen-to-tmux/
