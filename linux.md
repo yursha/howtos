@@ -25,6 +25,7 @@ Parameters can be passed to the kernel:
 # Packages
 
 ## util-linux
+- [util-linux releases](ftp://ftp.kernel.org/pub/linux/utils/util-linux/)
 - https://www.archlinux.org/packages/core/x86_64/util-linux/
 - ftp://ftp.kernel.org/pub/linux/utils/util-linux/
 - `cat /proc/swaps`
@@ -253,6 +254,9 @@ To make sound work on linux install `pulseaudio` and `alsa` package in Archlinux
 
 # Uptime
 - http://unix.stackexchange.com/questions/131775/how-long-has-my-linux-system-been-running
+
+# RedHat
+- https://access.redhat.com/documentation/en/
 
 # Fedora
 - https://getfedora.org/

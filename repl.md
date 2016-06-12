@@ -9,3 +9,6 @@
 - python2
 - python3
 - node (javascript)
+
+# Source a file into REPL
+- http://stackoverflow.com/questions/5280178/how-do-i-load-a-file-into-the-python-console

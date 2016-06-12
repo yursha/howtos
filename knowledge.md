@@ -59,3 +59,7 @@
 # Tips
 - use command-line tools
 - compile your tools from source with static linking (otherwise the version of you tool or its dependency which you need may be unavailable on a target system)
+
+# Source repos
+- Github
+- http://git.apache.org/

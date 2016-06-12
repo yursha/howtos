@@ -26,3 +26,4 @@ System calls errno explanations
 - `from`
 
 
+less - file viewer
