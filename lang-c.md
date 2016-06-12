@@ -20,7 +20,7 @@
 
 # C preprocessor (cpp)
 Preprocessor is an essential part of the language.
-`cpp -v` - find out where preprocessor looks up headers for `#include <...>` directives.
+`cpp -v` - find out where preprocessor looks up headers for `#include <...>` directives. Those are the libraries (headers) available on your system than you can make use of.
 
 On Fedora system:
 ```
