@@ -1,3 +1,17 @@
+# Resources
+- [Linux Storage Stack Diagram by by Fischer and Shonberger](https://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram)
+
+# Concepts
+- Linux Virtual Filesystem (VFS) - API
+- Linux inode cache is implemented in a single file, fs/inode.c
+- superblock - a record of the characteristics of a filesystem
+    + size
+    + block size
+    + empty and filled blocks and their respective counts
+    + size and location of inode tables
+    + disk block map and usage information
+    + size of block groups
+
 On UNIX systems, moving a directory within the same partition generally consists of renaming the directory.
 
 Filesystem access is not automatically synchronized. Each process/thread maintains its own access mode and cursor in the file and unaware of other processes/threads.
@@ -49,13 +63,14 @@ File system is a kernel driver
 - [Ext4 - wikipedia](https://en.wikipedia.org/wiki/Ext4)
 - [Ext4 - kernel archive wiki](https://ext4.wiki.kernel.org/index.php/Main_Page)
 - `man ext4`
-- [e2fsprogs](http://e2fsprogs.sourceforge.net)
+
+- [e2fsprogs](http://e2fsprogs.sourceforge.net) - utilities for maintaining ext2, ext3 and ext4 file systems
     + `mke2fs`
     + `resize2fs`
     + `e2fsck`
     + `debugfs`
     + `tune2fs`
-    + `dumpe2fs`
+    + `dumpe2fs` - prints the super block and blocks group information for the filesystem present on device.
 
 # file system operations
 - syntactic file path operations (don't access file system)

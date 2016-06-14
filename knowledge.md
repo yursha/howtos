@@ -29,6 +29,12 @@
 - [Amazon AWS Whitepapers](https://aws.amazon.com/whitepapers/)
 - [Amazon AWS articles](http://aws.amazon.com/articles)
 - [aws project on GitHub](https://github.com/aws)
+- [Linux mail lists](http://vger.kernel.org/vger-lists.html)
+- [lkml.org](https://lkml.org/)
+- [lkml](http://www.tux.org/lkml/)
+- [Redis mail lists]
+- [Git mail lists]
+- [netdata](https://github.com/firehol/netdata)
 
 # Apply your knowledge
 - know your tools to save yourself time

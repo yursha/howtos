@@ -14,9 +14,9 @@
 # c standard compiler
 
 ## phases
-- bytes are read and mapped to characters (trigraphs are replaced).
-- line continuations are searched and physical lines are spliced into logical lines.
-- lines a parsed into a sequence of preprocessing tokens and comments. Each comment are replaces with a single space.
+- bytes are read and mapped to characters (trigraphs are replaced). (Trigraph translation)
+- line continuations are searched and physical lines are spliced into logical lines. (Line joining)
+- lines a parsed into a sequence of preprocessing tokens and comments. Each comment are replaces with a single space. (Translate comment to space)
 - Preprocessing directives are executed (including recursively `#include` directive), macro invocations are expanded, and `_Pragma` unary operator expressions are executed. Preprocessing directives are then deleted.
 - Source charset is translated into runtime charset.
 - Adjacent string literal tokens are concatenated.
