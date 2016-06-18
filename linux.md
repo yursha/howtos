@@ -1,11 +1,7 @@
 - https://www.kernel.org/
-- https://lkml.org/
-- https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/index.html
 - http://tldp.org/LDP/intro-linux/html/index.html
-- ftp://www-uxsup.csx.cam.ac.uk/pub/doc/suse/suse9.2/suselinux-adminguide_en/index.html
-- http://www.ibm.com/developerworks/linux/newto/
-- https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/3/html/System_Administration_Guide/s1-swap-adding.html
 - http://www.thegeekstuff.com/2010/08/how-to-add-swap-space/
+- http://distrowatch.com/ - distros, packages, reviews
 
 # Src
 - `/usr/src/kernels`
@@ -255,10 +251,13 @@ To make sound work on linux install `pulseaudio` and `alsa` package in Archlinux
 # Uptime
 - http://unix.stackexchange.com/questions/131775/how-long-has-my-linux-system-been-running
 
-# RedHat
+## RHEL
 - https://access.redhat.com/documentation/en/
+- https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/index.html
 
-# Fedora
+## CentOS
+
+## Fedora
 - https://getfedora.org/
 - https://docs.fedoraproject.org/en-US/index.html
 - https://github.com/developer-portal
@@ -272,11 +271,12 @@ To make sound work on linux install `pulseaudio` and `alsa` package in Archlinux
 - https://github.com/fedora-ruby
 - https://github.com/fedoradesign
 - https://fedoraproject.org/wiki/Design
+- [`setup`](https://fedorahosted.org/setup/) - A set of system configuration and setup files
+    + `/etc/hosts`
 
-# Archlinux
-- https://github.com/archlinux/archweb
+# Debian Family
 
-# Ubuntu
+## Ubuntu
 - https://github.com/ubuntu
 - https://github.com/Ubuntu-Solutions-Engineering
 - https://github.com/ubuntudesign
@@ -284,15 +284,12 @@ To make sound work on linux install `pulseaudio` and `alsa` package in Archlinux
 - https://github.com/UBTC
 - https://github.com/ubuntu-core
 
-# Debian
+## Debian
 - https://github.com/Debian
 - https://github.com/debian-live
 - https://github.com/debian-pkg-android-tools
 - https://github.com/jbouse-debian
 - https://github.com/debian-pi
-
-# Linux Mint
-- https://github.com/linuxmint
 
 # Gentoo
 - https://github.com/gentoo
@@ -302,8 +299,8 @@ To make sound work on linux install `pulseaudio` and `alsa` package in Archlinux
 - https://github.com/gentoo-haskell
 - https://github.com/gentoo-science
 
-# Slackware
-- https://github.com/slackware
+# Archlinux
+- https://github.com/archlinux/archweb
 
 # FreeBSD
 - https://github.com/freebsd

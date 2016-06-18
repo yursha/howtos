@@ -28,22 +28,8 @@
 - http://commons.apache.org/proper/commons-beanutils/
 - http://commons.apache.org/proper/commons-beanutils/javadocs/v1.9.2/apidocs/index.html
 
-# Resources
-- http://stackoverflow.com/tags/java/info
-
 # Blogs
 - http://shipilev.net/
-
-# Code Quality
-## PMD
-- http://pmd.sourceforge.net/
-
-## Checkstyle
-- https://github.com/checkstyle/checkstyle
-- http://checkstyle.sourceforge.net/
-- http://maven.apache.org/plugins/maven-checkstyle-plugin/checkstyle.html
-
-# Userland
 
 ## Core utils
 - https://github.com/google/guava
@@ -96,7 +82,6 @@ The JVM uses internally escape analysis to check if an object is used only with 
 - `c++filt`
 - `pstack`
 
-
 # java
 - With `-jar` option, `-cp` has no effect
 - `-verbose:class` - log all loaded classes
@@ -110,39 +95,10 @@ The JVM uses internally escape analysis to check if an object is used only with 
 - http://www.eclipse.org/tptp/
 - http://grinder.sourceforge.net/
 
-# Jar
-- http://docs.oracle.com/javase/8/docs/technotes/guides/jar/index.html
-- http://docs.oracle.com/javase/tutorial/deployment/jar/index.html
-
 # JVM agent libs
 - http://docs.oracle.com/javase/8/docs/api/java/lang/instrument/package-summary.html
 - http://docs.oracle.com/javase/8/docs/platform/jvmti/jvmti.html
 - http://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html
-
-## HPROF (Heap Profiler)
-- https://docs.oracle.com/javase/8/docs/technotes/samples/hprof.html
-- https://java.net/projects/hat/ - Web Heap Analysis Tool.
-- `java -agentlib:hprof=help` - get help about possible usages of HPROF
-
-## Memory allocation
-For server deployments, -Xms and -Xmx are often set to the same value.
-- http://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/index.htm
-
-- `java -Xms1g` - set initial heap size to 1GB
-- `java -Xmx1g` - set max heap size to 1GB
-- `java -Xloggc:gc.log` - log gc events into file
-- `java -Xss1m` - set thread stack size
-- `java -XX:+PerfDataSaveToFile`
-
-- `java -agentlib:hprof=heap=dump,file=myprogram.hprof` - generate heap dump
-- `java -agentlib:hprof=heap=sites,file=myprogram.hprof` - get heap usage info based on the allocation sites
-- `jmap` - attaches to a running JVM and generates a heap dump
-- `jhat` - analyze binary heap dumps
-
-- `jcmd` - attaches to a running JVM
-- `jinfo` - attaches to a running JVM
-- `jdb`
-- `javah`
 
 ## CPU time optimization
 - http://www.oracle.com/technetwork/java/tuning-139912.html#section4.2.5
@@ -154,22 +110,10 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 - `java -Xprof` - log profile info to STDOUT (useful during development only)
 - `jstack -l` - attaches to a running JVM and prints thread stack traces
 
-# Findbugs
-- http://findbugs.sourceforge.net/
-- jsr305
-- JSR 308 Explained: Java Type Annotations - http://www.oracle.com/technetwork/articles/java/ma14-architect-annotations-2177655.html
-- https://code.google.com/p/jsr-305/source/checkout
-
 # ProGuard
 - http://proguard.sourceforge.net/
 
-# JAXB
-- https://docs.oracle.com/javase/tutorial/jaxb/
-- https://jaxb.java.net/
-
-
 # Java RMI Compiler (rmic)
-
 
 # Collections
 - https://docs.oracle.com/javase/tutorial/collections/TOC.html
@@ -183,15 +127,6 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 - http://docs.oracle.com/javase/7/docs/api/
 - https://docs.oracle.com/javaee/7/api/
 - http://www.javapractices.com/home/HomeAction.do
-
-# Code Quality
-## PMD 
-- http://pmd.sourceforge.net/
-
-## Checkstyle
-- https://github.com/checkstyle/checkstyle
-- http://checkstyle.sourceforge.net/
-- http://maven.apache.org/plugins/maven-checkstyle-plugin/checkstyle.html
 
 # Userland
 
@@ -207,16 +142,13 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 % sh ./get_source.sh
 ```
 
+- http://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/toc.html
 
 # Java Mission Control
 
 - http://jmeter.apache.org/
 - http://www.eclipse.org/tptp/
 - http://grinder.sourceforge.net/
-
-# Jar
-- http://docs.oracle.com/javase/8/docs/technotes/guides/jar/index.html
-- http://docs.oracle.com/javase/tutorial/deployment/jar/index.html
 
 # Java Language
 ## Generics
@@ -231,30 +163,6 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 - https://docs.oracle.com/javase/8/docs/technotes/samples/hprof.html
 - https://java.net/projects/hat/ - Web Heap Analysis Tool.
 - `java -agentlib:hprof=help` - get help about possible usages of HPROF
-
-## Memory allocation
-For server deployments, -Xms and -Xmx are often set to the same value.
-- http://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/index.htm
-
-- `java -Xms1g` - set initial heap size to 1GB
-- `java -Xmx1g` - set max heap size to 1GB
-- `java -Xloggc:gc.log` - log gc events into file
-- `java -Xss1m` - set thread stack size
-- `java -XX:+PerfDataSaveToFile`
-
-- `java -agentlib:hprof=heap=dump,file=myprogram.hprof` - generate heap dump
-- `java -agentlib:hprof=heap=sites,file=myprogram.hprof` - get heap usage info based on the allocation sites
-- `jmap` - attaches to a running JVM and generates a heap dump
-- `jhat` - analyze binary heap dumps
-
-- `jcmd` - attaches to a running JVM
-- `jinfo` - attaches to a running JVM
-- `jdb`
-- `javah`
-
-# Strings
-- http://stackoverflow.com/questions/1751844/java-convert-liststring-to-a-joind-string
-- http://stackoverflow.com/questions/6952363/replace-a-character-at-a-specific-index-in-a-string
 
 # Getters and setters
 - http://programmers.stackexchange.com/questions/21802/when-are-getters-and-setters-justified

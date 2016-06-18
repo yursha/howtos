@@ -13,3 +13,4 @@ To decrease build time there are rules for regeneration in response to change.
 
 # Build Tools
 - https://ninja-build.org/
+- [Ansible Devops Automation](https://www.ansible.com/)

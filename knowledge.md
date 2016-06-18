@@ -36,6 +36,9 @@
 - [Git mail lists]
 - [netdata](https://github.com/firehol/netdata)
 
+## Quora
+- https://www.quora.com/profile/PJ-Hyett - Github co-founder
+
 # Apply your knowledge
 - know your tools to save yourself time
 - know your OS
@@ -69,3 +72,7 @@
 # Source repos
 - Github
 - http://git.apache.org/
+
+# Stackoverflow tags
+- http://stackoverflow.com/tags/java/info
+

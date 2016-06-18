@@ -16,7 +16,6 @@
 
 # Tips
 - If it seems to be a dependency problem try `-U` option.
-- `mkdir -p src/{main,test}/{java,resources}` - create maven project structure
 
 ## Don't use `reactor` Maven component (multi-module projects)
 Keep each module in its own git repo with a singe `pom.xml` file.
@@ -29,13 +28,10 @@ Keep each module in its own git repo with a singe `pom.xml` file.
 - https://maven.apache.org/guides/mini/guide-multiple-modules.html
 - http://books.sonatype.com/mvnex-book/reference/multimodule.html
 
-# Configuration
+# Scaffolding
+- `mkdir -p src/{main,test}/{java,resources}` - create maven project structure
 
-## maven-resources-plugin
-- copying resources
-- text files interpolation with dynamic variables
-
-## generate maven boilerplate
+## Archetype Plugin
 - `mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.mycompany.app -DartifactId=my-app`
 
 ## info
@@ -44,32 +40,58 @@ Keep each module in its own git repo with a singe `pom.xml` file.
 ## code style
 - maven-checkstyle-plugin
 
-# Shade Plugin
-- https://maven.apache.org/components/plugins/maven-shade-plugin/ (has poor documentation)
+# Proguard Maven Plugin
+- https://github.com/wvengen/proguard-maven-plugin
 
-Don't use `minimizeJar` if dynamic class loading is used in the code
-- http://stackoverflow.com/questions/8817257/minimize-an-uber-jar-correctly-using-shade-plugin
-- http://stackoverflow.com/questions/8698814/configure-maven-shade-minimizejar-to-include-class-files
+# Dependencies
 
-# Build A Jar with Test deps
-- http://stackoverflow.com/questions/10307652/how-to-include-test-classes-in-jar-created-by-maven-shade-plugin/36058365
-
-# Enforcer Plugin
+## Enforcer Plugin
 - https://maven.apache.org/enforcer/enforcer-rules/requireUpperBoundDeps.html
 
-# JAR Plugin
+## Dependency Plugin
+
+# Execution
+
+## Execution Plugin
+- http://www.mojohaus.org/exec-maven-plugin/
+```bash
+# Ex:
+mvn exec:java -Dexec.mainClass="com.mycompany.FileGenerator" -Dexec.args="./file.data"
+```
+
+# Packaging
+
+## [Resources Plugin](https://maven.apache.org/plugins/maven-resources-plugin/) (static assets)
+- copying resources
+- text files interpolation with dynamic variables
+
+## JAR Plugin (skinny jars)
 - https://maven.apache.org/plugins/maven-jar-plugin/index.html
 - http://maven.apache.org/shared/maven-archiver/index.html
 - http://stackoverflow.com/questions/183292/classpath-including-jar-within-a-jar
 - http://one-jar.sourceforge.net/
 - https://maven.apache.org/shared/maven-archiver/index.html#class_manifest
 
-# Proguard Maven Plugin
-- https://github.com/wvengen/proguard-maven-plugin
+## Shade Plugin (fat jars)
+- https://maven.apache.org/components/plugins/maven-shade-plugin/ (has poor documentation)
 
-# Maven Execution Plugin
-- http://www.mojohaus.org/exec-maven-plugin/
-```bash
-# Ex:
-mvn exec:java -Dexec.mainClass="com.mycompany.FileGenerator" -Dexec.args="./file.data"
-```
+Don't use `minimizeJar` if dynamic class loading is used in the code
+- http://stackoverflow.com/questions/8817257/minimize-an-uber-jar-correctly-using-shade-plugin
+- http://stackoverflow.com/questions/8698814/configure-maven-shade-minimizejar-to-include-class-files
+
+- http://stackoverflow.com/questions/10307652/how-to-include-test-classes-in-jar-created-by-maven-shade-plugin/36058365
+
+## RPM Plugin
+- http://www.mojohaus.org/rpm-maven-plugin/index.html
+
+# Release
+- [Release Plugin](http://maven.apache.org/maven-release/maven-release-plugin/)
+- https://axelfontaine.com/blog/final-nail.html
+
+# VCS Integration
+
+## Git Integration
+- https://github.com/ktoso/maven-git-commit-id-plugin
+- http://maven.apache.org/scm/git.html
+- http://maven.apache.org/scm/maven-scm-providers/maven-scm-providers-git/maven-scm-provider-jgit/
+- http://koraktor.de/mavanagaiata/

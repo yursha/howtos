@@ -14,6 +14,8 @@ Debugging is the art of establishing the cause of a software problem.
 
 [jdb](http://docs.oracle.com/javase/8/docs/technotes/tools/unix/jdb.html) - command-line debugger for java classes (`man jdb`)
 - use `help` while in debug mode for available commands/actions.
+- `java -agentlib:jdwp=transport=dt_socket,address=localhost:9009,server=y,suspend=n`
+- `jdb -attach localhost:9009`
 
 JDB provides introspection into remote and local JVMs.
 

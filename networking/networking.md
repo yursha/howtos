@@ -6,6 +6,8 @@
 
 # URL/URI
 - Commons Validator https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/routines/UrlValidator.html
+- [File URI scheme on wikipedia](https://en.wikipedia.org/wiki/File_URI_scheme)
+- [jave.net.URI](https://docs.oracle.com/javase/8/docs/api/java/net/URI.html)
 
 # IP
 - Assigned Numbers http://www.ietf.org/rfc/rfc790.txt
@@ -20,6 +22,12 @@
 - `nslookup <ip-address>` - reverse DNS lookup (find hostname by ip)
 - `host <ip-address>` - reverse DNS lookup
 - `dig -x <ip-address>` - reverse DNS lookup
+
+- `/etc/hosts` - static table lookup for hostnames (`setup` package on Fedora) (`man hosts` - linux man pages)
+- [hostname](http://packages.qa.debian.org/h/hostname.html) - display or set hostname
+
+# Sun Network Information System [NIS]
+- http://searchnetworking.techtarget.com/definition/NIS
 
 # Tools
 - `ifconfig` - obsolete
