@@ -1,3 +1,14 @@
+# Methods
+- dynamic programming
+- divide and conquer
+- greedy algorithms
+
+# Complexity
+- asymptotic complexity (worst case)
+- amortized compexity
+    + aggregate analysis
+    + banking method
+
 # Count something
 - create a hash table and increment values as we encounter keys
 
