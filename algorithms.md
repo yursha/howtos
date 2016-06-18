@@ -2,15 +2,37 @@
 - https://github.com/raywenderlich/swift-algorithm-club
 - https://github.com/parkjs814/AlgorithmVisualizer
 
-# Data Structures
-- array
-- resizing array
-- linked list
-- binary heap (priority queue)
-- graph
-  + directed / not
-  + acyclic / not
-- BST
+# Data structures
+
+## Implementations
+- Array
+    + Dynamic array
+        + Hash Table
+- Linked data structure (aka Graph) (ex. OOP structures, C structs)
+    + Undirected graph
+    + Directed graph (DFS, BFS)
+        + Cyclic graph
+            + Doubly-linked list (FIFO Queue)
+        + Acyclic graph (DAG) (aka Tree, aka Hierarchy) (ex. Filesystem, XML/HTML, AST, INI file)
+            + unary tree (aka Singly-linked list) (LIFO Stack)
+            + N-ary tree
+            + Binary tree
+                + Binary Search tree (aka BST) - sorted, search (1), insert (log)
+                    + Unbalanced
+                    + Balanced
+                        + Red-Black Tree
+                + Binary heap (aka priority queue)
+
+## Concepts
+- Sequence (tail, head)
+- Stack (LIFO) (push, pop, peek)
+- Queue (FIFO) (enqueue, dequeue, peek)
+- Priority Queue (aka min/max queue)
+- Set
+- Map
+- Tuple
+
+Lists and array are sequential data structures (aka sequences)
 
 # Tree
 Tree order is one of its traversal orders
@@ -19,13 +41,6 @@ Tree order is one of its traversal orders
 - depth-first
 
 - bottom-up search
-
-A tree is a DAG representing a hierarchy (nestedness).
-
-- file systems
-- XML/HTML
-- AST
-- INI file
 
 A tree may have an associated **node selection scheme**:
 - file path, shell wildcard expansion, POSIX `find`
