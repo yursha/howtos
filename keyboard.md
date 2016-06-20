@@ -1,14 +1,23 @@
-# Bindings
-- Bind `ALT-v` to Unicode check mark
+Configuring keyboard mappings for VT and X environments is independent.
 
-# `kbd` package
-- `/usr/share/kbd/consolefonts` - here fonts are stored.
+# Configuring for VT environment.
+
+## `kbd` package
+- most of the `kbd` commands will not work in a GUI environment (such as X).
+- `/usr/share/kbd/consolefonts` - VT fonts directory
 - `/usr/share/kbd/keymaps` - keyboards keymaps to character codes.
 - `chvt` - change VT
 - `setfont`
 - `showconsolefont`
+- `loadkeys`
 
-# Backlight
+`man 4 kbd`
+
+# Bindings
+- Bind `ALT-v` to Unicode check mark
+
+
+# Configuring keyboard backlight (for keyboards which support it).
 ```
 su
 ***

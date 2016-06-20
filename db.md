@@ -7,7 +7,6 @@
 - MS SQL
 - Oracle
 - Mongo DB
-- Cassandra
 - Couch DB
 - PostgreSQL
 - MapDB

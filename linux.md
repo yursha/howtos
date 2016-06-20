@@ -254,6 +254,7 @@ To make sound work on linux install `pulseaudio` and `alsa` package in Archlinux
 ## RHEL
 - https://access.redhat.com/documentation/en/
 - https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/index.html
+- [RHEL 7 System Administator's Guide](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/)
 
 ## CentOS
 

@@ -11,6 +11,8 @@
 - https://github.com/systemd/systemd
 - `systemd`
 - `systemctl`
+- `systemd-firstboot (1)`
+- `machinectl -H HOST`
 - https://www.freedesktop.org/software/systemd/
 
 # [chkconfig](https://git.fedorahosted.org/git/chkconfig.git)- maintain the /etc/rc.d hierarchy
