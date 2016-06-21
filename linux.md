@@ -255,6 +255,8 @@ To make sound work on linux install `pulseaudio` and `alsa` package in Archlinux
 - https://access.redhat.com/documentation/en/
 - https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/index.html
 - [RHEL 7 System Administator's Guide](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/)
+- [RHEL 7 Storage Administration Guide](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Storage_Administration_Guide/index.html)
+- [RHEL 7 Security Guide](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Security_Guide/index.html)
 
 ## CentOS
 
@@ -291,17 +293,6 @@ To make sound work on linux install `pulseaudio` and `alsa` package in Archlinux
 - https://github.com/debian-pkg-android-tools
 - https://github.com/jbouse-debian
 - https://github.com/debian-pi
-
-# Gentoo
-- https://github.com/gentoo
-- https://github.com/gentoo-mirror
-- https://github.com/gentoo-perl
-- https://github.com/AutoGentoo
-- https://github.com/gentoo-haskell
-- https://github.com/gentoo-science
-
-# Archlinux
-- https://github.com/archlinux/archweb
 
 # FreeBSD
 - https://github.com/freebsd

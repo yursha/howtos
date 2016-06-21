@@ -12,7 +12,7 @@
 - `who` - print who is logged on
 
 # [`shadow-utils`](http://pkg-shadow.alioth.debian.org/)
-- `useradd` (symlinked from `adduser` on Fedora) - create a new user or update default new user information
+- `useradd` - create a new user or update default new user information
 - `userdel` - delete a user account and related files
 - `usermod` - modify a user account
 - `usermod -a -G <groupname> username` - add user to a group
