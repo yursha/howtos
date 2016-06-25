@@ -76,3 +76,18 @@
 # Stackoverflow tags
 - http://stackoverflow.com/tags/java/info
 
+# What's important
+- Time & Space complexity
+- algorithms & data structures
+- OS level technology (c, c++)
+- Cloud-level technlogy (AWS)
+- Distributed computation technology (Hadoop)
+- Distributed storage technology (Cassandra)
+- Design patterns
+- maybe JVM (java)
+- maybe web (html, css, javascript, HTTP)
+- networking (IP, TCP, UDP, MAIL, MOBILE)
+- maybe mobile
+- python for prototyping
+- computer architecture (RAM, CPU, Disk and their relative performance)
+- tools

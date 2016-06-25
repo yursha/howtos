@@ -46,3 +46,5 @@ len(list) // size of the list
 # Loops functional
 - http://www.diveintopython.net/native_data_types/mapping_lists.html
 
+# OS level interfaces
+- `os`, `fileinput`, `tempfile`, `shutil` modules

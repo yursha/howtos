@@ -13,6 +13,9 @@
 - `sqlite3` - command line client
 - Javadoc - http://javadox.com/org.xerial/sqlite-jdbc/3.8.11.2/org/sqlite/package-summary.html
 
+# Theory
+Query plan is what affects performance.
+
 # SQL
 - https://www.sqlite.org/lang_expr.html √
 - https://www.sqlite.org/lang_createtable.html

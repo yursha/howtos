@@ -47,6 +47,25 @@ List "application resources". For example, "appres XTerm" will list the xterm re
 ## xlsclients
 - `xlsclients -display :0` - list X clients on display :0
 
-# Desktop Managers
-- i3 - http://i3wm.org/docs/userguide.html
+# [Wayland](https://wayland.freedesktop.org/)
 
+# Desktop Managers
+## i3 - for X (c, perl, c++, objective-c)
+- [i3 user guide](http://i3wm.org/docs/userguide.html)
+- [i3 github](https://github.com/i3/i3)
+
+## Qtile - python
+- [qtile github](https://github.com/qtile/qtile)
+- [qtile docs](http://docs.qtile.org/en/latest/)
+
+## Sway - i3 compatible wm for wayland written in c
+- [sway github](https://github.com/SirCmpwn/sway)
+
+## Awesome (for X) (lua, c)
+- [Awesome](https://awesomewm.org/)
+- [awesome github](https://awesomewm.org/)
+
+## StumpWM - lisp
+- [stumpwm github](https://github.com/stumpwm/stumpwm)
+
+# Difference between wayland and X?
