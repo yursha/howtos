@@ -87,6 +87,10 @@ Some wireless chipsets also require firmware, in addition to a driver. Many firm
 # ioctl
 - https://en.wikipedia.org/wiki/Ioctl
 
+# GPU
+- [Linux GPU Driver Developer's Guide](https://www.kernel.org/doc/htmldocs/gpu/index.html)
+- [Anatomy of an Embedded KMS driver - Youtube - Embedded Linux Conference 2013](https://www.youtube.com/watch?v=Ja8fM7rTae4)
+
 # framebuffer
 - A framebuffer is a portion of RAM containing a bitmap (complete frame of data) that is driven to a video display.
 
@@ -105,6 +109,7 @@ A common design is to send commands to the graphics accelerator using a library 
 What is the status of DirectFB?
 
 # Direct Rendering Manager (DRM)
+- `drivers/gpu/drm`
 - https://dri.freedesktop.org/wiki/DRM/
 - https://en.wikipedia.org/wiki/Direct_Rendering_Manager
 - Linux kernel subsystem responsible for interfacing with GPUs. DRM exposes an API that user space programs can use to send commands and data to the GPU, and perform operations such as configuring the mode setting of the display. User space programs can use the DRM API to command the GPU to do hardware accelerated 3D rendering, video decoding as well as GPGPU computing.
