@@ -14,6 +14,7 @@
 - fschk
 - smartctl
 - sg_format (sg3_utils)
+- `mount` (util-linux)
 - https://github.com/adamcaudill/Psychson
 
 - Stack Overflow : flipping the removable media bit - alternatives to BootIt

@@ -1,3 +1,4 @@
+- http://repo.or.cz/sqlite.git
 - Richard Hip - http://www.hwaci.com/drh/
 - https://www.sqlite.org
 - https://www.sqlite.org/limits.html

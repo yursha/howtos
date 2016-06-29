@@ -48,6 +48,8 @@ List "application resources". For example, "appres XTerm" will list the xterm re
 - `xlsclients -display :0` - list X clients on display :0
 
 # [Wayland](https://wayland.freedesktop.org/)
+- wayland doesn't support gotomeeting?
+- wayland is a c library implementation for a protocol for a compositor to talk to its clients.
 
 # Desktop Managers
 ## i3 - for X (c, perl, c++, objective-c)

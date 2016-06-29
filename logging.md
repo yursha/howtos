@@ -20,6 +20,7 @@
 
 ### Log4j2
 - How to configure log4j2 differently in development and production?
+- rolling file appender
 
 # What one can expect from a logging library?
 - pattern substitution, e.g. `log.debug("Found {} records matching filter: '{}'", records, filter);` - more readable and efficient as string concatenations (interpolations) are not done if log messages are filtered out based on the log level.

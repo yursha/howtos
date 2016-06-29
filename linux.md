@@ -81,7 +81,48 @@ Some wireless chipsets also require firmware, in addition to a driver. Many firm
 - Module.symvers (kernel build artifact)
 - Kernel Command Line - https://www.freedesktop.org/software/systemd/man/kernel-command-line.html (module options can be specified on it)
 
-# KMS (Kernel Mode Setting)
+# sysfs
+- https://en.wikipedia.org/wiki/Sysfs
+
+# ioctl
+- https://en.wikipedia.org/wiki/Ioctl
+
+# framebuffer
+- A framebuffer is a portion of RAM containing a bitmap (complete frame of data) that is driven to a video display.
+
+The information in the memory buffer typically consists of color values for every pixel (point that can be displayed) on the screen. Color values are commonly stored in 1-bit binary (monochrome), 4-bit palettized, 8-bit palettized, 16-bit high color and 24-bit true color formats. An additional alpha channel is sometimes used to retain information about pixel transparency. The total amount of the memory required to drive the framebuffer depends on the resolution of the output signal, and on the color depth and palette size.
+
+- page flipping (standard technique by game programmers)
+
+As the demand for better graphics increased, hardware manufacturers created a way to decrease the amount of CPU time required to fill the framebuffer. This is commonly called "graphics accelerating".
+
+Common graphics drawing commands (many of them geometric) are sent to the graphics accelerator in their raw form. The accelerator then rasterizes the results of the command to the framebuffer. This method can save thousands or millions of CPU cycles per command, as the CPU is freed to do other work.
+
+A common design is to send commands to the graphics accelerator using a library such as OpenGL or Direct3D. The graphics driver then translates those commands to instructions for the accelerator's graphics processing unit (GPU). The GPU uses those microinstructions to compute the rasterized results. Those results are bit blitted to the framebuffer. The framebuffer's signal is then produced in combination with built-in video overlay devices (usually used to produce the mouse cursor without modifying the framebuffer's data) and any analog special effects that are produced by modifying the output signal.
+
+- https://en.wikipedia.org/wiki/Bit_blit
+
+What is the status of DirectFB?
+
+# Direct Rendering Manager (DRM)
+- https://dri.freedesktop.org/wiki/DRM/
+- https://en.wikipedia.org/wiki/Direct_Rendering_Manager
+- Linux kernel subsystem responsible for interfacing with GPUs. DRM exposes an API that user space programs can use to send commands and data to the GPU, and perform operations such as configuring the mode setting of the display. User space programs can use the DRM API to command the GPU to do hardware accelerated 3D rendering, video decoding as well as GPGPU computing.
+- https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units
+- https://en.wikipedia.org/wiki/Hardware_acceleration
+- https://en.wikipedia.org/wiki/3D_rendering
+- https://en.wikipedia.org/wiki/Video_decoder
+
+The Direct Rendering Manager resides in kernel space, so the user space programs must use kernel system calls to request its services. However, DRM doesn't define its own customized system calls. Instead, it follows the Unix principle "everything is a file" to expose the GPUs through the filesystem name space using device files under the /dev hierarchy. Each GPU detected by DRM is referred as a DRM device, and a device file /dev/dri/cardX (where X is a sequential number) is created to interface with it. User space programs that want to talk to the GPU must open the file and use ioctl calls to communicate with DRM. Different ioctls correspond to different functions of the DRM API.
+
+A library called libdrm was created to facilitate the interface of user space programs with the DRM subsystem. This library is merely a wrapper that provides a function written in C for every ioctl of the DRM API, as well as constants, structures and other helper elements.[10] The use of libdrm not only avoids exposing the kernel interface directly to user space, but presents the usual advantages of reusing and sharing code between programs.
+
+DRM consists of two parts: a generic "DRM core" and a specific one ("DRM Driver") for each type of supported hardware.[11] DRM core provides the basic framework where different DRM drivers can register, and also provides to user space a minimum set of ioctls with common, hardware-independent functionality.[8] A DRM driver, on the other hand, implements the hardware-dependent part of the API, specific to the type of GPU it supports; it should provide the implementation of the remaining ioctls not covered by DRM core, but it may also extend the API offering additional ioctls with extra functionality only available on such hardware.[8] When a specific DRM driver provides an enhanced API, user space libdrm is also extended by an extra library libdrm-driver that can be used by user space to interface with the additional ioctls.
+
+## Kernel Mode Setting (KMS)
+- Mode setting is a software operation that activates a display mode (screen resolution, color depth, and refresh rate) for a computer's display controller. Wayland compositors (e.g. Weston) and kmscon depend on kernel mode setting via ioctl.
+
+## Graphics Execution Manager (GEM)
 
 # Power
 - https://www.kernel.org/doc/Documentation/power/interface.txt
@@ -297,3 +338,4 @@ To make sound work on linux install `pulseaudio` and `alsa` package in Archlinux
 # FreeBSD
 - https://github.com/freebsd
 - https://github.com/chef-cookbooks/freebsd
+

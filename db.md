@@ -24,3 +24,15 @@
 - [Wikipedia](https://en.wikipedia.org/wiki/Redis)
 
 ## [Jedis](https://github.com/xetorthio/jedis) - Redis java client
+
+Databases can be centralized and distributed.
+
+Advantages of distributed databases:
+- can tolerate a failure of a number of servers
+- horizontally scalable (data is replicated and data access process can be cloned to multiple servers)
+
+Disadvantages of distributes databases:
+- no real-time data access (at least the latest updates)
+
+Types of distributed data:
+- replicated data (readonly and writable)
