@@ -116,10 +116,12 @@
 - `/the\C`, `/the\c` - force pattern case-(in)sensitivity
 
 ## windows
-- `CTRL-W` - switch between windows
+- `C-W` - switch between windows
+- `C-W-=` - make all windows the same size
+- `n-C-W-+`, `n-C-W--` - change window height, `:res +10` - same thing
+- `:vertical resize +10` - change window width
+- `C-W-{i,j,h,l}` - switch windows
 - https://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
-- Resize split height `:res +10` or `n-Ctrl-w-+` and `n-Ctrl-w--`
-- Resize split width `:vertical resize +10`
 
 ## vim grepping
 - http://vim.wikia.com/wiki/Find_in_files_within_Vim

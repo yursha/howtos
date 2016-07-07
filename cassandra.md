@@ -8,3 +8,4 @@
 
 # Concepts
 - CQL - Cassandra Query Language
+- Cassandra uses the Gossip Protocol in the background to allow the nodes to communicate with each other and detect any faulty nodes in the cluster.

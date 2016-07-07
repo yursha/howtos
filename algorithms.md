@@ -3,6 +3,7 @@
 - https://github.com/parkjs814/AlgorithmVisualizer
 
 # Data structures
+- [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter)
 
 ## Implementations
 - Array
