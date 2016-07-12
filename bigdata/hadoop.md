@@ -103,3 +103,16 @@ In case of error, all outstanding packets and moved from
 ackQueue. A new pipeline is setup by eliminating the bad
 datanode from the original pipeline. The DataStreamer now
 starts sending packets from the dataQueue.
+
+# Tez
+- https://tez.apache.org/
+
+# Layers
+HIVE
+TEZ
+MAP/REDUCE
+YARN
+HDFS
+
+# Google Protocol Buffers
+- https://github.com/google/protobuf

@@ -36,3 +36,5 @@ Disadvantages of distributes databases:
 
 Types of distributed data:
 - replicated data (readonly and writable)
+
+# Distributed Database
