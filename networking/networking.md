@@ -9,6 +9,13 @@
 - [File URI scheme on wikipedia](https://en.wikipedia.org/wiki/File_URI_scheme)
 - [jave.net.URI](https://docs.oracle.com/javase/8/docs/api/java/net/URI.html)
 
+# Concepts
+- https://www.techopedia.com/definition/2447/next-hop
+- https://www.usenix.org/system/files/conference/nsdi14/nsdi14-paper-handigol.pdf
+- http://www.webopedia.com/TERM/H/hop.html
+- https://en.wikipedia.org/wiki/Hop_(networking)
+- https://en.wikipedia.org/wiki/Storage_area_network
+
 # IP
 - Assigned Numbers http://www.ietf.org/rfc/rfc790.txt
 - Address Allocation for Private Internets http://www.ietf.org/rfc/rfc1918.txt
@@ -65,7 +72,6 @@
 # RDP
 - `rdesktop` - archlinux and fedora package and tool for RDP
 
-
 # VPN
 - `vpnc` - Cisco VPN3000 Concentrator, IOS and PIX
 - https://www.unix-ag.uni-kl.de/~massar/vpnc
@@ -74,7 +80,6 @@
 - http://www.infradead.org/openconnect.html
 
 # Refs
-
 
 # wifi
 - [WiFi Alliance](http://www.wi-fi.org/)

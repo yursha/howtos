@@ -10,6 +10,7 @@
 - Couch DB
 - PostgreSQL
 - MapDB
+- [ACID](https://en.wikipedia.org/wiki/ACID)
 
 
 # [Hive](https://hive.apache.org/)

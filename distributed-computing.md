@@ -23,6 +23,7 @@ DDS properties
 - [Scalable Distributed Data Structures for Internet Service Construction - Berkeley University](https://www.usenix.org/legacy/event/osdi00/full_papers/gribble/gribble.pdf)
 - uses two-phase commits to present a coherent view of its data across all cluster nodes, allowing any node to service any task.
 - simplifies internet (web) service by decoupling service-specific logic from the complexities of persistent, consistent state management.
+- https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=distributed%20data%20structures
 
 ## Distributed Tree
 

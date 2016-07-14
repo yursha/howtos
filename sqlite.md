@@ -78,3 +78,9 @@ Source: https://www.sqlite.org/lang_createtable.html
 # Usages
 - https://www.sqlite.org/appfileformat.html
 
+# Pivot table
+- https://en.wikipedia.org/wiki/Pivot_table
+
+# MySQL 5.7 docs
+- http://dev.mysql.com/doc/refman/5.7/en/
+- [Common MySQL Queries](http://www.artfulsoftware.com/infotree/queries.php)

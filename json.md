@@ -1,5 +1,6 @@
 - [Json.org](http://www.json.org/)
 - https://github.com/circlecell/jsonlintdotcom
+- https://stedolan.github.io/jq/ - command line json processor (like sed)
 
 ## Big JSON files
 - https://github.com/zeMirco/sf-city-lots-json
