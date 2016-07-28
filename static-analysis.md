@@ -5,9 +5,9 @@
 - http://pmd.sourceforge.net/
 
 ## Checkstyle
-- https://github.com/checkstyle/checkstyle
 - http://checkstyle.sourceforge.net/
-- http://maven.apache.org/plugins/maven-checkstyle-plugin/checkstyle.html
+- https://github.com/checkstyle/checkstyle
+- http://maven.apache.org/components/plugins/maven-checkstyle-plugin/
 
 # Findbugs
 - http://findbugs.sourceforge.net/

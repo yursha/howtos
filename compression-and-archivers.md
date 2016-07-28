@@ -64,10 +64,11 @@ Also a different beast is Linux zlibc Compressing File-I/O Library)
 
 ## Decompress and extract
 ```
-jar vxf /path/to/archive.jar
+jar vxf /path/to/archive.jar # doesn't allow extracting to stdout
 tar vxzf /path/to/archive.tar.gz
 zcat <archive> | tar xv
 tar vxjf /path/to/archive.tar.bz2
+unzip -qc archive.jar META-INF/MANIFEST.MF  # extracts to stdout
 ```
 
 ## Archive and compress

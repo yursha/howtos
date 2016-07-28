@@ -37,9 +37,6 @@ Keep each module in its own git repo with a singe `pom.xml` file.
 ## info
 - `mvn help:effective-pom`
 
-## code style
-- maven-checkstyle-plugin
-
 # Proguard Maven Plugin
 - https://github.com/wvengen/proguard-maven-plugin
 
@@ -95,3 +92,6 @@ Don't use `minimizeJar` if dynamic class loading is used in the code
 - http://maven.apache.org/scm/git.html
 - http://maven.apache.org/scm/maven-scm-providers/maven-scm-providers-git/maven-scm-provider-jgit/
 - http://koraktor.de/mavanagaiata/
+
+# Launch maven surefire plugin in debug mode
+- `mvn -Dmaven.surefire.debug test`
