@@ -47,6 +47,14 @@ List "application resources". For example, "appres XTerm" will list the xterm re
 ## xlsclients
 - `xlsclients -display :0` - list X clients on display :0
 
+# xorg-x11-server-utils
+- `xmodmap` - binds keyboard key codes to logical characters, modifiers and control signals.
+- `/usr/include/X11/keysymdef.h` - definition of symbolic (logical) character names
+- `/usr/shared/X11/XKeysymDB` - key symbols database.
+
+# xorg-x11-utils
+- `xev` - read key and pointer codes
+
 # [Wayland](https://wayland.freedesktop.org/)
 - wayland doesn't support gotomeeting?
 - wayland is a c library implementation for a protocol for a compositor to talk to its clients.
