@@ -34,14 +34,17 @@
 - http://docs.python-guide.org/en/latest/writing/style/
 - https://www.chromium.org/chromium-os/python-style-guidelines
 
-*c++*
+# c
+- http://clang.llvm.org/docs/ClangFormat.html
+
+# c++
 - https://google.github.io/styleguide/cppguide.html
 - http://geosoft.no/development/cppstyle.html
 - https://www.linkedin.com/pulse/20140503193653-3046051-why-google-style-guide-for-c-is-a-deal-breaker
 - http://www.stroustrup.com/bs_faq2.html
 - http://wiki.ros.org/CppStyleGuide
 
-*perl*
+# perl
 - `perdoc perlstyle`
 
 # if-then-else
