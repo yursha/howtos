@@ -2,13 +2,18 @@
 
 Command line limits (bash, zsh) ??
 
-# Basic `sed` usage
+# replace
 ```
 sed -i 's/old/new/g' file                 # basic case
 sed -i '.bak' 's/old/new/g' file          # basic case with backup
 sed -i 's/old/new/g' file1 file2          # tedious of file list is long
 sed -i 's/old/new/g' <shell-glob-pattern> # may hit command line limit
 sed -i 's/old/new/g' $(find . -type f -name <pattern>) # may hit command line limit
+```
+
+# delete a line matching a pattern
+```
+sed -i '/pattern/d'
 ```
 
 # In the shell script

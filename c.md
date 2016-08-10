@@ -5,6 +5,10 @@
 
 # Programs
 - clang
+- [gnu cpp](https://gcc.gnu.org/onlinedocs/cpp/index.html)
+
+# Standars
+- [POSIX 2013 - shell and utilities](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/contents.html)
 
 # C language
 - [C Standard Committee](http://www.open-std.org/jtc1/sc22/wg14/)
@@ -14,8 +18,8 @@
 - [C programming tutorial by crasseux](http://www.crasseux.com/books/ctutorial/)
 - [The C Book](http://publications.gbdirect.co.uk/c_book/)
 
-# C stlib
-- [GNU lib C Manual](https://www.gnu.org/software/libc/manual)
+# GNU C Library
+- [Reference](https://www.gnu.org/software/libc/manual/html_node/index.html)
 - [glibc on Fossies](https://fossies.org/dox/glibc-2.23/index.html)
 
 # Other c libs
@@ -28,7 +32,6 @@
 
 # C preprocessor (cpp)
 - [GNU GCC CPP manual](https://gcc.gnu.org/onlinedocs/gcc-6.1.0/cpp/)
-Preprocessor is an essential part of the language.
 `cpp -v` - find out where preprocessor looks up headers for `#include <...>` directives. Those are the libraries (headers) available on your system than you can make use of.
 
 On Fedora system:
@@ -45,8 +48,8 @@ On Fedora system:
 - freestanding environment without stdlib (embedded systems, OS, process control, realtime, etc)
 
 # Linkage
-- external (to a file)
-- no linkage (internal to a file)
+- external (external to a file)
+- static (internal to a file)
 
 # Source code
 - `git clone git://sourceware.org/git/glibc.git`
