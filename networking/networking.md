@@ -87,8 +87,12 @@
 # wifi
 - [WiFi Alliance](http://www.wi-fi.org/)
 - [WiFi on wikipedia](https://en.wikipedia.org/wiki/Wi-Fi)
-- `NetworkManager` package on Fedora (provides `nmcli` command-line interface)
 - `/etc/sysconfig/network-scripts` - some network scripts on Fedora
+
+# NetworkManager
+- `NetworkManager` package on Fedora (provides `nmcli` command-line interface)
+- `nmcli connection show` - list all available connections
+- `nmcli connection up <NAME>` - activate a connection
 
 ## `wpa-supplicant`
 - `wpa-supplicant` package on Fedora (the IEEE 802.11 implementation for Linux)
