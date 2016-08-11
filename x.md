@@ -3,13 +3,14 @@
 
 `/etc/X11/xorg.conf` - configuration file
 
-Backlight
-- https://wiki.archlinux.org/index.php/Backlight
-- `xbacklight -display :0 -set 50` - reduce display backlight in half
-
 ## Set up natural touchpad scrolling
 - `cp  /usr/share/X11/xorg.conf.d/50-synaptics.conf /etc/X11/xorg.conf.d`
 - `vim /etc/X11/xorg.conf.d/50-synaptics.conf`
+
+## Backlight
+- https://wiki.archlinux.org/index.php/Backlight
+- `xbacklight -display :0 -set 50` - reduce display backlight in half
+
 
 ```
 Section "InputClass"

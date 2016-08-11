@@ -266,22 +266,6 @@ There is no performance advantage to either a contiguous swap file or a partitio
 - https://developer.apple.com/library/mac/technotes/tn2166/_index.html
 
 # `/proc` file system
-- `/proc/asound/modules` - installed sound modules
-
-
-# Sound
-## Hardware
-- S/PDIF (Sony/Philiphs Digital Interface Format) (digital audio)
-  + coaxial (orange RCA cable)
-  + optical (Toslink - Toshiba link square black, can look like headphone jack)
-- HDMI (digital audio + video)
-- Pair of white and red RCA cables (analog audio)
-
-## ALSA
-- https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture
-- https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture/Troubleshooting
-
-To make sound work on linux install `pulseaudio` and `alsa` package in Archlinux.
 
 # Video
 - `xrandr`
