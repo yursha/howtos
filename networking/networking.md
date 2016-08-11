@@ -49,6 +49,9 @@
 - http://www.skbuff.net/iputils/
 - `ping`
 
+## [traceroute](http://traceroute.sourceforge.net)
+- `traceroute <ip-address>`
+
 # Ports
 - [`net-tools`](http://sourceforge.net/projects/net-tools/)
 - `netstat`

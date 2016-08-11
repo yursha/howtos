@@ -4,7 +4,7 @@ Configuring keyboard mappings for VT and X environments is independent.
 
 ## `kbd` package
 - most of the `kbd` commands will not work in a GUI environment (such as X).
-- `/usr/share/kbd/consolefonts` - VT fonts directory
+- `/usr/share/kbd/consolefonts` or `/usr/lib/kbd/consolefonts` - VT fonts directory
 - `/usr/share/kbd/keymaps` - keyboards keymaps to character codes.
 - `chvt` - change VT
 - `setfont`
