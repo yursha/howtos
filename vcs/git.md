@@ -209,9 +209,8 @@ http://stackoverflow.com/questions/7744049/git-how-to-rebase-to-a-specific-commi
 If you run `git difftool` instead of `git diff`, you can view any of these diffs in software like `emerge`, `vimdiff` and many more. Run `git difftool --tool-help` to see what is available on your system.
 - http://stackoverflow.com/questions/822811/showing-which-files-have-changed-between-two-revisions
 
-
 # See file at a specific revision
-- `git show REVISION:Makefile` - time machine for a file.
+- `git show REVISION:path/to/file` - time machine for a file.
 
 # Art of merging and conflict resolution
 In git if anyone move an directory and someone else create a file in that directory in another branch merging logic won't detect this and the created file will land in the unexpected place after the merge. That's why if someone is going to rename or move directories they should notify other collaborators about that.
@@ -461,3 +460,11 @@ git cherry-pick 62ecb3
 git checkout -b newbranch 62ecb3
 git rebase --onto master 76cada^
 ```
+
+# List tracked files
+- `git ls-files`
+- `git ls-tree -r master --name-only` (doesn't show tracked files in staging area)
+- `git log --pretty=format: --name-only --diff-filter=A | sort - | sed '/^$/d'`
+- `git ls-tree -r HEAD --name-only`
+- `git ls-tree --full-tree -r HEAD`
+- `git ls-tree --full-tree -r --name-only HEAD`

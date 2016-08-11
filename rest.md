@@ -10,3 +10,5 @@
 - http://raml.org/projects.html
 - [raml2html family of projects on GitHub](https://github.com/raml2html)
 
+# Health checks and reporting
+- https://status.github.com/
