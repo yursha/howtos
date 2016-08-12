@@ -3,9 +3,17 @@
 Uses LibreSSL
 
 ## Clients
-- `ssh` - remote login program
-- `scp` - remote file copy
-- `ssh-keygen`
+- package `openssh-clients` on Fedora 23
+    + `sftp`
+    + `slogin`
+    + `scp` - remote file copy
+    + `ssh` - remote login program
+    + `ssh-add` - add, remove or query keys kept by authentication agent
+    + `ssh-agent` - authentication agent which holds private keys in memory
+    + `ssh-copy-id`
+    + `ssh-keyscan`
+- package `openssh` on Fedora 23
+    + `ssh-keygen`
 
 ### Examples:
 - `scp -i prk ayursha@remotehost.edu:file.txt /some/local/directory`
