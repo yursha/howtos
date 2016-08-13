@@ -209,6 +209,7 @@ Add a new line preserving the indentation with a call to `table.error` and remem
 - `:e` - reload the current file if it was changed on disk
 - `:q` - quit vim
 - `:w` - save changes (`ZZ` is equal to `:wq`)
+- `:w !sudo tee %` - save file requiring root priveleges
 - `:saveas 'filepath'` - clone buffer and save it to a different filepath
 - `:bufdo %s/pattern/replace/ge | update` - search and replace in all open buffers.
 - http://vim.wikia.com/wiki/Easier_buffer_switching

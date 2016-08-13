@@ -131,3 +131,6 @@ head -1 file.txt | xargs echo
 - `factor`
 - `numfmt`
 - `seq`
+
+# Other commands
+- `id`

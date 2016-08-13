@@ -35,6 +35,7 @@ Parameters can be passed to the kernel:
 - `rename`
 - `write`
 - `whereis`
+- `chsh` - change user login shell
 
 ## procps-ng
 - https://gitlab.com/procps-ng/procps

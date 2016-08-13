@@ -107,5 +107,9 @@ python -c "import string; print set(string.lowercase) - set('`args`')"
 # EOF
 - `C-D` - send EOF signal
 
-# Commands
+# Builtin Commands
 - `disown` - disown a process so that its not killed when the shell process terminates.
+- `umask`
+
+# Deps
+Bash depends on readline, history and termcap libs. Readline provides the other two.

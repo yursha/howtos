@@ -14,15 +14,19 @@
     + Directed graph (DFS, BFS)
         + Cyclic graph
             + Doubly-linked list (FIFO Queue)
-        + Acyclic graph (DAG) (aka Tree, aka Hierarchy) (ex. Filesystem, XML/HTML, AST, INI file)
-            + unary tree (aka Singly-linked list) (LIFO Stack)
-            + N-ary tree
-            + Binary tree
-                + Binary Search tree (aka BST) - sorted, search (1), insert (log)
-                    + Unbalanced
-                    + Balanced
-                        + Red-Black Tree
-                + Binary heap (aka priority queue)
+        + Acyclic graph (DAG)
+            + Tree, aka Hierarchy - DAG with only one path from one vertex to another (ex. Filesystem, XML/HTML, AST, INI file, single class inheritance, materialized path)
+                + Unary tree (aka Singly-linked list) (LIFO Stack)
+                + Binary tree
+                    + Binary Search tree (aka BST) - sorted, search (1), insert (log)
+                        + Unbalanced
+                        + Balanced
+                            + Red-Black Tree
+                    + Binary heap (aka priority queue)
+                + N-ary tree
+            + Multi-path DAG (multiple class inheritance)
+
+
 
 ## Concepts
 - Sequence (tail, head)

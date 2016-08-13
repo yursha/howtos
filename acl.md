@@ -2,6 +2,7 @@
 - `/etc/passwd` - where the users' information is stored
 - `cut -d: -f1 /etc/passwd | sort` - print sorted list of all users on a host
 - `/etc/shadow` - where the users' passwords are stored
+- on Fedora the default system users are in `/usr/share/doc/setup/uidgid`
 
 # [GNU `coreutils`](http://www.gnu.org/software/coreutils/)
 - `users` - print the user names of users currently logged in to the current host.
@@ -37,3 +38,6 @@
 Sudo is an alternative to su for running commands as root. Unlike su, which launches a root shell that allows all further commands root access, sudo instead grants temporary privilege escalation to a single command. By enabling root privileges only when needed, sudo usage reduces the likelihood that a typo or a bug in an invoked command will ruin the system.
 
 Sudo can also be used to run commands as other users; additionally, sudo logs all commands and failed access attempts for security auditing. 
+
+# umask
+
