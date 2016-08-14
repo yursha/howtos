@@ -100,3 +100,6 @@ public class RuntimeExceptionMapper implements ExceptionMapper<Throwable> {
 # Special error variables
 - C has `errno` global variable
 - Perl has `$!` global variable - hold the message of the last error
+
+# C
+- `man 3 errno`

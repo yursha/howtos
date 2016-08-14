@@ -150,13 +150,26 @@ DRM consists of two parts: a generic "DRM core" and a specific one ("DRM Driver"
 - https://www.quora.com/What-does-Linus-Torvalds-think-of-Java-and-the-JVM
 
 # System calls
-- Section 2 of the man pages describes system calls (kernel interface)
-- `man 2 intro`
-- `man syscalls`
+There are 325 system calls on Linux 4.4.8 AMD64 architecture
+
+- `man 2 intro` - introduction to system calls
+- `man syscalls` - list of system calls
+- `man 7 vdso` - virtual dynamic shared object (syscall optimizer)
 - [Syscalls Table by Filippo Valsorda](https://filippo.io/linux-syscall-table/)
 - [Syscalls Table by Ryan Chapman](http://blog.rchapman.org/post/36801038863/linux-system-call-table-for-x86-64)
 - [Linux syscalls](http://cs.lmu.edu/~ray/notes/linuxsyscalls/)
 - [Source code for `open` syscall](https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/fs/open.c)
+
+
+```c
+#define _GNU_SOURCE
+#include <unistd.h>
+
+#include <sys/syscall.h> /* For SYS_xxx definitions. */
+/* Transitively pulls in <asm/unistd_64.h> */
+
+long syscall(long number, ...)
+```
 
 # ifconfig
 
