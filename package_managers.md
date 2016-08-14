@@ -76,7 +76,7 @@ rpm -qf /usr/sbin/lsmod
 
 # See package summary (description)
 ```
-rpm -qi <package>
+rpm -qi <package> # installed only
 pip show <package>
 ```
 
@@ -102,7 +102,7 @@ dnf check-update
 pacman -Sy
 ```
 
-# Show package info (summary)
+# Query remote package
 ```
 dnf info <package> # doesn't force sync of package database (both installed and available)
 pacman -Qi <package> # displays info about an installed package
