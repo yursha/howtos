@@ -24,6 +24,7 @@
 - `gitcore-tutorial`
 - `gitglossary`
 - `git-help`
+- `git log -L 162,169:path-to-file`
 - https://github.com/git-tips/tips
 
 # Bookmark
