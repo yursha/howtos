@@ -11,7 +11,10 @@
 - PostgreSQL
 - MapDB
 - [ACID](https://en.wikipedia.org/wiki/ACID)
-
+    + Atomicity
+    + Consistency
+    + Isolation
+    + Durability
 
 # [Hive](https://hive.apache.org/)
 
@@ -22,7 +25,6 @@
 # [Redis](http://redis.io/)
 - [Docs](http://redis.io/documentation)
 - [GitHub](https://github.com/antirez/redis)
-- [Wikipedia](https://en.wikipedia.org/wiki/Redis)
 
 ## [Jedis](https://github.com/xetorthio/jedis) - Redis java client
 
@@ -39,3 +41,15 @@ Types of distributed data:
 - replicated data (readonly and writable)
 
 # Distributed Database
+
+# Connection pooling
+
+# Load balancing
+
+# Scaling up/out/down/in
+
+# Replication
+
+# Failover configuration
+
+# Distributed transactions
