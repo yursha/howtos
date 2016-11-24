@@ -5,6 +5,9 @@
 
 - http://www.irfanview.com/
 
+# ImageMagick
+- `sudo dnf install ImageMagick`
+
 # Java Libs
 ## ImageIO
 - https://java.net/projects/imageio
