@@ -35,21 +35,18 @@
 
 # syslog
 
-# [Fluent](http://www.fluentd.org/)
-Open source data collector for unified logging layer.
-Fluentd is written in Ruby for flexibility, with performance sensitive parts written in C. It runs as a Ruby daemon.
+# Graphite
 
-`td-agent` - stable distribution of fluentd
+# fluentd
+fluentd is a log collector.
 
-## Resources
-- [Fluent Docs](http://docs.fluentd.org/articles/quickstart)
-- [fluentd plugins](http://www.fluentd.org/plugins)
-- [fluentd GitHub](https://github.com/fluent/fluentd)
-- [fluent - unified logging layer](http://www.fluentd.org/blog/unified-logging-layer)
-- [fluent - architecture](http://www.fluentd.org/architecture)
-- [fluent - guide](http://docs.fluentd.org/articles/quickstart)
+Used by Microsoft Operations Management Suite, Attlassian Cloud, SlideShare.net (147), Change.org (1236)
+Similar to Apache Flume and Facebook's Scribe.
 
-## Performance
+Data Sinks (for later log analysis): Cassandra, HDFS, MongoDB, ElasticSearch
+
+`td-agent` - Linux distribution of fluentd
+
 - a regular PC box can handle 18,000 messages/second with a single process
 
 
