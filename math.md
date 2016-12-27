@@ -1,0 +1,10 @@
+- **number** - add, subtract, multiply, divide, remainder, abs, sqrt, floor, ceiling, round
+- **list of numbers** - reduce: sum, mean, median, max, min
+- Why does 0! = 1? - http://mathforum.org/library/drmath/view/57128.html
+- `fenv.h` - floating point environment specified by the C11 standard.
+- overflow
+- underflow
+- rounding mode
+- integer promotion
+- floating point promotion
+- integer truncation
