@@ -2,10 +2,11 @@
 - Memory access can be read or write access.
 - alignment
 
-## Storage types in c
-- automatic storage
-- static storage
-- thread-local storage
+## Data can live in memory in:
+- runtime stack
+- program image, aka static storage area
+- thread-local area
+- heap. Variably sized objects can only be allocated on the heap.
 
 ```c
 // c - glibc
