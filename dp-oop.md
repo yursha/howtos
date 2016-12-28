@@ -1,3 +1,5 @@
+Encapsulated data type should maintain their invariants
+
 # Good patterns
 - lazy init
 - loose coupling

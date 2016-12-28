@@ -1,3 +1,14 @@
+# Fail-fast design - don't workaround problems.
+Failing fast makes defects easier to find. Don't disable assertions in production. Remember, an error that occurs at the customer’s site made it through your testing process. You’ll
+probably have trouble reproducing it. These errors are the hardest to find, and a well-placed assertion explaining the problem could save you days of effort. Fix then your tests. 
+Create a global exception handler to gracefully handle unexpected exceptions, such as assertions, and bring them to the developers’ attention. For example,
+a GUI-based program might display "an unexpected problem has occured" in an error dialog and provide an option to email tech support. A batch-processing system might page a system administrator and continue
+with the next transaction.  If you use a global exception handler, avoid catch-all exception handlers in the rest of your application. They’ll prevent exceptions from reaching your global handler. Also, when you
+use resources that have to be closed (such as files), be sure to clean them up. This way, if an exception occurs, the application will be returned to a fresh, working state.
+Bugs add a lot of expense and a pain to figure out. Since the hardest part of debugging is often reproducing and pinpointing errors, failing fast can reduce debugging’s cost significantly. Be sure to implement a
+global error handler so your overall stability doesn’t suffer. Search your existing code for catch-all exception handlers and either remove or refactor them. Then you’re ready to
+gradually introduce assertions. Over time, more and more errors will fail fast, and you’ll see the cost of debugging decrease and the quality of your system improve.
+
 # Concepts
 - diagnostic messages
 - fault tolerance

@@ -41,8 +41,3 @@ echo "Hello" > file.txt
 echo "Error" 2> file.txt
 echo "Error" 2> /dev/null
 ```
-
-# Evented IO
-- [cool.io](https://github.com/tarcieri/cool.io) - evented IO for Ruby
-- [celluloid.io](https://celluloid.io/) - evented IO for Ruby
-- [celluloid.io - Github](https://github.com/celluloid/celluloid-io)
