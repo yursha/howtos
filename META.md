@@ -1,3 +1,5 @@
+- Use problem oriented approach for grouping info in files rather than technology oriented.
+- You should prefer cross-platform tools for solving tasks which are not platform specific.
 - something which is easily discoverable thru search engine doesn't need to be saved.
 
 # Resources
@@ -49,21 +51,6 @@
 # Hyperlinks
 - Don't persist them beyond browser session as they can go stale
 - think about the criteria to save hyperlinks
-
-# My Environment
-- linux
-- fedora
-- bash
-- tmux
-- vim
-- grep
-- awk
-- sed
-- curl
-- python
-- scala
-- java
-- perl
 
 # Tips
 - use command-line tools

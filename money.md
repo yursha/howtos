@@ -1,1 +1,0 @@
-- https://github.com/jlevy/og-equity-compensation
