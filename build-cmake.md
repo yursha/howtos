@@ -14,3 +14,5 @@ Generates platform-specific build system from a platform-independent `CMakeLists
 
 - `ctest`
 - `cpack`
+
+- https://ninja-build.org/

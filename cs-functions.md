@@ -1,6 +1,3 @@
-# Resources
-- [ABSG - functions](http://www.tldp.org/LDP/abs/html/functions.html)
-
 # Concepts
 - Functions must be reentrant. Non-reentrant functions return pointers to static objects owned by the
 function. Such functions can be troublesome since a previously returned result can change if the function is called again, perhaps by another thread.

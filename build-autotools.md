@@ -44,5 +44,4 @@ Command-line utils
 
 # Make
 - [GNU Manual for Unix](https://www.gnu.org/software/make/manual/make.html)
-- [Windows port](http://gnuwin32.sourceforge.net/packages/make.htm)
 - `git clone git://git.savannah.gnu.org/make.git`
