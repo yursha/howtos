@@ -25,7 +25,7 @@ Dependency injection frameworks help to decouple individual components for bette
 Building model ontologies is bad:
 - resistent to change
 
-# Object scope
+# Object life cycle
 - singleton
 - prototype
 - enum
