@@ -1,0 +1,4 @@
+- file descriptors
+- memory
+- threads
+- connections

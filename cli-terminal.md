@@ -1,8 +1,4 @@
-# Colors
-- https://upload.wikimedia.org/wikipedia/en/1/15/Xterm_256color_chart.svg
-
 # GNU Screen
-- https://en.wikipedia.org/wiki/GNU_Screen
 - http://git.savannah.gnu.org/cgit/screen.git/tree/src/encoding.c
 - http://lists.gnu.org/archive/html/screen-users/2007-02/msg00000.html
 - http://fungi.yuggoth.org/vsp4s/
@@ -30,4 +26,3 @@
 ## Terminal colors
 - http://rampex.ihep.su/Linux/linux_howto/html/tutorials/mini/Colour-ls-6.html
 - `setterm -foreground white -background blue -store`
-

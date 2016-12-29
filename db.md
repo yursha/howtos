@@ -53,3 +53,5 @@ Types of distributed data:
 # Failover configuration
 
 # Distributed transactions
+
+- ACID (atomicity, consistency, isolation, durability)
