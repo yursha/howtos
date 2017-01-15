@@ -3,8 +3,8 @@
 - alignment
 
 ## Data can live in memory in:
-- runtime stack
-- program image, aka static storage area
+- Stack (How stack memory is allocated in Linux? Is the a maximum limit?)
+- Static program image
 - thread-local area
 - heap. Variably sized objects can only be allocated on the heap.
 
