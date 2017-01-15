@@ -1,1 +1,0 @@
-- How stack memory is allocated in Linux? Is the a maximum limit?
