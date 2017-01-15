@@ -1,15 +1,4 @@
-- http://www.jdbi.org/ is the most straight-forward way to use a relational database with Java.
-- http://www.liquibase.org/ is a great way to keep your database schema in check throughout your development and release cycles, applying high-level database refactorings instead of one-off DDL scripts.
-
-- Berkeley DB
-- GDBM
-- MySQL
-- MS SQL
-- Oracle
-- Mongo DB
-- Couch DB
-- PostgreSQL
-- MapDB
+# ACID
 - [ACID](https://en.wikipedia.org/wiki/ACID)
     + Atomicity
     + Consistency
@@ -25,8 +14,6 @@
 # [Redis](http://redis.io/)
 - [Docs](http://redis.io/documentation)
 - [GitHub](https://github.com/antirez/redis)
-
-## [Jedis](https://github.com/xetorthio/jedis) - Redis java client
 
 Databases can be centralized and distributed.
 
