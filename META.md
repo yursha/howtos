@@ -54,6 +54,7 @@
 - Filesystems, databases (including distributed, etc. Cassandra)
 - Cloud (Google Cloud, AWS, IAAS, PAAS)
 - Distributed computation (Hadoop, MapReduce, Spark)
+- Machine learning, argifical intellegence, neural networks, NLP
 - Design patterns
 - maybe JVM (java)
 - maybe web (html, css, javascript, HTTP)
