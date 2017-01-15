@@ -44,7 +44,7 @@
 - compile your tools from source with static linking (otherwise the version of you tool or its dependency which you need may be unavailable on a target system)
 
 # Stackoverflow tags
-- http://stackoverflow.com/tags/java/info
+- http://stackoverflow.com/tags/c/info
 
 # What's important
 - Math, C.Sc, algorithms & data structures (and their time and space complexity)
