@@ -1,5 +1,4 @@
-- Use problem oriented approach for grouping info in files rather than technology oriented.
-- You should prefer cross-platform tools for solving tasks which are not platform specific.
+- group information here by problem domains rather than by technology
 - something which is easily discoverable thru search engine doesn't need to be saved.
 
 # Resources
@@ -41,40 +40,22 @@
 ## Quora
 - https://www.quora.com/profile/PJ-Hyett - Github co-founder
 
-# Apply your knowledge
-- know your tools to save yourself time
-- know your OS
-- know your problem and seek solutions for it
-- seek inspiration in well-perceived knowledge which makes you well-rounded
-- look for recipes and save them
-
-# Hyperlinks
-- Don't persist them beyond browser session as they can go stale
-- think about the criteria to save hyperlinks
-
 # Tips
-- use command-line tools
 - compile your tools from source with static linking (otherwise the version of you tool or its dependency which you need may be unavailable on a target system)
-
-# Source repos
-- Github
-- http://git.apache.org/
 
 # Stackoverflow tags
 - http://stackoverflow.com/tags/java/info
 
 # What's important
-- Time & Space complexity
-- algorithms & data structures
-- OS level technology (c, c++)
-- Cloud-level technlogy (AWS)
-- Distributed computation technology (Hadoop)
-- Distributed storage technology (Cassandra)
+- Math, C.Sc, algorithms & data structures (and their time and space complexity)
+- Hardware (RAM, CPU/ISA, Disk, NICs, sensors, DCP, etc.)
+- Linux, c/c++, stdlibs, boost.io
+- Networking (NICs, IP, TCP, UDP, TOPOLOGIES)
+- Filesystems, databases (including distributed, etc. Cassandra)
+- Cloud (Google Cloud, AWS, IAAS, PAAS)
+- Distributed computation (Hadoop, MapReduce, Spark)
 - Design patterns
 - maybe JVM (java)
 - maybe web (html, css, javascript, HTTP)
-- networking (IP, TCP, UDP, MAIL, MOBILE)
 - maybe mobile
-- python for prototyping
-- computer architecture (RAM, CPU, Disk and their relative performance)
-- tools
+- Tools
