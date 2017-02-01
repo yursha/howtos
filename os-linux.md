@@ -296,6 +296,9 @@ There is no performance advantage to either a contiguous swap file or a partitio
 # Uptime
 - http://unix.stackexchange.com/questions/131775/how-long-has-my-linux-system-been-running
 
+# Containerization
+`CONFIG_USER_NS` - kernel option
+
 ## RHEL
 - https://access.redhat.com/documentation/en/
 - https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/index.html
