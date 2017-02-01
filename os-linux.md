@@ -44,7 +44,8 @@ Command line and full screen utilities for browsing procfs, a "pseudo" file syst
 - `ps`
 - `ps -ef` - list all running processes verbosely
 
-- `free`
+- `
+`
 
 # kmod - Linux kernel module management utilities
 - http://git.kernel.org/cgit/utils/kernel/kmod/kmod.git
@@ -337,8 +338,4 @@ There is no performance advantage to either a contiguous swap file or a partitio
 - https://github.com/debian-pkg-android-tools
 - https://github.com/jbouse-debian
 - https://github.com/debian-pi
-
-# FreeBSD
-- https://github.com/freebsd
-- https://github.com/chef-cookbooks/freebsd
 
