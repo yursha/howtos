@@ -12,11 +12,6 @@
 - https://github.com/klange/toaruos
 
 # Clipboard copy/paste
-*OS X*
-```
-echo 'lol' | pbcopy
-pbpaste > file.txt
-```
 
 *X Server*
 - https://github.com/astrand/xclip
