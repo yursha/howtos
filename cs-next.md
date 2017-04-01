@@ -1,6 +1,0 @@
-- https://medium.com/@cdixon/what-s-next-in-computing-e54b870b80cc#.67qirwsme
-- http://cdixon.org/
-- https://www.raspberrypi.org/blog/raspberry-pi-zero
-- http://makezine.com/2015/04/01/esp8266-5-microcontroller-wi-fi-now-arduino-compatible/
-- http://www.extremetech.com/gaming/201417-nvidias-2016-roadmap-shows-huge-performance-gains-from-upcoming-pascal-architecture
-- https://www.technologyreview.com/s/544421/googles-quantum-dream-machine/
