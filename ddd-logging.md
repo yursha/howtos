@@ -35,8 +35,6 @@
 
 # syslog
 
-# Graphite
-
 # fluentd
 fluentd is a log collector.
 
