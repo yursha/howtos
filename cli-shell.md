@@ -10,18 +10,11 @@
 - http://linuxcommand.org/index.php
 - https://linuxconfig.org/bash-scripting-tutorial
 
-# Concepts
-- `/etc/shells` - lists available shells on the system
-
 # Resources
 
 Shell is a parent process for all child processes launched from it. The exit status of a child process is provided by the POSIX 1003.1 `waitpid` function, or `128+n` if the child process was terminated by signal `n`.
 
 If a shell command is terminated by `&`, the shell executes the subprocess asynchronously, i.e. does not wait for it to finish, and the return status is `0`. `STDIN` for asynchronous child processes, in the absence of any explicit redirections, is redirected from `/dev/null`.
-
-# Frameworks
-- [Composure](https://github.com/erichs/composure) by Erich Smith. Here is his [blog](http://erichs.github.io/) and [github](https://github.com/erichs).
-- Todo management: [github](https://github.com/ginatrapani/todo.txt-cli) and [website](http://todotxt.com/)
 
 # Emails
 *bash*
@@ -36,4 +29,4 @@ Bash will check for mail periodically, depending on the values of the MAIL, MAIL
 - cd
 
 # Deps
-Bash depends on readline, history and termcap libs. Readline provides the other two.
+Bash depends on readline, history and termcap libs. Readline provides the latter two.
