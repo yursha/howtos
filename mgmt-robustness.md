@@ -1,1 +1,1 @@
-Check funtion and class invariants in code (precondition & postcondition checking).
+Check function and class invariants in code (precondition & postcondition checking).
