@@ -1,3 +1,0 @@
-- [YAML.org](http://yaml.org/)
-- [Online YAML Linter](http://www.yamllint.com/)
-- [YAML on wikipedia](https://en.wikipedia.org/wiki/YAML)
