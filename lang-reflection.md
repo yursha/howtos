@@ -1,1 +1,0 @@
-- http://stackoverflow.com/questions/19557829/faster-alternatives-to-javas-reflection
