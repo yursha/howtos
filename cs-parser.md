@@ -1,7 +1,7 @@
 - https://en.wikipedia.org/wiki/GLR_parser
 - https://github.com/hafriedlander/php-peg
 
-# Rules
+# Advice
 - If you develop a parser include both line number and column number in error messages.
 
 # Flat parsers
