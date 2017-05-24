@@ -1,9 +1,4 @@
-# Concepts
-- Functions must be reentrant. Non-reentrant functions return pointers to static objects owned by the
-function. Such functions can be troublesome since a previously returned result can change if the function is called again, perhaps by another thread.
-- The functions must do bounds-checking on its argument buffers so as to not write past them. (Handled automatically in Java)
-
-## Bash specifics
+# Bash specifics
 Bash functions don't allow to return a value to the caller. When a bash function ends its return value is its status: zero for success, non-zero for failure. To return values, you can set a global variable with the result, or use command substitution, or you can pass in the name of a variable to use as the result variable.
 
 Although bash has a return statement, the only thing you can specify with it is the function's status, which is a numeric value like the value specified in an exit statement. The status value is stored in the $? variable. If a function does not contain a return statement, its status is set based on the status of the last statement executed in the function. To actually return arbitrary values to the caller you must use other mechanisms.
