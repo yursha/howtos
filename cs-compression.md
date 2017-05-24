@@ -1,3 +1,10 @@
+# What is archiver
+
+Archiver is a program which can:
+- archive & compress
+- decompress & extract
+- list archive contents or print other information about an archive
+
 # Compression algorithms
 
 # LZW (Lempel-Ziv & Welch)
@@ -47,37 +54,3 @@ Also a different beast is Linux zlibc Compressing File-I/O Library)
 
 ## [xz](http://tukaani.org/xz)
 - LZMA algorithm
-
-## JAR
-- http://docs.oracle.com/javase/8/docs/technotes/guides/jar/index.html
-- http://docs.oracle.com/javase/8/docs/technotes/tools/unix/pack200.html
-- http://docs.oracle.com/javase/8/docs/technotes/tools/windows/pack200.html
-- http://docs.oracle.com/javase/tutorial/deployment/jar/index.html
-
-## Remove a file from a jar
-- http://stackoverflow.com/questions/4520822/is-there-a-quick-way-to-delete-a-file-from-a-jar-war-without-having-to-extract
-
-## Reading resources from a jar
-- http://stackoverflow.com/questions/676097/java-resource-as-file?lq=1
-- http://stackoverflow.com/questions/22605666/java-access-files-in-jar-causes-java-nio-file-filesystemnotfoundexception (On Windows)
-
-
-## Decompress and extract
-```
-jar vxf /path/to/archive.jar # doesn't allow extracting to stdout
-tar vxzf /path/to/archive.tar.gz
-zcat <archive> | tar xv
-tar vxjf /path/to/archive.tar.bz2
-unzip -qc archive.jar META-INF/MANIFEST.MF  # extracts to stdout
-```
-
-## Archive and compress
-```
-tar vzcf <archive> <dir>
-tar vcf <dir> | gzip > <archive>
-```
-
-## List contents
-```
-tar vztf <archive>
-```
