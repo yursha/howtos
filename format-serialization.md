@@ -1,1 +1,0 @@
-- [MessagePack](http://msgpack.org/) - efficient binary serialization format
