@@ -50,13 +50,8 @@
 - Math, C.Sc, algorithms & data structures (and their time and space complexity)
 - Hardware (RAM, CPU/ISA, Disk, NICs, sensors, DCP, etc.)
 - Linux, c/c++, stdlibs, boost.io
-- Networking (NICs, IP, TCP, UDP, TOPOLOGIES)
+- Networking
 - Filesystems, databases (including distributed, etc. Cassandra)
-- Cloud (Google Cloud, AWS, IAAS, PAAS)
-- Distributed computation (Hadoop, MapReduce, Spark)
-- Machine learning, argifical intellegence, neural networks, NLP
-- Design patterns
-- maybe JVM (java)
-- maybe web (html, css, javascript, HTTP)
-- maybe mobile
-- Tools
+- Cloud (Google Cloud, AWS)
+- Distributed computing (Hadoop, MapReduce, Spark)
+- Machine learning, AI, neural networks, NLP
