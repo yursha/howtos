@@ -3,7 +3,7 @@
 - each programming language provides types (ways) to represent:
   + **Integers.** May be signed or unsigned which affects the represented numeric range and what CPU instructions are generated. May be 1, 2, 4 or 8 bytes.
   + **Floating point numbers.** Usually 4 or 8 bytes which affects represented range and precision.
-  + **true or false.** Often represented as a byte not bit because memory is byte-addressable.
+  + **Boolean true or false.** Often represented as a byte not bit because memory is byte-addressable.
   + **Characters.** Usually represented as integers. May be of different length depending on the represented character set size. Usually 1, 2 or 4 bytes.
   + **Strings.** Usually represented as arrays of characters, either with a known length or '\0'-terminated.
   + **Pointer to memory address.** 4 bytes on 32-bit architectures and 8 bytes on 64-bit architectures. Null pointer ('\0') is usually a special value.
