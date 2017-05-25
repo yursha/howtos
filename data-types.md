@@ -7,7 +7,16 @@
   + strings
   + characters
   + null reference. 
-- So languages allow users to define composite types (classes, structs, unions, enumerations).
+- Some languages allow users to define composite types:
+  + classes
+  + structs
+  + unions
+  + enumerations
+  + arrays
+- Most languages provide libraries with data structures such as:
+  + lists
+  + hash tables
+  + binary search trees
 
 # covariant types
 - [Covariant return types in Java](https://blogs.oracle.com/sundararajan/entry/covariant_return_types_in_java)
