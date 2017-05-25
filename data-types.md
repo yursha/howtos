@@ -1,5 +1,5 @@
 # Concepts
-- data types define how bit sequences are interpreted. Programmers can also assign custom meaning to be sequences beyond language-provided types.
+- data types define how bit sequences are interpreted. Programmers can also assign custom meanings to be sequences beyond language-provided types.
 - each programming language provides types (ways) to represent:
   + **Integers.** May be signed or unsigned which affects the represented numeric range and what CPU instructions are generated. May be 1, 2, 4 or 8 bytes.
   + **Floating point numbers.** Usually 4 or 8 bytes which affects represented range and precision.
