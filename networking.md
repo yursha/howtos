@@ -5,7 +5,7 @@
 - `connect()`
 
 # Internet socket types
-- `SOCK_STREAM` - guaranteed packet order, error checking. Used by `telnet`, HTTP protocol.
+- `SOCK_STREAM` - Linux [TCP](https://tools.ietf.org/html/rfc793) implementation. Guaranteed packet order, error checking. Used by `telnet`, HTTP protocol.
 - `SOCK_DGRAM`
 
 # Utilities
@@ -28,7 +28,7 @@
 - https://en.wikipedia.org/wiki/Hop_(networking)
 - https://en.wikipedia.org/wiki/Storage_area_network
 
-# IP
+# [IP](https://tools.ietf.org/html/rfc791) - Packet routing
 - Assigned Numbers http://www.ietf.org/rfc/rfc790.txt
 - Address Allocation for Private Internets http://www.ietf.org/rfc/rfc1918.txt
 - Administratively Scoped IP Multicast http://www.ietf.org/rfc/rfc2365.txt
@@ -68,9 +68,6 @@
 - [`net-tools`](http://sourceforge.net/projects/net-tools/)
 - `netstat`
 - `sudo netstat -tlnp` - Check what ports are listened on
-
-# TCP
-
 
 # UDP
 
