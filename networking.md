@@ -1,7 +1,15 @@
-In Linux networking is done with the following system calls:
+# Networking system calls
 - `socket()` - create a socket
 - `send()` - write to a socket
 - `recv()` - read from a socket
+- `connect()`
+
+# Internet socket types
+- `SOCK_STREAM` - guaranteed packet order, error checking. Used by `telnet`, HTTP protocol.
+- `SOCK_DGRAM`
+
+# Utilities
+- `telnet`. If you telnet to a web site on port 80, and type `GET / HTTP/1.0` and hit `RETURN` twice, it'll dump the HTML back at you!
 
 # Networking
 - Archlinux wiki : Network configuration
