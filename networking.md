@@ -6,6 +6,11 @@
 
 # C Library
 - `gethostbyname`
+- `#include <arpa/inet.h>`
+  - `htons()` - host to network short (2 bytes)
+  - `htonl()` - host to network long (4 bytes)
+  - `ntohs()` - network to host short
+  - `ntohl()` - network to host long
 
 # Internet socket types
 - `SOCK_STREAM` - Linux [TCP](https://tools.ietf.org/html/rfc793) implementation. Guaranteed packet order, error checking. Used by `telnet`, HTTP protocol. Uses IP.
