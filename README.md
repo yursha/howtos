@@ -1,1 +1,1 @@
-A bunch of private development notes.
+These notes assume Linux OS and C programming language when not mentioned otherwise.
