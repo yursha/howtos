@@ -70,7 +70,8 @@ Why would you use an unreliable underlying protocol? Two reasons: speed and spee
 ## [traceroute](http://traceroute.sourceforge.net)
 - `traceroute <ip-address>`
 
-# Ports
+# 16-bit ports
+Ports below 1024 considered special by OS.
 - [`net-tools`](http://sourceforge.net/projects/net-tools/)
 - `netstat`
 - `sudo netstat -tlnp` - Check what ports are listened on
