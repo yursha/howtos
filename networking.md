@@ -3,9 +3,11 @@
 - `send()`, `sendto()`, `sendmsg()` - write to a socket
 - `recv()` - read from a socket
 - `connect()`
+- `bind()`
 
 # C Library
 - `gethostbyname`
+- `getservbyname`
 - `#include <arpa/inet.h>`
   - `htons()` - host to network short (2 bytes)
   - `htonl()` - host to network long (4 bytes)
