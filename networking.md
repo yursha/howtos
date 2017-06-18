@@ -74,6 +74,7 @@ Why would you use an unreliable underlying protocol? Two reasons: speed and spee
 - [`net-tools`](http://sourceforge.net/projects/net-tools/)
 - `netstat`
 - `sudo netstat -tlnp` - Check what ports are listened on
+- [IANA standard port numbers registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
 
 # PPP (Point to Point Protocol)
 - https://tools.ietf.org/html/rfc1661
