@@ -1,12 +1,15 @@
-# Networking system calls
+# System calls
 - `socket()` - create a socket
 - `send()` - write to a socket
 - `recv()` - read from a socket
 - `connect()`
 
+# C Library
+- `gethostbyname`
+
 # Internet socket types
-- `SOCK_STREAM` - Linux [TCP](https://tools.ietf.org/html/rfc793) implementation. Guaranteed packet order, error checking. Used by `telnet`, HTTP protocol.
-- `SOCK_DGRAM`
+- `SOCK_STREAM` - Linux [TCP](https://tools.ietf.org/html/rfc793) implementation. Guaranteed packet order, error checking. Used by `telnet`, HTTP protocol. Uses IP.
+- `SOCK_DGRAM` - Linux [UDP](https://tools.ietf.org/html/rfc768) implementation. Optional delivery. Out-of-order. Error checking. Uses IP.
 
 # Utilities
 - `telnet`. If you telnet to a web site on port 80, and type `GET / HTTP/1.0` and hit `RETURN` twice, it'll dump the HTML back at you!
@@ -69,8 +72,6 @@
 - `netstat`
 - `sudo netstat -tlnp` - Check what ports are listened on
 
-# UDP
-
 # PPP (Point to Point Protocol)
 - https://tools.ietf.org/html/rfc1661
 - The PPP Multilink Protocol https://tools.ietf.org/html/rfc1990
@@ -132,6 +133,3 @@ PEAP WPA Enterprise WiFi Network
 PEAP Authentication
 
 # Where to look for error messages?
-
-# c lib
-- `gethostbyname`
