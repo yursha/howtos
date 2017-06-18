@@ -1,6 +1,6 @@
 # System calls
 - `socket()` - create a socket
-- `send()` - write to a socket
+- `send()`, `sendto()`, `sendmsg()` - write to a socket
 - `recv()` - read from a socket
 - `connect()`
 
