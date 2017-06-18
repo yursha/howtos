@@ -11,11 +11,18 @@
 - `SOCK_STREAM` - Linux [TCP](https://tools.ietf.org/html/rfc793) implementation. Guaranteed packet order, error checking. Used by `telnet`, HTTP protocol. Uses IP.
 - `SOCK_DGRAM` - Linux [UDP](https://tools.ietf.org/html/rfc768) implementation. Optional delivery. Out-of-order. Error checking. Sample applications: `tftp` (trivial file transfer protocol), `dhcpcd` (a DHCP client), multiplayer games, streaming audio, video conferencing, etc. `tftp` and similar programs have their own protocol on top of UDP. For example, the tftp protocol says that for each packet that gets sent, the recipient has to send back a packet that says, "I got it!" (an `ACK` packet.) If the sender of the original packet gets no reply in, say, five seconds, he'll re-transmit the packet until he finally gets an `ACK`. This acknowledgment procedure is very important when implementing reliable `SOCK_DGRAM`. applications.Uses IP.
 
+Why would you use an unreliable underlying protocol? Two reasons: speed and speed. It's way faster to fire-and-forget than it is to keep track of what has arrived safely and make sure it's in order and all that. If you're sending chat messages, TCP is great; if you're sending 40 positional updates per second of the players in the world, maybe it doesn't matter so much if one or two get dropped, and UDP is a good choice.
+
 # Utilities
 - `telnet`. If you telnet to a web site on port 80, and type `GET / HTTP/1.0` and hit `RETURN` twice, it'll dump the HTML back at you!
 
-# Networking
-- Archlinux wiki : Network configuration
+# Network layers
+- Application Layer (telnet, ftp, etc.)
+- Host-to-Host Transport Layer (TCP, UDP)
+- Internet Layer (IP and routing)
+- Network Access Layer (Ethernet, wi-fi, or whatever)
+
+# Connections
 - https://en.wikipedia.org/wiki/Keepalive
 - [Network Address Translation (NAT) on wikipedia](https://en.wikipedia.org/wiki/Network_address_translation)
 
@@ -36,7 +43,6 @@
 - Address Allocation for Private Internets http://www.ietf.org/rfc/rfc1918.txt
 - Administratively Scoped IP Multicast http://www.ietf.org/rfc/rfc2365.txt
 - IP Version 6 Addressing Architecture http://www.ietf.org/rfc/rfc2373.txt
-- https://docs.oracle.com/javase/8/docs/api/java/net/InetAddress.html
 
 # DNS
 - [bind-utils](http://www.isc.org/downloads/BIND/) - communication with DNS servers
@@ -47,9 +53,6 @@
 
 - `/etc/hosts` - static table lookup for hostnames (`setup` package on Fedora) (`man hosts` - linux man pages)
 - [hostname](http://packages.qa.debian.org/h/hostname.html) - display or set hostname
-
-# Sun Network Information System [NIS]
-- http://searchnetworking.techtarget.com/definition/NIS
 
 # Tools
 - `ifconfig` - obsolete
