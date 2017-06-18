@@ -19,9 +19,11 @@
    #include <sys/socket.h>
    #include <netdb.h>
    ```
-  - `getaddrinfo`, 
+  - `getaddrinfo`
   - `freeaddrinfo`
   - `gai_strerror`
+  - `getnameinfo`
+  
   
 A socket descriptor is just an `int`.  
   
