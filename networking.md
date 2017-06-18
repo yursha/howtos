@@ -11,6 +11,15 @@
   - `htonl()` - host to network long (4 bytes)
   - `ntohs()` - network to host short
   - `ntohl()` - network to host long
+- network address and service translation
+   ```
+   #include <sys/types.h>
+   #include <sys/socket.h>
+   #include <netdb.h>
+   ```
+  - `getaddrinfo`, 
+  - `freeaddrinfo`
+  - `gai_strerror`
   
 A socket descriptor is just an `int`.  
   
