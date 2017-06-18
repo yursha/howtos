@@ -19,10 +19,10 @@
    #include <sys/socket.h>
    #include <netdb.h>
    ```
-  - `getaddrinfo`
+  - `getaddrinfo`. Uses DNS internally.
+  - `getnameinfo`. Uses DNS internally.
   - `freeaddrinfo`
   - `gai_strerror`
-  - `getnameinfo`
   
   
 A socket descriptor is just an `int`.  
