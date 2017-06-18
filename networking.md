@@ -9,7 +9,7 @@
 
 # Internet socket types
 - `SOCK_STREAM` - Linux [TCP](https://tools.ietf.org/html/rfc793) implementation. Guaranteed packet order, error checking. Used by `telnet`, HTTP protocol. Uses IP.
-- `SOCK_DGRAM` - Linux [UDP](https://tools.ietf.org/html/rfc768) implementation. Optional delivery. Out-of-order. Error checking. Uses IP.
+- `SOCK_DGRAM` - Linux [UDP](https://tools.ietf.org/html/rfc768) implementation. Optional delivery. Out-of-order. Error checking. Sample applications: `tftp` (trivial file transfer protocol), `dhcpcd` (a DHCP client), multiplayer games, streaming audio, video conferencing, etc. `tftp` and similar programs have their own protocol on top of UDP. For example, the tftp protocol says that for each packet that gets sent, the recipient has to send back a packet that says, "I got it!" (an `ACK` packet.) If the sender of the original packet gets no reply in, say, five seconds, he'll re-transmit the packet until he finally gets an `ACK`. This acknowledgment procedure is very important when implementing reliable `SOCK_DGRAM`. applications.Uses IP.
 
 # Utilities
 - `telnet`. If you telnet to a web site on port 80, and type `GET / HTTP/1.0` and hit `RETURN` twice, it'll dump the HTML back at you!
