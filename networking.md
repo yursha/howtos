@@ -1,5 +1,9 @@
+In Linux networking is done with the following system calls:
+- `socket()` - create a socket
+- `send()` - write to a socket
+- `recv()` - read from a socket
+
 # Networking
-- networking (distributed communication)
 - Archlinux wiki : Network configuration
 - https://en.wikipedia.org/wiki/Keepalive
 - [Network Address Translation (NAT) on wikipedia](https://en.wikipedia.org/wiki/Network_address_translation)
