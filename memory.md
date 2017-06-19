@@ -1,13 +1,10 @@
-# Concepts
-- Memory access can be read or write access.
-- alignment
-
-## Data can live in memory in:
+# Data can live in memory in:
 - Stack (How stack memory is allocated in Linux? Is the a maximum limit?)
-- Static program image
+- Program image
 - thread-local area
 - heap. Variably sized objects can only be allocated on the heap.
 
+# Allocation
 ```c
 // c - glibc
 
@@ -44,23 +41,7 @@ void *sbrk(intptr_t increment);
 - Google for jemalloc for other very interesting resources
 
 ## Memory allocation
-For server deployments, -Xms and -Xmx are often set to the same value.
-- http://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/index.htm
-
-- `java -Xms1g` - set initial heap size to 1GB
-- `java -Xmx1g` - set max heap size to 1GB
-- `java -Xloggc:gc.log` - log gc events into file
-- `java -Xss1m` - set thread stack size
-- `java -XX:+PerfDataSaveToFile`
-
-- `java -agentlib:hprof=heap=dump,file=myprogram.hprof` - generate heap dump
-- `java -agentlib:hprof=heap=sites,file=myprogram.hprof` - get heap usage info based on the allocation sites
-- `jmap` - attaches to a running JVM and generates a heap dump
-- `jhat` - analyze binary heap dumps
-
-- `jcmd` - attaches to a running JVM
-- `jinfo` - attaches to a running JVM
-- `jdb`
+With JVM command-line options one can configure initial and max heap sizes and stack size for the environment.
 - `javah`
 
 ## HPROF (Heap Profiler)
