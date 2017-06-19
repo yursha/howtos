@@ -68,3 +68,7 @@ For server deployments, -Xms and -Xmx are often set to the same value.
 - https://java.net/projects/hat/ - Web Heap Analysis Tool.
 - `java -agentlib:hprof=help` - get help about possible usages of HPROF
 
+# Writing to memory
+- `#include <string.h>`
+  - `memset`
+
