@@ -24,8 +24,8 @@
   - `freeaddrinfo`
   - `gai_strerror`
 - `#include <apra/inet.h>`
-  - `inet_pton` - convert IPv4 and IPv6 addresses from text to binary form. Deprecates `inet_ntoa`
-  - `inet_ntop` - convert IPv4 and IPv6 addresses from binary to text form
+  - `inet_pton` - convert IPv4 and IPv6 addresses from text to binary form. Deprecates IPv4-only `inet_ntoa`.
+  - `inet_ntop` - convert IPv4 and IPv6 addresses from binary to text form. Deprecates IPv4-only `inet_aton` and `inet_addr`.
   
   
 A socket descriptor is just an `int`.  
