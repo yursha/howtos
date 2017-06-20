@@ -126,6 +126,12 @@ Why would you use an unreliable underlying protocol? Two reasons: speed and spee
 - [Basic Socket Interface Extensions for IPv6](http://www.ietf.org/rfc/rfc2553.txt)
 - [Unique Local IPv6 Unicast Addresses](https://tools.ietf.org/html/rfc4193)
 
+## IPv4 -> IPv6
+- IPv6 simplified the router’s task compared to IPv4.
+- IPv6 is more compatible to mobile networks than IPv4.
+- IPv6 allows for bigger payloads than what is allowed in IPv4.
+- IPv6 is used by less than 1% of the networks, while IPv4 is still in use by the remaining 99%.
+
 # DNS
 - [bind-utils](http://www.isc.org/downloads/BIND/) - communication with DNS servers
 - `nslookup <host-name>` - DNS lookup (find ip by hostname)
