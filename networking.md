@@ -23,6 +23,9 @@
   - `getnameinfo`. Uses DNS internally.
   - `freeaddrinfo`
   - `gai_strerror`
+- `#include <apra/inet.h>`
+  - `inet_pton` - convert IPv4 and IPv6 addresses from text to binary form. Deprecates `inet_ntoa`
+  - `inet_ntop` - convert IPv4 and IPv6 addresses from binary to text form
   
   
 A socket descriptor is just an `int`.  
@@ -116,10 +119,12 @@ Why would you use an unreliable underlying protocol? Two reasons: speed and spee
 - https://en.wikipedia.org/wiki/Storage_area_network
 
 # [IP](https://tools.ietf.org/html/rfc791) - Packet routing
-- Assigned Numbers http://www.ietf.org/rfc/rfc790.txt
-- Address Allocation for Private Internets http://www.ietf.org/rfc/rfc1918.txt
-- Administratively Scoped IP Multicast http://www.ietf.org/rfc/rfc2365.txt
-- IP Version 6 Addressing Architecture http://www.ietf.org/rfc/rfc2373.txt
+- [Assigned Numbers](http://www.ietf.org/rfc/rfc790.txt)
+- [Address Allocation for Private Internets](https://tools.ietf.org/html/rfc1918)
+- [Administratively Scoped IP Multicast](http://www.ietf.org/rfc/rfc2365.txt)
+- [IP Version 6 Addressing Architecture](http://www.ietf.org/rfc/rfc2373.txt)
+- [Basic Socket Interface Extensions for IPv6](http://www.ietf.org/rfc/rfc2553.txt)
+- [Unique Local IPv6 Unicast Addresses](https://tools.ietf.org/html/rfc4193)
 
 # DNS
 - [bind-utils](http://www.isc.org/downloads/BIND/) - communication with DNS servers
