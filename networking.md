@@ -131,7 +131,7 @@ Why would you use an unreliable underlying protocol? Two reasons: speed and spee
 - IPv6 simplified the router’s task compared to IPv4.
 - IPv6 is more compatible to mobile networks than IPv4.
 - IPv6 allows for bigger payloads than what is allowed in IPv4.
-- IPv6 is only used by [10.3% of the networks](https://w3techs.com/technologies/details/ce-ipv6/all/all) or [19.19% of Google.com users](https://www.google.com/intl/en/ipv6/statistics.html) (as of June 2017), while IPv4 is still in use by the rest.
+- **AS OF JUNE 2017:** IPv6 is only used by [10.3% of the networks](https://w3techs.com/technologies/details/ce-ipv6/all/all) or [19.19% of Google.com users](https://www.google.com/intl/en/ipv6/statistics.html), while IPv4 is still in use by the rest. Adoption varies by country, e.g. U.S. has ~ 35% adoption while Russia has ~ 1%.
 
 # DNS
 - [bind-utils](http://www.isc.org/downloads/BIND/) - communication with DNS servers
