@@ -118,7 +118,8 @@ Why would you use an unreliable underlying protocol? Two reasons: speed and spee
 - https://en.wikipedia.org/wiki/Hop_(networking)
 - https://en.wikipedia.org/wiki/Storage_area_network
 
-# [IP](https://tools.ietf.org/html/rfc791) - Packet routing
+# IP - Packet routing
+- [Internet Protocol](https://tools.ietf.org/html/rfc791)
 - [Assigned Numbers](http://www.ietf.org/rfc/rfc790.txt)
 - [Address Allocation for Private Internets](https://tools.ietf.org/html/rfc1918)
 - [Administratively Scoped IP Multicast](http://www.ietf.org/rfc/rfc2365.txt)
