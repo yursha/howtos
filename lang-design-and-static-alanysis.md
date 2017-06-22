@@ -1,5 +1,7 @@
 - Each symbol should be explicitly declared. Static analyzer should report references to undeclared symbols. This will allow to quickly detect and report typos in symbolic names.
   + JavaScript is a violator of this. Undeclared symbols are silently assigned `undefined` value at site of first use. In Node.js when typo is made in a callback code the program will just silently terminate and hours (minutes) of debugging time will be spent to find a typo. This can be mitigated by using JS linters which will report references to undeclared variables ([jslint](http://jshint.com/), [jshint](http://www.jslint.com/)).
+- Its better to avoid alternative syntaxes for the same thing. Like `'` or `"` delimiters for JavaScript strings without semantic differences.
+- Its better to ship a style-formatter with the language itself like Golang. But 3rd party source code formatter like [JS Beautifier](http://jsbeautifier.org/) can ensure style consistency for at least one project (or a group of projects of the same vendor).
 
 
 
