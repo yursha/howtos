@@ -1,3 +1,8 @@
+- Each symbol should be explicitly declared. Static analyzer should report references to undeclared symbols. This will allow to quickly detect and report typos in symbolic names.
+  + JavaScript is a violator of this. Undeclared symbols are silently assigned `undefined` value at site of first use. In Node.js when typo is made in a callback code the program will just silently terminate and hours (minutes) of debugging time will be spent to find a typo. This can be mitigated by using JS linters which will report references to undeclared variables ([jslint](http://jshint.com/), [jshint](http://www.jslint.com/)).
+
+
+
 - [Tattletale - java source code analyzer from JBOSS](http://tattletale.jboss.org/)
 
 # Code Quality
