@@ -2,7 +2,7 @@
   + JavaScript is a violator of this. Undeclared symbols are silently assigned `undefined` value at site of first use. In Node.js when typo is made in a callback code the program will just silently terminate and hours (minutes) of debugging time will be spent to find a typo. This can be mitigated by using JS linters which will report references to undeclared variables ([jslint](http://jshint.com/), [jshint](http://www.jslint.com/)).
 - Its better to avoid alternative syntaxes for the same thing. Like `'` or `"` delimiters for JavaScript strings without semantic differences.
 - Its better to ship a style-formatter with the language itself like Golang. But 3rd party source code formatters like [JS Beautifier](http://jsbeautifier.org/) can ensure style consistency for at least one project (or a group of projects of the same vendor).
-- Its bad when you can reference not existing object property without an error. E.g. in JavaScript `split["\n"]` (when `split("\n")` function call intended) will silently return undefined. I can not be caught by any of the existing linters neither. This may result in hours of wasted debugging time.
+- Its bad when you can reference not existing object property without an error. E.g. in JavaScript `split["\n"]` (when `split("\n")` function call intended) will silently return undefined. I can not be caught by any of the existing linters neither. This may result in hours of wasted debugging time. *OK, maybe it has a use case in reflection. Anaways, it callbacks shouldn't silectly crash the program as it happens in Node.js.*
 
 
 
