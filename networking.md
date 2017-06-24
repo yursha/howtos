@@ -48,22 +48,6 @@ struct addrinfo {
 This structure is used to prep the socket address structures for subsequent use. It's also used in host name lookups, and service name lookups.
 
 ```
-// (IPv4 only--see struct sockaddr_in6 for IPv6)
-
-struct sockaddr_in {
-    short int          sin_family;  // Address family, AF_INET
-    unsigned short int sin_port;    // Port number
-    struct in_addr     sin_addr;    // Internet address
-    unsigned char      sin_zero[8]; // Same size as struct sockaddr
-};
-
-// (IPv4 only--see struct in6_addr for IPv6)
-
-// Internet address (a structure for historical reasons)
-struct in_addr {
-    uint32_t s_addr; // that's a 32-bit int (4 bytes)
-};
-
 // (IPv6 only--see struct sockaddr_in and struct in_addr for IPv4)
 
 struct sockaddr_in6 {
