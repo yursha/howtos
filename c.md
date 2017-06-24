@@ -1,6 +1,6 @@
 # Resources
-- [Useful c resources](http://en.cppreference.com/w/c/links)
-- [C/C++ Reference Interactive Website](http://en.cppreference.com/w/)
+- http://en.cppreference.com/w/
+- http://en.cppreference.com/w/c/links
 - https://en.wikipedia.org/wiki/Errno.h
 
 
