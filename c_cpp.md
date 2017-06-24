@@ -5,6 +5,8 @@
 - http://www.cplusplus.com/reference/
 - [libstdc++ Source Documentation](https://gcc.gnu.org/onlinedocs/gcc-4.6.2/libstdc++/api/)
 
+# Embedded programming
+- http://embeddedgurus.com/stack-overflow/
 
 # Programs
 - clang
