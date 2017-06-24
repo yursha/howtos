@@ -141,8 +141,8 @@ One can test if they are using IPv6 by connecting to http://ipv6test.google.com/
 ## [traceroute](http://traceroute.sourceforge.net)
 - `traceroute <ip-address>`
 
-# 16-bit ports
-Ports below 1024 (low-numbered) can be bound to only by root.
+# Ports
+Ports are 16 bit. Ports below 1024 (low-numbered) can be bound to only by root.
 - [`net-tools`](http://sourceforge.net/projects/net-tools/)
 - `netstat`
 - `sudo netstat -tlnp` - Check what ports are listened on
