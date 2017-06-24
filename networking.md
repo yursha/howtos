@@ -127,10 +127,10 @@ Why would you use an unreliable underlying protocol? Two reasons: speed and spee
 
 # Ports
 Ports are 16 bit. Ports below 1024 (low-numbered) can be bound to only by root.
+- [IANA Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
 - [`net-tools`](http://sourceforge.net/projects/net-tools/)
 - `netstat`
 - `sudo netstat -tlnp` - Check what ports are listened on
-- [IANA standard port numbers registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
 
 # PPP (Point to Point Protocol)
 - https://tools.ietf.org/html/rfc1661
@@ -218,8 +218,8 @@ tcp_socket = socket(AF_INET, SOCK_STREAM, 0);
 
 # IP - Packet routing
 - Internet Protocol (IPv4) - https://tools.ietf.org/html/rfc791
+- IANA - https://www.iana.org/ - organization which maintains an evolving web database of Internet assigned numbers.
 - Requirements for Internet Hosts -- Communication Layers - https://tools.ietf.org/html/rfc1122
-- IANA - https://www.iana.org/ - organization which maintains an evolving web database of Internet assigned numbers. E.g. [service names -> port numbers database](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
 - [Address Allocation for Private Internets](https://tools.ietf.org/html/rfc1918)
 - [Administratively Scoped IP Multicast](http://www.ietf.org/rfc/rfc2365.txt)
 - [IP Version 6 Addressing Architecture](http://www.ietf.org/rfc/rfc2373.txt)
