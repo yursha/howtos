@@ -6,6 +6,7 @@
 - chown
 - umask
 - mount
+- fcntl
 
 # Resources
 - [Linux Storage Stack Diagram by by Fischer and Shonberger](https://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram)
