@@ -8,13 +8,8 @@
 
 # C Library
 - `gethostbyname`
-- `getservbyname`
-- `#include <arpa/inet.h>`
-  - `htons()` - host to network short (2 bytes)
-  - `htonl()` - host to network long (4 bytes)
-  - `ntohs()` - network to host short
-  - `ntohl()` - network to host long
-- network address and service translation
+- `getservbyname` 
+- `htons()`, `htonl()`, `ntohs()`, `ntohl()` from `<arpa/inet.h>` - host <-> network long and short byte order translation. 
    ```
    #include <sys/types.h>
    #include <sys/socket.h>
