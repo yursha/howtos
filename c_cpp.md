@@ -3,6 +3,7 @@
 - http://en.cppreference.com/w/c/links
 - https://en.wikipedia.org/wiki/Errno.h
 - http://www.cplusplus.com/reference/
+- [libstdc++ Source Documentation](https://gcc.gnu.org/onlinedocs/gcc-4.6.2/libstdc++/api/)
 
 
 # Programs
