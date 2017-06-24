@@ -20,7 +20,7 @@
    #include <sys/socket.h>
    #include <netdb.h>
    ```
-  - `getaddrinfo`. Uses DNS internally.
+  - `getaddrinfo`. Uses DNS internally. Network address translation.
   - `getnameinfo`. Uses DNS internally.
   - `freeaddrinfo`
   - `gai_strerror`
