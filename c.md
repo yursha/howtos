@@ -10,6 +10,7 @@
 
 # Standars
 - [POSIX 2013 - shell and utilities](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/contents.html)
+- [POSIX.1-2008](http://pubs.opengroup.org/onlinepubs/9699919799/)
 
 # C language
 - [C Standard Committee](http://www.open-std.org/jtc1/sc22/wg14/)
