@@ -98,23 +98,6 @@ Why would you use an unreliable underlying protocol? Two reasons: speed and spee
 - https://en.wikipedia.org/wiki/Hop_(networking)
 - https://en.wikipedia.org/wiki/Storage_area_network
 
-# IP - Packet routing
-- [Internet Protocol](https://tools.ietf.org/html/rfc791)
-- [Assigned Numbers](http://www.ietf.org/rfc/rfc790.txt)
-- [Address Allocation for Private Internets](https://tools.ietf.org/html/rfc1918)
-- [Administratively Scoped IP Multicast](http://www.ietf.org/rfc/rfc2365.txt)
-- [IP Version 6 Addressing Architecture](http://www.ietf.org/rfc/rfc2373.txt)
-- [Basic Socket Interface Extensions for IPv6](http://www.ietf.org/rfc/rfc2553.txt)
-- [Unique Local IPv6 Unicast Addresses](https://tools.ietf.org/html/rfc4193)
-
-## IPv4 -> IPv6
-- IPv6 simplified the router’s task compared to IPv4.
-- IPv6 is more compatible to mobile networks than IPv4.
-- IPv6 allows for bigger payloads than what is allowed in IPv4.
-- **AS OF JUNE 2017:** IPv6 is only used by [10.3% of the networks](https://w3techs.com/technologies/details/ce-ipv6/all/all) or [19.19% of Google.com users](https://www.google.com/intl/en/ipv6/statistics.html), while IPv4 is still in use by the rest. Adoption varies by country, e.g. U.S. has ~ 35% adoption while Russia has ~ 1%.
-
-One can test if they are using IPv6 by connecting to http://ipv6test.google.com/ from their device.
-
 # DNS
 - [bind-utils](http://www.isc.org/downloads/BIND/) - communication with DNS servers
 - `nslookup <host-name>` - DNS lookup (find ip by hostname)
@@ -214,7 +197,6 @@ PEAP Authentication
 Reliable, stream-oriented, full-duplex connection between two sockets on top of IP.
 
 - Transmission Control Protocol - https://tools.ietf.org/html/rfc793
-- Requirements for Internet Hosts -- Communication Layers - https://tools.ietf.org/html/rfc1122
 - TCP Slow Start, Congestion Avoidance, Fast Retransmit, and Fast Recovery Algorithms - https://tools.ietf.org/html/rfc2001
 - The NewReno Modification to TCP's Fast Recovery Algorithm - https://tools.ietf.org/html/rfc6582
 - TCP Selective Acknowledgment Options (SACK) - https://tools.ietf.org/html/rfc2018
@@ -232,3 +214,29 @@ tcp_socket = socket(AF_INET, SOCK_STREAM, 0);
 ## Stream-oriented
 
 ## Full-duplex
+
+# IP - Packet routing
+- Internet Protocol (IPv4) - https://tools.ietf.org/html/rfc791
+- Requirements for Internet Hosts -- Communication Layers - https://tools.ietf.org/html/rfc1122
+- [Assigned Numbers](http://www.ietf.org/rfc/rfc790.txt)
+- [Address Allocation for Private Internets](https://tools.ietf.org/html/rfc1918)
+- [Administratively Scoped IP Multicast](http://www.ietf.org/rfc/rfc2365.txt)
+- [IP Version 6 Addressing Architecture](http://www.ietf.org/rfc/rfc2373.txt)
+- [Basic Socket Interface Extensions for IPv6](http://www.ietf.org/rfc/rfc2553.txt)
+- [Unique Local IPv6 Unicast Addresses](https://tools.ietf.org/html/rfc4193)
+
+**Linux kernel contains a level 2 multicasting implementation of IPv4 conforming to RFC 1112.  It  also  contains  an  IP router including a packet filter.**
+
+```c
+int sock = socket(AF_INET, socket_type, protocol); // open internet socket
+```
+
+## IPv4 -> IPv6
+- IPv6 simplified the router’s task compared to IPv4.
+- IPv6 is more compatible to mobile networks than IPv4.
+- IPv6 allows for bigger payloads than what is allowed in IPv4.
+- **AS OF JUNE 2017:** IPv6 is only used by [10.3% of the networks](https://w3techs.com/technologies/details/ce-ipv6/all/all) or [19.19% of Google.com users](https://www.google.com/intl/en/ipv6/statistics.html), while IPv4 is still in use by the rest. Adoption varies by country, e.g. U.S. has ~ 35% adoption while Russia has ~ 1%.
+
+One can test if they are using IPv6 by connecting to http://ipv6test.google.com/ from their device.
+
+
