@@ -9,7 +9,7 @@
 # C Library
 - `gethostbyname`
 - `getservbyname` 
-- `htons()`, `htonl()`, `ntohs()`, `ntohl()` from `<arpa/inet.h>` - host <-> network long and short byte order translation. 
+- `htons()`, `htonl()`, `ntohs()`, `ntohl()` from `<arpa/inet.h>` - host <-> network long and short endianness translation. 
    ```
    #include <sys/types.h>
    #include <sys/socket.h>
