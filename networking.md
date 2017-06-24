@@ -1,10 +1,9 @@
 # System calls
 - `socket()` - create a socket
 - `getsockopt()`, `setsockopt()` - get and set options on socket
-- `send()`, `sendto()`, `sendmsg()` - write to a socket
 - `recv()` - read from a socket
-- `connect()`
-- `bind()`
+- `connect()`, `send()`, `sendto()`, `sendmsg()` - write to a socket
+- `bind()`, `accept()`, `accept4()` - listen on a socket
 
 # C Library
 - `gethostbyname`
