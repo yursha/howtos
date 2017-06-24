@@ -21,6 +21,7 @@
 - `#include <apra/inet.h>`
   - `inet_pton` - convert IPv4 and IPv6 addresses from text to binary form. Deprecates IPv4-only `inet_ntoa`.
   - `inet_ntop` - convert IPv4 and IPv6 addresses from binary to text form. Deprecates IPv4-only `inet_aton` and `inet_addr`.
+- `getservent`, `getservbyname`, `getservbyport`, `setservent`, `endservent` from `<netdb.h>` - working with `/etc/services` database. 
   
   
 A socket descriptor is just an `int`.  
@@ -141,7 +142,7 @@ One can test if they are using IPv6 by connecting to http://ipv6test.google.com/
 - `traceroute <ip-address>`
 
 # 16-bit ports
-Ports below 1024 considered special by OS.
+Ports below 1024 (low-numbered) can be bound to only by root.
 - [`net-tools`](http://sourceforge.net/projects/net-tools/)
 - `netstat`
 - `sudo netstat -tlnp` - Check what ports are listened on
