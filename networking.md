@@ -70,6 +70,7 @@ struct sockaddr_storage {
 # Internet socket types
 - `SOCK_STREAM` - Linux TCP implementation. Guaranteed packet order, error checking. Used by `telnet`, HTTP protocol. Uses IP.
 - `SOCK_DGRAM` - Linux [UDP](https://tools.ietf.org/html/rfc768) implementation. Optional delivery. Out-of-order. Error checking. Sample applications: `tftp` (trivial file transfer protocol), `dhcpcd` (a DHCP client), multiplayer games, streaming audio, video conferencing, etc. `tftp` and similar programs have their own protocol on top of UDP. For example, the tftp protocol says that for each packet that gets sent, the recipient has to send back a packet that says, "I got it!" (an `ACK` packet.) If the sender of the original packet gets no reply in, say, five seconds, he'll re-transmit the packet until he finally gets an `ACK`. This acknowledgment procedure is very important when implementing reliable `SOCK_DGRAM`. applications.Uses IP.
+- `SOCK_RAW` - Raw access to IP protocol.
 
 Why would you use an unreliable underlying protocol? Two reasons: speed and speed. It's way faster to fire-and-forget than it is to keep track of what has arrived safely and make sure it's in order and all that. If you're sending chat messages, TCP is great; if you're sending 40 positional updates per second of the players in the world, maybe it doesn't matter so much if one or two get dropped, and UDP is a good choice.
 
@@ -218,7 +219,7 @@ tcp_socket = socket(AF_INET, SOCK_STREAM, 0);
 # IP - Packet routing
 - Internet Protocol (IPv4) - https://tools.ietf.org/html/rfc791
 - Requirements for Internet Hosts -- Communication Layers - https://tools.ietf.org/html/rfc1122
-- [Assigned Numbers](http://www.ietf.org/rfc/rfc790.txt)
+- IANA - https://www.iana.org/ - organization which maintains an evolving web database of Internet assigned numbers.
 - [Address Allocation for Private Internets](https://tools.ietf.org/html/rfc1918)
 - [Administratively Scoped IP Multicast](http://www.ietf.org/rfc/rfc2365.txt)
 - [IP Version 6 Addressing Architecture](http://www.ietf.org/rfc/rfc2373.txt)
