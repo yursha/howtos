@@ -1,3 +1,12 @@
+# System calls
+- open
+- lstat
+- fstat
+- chmod
+- chown
+- umask
+- mount
+
 # Resources
 - [Linux Storage Stack Diagram by by Fischer and Shonberger](https://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram)
 
@@ -76,14 +85,6 @@ File system is a kernel driver
 - syntactic file path operations (don't access file system)
 - glob pattern
 - file change notification (watching)
-
-# unix system calls
-- lstat
-- fstat
-- chmod
-- chown
-- umask
-- mount
 
 # POSIX
 - `/etc/fstab`
