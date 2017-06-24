@@ -219,7 +219,7 @@ tcp_socket = socket(AF_INET, SOCK_STREAM, 0);
 # IP - Packet routing
 - Internet Protocol (IPv4) - https://tools.ietf.org/html/rfc791
 - Requirements for Internet Hosts -- Communication Layers - https://tools.ietf.org/html/rfc1122
-- IANA - https://www.iana.org/ - organization which maintains an evolving web database of Internet assigned numbers.
+- IANA - https://www.iana.org/ - organization which maintains an evolving web database of Internet assigned numbers. E.g. [service names -> port numbers database](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
 - [Address Allocation for Private Internets](https://tools.ietf.org/html/rfc1918)
 - [Administratively Scoped IP Multicast](http://www.ietf.org/rfc/rfc2365.txt)
 - [IP Version 6 Addressing Architecture](http://www.ietf.org/rfc/rfc2373.txt)
