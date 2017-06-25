@@ -286,6 +286,7 @@ Used by `route(8)` and `netstat(8)`
 - `sudo netstat -tlnp` - Check what ports are listened on
 
 ### `route(8)`
+Show / manipulate the kernel's IP routing tables.
 
 ### `ifconfig(8)` - obsolete?
 
@@ -302,3 +303,5 @@ Used by `route(8)` and `netstat(8)`
 ## [traceroute](http://traceroute.sourceforge.net)
 - `traceroute <ip-address>`
 
+# Routing Tables
+There is a routing table in kernel.
