@@ -84,7 +84,21 @@ Addional socket opening flags: `SOCK_CLOEXEC` and `SOCK_NONBLOCK` (correspond to
 Why would you use an unreliable underlying protocol? Two reasons: speed and speed. It's way faster to fire-and-forget than it is to keep track of what has arrived safely and make sure it's in order and all that. If you're sending chat messages, TCP is great; if you're sending 40 positional updates per second of the players in the world, maybe it doesn't matter so much if one or two get dropped, and UDP is a good choice.
 
 ## Protocols
-- `/etc/protocols/` is updated from [IANA Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml).
+- Protocols database `/etc/protocols/` is updated from [IANA Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml).
+
+```c
+#include <netdb.h>
+
+struct protoent *getprotoent(void);
+
+struct protoent *getprotobyname(const char *name);
+
+struct protoent *getprotobynumber(int proto);
+
+void setprotoent(int stayopen);
+
+void endprotoent(void);
+```
 
 # Utilities
 - `telnet`. If you telnet to a web site on port 80, and type `GET / HTTP/1.0` and hit `RETURN` twice, it'll dump the HTML back at you!
