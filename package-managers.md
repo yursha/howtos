@@ -72,6 +72,7 @@ rpm -ql <package> | grep bin # list executable files
 # Find out which package a file belongs to
 ```bash
 rpm -qf /usr/sbin/lsmod
+dpkg-query -S /sbin/lsmod
 ```
 
 # See package summary (description)

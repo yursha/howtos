@@ -21,7 +21,6 @@
 - `#include <apra/inet.h>`
   - `inet_pton` - convert IPv4 and IPv6 addresses from text to binary form. Deprecates IPv4-only `inet_ntoa`.
   - `inet_ntop` - convert IPv4 and IPv6 addresses from binary to text form. Deprecates IPv4-only `inet_aton` and `inet_addr`.
-- `getservent`, `getservbyname`, `getservbyport`, `setservent`, `endservent` from `<netdb.h>` - working with `/etc/services` database. 
   
   
 A socket descriptor is just an `int`.  
@@ -98,6 +97,17 @@ struct protoent *getprotobynumber(int proto);
 void setprotoent(int stayopen);
 
 void endprotoent(void);
+
+int getprotoent_r(struct protoent *result_buf, char *buf,
+		size_t buflen, struct protoent **result);
+
+int getprotobyname_r(const char *name,
+		struct protoent *result_buf, char *buf,
+		size_t buflen, struct protoent **result);
+
+int getprotobynumber_r(int proto,
+		struct protoent *result_buf, char *buf,
+		size_t buflen, struct protoent **result);
 ```
 
 # Utilities
@@ -135,28 +145,16 @@ void endprotoent(void);
 - `/etc/hosts` - static table lookup for hostnames (`setup` package on Fedora) (`man hosts` - linux man pages)
 - [hostname](http://packages.qa.debian.org/h/hostname.html) - display or set hostname
 
-# Tools
-- `ifconfig` - obsolete
-- `iwconfig`
-- `ip`
-
-## `iproute2`
-- `iproute2` - http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
-- `ip`
-
-## `iputils`
-- http://www.skbuff.net/iputils/
-- `ping`
-
-## [traceroute](http://traceroute.sourceforge.net)
-- `traceroute <ip-address>`
-
 # Ports
 Ports are 16 bit. Ports below 1024 (low-numbered) can be bound to only by root.
 - [IANA Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
-- [`net-tools`](http://sourceforge.net/projects/net-tools/)
-- `netstat`
-- `sudo netstat -tlnp` - Check what ports are listened on
+
+## `/etc/services` database
+
+/etc/services` database is updated from http://www.iana.org/assignments/port-numbers and http://www.freebsd.org/cgi/cvsweb.cgi/src/etc/services
+
+- `getservent`, `getservbyname`, `getservbyport`, `setservent`, `endservent`, `getservent_r`, `getservbyname_r`, `getservbyport_r`
+ from `<netdb.h>` - working with `/etc/services` database. 
 
 # PPP (Point to Point Protocol)
 - https://tools.ietf.org/html/rfc1661
@@ -266,4 +264,41 @@ int sock = socket(AF_INET, socket_type, protocol); // open internet socket
 
 One can test if they are using IPv6 by connecting to http://ipv6test.google.com/ from their device.
 
+
+# Networks database `/etc/networks`
+Used by `route(8)` and `netstat(8)`
+
+## Functions from `<netdb.h>`
+- getnetent
+- getnetbyname
+- getnetbyaddr
+- setnetent
+- endnetent
+- getnetent_r
+- getnetbyname_r
+- getnetbyaddr_r
+
+# Tools
+
+## `net-tools` - http://sourceforge.net/projects/net-tools/
+
+### `netstat(8)`
+- `sudo netstat -tlnp` - Check what ports are listened on
+
+### `route(8)`
+
+### `ifconfig(8)` - obsolete?
+
+# Tools
+- `iwconfig` (not on debian?)
+
+## `iproute2` - http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
+- `ip`
+
+## `iputils` - http://www.skbuff.net/iputils/
+- `ping` (`iputils-ping` package on debian)
+- `ping6` (`iputils-ping` package on debian)
+
+## [traceroute](http://traceroute.sourceforge.net)
+- `traceroute <ip-address>`
 
