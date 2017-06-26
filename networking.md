@@ -1,27 +1,24 @@
-# System calls
-- `socket()` - create a socket
-- `getsockopt()`, `setsockopt()` - get and set options on socket
-- `recv()` - read from a socket
-- `connect()`, `send()`, `sendto()`, `sendmsg()` - write to a socket
-- `bind()`, `accept()`, `accept4()` - listen on a socket
+# Socket system calls
+- `socket(2)` - create a socket
+- `getsockopt(2)`, `setsockopt()` - get and set options on socket
+- `recv(2)` - read from a socket
+- `connect(2)`, `send(2)`, `sendto(2)`, `sendmsg(2)` - connect & write to a socket
+- `bind(2)`, `accept(2)`, `accept4(2)` - binad & listen on a socket
 
-# C Library
-- `gethostbyname`
+# Host <-> Network byte order translation
+- `htons(3)`, `htonl(3)`, `ntohs(3)`, `ntohl(3)` from `<arpa/inet.h>`
+
+# Text <-> binary IP address translation
+- `inet_pton(3)` - convert IPv4 and IPv6 addresses from text to binary form. Deprecates IPv4-only `inet_ntoa`.
+- `inet_ntop(3)` - convert IPv4 and IPv6 addresses from binary to text form. Deprecates IPv4-only `inet_aton` and `inet_addr`.
+
+# DNS lookup and reverse lookup
+- `getaddrinfo`, `freeaddrinfo`, `gai_strerror`. Uses DNS internally. Network address translation.
+- `getnameinfo`. Uses DNS internally.
+- `gethostbyname`. DNS reverse lookup.
 - `getservbyname` 
-- `htons()`, `htonl()`, `ntohs()`, `ntohl()` from `<arpa/inet.h>` - host <-> network long and short endianness translation. 
-   ```
-   #include <sys/types.h>
-   #include <sys/socket.h>
-   #include <netdb.h>
-   ```
-  - `getaddrinfo`. Uses DNS internally. Network address translation.
-  - `getnameinfo`. Uses DNS internally.
-  - `freeaddrinfo`
-  - `gai_strerror`
-- `#include <apra/inet.h>`
-  - `inet_pton` - convert IPv4 and IPv6 addresses from text to binary form. Deprecates IPv4-only `inet_ntoa`.
-  - `inet_ntop` - convert IPv4 and IPv6 addresses from binary to text form. Deprecates IPv4-only `inet_aton` and `inet_addr`.
   
+
   
 A socket descriptor is just an `int`.  
   
@@ -149,7 +146,7 @@ int getprotobynumber_r(int proto,
 Ports are 16 bit. Ports below 1024 (low-numbered) can be bound to only by root.
 - [IANA Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
 
-## `/etc/services` database
+## `/etc/services` database (`services(5)`)
 
 /etc/services` database is updated from http://www.iana.org/assignments/port-numbers and http://www.freebsd.org/cgi/cvsweb.cgi/src/etc/services
 
@@ -296,8 +293,7 @@ IP to MAC (Ethernet or WiFi) address resolution protocol.
 
 ### `ifconfig(8)` - obsolete?
 
-# Tools
-- `iwconfig` (not on debian?)
+## `iwconfig` (not on debian?)
 
 ## `iproute2` - http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
 - `ip`
