@@ -9,8 +9,8 @@
 - `htons(3)`, `htonl(3)`, `ntohs(3)`, `ntohl(3)` from `<arpa/inet.h>`
 
 # Text <-> binary IP address translation
-- `inet_pton(3)` - convert IPv4 and IPv6 addresses from text to binary form. Deprecates IPv4-only `inet_ntoa`.
-- `inet_ntop(3)` - convert IPv4 and IPv6 addresses from binary to text form. Deprecates IPv4-only `inet_aton` and `inet_addr`.
+- `inet_pton(3)` - convert IPv4 and IPv6 addresses from text to binary form. Deprecates IPv4-only `inet_aton` and `inet_addr`.
+- `inet_ntop(3)` - convert IPv4 and IPv6 addresses from binary to text form. Deprecates IPv4-only `inet_ntoa`.
 
 # DNS lookup and reverse lookup
 - `getaddrinfo`, `freeaddrinfo`, `gai_strerror`. Uses DNS internally. Network address translation.
