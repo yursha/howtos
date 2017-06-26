@@ -115,9 +115,9 @@ int getprotobynumber_r(int proto,
 
 # Network layers
 - Application Layer (telnet, ftp, etc.)
-- Host-to-Host Transport Layer (TCP, UDP)
-- Internet Layer (IP and routing)
-- Network Access Layer (Ethernet, wi-fi, or whatever)
+- Host-to-Host Transport Layer (TCP, UDP) (end-to-end data reliability, flow control, sequencing, or other services)
+- Internet Layer (IP and routing) (packet delivery)
+- Network Access Layer (Ethernet, wi-fi, or whatever). Local network protocols to carry the internet datagram to the next gateway or destination host.
 
 # Connections
 - https://en.wikipedia.org/wiki/Keepalive
@@ -287,6 +287,9 @@ Used by `route(8)` and `netstat(8)`
 
 ### `route(8)`
 Show / manipulate the kernel's IP routing tables.
+
+### `arp(8)`
+IP/MAC address resolution protocol.
 
 ### `ifconfig(8)` - obsolete?
 
