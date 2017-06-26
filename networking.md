@@ -278,6 +278,9 @@ Used by `route(8)` and `netstat(8)`
 - getnetbyname_r
 - getnetbyaddr_r
 
+# Ethernet
+- An Ethernet Address Resolution Protocol - https://tools.ietf.org/html/rfc826
+
 # Tools
 
 ## `net-tools` - http://sourceforge.net/projects/net-tools/
