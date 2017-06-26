@@ -289,7 +289,7 @@ Used by `route(8)` and `netstat(8)`
 Show / manipulate the kernel's IP routing tables.
 
 ### `arp(8)`
-IP/MAC address resolution protocol.
+IP to MAC (Ethernet or WiFi) address resolution protocol.
 
 ### `ifconfig(8)` - obsolete?
 
