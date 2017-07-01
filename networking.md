@@ -13,8 +13,8 @@
 - `inet_ntop(3)` - convert IPv4 and IPv6 addresses from binary to text form. Deprecates IPv4-only `inet_ntoa`.
 
 # DNS lookup and reverse lookup
-- `getaddrinfo`, `freeaddrinfo`, `gai_strerror`. Uses DNS internally. Network address translation. Deprecates IPv4-only `gethostbyname`.
-- `getnameinfo`. Uses DNS internally. Deprecates IPv4-only `gethostbyaddr`. DNS reverse lookup.
+- `getaddrinfo`, `freeaddrinfo`, `gai_strerror`. DNS and service lookup. Deprecates IPv4-only `gethostbyname`.
+- `getnameinfo`. DNS reverse lookup. Deprecates IPv4-only `gethostbyaddr`.
 - `getservbyname` 
   
 
