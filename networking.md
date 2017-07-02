@@ -241,9 +241,9 @@ tcp_socket = socket(AF_INET, SOCK_STREAM, 0);
 - IANA - https://www.iana.org/ - organization which maintains an evolving web database of Internet assigned numbers.
 - Requirements for Internet Hosts -- Communication Layers - https://tools.ietf.org/html/rfc1122
 - [Address Allocation for Private Internets](https://tools.ietf.org/html/rfc1918)
-- [Administratively Scoped IP Multicast](http://www.ietf.org/rfc/rfc2365.txt)
-- [IP Version 6 Addressing Architecture](http://www.ietf.org/rfc/rfc2373.txt)
-- [Basic Socket Interface Extensions for IPv6](http://www.ietf.org/rfc/rfc2553.txt)
+- [Administratively Scoped IP Multicast](https://tools.ietf.org/html/rfc2365.txt)
+- [IP Version 6 Addressing Architecture](https://tools.ietf.org/html/rfc2373.txt)
+- [Basic Socket Interface Extensions for IPv6](https://tools.ietf.org/html/rfc2553.txt)
 - [Unique Local IPv6 Unicast Addresses](https://tools.ietf.org/html/rfc4193)
 
 **Linux kernel contains a level 2 multicasting implementation of IPv4 conforming to RFC 1112.  It  also  contains  an  IP router including a packet filter.**
