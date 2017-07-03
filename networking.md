@@ -5,6 +5,8 @@
 - `connect(2)`, `send(2)`, `sendto(2)`, `sendmsg(2)` - connect & write to a socket
 - `bind(2)`, `accept(2)`, `accept4(2)` - binad & listen on a socket
 
+In Linux kernel `ioctl` is an obsolete kernel interface. `netlink` is a kernel interface which is a successor to it.
+
 # Host <-> Network byte order translation
 - `htons(3)`, `htonl(3)`, `ntohs(3)`, `ntohl(3)` from `<arpa/inet.h>`
 
@@ -237,12 +239,14 @@ tcp_socket = socket(AF_INET, SOCK_STREAM, 0);
 ## Full-duplex
 
 # IP - Packet routing
-- Internet Protocol (IPv4) - https://tools.ietf.org/html/rfc791
-- IANA - https://www.iana.org/ - organization which maintains an evolving web database of Internet assigned numbers.
+- Internet Protocol, Version 6 (IPv6) Specification - <https://tools.ietf.org/html/rfc2460>
+- IP Version 6 Addressing Architecture - <https://tools.ietf.org/html/rfc4291.txt>
+- Internet Control Message Protocol (ICMPv6) for the Internet Protocol Version 6 (IPv6) Specification - <https://tools.ietf.org/html/rfc4443>
+- Internet Protocol (IPv4) - <https://tools.ietf.org/html/rfc791>
+- IANA - <https://www.iana.org/> - organization which maintains an evolving web database of Internet assigned numbers.
 - Requirements for Internet Hosts -- Communication Layers - https://tools.ietf.org/html/rfc1122
 - [Address Allocation for Private Internets](https://tools.ietf.org/html/rfc1918)
 - [Administratively Scoped IP Multicast](https://tools.ietf.org/html/rfc2365.txt)
-- [IP Version 6 Addressing Architecture](https://tools.ietf.org/html/rfc2373.txt)
 - [Basic Socket Interface Extensions for IPv6](https://tools.ietf.org/html/rfc2553.txt)
 - [Unique Local IPv6 Unicast Addresses](https://tools.ietf.org/html/rfc4193)
 
@@ -278,24 +282,19 @@ Used by `route(8)` and `netstat(8)`
 - An Ethernet Address Resolution Protocol - https://tools.ietf.org/html/rfc826
 
 # Tools
+<https://wiki.linuxfoundation.org/networking/start>
 
-## `net-tools` - http://sourceforge.net/projects/net-tools/
+## `iproute2`
+- <http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2>
+- <https://wiki.linuxfoundation.org/networking/iproute2>
+- `ip`
 
-### `netstat(8)`
-- `sudo netstat -tlnp` - Check what ports are listened on
+- Check what ports are being listened on.
 
-### `route(8)`
-Show / manipulate the kernel's IP routing tables.
-
-### `arp(8)`
-IP to MAC (Ethernet or WiFi) address resolution protocol.
-
-### `ifconfig(8)` - obsolete?
+## `ifupdown`
+<https://packages.debian.org/jessie/ifupdown>
 
 ## `iwconfig` (not on debian?)
-
-## `iproute2` - http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
-- `ip`
 
 ## `iputils` - http://www.skbuff.net/iputils/
 - `ping` (`iputils-ping` package on debian)
