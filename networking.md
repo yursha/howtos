@@ -287,7 +287,13 @@ Used by `route(8)` and `netstat(8)`
 ## `iproute2`
 - <http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2>
 - <https://wiki.linuxfoundation.org/networking/iproute2>
-- `ip`
+- `ip` - IP configuration
+- `tc` - traffic control
+
+Browse at <https://git.kernel.org/pub/scm/linux/kernel/git/shemminger/iproute2.git/tree/> or clone at:
+```
+$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/shemminger/iproute2.git
+```
 
 - Check what ports are being listened on.
 

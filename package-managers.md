@@ -66,7 +66,7 @@ pacman -Q
 # List files of a package
 ```
 rpm -ql <package>
-rpm -ql <package> | grep bin # list executable files
+dpkg-query -L <package>
 ```
 
 # Find out which package a file belongs to
