@@ -309,5 +309,13 @@ $ git clone git://git.kernel.org/pub/scm/linux/kernel/git/shemminger/iproute2.gi
 ## [traceroute](http://traceroute.sourceforge.net)
 - `traceroute <ip-address>`
 
+## `dnsutils`
+- `dig`
+- `dnslookup` (older way of doing things)
+- `nsupdate` - perform dynamic updates (See RFC2136)
+
+## `whois`
+- `whois`
+
 # Routing Tables
 There is a routing table in kernel.

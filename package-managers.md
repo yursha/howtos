@@ -98,7 +98,7 @@ dnf groups install "Development Tools"
 
 # Refresh package index and check for available updates (without installing them)
 ```
-apt-get update
+apt-get update # only refreshes package index
 dnf check-update
 pacman -Sy
 ```
