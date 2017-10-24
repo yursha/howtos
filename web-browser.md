@@ -1,2 +1,0 @@
-- [elinks](http://elinks.or.cz)
-- lynx
