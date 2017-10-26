@@ -1,13 +1,8 @@
 # Concepts
+Ways to model a string:
+- an array of characters with null-termination.
+- a data structure containing an array of characters and its length
 Strings are arrays of characters.
-
-When a function has to process the entire sequence it should know when that sequence ends.
-There are three options how sequence end can be made known:
-- the last element in a sequence can be 'END-OF-SEQUENCE' indicator. Ex. C-style strings, EOF markers, linked lists.
-- the sequence size can be passed as a function argument explicitly.
-- the struct representing the sequence can have sequence length stored as its field.
-
-In C strings are mutable '\0'-terminated arrays of characters.
 
 There are also wide-character strings.
 
