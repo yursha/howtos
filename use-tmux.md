@@ -1,7 +1,24 @@
 # Managing sessions
+Its typically desirable to create a separate session per particular activity.
+
 ```
-tmux list-sessions # show all sessions
-tmux kill-session <target> # kills a session
+tmux                        # start a new session
+tmux new -s <name>          # start a new _named_ session
+tmux a                      # attach to a most recently used session
+tmux a -t <name>            # attach to a particular session
+tmux ls                     # list sessions
+tmux kill-session -t <name> # kill a particular session
+```
+
+A new session can also be created from inside tmux
+```
+:new<CR>
+```
+
+You can manage sessions with shortcuts
+```
+prefix-$ // name session
+prefix-s // list sessions
 ```
 
 # Sources
@@ -42,23 +59,9 @@ tmux kill-session <target> # kills a session
 - Reload config file `tmux source ~/.tmux.conf`
 - To scroll up/down enter Copy Mode `prefix-[` and use arrow keys or `Ctrl-b` and `Ctrl-f` to move by character. Exit then Copy Mode by `Ctrl-c`.
 
-# Sessions
-## shell cli commands
-`tmux` - start new
-`tmux new -s myname` - start new named
-`tmux a` - attach
-`tmux a -t myname` - attached to named
-`tmux ls` - list sessions
-`tmux kill-session -t myname` - kill named
-
-## tmux cli commands
-:new<CR> - new session
-
-## prefix commands
-$ - name session
-s - list sessions
-
 # Windows (tabs) prefix commands
+Its typically desirable to create a new window per on particular changlist you're working on.
+
 ## prefix commands
 ```
 c - create window
