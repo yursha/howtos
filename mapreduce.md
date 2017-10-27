@@ -1,25 +1,9 @@
-- [Apache Hadoop Website](http://hadoop.apache.org/) - a framework for running applications on large cluster built of commodity hardware.
-- [Hadoop Javadoc](http://hadoop.apache.org/docs/current/api/)
-- [Hue - wikipedia](https://en.wikipedia.org/wiki/Hue_(Hadoop))
-- [Hadoop Docs](https://hadoop.apache.org/docs/)
-- [HDFS-3150 - use host name for accessing data nodes](https://issues.apache.org/jira/browse/HDFS-3150)
-- https://rainerpeter.wordpress.com/2014/02/12/connect-to-hdfs-running-in-ec2-using-public-ip-addresses/
-
-# [Hadoop Wiki](https://wiki.apache.org/hadoop)
-- [Sequence Files on Hadoop wiki](https://wiki.apache.org/hadoop/SequenceFile) ✓
-- [MapReduce on Hadoop wiki](https://wiki.apache.org/hadoop/MapReduce)
-- https://wiki.apache.org/hadoop/HadoopMapReduce
-
-# Scientific Papers
-- [MapReduce: Simplified Data Processing on Large Clusters by Jeffrey Dean and Sanjay Ghemawat](http://research.google.com/archive/mapreduce.html)
-- [Same paper on USENIX](https://www.usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean_html/index.html)
-
-# The user:
+# What user does
 - thinks about how to parallelize the computation
 - specify a map function that processes a key/value pair to generate a set of intermediate key/value pairs.
 - specify a reduce function that merges all intermediate values associated with the same intermediate key.
 
-# The runtime system:
+# What MR framework does
 - partitions the input data
 - distributes work around the cluster
     + moves the data to a particular node
@@ -36,13 +20,6 @@ Both MapReduce and the Hadoop Distributed File System are designed so that node 
 MapReduce is a programming model for processing large data sets.
 MapReduce programs are automatically parallelized and executed (distributed) on a large cluster of commodity machines. (parallel and distributed system)
 A typical MapReduce computation processes many terabytes of data on thousands of machines.
-
-# Maven Central
-- `org.apache.hadoop:hadoop-common` (there are also Cloudera releases)
-- `org.apache.hadoop:hadoop-hdfs`
-
-# Notable hosting providers
-- https://cloudera.com/
 
 # Sequence files
 Sequence files are flat files consisting of binary key/value pairs (records). Its widely used as input/output format for Hadoop MapReduce jobs. Also internally in Hadoop the temporary outputs of maps are stored as sequence files.
@@ -63,24 +40,6 @@ Sequence file format:
     + metadata
     + sync marker
 - body (list of records/blocks separated with sync markers). The sync marker permits seeking to a random point in a file and then re-synchronizing input with record boundaries. This is required to be able to efficiently split large files for MapReduce processing.
-
-# Hadoop Data Types
-- BytesWritable (byte[])
-- Text (String)
-
-Operations:
-- write keys
-- read keys
-- sort keys
-
-# Writer
-- hflush (flushes to the client's user buffer
-- hsync (flushes to a disk device, similar to posix `fsync`)
-
-# Reader
-
-# FileContext (org.apache.hadoop.fs.FileContext)
-Provides interface to the writer for using the HDFS (create, open, list, etc.).
 
 # DFSOutputStream
 Creates files from a stream of bytes.
@@ -103,16 +62,3 @@ In case of error, all outstanding packets and moved from
 ackQueue. A new pipeline is setup by eliminating the bad
 datanode from the original pipeline. The DataStreamer now
 starts sending packets from the dataQueue.
-
-# Tez
-- https://tez.apache.org/
-
-# Layers
-HIVE
-TEZ
-MAP/REDUCE
-YARN
-HDFS
-
-# Google Protocol Buffers
-- https://github.com/google/protobuf

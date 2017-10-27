@@ -38,3 +38,8 @@
 # Greatest Common Divisor
 
 # Least Common Multiple
+
+# Recursion
+- stop condition
+- recurse statement
+
