@@ -11,10 +11,3 @@ Install node with:
 nvm install node
 nvm use node
 ```
-
-# Create a Node.js project
-```
-npm init
-npm install express --save # for a web MVC framework
-npm install serve-static --save # for a static web server
-```
