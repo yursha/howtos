@@ -40,8 +40,8 @@ func swap(x, y string) (string, string) {
 // functions can have named return values
 func split(sum int) (x, y int) {
     x = sum * 4 / 9
-	y = sum - x
-	return
+    y = sum - x
+    return
 }
 
 func main() {
