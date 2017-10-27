@@ -43,6 +43,7 @@ sudo apt-get install tmux
 sudo apt-get install git
 git config --global user.name "Alex Yursha"
 git config --global user.email "alexyursha@gmail.com"
+git config --global core.editor "vim"
 ```
 
 ## SSH
