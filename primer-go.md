@@ -6,9 +6,13 @@ A package name is the last element of the import path. E.g, the `"math/rand"` pa
 ```go
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "time"
+)
 
 func main() {
-	fmt.Println("Hello, 世界")
+    fmt.Println("Welcome to the playground!")
+    fmt.Println("The time is", time.Now())
 }
 ```
