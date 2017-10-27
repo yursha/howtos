@@ -58,7 +58,11 @@ package main
 
 import "fmt"
 
+// variables without initializers
 var c, python, java bool
+
+// variables with initializers
+var x, y int = 1, 2
 
 func main() {
     var i int
