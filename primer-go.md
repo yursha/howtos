@@ -14,8 +14,8 @@ import (
 )
 
 func main() {
-    fmt.Println("The time is", time.Now())
-    fmt.Println("Pi is ", math.Pi)
+    fmt.Println("The time is", time.Now()) // `time` exports `Now()` function
+    fmt.Println("Pi is ", math.Pi) // `math` exports `Pi` constant
     fmt.Println("My favorite number is", rand.Intn(10))
     fmt.Printf("Now you have %g problems.\n", math.Sqrt(7))
 }
