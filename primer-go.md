@@ -32,12 +32,20 @@ func add(x, y int) int {
     return x + y
 }
 
+// functions can return multiple values (tuples)
 func swap(x, y string) (string, string) {
     return y, x
 }
 
+// functions can have named return values
+func split(sum int) (x, y int) {
+    x = sum * 4 / 9
+	y = sum - x
+	return
+}
+
 func main() {
     fmt.Println(add(42, 13))
-    fmt.Println(swap("world", "hello")) // functions can return tuples
+    fmt.Println(swap("world", "hello"))
 }
 ```
