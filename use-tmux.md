@@ -1,3 +1,10 @@
+# Managing sessions
+```
+tmux list-sessions # show all sessions
+tmux kill-session <target> # kills a session
+```
+
+# Sources
 - https://tmux.github.io/
 - https://github.com/tmux
 - https://raw.githubusercontent.com/tmux/tmux/master/FAQ
