@@ -1,4 +1,4 @@
-# Create a Node.js project
+# Node.js
 ```
 npm init
 ```
