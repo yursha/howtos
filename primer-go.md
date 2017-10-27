@@ -20,3 +20,24 @@ func main() {
     fmt.Printf("Now you have %g problems.\n", math.Sqrt(7))
 }
 ```
+
+# Functions
+
+```go
+package main
+
+import "fmt"
+
+func add(x, y int) int {
+	return x + y
+}
+
+func swap(x, y string) (string, string) {
+	return y, x
+}
+
+func main() {
+	fmt.Println(add(42, 13))
+    fmt.Println(swap("hello", "world")) // functions can return tuples
+}
+```
