@@ -29,15 +29,15 @@ package main
 import "fmt"
 
 func add(x, y int) int {
-	return x + y
+    return x + y
 }
 
 func swap(x, y string) (string, string) {
-	return y, x
+    return y, x
 }
 
 func main() {
-	fmt.Println(add(42, 13))
-    fmt.Println(swap("hello", "world")) // functions can return tuples
+    fmt.Println(add(42, 13))
+    fmt.Println(swap("world", "hello")) // functions can return tuples
 }
 ```
