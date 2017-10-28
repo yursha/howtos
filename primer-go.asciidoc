@@ -1,3 +1,9 @@
+= Golang Primer
+:toc:
+:toc-placement!:
+
+toc::[]
+
 [[program-organization]]
 Program organization
 --------------------
