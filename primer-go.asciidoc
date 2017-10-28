@@ -1029,4 +1029,129 @@ The `select` statement lets a goroutine wait on multiple communication operation
 
 A `select` blocks until one of its cases can run, then it executes that case. It chooses one at random if multiple are ready.
 
+[source,go]
+----
+package main
+
+import "fmt"
+
+func fibonacci(c, quit chan int) {
+	x, y := 0, 1
+	for {
+		select {
+		case c <- x:
+			x, y = y, x+y
+		case <-quit:
+			fmt.Println("quit")
+			return
+		}
+	}
+}
+
+func main() {
+	c := make(chan int)
+	quit := make(chan int)
+	go func() {
+		for i := 0; i < 10; i++ {
+			fmt.Println(<-c)
+		}
+		quit <- 0
+	}()
+	fibonacci(c, quit)
+}
+----
+
+The `default` case in a `select` is run if no other case is ready.
+
+Use a `default` case to try a send or receive without blocking.
+
+[source,go]
+----
+select {
+case i := <-c:
+    // use i
+default:
+    // receiving from c would block
+}
+----
+
+[source,go]
+----
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	tick := time.Tick(100 * time.Millisecond)
+	boom := time.After(500 * time.Millisecond)
+	for {
+		select {
+		case <-tick:
+			fmt.Println("tick.")
+		case <-boom:
+			fmt.Println("BOOM!")
+			return
+		default:
+			fmt.Println("    .")
+			time.Sleep(50 * time.Millisecond)
+		}
+	}
+}
+----
+
+[[mutex]]
+Mutex
+~~~~~~
+
+Go's standard library provides mutual exclusion with `sync.Mutex` and its two methods: `Lock` and `Unlock`.
+
+We can define a block of code to be executed in mutual exclusion by surrounding it with a call to `Lock` and `Unlock`.
+
+[source,go]
+----
+package main
+
+import (
+	"fmt"
+	"sync"
+	"time"
+)
+
+// SafeCounter is safe to use concurrently.
+type SafeCounter struct {
+	v   map[string]int
+	mux sync.Mutex
+}
+
+// Inc increments the counter for the given key.
+func (c *SafeCounter) Inc(key string) {
+	c.mux.Lock()
+	// Lock so only one goroutine at a time can access the map c.v.
+	c.v[key]++
+	c.mux.Unlock()
+}
+
+// Value returns the current value of the counter for the given key.
+func (c *SafeCounter) Value(key string) int {
+	c.mux.Lock()
+	// Lock so only one goroutine at a time can access the map c.v.
+	defer c.mux.Unlock()
+	return c.v[key]
+}
+
+func main() {
+	c := SafeCounter{v: make(map[string]int)}
+	for i := 0; i < 1000; i++ {
+		go c.Inc("somekey")
+	}
+
+	time.Sleep(time.Second)
+	fmt.Println(c.Value("somekey"))
+}
+----
+
+We can also use `defer` to ensure the mutex will be unlocked.
 
