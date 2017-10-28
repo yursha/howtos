@@ -471,6 +471,34 @@ func main() {
     fmt.Println(m["Bell Labs"])
 }
 ```
+Maps can be initialized from literals
+
+```go
+package main
+
+import "fmt"
+
+type Vertex struct {
+    Lat, Long float64
+}
+
+var m = map[string]Vertex{
+    "Bell Labs": { 40.68433, -74.39967 },
+    "Google": { 37.42202, -122.08408 },
+}
+
+func main() {
+    fmt.Println(m)
+}
+```
+
+Map operations
+```go
+m[key] = value    // set value
+elem = m[key]     // read value (makes copy). If key is not in the map, then elem is the zero value for the map's element type.
+delete(m, key)    // unassign key
+elem, ok = m[key] // test a key for presense
+```
 
 
 # Printing
