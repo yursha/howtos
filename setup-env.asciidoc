@@ -118,8 +118,10 @@ Then `source` that file to make it affective now.
 Note that `.profile` is only read by Bash when `~/.bash_profile` and `~/.bash_login` do not exist.
 
 ....
-eval $(ssh-agent -s)
-ssh-add ~/.ssh/id_rsa
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval $(ssh-agent -s)
+  ssh-add
+fi
 ....
 
 [[colors]]
