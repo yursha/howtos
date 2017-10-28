@@ -1,3 +1,9 @@
+= Environment Setup
+:toc:
+:toc-placement!:
+
+toc::[]
+
 [[my-hardware-and-os]]
 My hardware and OS
 ------------------
