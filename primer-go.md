@@ -505,7 +505,9 @@ elem, ok = m[key] // test a key for presense
 `Printf` takes `%T` for type names, `%g` for numbers, `%d` for integers, `%v` for values,`%q` and `%s` for strings.
 
 # String operations
+```go
 strings.Join([]string{"a", "b", "c"}, "^") // a^b^c
+```
 
 # Data and time
 
