@@ -5,12 +5,47 @@
 toc::[]
 
 [[program-organization]]
-Program organization
+Program organization and tools
 --------------------
+All go software lives in a single workspace `~/go`.
+- `~/go/src` - source files
+- `~/go/pkg` - package objects (binaries)
+- `~/go/bin` - executables
 
-A program consists of packages. A package publishes names by starting
+....
+bin/
+    hello                          # command executable
+    outyet                         # command executable
+pkg/
+    linux_amd64/
+        github.com/golang/example/
+            stringutil.a           # package object
+src/
+    github.com/golang/example/
+        .git/                      # Git repository metadata
+    hello/
+        hello.go               # command source
+    outyet/
+        main.go                # command source
+        main_test.go           # test source
+    stringutil/
+        reverse.go             # package source
+        reverse_test.go        # test source
+    golang.org/x/image/
+        .git/                      # Git repository metadata
+    bmp/
+        reader.go              # package source
+        writer.go              # package source
+    ... (many more repositories and packages omitted) ...
+....
+
+A program consists of packages.
+Each package consists of one or more source files in a single directory.
+A package publishes names by starting
 them with a capital letter. You have to import a package to use its
-public symbols in another package. A package name is the last element of
+public symbols in another package.
+The path to a package's directory determines its import path.
+A package name is the last element of
 the import path. E.g, the `"math/rand"` package comprises files that
 begin with the statement `package rand`. A program starts in package
 **main**.
@@ -33,6 +68,50 @@ func main() {
     fmt.Printf("Now you have %g problems.\n", math.Sqrt(7))
 }
 ----
+
+
+`go build` compiles libraries and discards the results, compiles and statically links executables and puts them in the package directory.
+
+`go install` places the library `<package>.a` object in a directory inside `pkg/linux_amd64` that mirrors its source directory.
+This is so that future invocations of the go tool can find the package object and avoid recompiling the package unnecessarily.
+The `linux_amd64` part is there to aid in cross-compilation, and will reflect the operating system and architecture of your system.
+`go install` compiles and statically links executables and places them into `~/go/bin`.
+
+Go command executables are statically linked; the package objects need not be present to run Go programs.
+
+`go test` runs tests.
+
+You write a test by creating a file with a name ending in _`test.go` that contains functions named `TestXXX` with signature `func (t *testing.T)`.
+The test framework runs each such function; if the function calls a failure function such as `t.Error` or `t.Fail`, the test is considered to have failed.
+
+....
+package stringutil
+
+import "testing"
+
+func TestReverse(t *testing.T) {
+    cases := []struct {
+        in, want string
+    }{
+        {"Hello, world", "dlrow ,olleH"},
+        {"Hello, 世界", "界世 ,olleH"},
+        {"", ""},
+    }
+    for _, c := range cases {
+        got := Reverse(c.in)
+        if got != c.want {
+            t.Errorf("Reverse(%q) == %q, want %q", c.in, got, c.want)
+        }
+    }
+}
+....
+
+
+[[build-go-package]]
+How to build a go package
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+go tool -fetch, build, install go packages and commands
 
 [[functions]]
 Functions
@@ -862,31 +941,31 @@ fmt.Println("Converted integer:", i)
 package main
 
 import (
-	"fmt"
-	"time"
+    "fmt"
+    "time"
 )
 
 type MyError struct {
-	When time.Time
-	What string
+    When time.Time
+    What string
 }
 
 func (e *MyError) Error() string {
-	return fmt.Sprintf("at %v, %s",
-		e.When, e.What)
+    return fmt.Sprintf("at %v, %s",
+        e.When, e.What)
 }
 
 func run() error {
-	return &MyError{
-		time.Now(),
-		"it didn't work",
-	}
+    return &MyError{
+        time.Now(),
+        "it didn't work",
+    }
 }
 
 func main() {
-	if err := run(); err != nil {
-		fmt.Println(err)
-	}
+    if err := run(); err != nil {
+        fmt.Println(err)
+    }
 }
 ----
 
@@ -1036,28 +1115,28 @@ package main
 import "fmt"
 
 func fibonacci(c, quit chan int) {
-	x, y := 0, 1
-	for {
-		select {
-		case c <- x:
-			x, y = y, x+y
-		case <-quit:
-			fmt.Println("quit")
-			return
-		}
-	}
+    x, y := 0, 1
+    for {
+        select {
+        case c <- x:
+            x, y = y, x+y
+        case <-quit:
+            fmt.Println("quit")
+            return
+        }
+    }
 }
 
 func main() {
-	c := make(chan int)
-	quit := make(chan int)
-	go func() {
-		for i := 0; i < 10; i++ {
-			fmt.Println(<-c)
-		}
-		quit <- 0
-	}()
-	fibonacci(c, quit)
+    c := make(chan int)
+    quit := make(chan int)
+    go func() {
+        for i := 0; i < 10; i++ {
+            fmt.Println(<-c)
+        }
+        quit <- 0
+    }()
+    fibonacci(c, quit)
 }
 ----
 
@@ -1080,25 +1159,25 @@ default:
 package main
 
 import (
-	"fmt"
-	"time"
+    "fmt"
+    "time"
 )
 
 func main() {
-	tick := time.Tick(100 * time.Millisecond)
-	boom := time.After(500 * time.Millisecond)
-	for {
-		select {
-		case <-tick:
-			fmt.Println("tick.")
-		case <-boom:
-			fmt.Println("BOOM!")
-			return
-		default:
-			fmt.Println("    .")
-			time.Sleep(50 * time.Millisecond)
-		}
-	}
+    tick := time.Tick(100 * time.Millisecond)
+    boom := time.After(500 * time.Millisecond)
+    for {
+        select {
+        case <-tick:
+            fmt.Println("tick.")
+        case <-boom:
+            fmt.Println("BOOM!")
+            return
+        default:
+            fmt.Println("    .")
+            time.Sleep(50 * time.Millisecond)
+        }
+    }
 }
 ----
 
@@ -1115,41 +1194,41 @@ We can define a block of code to be executed in mutual exclusion by surrounding 
 package main
 
 import (
-	"fmt"
-	"sync"
-	"time"
+    "fmt"
+    "sync"
+    "time"
 )
 
 // SafeCounter is safe to use concurrently.
 type SafeCounter struct {
-	v   map[string]int
-	mux sync.Mutex
+    v   map[string]int
+    mux sync.Mutex
 }
 
 // Inc increments the counter for the given key.
 func (c *SafeCounter) Inc(key string) {
-	c.mux.Lock()
-	// Lock so only one goroutine at a time can access the map c.v.
-	c.v[key]++
-	c.mux.Unlock()
+    c.mux.Lock()
+    // Lock so only one goroutine at a time can access the map c.v.
+    c.v[key]++
+    c.mux.Unlock()
 }
 
 // Value returns the current value of the counter for the given key.
 func (c *SafeCounter) Value(key string) int {
-	c.mux.Lock()
-	// Lock so only one goroutine at a time can access the map c.v.
-	defer c.mux.Unlock()
-	return c.v[key]
+    c.mux.Lock()
+    // Lock so only one goroutine at a time can access the map c.v.
+    defer c.mux.Unlock()
+    return c.v[key]
 }
 
 func main() {
-	c := SafeCounter{v: make(map[string]int)}
-	for i := 0; i < 1000; i++ {
-		go c.Inc("somekey")
-	}
+    c := SafeCounter{v: make(map[string]int)}
+    for i := 0; i < 1000; i++ {
+        go c.Inc("somekey")
+    }
 
-	time.Sleep(time.Second)
-	fmt.Println(c.Value("somekey"))
+    time.Sleep(time.Second)
+    fmt.Println(c.Value("somekey"))
 }
 ----
 

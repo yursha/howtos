@@ -5,7 +5,11 @@ Extract archive into `/usr/local`:
 sudo tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 ```
 
-Add `export PATH=$PATH:/usr/local/go/bin` to `~/.bashrc`.
+Adjust your `$PATH` in `~/.bashrc` `
+```
+export PATH=$PATH:/usr/local/go/bin    # for `go` executable
+export PATH=$PATH:$(go env GOPATH)/bin # for executables installed with `go install`
+```
 
 ```
 . ~/.bashrc

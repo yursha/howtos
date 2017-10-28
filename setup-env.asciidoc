@@ -126,6 +126,14 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then   # checks that ssh-agent is not running
 fi
 ....
 
+[[misc-tools]]
+Miscelaneous tools
+~~~~~~~~~~~~~~~~~~
+
+....
+sudo apt-get install tree
+....
+
 [[colors]]
 Colors
 ------
