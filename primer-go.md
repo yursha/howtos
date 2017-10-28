@@ -330,6 +330,17 @@ fmt.Println(*p) // read i through the pointer p
 *p = 21         // set i through the pointer p
 ```
 
+We can have multiple leves of pointer indirection
+```go
+var a = 1
+var pa *int
+var ppa **int
+pa = &a
+ppa = &p
+fmt.Println(*pa)
+fmt.Println(**ppa)
+```
+
 # Structs
 A `struct` is a collection of fields.
 
