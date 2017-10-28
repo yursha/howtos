@@ -671,8 +671,7 @@ func main() {
 }
 ----
 
-You can only declare a method with a receiver whose type is defined in
-the same package as the method.
+All methods of a type must be defined in the same package.
 
 [source,go]
 ----
@@ -714,7 +713,7 @@ In general, all methods on a given type should have either value or pointer rece
 Interfaces
 ----------
 An interface type is defined as a set of method signatures.
-A value of interface type can hold any value that implements those methods.
+A value of interface type can hold a value of any type that implements those methods.
 
 [source,go]
 ----
@@ -723,22 +722,22 @@ package main
 import "fmt"
 
 type Abser interface {
-	Abs() float64
+  Abs() float64
 }
 
 type MyFloat float64
 
 func (f MyFloat) Abs() float64 {
-	if f < 0 {
-		return float64(-f)
-	}
-	return float64(f)
+  if f < 0 {
+    return float64(-f)
+  }
+  return float64(f)
 }
 
 func main() {
-	var a Abser
-	a = MyFloat(-2.4) 
-	fmt.Println(a.Abs())
+  var a Abser
+  a = MyFloat(-2.4) 
+  fmt.Println(a.Abs())
 }
 ----
 
