@@ -536,6 +536,54 @@ delete(m, key)    // unassign key
 elem, ok = m[key] // test a key for presense
 ```
 
+# Methods
+A method is a function with a special receiver argument.
+The receiver appears in its own argument list between the func keyword and the method name.
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+type Vertex struct {
+	X, Y float64
+}
+
+func (v Vertex) Abs() float64 {
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
+}
+
+func main() {
+	v := Vertex{3, 4}
+	fmt.Println(v.Abs())
+}
+```
+
+You can only declare a method with a receiver whose type is defined in the same package as the method. 
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+type MyFloat float64
+
+func (f MyFloat) Abs() float64 {
+	if f < 0 {
+		return float64(-f)
+	}
+	return float64(f)
+}
+
+func main() {
+	f := MyFloat(-math.Sqrt2)
+	fmt.Println(f.Abs())
+}
+```
 
 # Printing
 `Printf` takes `%T` for type names, `%g` for numbers, `%d` for integers, `%v` for values,`%q` and `%s` for strings.
