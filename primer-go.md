@@ -23,6 +23,8 @@ func main() {
 
 # Functions
 
+All arguments are passed by value, i.e. copies are made.
+
 ```go
 package main
 
@@ -48,6 +50,42 @@ func main() {
     fmt.Println(add(42, 13))
     fmt.Println(swap("world", "hello"))
     fmt.Println(split(17))
+}
+```
+
+Functions are first-class objects. Functions may be used as function arguments and return values.
+
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func compute(fn func(float64, float64) float64) float64 {
+	return fn(3, 4)
+}
+
+func main() {
+	hypot := func(x, y float64) float64 {
+		return math.Sqrt(x*x + y*y)
+	}
+	fmt.Println(hypot(5, 12))      // 13
+
+	fmt.Println(compute(hypot))    // 5
+	fmt.Println(compute(math.Pow)) // 81
+}
+```
+
+Functions are closures
+```go
+func adder() func(int) int {
+	sum := 0
+	return func(x int) int {
+		sum += x
+		return sum
+	}
 }
 ```
 
@@ -82,7 +120,7 @@ var (
 func main() {
     var f, n = false, "no!" // if initializers are present type can be deduced
     var i int // implicitly initialized to type's default value
-    j := 3; // short notation for `var j = 3`, only allowed in function scope. Doesn't work for constants.
+    j := 3; // same as `var j = 3`, only allowed in function scope.
     const k = 4
     fmt.Println(f, n, i, j, k)
     fmt.Printf("Type: %T Value: %v\n", ToBe, ToBe)
@@ -125,7 +163,7 @@ When you need an integer value you should use `int` unless you have a specific r
 
 All type conversions are explicit.
 
-```
+```go
 package main
 
 import "fmt"
@@ -292,6 +330,17 @@ The `*` operator denotes the pointer's underlying value.
 ```go
 fmt.Println(*p) // read i through the pointer p
 *p = 21         // set i through the pointer p
+```
+
+We can have multiple leves of pointer indirection
+```go
+var a = 1
+var pa *int
+var ppa **int
+pa = &a
+ppa = &p
+fmt.Println(*pa)
+fmt.Println(**ppa)
 ```
 
 # Structs
@@ -500,12 +549,67 @@ delete(m, key)    // unassign key
 elem, ok = m[key] // test a key for presense
 ```
 
+# Methods
+A method is a function with a special receiver argument.
+The receiver appears in its own argument list between the func keyword and the method name.
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+type Vertex struct {
+	X, Y float64
+}
+
+func (v Vertex) Abs() float64 {
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
+}
+
+func main() {
+	v := Vertex{3, 4}
+	fmt.Println(v.Abs())
+}
+```
+
+You can only declare a method with a receiver whose type is defined in the same package as the method. 
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+type MyFloat float64
+
+func (f MyFloat) Abs() float64 {
+	if f < 0 {
+		return float64(-f)
+	}
+	return float64(f)
+}
+
+func main() {
+	f := MyFloat(-math.Sqrt2)
+	fmt.Println(f.Abs())
+}
+```
+
+You can declare methods with pointer receivers (but not pointer to pointer receivers).
+Methods with pointer receivers can modify the value to which the receiver points.
+Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
+Pointer receivers are also useful to avoid copies of a receiver argument.
 
 # Printing
 `Printf` takes `%T` for type names, `%g` for numbers, `%d` for integers, `%v` for values,`%q` and `%s` for strings.
 
 # String operations
+```go
 strings.Join([]string{"a", "b", "c"}, "^") // a^b^c
+```
 
 # Data and time
 
