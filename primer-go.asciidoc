@@ -705,6 +705,43 @@ receiver, pointer receivers are more common than value receivers.
 Pointer receivers are also useful to avoid copies of a receiver
 argument.
 
+Methods with pointer receivers take **either a value or a pointer** as the receiver when they are called.
+Methods with value receivers take **either a value or a pointer** as the receiver when they are called.
+
+In general, all methods on a given type should have either value or pointer receivers, but not a mixture of both.
+
+[[interfaces]]
+Interfaces
+----------
+An interface type is defined as a set of method signatures.
+A value of interface type can hold any value that implements those methods.
+
+[source,go]
+----
+package main
+
+import "fmt"
+
+type Abser interface {
+	Abs() float64
+}
+
+type MyFloat float64
+
+func (f MyFloat) Abs() float64 {
+	if f < 0 {
+		return float64(-f)
+	}
+	return float64(f)
+}
+
+func main() {
+	var a Abser
+	a = MyFloat(-2.4) 
+	fmt.Println(a.Abs())
+}
+----
+
 [[printing]]
 Printing
 --------
