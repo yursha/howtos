@@ -23,6 +23,8 @@ func main() {
 
 # Functions
 
+All arguments are passed by value, i.e. copies are made.
+
 ```go
 package main
 
@@ -595,6 +597,11 @@ func main() {
 	fmt.Println(f.Abs())
 }
 ```
+
+You can declare methods with pointer receivers (but not pointer to pointer receivers).
+Methods with pointer receivers can modify the value to which the receiver points.
+Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
+Pointer receivers are also useful to avoid copies of a receiver argument.
 
 # Printing
 `Printf` takes `%T` for type names, `%g` for numbers, `%d` for integers, `%v` for values,`%q` and `%s` for strings.
