@@ -82,7 +82,7 @@ var (
 func main() {
     var f, n = false, "no!" // if initializers are present type can be deduced
     var i int // implicitly initialized to type's default value
-    j := 3; // short notation for `var j = 3`, only allowed in function scope. Doesn't work for constants.
+    j := 3; // same as `var j = 3`, only allowed in function scope.
     const k = 4
     fmt.Println(f, n, i, j, k)
     fmt.Printf("Type: %T Value: %v\n", ToBe, ToBe)
@@ -125,7 +125,7 @@ When you need an integer value you should use `int` unless you have a specific r
 
 All type conversions are explicit.
 
-```
+```go
 package main
 
 import "fmt"
