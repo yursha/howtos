@@ -787,9 +787,38 @@ An empty interface may hold values of any type. (Every type implements at least 
 
 Empty interfaces are used by code that handles values of unknown type. For example, `fmt.Print` takes any number of arguments of type `interface{}`.
 
+[[type-assertions]]
+Type Assertions
+~~~~~~~~~~~~~~~
+A type assertion provides access to an interface value's underlying concrete value.
+[source, go]
+----
+t := i.(T)     // If i does not hold a T, this will trigger a panic.
+t, ok := i.(T) // If i does not hold a T, t will be assigned default value of type T
+
+switch v := i.(type) {
+case T:
+    // here v has type T
+case S:
+    // here v has type S
+default:
+    // no match; here v has the same type as i
+}
+----
+
 [[printing]]
 Printing
 --------
+
+One of the most ubiquitous interfaces is Stringer defined by the fmt package.
+The `fmt` package (and many others) look for this interface to print values.
+
+[source, go]
+----
+type Stringer interface {
+    String() string
+}
+----
 
 `Printf` takes `%T` for type names, `%g` for numbers, `%d` for integers,
 `%v` for values,`%q` and `%s` for strings.
@@ -801,6 +830,17 @@ String operations
 [source,go]
 ----
 strings.Join([]string{"a", "b", "c"}, "^") // a^b^c
+----
+
+[[errors]]
+Errors
+------
+
+[source,go]
+----
+type error interface {
+    Error() string
+}
 ----
 
 [[data-and-time]]
