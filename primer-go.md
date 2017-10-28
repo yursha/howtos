@@ -272,8 +272,212 @@ func main() {
 // 0
 ```
 
+# Pointers
+A pointer holds the memory address of a value.
+The type `*T` is a pointer to a `T` value. Its zero value is `nil`.
+
+```go
+var p *int
+```
+
+The `&` operator generates a pointer to its operand.
+
+```go
+i := 42
+p = &i
+```
+
+The `*` operator denotes the pointer's underlying value.
+
+```go
+fmt.Println(*p) // read i through the pointer p
+*p = 21         // set i through the pointer p
+```
+
+# Structs
+A `struct` is a collection of fields.
+
+```go
+package main
+
+import "fmt"
+
+type Vertex struct {
+    X int
+    Y int
+}
+
+func main() {
+    v := Vertex{1, 2}
+    v.X = 3
+    p := &v
+    p.Y = 4 // fields can be accessed through a struct pointer without explicit dereferencing.
+    fmt.Println(v) // {3 4}
+    fmt.Println(p) // &{3 4}
+}
+```
+Structs are allocated with literals
+
+```go
+var (
+    v1 = Vertex{1, 2}       // has type Vertex
+    v2 = Vertex{X: 1}       // Y:0 is implicit
+    v3 = Vertex{}           // X:0 and Y:0
+    v4 = Vertex{Y: 1, X: 2} // the order of the fields is irrelevant
+    v5 = Vertex{Y: 1}       // X:0 is implicit
+    p  = &Vertex{1, 2}      // has type *Vertex
+)
+```
+
+# Arrays & Slices
+
+An array has a fixed size.
+An array's length is part of its type.
+A slice is a dynamically-sized view into the elements of an array.
+Changing the elements of a slice modifies the corresponding elements of its underlying array.
+In practice, slices are much more common than arrays.
+Slices are cheap.
+They consist of a pointer to an array, length and capacity.
+
+The type `[n]T` is an array of `n` values of type `T`.
+
+The type `[]T` is a slice with elements of type `T`.
+
+A slice is formed by specifying two indices, a low and high bound, separated by a colon:
+This selects a half-open range which includes the first element, but excludes the last one.
+```go
+a[low : high]
+```
+
+Bounds can be omitted
+```go
+a := []int{1, 2, 3, 4, 5}
+fmt.Println(a[1:4]) // [2 3 4]
+fmt.Println(a[1:])  // [2 3 4 5]
+fmt.Println(a[:4])  // [1 2 3 4]
+fmt.Println(a[:])   // [1 2 3 4 5]
+```
+
+```go
+var a [2]string
+a[0] = "Hello"
+fmt.Println(a[0])         // Hello
+primes := [6]int{2, 3, 5, 7, 11, 13}
+var s []int = primes[1:4] // [3 5 7]
+fmt.Println(s)
+```
+
+A slice literal is like an array literal without the length.
+```go
+[3]bool{true, true, false} // array literal
+[]bool{true, true, false}  // slice literal
+```
+
+You can declare slice element type inline.
+```go
+s := []struct {
+        i int
+        b bool
+    }{
+        {2, true},
+        {3, false},
+        {5, true},
+    }
+```
+
+A slice has both a length and a capacity.
+The length of a slice is the number of elements it contains.
+The capacity of a slice is the number of elements in the underlying array, counting from the first element in the slice.
+The length and capacity of a slice s can be obtained using the expressions `len(s)` and `cap(s)`.
+You can extend a slice's length by re-slicing it, provided it has sufficient capacity.
+
+The zero value of a slice is `nil`.
+A nil slice has a length and capacity of 0 and has no underlying array.
+
+```go
+func main() {
+    var s []int
+    fmt.Println(s, len(s), cap(s))
+    if s == nil {
+        fmt.Println("nil!")
+    }
+}
+```
+
+The `make` function allocates a zeroed array and returns a slice that refers to that array:
+
+```go
+a := make([]int, 5)    // len(a)=5, cap(a)=5
+b := make([]int, 0, 5) // len(b)=0, cap(b)=5
+```
+
+Slices can contain any type, including other slices.
+
+```go
+board := [][]string{
+    []string{"_", "_", "_"},
+    []string{"_", "_", "_"},
+    []string{"_", "_", "_"},
+}
+```
+
+You can append elements to a slice even though arrays are fixed size.
+
+```go
+// s - slice to append to
+// vs - values to append
+func append(s []T, vs ...T) []T
+```
+
+If the backing array of s is too small to fit all the given values a bigger array will be allocated.
+The returned slice will point to the newly allocated array.
+
+When ranging over a slice, the first value is the index, and the second is a copy of the element at that index.
+
+```go
+for i, v := range []string{"a","b","c"} {
+    fmt.Printf("%d = %s\n", i, v)
+}
+
+for _, v := range []string{"a","b","c"} {
+    fmt.Printf("%s", v) // abc
+}
+
+for i := range []string{"a","b","c"} {
+    fmt.Printf("%d", i) // 012
+}
+```
+
+# Maps
+The zero value of a map is `nil`. A nil map has no keys, nor can keys be added.
+The `make` function returns a map of the given type, initialized and ready for use.
+
+```go
+package main
+
+import "fmt"
+
+type Vertex struct {
+    Lat, Long float64
+}
+
+var m map[string]Vertex
+
+func main() {
+    m = make(map[string]Vertex)
+    m["Bell Labs"] = Vertex{
+        40.68433, -74.39967,
+    }
+    fmt.Println(m["Bell Labs"])
+}
+```
+
+
 # Printing
-`Printf` takes `%T` for type names, `%g` for numbers, `%v` for values,`%q` and `%s` for strings.
+`Printf` takes `%T` for type names, `%g` for numbers, `%d` for integers, `%v` for values,`%q` and `%s` for strings.
+
+# String operations
+strings.Join([]string{"a", "b", "c"}, "^") // a^b^c
 
 # Data and time
 
@@ -300,3 +504,4 @@ func main() {
     }
 }
 ```
+
