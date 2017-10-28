@@ -112,15 +112,17 @@ ssh -T git@github.com
 [[ssh-agent]]
 SSH agent
 ^^^^^^^^^
+
 Use `ssh-agent` to avoid retyping your password every time. 
 Add the lines below to you `.profile` file which is executed on every login.
 Then `source` that file to make it affective now.
 Note that `.profile` is only read by Bash when `~/.bash_profile` and `~/.bash_login` do not exist.
 
+[source,bash]
 ....
-if [ -z "$SSH_AUTH_SOCK" ] ; then
-  eval $(ssh-agent -s)
-  ssh-add
+if [ -z "$SSH_AUTH_SOCK" ] ; then   # checks that ssh-agent is not running
+  eval $(ssh-agent -s)              # launches ssh-agent
+  ssh-add                           # adds all private keys in ~/.ssh to ssh-agent
 fi
 ....
 
