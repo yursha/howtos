@@ -109,11 +109,14 @@ ssh -T git@bitbucket.org
 ssh -T git@github.com
 ....
 
-Use `ssh-agent` to avoid retyping your password every time.
+Use `ssh-agent` to avoid retyping your password every time. 
+Add the lines below to you `.profile` file which is executed on every login.
+Then `source` that file to make it affective now.
+Note that `.profile` is only read by Bash when `~/.bash_profile` and `~/.bash_login` do not exist.
 
 ....
-exec ssh-agent bash
-ssh-add
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
 ....
 
 [[colors]]
