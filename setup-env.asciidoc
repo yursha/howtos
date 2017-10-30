@@ -90,10 +90,11 @@ Diffing tools
 ~~~~~~~~~~~~~
 
 - `diff`
-- `diff3` - compare three files line by line
 - `colordiff` - Perl script which color-highlights diffs.
+- `diff3` - compare three files line by line
 - `wdiff`
-- `less -R`, `less -r`
+
+I use `colordiff -U100 <file1> <file2> | less -R`
 
 [[ssh]]
 SSH
