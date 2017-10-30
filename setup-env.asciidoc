@@ -85,6 +85,16 @@ git config --global user.email "alexyursha@gmail.com"
 git config --global core.editor "vim"
 ....
 
+[[diffing-tools]]
+Diffing tools
+~~~~~~~~~~~~~
+
+- `diff`
+- `diff3` - compare three files line by line
+- `colordiff` - Perl script which color-highlights diffs.
+- `wdiff`
+- `less -R`, `less -r`
+
 [[ssh]]
 SSH
 ~~~
