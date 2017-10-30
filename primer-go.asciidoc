@@ -85,6 +85,8 @@ Go command executables are statically linked; the package objects need not be pr
 You write a test by creating a file with a name ending in _`test.go` that contains functions named `TestXXX` with signature `func (t *testing.T)`.
 The test framework runs each such function; if the function calls a failure function such as `t.Error` or `t.Fail`, the test is considered to have failed.
 
+`go fetch` fetches from a remote repository and installs. Works with GitHub, but may work with other site as well if they are specially configured.
+
 ....
 package stringutil
 
@@ -111,8 +113,6 @@ func TestReverse(t *testing.T) {
 [[build-go-package]]
 How to build a go package
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-go tool -fetch, build, install go packages and commands
 
 [[functions]]
 Functions
