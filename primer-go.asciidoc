@@ -4,6 +4,13 @@
 
 toc::[]
 
+[[offline-doc]]
+Offline Documentation
+----------------------
+....
+godoc -http=:6060
+....
+
 [[program-organization]]
 Program organization and tools
 ------------------------------
