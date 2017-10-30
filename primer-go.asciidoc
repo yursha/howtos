@@ -70,6 +70,9 @@ func main() {
 }
 ----
 
+[[build-go-package]]
+How to build a go package
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `go build` compiles libraries and discards the results, compiles and statically links executables and puts them in the package directory.
 
@@ -108,11 +111,6 @@ func TestReverse(t *testing.T) {
     }
 }
 ....
-
-
-[[build-go-package]]
-How to build a go package
-~~~~~~~~~~~~~~~~~~~~~~~~~
 
 [[functions]]
 Functions
