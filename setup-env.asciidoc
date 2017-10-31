@@ -89,12 +89,10 @@ git config --global core.editor "vim"
 Diffing tools
 ~~~~~~~~~~~~~
 
-- `diff`
-- `colordiff` - Perl script which color-highlights diffs.
-- `diff3` - compare three files line by line
-- `wdiff`
-
-I use `colordiff -U100 <file1> <file2> | less -R`
+....
+sudo apt-get install colordiff
+colordiff -U100 <file1> <file2> | less -R
+....
 
 [[ssh]]
 SSH
