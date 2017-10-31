@@ -50,7 +50,7 @@ Then `source ~/.bashrc`.
 
 [[tools]]
 Tools
---------
+-----
 
 This section explains how to set up software.
 
