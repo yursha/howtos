@@ -670,10 +670,11 @@ Maps
 
 Hash tables offer fast lookup, insert and delete.
 
-....
+[source,go]
+----
 map[KeyType]ValueType // for map
 map[KeyType]bool      // for set
-....
+----
 
 `KeyType` must be comparable.
 
