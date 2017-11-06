@@ -668,10 +668,11 @@ for i := range []string{"a","b","c"} {
 Maps
 ----
 
-Maps in go implement hash tables. Hash tables offer fast lookup, insert and delete.
+Hash tables offer fast lookup, insert and delete.
 
 ....
-map[KeyType]ValueType
+map[KeyType]ValueType // for map
+map[KeyType]bool      // for set
 ....
 
 `KeyType` must be comparable.
