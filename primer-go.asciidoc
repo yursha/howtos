@@ -7,6 +7,7 @@ toc::[]
 [[program-organization]]
 Program organization and tools
 --------------------
+
 All go software lives in a single workspace `~/go`.
 - `~/go/src` - source files
 - `~/go/pkg` - package objects (binaries)
