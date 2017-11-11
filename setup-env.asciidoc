@@ -48,9 +48,9 @@ export LANGUAGE=en_US.UTF-8
 
 Then `source ~/.bashrc`.
 
-[[software]]
-Software
---------
+[[tools]]
+Tools
+-----
 
 This section explains how to set up software.
 
@@ -83,6 +83,15 @@ sudo apt-get install git
 git config --global user.name "Alex Yursha"
 git config --global user.email "alexyursha@gmail.com"
 git config --global core.editor "vim"
+....
+
+[[diffing-tools]]
+Diffing tools
+~~~~~~~~~~~~~
+
+....
+sudo apt-get install colordiff
+colordiff -U100 <file1> <file2> | less -R
 ....
 
 [[ssh]]
@@ -124,6 +133,19 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then   # checks that ssh-agent is not running
   eval $(ssh-agent -s)              # launches ssh-agent
   ssh-add                           # adds all private keys in ~/.ssh to ssh-agent
 fi
+....
+
+[[google-cloud-sdk]]
+Google Cloud SDK
+~~~~~~~~~~~~~~~~
+
+....
+sudo apt-get install lsb-release
+export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
+echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+sudo apt-get update && sudo apt-get install google-cloud-sdk
+gcloud init
 ....
 
 [[misc-tools]]
@@ -184,4 +206,27 @@ color12 = lighter grey
 color13 = violet
 color14 = light grey
 color15 = white light
+....
+
+Below is copy-paste config for Chrome Secure Shell app (`color-pallette-overrides` property):
+
+....
+{
+  "0": "#002b36",
+  "1": "#dc322f",
+  "2": "#859900",
+  "3": "#b58900",
+  "4": "#268bd2",
+  "5": "#d33682",
+  "6": "#2aa198",
+  "7": "#eee8d5",
+  "8": "#073642",
+  "9": "#cb4b16",
+  "10": "#586e75",
+  "11": "#657b83",
+  "12": "#839496",
+  "13": "#6c71c4",
+  "14": "#93a1a1",
+  "15": "#fdf6e3"
+}
 ....

@@ -4,9 +4,16 @@
 
 toc::[]
 
+[[offline-doc]]
+Offline Documentation
+----------------------
+....
+godoc -http=:6060
+....
+
 [[program-organization]]
 Program organization and tools
---------------------
+------------------------------
 
 All go software lives in a single workspace `~/go`.
 - `~/go/src` - source files
@@ -70,6 +77,9 @@ func main() {
 }
 ----
 
+[[build-go-package]]
+How to build a go package
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `go build` compiles libraries and discards the results, compiles and statically links executables and puts them in the package directory.
 
@@ -84,6 +94,8 @@ Go command executables are statically linked; the package objects need not be pr
 
 You write a test by creating a file with a name ending in _`test.go` that contains functions named `TestXXX` with signature `func (t *testing.T)`.
 The test framework runs each such function; if the function calls a failure function such as `t.Error` or `t.Fail`, the test is considered to have failed.
+
+`go fetch` fetches from a remote repository and installs. Works with GitHub, but may work with other site as well if they are specially configured.
 
 ....
 package stringutil
@@ -106,13 +118,6 @@ func TestReverse(t *testing.T) {
     }
 }
 ....
-
-
-[[build-go-package]]
-How to build a go package
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-go tool -fetch, build, install go packages and commands
 
 [[functions]]
 Functions
@@ -663,9 +668,19 @@ for i := range []string{"a","b","c"} {
 Maps
 ----
 
-The zero value of a map is `nil`. A nil map has no keys, nor can keys be
-added. The `make` function returns a map of the given type, initialized
-and ready for use.
+Hash tables offer fast lookup, insert and delete.
+
+[source,go]
+----
+map[KeyType]ValueType // a hash map
+map[KeyType]bool      // a hash set
+----
+
+`KeyType` must be comparable.
+
+Map types are reference types, like pointers or slices.
+So the zero value of a map is `nil`. 
+A nil map behaves like an empty map when reading, but attempts to write to a nil map will cause a runtime panic.
 
 [source,go]
 ----
@@ -677,7 +692,7 @@ type Vertex struct {
     Lat, Long float64
 }
 
-var m map[string]Vertex
+var m map[string]Vertex // a nil map
 
 func main() {
     m = make(map[string]Vertex)

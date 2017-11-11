@@ -1,0 +1,11 @@
+# Code formatting
+
+....
+gofmt -w <filename> # format files in place
+....
+  
+# Dependency management
+
+`go get` provides primitive dependency management.
+There is no good package manager in Golang but the right tool is in the works.
+
