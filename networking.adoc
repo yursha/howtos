@@ -18,6 +18,14 @@ Mac
 ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*'
 ```
 
+[[crouton-servers]]
+Run a server in Crouton
+-----------------------
+Add a line to `/etc/rc.local` to accept all inbound traffic
+```
+/sbin/iptables -P INPUT ACCEPT
+```
+
 [[socket-system-calls]]
 Socket system calls
 -------------------
