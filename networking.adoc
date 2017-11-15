@@ -26,6 +26,8 @@ Add a line to `/etc/rc.local` to accept all inbound traffic
 /sbin/iptables -P INPUT ACCEPT
 ```
 
+Reading official instructions if it doesn't work <https://github.com/dnschneid/crouton/wiki/Running-servers-in-crouton>.
+
 [[socket-system-calls]]
 Socket system calls
 -------------------
