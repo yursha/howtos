@@ -1,0 +1,537 @@
+= Networking
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[socket-system-calls]]
+Socket system calls
+-------------------
+
+* `socket(2)` - create a socket
+* `getsockopt(2)`, `setsockopt()` - get and set options on socket
+* `recv(2)` - read from a socket
+* `connect(2)`, `send(2)`, `sendto(2)`, `sendmsg(2)` - connect & write
+to a socket
+* `bind(2)`, `accept(2)`, `accept4(2)` - binad & listen on a socket
+
+In Linux kernel `ioctl` is an obsolete kernel interface. `netlink` is a
+kernel interface which is a successor to it.
+
+[[host---network-byte-order-translation]]
+Host <-> Network byte order translation
+---------------------------------------
+
+* `htons(3)`, `htonl(3)`, `ntohs(3)`, `ntohl(3)` from `<arpa/inet.h>`
+
+[[text---binary-ip-address-translation]]
+Text <-> binary IP address translation
+--------------------------------------
+
+* `inet_pton(3)` - convert IPv4 and IPv6 addresses from text to binary
+form. Deprecates IPv4-only `inet_aton` and `inet_addr`.
+* `inet_ntop(3)` - convert IPv4 and IPv6 addresses from binary to text
+form. Deprecates IPv4-only `inet_ntoa`.
+
+[[dns-lookup-and-reverse-lookup]]
+DNS lookup and reverse lookup
+-----------------------------
+
+* `getaddrinfo`, `freeaddrinfo`, `gai_strerror`. DNS and service lookup.
+Deprecates IPv4-only `gethostbyname`.
+* `getnameinfo`. DNS reverse lookup. Deprecates IPv4-only
+`gethostbyaddr`.
+* `getservbyname`
+
+A socket descriptor is just an `int`.
+
+....
+struct addrinfo {
+    int              ai_flags;     // AI_PASSIVE, AI_CANONNAME, etc.
+    int              ai_family;    // AF_INET, AF_INET6, AF_UNSPEC
+    int              ai_socktype;  // SOCK_STREAM, SOCK_DGRAM
+    int              ai_protocol;  // use 0 for "any"
+    size_t           ai_addrlen;   // size of ai_addr in bytes
+    struct sockaddr *ai_addr;      // struct sockaddr_in or _in6
+    char            *ai_canonname; // full canonical hostname
+
+    struct addrinfo *ai_next;      // linked list, next node
+};
+....
+
+This structure is used to prep the socket address structures for
+subsequent use. It's also used in host name lookups, and service name
+lookups.
+
+....
+// (IPv6 only--see struct sockaddr_in and struct in_addr for IPv4)
+
+struct sockaddr_in6 {
+    u_int16_t       sin6_family;   // address family, AF_INET6
+    u_int16_t       sin6_port;     // port number, Network Byte Order
+    u_int32_t       sin6_flowinfo; // IPv6 flow information
+    struct in6_addr sin6_addr;     // IPv6 address
+    u_int32_t       sin6_scope_id; // Scope ID
+};
+
+struct in6_addr {
+    unsigned char   s6_addr[16];   // IPv6 address
+};
+
+struct sockaddr_storage {
+    sa_family_t  ss_family;     // address family
+
+    // all this is padding, implementation specific, ignore it:
+    char      __ss_pad1[_SS_PAD1SIZE];
+    int64_t   __ss_align;
+    char      __ss_pad2[_SS_PAD2SIZE];
+};
+....
+
+[[sockets]]
+Sockets
+-------
+
+[source,c]
+----
+#include <sys/socket.h>
+
+int sockfd = socket(int socket_family, int socket_type, int protocol);
+----
+
+[[socket-types]]
+Socket Types
+~~~~~~~~~~~~
+
+* `SOCK_STREAM` - Linux TCP implementation. Guaranteed packet order,
+error checking. Used by `telnet`, HTTP protocol. Uses IP.
+* `SOCK_DGRAM` - Linux https://tools.ietf.org/html/rfc768[UDP]
+implementation. Optional delivery. Out-of-order. Error checking. Sample
+applications: `tftp` (trivial file transfer protocol), `dhcpcd` (a DHCP
+client), multiplayer games, streaming audio, video conferencing, etc.
+`tftp` and similar programs have their own protocol on top of UDP. For
+example, the tftp protocol says that for each packet that gets sent, the
+recipient has to send back a packet that says, "I got it!" (an `ACK`
+packet.) If the sender of the original packet gets no reply in, say,
+five seconds, he'll re-transmit the packet until he finally gets an
+`ACK`. This acknowledgment procedure is very important when implementing
+reliable `SOCK_DGRAM`. applications.Uses IP.
+* `SOCK_RAW` - Raw access to IP protocol.
+
+Addional socket opening flags: `SOCK_CLOEXEC` and `SOCK_NONBLOCK`
+(correspond to `O_NONBLOCK` and `FD_CLOEXEC` file status flags
+respectively).
+
+Why would you use an unreliable underlying protocol? Two reasons: speed
+and speed. It's way faster to fire-and-forget than it is to keep track
+of what has arrived safely and make sure it's in order and all that. If
+you're sending chat messages, TCP is great; if you're sending 40
+positional updates per second of the players in the world, maybe it
+doesn't matter so much if one or two get dropped, and UDP is a good
+choice.
+
+[[protocols]]
+Protocols
+~~~~~~~~~
+
+* Protocols database `/etc/protocols/` is updated from
+https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml[IANA
+Protocol Numbers].
+
+[source,c]
+----
+#include <netdb.h>
+
+struct protoent *getprotoent(void);
+
+struct protoent *getprotobyname(const char *name);
+
+struct protoent *getprotobynumber(int proto);
+
+void setprotoent(int stayopen);
+
+void endprotoent(void);
+
+int getprotoent_r(struct protoent *result_buf, char *buf,
+        size_t buflen, struct protoent **result);
+
+int getprotobyname_r(const char *name,
+        struct protoent *result_buf, char *buf,
+        size_t buflen, struct protoent **result);
+
+int getprotobynumber_r(int proto,
+        struct protoent *result_buf, char *buf,
+        size_t buflen, struct protoent **result);
+----
+
+[[utilities]]
+Utilities
+---------
+
+* `telnet`. If you telnet to a web site on port 80, and type
+`GET / HTTP/1.0` and hit `RETURN` twice, it'll dump the HTML back at
+you!
+
+[[network-layers]]
+Network layers
+--------------
+
+* Application Layer (telnet, ftp, etc.)
+* Host-to-Host Transport Layer (TCP, UDP) (end-to-end data reliability,
+flow control, sequencing, or other services)
+* Internet Layer (IP and routing) (packet delivery)
+* Network Access Layer (Ethernet, wi-fi, or whatever). Local network
+protocols to carry the internet datagram to the next gateway or
+destination host.
+
+[[connections]]
+Connections
+-----------
+
+* https://en.wikipedia.org/wiki/Keepalive
+* https://en.wikipedia.org/wiki/Network_address_translation[Network
+Address Translation (NAT) on wikipedia]
+
+[[urluri]]
+URL/URI
+-------
+
+* Commons Validator
+https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/routines/UrlValidator.html
+* https://en.wikipedia.org/wiki/File_URI_scheme[File URI scheme on
+wikipedia]
+* https://docs.oracle.com/javase/8/docs/api/java/net/URI.html[jave.net.URI]
+
+[[concepts]]
+Concepts
+--------
+
+* https://www.techopedia.com/definition/2447/next-hop
+* https://www.usenix.org/system/files/conference/nsdi14/nsdi14-paper-handigol.pdf
+* http://www.webopedia.com/TERM/H/hop.html
+* https://en.wikipedia.org/wiki/Hop_(networking)
+* https://en.wikipedia.org/wiki/Storage_area_network
+
+[[dns]]
+DNS
+---
+
+* http://www.isc.org/downloads/BIND/[bind-utils] - communication with
+DNS servers
+* `nslookup <host-name>` - DNS lookup (find ip by hostname)
+* `nslookup <ip-address>` - reverse DNS lookup (find hostname by ip)
+* `host <ip-address>` - reverse DNS lookup
+* `dig -x <ip-address>` - reverse DNS lookup
+* `/etc/hosts` - static table lookup for hostnames (`setup` package on
+Fedora) (`man hosts` - linux man pages)
+* http://packages.qa.debian.org/h/hostname.html[hostname] - display or
+set hostname
+
+[[ports]]
+Ports
+-----
+
+Ports are 16 bit. Ports below 1024 (low-numbered) can be bound to only
+by root. -
+https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml[IANA
+Service Name and Transport Protocol Port Number Registry]
+
+[[etcservices-database-services5]]
+`/etc/services` database (`services(5)`)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/etc/services` database is updated from
+http://www.iana.org/assignments/port-numbers and
+http://www.freebsd.org/cgi/cvsweb.cgi/src/etc/services
+
+* `getservent`, `getservbyname`, `getservbyport`, `setservent`,
+`endservent`, `getservent_r`, `getservbyname_r`, `getservbyport_r` from
+`<netdb.h>` - working with `/etc/services` database.
+
+[[ppp-point-to-point-protocol]]
+PPP (Point to Point Protocol)
+-----------------------------
+
+* https://tools.ietf.org/html/rfc1661
+* The PPP Multilink Protocol https://tools.ietf.org/html/rfc1990
+
+[[socks]]
+SOCKS
+-----
+
+* https://en.wikipedia.org/wiki/SOCKS
+
+[[sftp]]
+SFTP
+----
+
+* `sftp` archlinux package and tool for FTP over SSH
+
+[[rdp]]
+RDP
+---
+
+* `rdesktop` - archlinux and fedora package and tool for RDP
+
+[[vpn]]
+VPN
+---
+
+* `vpnc` - Cisco VPN3000 Concentrator, IOS and PIX
+* https://www.unix-ag.uni-kl.de/~massar/vpnc
+* `openconnect` - Cisco AnyConnect VPN Client
+* http://www.infradead.org/openconnect.html
+
+[[refs]]
+Refs
+----
+
+[[wifi]]
+wifi
+----
+
+* http://www.wi-fi.org/[WiFi Alliance]
+* https://en.wikipedia.org/wiki/Wi-Fi[WiFi on wikipedia]
+* `/etc/sysconfig/network-scripts` - some network scripts on Fedora
+
+[[networkmanager]]
+NetworkManager
+--------------
+
+* `NetworkManager` package on Fedora (provides `nmcli` command-line
+interface)
+* `nmcli connection show` - list all available connections
+* `nmcli connection up <NAME>` - activate a connection
+
+[[wpa-supplicant]]
+`wpa-supplicant`
+~~~~~~~~~~~~~~~~
+
+* `wpa-supplicant` package on Fedora (the IEEE 802.11 implementation for
+Linux)
+* `/var/log/wpa_supplicant.log` - wpa-supplicant log
+
+[[iw]]
+`iw`
+~~~~
+
+* http://wireless.kernel.org/en/users/Documentation/iw
+* https://github.com/patjak/bcwc_pcie/wiki/Get-Started
+
+[[broadcom-linux-drivers]]
+Broadcom Linux Drivers
+~~~~~~~~~~~~~~~~~~~~~~
+
+* https://wireless.wiki.kernel.org/en/users/drivers/brcm80211
+
+[[security]]
+Security
+~~~~~~~~
+
+* Wired Equivalent Privacy (WEP) - older security protocol (with flaws)
+* WiFi Protected Access I (WPA) - older security protocol (with flaws)
+* WPA2 - modern security protocol
+* https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access[WPA on wikipedia]
+* https://en.wikipedia.org/wiki/Extensible_Authentication_Protocol[Extensible
+Authentication Protocol (EAP)] - authentication protocol for WiFi
+* https://en.wikipedia.org/wiki/Protected_Extensible_Authentication_Protocol[Protected
+Extensible Authentication Protocol (PEAP)] - TLS tunnel for EAP
+* https://en.wikipedia.org/wiki/Challenge-Handshake_Authentication_Protocol[Challenge-Handshake
+Authentication Protocol (CHAP)]
+* https://en.wikipedia.org/wiki/MS-CHAP[MS-CHAP] - Microsoft version of
+CHAP
+
+[[wpa2]]
+WPA2
+----
+
+[[wpa-supplicant-1]]
+`wpa-supplicant`
+~~~~~~~~~~~~~~~~
+
+* http://hostap.epitest.fi/wpa_supplicant
+
+PEAP WPA Enterprise WiFi Network PEAP Authentication
+
+[[where-to-look-for-error-messages]]
+Where to look for error messages?
+---------------------------------
+
+[[tcp]]
+TCP
+---
+
+Reliable, stream-oriented, full-duplex connection between two sockets on
+top of IP.
+
+* Transmission Control Protocol - https://tools.ietf.org/html/rfc793
+* TCP Slow Start, Congestion Avoidance, Fast Retransmit, and Fast
+Recovery Algorithms - https://tools.ietf.org/html/rfc2001
+* The NewReno Modification to TCP's Fast Recovery Algorithm -
+https://tools.ietf.org/html/rfc6582
+* TCP Selective Acknowledgment Options (SACK) -
+https://tools.ietf.org/html/rfc2018
+
+[source,c]
+----
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+
+tcp_socket = socket(AF_INET, SOCK_STREAM, 0);
+----
+
+[[reliable]]
+Reliable
+~~~~~~~~
+
+[[stream-oriented]]
+Stream-oriented
+~~~~~~~~~~~~~~~
+
+[[full-duplex]]
+Full-duplex
+~~~~~~~~~~~
+
+[[ip---packet-routing]]
+IP - Packet routing
+-------------------
+
+* Internet Protocol, Version 6 (IPv6) Specification -
+https://tools.ietf.org/html/rfc2460
+* IP Version 6 Addressing Architecture -
+https://tools.ietf.org/html/rfc4291.txt
+* Internet Control Message Protocol (ICMPv6) for the Internet Protocol
+Version 6 (IPv6) Specification - https://tools.ietf.org/html/rfc4443
+* Internet Protocol (IPv4) - https://tools.ietf.org/html/rfc791
+* IANA - https://www.iana.org/ - organization which maintains an
+evolving web database of Internet assigned numbers.
+* Requirements for Internet Hosts -- Communication Layers -
+https://tools.ietf.org/html/rfc1122
+* https://tools.ietf.org/html/rfc1918[Address Allocation for Private
+Internets]
+* https://tools.ietf.org/html/rfc2365.txt[Administratively Scoped IP
+Multicast]
+* https://tools.ietf.org/html/rfc2553.txt[Basic Socket Interface
+Extensions for IPv6]
+* https://tools.ietf.org/html/rfc4193[Unique Local IPv6 Unicast
+Addresses]
+
+*Linux kernel contains a level 2 multicasting implementation of IPv4
+conforming to RFC 1112. It also contains an IP router including a packet
+filter.*
+
+[source,c]
+----
+int sock = socket(AF_INET, socket_type, protocol); // open internet socket
+----
+
+[[ipv4---ipv6]]
+IPv4 -> IPv6
+~~~~~~~~~~~~
+
+* IPv6 simplified the router’s task compared to IPv4.
+* IPv6 is more compatible to mobile networks than IPv4.
+* IPv6 allows for bigger payloads than what is allowed in IPv4.
+* *AS OF JUNE 2017:* IPv6 is only used by
+https://w3techs.com/technologies/details/ce-ipv6/all/all[10.3% of the
+networks] or https://www.google.com/intl/en/ipv6/statistics.html[19.19%
+of Google.com users], while IPv4 is still in use by the rest. Adoption
+varies by country, e.g. U.S. has ~ 35% adoption while Russia has ~ 1%.
+
+One can test if they are using IPv6 by connecting to
+http://ipv6test.google.com/ from their device.
+
+[[networks-database-etcnetworks]]
+Networks database `/etc/networks`
+---------------------------------
+
+Used by `route(8)` and `netstat(8)`
+
+[[functions-from-netdb.h]]
+Functions from `<netdb.h>`
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* getnetent
+* getnetbyname
+* getnetbyaddr
+* setnetent
+* endnetent
+* getnetent_r
+* getnetbyname_r
+* getnetbyaddr_r
+
+[[ethernet]]
+Ethernet
+--------
+
+* An Ethernet Address Resolution Protocol -
+https://tools.ietf.org/html/rfc826
+
+[[tools]]
+Tools
+-----
+
+https://wiki.linuxfoundation.org/networking/start
+
+[[iproute2]]
+`iproute2`
+~~~~~~~~~~
+
+* http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
+* https://wiki.linuxfoundation.org/networking/iproute2
+* `ip` - IP configuration
+* `tc` - traffic control
+
+Browse at
+https://git.kernel.org/pub/scm/linux/kernel/git/shemminger/iproute2.git/tree/
+or clone at:
+
+....
+$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/shemminger/iproute2.git
+....
+
+* Check what ports are being listened on.
+
+[[ifupdown]]
+`ifupdown`
+~~~~~~~~~~
+
+https://packages.debian.org/jessie/ifupdown
+
+[[iwconfig-not-on-debian]]
+`iwconfig` (not on debian?)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[[iputils---httpwww.skbuff.netiputils]]
+`iputils` - http://www.skbuff.net/iputils/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* `ping` (`iputils-ping` package on debian)
+* `ping6` (`iputils-ping` package on debian)
+
+[[traceroute]]
+http://traceroute.sourceforge.net[traceroute]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* `traceroute <ip-address>`
+
+[[dnsutils]]
+`dnsutils`
+~~~~~~~~~~
+
+* `dig`
+* `dnslookup` (older way of doing things)
+* `nsupdate` - perform dynamic updates (See RFC2136)
+
+[[whois]]
+`whois`
+~~~~~~~
+
+* `whois`
+
+[[routing-tables]]
+Routing Tables
+--------------
+
+There is a routing table in kernel.
