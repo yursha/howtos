@@ -1,0 +1,55 @@
+# Set the goal and the next step.
+- Ask "How important is that decision?". Allocate deadline to decide accordingly.
+- Get clear on what you really want.
+- Ask "Why am I really doing this?"
+- Ask "Who am I really doing this for?"
+- Always focus on one next step.
+- Train to make decisions fast.
+- Where possible, establishing rules for yourself (automate decisions). 
+
+# Set criteria
+- Be a satisficer, not a maximizer. Don't worry about finding the "best." Find the one which "works".
+- There is no 'best choice', all depends on context.
+- Set choice criteria. Less is more.
+- Eliminate choices by setting standards. 
+- Don't be fooled by the number of available choices. All of them do roughly the same thing. Choose the cheapest which meets your standards.
+- If a complex choice - fill a spreadsheet with criteria, weighs and scores. Or simply pros and cons.
+
+# Explore options
+- Limit the amount of information you take in. Read ONLY one top Google result for your question. ONLY if it is not clarifying read the next one. Document the findings. Try not to follow links. Quora is better than a dedicated article since it gives multiple perspectives. Again read the top Quora answer first.
+- If you don't have own experience, trust other people's experiences. Experience is important. We are not all that different.
+- Consider aren't you missing an option (e.g. may be no choice/action is a valid choice)
+- Seek advice from a friend or a family member. Talk with a neutral person (a therapist).
+- 5 why's
+- Play devil's advocate.
+- Think about the future.
+- Ask friends how they would approach such a decision.
+- Consider the best-case scenario.
+
+# Backup plans
+- Think how difficult will be to reverse this decision. How can that be alleviated.
+- Ask yourself what the worst-case scenario is if you pick wrong. What is it's likelyhood?
+- Ask "What am I afraid of?".
+- Have a backup plan. People who are in leadership positions are expected to always have a backup plan because there is always a chance that something might go wrong. Your ability to adapt to unexpected circumstances can directly affect your ability to succeed with your decisions.
+- Can I cope with the fall-out?
+
+# Turn emotions off
+- Deep breath
+- Pretend you're advising a friend
+- Cultivate an “abundance mentality”. I am Bound to be successful. Where there’s one opportunity, a dozen more await.
+- Resist FOMO (fear of missing out)
+- Don't follow others blindly. Ask yourself: “Is this my exit?”
+- Embrace your fears. Sometimes you must identify what you fear and then proceed in that direction.
+
+# Trust gut (reptile brain)
+- Rapid cognition. Imagine there is an emergency and you need to make a decision in a minute. What are the minimal factors you will consider.
+- Imagine that you're living with that decision.
+- don't make a choice unless you are happy with it
+- Try not to rush. People tend to make poorer choices when they're in a bad mood or under a lot of stress. When facing a complex decision, use your conscious brain to gather the information you need, and then take a break. Go for a walk. Spend a half hour meditating. Take a nap. The idea is to give your unconscious mind some time to do its work. The decision you make afterward is more likely to be the right (or at least a perfectly acceptable) one. 
+- Creative people might not know it, but their ideas, decisions and solutions come at times when they are not thinking or thinking slowly. Which means creative and intelligent solutions or ideas come from a thoughtless state of consciousness. Which is why people meditate.
+- Make a decision which is congruent with your values.
+- Meditate and listen to your body (physical reactions). We good decisions body should stay calm, with bad decisions - tense.
+- Analyze tone of your different voices. Whichever is more convincing emotionally?
+- If I don’t do this now, will I regret it?
+- What does my heart say?
+- Will I like myself after this decision?
