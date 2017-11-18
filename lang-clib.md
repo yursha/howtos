@@ -1,2 +1,0 @@
-- http://www.gnu.org/software/libc/
-- http://www.gnu.org/software/libc/manual/html_node
