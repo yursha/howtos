@@ -4,6 +4,13 @@
 
 toc::[]
 
+
+[[modules]]
+modules
+-------
+
+Ruby has built-in modules.
+
 [[printing]]
 printing
 --------
@@ -11,6 +18,35 @@ printing
 [source, ruby]
 ....
 puts "Hello, world!"
+
+# with string interpolation
+name = "Maria"
+puts "Hello, #{name}!"
+....
+
+[[methods]]
+methods
+-------
+
+[source, ruby]
+....
+def hi
+  puts "Hello World!"
+end
+
+def hello(name)
+  puts "Hello #{name}!"
+end
+
+def bonjur(name = "World")
+  puts "Hello #{name.capitalize}!"
+end
+
+hi             # Hello World!
+hello "Maria"  # Hello Maria!
+bonjur         # Hello World!
+bonjur "Maria" # Hello Maria!
+
 ....
 
 [[format-conversion]]
