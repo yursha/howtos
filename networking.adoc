@@ -26,7 +26,18 @@ Add a line to `/etc/rc.local` to accept all inbound traffic
 /sbin/iptables -P INPUT ACCEPT
 ```
 
-Reading official instructions if it doesn't work <https://github.com/dnschneid/crouton/wiki/Running-servers-in-crouton>.
+[[telnet]]
+telnet
+------
+- `telnet host port` - test if a given host listens on a given port (better than ping which just checks the host availability)
+
+[[ping]]
+ping
+----
+
+part of `iputils` package - https://github.com/iputils/iputils
+
+- `ping` - sends a series of ICMP `ECHO_REQUEST` packets to a specified host to discover whether it is alive and receiving network traffic. For security purposes (why?) port used by ping is usually disabled on sensitive machines.
 
 [[socket-system-calls]]
 Socket system calls
