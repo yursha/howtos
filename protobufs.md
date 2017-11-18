@@ -1,1 +1,0 @@
-- Google Protobufs is the way to go
