@@ -1,3 +1,0 @@
-- http://www.nltk.org/api/nltk.stem.html
-- http://snowball.tartarus.org/algorithms/english/stemmer.html
-- https://github.com/snowballstem
