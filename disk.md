@@ -22,7 +22,7 @@
 - Repairing-without-formatting a Read-Only/writeprotected USB drive
 
 # Concepts
-- *Disk striping* is the process of dividing a body of data into blocks and spreading the data blocks across multiple storage devices, such as hard disks or solid-state drives (SSDs). A stripe consists of the data divided across the set of hard disks or SSDs, and a striped unit, or strip, that refers to the data slice on an individual drive. [TechTarget Article](http://searchstorage.techtarget.com/definition/disk-striping)
+- *Disk striping* is the process of dividing a body of data into blocks and spreading the data blocks across multiple storage devices, such as hard disks or solid-state drives (SSDs). A stripe consists of the data divided across the set of hard disks or SSDs, and a striped unit, or strip, that refers to the data slice on an individual drive.
 - IOPS (input/output operations per second)
 
 # util-linux
