@@ -33,7 +33,7 @@ puts "Hello, #{name}!"
 Naming conventions
 ------------------
 
-Ruby enforces some naming conventions. If an identifier starts with a capital letter, it is a constant. If it starts with a dollar sign `$`, it is a global variable. If it starts with `@`, it is an instance variable. If it starts with `@@`, it is a class variable.
+Ruby enforces some naming conventions. If an identifier starts with a capital letter, it is a constant (constants can still be modified producing a warning). If it starts with a dollar sign `$`, it is a global variable. If it starts with `@`, it is an instance variable. If it starts with `@@`, it is a class variable.
 
 
 [[control-flow]]
