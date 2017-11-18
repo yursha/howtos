@@ -1,1 +1,23 @@
+= Ruby
+:toc:
+:toc-placement!:
 
+toc::[]
+
+[[offline-doc]]
+Offline Documentation
+----------------------
+
+format convertions
+....
+to_s
+to_i
+to_a
+....
+
+sorting arrays
+....
+ticket = [34, 32, 43]
+ticket.sort! // ticket == [32, 34, 43]
+             // exclamation mark means sort in _in place_
+....
