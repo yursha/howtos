@@ -71,7 +71,7 @@ Internalized strings are called *symbols*.
 Whenever you use a new String, Ruby allocates memory for it.
 
 [[methods]]
-methods
+Methods
 -------
 
 [source, ruby]
@@ -92,6 +92,20 @@ hi             # Hello World!
 hello "Maria"  # Hello Maria!
 bonjur         # Hello World!
 bonjur "Maria" # Hello Maria!
+....
+
+[[keyword-args]]
+Keyword arguments
+~~~~~~~~~~~~~~~~~
+
+[source,ruby]
+....
+def deliver(from: "A", to: nil, via: "mail")
+  "Sending from #{from} to #{to} via #{via}."
+end
+
+deliver(to: "B") # => "Sending from A to B via mail."
+deliver(via: "Pony Express", from: "B", to: "A") # => "Sending from B to A via Pony Express."
 ....
 
 [[classes]]
