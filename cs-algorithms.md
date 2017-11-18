@@ -1,8 +1,3 @@
-- https://github.com/parkjs814/AlgorithmVisualizer
-
-# Data structures
-- [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter)
-
 ## Implementations
 - Array
     + Dynamic array
@@ -47,7 +42,7 @@ Tree order is one of its traversal orders
 
 A tree may have an associated **node selection scheme**:
 - file path, shell wildcard expansion, POSIX `find`
-- XPath - http://www.w3.org/TR/xpath/
+- XPath
 - dot-notation (INI files, java bean property path, view states hierarchy in angular ui-router, java package name)
 - URL/URI/URN (http, udp, git, ssh, ftp, etc.)
 
@@ -59,7 +54,6 @@ Most of the node selection schemes deal with the following **concepts**:
 - Pattern matching
 
 # Math
-- median - R7 Algorithm (https://en.wikipedia.org/wiki/Quantile#Quantiles_of_a_population)
 
 # Square toot
 - Newton's method
