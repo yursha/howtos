@@ -22,4 +22,6 @@ sorting arrays
 ticket = [34, 32, 43]
 ticket.sort! // ticket == [32, 34, 43]
              // exclamation mark means sort in _in place_
+             
+ticket.reverse! // ticket = [43, 34, 32]
 ....
