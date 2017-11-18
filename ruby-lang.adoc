@@ -65,6 +65,7 @@ Internalized strings are called *symbols*.
 ....
 :george  # symbol
 "george" # string
+....
 
 Whenever you use a new String, Ruby allocates memory for it.
 
