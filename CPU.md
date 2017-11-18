@@ -2,7 +2,7 @@
 
 An interrupt is a signal emitted by hardware or software to the CPU to interrupt the currently executing thread. 
 
-## CPUT response flow
+## CPU response flow
 - halt thread execution
 - save thread state
 - execute an interrupt handler
