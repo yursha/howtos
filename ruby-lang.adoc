@@ -4,16 +4,18 @@
 
 toc::[]
 
-[[offline-doc]]
-Offline Documentation
-----------------------
-
+[[format-conversion]]
 format convertions
+------------------
 ....
 to_s
 to_i
 to_a
 ....
+
+[[arrays]]
+arrays
+------
 
 sorting arrays
 ....
