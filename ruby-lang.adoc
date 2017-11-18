@@ -46,8 +46,48 @@ hi             # Hello World!
 hello "Maria"  # Hello Maria!
 bonjur         # Hello World!
 bonjur "Maria" # Hello Maria!
-
 ....
+
+[[classes]]
+classes
+-------
+
+In Ruby, you can open a class up again and modify it.
+The changes will be present in any new objects you create and in existing objects of that class.
+
+[source,ruby]
+....
+class Greeter
+  def initialize(name = "World", greeting = "Hi")
+    @name = name                # private
+    attr_accessor :greeting     # public
+  end
+  def say_hi
+    puts "#{greeting} #{@name}!"
+  end
+  def say_bye
+    puts "Bye #{@name}, come back soon."
+  end
+end
+
+greeter = Greeter.new("Maria")
+greeter.say_hi               # Hi Maria!
+greeter.say_bye              # Bye Maria, come back soon.
+greeter.greeting = "Bonjur"
+greeter.say_hi               # Bonjur Maria!
+....
+
+[[reflection]]
+Reflection
+----------
+
+[source,ruby]
+....
+greeter.instance_methods        # including inherited
+greeter.instance_methods(falst) # excluding inherited
+greeter.responds_to?("say_hi")  # true
+....
+
 
 [[format-conversion]]
 format convertions
