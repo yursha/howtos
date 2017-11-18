@@ -4,6 +4,15 @@
 
 toc::[]
 
+[[printing]]
+printing
+--------
+
+[source, ruby]
+....
+puts "Hello, world!"
+....
+
 [[format-conversion]]
 format convertions
 ------------------
