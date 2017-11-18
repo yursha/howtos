@@ -109,7 +109,7 @@ deliver(via: "Pony Express", from: "B", to: "A") # => "Sending from B to A via P
 ....
 
 [[classes]]
-classes
+Classes
 -------
 
 [source,ruby]
@@ -163,6 +163,31 @@ end
 
 greeter.bye = "Chao"
 greeter.say_bye # Chao Maria, come back soon.
+....
+
+[[per-object-methods]]
+Per object methods
+~~~~~~~~~~~~~~~~~~
+
+[source,ruby]
+....
+class Car
+  def inspect
+    "Cheap car"
+  end
+end
+
+porsche = Car.new
+porsche.inspect # => Cheap car
+def porsche.inspect
+  "Expensive car"
+end
+
+porsche.inspect # => Expensive car
+
+# Other objects are not affected
+other_car = Car.new
+other_car.inspect # => Cheap car
 ....
 
 [source,ruby]
