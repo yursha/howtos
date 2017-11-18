@@ -192,7 +192,7 @@ other_car.inspect # => Cheap car
 
 [[missing-methods]]
 Missing methods
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 Ruby doesn’t give up if it can’t find a method that responds to a particular message. It calls the `method_missing` method with the name of the method it couldn’t find and the arguments. By default, method_missing raises a `NameError` exception, but you can redefine it to better fit your application, and many libraries do.
 
