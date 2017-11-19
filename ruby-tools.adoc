@@ -1,2 +1,3 @@
 - `irb` - REPL
 - `rake` - build tool https://github.com/ruby/rake
+- `gem` - package manager https://rubygems.org
