@@ -1,2 +1,2 @@
 - `irb` - REPL
-- `rake` - build tool <https://github.com/ruby/rake>
+- `rake` - build tool https://github.com/ruby/rake
