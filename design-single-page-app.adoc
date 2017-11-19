@@ -1,0 +1,29 @@
+= Single Page Application
+:toc:
+:toc-placement!:
+
+toc::[]
+
+Single-Page Applications (SPAs) are Web apps that load a single HTML page and dynamically update that page as the user interacts with the app using AJAX and HTML5.
+
+In a traditional Web app, every time the app calls the server, the server renders a new HTML page. This triggers a page refresh in the browser.
+
+In an SPA, after the first page loads, all interaction with the server happens through AJAX calls. These AJAX calls return data—not markup—usually in JSON format. The app uses the JSON data to update the page dynamically, without reloading the page.
+
+image:img/spa.png[SPA Lifecycle]
+
+**Fixed** websites have a set width, and resizing the browser or viewing it on different devices won’t affect on the way the website looks. This can require horizontal scrolling and a site that doesn’t look good on tablets or smartphones.
+
+**Fluid** websites are built using percentages for widths. As a result, columns are relative to one another and the browser, allowing it to scale up and down fluidly.
+
+**Adaptive** websites introduce media queries to target specific device sizes, like smaller monitors, tablets, and mobile.
+
+**Responsive** websites are built on a fluid grid and use media queries to control the design and its content as it scales down or up with the browser or device.
+
+MVC (Model-View-Controller)
+
+MVVM (Model-View-View-Model)
+
+Data binding
+
+Routing
