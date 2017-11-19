@@ -1,6 +1,12 @@
+= Data Structures
+:toc:
+:toc-placement!:
+
+toc::[]
+
 [[look-up]]
-Look-up data structures
------------------------
+Look-up
+-------
 
 [[unordered]]
 Unordered
