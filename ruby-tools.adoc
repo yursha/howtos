@@ -1,3 +1,3 @@
 - `irb` - REPL
 - `rake` - `make`-like build tool https://github.com/ruby/rake
-- `gem` - package manager https://rubygems.org
+- `gem` - package manager https://github.com/rubygems/rubygems
