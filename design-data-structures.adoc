@@ -1,0 +1,18 @@
+[[look-up]]
+Look-up data structures
+-----------------------
+
+[[unordered]]
+Unordered
+~~~~~~~~~
+
+- Hash table
+- Bloom filter
+
+[[ordered]]
+Ordered
+~~~~~~~
+
+- Binary search tree
+- B-tree
+- Trie
