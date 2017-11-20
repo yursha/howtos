@@ -27,7 +27,7 @@ Advantages
 
 [[disadvantages]]
 Disadvantages
-----------
+-------------
 
 - Initial page load time is longer (5x in Twitter's case) because JS (client) is thicker.
 - SEO.
