@@ -12,6 +12,33 @@ In an SPA, after the first page loads, all interaction with the server happens t
 
 image:img/spa.png[SPA Lifecycle]
 
+- MVC (Model-View-Controller)
+- MVVM (Model-View-ViewModel)
+- Data binding
+- Routing
+
+[[advantages]]
+Advantages
+----------
+
+- Applications don't have the jarring effect of reloading and re-rendering the page.
+- Full separation of presentation and service layers allows to build multiple clients (web, mobile) on top of a shared service layer.
+- Faster navigation as no page loads.
+
+[[disadvantages]]
+Disadvantages
+----------
+
+- Initial page load time is longer (5x in Twitter's case) because JS (client) is thicker.
+- SEO.
+- Google Analytics integration.
+- Browser history maintenance is more difficult (back and forward browser buttons). Scroll position persistance doesn't work.
+- Memory leaks are more severe because a page lives longer.
+- With hashbang URLs, the browser needs to download an HTML page, download and execute some JavaScript, recognize the hashbang path (which is only visible to the browser), then fetch and render the content for that URL. By removing the need to handle routing on the client, we remove many of these steps and reduce the time it takes.
+
+Twitter, Lifehacker and Delicious rolled back from SPA to MPA.
+
+
 **Fixed** websites have a set width, and resizing the browser or viewing it on different devices won’t affect on the way the website looks. This can require horizontal scrolling and a site that doesn’t look good on tablets or smartphones.
 
 **Fluid** websites are built using percentages for widths. As a result, columns are relative to one another and the browser, allowing it to scale up and down fluidly.
@@ -20,10 +47,3 @@ image:img/spa.png[SPA Lifecycle]
 
 **Responsive** websites are built on a fluid grid and use media queries to control the design and its content as it scales down or up with the browser or device.
 
-MVC (Model-View-Controller)
-
-MVVM (Model-View-View-Model)
-
-Data binding
-
-Routing
