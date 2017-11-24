@@ -34,8 +34,6 @@ Reload config
 Normal mode
 -----------
 
-* `~` - change case (tilde operator)
-
 [[movement]]
 Movement
 ~~~~~~~~
@@ -54,25 +52,9 @@ Movement
 in a line)
 * `gg,` `2G`, `G` - jump to first, second, last line
 
-
-[[insert-unicode-char]]
-Type a Unicode character
-------------------------
-
-To insert a check mark `✓` (U+2713) type `C-v-u2713`.
-
-[[read-from-stdin]]
-Read from STDIN
----------------
-
-* `:r !date` - append output of system `date` command to the current
-buffer
-* `shell> date | vim -`
-* `shell> vim <(ls -la)`
-
 [[scroll]]
 Scroll
-------
+~~~~~~
 
 * `2%` - go to 2% of a file
 * `CTRL+b` - scroll up a page
@@ -95,6 +77,36 @@ lines to pad the current line when scrolling)
 file, [ - start of last change, ] - end of last change
 * `Ctrl+o`, `Ctrl+i` - jump to previous/next cursor position
 * `Ctrl+r;Ctrl+w` (or ) - copy a word into command line
+
+[[actions]]
+Actions
+~~~~~~~
+* `~` - change case (tilde operator)
+* `J` - join lines
+* `d-motion`, `dd`
+* `c-motion`, `cc`
+* `r-motion`
+* `4p`
+* `y-motion`, `yy`
+* `u`,`U`,`CTRL-r` - undoing
+* `R` - replace mode
+
+[[insert-mode]]
+Insert Mode
+-----------
+
+* `i,I,a,A,o,O` - enter from Normal mode
+* `ESC` - leave mode
+*  `C-v-u2713` - insert a check mark `✓` (U+2713)
+
+[[read-from-stdin]]
+Read from STDIN
+---------------
+
+* `:r !date` - append output of system `date` command to the current
+buffer
+* `shell> date | vim -`
+* `shell> vim <(ls -la)`
 
 [[search-and-replace]]
 Search and replace
@@ -171,23 +183,6 @@ Regex
 * `^` - start of line
 * `$` - end of line
 * `.` - any char
-
-[[actions]]
-Actions
--------
-
-* J
-* d-motion, dd
-* c-motion, cc
-* r-motion
-* 4p
-* y-motion, yy
-* "__y, "__yy - yank to clipboard (only works in versions of vim that
-include clipboard support)
-* "*p - paste from clipboard
-* u,U,CTRL-r - undoing
-* R - replace mode
-* ZZ,w,q<!>,e<!> - working with buffers
 
 [[text-objects]]
 Text Objects
@@ -293,13 +288,6 @@ Visual mode
 * v - char visual mode (o - jump to other side of selection)
 * V - line visual mode
 * CTRL-v - col visual mode (O - jump to additional 2 corners)
-
-[[insert-mode]]
-Insert Mode
------------
-
-* i,I,a,A,o,O - enter mode
-*  or - leave mode
 
 [[basic-commands]]
 Basic commands
