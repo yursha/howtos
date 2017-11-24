@@ -66,7 +66,7 @@ lines to pad the current line when scrolling)
 * `CTRL+0` - jump forward
 * `CTRL+I` - jump backward
 * `:jumps`
-* ``` - jump back and force between 2 positions
+* ```` - jump back and force between 2 positions
 * `set` 26 marks with `ma`-`mz` and jump to them with `a-`z (marked col) or 'a-'z (first col) _Doesn't jump across buffers_
 * `:marks` (' - position before jump, " - position when last editing a
 file, [ - start of last change, ] - end of last change
