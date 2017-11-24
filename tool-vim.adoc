@@ -80,7 +80,7 @@ file, [ - start of last change, ] - end of last change
 
 [[indentation]]
 Indentation
------------
+~~~~~~~~~~~
 
 * `>` and `<` commands
 * `>G` - increase indent from current line to end of file
