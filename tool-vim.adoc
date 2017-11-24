@@ -3,28 +3,28 @@
 :toc-placement!:
 
 toc::[]
-
 [[getting-help]]
 Getting help
 ------------
 
-* `x`, `CTRL-R` - normal mode command
-* `v_u` - visual mode command
-* `i_<Esc>` - insert mode command
-* `:quit` - command-line command
-* `c_<Del>` - command-line editing
-* `-r` - command-line argument for vim
-* `'textwidth'` - option
-* `/[` - regex
-* `E37` - errors - `subject()` - functions - `+subject` - compile-time
-feature
+* `help x`, `help CTRL-R` - normal mode command
+* `help v_u` - visual mode command
+* `help i_<Esc>` - insert mode command
+* `help :quit` - command-line command
+* `help c_<Del>` - command-line editing
+* `help -r` - command-line argument for vim
+* `help 'textwidth'` - option
+* `help /[` - regex
+* `help E37` - errors
+* `help subject()` - functions
+* `help +subject` - compile-time feature
 
 
 [[reload-config]]
 Reload config
 -------------
 
-`:so ~/.vimrc`
+`:source ~/.vimrc`
 
 [[insert-unicode-char]]
 Type a Unicode character
@@ -32,29 +32,18 @@ Type a Unicode character
 
 To insert a check mark `✓` (U+2713) type `C-v-u2713`.
 
-[[normal-mode]]
-Normal mode
------------
+[[normal-mode-commands]]
+Normal mode commands
+--------------------
 
 * `~` - change case (tilde operator)
 
-[[capture-output-of-an-external-command]]
-Capture output of an external command
--------------------------------------
-
-* http://vim.wikia.com/wiki/Append_output_of_an_external_command
-
-[[from-inside-vim]]
-From inside vim
-~~~~~~~~~~~~~~~
+[[read-from-stdin]]
+Read from STDIN
+---------------
 
 * `:r !date` - append output of system `date` command to the current
 buffer
-
-[[from-outside-vim]]
-From outside vim
-~~~~~~~~~~~~~~~~
-
 * `date | vim -`
 * `vim <(ls -la)`
 
