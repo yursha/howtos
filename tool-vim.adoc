@@ -30,6 +30,16 @@ Reload config
 
 `:source ~/.vimrc`
 
+[[read-from-stdin]]
+Read from STDIN
+~~~~~~~~~~~~~~~
+
+* `:r !date` - append output of system `date` command to the current
+buffer
+* `shell> date | vim -`
+* `shell> vim <(ls -la)`
+
+
 [[normal-mode]]
 Normal mode
 -----------
@@ -119,46 +129,38 @@ Visual mode
 * `V` - line visual mode
 * `CTRL-v` - col visual mode (`O` - jump to additional 2 corners)
 
-[[read-from-stdin]]
-Read from STDIN
----------------
-
-* `:r !date` - append output of system `date` command to the current
-buffer
-* `shell> date | vim -`
-* `shell> vim <(ls -la)`
-
-[[search-and-replace]]
-Search and replace
-------------------
+[[search]]
+Search
+------
 
 ....
 " Clear last search highlighting
 nnoremap <Space> :noh<cr>
 ....
 
-Empty search will perform the last search. It works across `/`, `:s`
-and `:g`. So you can search with `/` and then substitute with `:s` by
-not specifying the search pattern.
-
-* Use `Ctrl-L` to insert next char in the match or `Ctrl-r,Ctrl-w` to
-complete a word match.
-* `/` - start search forward from current line. Navigate thru search
-history with arrow keys (filtering works).
-* `4*` - search *word* under the cursor as a Nth word
-* `g*`, `g#` - search *word* under the cursor as a match
-* `4n`, `4N` - N-th match after/before
-* `ggn`, `GN` - first / last match
-* `:%s/\n//gc` - replace newlines
-* `:g/pattern` - show all lines matching the pattern
-* `:g/pattern/d` - delete all lines matching a pattern (e.g. `:g/^$/d` -
-deletes all empty lines)
-* `:g/pattern/command` - execute a command on lines which match a regex
-* `/pattern/e` - search-offset - position the cursor at the end of the
+* `/` - search pattern forwards
+* `?` - search pattern backwards
+* `*` - search word current word forwards
+* `/<pattern>/e` - search-offset - position the cursor at the end of the
 match
 * `/\%d65`, `/\%x41`, `/\%u2013`, `/\%d8211` - Searching for chars by
 their code value.
 * `/the\C`, `/the\c` - force pattern case-(in)sensitivity
+* `:g/pattern` - show all lines matching the pattern
+
+[[replace]]
+Replace
+~~~~~~~
+
+* `:%s/\n//gc` - replace newlines
+
+[[delete]]
+Delete
+~~~~~~
+
+* `:g/pattern/d` - delete all lines matching a pattern (e.g. `:g/^$/d` -
+deletes all empty lines)
+* `:g/pattern/command` - execute a command on lines which match a regex
 
 [[Grep]]
 Grep
