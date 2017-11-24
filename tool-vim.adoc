@@ -51,28 +51,27 @@ buffer
 File scrolling
 --------------
 
-* 2% - go to 2% of a file
-* CTRL+b - scroll up a page
-* CTRL+f - scroll down a page
-* CTRL+u - scroll up half page
-* CTRL+d - scroll down half page
-* CTRL+y - scroll up a line
-* CTRL+e - scroll down a line
-* zz - scroll current line into center (__scrolloff__ option - number of
+* `2%` - go to 2% of a file
+* `CTRL+b` - scroll up a page
+* `CTRL+f` - scroll down a page
+* `CTRL+u` - scroll up half page
+* `CTRL+d` - scroll down half page
+* `CTRL+y` - scroll up a line
+* `CTRL+e` - scroll down a line
+* `zz` - scroll current line into center (__scrolloff__ option - number of
 lines to pad the current line when scrolling)
-* zt - scroll current line to the top
-* zb - scroll current line to the bottom
-* H/M/L - jump to first (home), middle, last currently seen line
-* CTRL+0 - jump forward
-* CTRL+I - jump backward
+* `zt` - scroll current line to the top
+* `zb` - scroll current line to the bottom
+* `H/M/L` - jump to first (home), middle, last currently seen line
+* `CTRL+0` - jump forward
+* `CTRL+I` - jump backward
 * `:jumps`
-* `` - jump back and force between 2 positions
-* set 26 marks with `ma`-`mz` and jump to them with `a-`z (marked col)
-or 'a-'z (first col) _Doesn't jump across buffers_
+* ``` - jump back and force between 2 positions
+* `set` 26 marks with `ma`-`mz` and jump to them with `a-`z (marked col) or 'a-'z (first col) _Doesn't jump across buffers_
 * `:marks` (' - position before jump, " - position when last editing a
 file, [ - start of last change, ] - end of last change
-* Ctrl+o, Ctrl+i - jump to previous/next cursor position
-* Ctrl+r;Ctrl+w (or ) - copy a word into command line
+* `Ctrl+o`, Ctrl+i - jump to previous/next cursor position
+* `Ctrl+r;Ctrl+w` (or ) - copy a word into command line
 
 [[search-and-replace]]
 Search and replace
