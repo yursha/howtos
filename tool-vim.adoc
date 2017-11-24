@@ -19,6 +19,29 @@ Getting help
 * `help subject()` - functions
 * `help +subject` - compile-time feature
 
+[[normal-mode]]
+Normal mode
+-----------
+
+* `~` - change case (tilde operator)
+
+[[movement]]
+Movement
+~~~~~~~~
+
+* `0` - first char in a line
+* `^` - first non-whitespace char in a line
+* `w` - word start forwards
+* `b` - word start backwards
+* `e` - word end forwards
+* `ge` - word end backwards
+* `W` - white-space separated word start forwards
+* `B` - white-space separated word start backwards
+* `E` - white-space separated word end forwards
+* `gE` - white-space separated word end backwards
+* `%` - move to matching (),[],\{} or _matchpairs_ option (or find first
+in a line)
+* `gg,` `2G`, `G` - jump to first, second, last line
 
 [[reload-config]]
 Reload config
@@ -31,12 +54,6 @@ Type a Unicode character
 ------------------------
 
 To insert a check mark `✓` (U+2713) type `C-v-u2713`.
-
-[[normal-mode-commands]]
-Normal mode commands
---------------------
-
-* `~` - change case (tilde operator)
 
 [[read-from-stdin]]
 Read from STDIN
@@ -296,24 +313,6 @@ Shortcuts
 * `x` = `dl`
 * `c<mov>` = `d<mov>i`
 * `dd` = `S<ESC>J`
-
-[[movement]]
-Movement
---------
-
-* 0 - first char in a line
-* w - word start forwards
-* b - word start backwards
-* e - word end forwards
-* ge - word end backwards
-* W - white-space separated word start forwards
-* B - white-space separated word start backwards
-* E - white-space separated word end forwards
-* gE - white-space separated word end backwards
-* % - move to matching (),[],\{} or _matchpairs_ option (or find first
-in a line)
-* gg, 2G, G - jump to first, 2, last line
-* matchpairs
 
 [[repetitions]]
 Repetitions
