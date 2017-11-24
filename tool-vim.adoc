@@ -133,9 +133,11 @@ Visual mode
 Search
 ------
 
-- `/` vs `?` - search direction
-- character and line offsets
-- `/` vs `*` - choose to search pattern or current word
+`help /`
+
+- `/` vs `?`, `*` vs `#` - search forwards or backwards
+- `/<pattern>/e` - character and line offsets
+- `/` vs `*`, `?` vs `#` - search for pattern or current word
 - search character by unicode value
 - `/<pattern>\c` vs `/<pattern>\C` - toggle case sensitivity
 * `:g/pattern` - show all lines matching the pattern
