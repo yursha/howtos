@@ -77,6 +77,10 @@ file, [ - start of last change, ] - end of last change
 Search and replace
 ------------------
 
+Empty search will perform the last search. It works across `/`, `:s`
+and `:g`. So you can search with `/` and then substitute with `:s` by
+not specifying the search pattern.
+
 * Use `Ctrl-L` to insert next char in the match or `Ctrl-r,Ctrl-w` to
 complete a word match.
 * `/` - start search forward from current line. Navigate thru search
@@ -166,70 +170,35 @@ Text Objects
 * as - a sentence
 * is - inner sentence
 
-[[commands]]
-Commands
---------
-
-* `:` - navigate thru command history
-
-[[gotchas]]
-Gotchas
--------
+[[formatting]]
+Formatting
+----------
 
 * **Line terminator vs line separator confusion**. Vim automatically
 adds a newline at the end of each file it edits. To prevent this
 behaviour for file open in binary mode (`vim -b path/to/file`) we should
 disable `eol` boolean configuration variable.
 
-[[plugin-manager-for-vim]]
-Plugin Manager for Vim
-~~~~~~~~~~~~~~~~~~~~~~
-
-* https://github.com/VundleVim/Vundle.vim[Vundle]
-* `iskeyword` - defines what a word is
+[[shelling-out]]
+Shelling out
+------------
 * `!rm %` - remove current file from disk
-* `bd` - remove current buffer from memory
 
-[[examples]]
-Examples
-^^^^^^^^
+[[version-history]]
+Version history
+---------------
 
-* `:%s/^\(\s*\)incrementSuspects(\(.\{-}\),.*"\(.*\)");$/\0\r\1table.error("\3", \2);/g`
-Find all calls to `incrementSuspects`, remember the indentation, first
-and last parameters. Add a new line preserving the indentation with a
-call to `table.error` and remembered parameters.
+See differences between the original file and the current buffer.
 
-[[gotchas-1]]
-Gotchas
-^^^^^^^
-
-* Empty search will perform the last search. It works across `/`, `:s`
-and `:g`. So you can search with `/` and then substitute with `:s` by
-not specifying the search pattern.
-
-[[compare]]
-Compare
-~~~~~~~
-
-* See differences between the original file and the current buffer.
-+
 ....
 :w !diff % -
 ....
 
-[[commands---range-substitutepatternstringcgii---gsd-delete-lines-from-65-to-126-if-cursor-is-on-line-65---d126g---65126d]]
-Commands - `:range s[ubstitute]/pattern/string/cgiI` - `:g/^\s*$/d` ##
-Delete lines from 65 to 126 if cursor is on line 65 - `d126G` -
-`65,126d`
-------------------------------------------------------------------------------------------------------------------------------------------------
-
-* `:.,126d`
-* `:,126d`
-
 [[buffers]]
 Buffers
-~~~~~~~
+-------
 
+* `bd` - remove current buffer from memory
 * `:ls` or `:ls!` - list in memory buffers (`:buffers`)
 * `:f` - see info about current buffer
 * `:b2` - swith to second buffer
@@ -248,12 +217,11 @@ exists then read from it)
 filepath
 * `:bufdo %s/pattern/replace/ge | update` - search and replace in all
 open buffers.
-* http://vim.wikia.com/wiki/Easier_buffer_switching
 * `vim $(find ...)` - open multiple files
 
 [[argument-list]]
 Argument list
-~~~~~~~~~~~~~
+-------------
 
 * `:args **` - open all files in cwd recursively (including directory
 files)
@@ -261,7 +229,7 @@ files)
 
 [[copypasting-from-system-clipboard]]
 Copypasting from system clipboard
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 
 * `:set paste`
 
@@ -284,38 +252,9 @@ Management
 * `:options`
 * `:help local-additions`
 
-[[snippets]]
-Snippets
---------
-
-* http://www.vim.org/scripts/script.php?script_id=1318[snippetsEmu vim
-plugin]
-* http://www.vim.org/scripts/script.php?script_id=2540[snipMate vim
-plugin]
-* http://stackoverflow.com/questions/15334/how-to-create-short-snippets-in-vim
-* https://github.com/scrooloose/snipmate-snippets
-* http://www.ibm.com/developerworks/library/l-vim-script-1/
-* http://stackoverflow.com/questions/14954095/adding-vim-snippets
-* https://github.com/honza/vim-snippets
-
-Michael Sanders - http://www.vim.org/account/profile.php?user_id=16544 -
-https://github.com/msanders/snipmate.vim
-
-* https://github.com/jarijokinen/snipmate.vim (Fork with toUpperCase
-Functionality)
-
 [[autocompletion]]
 Autocompletion
 --------------
-
-* http://stackoverflow.com/questions/5169638/autocompletion-in-vim
-* http://stackoverflow.com/questions/1115876/autocompletion-in-vim
-* http://stackoverflow.com/questions/5432884/vim-auto-complete-java
-* https://www.reddit.com/r/vim/comments/3xlalp/java_auto_complete_in_vim/
-
-[[builtin]]
-Builtin
-~~~~~~~
 
 Works in Insert Mode - `<C-n>`
 
@@ -420,33 +359,3 @@ Syntax highlighting
 -------------------
 
 * `:syntax on`
-* https://github.com/endel/vim-github-colorscheme
-* http://superuser.com/questions/627636/better-syntax-highlighting-for-java-in-vim
-* https://github.com/dragfire/Improved-Syntax-Highlighting-Vim
-* https://github.com/github/linguist (works only on git repositories)
-* https://github.com/bpdp/vim-java
-* https://github.com/sentientmachine/erics_vim_syntax_and_color_highlighting[Erics
-Vim syntax and color highlighting]
-
-[[plugins]]
-Plugins
--------
-
-* https://github.com/gabrielelana/vim-markdown
-
-[[folks]]
-Folks
------
-
-* https://github.com/tpope
-
-[[pathogen-by-tim-pope]]
-https://github.com/tpope/vim-pathogen[Pathogen by Tim Pope]
------------------------------------------------------------
-
-* http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen/[Modern
-Vim config with Pathogen by Tammer Saleh]
-* https://lauris.github.io/vim/2014/08/21/scala-in-vim/[Scala in Vim by
-Lauris Dzilums]
-* http://www.mattjmorrison.com/today-i-learned/2014/10/03/learned.html
-* http://www.mattjmorrison.com/today-i-learned/2014/10/15/learned.html
