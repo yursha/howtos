@@ -1,47 +1,26 @@
-* http://learnvimscriptthehardway.stevelosh.com/
-* http://stevelosh.com/blog/2010/09/coming-home-to-vim/
-* https://github.com/vim/vim
-* https://github.com/tpope/vim-unimpaired
-* https://github.com/ggreer/the_silver_searcher
-* http://stackoverflow.com/questions/8291060/how-to-format-a-java-file-in-vim-like-eclipse
-* http://stackoverflow.com/questions/1919028/how-to-show-vertical-line-to-wrap-the-line-in-vim
-* http://stackoverflow.com/questions/82726/convert-dos-line-endings-to-linux-line-endings-in-vim
-* https://github.com/mhinz/vim-galore
-* https://robots.thoughtbot.com/set-your-mouse-free
-* http://vimgolf.com/
-* http://keyxl.com/aaa8263/290/VIM-keyboard-shortcuts.htm
-* https://github.com/tpope/vim-commentary - Custom vim operator example
-`:h map-operator`
-* https://github.com/kana/vim-textobj-entire - Custom vim motion example
-`:h omap-info`
-* http://vimcasts.org/
-* http://peertopeer.io/
-* http://derekwyatt.org/vim/tutorials/index.html[Vim Video Tutorials by
-Derek Wyatt]
-* https://github.com/derekwyatt/vim-scala[Vim Scala integration by Derek
-Wyatt]
+= Vim
+:toc:
+:toc-placement!:
 
-[[refresh]]
-Refresh
--------
+toc::[]
+
+[[reload-config]]
+Reload Vim config
+-----------------
 
 `:so ~/.vimrc`
 
-[[insert-char-by-unicode-value]]
-Insert char by unicode value
-----------------------------
+[[insert-unicode-char]]
+Type a Unicode character
+------------------------
 
-* check mark is U+2713 - ✓
-* `C-v-u2713`
+To insert a check mark (U+2713) `✓` type `C-v-u2713`.
 
-[[case]]
-Case
-----
+[[normal-mode]]
+Normal mode
+-----------
 
-* http://vim.wikia.com/wiki/Converting_variables_to_or_from_camel_case
 * ~ - change case (tilde operator)
-* http://vim.wikia.com/wiki/Switching_case_of_characters
-* http://stackoverflow.com/questions/5064430/changing-the-case-within-snipmate-vim-snippets
 
 [[map-keys]]
 Map keys
