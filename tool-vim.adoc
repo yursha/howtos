@@ -78,6 +78,18 @@ file, [ - start of last change, ] - end of last change
 * `Ctrl+o`, `Ctrl+i` - jump to previous/next cursor position
 * `Ctrl+r;Ctrl+w` (or ) - copy a word into command line
 
+[[indentation]]
+Indentation
+-----------
+
+* `>` and `<` commands
+* `>G` - increase indent from current line to end of file
+* `gg=G` - reformat/reindent text
+* `:args src/main/java/**/*.java | argdo execute "normal gg=G" | update`
+- reindent
+* Put `filetype plugin indent on` into `~/.vimrc` - enable java
+indentation
+
 [[actions]]
 Actions
 ~~~~~~~
@@ -98,6 +110,14 @@ Insert Mode
 * `i,I,a,A,o,O` - enter from Normal mode
 * `ESC` - leave mode
 *  `C-v-u2713` - insert a check mark `✓` (U+2713)
+
+[[visual-mode]]
+Visual mode
+-----------
+
+* `v` - char visual mode (`o` - jump to other side of selection)
+* `V` - line visual mode
+* `CTRL-v` - col visual mode (`O` - jump to additional 2 corners)
 
 [[read-from-stdin]]
 Read from STDIN
@@ -140,16 +160,6 @@ match
 their code value.
 * `/the\C`, `/the\c` - force pattern case-(in)sensitivity
 
-[[windows]]
-windows
--------
-
-* `C-W` - switch between windows
-* `C-W-=` - make all windows the same size
-* `n-C-W-+`, `n-C-W--` - change window height, `:res +10` - same thing
-* `:vertical resize +10` - change window width
-* `C-W-{i,j,h,l}` - switch windows
-
 [[Grep]]
 Grep
 ----
@@ -184,38 +194,15 @@ Regex
 * `$` - end of line
 * `.` - any char
 
-[[text-objects]]
-Text Objects
-------------
+[[windows]]
+Windows
+-------
 
-* aw - a word
-* iw - inner word
-* as - a sentence
-* is - inner sentence
-
-[[formatting]]
-Formatting
-----------
-
-* **Line terminator vs line separator confusion**. Vim automatically
-adds a newline at the end of each file it edits. To prevent this
-behaviour for file open in binary mode (`vim -b path/to/file`) we should
-disable `eol` boolean configuration variable.
-
-[[shelling-out]]
-Shelling out
-------------
-* `!rm %` - remove current file from disk
-
-[[version-history]]
-Version history
----------------
-
-See differences between the original file and the current buffer.
-
-....
-:w !diff % -
-....
+* `C-W` - switch between windows
+* `C-W-=` - make all windows the same size
+* `n-C-W-+`, `n-C-W--` - change window height, `:res +10` - same thing
+* `:vertical resize +10` - change window width
+* `C-W-{i,j,h,l}` - switch windows
 
 [[buffers]]
 Buffers
@@ -241,6 +228,39 @@ filepath
 * `:bufdo %s/pattern/replace/ge | update` - search and replace in all
 open buffers.
 * `vim $(find ...)` - open multiple files
+
+[[text-objects]]
+Text Objects
+------------
+
+* `aw` - a word
+* `iw` - inner word
+* `as` - a sentence
+* `is` - inner sentence
+
+[[formatting]]
+Formatting
+----------
+
+* **Line terminator vs line separator confusion**. Vim automatically
+adds a newline at the end of each file it edits. To prevent this
+behaviour for file open in binary mode (`vim -b path/to/file`) we should
+disable `eol` boolean configuration variable.
+
+[[shelling-out]]
+Shelling out
+------------
+* `!rm %` - remove current file from disk
+
+[[version-history]]
+Version history
+---------------
+
+See differences between the original file and the current buffer.
+
+....
+:w !diff % -
+....
 
 [[argument-list]]
 Argument list
@@ -281,23 +301,6 @@ Autocompletion
 
 Works in Insert Mode - `<C-n>`
 
-[[visual-mode]]
-Visual mode
------------
-
-* v - char visual mode (o - jump to other side of selection)
-* V - line visual mode
-* CTRL-v - col visual mode (O - jump to additional 2 corners)
-
-[[basic-commands]]
-Basic commands
---------------
-
-* `d` - delete
-* `J` - join lines
-* `y` - yank
-* `yy` - yank line
-
 [[shortcuts]]
 Shortcuts
 ---------
@@ -325,23 +328,10 @@ Repetitions
 * `;` or `,` - repeat previous character search (`f`, `t`, `F`, `T`)
 * `@x` - repeat macro (`qx{changes}q`)
 
-[[indentation]]
-Indentation
------------
-
-* `>` and `<` commands
-* `>G` - increase indent from current line to end of file
-* `gg=G` - reformat/reindent text
-* `:args src/main/java/**/*.java | argdo execute "normal gg=G" | update`
-- reindent
-* Put `filetype plugin indent on` into `~/.vimrc` - enable java
-indentation
-
 [[line-terminators]]
 Line Terminators
 ----------------
 
-* http://stackoverflow.com/questions/5843495/what-does-m-character-mean-in-vim
 * `:args src/main/java/**/*.java | argdo set ff=unix | update` - convert
 all line terminators to unix (LF)
 
