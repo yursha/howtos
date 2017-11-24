@@ -47,9 +47,9 @@ buffer
 * `shell> date | vim -`
 * `shell> vim <(ls -la)`
 
-[[file-scrolling]]
-File scrolling
---------------
+[[scroll]]
+Scroll
+------
 
 * `2%` - go to 2% of a file
 * `CTRL+b` - scroll up a page
@@ -98,27 +98,25 @@ their code value.
 
 [[windows]]
 windows
-~~~~~~~
+-------
 
 * `C-W` - switch between windows
 * `C-W-=` - make all windows the same size
 * `n-C-W-+`, `n-C-W--` - change window height, `:res +10` - same thing
 * `:vertical resize +10` - change window width
 * `C-W-{i,j,h,l}` - switch windows
-* https://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
 
-[[vim-grepping]]
-vim grepping
-~~~~~~~~~~~~
+[[Grep]]
+Grep
+----
 
-* http://vim.wikia.com/wiki/Find_in_files_within_Vim
 * `:grep` - populates quickfix list
 * `:vimgrep` - populates quickfix list
 * `:lgrep` - populates location list
 * `:lvimgrep` - populates location list
 
 [[quickfix-list]]
-quickfix list
+Quickfix list
 ~~~~~~~~~~~~~
 
 * `:copen` - open quickfix list
@@ -128,7 +126,7 @@ quickfix list
 * `CTRL-W K` - move quickfix window to the top
 
 [[location-list]]
-location list
+Location list
 ~~~~~~~~~~~~~
 
 [[regex]]
