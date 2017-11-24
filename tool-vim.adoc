@@ -133,20 +133,17 @@ Visual mode
 Search
 ------
 
+- `/` vs `?` - search direction
+- character and line offsets
+- `/` vs `*` - choose to search pattern or current word
+- search character by unicode value
+- `/<pattern>\c` vs `/<pattern>\C` - toggle case sensitivity
+* `:g/pattern` - show all lines matching the pattern
+
 ....
 " Clear last search highlighting
 nnoremap <Space> :noh<cr>
 ....
-
-* `/` - search pattern forwards
-* `?` - search pattern backwards
-* `*` - search word current word forwards
-* `/<pattern>/e` - search-offset - position the cursor at the end of the
-match
-* `/\%d65`, `/\%x41`, `/\%u2013`, `/\%d8211` - Searching for chars by
-their code value.
-* `/the\C`, `/the\c` - force pattern case-(in)sensitivity
-* `:g/pattern` - show all lines matching the pattern
 
 [[replace]]
 Replace
