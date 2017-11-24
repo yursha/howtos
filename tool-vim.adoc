@@ -133,8 +133,6 @@ Visual mode
 Search
 ------
 
-`help /`
-
 - `/` vs `?`, `*` vs `#` - search forwards or backwards
 - `/<pattern>/e` - character and line offsets
 - `/` vs `*`, `?` vs `#` - search for pattern or current word
