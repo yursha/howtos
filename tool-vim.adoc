@@ -3,9 +3,14 @@
 :toc-placement!:
 
 toc::[]
+
+[[ex-mode]]
+Ex mode
+-------
+
 [[getting-help]]
 Getting help
-------------
+~~~~~~~~~~~~
 
 * `help x`, `help CTRL-R` - normal mode command
 * `help v_u` - visual mode command
@@ -18,6 +23,12 @@ Getting help
 * `help E37` - errors
 * `help subject()` - functions
 * `help +subject` - compile-time feature
+
+[[reload-config]]
+Reload config
+~~~~~~~~~~~~~
+
+`:source ~/.vimrc`
 
 [[normal-mode]]
 Normal mode
@@ -43,11 +54,6 @@ Movement
 in a line)
 * `gg,` `2G`, `G` - jump to first, second, last line
 
-[[reload-config]]
-Reload config
--------------
-
-`:source ~/.vimrc`
 
 [[insert-unicode-char]]
 Type a Unicode character
@@ -93,6 +99,11 @@ file, [ - start of last change, ] - end of last change
 [[search-and-replace]]
 Search and replace
 ------------------
+
+...
+" Clear last search highlighting
+nnoremap <Space> :noh<cr>
+...
 
 Empty search will perform the last search. It works across `/`, `:s`
 and `:g`. So you can search with `/` and then substitute with `:s` by
