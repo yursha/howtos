@@ -44,8 +44,8 @@ Read from STDIN
 
 * `:r !date` - append output of system `date` command to the current
 buffer
-* `date | vim -`
-* `vim <(ls -la)`
+* `shell> date | vim -`
+* `shell> vim <(ls -la)`
 
 [[file-scrolling]]
 File scrolling
