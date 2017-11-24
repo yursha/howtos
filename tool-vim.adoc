@@ -4,62 +4,9 @@
 
 toc::[]
 
-[[reload-config]]
-Reload Vim config
------------------
-
-`:so ~/.vimrc`
-
-[[insert-unicode-char]]
-Type a Unicode character
-------------------------
-
-To insert a check mark (U+2713) `✓` type `C-v-u2713`.
-
-[[normal-mode]]
-Normal mode
------------
-
-* ~ - change case (tilde operator)
-
-[[map-keys]]
-Map keys
---------
-
-* http://vim.wikia.com/wiki/Mapping_keys_in_Vim_-__Tutorial__(Part_1)
-* `:noremap` - don't recurse when expanding map
-* `:map` - list all maps (normal, visual, operator-pending)
-* `:imap` - list insert and replace mode maps
-* `:nmap` - list normal mode maps
-* `:vmap` - list visual and select mode maps
-* `:smap` - list select mode maps
-* `:xmap` - list visual mode maps
-* `:omap` - list operator pending mode maps
-* `:cmap` - list cli mode maps
-* `:map!` - list insert and cli modes
-* `:Imap` - list insert, cli, lang-arg modes
-
-[[special-keys]]
-Special keys
-~~~~~~~~~~~~
-
-* `help keycodes`
-
-[[reference-manual]]
-Reference manual
-----------------
-
-* `:help <arg>` or `:helpgrep <arg`
-* Bookmark: quickref, usr_07.txt,
-* reference_toc
-* change.txt 4.4 Changing tabs ✓
-* insert.txt CTRL-Q, ins-expandtab
-* options.txt
-** expandtab ✓
-
-[[help]]
-help
-----
+[[getting-help]]
+Getting help
+------------
 
 * `x`, `CTRL-R` - normal mode command
 * `v_u` - visual mode command
@@ -71,6 +18,25 @@ help
 * `/[` - regex
 * `E37` - errors - `subject()` - functions - `+subject` - compile-time
 feature
+
+
+[[reload-config]]
+Reload config
+-------------
+
+`:so ~/.vimrc`
+
+[[insert-unicode-char]]
+Type a Unicode character
+------------------------
+
+To insert a check mark `✓` (U+2713) type `C-v-u2713`.
+
+[[normal-mode]]
+Normal mode
+-----------
+
+* `~` - change case (tilde operator)
 
 [[capture-output-of-an-external-command]]
 Capture output of an external command
