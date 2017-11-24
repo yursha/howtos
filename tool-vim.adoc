@@ -70,12 +70,12 @@ lines to pad the current line when scrolling)
 * `set` 26 marks with `ma`-`mz` and jump to them with `a-`z (marked col) or 'a-'z (first col) _Doesn't jump across buffers_
 * `:marks` (' - position before jump, " - position when last editing a
 file, [ - start of last change, ] - end of last change
-* `Ctrl+o`, Ctrl+i - jump to previous/next cursor position
+* `Ctrl+o`, `Ctrl+i` - jump to previous/next cursor position
 * `Ctrl+r;Ctrl+w` (or ) - copy a word into command line
 
 [[search-and-replace]]
 Search and replace
-~~~~~~~~~~~~~~~~~~
+------------------
 
 * Use `Ctrl-L` to insert next char in the match or `Ctrl-r,Ctrl-w` to
 complete a word match.
