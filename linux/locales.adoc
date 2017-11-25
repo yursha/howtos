@@ -1,0 +1,25 @@
+= Locales
+:toc:
+:toc-placement!:
+
+toc::[]
+
+* `/etc/locale.conf` - being read by systemd early at start-up time.
+* `man -a locale`
+* `man 5 locale.conf`
+* `man 5 vconsole.conf`
+* `man 8 systemd-localed.service`
+
+[[systemd]]
+systemd
+-------
+
+* `localectl` - control the system locale and keyboard layout settings
+
+[[xkb]]
+XKB
+---
+
+* http://www.x.org/releases/current/doc/xorg-docs/input/XKB-Config.html[The
+XKB Configuration Guide]
+* https://www.freedesktop.org/wiki/Software/XKeyboardConfig/[XKeyboardConfig]

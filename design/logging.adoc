@@ -1,0 +1,110 @@
+= Logging
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[goals]]
+Goals
+-----
+
+* Provide insights into application execution
+* Help in debugging
+* Help in profiling
+
+[[art-of-logging]]
+Art of logging
+--------------
+
+* *Highlight interpolated values* to distinguish what is interpolated
+and what is static.
+* *Respect log levels* sot that you can easily adjust log verbosity in
+development and production environments and grep out only important
+messages easily.
+* Log files are **append-only**. Be sure to log only what is really
+helpful during debugging as log files can grow and take a lot of disk
+space. There should be an *archiving policy* for log files. In
+production environment its helpful to print 'INFO', 'WARN' and 'ERROR'
+level messages only to save **disk space**. Their should be a separate
+*build profile* for development and production environments.
+* Don't log expected conditions inside big loops. It will inflate the
+log file size and hinder performance with excessive IO.
+
+[[java]]
+Java
+~~~~
+
+* https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
+* All loggers should be declared `private static final`
+* http://logback.qos.ch/
+* http://www.slf4j.org/
+
+[[log4j2]]
+Log4j2
+^^^^^^
+
+* How to configure log4j2 differently in development and production?
+* rolling file appender
+
+[[what-one-can-expect-from-a-logging-library]]
+What one can expect from a logging library?
+-------------------------------------------
+
+* pattern substitution, e.g.
+`log.debug("Found {} records matching filter: '{}'", records, filter);`
+- more readable and efficient as string concatenations (interpolations)
+are not done if log messages are filtered out based on the log level.
+* ability to specify log level from the command-line, e.g.
+`-Dlog=DEBUG`. As of September 2015 java logging libraries (e.g. log4j,
+log4j2, etc.) have no such ability. The best approach then is to
+configure logging library programmatically and dynamically (instead of
+config xml files) based on some environment variable. The downside of
+this approach is that you will need to write additional Java code once
+for initialization logic and for every entry point to a program to
+trigger that initialization. For now its better to stick to manually
+changing `log4j2.xml` before launch (even if it requires repackaging).
+Investigate how to change `log4j2.xml` file in jar without repackaging
+OR how to build a class path for maven `target` directory to launch app
+unpackaged.
+* Asynchronous execution
+* automatic reloading of configuration
+* filtering
+* file, syslog and socket appenders, async appenders
+
+[[graylog]]
+Graylog
+-------
+
+* http://docs.graylog.org/en/1.3/pages/queries.html#keyword-time-frame-selector
+
+[[syslog]]
+syslog
+------
+
+[[fluentd]]
+fluentd
+-------
+
+fluentd is a log collector.
+
+Used by Microsoft Operations Management Suite, Attlassian Cloud,
+SlideShare.net (147), Change.org (1236) Similar to Apache Flume and
+Facebook's Scribe.
+
+Data Sinks (for later log analysis): Cassandra, HDFS, MongoDB,
+ElasticSearch
+
+`td-agent` - Linux distribution of fluentd
+
+* a regular PC box can handle 18,000 messages/second with a single
+process
+
+[[fluentd-operations]]
+fluentd operations
+~~~~~~~~~~~~~~~~~~
+
+* collect data
+* parse data
+* transform data
+* analyze data
+* store (persist) data

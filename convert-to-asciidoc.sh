@@ -24,7 +24,7 @@ do
 	title=$(echo $title | sed -e "s/\b\(.\)/\u\1/g")
 
 	toc="= $title"
-	toc="$toc\n:toc:\n:toc-placement!:\n\ntoc::[]\n\n"
+	toc="$toc\n:toc:\n:toc-placement!:\n\ntoc::[]\n"
 
 	echo $toc >> $newpath
 	pandoc -f markdown -t asciidoc $path >> $newpath

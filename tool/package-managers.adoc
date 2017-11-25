@@ -1,0 +1,234 @@
+= Package Managers
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[resources]]
+Resources
+---------
+
+* http://www.sonatype.com/nexus-product-pricing[Sonatype - cheap
+repository management (java, ruby, node.js, yum]
+
+[[rpm-red-hat-package-manager]]
+RPM (Red Hat Package Manager)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* http://www.rpm.org/[rpm.org]
+* http://www.rpm.org/wiki/Docs[rpm wiki docs]
+* http://www.rpm.org/max-rpm/[Maxinum RPM]
+* http://createrepo.baseurl.org/[createrepo.baseurl.org]
+* http://www.rpm.org/max-rpm/index.html[Taking the Red Hat Package
+Manager to the Limit]
+* https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/RPM_Guide/index.html[RPM
+Guide in Fedora Docs]
+* https://github.com/rpm-software-management/rpm[RPM GitHub repo]
+* https://fedoraproject.org/wiki/EPEL[EPEL repo]
+* http://rpm.mag-sol.com/[Magnum Solutions CPAN RPM Repository]
+* http://www-uxsup.csx.cam.ac.uk/~jw35/docs/rpm_config.html
+
+[[dnf]]
+DNF
+~~~
+
+* http://dnf.baseurl.org/[DNF, Dandified Yum]
+* http://dnf.readthedocs.io/en/latest/[DNF, the next-generation
+replacement for Yum]
+* https://fedoraproject.org/wiki/Dnf[DNF, Fedora Wiki]
+* https://fedoraproject.org/wiki/DNF_system_upgrade[DNF System Upgrade -
+Fedora Wiki]
+
+[[yum]]
+YUM
+~~~
+
+* http://yum.baseurl.org/[yum.baseurl.org]
+* https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/part-Installing_and_Managing_Software.html[RHEL
+7 Yum]
+* `man yum.conf`
+
+[[install-a-package-for-globally]]
+Install a package for globally
+------------------------------
+
+....
+dnf install <package>
+pip install <package>
+brew install <package>
+npm install -g <package>
+pacman -S <package>
+rpm -i <package>
+....
+
+[[download-package-source]]
+Download package source
+-----------------------
+
+....
+mvn dependency:sources -DincludeArtifactIds=guava # must be in a directory with pom.xml
+....
+
+[[update-an-installed-package]]
+Update an installed package
+---------------------------
+
+....
+pacman -S <package>
+pip install --upgrade <package>
+....
+
+[[update-itself]]
+Update itself
+-------------
+
+....
+pip install --upgrade pip
+....
+
+[[remove-package]]
+Remove package
+--------------
+
+....
+dnf remove <package>
+rpm -e <package>
+....
+
+[[list-installed-packages]]
+List installed packages
+-----------------------
+
+....
+dnf list installed
+pip list
+pacman -Q
+....
+
+[[list-files-of-a-package]]
+List files of a package
+-----------------------
+
+....
+rpm -ql <package>
+dpkg-query -L <package>
+....
+
+[[find-out-which-package-a-file-belongs-to]]
+Find out which package a file belongs to
+----------------------------------------
+
+[source,bash]
+----
+rpm -qf /usr/sbin/lsmod
+dpkg-query -S /sbin/lsmod
+----
+
+[[see-package-summary-description]]
+See package summary (description)
+---------------------------------
+
+....
+rpm -qi <package> # installed only
+pip show <package>
+....
+
+[[see-package-information-from-a-local-file]]
+See package information from a local file
+-----------------------------------------
+
+....
+rpm -qpil <path/to/rpm>
+....
+
+[[list-all-remote-groups-development]]
+List all remote groups (development)
+------------------------------------
+
+....
+dnf groups list | grep -i devel
+....
+
+[[install-a-group]]
+Install a group
+---------------
+
+....
+dnf groups install "Development Tools"
+....
+
+[[refresh-package-index-and-check-for-available-updates-without-installing-them]]
+Refresh package index and check for available updates (without
+installing them)
+-------------------------------------------------------------------------------
+
+....
+apt-get update # only refreshes package index
+dnf check-update
+pacman -Sy
+....
+
+[[query-remote-package]]
+Query remote package
+--------------------
+
+....
+dnf info <package> # doesn't force sync of package database (both installed and available)
+pacman -Qi <package> # displays info about an installed package
+pacman -Si <package> # displays info about an available package
+....
+
+[[repository-management]]
+Repository management
+---------------------
+
+[[add-remote-repository]]
+Add remote repository
+~~~~~~~~~~~~~~~~~~~~~
+
+* Add repo config file to `/etc/yum.repos.d/`
+
+[[list-all-known-repositories]]
+List all known repositories
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+....
+dnf repolist all
+yum repolist all
+....
+
+[[install-package-manager]]
+Install package manager
+-----------------------
+
+* https://github.com/miyagawa/cpanminus[cpanm on GitHub]
+* http://www.cpan.org/modules/INSTALL.html[How to install CPAN modules
+on CPAN]
+* http://perlhacks.com/2014/03/installing-modules/[Installing Perl
+Modules by Dave Cross]
+
+[[lookup-repository-package-name-by-general-name]]
+Lookup repository package name by general name
+----------------------------------------------
+
+* http://deb.perl.it/[perl to debian/ubuntu]
+
+[[pacman]]
+Pacman
+------
+
+* `pacman -Sl` - list all remote packages
+* `pacman -Qo <file>` - show a package which owns a file
+* `pacman -Qu` - show all outdated locally installed packages
+* `pacman -Su` - upgrade all package that have newer versions
+* `pacman -S <package>` - install/upgrades package and its deps
+* `pacman -Sc` - clean the db cache
+* `pacman -Rs --nosave` - remove package and all its deps and config
+files
+
+[[java-packaging-on-linux-systems]]
+Java Packaging On Linux Systems
+-------------------------------
+
+* https://fedorahosted.org/released/javapackages/doc/
+* http://redline-rpm.org/index.html

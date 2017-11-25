@@ -1,0 +1,12 @@
+= Setup Project
+:toc:
+:toc-placement!:
+
+toc::[]
+
+....
+mkdir ~/go/src/my_project
+cd ~/go/src/my_project
+git init
+vi .gitignore
+....

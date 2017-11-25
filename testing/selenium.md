@@ -1,1 +1,0 @@
-- http://docs.seleniumhq.org/

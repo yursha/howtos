@@ -1,0 +1,24 @@
+= Version Managers
+:toc:
+:toc-placement!:
+
+toc::[]
+
+* http://perlbrew.pl/[PerlBrew]
+* https://github.com/creationix/nvm[nvm]
+
+[[responsibilites]]
+Responsibilites
+---------------
+
+* install multiple versions of a software
+* switch between different versions as defaults
+* run program against different versions of software (for testing)
+
+[[install-a-version]]
+Install a version
+-----------------
+
+....
+nvm install <version>
+....

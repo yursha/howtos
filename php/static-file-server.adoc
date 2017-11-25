@@ -1,0 +1,7 @@
+= Static File Server
+:toc:
+:toc-placement!:
+
+toc::[]
+
+* `php -S localhost:8888`

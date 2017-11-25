@@ -1,0 +1,12 @@
+= Design
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[peek-what-technology-a-popular-website-uses-or-how-heavily-a-particular-technology-is-used.]]
+Peek what technology a popular website uses or how heavily a particular
+technology is used.
+-------------------------------------------------------------------------------------------
+
+* https://trends.builtwith.com/

@@ -1,3 +1,0 @@
-# Scalability
-- Scale complexity (linear, quadratic, etc.) - how query performance improves as we add mode nodes to a cluster.
-- points of failure (its good when there is no a single point of failure)

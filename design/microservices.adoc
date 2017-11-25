@@ -1,0 +1,23 @@
+= Microservices
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[dropwizard]]
+DropWizard
+----------
+
+* http://www.dropwizard.io/ (Uses Jetty, Jersey, Jackson)
+* http://www.dropwizard.io/0.9.2/ - List of modules
+* http://www.dropwizard.io/manual/core.html
+* https://github.com/dropwizard/dropwizard[DW GitHub]
+* `io.dropwizard:dropwizard-client` - maven artifact
+* https://github.com/dropwizard/metrics
+
+[[healthchecks]]
+Healthchecks
+------------
+
+* https://asciinema.org/a/476[Shell scripts for health checks by Erich
+Smith]

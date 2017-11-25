@@ -1,0 +1,14 @@
+= Chrome
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[shortcuts-tested-on-chromebook-only]]
+Shortcuts (tested on Chromebook only)
+-------------------------------------
+
+CTRL+ALT+Up - scroll to page top
+
+https://support.google.com/chromebook/answer/183101?hl=en[other
+shortcuts]

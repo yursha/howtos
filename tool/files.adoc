@@ -1,0 +1,20 @@
+= Files
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[bulk-rename-file-using-sed-like-expressions]]
+Bulk rename file using sed-like expressions
+-------------------------------------------
+
+Syntax is `rename <sed expression> <files>`.
+
+[source,shell]
+----
+# dry-run
+rename -n 's/sd/design/' sd*
+
+# run
+rename 's/sd/design/' sd*
+----

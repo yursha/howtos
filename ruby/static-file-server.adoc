@@ -1,0 +1,7 @@
+= Static File Server
+:toc:
+:toc-placement!:
+
+toc::[]
+
+* `ruby -run -e httpd . -p 8888`

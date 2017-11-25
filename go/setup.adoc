@@ -1,0 +1,41 @@
+= Setup
+:toc:
+:toc-placement!:
+
+toc::[]
+
+* https://golang.org/dl/[Download] Golang binary distribution.
+
+Extract archive into `/usr/local`:
+
+....
+sudo tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
+....
+
+Adjust your `$PATH` in `~/.bashrc`
+`\`\`\` export PATH=$PATH:/usr/local/go/bin    # for`go`executable export PATH=$PATH:$(go env GOPATH)/bin # for executables installed with`go
+install`
+
+....
+....
+
+. ~/.bashrc mkdir -p ~/go/src/hello ```
+
+Create the following file in `~/go/src/hello/hello.go`:
+
+[source,go]
+----
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Printf("hello, world\n")
+}
+----
+
+....
+cd ~/go/src/hello
+go build
+./hello # you should see the program printed "hello, world" at this point.
+....

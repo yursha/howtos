@@ -1,0 +1,8 @@
+= Awk
+:toc:
+:toc-placement!:
+
+toc::[]
+
+* https://en.wikibooks.org/wiki/An_Awk_Primer[An Awk Primer on
+Wikibooks]

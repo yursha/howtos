@@ -1,0 +1,32 @@
+= Jpeg
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[imagejpeg]]
+`image/jpeg`
+~~~~~~~~~~~~
+
+Compression method for full-color and gray-scale images. -
+https://en.wikipedia.org/wiki/JPEG - http://www.ijg.org/ -
+http://gnuwin32.sourceforge.net/packages/jpeg.htm (Jpeg for Windows)
+
+[[jpeg-joint-photographic-experts-group]]
+JPEG (Joint Photographic Experts Group)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Lossy compression for digital images. Popular in digital photography. -
+`libjpeg`
+
+[[jpegexif]]
+JPEG/Exif
+^^^^^^^^^
+
+Popular image format in digital cameras.
+
+[[jpegjfif-jpeg-file-interchange-format]]
+JPEG/JFIF (JPEG File Interchange Format)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Popular image format in www.

@@ -1,0 +1,25 @@
+= Exit
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[exit-with-error-code]]
+Exit with error code
+--------------------
+
+[source,bash]
+----
+# bash
+exit 42
+----
+
+[[check-exit-code-of-the-process]]
+check exit code of the process
+------------------------------
+
+[source,bash]
+----
+# bash
+$?
+----

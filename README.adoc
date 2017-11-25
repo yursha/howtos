@@ -1,0 +1,13 @@
+= README
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[howtos]]
+howtos
+------
+
+Notes about software.
+
+Keep external links to minimum.

@@ -1,0 +1,7 @@
+= Search
+:toc:
+:toc-placement!:
+
+toc::[]
+
+* http://blog.parsely.com/post/1691/lucene/[Lucene, Solr, ElasticSearch]

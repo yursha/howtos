@@ -1,0 +1,290 @@
+= D3
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[visual-data-representations]]
+Visual data representations
+---------------------------
+
+* Bar Chart
+
+[[data-driven-documents-d3]]
+Data-Driven Documents (D3)
+--------------------------
+
+* http://d3js.org/
+* http://bost.ocks.org/mike/
+** thinking with joins
+** nested selections
+** how selections work
+** three little circles
+* bl.ocks.org
+* http://bl.ocks.org/mbostock
+* ggplot2-Style Axis http://bl.ocks.org/mbostock/4349486
+* Margin Convention http://bl.ocks.org/mbostock/3019563
+* General update pattern I http://bl.ocks.org/mbostock/3808218
+* Pie Multiples http://bl.ocks.org/mbostock/1305111
+* Tick Format http://bl.ocks.org/mbostock/9764126
+* Log Axis http://bl.ocks.org/mbostock/5537697
+* Axis Component http://bl.ocks.org/mbostock/1166403
+* Custom Time Format http://bl.ocks.org/mbostock/4149176
+* http://mbostock.github.io/d3/talk/20111018/pack.html
+* http://mbostock.github.io/d3/talk/20111018/partition.html
+* http://mbostock.github.io/d3/talk/20111116/force-collapsible.html
+* http://mbostock.github.io/d3/talk/20111116/bundle.html
+* http://mbostock.github.io/d3/talk/20111116/airports.html
+* http://mbostock.github.io/d3/talk/20111018/treemap.html
+* http://mbostock.github.io/d3/talk/20111018/tree.html
+* http://mbostock.github.io/d3/talk/20111018/calendar.html
+* http://mbostock.github.io/d3/talk/20111116/transitions.html
+* http://www.d3noob.org/
+* http://colorbrewer2.org/
+* https://leanpub.com/D3-Tips-and-Tricks (Book)
+* http://christopheviau.com/d3list/gallery.html
+
+This doesn’t scratch the surface of the data cleaning problem. For that,
+see projects such as Google Refine and Stanford’s Data Wrangler.
+
+Deferring data transformations to the client often makes it easier for
+you to prototype visualizations rapidly; you can change the data
+on-the-fly rather than needing to re-run your data pipeline. On the
+other hand, when you want to share your visualization with the world,
+it’s a good idea to optimize your dataset for performance.
+
+[[concepts]]
+Concepts
+--------
+
+* univariate vs multivariate datasets
+* object constancy
+* data (csv, json)
+* scale (linear, discrete)
+* Quantitative Scales map a continuous (numeric) domain to a continuous
+range.
+* https://github.com/mbostock/d3
+* https://github.com/mbostock/d3/wiki/API-Reference
+
+[[core]]
+Core
+~~~~
+
+[[selections]]
+Selections
+^^^^^^^^^^
+
+* https://github.com/mbostock/d3/wiki/Selections#data
+
+[[transitions]]
+Transitions
+^^^^^^^^^^^
+
+[[working-with-arrays]]
+Working with arrays
+^^^^^^^^^^^^^^^^^^^
+
+[[math]]
+Math
+^^^^
+
+[[loading-external-resources]]
+Loading external resources
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+[[csv-formatting-d3.csv]]
+CSV Formatting (d3.csv)
+^^^^^^^^^^^^^^^^^^^^^^^
+
+[[localization]]
+Localization
+^^^^^^^^^^^^
+
+[[colors]]
+Colors
+^^^^^^
+
+[[namespaces]]
+Namespaces
+^^^^^^^^^^
+
+[[internals]]
+Internals
+^^^^^^^^^
+
+[[scales]]
+Scales
+~~~~~~
+
+* https://github.com/mbostock/d3/wiki/Scales
+* Bookmark:
+https://github.com/mbostock/d3/wiki/Quantitative-Scales#identity-scales
+
+[[quantitative]]
+Quantitative
+^^^^^^^^^^^^
+
+D3 rescales data domain (input) into visible range (output). Data domain
+can be continuous, discrete or time. - Quantitative (linear y = mx + b)
+scales have a continuous domain (set of real numbers or dates). -
+Ordinal scales have a discrete domain (names, categories). - Time scales
+have a time domain.
+
+[[ordinal]]
+Ordinal
+^^^^^^^
+
+[[svg-d3.svg]]
+SVG (d3.svg)
+~~~~~~~~~~~~
+
+2D vector and raster graphics in XML. Supports Bezier curves, gradients,
+clipping and masks. - http://www.w3.org/Graphics/SVG/ -
+http://www.w3.org/TR/SVG/ - http://www.w3.org/TR/SVG/paths.html -
+http://www.w3.org/TR/SVG/shapes.html -
+http://www.w3.org/TR/SVG/styling.html - full list of styling properties
+(vs attributes) - https://developer.mozilla.org/en/SVG -
+https://developer.mozilla.org/en-US/docs/Web/SVG
+
+[[shapes]]
+Shapes
+^^^^^^
+
+* Look at gists here https://github.com/mbostock/d3/wiki/SVG-Axes Axis
+is a reference line for a scale. It usually has custom labels. Axes are
+rendered in a container element (`svg` or `g`) and rely havily on scales
+which they reference and delegate to.
+
+[[controls]]
+Controls
+^^^^^^^^
+
+[[layouts-d3.layout]]
+Layouts (d3.layout)
+~~~~~~~~~~~~~~~~~~~
+
+[[bundle]]
+Bundle
+^^^^^^
+
+[[chort]]
+Chort
+^^^^^
+
+[[cluster]]
+Cluster
+^^^^^^^
+
+[[force]]
+Force
+^^^^^
+
+[[hierarchy]]
+Hierarchy
+^^^^^^^^^
+
+[[histogram]]
+Histogram
+^^^^^^^^^
+
+[[pack]]
+Pack
+^^^^
+
+[[partition]]
+Partition
+^^^^^^^^^
+
+[[pie]]
+Pie
+^^^
+
+[[stack]]
+Stack
+^^^^^
+
+[[tree]]
+Tree
+^^^^
+
+[[treemap]]
+Treemap
+^^^^^^^
+
+[[geography-d3.geo]]
+Geography (d3.geo)
+~~~~~~~~~~~~~~~~~~
+
+[[paths]]
+Paths
+^^^^^
+
+[[projections]]
+Projections
+^^^^^^^^^^^
+
+[[streams]]
+Streams
+^^^^^^^
+
+[[geometry-d3.geom]]
+Geometry (d3.geom)
+~~~~~~~~~~~~~~~~~~
+
+[[voronoi]]
+Voronoi
+^^^^^^^
+
+[[quadtree]]
+Quadtree
+^^^^^^^^
+
+[[polygon]]
+Polygon
+^^^^^^^
+
+[[hull]]
+Hull
+^^^^
+
+[[behaviors-d3.behaviour]]
+Behaviors (d3.behaviour)
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+[[drag]]
+Drag
+^^^^
+
+[[zoom]]
+Zoom
+^^^^
+
+[[google-visualization-api-charts]]
+Google Visualization API (Charts)
+---------------------------------
+
+* https://developers.google.com/chart/
+* https://github.com/google
+* https://developers.google.com/products/
+* https://github.com/mozilla/metrics-graphics (Mozilla)
+* https://plot.ly/javascript/histograms/
+
+Browser draws DOM using flow layout.
+
+[[drawing]]
+Drawing
+-------
+
+* Bezier curves
+* gradients
+* clipping
+* masks
+
+[[image-transformations]]
+Image transformations
+---------------------
+
+* rotation
+* skewing
+* scaling
+* translation

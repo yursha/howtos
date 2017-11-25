@@ -1,1 +1,0 @@
-- [Lucene, Solr, ElasticSearch](http://blog.parsely.com/post/1691/lucene/)
