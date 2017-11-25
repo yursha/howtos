@@ -6,6 +6,8 @@ paths=$(find -name '*.md')
 
 for path in $paths
 do
+	echo converting $path
+
 	# new path will have extension changed
 	newpath="${path%.*}".adoc
 
