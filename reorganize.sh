@@ -7,6 +7,5 @@ do
 	dir=${file%%-*}    # if file='tool-vim.md' dir='tool'
 	newfile=${file#*-} # if file='tool-vim.md' newfile='vim.md'
 	mkdir $dir
-	mv file $dir/$newfile
-	rm $file
+	mv $file $dir/$newfile
 done
