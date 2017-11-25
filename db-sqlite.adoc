@@ -26,6 +26,6 @@ INSERT INTO tmp(field_a, field_b) SELECT field_a, field_b FROM original;
 
 /* begin transaction */
 DROP TABLE original
-RENAME TABLE tmp TO original
+ALTER TABLE tmp RENAME TO original
 /* end transaction */
 ....
