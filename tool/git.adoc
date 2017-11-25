@@ -4,6 +4,12 @@
 
 toc::[]
 
+[[git-clean]]
+`git clean`
+-----------
+
+`git clean -f -d` removes untracked files and directories.
+
 [[compare-the-fetched-commits-with-local-branch]]
 Compare the fetched commits with local branch
 ---------------------------------------------
