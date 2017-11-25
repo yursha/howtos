@@ -25,7 +25,7 @@ CREATE TABLE tmp(field_a INT, field_b INT);
 INSERT INTO tmp(field_a, field_b) SELECT field_a, field_b FROM original;
 
 /* begin transaction */
-DROP TABLE original
-ALTER TABLE tmp RENAME TO original
+DROP TABLE original;
+ALTER TABLE tmp RENAME TO original;
 /* end transaction */
 ....
