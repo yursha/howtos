@@ -1,6 +1,7 @@
 = Sqlite
 :toc:
 :toc-placement!:
+
 toc::[]
 
 [[about-sqlite]]
