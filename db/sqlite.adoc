@@ -15,6 +15,13 @@ record with a specific rowid, or for all records with rowids within a
 specified range is around twice as fast as a similar search made by
 specifying any other PRIMARY KEY or indexed value.
 
+[[language-suppport]]
+Language support
+----------------
+
+Python and PHP have a standard library support for SQlite3.
+Ruby has a community maintained gem.
+
 [[change-column-datatype]]
 Change column data type
 -----------------------
