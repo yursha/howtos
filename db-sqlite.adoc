@@ -9,9 +9,9 @@ record with a specific rowid, or for all records with rowids within a
 specified range is around twice as fast as a similar search made by
 specifying any other PRIMARY KEY or indexed value.
 
-[[alter-table]]
-`ALTER TABLE`
--------------
+[[change-column-datatype]]
+Change column data type
+-----------------------
 
 SQLite does not fully support `ALTER TABLE` statements.
 The only thing you can do is rename a table and/or add columns.
