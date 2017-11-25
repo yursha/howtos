@@ -16,7 +16,7 @@ specifying any other PRIMARY KEY or indexed value.
 SQLite does not fully support `ALTER TABLE` statements.
 The only thing you can do is rename a table and/or add columns.
 
-To change a column data type do the following **inside a transaction**.
+To change a column data type do the following.
 
 [source,sql]
 ....
@@ -29,3 +29,6 @@ DROP TABLE original;
 ALTER TABLE tmp RENAME TO original;
 /* end transaction */
 ....
+
+Another thing to keep in mind is that SQLite is pretty flexible about the type
+of data that you can put into each column.
