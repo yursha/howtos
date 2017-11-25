@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -e
+
 paths=$(find -name '*.md')
 
 for path in $paths
@@ -24,4 +26,5 @@ do
 
 	echo $toc >> $newpath
 	pandoc -f markdown -t asciidoc $path >> $newpath
+	rm $path
 done
