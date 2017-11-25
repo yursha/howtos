@@ -4,58 +4,11 @@
 
 toc::[]
 
-[[resources]]
-Resources
----------
-
-* https://github.com/donnemartin/gitsome
-* Bookmark: 4.4.
-https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
-* `git clone git://git.kernel.org/pub/scm/git/git.git`
-* http://git-htmldocs.googlecode.com/git/user-manual.html
-* https://github.com/Homebrew/homebrew/blob/master/Library/Formula/git.rb
-* http://git.kernel.org/cgit/git/git.git/
-* https://git-scm.com
-* https://help.github.com/
-* https://www.atlassian.com/git/tutorials/
-* https://github.com/git/git
-* http://stackoverflow.com/questions/7321360/is-the-git-storage-model-wasteful
-* http://stackoverflow.com/questions/338436/is-there-a-quick-git-command-to-see-an-old-version-of-a-file
-* http://stackoverflow.com/questions/449541/how-do-you-merge-selective-files-with-git-merge
-* http://stackoverflow.com/questions/5817579/how-can-i-preview-a-merge-in-git
-* http://stackoverflow.com/questions/20666331/how-git-branches-and-tags-are-stored-in-disks[How
-git branches and tags are stored on disk SO]
-* `man git`
-* `gitcli`
-* `gitworkflows`
-* `giteveryday`
-* `gitcvs-migration`
-* `gittutorial-2`
-* `gitcore-tutorial`
-* `gitglossary`
-* `git-help`
-* `git log -L 162,169:path-to-file`
-* https://github.com/git-tips/tips
-
-[[bookmark]]
-Bookmark
---------
-
-* Done: clone, brach, remote
-* `man git-merge` : Bookmark: options `--no-commit`
-
 [[compare-the-fetched-commits-with-local-branch]]
 Compare the fetched commits with local branch
 ---------------------------------------------
 
 * `git log master..origin/master --format="%Cred%><(12)%ar %Cblue%h%Creset %s" --color`
-
-[[gitignore]]
-`.gitignore`
-------------
-
-* https://github.com/github/gitignore
-* https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files
 
 [[concepts]]
 Concepts
