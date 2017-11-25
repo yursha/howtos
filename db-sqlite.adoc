@@ -1,3 +1,8 @@
+= Sqlite
+:toc:
+:toc-placement!:
+toc::[]
+
 [[about-sqlite]]
 About SQLite
 ------------
