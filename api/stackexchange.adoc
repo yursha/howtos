@@ -4,20 +4,126 @@
 
 toc::[]
 
-Questions are asked on Stack Apps.
+[[authentication]]
+Authentication
+--------------
 
 Applications should be registered on
 https://stackapps.com/apps/oauth/register to get a request key. Request
 keys grant more requests per day, and are necessary for using
 `access_tokens` created via authentication.
 
-All API responses are JSON, we do support JSONP with the `callback`
-query parameter. Every response in the API is returned in a common
+There are a few methods which require that the application be acting on behalf
+of a user in order to be invoked. In such cases OAuth 2.0 is used.
+
+
+
+[[write]]
+Write
+-----
+
+[[retry]]
+Retries
+~~~~~~~
+
+Sometimes, especially with spotty internet connections, a client can make a
+request to the API that is serviced but for which a response is never received.
+For example, an application may submit an upvote but due to loss of connectivity
+never receive an acknowledgement.
+
+A reasonable solution to poor networking is to retry unacknowledged requests a
+small number of times. However, many actions on the Stack Exchange network can
+only be performed once leading to "mysterious" failures if an retried request
+actually succeeded earlier.
+
+Starting in v2.2, the API accepts a `request_id` parameter along with every
+request. If a `request_id` is seen a second time in a small window the request
+will be failed immediately with a `duplicate_request` error. this means that any
+retried requests will fail sensibly, provided that the same `request_id` is
+used.
+
+The exact window in which the API will recognize a duplicate `request_id` is
+subject to change, but clients can assume the window is no shorter than five
+minutes.
+
+[[read]]
+Read
+----
+
+Some methods require access_tokens with particular scopes, such as
+`private_info`
+(`/users/{id}/reputation-history/full` for example) or `write_access`
+(`/questions/add`). Certain fields require `access_tokens` with the `private_info`
+scope, such as `answer.upvoted`.
+
+[[batch]]
+Batch requests
+~~~~~~~~~~~~~~
+
+Most methods that take `ids` in the API will take up to 100 of them in a single
+go. This allows applications to batch work and thereby avoid unnecessary round
+trips, which can be a significant user experience win on slow or high latency
+devices. Those methods with different vector limits will mention that in their
+individual documentation.
+
+When passing a vector, sepeate each id with a semicolon. For example,
+`/users/1;2;3;4;5?site=somesite` would fetch users with ids 1 through 5 on
+somesite.
+
+Vectors are not restricted to integer values, `/tags/{tags}/synonyms` takes a
+list of tags (strings) and `/revisions/{ids}` takes a list of revision ids
+(guids).
+
+If a parameter name is plural it accepts vectorized requests, otherwise a single
+value may be passed. Compare `users/{id}/inbox` and `/users/{ids}`.
+
+[[filters]]
+Filters
+~~~~~~~
+
+`min` and `max` specify the range of a field must fall in (that field being
+specified by `sort`) to be returned, while `fromdate` and `todate` always
+define the
+range of `creation_date`. Think these parameters as defining two "windows" in
+which data must fit to be returned.
+
+`min`, `max`, `fromdate`, and `todate` are inclusive.
+
+Another handy trick is to only request the `total` field when all you care about
+is the quanity of items meeting some criteria, such as when calculating
+statistics. The `?filter=total` built-in filter is provided for just this
+purpose.
+
+[[paging]]
+Paging
+~~~~~~
+
+Unless otherwise noted, the maximum size of any page is 100, any `ids` parameter
+likewise is capped at 100 elements, all indexes start at 1.
+
+[[wire-format]]
+Wire format
+-----------
+
+All API responses are JSON.
+JSONP is supported with the `callback` query parameter.
+Every response in the API is returned in a common
 `wrapper` object, for easier and more consistent parsing.
 
 Additionally, all API responses are compressed. The `Content-Encoding`
-header is always set, but some proxies will strip this out. The proper
-way to decode API responses can be found here.
+header is always set, but some proxies will strip this out.
+
+[[throttling]]
+Throttling
+----------
+
+[[chaching]]
+Caching
+-------
+
+API responses are heavily cached. Polling for changes should be done sparingly
+in any case, and polling at a rate faster than once a minute (for semantically
+identical requests) is considered abusive.
 
 [[references]]
 References
