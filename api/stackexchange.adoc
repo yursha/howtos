@@ -94,12 +94,80 @@ is the quanity of items meeting some criteria, such as when calculating
 statistics. The `?filter=total` built-in filter is provided for just this
 purpose.
 
+The API allows applications to exclude almost every field returned. For example,
+if an application did not care about a user's badge counts it could exclude
+`user.badge_counts` whenever it calls a method that returns users.
+
+An application excludes fields by creating a filter (via `/filter/create`) and
+passing it to a method in the `filter` parameter.
+
+Filters are immutable and non-expiring. An application can safely "bake in" any
+filters that are created, it is not necessary (or advisable) to create filters
+at runtime.
+
+The motivation for filters are several fold. Filters allow applications to
+reduce API responses to just the fields they are concerned with, saving
+bandwidth. With the list of fields an application is actually concerned with,
+the API can avoid unneccessary queries thereby decreasing response time (and
+reducing load on our infrastructure). Finally, filters allow us to be more
+conservative in what the API returns by default without a proliferation of
+parameters
+
+Filters also carry a notion of safety, which is defined as follows. Any string
+returned as a result of an API call with a safe filter will be inline-able into
+HTML without script-injection concerns. That is to say, no additional sanitizing
+(encoding, HTML tag stripping, etc.) will be necessary on returned strings.
+Applications that wish to handle sanitizing themselves should create an unsafe
+filter. All filters are safe by default, under the assumption that
+double-encoding bugs are more desirable than script injections.
+
+The following filters are built in:
+
+- `default`, without `*.body` fields
+- `withbody`, with `*.body` fields
+- `none`, empty
+- `total`, includes just `.total`, which is not returned by default.
+
+Fetching `total` can be **equally as expensive** as fetching `items`.
+Put another way,
+an application fetching total when not needed is potentially halving its
+performance. It is for this reason that `total` is not returned by default.
+
 [[paging]]
 Paging
 ~~~~~~
 
-Unless otherwise noted, the maximum size of any page is 100, any `ids` parameter
-likewise is capped at 100 elements, all indexes start at 1.
+Nearly all methods in the API accept the `page` and `pagesize` parameters for
+fetching specific pages of results from the API. `page` starts at and defaults
+to `1`, `pagesize` can be any value between `0` and `100` and defaults to `30`.
+
+Oftentimes an application will be interested in fetching all the items that
+match specific criteria, but this can be complicated when the number of matches
+exceeds 100 (the maximum `pagesize`). To assist in this case, the API returns
+the
+`has_more` property on the common wrapper object if there are more results to be
+fetched. An application can use this property to fetch all results without
+having to speculatively issue queries or pay for the comparatively expensive
+`total` property.
+
+[[error-handling]]
+Error handling
+--------------
+
+Errors from method calls are reported on the common response wrapper object in
+the `error_id`, `error_message`, and `error_name` fields.
+
+The HTTP code will be 400 (Bad Request) for all errors unless the method was
+called via JSONP, in which case even an error will be returned as a 200 (OK).
+This is necessary, as a 400 code will generally prevent a client side app from
+reading the remaining error details if the call was via JSONP. In rare cases
+(typically dealing with network wide maintenance or hardware failure), errors
+may occur in processing a request before the API determines whether a request is
+via JSONP; in these cases a 400 (Bad Request) is returned.
+
+For testing purposes, the `/errors/{id}` will simulate any error given its code.
+For introspection purposes, the `/errors` method will return a list of all
+possible errors the API may return.
 
 [[wire-format]]
 Wire format
@@ -113,9 +181,87 @@ Every response in the API is returned in a common
 Additionally, all API responses are compressed. The `Content-Encoding`
 header is always set, but some proxies will strip this out.
 
+All dates are in Unix epoch format.
+
+The API guarantees that all numbers returned will fit in a signed 32-bit
+integer. Dates are returned as numbers as well, but are instead guaranteed to
+fit in a signed 64-bit integer.
+
+
+[[compression]]
+Compression
+~~~~~~~~~~~
+
+During normal operation, we guarantee that all responses are compressed, either
+with GZIP or DEFLATE. This is an *intentional divergence from HTTP standard*.
+
+The motivation for this is simple, serving uncompressed content is a loss for
+all parties. Bandwidth is, in comparison to CPU time, exceptionally expensive
+and severely limited on many devices. It's really a no-brainer to require
+compression accordingly.
+
+While effectively all browsers will always request compressed content, many (if
+not all) of the applications using our API will be on decidely less mature HTTP
+stacks. The likelihood of many applications not opting into compression, and
+being materially worse for it, is unacceptable.
+
+Errors may be returned uncompressed though.
+
+Always set the `Accept-Encoding`` header. Our API will attempt
+to honor your requested encoding (either `GZIP` or `DEFLATE`),
+falling back to `GZIP`
+if the header doesn't arrive or is modified en route.
+
+If `Content-Encoding` is set on the response, use the specified algorithm. If it
+is missing, assume `GZIP`.
+
+If response is not compressed this suggests a proxy between the user and us is
+intentionally decompressing content, or errors are occuring very early in
+processing requests. You can detect uncompressed content by checking for the
+appropriate magic numbers, assuming your library cannot detect this error for
+you.
+
+The API will never return an uncompressed response during normal operation.
+
 [[throttling]]
 Throttling
 ----------
+
+Every application is subject to an IP based concurrent request throttle. If a
+single IP is making more than 30 requests a second, new requests will be
+dropped. The exact ban period is subject to change, but will be on the order of
+30 seconds to a few minutes typically. Note that exactly what response an
+application gets (in terms of HTTP code, text, and so on) is undefined when
+subject to this ban; we consider > 30 request/sec per IP to be very abusive and
+thus cut the requests off very harshly.
+
+After that, applications are sorted into two distinct throttles. Those with, and
+those without, valid `access_tokens` (obtained via authenticating a user).
+
+If an application does not have an `access_token`,
+then the application shares an
+IP based quota with all other applications on that IP. This quota is based on
+the key being passed by the applications; it is the max of the daily request
+limit for the applications involved, which by default is 10,000. This quota
+scheme is essentially unchanged from earlier versions of the API.
+
+If an application does have an `access_token`, then the application is on a
+distinct user/app pair daily quota (default size of 10,000). A user can have up
+to 5 distinct quotas at any one time, though this limit is not reflected in
+`quota_remaining` returns for privacy reasons.
+
+A dynamic throttle is also in place on a per-method level. If an application
+receives a response with the backoff field set, it must wait that many seconds
+before hitting the same method again. For the purposes of throttling, all `/me`
+routes are considered to be identical to their `/users/{ids}` equivalent. Note
+that `backoff` is set based on a combination of factors, and may not be
+consistently returned for the same arguments to the same method. Additionally,
+all methods (even seemingly trivial ones) may return backoff.
+
+While not strictly a throttle, the API employs heavy caching and as such no
+application should make semantically identical requests more than once a minute.
+This is generally a waste of bandwidth as, more often than not, the exact same
+result will be returned.
 
 [[chaching]]
 Caching
