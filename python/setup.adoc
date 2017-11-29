@@ -13,6 +13,8 @@ pip install --user pipenv
 cat 'export PATH=$PATH:~/.local/bin' >> ~/.bashrc
 . ~/.bashrc
 pipenv install requests
+vim program.py
+pipenv run python3 program.py arg1 arg2
 ....
 
 [[References]]
