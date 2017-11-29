@@ -1,4 +1,4 @@
-= Static File Server
+= Setup
 :toc:
 :toc-placement!:
 
