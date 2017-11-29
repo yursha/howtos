@@ -1,0 +1,22 @@
+= Static File Server
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[source,shell]
+....
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python get-pip.py
+sudo python3 get-pip.py
+pip install --user pipenv
+cat 'export PATH=$PATH:~/.local/bin' >> ~/.bashrc
+. ~/.bashrc
+pipenv install requests
+....
+
+[[References]]
+References
+----------
+- https://pip.pypa.io
+- https://docs.pipenv.org
