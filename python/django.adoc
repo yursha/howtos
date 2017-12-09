@@ -1,0 +1,34 @@
+= Django
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[supported_databases]]
+Supported Databases
+-------------------
+
+Official support
+~~~~~~~~~~~~~~~~
+- sqlite3
+- postgresql
+- mysql
+- oracle
+
+Officially mentioned third-party support
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- IBM DB2 (LUW, zOS, i5)
+- IBM IDS (Informix Dynamic Server)
+- SAP Sybase
+- Microsoft SQL Server
+- Microsoft SQL Server ODBC
+- Firebird
+
+Third-party support
+~~~~~~~~~~~~~~~~~~~
+- MongoDB
+
+[[References]]
+References
+----------
+- https://www.djangoproject.com
