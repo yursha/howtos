@@ -4,6 +4,8 @@
 
 toc::[]
 
+Django is a web MVC backend framework in Python.
+
 [[features]]
 Features
 --------
