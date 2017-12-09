@@ -4,6 +4,13 @@
 
 toc::[]
 
+[[features]]
+Features
+--------
+- ORM
+- Database migrations
+- CMS (admin UI) support
+
 [[supported_databases]]
 Supported Databases
 -------------------
