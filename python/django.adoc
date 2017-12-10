@@ -15,6 +15,12 @@ Features
 * URL -> function callback router
 ** URL path parameters
 * Templating system
+** Variable interpolation
+** Template inheritance
+** Interpolation filters
+* Loose coupling of framework components
+* Caching framework (memcached and others)
+* Syndication framework (RSS, Atom)
 
 [[supported_databases]]
 Supported Databases
