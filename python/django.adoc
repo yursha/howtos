@@ -23,6 +23,11 @@ Features
 * Caching framework (memcached and others)
 * Syndication framework (RSS, Atom)
 * Built-in dev web server
+* Authentication framework
+* Content types serving framework
+* Session framework
+* Messaging framework
+* Static files serving framework
 
 [[supported_databases]]
 Supported Databases
