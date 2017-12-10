@@ -18,9 +18,11 @@ Features
 ** Variable interpolation
 ** Template inheritance
 ** Interpolation filters
+** URL paths naming
 * Loose coupling of framework components
 * Caching framework (memcached and others)
 * Syndication framework (RSS, Atom)
+* Built-in dev web server
 
 [[supported_databases]]
 Supported Databases
