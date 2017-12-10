@@ -9,9 +9,12 @@ Django is a web MVC backend framework in Python.
 [[features]]
 Features
 --------
-- ORM
-- Database migrations
-- CMS (admin UI) support
+* ORM
+* Database migrations
+* CMS (admin UI) support
+* URL -> function callback router
+** URL path parameters
+* Templating system
 
 [[supported_databases]]
 Supported Databases
