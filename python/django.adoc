@@ -11,7 +11,7 @@ Features
 --------
 * ORM
 * Database migrations
-* CMS (admin UI) support
+* CMS for **user-defined data models**.
 * URL -> function callback router
 ** URL path parameters
 * Templating system
