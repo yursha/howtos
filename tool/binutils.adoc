@@ -41,18 +41,36 @@ usb stick if this is a single bootable partition)
 * run
 `sudo cat /dev/sda2 | pv -pterbs 347G | strings | grep -C100 'My File Contents' > recoverted.txt`
 
-[[ld---linker]]
-`ld` - linker
-~~~~~~~~~~~~~
+[[ld]]
+`ld`
+~~~~
 
-[[as---assembler]]
-`as` - assembler
-~~~~~~~~~~~~~~~~
+Linker.
+
+[[as]]
+`as`
+~~~~
+
+Assembler.
 
 * Skipped -
 https://sourceware.org/binutils/docs-2.26/as/Overview.html#Overview
 * Bookmark -
 https://sourceware.org/binutils/docs-2.26/as/Input-Files.html#Input-Files
+
+[[objdump]]
+`objdump`
+~~~~~~~~~
+
+Displays information from object files.
+
+* VMA - virtual memory address
+* LVM - logical memory address
+* Alignment
+* ELF file heades
+* ELF file sections
+* archive files. They have headers. Archives consist of a set of member object files. 
+* Files have object file format
 
 [[binary-file-descriptor-library-bfd]]
 Binary File Descriptor Library (BFD)
