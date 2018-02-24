@@ -41,7 +41,7 @@ for(auto const& it = v.begin(); it != v.end(); ++it) {
 
 [source,c++]
 ....
-// ranges C++11
+// ranges
 std::vector<int> v;
 for(auto const& i: v) {
   std::cout << i;
