@@ -1,0 +1,23 @@
+= C Primer
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[loops]]
+Loops
+-----
+
+....
+for (int i = 0; i < 10; ++i) {
+  // do something
+}
+....
+
+....
+int i = 0;
+while (i < 10) {
+  // do something
+	++i;
+}
+....
