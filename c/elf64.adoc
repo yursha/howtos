@@ -4,14 +4,10 @@
 
 toc::[]
 
-[[sections]]
-Sections
---------
+== Sections
 
-[[.init]]
-.init
-~~~~~
+=== `.init`
 
-[[.fini]]
-.fini
-~~~~~
+
+=== `.fini`
+
