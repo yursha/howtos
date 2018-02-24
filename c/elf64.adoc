@@ -10,7 +10,17 @@ toc::[]
 
 === `.init`
 
+=== `.ctors`
+
+Contains a local symbol, `__CTOR_LIST__`, which is the head of the global
+constructor function pointer array.
+
 === `.text`
+
+=== `.dtors`
+
+Contains a local symbol, `__DTOR_LIST__`, which is the head of the global destructor
+function pointer array.
 
 === `.fini`
 
