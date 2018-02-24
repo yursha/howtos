@@ -4,6 +4,8 @@
 
 toc::[]
 
+- http://l4u-00.jinr.ru/usoft/WWW/www_debian.org/Documentation/elf/elf.html
+
 == Sections
 
 === `.init`
