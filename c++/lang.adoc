@@ -1,6 +1,0 @@
-= Golang Primer
-:toc:
-:toc-placement!:
-
-toc::[]
-
