@@ -1,0 +1,17 @@
+= ELF 64
+:toc:
+:toc-placement!:
+
+toc::[]
+
+[[sections]]
+Sections
+--------
+
+[[.init]]
+.init
+~~~~~
+
+[[.fini]]
+.fini
+~~~~~
