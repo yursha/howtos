@@ -29,3 +29,12 @@ while (i < 10) {
 
 C++
 ~~~
+
+[source,c++]
+....
+// iterators
+std::vector<int> v;
+for(auto const& it = v.begin(); it != v.end(); ++it) {
+  std::cout << *it;
+}
+....
