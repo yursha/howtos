@@ -38,3 +38,12 @@ for(auto const& it = v.begin(); it != v.end(); ++it) {
   std::cout << *it;
 }
 ....
+
+[source,c++]
+....
+// ranges C++11
+std::vector<int> v;
+for(auto const& i: v) {
+  std::cout << i;
+}
+....
