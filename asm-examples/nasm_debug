@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# exec name
+basename="${1%.*}"
+libs=$2
+
+# build
+nasm -g -f elf $1
+ld -m elf_i386 -o ${basename} ${basename}.o
+
+# run
+gdb ${basename}
+
+# cleanup
+rm ${basename}.o
+rm ${basename}

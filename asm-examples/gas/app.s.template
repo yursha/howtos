@@ -1,0 +1,39 @@
+.section .rodata
+
+  <read-only data for constants>
+
+.section .data
+# part of static executable
+
+# .ascii              - text string
+# .asciz              - null-terminated text string
+# .byte               - 1-byte integer
+# .short              - 2-byte integer
+# .int or .long       - 4-byte integer
+# .quad               - 8-byte integer
+# .octa               - 16-byte integer
+# .float or .single   - 4-byte single-precision fp
+# .double             - 8-byte double-precision fp
+
+# .fill 10000 - fill 10000 bytes with 0s
+
+# .equ name, value    - declaring constants
+
+  <initialized data>
+
+.section .bss
+# memory reserved at runtime
+
+# .comm   - common memory area
+# .lcomm  - local common memory area
+
+# .comm symbol, length
+# .lcomm buffer, 10000
+
+  <uninitialized data>
+
+.section .text
+.globl _start
+_start:
+
+  <instructions go here>
