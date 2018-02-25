@@ -5,8 +5,8 @@ Private repository for learning assembly language.
 ## Architectures
 
 ### Intel
-- [Intel x86 Optimization Manual](http://www.intel.com/content/www/us/en/architecture-and-technology/64-ia-32-architectures-optimization-manual.html)
 - [Intel x86 SDM](https://software.intel.com/en-us/articles/intel-sdm)
+- [Intel x86 Optimization Manual](http://www.intel.com/content/www/us/en/architecture-and-technology/64-ia-32-architectures-optimization-manual.html)
 
 ### ARM
 
