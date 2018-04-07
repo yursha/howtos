@@ -11,3 +11,9 @@ howtos
 Notes about software.
 
 Keep external links to minimum.
+
+[[computer-architecture]]
+Computer Architecture
+---------------------
+
+* link:http://www.lee.eng.uerj.br/~gil/redesII/hamming.pdf[Error Detecting and Error Correcting Codes, Hamming, 1950]
