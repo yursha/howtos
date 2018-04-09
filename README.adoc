@@ -9,6 +9,7 @@ Research
 --------
 
 * link:https://www.youtube.com/user/MicrosoftResearch[Microsoft Research (YouTube channel)]
+* link:http://www.cs.virginia.edu/~robins/YouAndYourResearch.html[You and Your Research, Hamming, 1986]
 
 [[computer-architecture]]
 Computer Architecture
@@ -16,4 +17,10 @@ Computer Architecture
 
 * link:https://safari.ethz.ch/architecture/fall2017/doku.php?id=schedule[Computer Architecture (video lectures), Multu, Fall 2017]
 * link:http://www.lee.eng.uerj.br/~gil/redesII/hamming.pdf[Error Detecting and Error Correcting Codes, Hamming, 1950]
-* link:http://www.cs.virginia.edu/~robins/YouAndYourResearch.html[You and Your Research, Hamming, 1986] 
+
+[[distributed-systems]]
+Distributed Systems
+-------------------
+
+* link:https://www.youtube.com/watch?v=-4Yp3j_jk8Q[Leslie Lamport: Thinking Above the Code (talk on YouTube)]
+* link:https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf[The Byzantine Generals Problem by Leslie Lamport, Robert Shostak, and Marshall Pease, 1982] 
