@@ -22,5 +22,6 @@ Computer Architecture
 Distributed Systems
 -------------------
 
+* link:https://lamport.azurewebsites.net/tla/tla.html[TLA+ by Leslie Lamport, 2018 website]
 * link:https://www.youtube.com/watch?v=-4Yp3j_jk8Q[Leslie Lamport: Thinking Above the Code (talk on YouTube), 2014]
 * link:https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf[The Byzantine Generals Problem by Leslie Lamport, Robert Shostak, and Marshall Pease, 1982] 
