@@ -4,6 +4,12 @@
 
 toc::[]
 
+[[research]]
+Research
+--------
+
+* link:https://www.youtube.com/user/MicrosoftResearch[Microsoft Research (YouTube channel)]
+
 [[computer-architecture]]
 Computer Architecture
 ---------------------
