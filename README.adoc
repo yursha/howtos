@@ -38,5 +38,6 @@ Distributed Systems
 * link:http://www.cslab.pepperdine.edu/warford/math221/How-Amazon-Web-Services-Uses-Formal-Methods.pdf[How Amazon Web Services Uses Formal Methods by Chris Newcombe - April 2015]
 * link:https://www.youtube.com/watch?v=-4Yp3j_jk8Q[Leslie Lamport: Thinking Above the Code (talk on YouTube), 2014]
 * link:http://lamport.azurewebsites.net/tla/formal-methods-amazon.pdf[Use of Formal Methods at Amazon Web Services, Chris Newcombe - 2014]
+* link:https://www.amazon.com/Formal-Development-Network-Centric-RTOS-Engineering-ebook/dp/B00F5UJK6K/ref=sr_1_2?s=digital-text&ie=UTF8&qid=1523319862&sr=1-2[Formal Development of a Network-Centric RTOS: Software Engineering for Reliable Embedded Systems by Eric Verhulst - August 23, 2011]
 * link:https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf[The Byzantine Generals Problem by Leslie Lamport, Robert Shostak, and Marshall Pease, 1982] 
 * link:https://amturing.acm.org/p558-lamport.pdf[Time, clocks, and the ordering of events in a distributed system by L Lamport - 1978]
