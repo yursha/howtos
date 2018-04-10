@@ -4,6 +4,21 @@
 
 toc::[]
 
+[[researchers]]
+Researchers
+-----------
+
+* Jeff Dean
+* Richard Hamming (Feb 11, 1915 - Jan 7, 1998)
+* Leslie Lamport
+* Onur Mutlu
+* Thomas Moscibroda
+* Chris Newcombe
+* Marshall Pease
+* Robert Shostak
+* Jeff Ullman
+* Eric Verhulst
+
 [[research]]
 Research
 --------
