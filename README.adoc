@@ -16,6 +16,7 @@ Computer Architecture
 ---------------------
 
 * link:https://safari.ethz.ch/architecture/fall2017/doku.php?id=schedule[Computer Architecture (video lectures), Mutlu, Fall 2017]
+* link:https://users.ece.cmu.edu/~omutlu/pub/mph_usenix_security07.pdf[Memory performance attacks: denial of memory service in multi-core systems by T Moscibroda, O Mutlu - August 2007]
 * link:http://www.lee.eng.uerj.br/~gil/redesII/hamming.pdf[Error Detecting and Error Correcting Codes, Hamming, 1950]
 
 [[operating-systems]]
