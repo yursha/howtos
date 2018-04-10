@@ -15,7 +15,7 @@ Research
 Computer Architecture
 ---------------------
 
-* link:https://safari.ethz.ch/architecture/fall2017/doku.php?id=schedule[Computer Architecture (video lectures), Multu, Fall 2017]
+* link:https://safari.ethz.ch/architecture/fall2017/doku.php?id=schedule[Computer Architecture (video lectures), Mutlu, Fall 2017]
 * link:http://www.lee.eng.uerj.br/~gil/redesII/hamming.pdf[Error Detecting and Error Correcting Codes, Hamming, 1950]
 
 [[operating-systems]]
